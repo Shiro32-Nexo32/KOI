@@ -1535,67 +1535,19 @@ async function main() {
         .sort((a, b) => b.gameCreation - a.gameCreation)
         .slice(0, 20);
 
-      let finalRank = rank;
+      const finalRank = rank;
       let freshnessSource = 'OP.GG MCP';
-
-      try {
-        const internal = await fetchOpggInternalMatches(account, identifier);
-        const internalLatest = internal.latestGame || 0;
-        const mcpLatest = matches[0]?.gameCreation || 0;
-        const internalRankChanged =
-          internal.rank &&
-          (
-            internal.rank.tier !== finalRank.tier ||
-            internal.rank.division !== finalRank.division ||
-            internal.rank.lp !== finalRank.lp
-          );
-
-        console.log(
-          account.proName +
-            ': OP.GG web API candidate ' +
-            (internal.rank
-              ? internal.rank.tier +
-                ' ' +
-                internal.rank.division +
-                ' ' +
-                internal.rank.lp +
-                ' LP'
-              : 'sin rango') +
-            ' · ' +
-            internal.matches.length +
-            ' partidas',
-        );
-
-        if (
-          internalLatest > mcpLatest + 60 * 1000 ||
-          internalRankChanged
-        ) {
-          matches = internal.matches;
-          if (internal.rank) finalRank = { ...finalRank, ...internal.rank };
-          freshnessSource = 'OP.GG web API';
-        }
-      } catch (internalError) {
-        console.warn(
-          account.proName +
-            ': OP.GG web API fallback failed: ' +
-            (internalError instanceof Error ? internalError.message : String(internalError)),
-        );
-      }
 
       try {
         const dpm = await fetchDpmSnapshot(account);
         const opggLatest = matches[0]?.gameCreation ?? 0;
         const dpmLatest = dpm.matches[0]?.gameCreation ?? 0;
-        const rankChanged =
-          dpm.rank.tier !== rank.tier ||
-          dpm.rank.division !== rank.division ||
-          dpm.rank.lp !== rank.lp;
 
-        if (dpmLatest > opggLatest + 5 * 60 * 1000 || rankChanged) {
-          finalRank = dpm.rank;
-          if (dpm.matches.length && dpmLatest > opggLatest + 5 * 60 * 1000) {
-            matches = dpm.matches;
-          }
+        // DPM is used only for fresher match history. Rank remains sourced from
+        // the official OP.GG MCP profile to avoid letting a stale DPM snapshot
+        // overwrite the visible ranked state.
+        if (dpmLatest > opggLatest + 5 * 60 * 1000 && dpm.matches.length) {
+          matches = dpm.matches;
           freshnessSource = dpm.source || 'DPM fallback';
         }
       } catch (dpmError) {
@@ -1603,72 +1555,6 @@ async function main() {
           account.proName +
             ': no se pudo usar DPM como fallback: ' +
             (dpmError instanceof Error ? dpmError.message : String(dpmError)),
-        );
-
-        try {
-          const jina = await fetchJinaOpggProfile(account);
-          const rankChanged =
-            jina.rank.tier !== finalRank.tier ||
-            jina.rank.division !== finalRank.division ||
-            jina.rank.lp !== finalRank.lp;
-
-          console.log(
-            account.proName +
-              ': Jina OP.GG candidate ' +
-              jina.rank.tier +
-              ' ' +
-              jina.rank.division +
-              ' ' +
-              jina.rank.lp +
-              ' LP',
-          );
-
-          if (rankChanged) {
-            finalRank = jina.rank;
-            freshnessSource = jina.source;
-          }
-        } catch (jinaError) {
-          console.warn(
-            account.proName +
-              ': Jina OP.GG fallback failed: ' +
-              (jinaError instanceof Error ? jinaError.message : String(jinaError)),
-          );
-        }
-
-        console.warn(
-          account.proName +
-            ': no se pudo usar DPM como fallback: ' +
-            (dpmError instanceof Error ? dpmError.message : String(dpmError)),
-        );
-      }
-
-      try {
-        const jina = await fetchJinaOpggProfile(account);
-        const rankChanged =
-          jina.rank.tier !== finalRank.tier ||
-          jina.rank.division !== finalRank.division ||
-          jina.rank.lp !== finalRank.lp;
-
-        console.log(
-          account.proName +
-            ': Jina OP.GG verification ' +
-            jina.rank.tier +
-            ' ' +
-            jina.rank.division +
-            ' ' +
-            jina.rank.lp +
-            ' LP',
-        );
-
-        if (rankChanged) {
-          finalRank = jina.rank;
-          freshnessSource = jina.source;
-        }
-      } catch (jinaError) {
-        console.warn(
-          account.proName +
-            ': Jina OP.GG verification failed: ' +
-            (jinaError instanceof Error ? jinaError.message : String(jinaError)),
         );
       }
 
@@ -1681,8 +1567,8 @@ async function main() {
         profilePayload,
       );
 
-      if (freshnessSource === 'DPM fallback') {
-        nextPlayer.analystSummary += ' Fuente fresca: DPM.LOL.';
+      if (freshnessSource !== 'OP.GG MCP') {
+        nextPlayer.analystSummary += ' Historial fresco: DPM.LOL.';
       }
 
       players.push(nextPlayer);
