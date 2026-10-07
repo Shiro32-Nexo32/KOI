@@ -6,7 +6,8 @@ on:
     paths-ignore:
       - "data/live.json"
   schedule:
-    - cron: "*/15 * * * *"
+    # Offset the schedule to avoid the busiest quarter-hour boundaries.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -19,6 +20,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - name: Checkout
         uses: actions/checkout@v5
