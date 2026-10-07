@@ -953,6 +953,46 @@ function parseDpmMatches(text) {
     .slice(0, 20);
 }
 
+
+async function fetchBingDpmSnapshot(account) {
+  const query = '"' + account.gameName + '#' + account.tagLine + '" DPM.LOL "Solo/Duo"';
+  const url = 'https://www.bing.com/search?q=' + encodeURIComponent(query);
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 20000);
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; KOI-Tracker/1.0)',
+        Accept: 'text/html,application/xhtml+xml',
+        'Cache-Control': 'no-cache',
+        Pragma: 'no-cache',
+      },
+      signal: controller.signal,
+    });
+
+    if (!response.ok) throw new Error('Bing HTTP ' + response.status);
+
+    const html = await response.text();
+    const plain = htmlToPlainText(html);
+    const rank = parseDpmRank(plain);
+    const matches = parseDpmMatches(plain);
+
+    if (!rank) {
+      throw new Error('Bing no devolvió un ranking DPM parseable');
+    }
+
+    return {
+      rank,
+      matches,
+      url,
+    };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 async function fetchDpmSnapshot(account) {
   const targetUrl =
     'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
@@ -1009,6 +1049,12 @@ async function fetchDpmSnapshot(account) {
     } catch (error) {
       lastError = error;
     }
+  }
+
+  try {
+    return await fetchBingDpmSnapshot(account);
+  } catch (bingError) {
+    lastError = bingError;
   }
 
   throw new Error(
