@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:22:09.505Z",
+  "generatedAt": "2026-10-07T21:32:43.580Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp-with-dpm-fallback",
   "status": "ok",
@@ -17,10 +17,10 @@
       "profileIconId": 588,
       "tier": "DIAMOND",
       "division": "I",
-      "lp": 57,
-      "wins": 13,
+      "lp": 87,
+      "wins": 14,
       "losses": 2,
-      "winrate": 86.7,
+      "winrate": 87.5,
       "streak": 4,
       "avgKda": 7.3,
       "avgKills": 8.1,
@@ -685,8 +685,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "DIAMOND I (57 LP)",
-      "analystSummary": "Myrwn: DIAMOND I 57 LP · 16 partidas consultadas · 86.7% WR · KDA medio 7.3.",
+      "statusBadge": "DIAMOND I (87 LP)",
+      "analystSummary": "Myrwn: DIAMOND I 87 LP · 16 partidas consultadas · 87.5% WR · KDA medio 7.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -694,6 +694,15 @@
           "division": "I",
           "lp": 57,
           "wins": 13,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791408726224,
+          "tier": "DIAMOND",
+          "division": "I",
+          "lp": 87,
+          "wins": 14,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -714,10 +723,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 52,
-      "wins": 16,
+      "lp": 87,
+      "wins": 17,
       "losses": 2,
-      "winrate": 88.9,
+      "winrate": 89.5,
       "streak": 5,
       "avgKda": 10.1,
       "avgKills": 8.5,
@@ -1470,8 +1479,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (52 LP)",
-      "analystSummary": "Elyoya: MASTER I 52 LP · 19 partidas consultadas · 88.9% WR · KDA medio 10.1.",
+      "statusBadge": "MASTER I (87 LP)",
+      "analystSummary": "Elyoya: MASTER I 87 LP · 19 partidas consultadas · 89.5% WR · KDA medio 10.1.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1481,10 +1490,19 @@
           "wins": 16,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791408735600,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 87,
+          "wins": 17,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 2,
-      "eloRank": 2
+      "eloRank": 1
     },
     {
       "id": "jojopyun",
@@ -2909,7 +2927,7 @@
         }
       ],
       "formRank": 5,
-      "eloRank": 1
+      "eloRank": 2
     },
     {
       "id": "alvaro",
