@@ -476,7 +476,9 @@ function extractIdentifier(payload) {
       // OP.GG text serialization order:
       // acct_id, game_name, id, level, name, profile_image_url,
       // puuid, region, summoner_id, tagline, updated_at.
-      candidates.push(match[9], match[7], match[3], match[1]);
+      // The current OP.GG profile serialization stores the 47+ char
+      // internal summoner key in the 4th constructor argument.
+      candidates.push(match[4], match[7], match[3], match[1]);
     }
   }
 
@@ -1504,17 +1506,6 @@ async function main() {
       );
 
       const profilePayload = resultData(profileResult);
-      const profileText = String(profilePayload);
-      const summonerPos = profileText.indexOf('Summoner(');
-      console.log(
-        account.proName +
-          ': profile payload type=' +
-          typeof profilePayload +
-          ' summonerPos=' +
-          summonerPos +
-          ' excerpt=' +
-          profileText.slice(Math.max(0, summonerPos), Math.max(0, summonerPos) + 1600),
-      );
       const rank = findRank(profilePayload);
 
       if (!rank) {
@@ -1524,11 +1515,6 @@ async function main() {
       }
 
       const identifier = extractIdentifier(profilePayload);
-      console.log(
-        account.proName +
-          ': OP.GG identifier length=' +
-          String(identifier || '').length,
-      );
 
       const matchesArgs = buildArgs(
         matchesTool,
