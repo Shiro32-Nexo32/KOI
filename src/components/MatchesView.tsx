@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { PlayerProfile, MatchRecord } from '../types/lol';
 import { getChampionIconUrl, getItemIconUrl, getSpellIconUrl } from '../utils/ddragon';
-import { Filter, Trophy, Swords, Zap } from 'lucide-react';
+import { BarChart3, Filter, Trophy } from 'lucide-react';
 
 interface MatchesViewProps {
   players: PlayerProfile[];
@@ -22,7 +22,7 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
 }) => {
   const [filterPlayer, setFilterPlayer] = useState<string>(selectedPlayerId || 'all');
   const [filterOutcome, setFilterOutcome] = useState<'all' | 'win' | 'loss'>('all');
-  const [filterTag, setFilterTag] = useState<'all' | 'mvp' | 'hypercarry'>('all');
+  const [minKda, setMinKda] = useState<'all' | '5' | '8'>('all');
 
   useEffect(() => {
     setFilterPlayer(selectedPlayerId || 'all');
@@ -52,20 +52,50 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
     }
     if (filterOutcome === 'win' && !m.win) return false;
     if (filterOutcome === 'loss' && m.win) return false;
-    if (filterTag === 'mvp' && !m.tags?.includes('MVP')) return false;
-    if (filterTag === 'hypercarry' && !m.tags?.includes('Hypercarry')) return false;
+    if (minKda === '5' && m.kda < 5) return false;
+    if (minKda === '8' && m.kda < 8) return false;
     return true;
   });
 
+  const filteredWins = filtered.filter((match) => match.win).length;
+  const filteredLosses = filtered.length - filteredWins;
+  const filteredWinrate = filtered.length ? ((filteredWins / filtered.length) * 100).toFixed(1) : '0.0';
+
+  const handlePlayerFilter = (id: string) => {
+    setFilterPlayer(id);
+    if (id !== 'all') onSelectPlayer(id);
+  };
+
   return (
     <div className="space-y-6">
-      {/* Header and Filter Controls */}
-      <div className="flex flex-col gap-4 border-b border-slate-800 pb-5 md:flex-row md:items-center md:justify-between">
-        <div>
-          <h2 className="text-xl font-bold text-white">Historial de Últimas Rankeds (Solo/Duo)</h2>
-          <p className="text-xs text-slate-400">
-            Desglose pormenorizado de partidas de los 5 jugadores con CS/min, KDA, ítems y etiquetas de rendimiento
-          </p>
+      <div className="rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900/90 to-slate-950 p-6">
+        <div className="flex flex-col gap-5 xl:flex-row xl:items-end xl:justify-between">
+          <div>
+            <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.18em] text-cyan-400">
+              <BarChart3 className="h-3.5 w-3.5" />
+              OP.GG · TELEMETRÍA DE PARTIDAS
+            </div>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight text-white">Historial de SoloQ</h2>
+            <p className="mt-1 max-w-2xl text-xs leading-relaxed text-slate-400">
+              Últimas partidas disponibles de las cinco cuentas, con KDA, farm, daño, visión, campeones,
+              hechizos e inventario.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
+            <div className="rounded-xl border border-slate-800 bg-slate-950/70 px-4 py-3 text-center">
+              <div className="text-[10px] text-slate-500">Mostradas</div>
+              <div className="mt-1 font-mono text-xl font-bold text-white">{filtered.length}</div>
+            </div>
+            <div className="rounded-xl border border-slate-800 bg-slate-950/70 px-4 py-3 text-center">
+              <div className="text-[10px] text-slate-500">Balance</div>
+              <div className="mt-1 font-mono text-xl font-bold text-white">{filteredWins}-{filteredLosses}</div>
+            </div>
+            <div className="rounded-xl border border-slate-800 bg-slate-950/70 px-4 py-3 text-center">
+              <div className="text-[10px] text-slate-500">WR</div>
+              <div className="mt-1 font-mono text-xl font-bold text-emerald-400">{filteredWinrate}%</div>
+            </div>
+          </div>
         </div>
 
         {/* Filters */}
@@ -106,28 +136,27 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
             </button>
           </div>
 
-          {/* Tag Filter */}
           <div className="flex rounded-lg border border-slate-800 bg-slate-900 p-0.5 text-xs">
-            <button
-              onClick={() => setFilterTag('all')}
-              className={`rounded px-2.5 py-1 ${filterTag === 'all' ? 'bg-slate-800 text-white font-medium' : 'text-slate-400 hover:text-white'}`}
-            >
-              Cualquiera
-            </button>
-            <button
-              onClick={() => setFilterTag('mvp')}
-              className={`rounded px-2.5 py-1 ${filterTag === 'mvp' ? 'bg-amber-500 text-slate-950 font-bold' : 'text-slate-400 hover:text-white'}`}
-            >
-              MVP
-            </button>
-            <button
-              onClick={() => setFilterTag('hypercarry')}
-              className={`rounded px-2.5 py-1 ${filterTag === 'hypercarry' ? 'bg-purple-500 text-white font-bold' : 'text-slate-400 hover:text-white'}`}
-            >
-              Hypercarry
-            </button>
+            {([
+              ['all', 'Cualquier KDA'],
+              ['5', 'KDA ≥ 5'],
+              ['8', 'KDA ≥ 8'],
+            ] as const).map(([value, label]) => (
+              <button
+                key={value}
+                onClick={() => setMinKda(value)}
+                className={`rounded px-2.5 py-1 ${minKda === value ? 'bg-purple-500 text-white font-bold' : 'text-slate-400 hover:text-white'}`}
+              >
+                {label}
+              </button>
+            ))}
           </div>
         </div>
+      </div>
+
+      <div className="flex items-center gap-2 text-[11px] text-slate-600">
+        <Trophy className="h-3.5 w-3.5 text-amber-500" />
+        <span>{allMatches.length} partidas recibidas de las cinco cuentas · ordenadas por hora de inicio</span>
       </div>
 
       {/* Match Cards List */}
