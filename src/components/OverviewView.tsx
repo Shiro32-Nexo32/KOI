@@ -9,12 +9,11 @@ import {
   Trophy,
   TrendingUp,
 } from 'lucide-react';
-import { PlayerProfile, TeamOverviewReport } from '../types/lol';
+import { PlayerProfile } from '../types/lol';
 import { getChampionIconUrl, getOpGgMultiSearchUrl, getOpGgUrl, getTierColor } from '../utils/ddragon';
 
 interface OverviewViewProps {
   players: PlayerProfile[];
-  report: TeamOverviewReport;
   onSelectPlayer: (playerId: string) => void;
   onNavigateToAnalyst: () => void;
   sourceStatus: 'live' | 'cached' | 'seed';
