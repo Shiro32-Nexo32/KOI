@@ -3,6 +3,8 @@ name: Deploy LoL Bootcamp Tracker
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - "data/live.json"
   workflow_dispatch:
 
 permissions:
