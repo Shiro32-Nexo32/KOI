@@ -155,14 +155,30 @@ async function createMcpSession() {
     );
   }
 
-  await postMcp(
-    {
-      jsonrpc: '2.0',
-      method: 'notifications/initialized',
-      params: {},
-    },
-    initialized.sessionId,
-  );
+  const controller = new AbortController();
+  const notificationTimer = setTimeout(() => controller.abort(), 5000);
+
+  try {
+    await fetch(MCP_URL, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/event-stream',
+        'Content-Type': 'application/json',
+        'Mcp-Session-Id': initialized.sessionId,
+      },
+      body: JSON.stringify({
+        jsonrpc: '2.0',
+        method: 'notifications/initialized',
+        params: {},
+      }),
+      signal: controller.signal,
+    });
+  } catch (error) {
+    // The notification has no response id. Some MCP servers keep the stream open;
+    // aborting after the request has been sent is safe here.
+  } finally {
+    clearTimeout(notificationTimer);
+  }
 
   return initialized.sessionId;
 }
