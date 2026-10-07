@@ -354,6 +354,29 @@ function resultData(result) {
 }
 
 function findRank(payload) {
+  if (typeof payload === 'string') {
+    const match = payload.match(
+      /LeagueStat\\("SOLORANKED",TierInfo\\("([^"]+)",(null|[^,]+),(\\d+)\\),(\\d+),(\\d+),null\\)/,
+    );
+
+    if (match) {
+      const [, tier, division, lp, wins, losses] = match;
+      const normalizedDivision =
+        division === 'null' ? 'I' : String(division).trim().toUpperCase();
+
+      return {
+        tier: String(tier).toUpperCase(),
+        division: normalizedDivision,
+        lp: int(lp),
+        wins: int(wins),
+        losses: int(losses),
+        winrate: Number(
+          ((int(wins) / Math.max(1, int(wins) + int(losses))) * 100).toFixed(1),
+        ),
+      };
+    }
+  }
+
   const summoner =
     payload?.data?.summoner ??
     payload?.summoner ??
@@ -892,10 +915,6 @@ async function main() {
       );
 
       const profilePayload = resultData(profileResult);
-      if (account.id === 'myrwn') {
-        const profileSummoner = profilePayload?.data?.summoner ?? profilePayload?.summoner ?? null;
-        console.log('PROFILE_DEBUG_SUMMONER=', JSON.stringify(profileSummoner?.league_stats ?? profileSummoner ?? profilePayload).slice(0, 12000));
-      }
       const rank = findRank(profilePayload);
 
       if (!rank) {
@@ -923,6 +942,9 @@ async function main() {
       );
 
       const matchesPayload = resultData(matchesResult);
+      if (account.id === 'myrwn') {
+        console.log('MATCHES_DEBUG=', String(matchesPayload).slice(0, 20000));
+      }
       const matches = matchObjects(matchesPayload)
         .map((game) => toMatch(game, account.role))
         .sort((a, b) => b.gameCreation - a.gameCreation)
