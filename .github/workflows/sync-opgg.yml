@@ -25,18 +25,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v6
+      - name: Setup Node
+        uses: actions/setup-node@v5
         with:
-          python-version: "3.12"
+          node-version: 22
+          cache: npm
 
-      - name: Sync OP.GG
-        run: python scripts/sync_opgg.py
+      - name: Install dependencies
+        run: npm install
+
+      - name: Sync from official OP.GG MCP
+        run: node scripts/sync_opgg.mjs
 
       - name: Commit live data
         run: |
           if git diff --quiet -- data/live.json; then
-            echo "No changes in live data."
+            echo "No live-data changes."
             exit 0
           fi
 
