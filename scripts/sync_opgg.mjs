@@ -930,10 +930,13 @@ function recalculateRankings(players) {
   };
 
   const divisionWeight = { I: 400, II: 300, III: 200, IV: 100 };
+  const apexTiers = new Set(['MASTER', 'GRANDMASTER', 'CHALLENGER']);
 
+  // Real LoL ordering: tier first; divisions apply only through Diamond.
+  // Master+ has no I/II/III/IV divisions, so LP decides the order inside the tier.
   const elo = (player) =>
     (tierWeight[player.tier] ?? 0) +
-    (divisionWeight[player.division] ?? 0) +
+    (apexTiers.has(String(player.tier).toUpperCase()) ? 0 : (divisionWeight[player.division] ?? 0)) +
     num(player.lp);
 
   const form = (player) =>
