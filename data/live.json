@@ -1,0 +1,12 @@
+{
+  "generatedAt": null,
+  "source": "OP.GG",
+  "sourceType": "opgg-undocumented-api",
+  "status": "waiting_for_first_sync",
+  "players": [],
+  "errors": [],
+  "meta": {
+    "syncVersion": 1,
+    "message": "El primer workflow programado rellenará este archivo con datos vivos de OP.GG."
+  }
+}
