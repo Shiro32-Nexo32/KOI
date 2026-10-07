@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:13:32.162Z",
+  "generatedAt": "2026-10-07T21:22:09.505Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp-with-dpm-fallback",
   "status": "ok",
@@ -21,12 +21,12 @@
       "wins": 13,
       "losses": 2,
       "winrate": 86.7,
-      "streak": 3,
-      "avgKda": 7.6,
-      "avgKills": 8.3,
-      "avgDeaths": 2.8,
-      "avgAssists": 6.4,
-      "avgCsPerMin": 8.7,
+      "streak": 4,
+      "avgKda": 7.3,
+      "avgKills": 8.1,
+      "avgDeaths": 3,
+      "avgAssists": 6.7,
+      "avgCsPerMin": 8.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -54,6 +54,19 @@
           "assists": 21,
           "kda": 6.1,
           "csPerMin": 9.4
+        },
+        {
+          "championName": "Karma",
+          "championId": "43",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 6,
+          "assists": 11,
+          "kda": 2.5,
+          "csPerMin": 5.4
         },
         {
           "championName": "Kai'Sa",
@@ -135,6 +148,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWsA3P9Sj5MUy5q0JvgU1X3z1naJqsQVbo=",
+          "gameCreation": 1791407928000,
+          "gameDurationSeconds": 1445,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Karma",
+          "championId": "43",
+          "champLevel": 16,
+          "role": "TOP",
+          "kills": 4,
+          "deaths": 6,
+          "assists": 11,
+          "kda": 2.5,
+          "cs": 129,
+          "csPerMin": 5.4,
+          "killParticipationPct": 0,
+          "damageDealt": 20903,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            6662,
+            3114,
+            3158,
+            3121,
+            3108,
+            1056
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUhGK4PN_QKsk74sVFvY6tDExUk_mCEdVM=",
           "gameCreation": 1791393323000,
@@ -639,7 +686,7 @@
         }
       ],
       "statusBadge": "DIAMOND I (57 LP)",
-      "analystSummary": "Myrwn: DIAMOND I 57 LP · 15 partidas consultadas · 86.7% WR · KDA medio 7.6.",
+      "analystSummary": "Myrwn: DIAMOND I 57 LP · 16 partidas consultadas · 86.7% WR · KDA medio 7.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -671,12 +718,12 @@
       "wins": 16,
       "losses": 2,
       "winrate": 88.9,
-      "streak": 4,
-      "avgKda": 10.3,
-      "avgKills": 8.4,
+      "streak": 5,
+      "avgKda": 10.1,
+      "avgKills": 8.5,
       "avgDeaths": 2.6,
-      "avgAssists": 10.1,
-      "avgCsPerMin": 0.8,
+      "avgAssists": 9.9,
+      "avgCsPerMin": 1.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -745,6 +792,19 @@
           "csPerMin": 0.8
         },
         {
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 11,
+          "deaths": 3,
+          "assists": 7,
+          "kda": 6,
+          "csPerMin": 9
+        },
+        {
           "championName": "Ivern",
           "championId": "427",
           "games": 1,
@@ -785,6 +845,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWsA3P9Sj5MUy5q0JvgU1X3z1naJqsQVbo=",
+          "gameCreation": 1791407928000,
+          "gameDurationSeconds": 1445,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 11,
+          "deaths": 3,
+          "assists": 7,
+          "kda": 6,
+          "cs": 217,
+          "csPerMin": 9,
+          "killParticipationPct": 0,
+          "damageDealt": 30237,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerBarrier"
+          ],
+          "items": [
+            2055,
+            3124,
+            6672,
+            1086,
+            3115,
+            3089
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUhGK4PN_QKsk74sVFvY6tDExUk_mCEdVM=",
           "gameCreation": 1791393323000,
@@ -1377,7 +1471,7 @@
         }
       ],
       "statusBadge": "MASTER I (52 LP)",
-      "analystSummary": "Elyoya: MASTER I 52 LP · 18 partidas consultadas · 88.9% WR · KDA medio 10.3.",
+      "analystSummary": "Elyoya: MASTER I 52 LP · 19 partidas consultadas · 88.9% WR · KDA medio 10.1.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1390,7 +1484,7 @@
         }
       ],
       "formRank": 2,
-      "eloRank": 1
+      "eloRank": 2
     },
     {
       "id": "jojopyun",
@@ -1404,9 +1498,9 @@
       "role": "MID",
       "profileIconId": 588,
       "tier": "DIAMOND",
-      "division": "II",
-      "lp": 87,
-      "wins": 10,
+      "division": "I",
+      "lp": 17,
+      "wins": 11,
       "losses": 0,
       "winrate": 100,
       "streak": 11,
@@ -1894,8 +1988,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "DIAMOND II (87 LP)",
-      "analystSummary": "Jojopyun: DIAMOND II 87 LP · 11 partidas consultadas · 100% WR · KDA medio 5.8.",
+      "statusBadge": "DIAMOND I (17 LP)",
+      "analystSummary": "Jojopyun: DIAMOND I 17 LP · 11 partidas consultadas · 100% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
@@ -1903,6 +1997,15 @@
           "division": "II",
           "lp": 87,
           "wins": 10,
+          "losses": 0,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791408111990,
+          "tier": "DIAMOND",
+          "division": "I",
+          "lp": 17,
+          "wins": 11,
           "losses": 0,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -1923,10 +2026,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 47,
-      "wins": 16,
+      "lp": 82,
+      "wins": 17,
       "losses": 4,
-      "winrate": 80,
+      "winrate": 81,
       "streak": 1,
       "avgKda": 4.2,
       "avgKills": 8.4,
@@ -2783,8 +2886,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (47 LP)",
-      "analystSummary": "Supa: MASTER I 47 LP · 20 partidas consultadas · 80% WR · KDA medio 4.2.",
+      "statusBadge": "MASTER I (82 LP)",
+      "analystSummary": "Supa: MASTER I 82 LP · 20 partidas consultadas · 81% WR · KDA medio 4.2.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -2794,10 +2897,19 @@
           "wins": 16,
           "losses": 4,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791408121194,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 82,
+          "wins": 17,
+          "losses": 4,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 5,
-      "eloRank": 2
+      "eloRank": 1
     },
     {
       "id": "alvaro",
@@ -2812,10 +2924,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 2,
-      "wins": 14,
+      "lp": 37,
+      "wins": 15,
       "losses": 2,
-      "winrate": 87.5,
+      "winrate": 88.2,
       "streak": 1,
       "avgKda": 4.7,
       "avgKills": 3.5,
@@ -3649,8 +3761,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (2 LP)",
-      "analystSummary": "Alvaro: MASTER I 2 LP · 19 partidas consultadas · 87.5% WR · KDA medio 4.7.",
+      "statusBadge": "MASTER I (37 LP)",
+      "analystSummary": "Alvaro: MASTER I 37 LP · 19 partidas consultadas · 88.2% WR · KDA medio 4.7.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -3658,6 +3770,15 @@
           "division": "I",
           "lp": 2,
           "wins": 14,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791408129503,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 37,
+          "wins": 15,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
         }
