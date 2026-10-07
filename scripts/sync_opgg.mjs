@@ -856,7 +856,7 @@ function htmlToPlainText(html) {
 
 function parseDpmRank(text) {
   const match = text.match(
-    /(CHALLENGER|GRANDMASTER|MASTER|DIAMOND|EMERALD|PLATINUM|GOLD|SILVER|BRONZE|IRON)(?:\s+(IV|III|II|I))?\s*-\s*(\d+)\s*LP\s+(\d+)W\s*-\s*(\d+)L/i,
+    /(?:2026\s+)?Ranked\s+Solo[\s\S]{0,160}?(CHALLENGER|GRANDMASTER|MASTER|DIAMOND|EMERALD|PLATINUM|GOLD|SILVER|BRONZE|IRON)(?:\s+(IV|III|II|I))?\s*-?\s*(\d+)\s*LP\s+(\d+)W\s*-\s*(\d+)L/i,
   );
 
   if (!match) return null;
@@ -982,7 +982,7 @@ async function fetchDpmSnapshot(account) {
       const rank = parseDpmRank(plain);
       const matches = parseDpmMatches(plain);
 
-      if (!rank || !matches.length) {
+      if (!rank) {
         console.warn(
           'DPM parse diagnostic for ' +
             account.proName +
@@ -991,7 +991,7 @@ async function fetchDpmSnapshot(account) {
             ': ' +
             plain.slice(0, 1200),
         );
-        throw new Error('perfil/ranking no parseable');
+        throw new Error('ranking no parseable');
       }
 
       return {
@@ -1273,9 +1273,24 @@ async function main() {
           dpm.rank.division !== rank.division ||
           dpm.rank.lp !== rank.lp;
 
+        console.log(
+          account.proName +
+            ': DPM candidate ' +
+            dpm.rank.tier +
+            ' ' +
+            dpm.rank.division +
+            ' ' +
+            dpm.rank.lp +
+            ' LP · ' +
+            dpm.matches.length +
+            ' partidas DPM',
+        );
+
         if (dpmLatest > opggLatest + 5 * 60 * 1000 || rankChanged) {
           finalRank = dpm.rank;
-          matches = dpm.matches;
+          if (dpm.matches.length && dpmLatest > opggLatest + 5 * 60 * 1000) {
+            matches = dpm.matches;
+          }
           freshnessSource = 'DPM fallback';
         }
       } catch (dpmError) {
