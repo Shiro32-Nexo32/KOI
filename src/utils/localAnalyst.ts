@@ -96,7 +96,7 @@ function ladderDelta(player: PlayerProfile, cutoff: number): number | null {
   if (!latest) return null;
 
   const before = snapshotBefore(player, cutoff);
-  if (!before) return 0;
+  if (!before) return null;
 
   return ladderScore(latest.tier, latest.division, latest.lp) -
     ladderScore(before.tier, before.division, before.lp);
