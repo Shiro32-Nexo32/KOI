@@ -8,13 +8,13 @@ Tracker de las cinco cuentas de SoloQ monitorizadas de **KOI / MKOI**:
 - Supa
 - Alvaro
 
-La aplicación está diseñada como un **tracker de cuentas**, no como una ficha estática. El frontend muestra el último snapshot disponible y GitHub Actions sincroniza los datos automáticamente desde OP.GG.
+El proyecto está diseñado como un **tracker de cuentas**: el frontend muestra el último snapshot disponible y GitHub Actions sincroniza automáticamente desde OP.GG.
 
 ## Fuente de datos
 
 La fuente principal del tracker es **OP.GG**.
 
-El sincronizador usa endpoints internos que consume la propia web de OP.GG para obtener:
+El sincronizador utiliza el **servidor oficial MCP de OP.GG** para consultar las herramientas de perfil y partidas:
 
 - rango y LP;
 - victorias, derrotas y winrate;
@@ -27,7 +27,7 @@ El sincronizador usa endpoints internos que consume la propia web de OP.GG para 
 
 No se requiere una Riot API key para este flujo.
 
-**Importante:** el endpoint de OP.GG utilizado no está documentado por OP.GG como una API pública para desarrolladores. Está aislado en `scripts/sync_opgg.py` para poder sustituirlo si cambia.
+**Importante:** la web pública del tracker no llama directamente a una API de Riot. El workflow de GitHub Actions usa el servidor MCP oficial de OP.GG y publica un snapshot en `data/live.json`.
 
 ## Arquitectura
 
@@ -38,7 +38,7 @@ OP.GG
   ▼
 GitHub Actions
   │
-  │ genera
+  │ consulta MCP oficial
   ▼
 data/live.json
   │
@@ -85,7 +85,7 @@ Los commits que solo cambian `data/live.json` no vuelven a compilar toda la web;
 
 - `data/monitored.json` → las cinco cuentas monitorizadas.
 - `data/live.json` → último snapshot publicado.
-- `scripts/sync_opgg.py` → sincronizador OP.GG.
+- `scripts/sync_opgg.mjs` → sincronizador mediante el MCP oficial de OP.GG.
 - `src/data/initialPlayers.ts` → datos de respaldo iniciales.
 - `src/utils/ddragon.ts` → recursos de campeones, objetos y hechizos.
 - `server.ts` → servidor local opcional.
