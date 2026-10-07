@@ -49,6 +49,18 @@ export function getTierColor(tier: string): { bg: string; text: string; border: 
   }
 }
 
+
+export function formatRankLabel(tier: string, division: string, lp: number): string {
+  const normalizedTier = (tier || '').toUpperCase();
+  const normalizedDivision = (division || '').toUpperCase();
+  const points = Number.isFinite(Number(lp)) ? Number(lp) : 0;
+  const apexTier = normalizedTier === 'MASTER' || normalizedTier === 'GRANDMASTER' || normalizedTier === 'CHALLENGER';
+
+  if (apexTier) return `${normalizedTier} · ${points} LP`;
+  if (!normalizedTier || normalizedTier === 'UNRANKED') return 'Sin ranking';
+  return `${normalizedTier} ${normalizedDivision} · ${points} LP`;
+}
+
 export function getOpGgUrl(gameName: string, tagLine: string, region: string = 'na'): string {
   const reg = region.toLowerCase();
   const nameClean = encodeURIComponent(gameName.trim());
