@@ -1224,7 +1224,7 @@ async function fetchDpmSnapshotWithBrowser(account) {
       '--disable-dev-shm-usage',
       '--disable-extensions',
       '--ignore-certificate-errors',
-      '--virtual-time-budget=12000',
+      '--virtual-time-budget=60000',
       '--dump-dom',
       targetUrl + '?tracker_refresh=' + Date.now(),
     ],
@@ -1248,42 +1248,13 @@ async function fetchDpmSnapshotWithBrowser(account) {
 }
 
 async function fetchDpmSnapshot(account) {
-  try {
-    const browserSnapshot = await fetchDpmSnapshotWithBrowser(account);
-    console.log(
-      account.proName +
-        ': browser DPM candidate ' +
-        browserSnapshot.rank.tier +
-        ' ' +
-        browserSnapshot.rank.division +
-        ' ' +
-        browserSnapshot.rank.lp +
-        ' LP · ' +
-        browserSnapshot.matches.length +
-        ' partidas',
-    );
-
-    return browserSnapshot;
-  } catch (browserError) {
-    console.warn(
-      account.proName +
-        ': Chrome DPM fallback failed: ' +
-        (browserError instanceof Error ? browserError.message : String(browserError)),
-    );
-  }
-
   const targetUrl =
     'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
 
-  let lastError = null;
-
-  for (const url of [
-    targetUrl + '?nocache=' + Date.now(),
-    targetUrl,
-    'https://r.jina.ai/' + targetUrl,
-  ]) {
-    try {
-      const response = await fetch(url, {
+  const sources = [
+    async () => fetchDpmSnapshotWithBrowser(account),
+    async () => {
+      const response = await fetch(targetUrl + '?nocache=' + Date.now(), {
         headers: {
           'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)',
           Accept: 'text/html,text/plain,application/xhtml+xml',
@@ -1291,21 +1262,82 @@ async function fetchDpmSnapshot(account) {
           Pragma: 'no-cache',
         },
       });
-
-      if (!response.ok) throw new Error('HTTP ' + response.status);
-
+      if (!response.ok) throw new Error('DPM HTTP ' + response.status);
       const body = await response.text();
       const plain = htmlToPlainText(body);
       const rank = parseDpmRank(plain);
       const matches = parseDpmMatches(plain);
+      if (!rank) throw new Error('DPM HTTP ranking no parseable');
+      return { rank, matches, url: targetUrl, source: 'DPM.LOL HTTP' };
+    },
+    async () => {
+      const url =
+        'https://www.google.com/search?gbv=1&hl=en&num=10&q=' +
+        encodeURIComponent('"' + account.gameName + '#' + account.tagLine + '" DPM.LOL "Ranked Solo"');
+      const response = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131 Safari/537.36',
+          Accept: 'text/html,application/xhtml+xml',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Cache-Control': 'no-cache',
+        },
+      });
+      if (!response.ok) throw new Error('Google HTTP ' + response.status);
+      const plain = htmlToPlainText(await response.text());
+      const rank = parseDpmRank(plain);
+      const matches = parseDpmMatches(plain);
+      if (!rank) throw new Error('Google no devolvió ranking DPM');
+      return { rank, matches, url, source: 'Google DPM search' };
+    },
+  ];
 
-      if (!rank) throw new Error('ranking no parseable');
+  let best = null;
+  let lastError = null;
 
-      return { rank, matches, url, source: 'DPM.LOL HTTP' };
+  for (const source of sources) {
+    try {
+      const candidate = await source();
+      console.log(
+        account.proName +
+          ': DPM source candidate ' +
+          candidate.rank.tier +
+          ' ' +
+          candidate.rank.division +
+          ' ' +
+          candidate.rank.lp +
+          ' LP · ' +
+          candidate.matches.length +
+          ' partidas · ' +
+          (candidate.source || 'browser'),
+      );
+
+      if (!best) {
+        best = candidate;
+        continue;
+      }
+
+      const rankChanged =
+        candidate.rank.tier !== best.rank.tier ||
+        candidate.rank.division !== best.rank.division ||
+        candidate.rank.lp !== best.rank.lp;
+
+      const bestLatest = best.matches[0]?.gameCreation ?? 0;
+      const candidateLatest = candidate.matches[0]?.gameCreation ?? 0;
+
+      if (rankChanged || candidateLatest > bestLatest + 5 * 60 * 1000) {
+        best = candidate;
+      }
     } catch (error) {
       lastError = error;
+      console.warn(
+        account.proName +
+          ': DPM source failed: ' +
+          (error instanceof Error ? error.message : String(error)),
+      );
     }
   }
+
+  if (best) return best;
 
   throw new Error(
     'DPM no devolvió un perfil/ranking parseable para ' +
