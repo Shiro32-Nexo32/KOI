@@ -453,6 +453,13 @@ function findRank(payload) {
   return null;
 }
 
+function extractProfileIconId(payload) {
+  const summoner = payload?.data?.summoner ?? payload?.summoner ?? null;
+  const url = String(summoner?.profile_image_url ?? '');
+  const match = url.match(/profileIcon(\d+)\.jpg/i);
+  return match ? int(match[1]) : null;
+}
+
 function extractIdentifier(payload) {
   let found = null;
   walk(payload, (object) => {
@@ -731,7 +738,7 @@ function toMatch(game, role) {
         game.visionScore,
     ),
     spells: Array.isArray(player.spells)
-      ? player.spells.slice(0, 2).map(String)
+      ? player.spells.slice(0, 2).map(spellNameFromId)
       : ['', ''],
     items: Array.isArray(player.items)
       ? player.items.slice(0, 7).map((item) =>
@@ -744,6 +751,28 @@ function toMatch(game, role) {
       : [],
     tags: [],
   };
+}
+
+function spellNameFromId(value) {
+  const id = int(value);
+  const map = {
+    1: 'SummonerBoost',
+    3: 'SummonerExhaust',
+    4: 'SummonerFlash',
+    6: 'SummonerHaste',
+    7: 'SummonerHeal',
+    11: 'SummonerSmite',
+    12: 'SummonerTeleport',
+    13: 'SummonerMana',
+    14: 'SummonerDot',
+    21: 'SummonerBarrier',
+    30: 'SummonerPoroRecall',
+    31: 'SummonerPoroThrow',
+    32: 'SummonerSnowball',
+    39: 'SummonerSnowball',
+    54: 'SummonerFlash',
+  };
+  return map[id] ?? String(value ?? '');
 }
 
 function championStats(matches) {
@@ -803,7 +832,7 @@ function streak(matches) {
   return first ? count : -count;
 }
 
-function playerFrom(account, rank, matches, previous) {
+function playerFrom(account, rank, matches, previous, profilePayload) {
   const recent = matches.slice(0, 20);
   const average = (field) =>
     Number(
@@ -824,7 +853,7 @@ function playerFrom(account, rank, matches, previous) {
     region: 'NA',
     team: 'KOI / MKOI',
     role: account.role,
-    profileIconId: previous?.profileIconId ?? 588,
+    profileIconId: extractProfileIconId(profilePayload) ?? previous?.profileIconId ?? 588,
     tier: rank.tier,
     division: rank.division,
     lp: rank.lp,
@@ -1025,6 +1054,7 @@ async function main() {
           rank,
           matches,
           previousMap.get(account.id),
+          profilePayload,
         ),
       );
 
