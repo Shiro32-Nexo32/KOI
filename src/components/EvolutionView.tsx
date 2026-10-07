@@ -28,7 +28,7 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
       <div className="border-b border-slate-800 pb-4">
         <h2 className="text-xl font-bold text-white">Evolución Temporal de LP y Snapshots</h2>
         <p className="text-xs text-slate-400">
-          Histórico secuencial de progresión en el ladder (D2 → D1 → Master) registrado en cada actualización de bootcamp
+          Histórico secuencial del ladder. Se crea un snapshot cuando la sincronización detecta un cambio de rango o LP.
         </p>
       </div>
 
@@ -39,6 +39,7 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
           const tierStyle = getTierColor(p.tier);
           const firstSnap = p.snapshots[0];
           const lastSnap = p.snapshots[p.snapshots.length - 1];
+          const delta = firstSnap && lastSnap ? ladderValue(lastSnap) - ladderValue(firstSnap) : 0;
 
           return (
             <div
@@ -64,12 +65,15 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
               {/* Trajectory pills */}
               <div className="mt-3 flex items-center gap-1 font-mono text-[11px] text-slate-400">
                 <span className="text-slate-500">
-                  {firstSnap ? `${firstSnap.division} ${firstSnap.lp} LP` : 'Inicio'}
+                  {firstSnap ? `${firstSnap.tier} ${firstSnap.division} ${firstSnap.lp}` : 'Inicio'}
                 </span>
                 <ArrowRight className="h-3 w-3 text-amber-500" />
                 <span className="font-bold text-emerald-400">
-                  {lastSnap ? `${lastSnap.division} ${lastSnap.lp} LP` : `${p.lp} LP`}
+                  {lastSnap ? `${lastSnap.tier} ${lastSnap.division} ${lastSnap.lp}` : `${p.tier} ${p.lp}`}
                 </span>
+              </div>
+              <div className="mt-2 text-[10px] font-mono text-slate-600">
+                {p.snapshots.length > 1 ? `Cambio registrado: ${delta >= 0 ? '+' : ''}${delta} puntos de ladder` : 'Primer snapshot registrado'}
               </div>
             </div>
           );
@@ -160,3 +164,21 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
     </div>
   );
 };
+
+
+function ladderValue(snapshot: LPSnapshot): number {
+  const tierWeight: Record<string, number> = {
+    IRON: 1000,
+    BRONZE: 2000,
+    SILVER: 3000,
+    GOLD: 4000,
+    PLATINUM: 5000,
+    EMERALD: 6000,
+    DIAMOND: 7000,
+    MASTER: 8000,
+    GRANDMASTER: 9000,
+    CHALLENGER: 10000,
+  };
+  const divisionWeight: Record<string, number> = { I: 400, II: 300, III: 200, IV: 100 };
+  return (tierWeight[snapshot.tier] || 0) + (divisionWeight[snapshot.division] || 0) + snapshot.lp;
+}
