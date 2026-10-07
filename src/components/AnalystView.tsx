@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Bot, Check, Copy, Send, Sparkles } from 'lucide-react';
+import { BarChart3, Check, Copy, MessageSquareText, Send } from 'lucide-react';
 import { AnalystChatMessage, PlayerProfile } from '../types/lol';
 import { getLocalAnalystAnswer } from '../utils/localAnalyst';
 
@@ -38,12 +38,12 @@ function buildWelcome(players: PlayerProfile[]): AnalystChatMessage {
   return {
     id: 'welcome',
     role: 'assistant',
-    content: `Soy el analista estadístico del tracker de **KOI / MKOI**.
+    content: `Consulta el estado actual de **KOI / MKOI** con preguntas rápidas.
 
-Estado actual de las cinco cuentas, ordenado por forma:
-${lines.join('\n')}
+Las respuestas salen de reglas predefinidas y de los datos sincronizados desde OP.GG. No hay generación de texto libre: cada respuesta es un cálculo del tracker.
 
-Puedo comparar ladder, forma, KDA, rachas, campeones y últimas partidas. Los números se calculan con los datos que el tracker haya recibido de OP.GG.`,
+Estado actual, ordenado por forma:
+${lines.join('\n')}`,
     timestamp: Date.now(),
     suggestedFollowUps: [
       'Reporte de los 5',
@@ -78,26 +78,7 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
     setIsLoading(true);
 
     try {
-      let reply = '';
-
-      try {
-        const response = await fetch('/api/analyst/ask', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ question }),
-        });
-
-        if (response.ok) {
-          const payload = (await response.json()) as { answer?: string };
-          if (payload.answer?.trim()) reply = payload.answer.trim();
-        }
-      } catch {
-        // GitHub Pages no tiene backend; se usa el analista local.
-      }
-
-      if (!reply) {
-        reply = getLocalAnalystAnswer(question, players);
-      }
+      const reply = getLocalAnalystAnswer(question, players);
 
       setMessages((current) => [
         ...current,
@@ -117,23 +98,35 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
   const generateFollowUps = (question: string): string[] => {
     const lower = question.toLowerCase();
 
-    if (lower.includes('reporte de los 5') || lower.includes('como van') || lower.includes('cómo van')) {
+    if (lower.includes('hora') || lower.includes('24') || lower.includes('hoy')) {
       return [
-        '¿Cómo va la botlane (Supa y Alvaro)?',
-        '¿Quién lidera el ladder?',
-        '¿Quién tiene mejor KDA?',
+        '¿Quién va líder ahora?',
+        '¿Quién ha subido o bajado ladder hoy?',
+        '¿Quién ha ganado más partidas hoy?',
       ];
     }
 
     if (lower.includes('jojo') || lower.includes('jojopyun')) {
-      return ['¿Cómo va Supa?', '¿Cómo va Myrwn?', '¿Quién lidera la forma?'];
+      return [
+        '¿Qué campeones juega Jojopyun?',
+        '¿Cómo ha ido Jojopyun en las últimas 24 horas?',
+        '¿Quién va líder ahora?',
+      ];
     }
 
-    if (lower.includes('bot') || lower.includes('supa') || lower.includes('alvaro')) {
-      return ['¿Cómo va Elyoya?', '¿Cómo va Myrwn?', 'Reporte de los 5'];
+    if (lower.includes('supa') || lower.includes('alvaro') || lower.includes('bot')) {
+      return [
+        '¿Cómo va la botlane?',
+        '¿Quién tiene mejor KDA?',
+        '¿Cómo ha ido el grupo en la última hora?',
+      ];
     }
 
-    return ['Reporte de los 5', '¿Cómo va Myrwn?', '¿Quién tiene mejor racha y KDA?'];
+    return [
+      '¿Quién va líder ahora?',
+      '¿Cómo ha ido el grupo en la última hora?',
+      '¿Cómo ha ido el grupo en las últimas 24 horas?',
+    ];
   };
 
   const copyToClipboard = (text: string, id: string) => {
@@ -148,34 +141,34 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
-              <Bot className="h-5 w-5" />
+              <BarChart3 className="h-5 w-5" />
             </div>
             <div>
               <h2 className="text-lg font-bold text-white">Analista del tracker</h2>
               <p className="text-xs text-slate-500">
-                Respuestas calculadas sobre las cinco cuentas y sus partidas sincronizadas.
+                Respuestas predefinidas calculadas con las cinco cuentas y sus partidas sincronizadas.
               </p>
             </div>
           </div>
 
           <div className="flex flex-wrap gap-2">
             <button
-              onClick={() => handleSend('Reporte de los 5')}
+              onClick={() => handleSend('¿Quién va líder ahora?')}
               disabled={isLoading}
               className="flex items-center gap-1.5 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3 py-1.5 text-xs font-semibold text-amber-300 transition hover:bg-amber-500/20 disabled:opacity-50"
             >
-              <Sparkles className="h-3.5 w-3.5" />
+              <MessageSquareText className="h-3.5 w-3.5" />
               Reporte de los 5
             </button>
             <button
-              onClick={() => handleSend('¿Cómo va la botlane (Supa y Alvaro)?')}
+              onClick={() => handleSend('¿Cómo ha ido el grupo en la última hora?')}
               disabled={isLoading}
               className="rounded-lg border border-slate-700 bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:bg-slate-700 disabled:opacity-50"
             >
               Botlane
             </button>
             <button
-              onClick={() => handleSend('¿Quién tiene mejor racha y KDA?')}
+              onClick={() => handleSend('¿Cómo ha ido el grupo en las últimas 24 horas?')}
               disabled={isLoading}
               className="rounded-lg border border-slate-700 bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:bg-slate-700 disabled:opacity-50"
             >
@@ -273,7 +266,7 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
         <input
           value={inputQuestion}
           onChange={(event) => setInputQuestion(event.target.value)}
-          placeholder="Pregunta por rango, LP, KDA, racha o campeones..."
+          placeholder="Escribe una pregunta o elige una consulta rápida..."
           disabled={isLoading}
           className="flex-1 bg-transparent px-4 py-2 text-sm text-white outline-none placeholder:text-slate-600"
         />
