@@ -465,9 +465,22 @@ function extractProfileIconId(payload) {
 }
 
 function extractIdentifier(payload) {
-  let found = null;
+  const candidates = [];
+
+  if (typeof payload === 'string') {
+    const match = payload.match(
+      /Summoner\("([^"]*)","([^"]*)","([^"]*)",(\d+),"([^"]*)","([^"]*)","([^"]*)","([^"]*)","([^"]*)","([^"]*)",/,
+    );
+
+    if (match) {
+      // OP.GG text serialization order:
+      // acct_id, game_name, id, level, name, profile_image_url,
+      // puuid, region, summoner_id, tagline, updated_at.
+      candidates.push(match[9], match[7], match[3], match[1]);
+    }
+  }
+
   walk(payload, (object) => {
-    if (found) return;
     for (const key of [
       'summoner_id',
       'summonerId',
@@ -476,12 +489,17 @@ function extractIdentifier(payload) {
       'id',
     ]) {
       if (object[key] !== undefined && object[key] !== null) {
-        found = String(object[key]);
-        break;
+        candidates.push(String(object[key]));
       }
     }
   });
-  return found;
+
+  return (
+    candidates.find((value) => String(value).length >= 40) ||
+    candidates.find((value) => String(value).length >= 20) ||
+    candidates[0] ||
+    null
+  );
 }
 
 function parseGameHistoryText(text) {
