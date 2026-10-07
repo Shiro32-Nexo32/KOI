@@ -688,7 +688,7 @@ function toMatch(game, role) {
         game.championId ??
         '0',
     ),
-    champLevel: int(stats.level ?? stats.champ_level ?? stats.champLevel),
+    champLevel: int(stats.champion_level ?? stats.level ?? stats.champ_level ?? stats.champLevel),
     role: String(
       player.position ??
         player.role ??
@@ -715,7 +715,9 @@ function toMatch(game, role) {
       ).toFixed(1),
     ),
     damageDealt: int(
-      stats.total_damage_to_champions ??
+      stats.total_damage_dealt_to_champions ??
+        stats.totalDamageDealtToChampions ??
+        stats.total_damage_to_champions ??
         stats.damage_to_champions ??
         stats.damage ??
         game.damageDealt,
