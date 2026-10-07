@@ -1513,6 +1513,11 @@ async function main() {
       }
 
       const identifier = extractIdentifier(profilePayload);
+      console.log(
+        account.proName +
+          ': OP.GG identifier length=' +
+          String(identifier || '').length,
+      );
 
       const matchesArgs = buildArgs(
         matchesTool,
