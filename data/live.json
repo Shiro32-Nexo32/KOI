@@ -1,28 +1,19 @@
 {
-  "generatedAt": "2026-10-07T17:32:29Z",
+  "generatedAt": null,
   "source": "OP.GG",
-  "sourceType": "opgg-undocumented-api",
-  "status": "partial",
+  "sourceType": "official-opgg-mcp",
+  "status": "waiting_for_first_sync",
   "players": [],
-  "errors": [
-    "Myrwn: HTTP Error 404: Not Found",
-    "Elyoya: HTTP Error 404: Not Found",
-    "Jojopyun: HTTP Error 404: Not Found",
-    "Supa: HTTP Error 404: Not Found",
-    "Alvaro: HTTP Error 404: Not Found"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
     "successfulCount": 0,
-    "summonerIds": {
-      "myrwn": "121694075",
-      "elyoya": "121694064",
-      "jojopyun": "121694117",
-      "supa": "121694076",
-      "alvaro": "121694077"
-    },
-    "message": "Datos sincronizados automáticamente desde OP.GG. El endpoint utilizado es público pero no documentado como API para terceros."
+    "mcpTools": [
+      "lol_get_summoner_profile",
+      "lol_list_summoner_matches"
+    ],
+    "message": "Esperando la primera sincronización mediante el servidor oficial de OP.GG MCP."
   }
 }
