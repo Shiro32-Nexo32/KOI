@@ -1,10 +1,10 @@
-// Data Dragon CDN helpers for League of Legends assets (Patch 15.5.1)
+// Data Dragon CDN helpers for League of Legends assets (Patch 16.20.1)
 
-const DDRAGON_VERSION = '15.5.1';
+const DDRAGON_VERSION = '16.20.1';
 const DDRAGON_BASE = `https://ddragon.leagueoflegends.com/cdn/${DDRAGON_VERSION}`;
 
 export function getChampionIconUrl(championIdOrName: string): string {
-  if (!championIdOrName) return 'https://ddragon.leagueoflegends.com/cdn/15.5.1/img/champion/Ahri.png';
+  if (!championIdOrName) return 'https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Ahri.png';
   // Normalize known edge cases
   const aliases: Record<string, string> = {
     "Kai'Sa": 'Kaisa',
@@ -53,7 +53,7 @@ export function getOpGgUrl(gameName: string, tagLine: string, region: string = '
   const reg = region.toLowerCase();
   const nameClean = encodeURIComponent(gameName.trim());
   const tagClean = encodeURIComponent(tagLine.trim());
-  return `https://www.op.gg/summoners/${reg}/${nameClean}-${tagClean}`;
+  return `https://op.gg/lol/summoners/${reg}/${nameClean}-${tagClean}`;
 }
 
 export function getDpmLolUrl(gameName: string, tagLine: string): string {
@@ -67,5 +67,5 @@ export function getOpGgMultiSearchUrl(players: { gameName: string; tagLine: stri
   const summonersQuery = players
     .map((p) => `${encodeURIComponent(p.gameName.trim())}%23${encodeURIComponent(p.tagLine.trim())}`)
     .join(',');
-  return `https://www.op.gg/multisearch/${reg}?summoners=${summonersQuery}`;
+  return `https://op.gg/lol/multisearch/${reg}?summoners=${summonersQuery}`;
 }
