@@ -6,8 +6,7 @@ on:
     paths-ignore:
       - "data/live.json"
   schedule:
-    # Offset the schedule to avoid the busiest quarter-hour boundaries.
-    - cron: "7,22,37,52 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
