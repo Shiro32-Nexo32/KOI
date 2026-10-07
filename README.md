@@ -101,3 +101,7 @@ El tracker conserva snapshots de LP cuando detecta cambios de rango o LP. El his
 KOI Tracker isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
 
 Los logotipos, nombres y recursos de League of Legends siguen perteneciendo a sus respectivos titulares.
+
+## Consultas del tracker
+
+La pestaña de análisis no utiliza IA generativa ni servicios externos de generación de texto. Las respuestas son deterministas: reconocen preguntas habituales y calculan la respuesta a partir de los datos presentes en `data/live.json`. Incluye consultas sobre líder de rango, líder de forma, actividad de la última hora o de las últimas 24 horas, cambios de ladder registrados, rendimiento individual, botlane, KDA, rachas, campeones y últimas partidas.
