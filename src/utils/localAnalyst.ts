@@ -228,6 +228,30 @@ export function getLocalAnalystAnswer(question: string, players: PlayerProfile[]
   const oneHour = q.includes('ultima hora') || q.includes('ultimos 60 minutos') || q.includes('ultimos 60 min');
   const oneDay = q.includes('ultimo dia') || q.includes('ultimas 24 horas') || q.includes('24 horas') || q.includes('hoy');
 
+  const asksLadderChange =
+    q.includes('ha perdido lp') ||
+    q.includes('ha subido lp') ||
+    q.includes('quien subio') ||
+    q.includes('quien bajo') ||
+    q.includes('cambio de lp') ||
+    q.includes('cambio de ladder');
+
+  if (oneDay && asksLadderChange) {
+    const cutoff = Date.now() - 24 * 60 * 60 * 1000;
+    const changes = players
+      .map((player) => ({ player, delta: ladderDelta(player, cutoff) }))
+      .filter((row) => row.delta !== null)
+      .sort((a, b) => (b.delta || 0) - (a.delta || 0));
+
+    const positive = changes.find((row) => (row.delta || 0) > 0);
+    const negative = [...changes].reverse().find((row) => (row.delta || 0) < 0);
+
+    return '**Cambios de ladder en las últimas 24 horas**\\n\\n' +
+      (positive ? 'Más subida registrada: **' + positive.player.proName + ' ' + signed(positive.delta || 0) + ' puntos**.\\n' : 'No hay una subida registrada.\\n') +
+      (negative ? 'Más bajada registrada: **' + negative.player.proName + ' ' + signed(negative.delta || 0) + ' puntos**.\\n\\n' : 'No hay una bajada registrada.\\n\\n') +
+      'Se calcula con los snapshots publicados por el tracker; no es MMR oculto.';
+  }
+
   if ((oneHour || oneDay) && named.length === 1) {
     return playerWindow(named[0], oneHour ? 1 : 24);
   }
