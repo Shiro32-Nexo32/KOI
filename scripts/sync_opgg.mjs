@@ -356,17 +356,19 @@ function resultData(result) {
 function findRank(payload) {
   if (typeof payload === 'string') {
     const match = payload.match(
-      /LeagueStat\("SOLORANKED",TierInfo\("([^"]+)",(null|[^,]+),(\d+)\),(\d+),(\d+),null\)/,
+      /SOLORANKED[\s\S]*?TierInfo\("([^"]+)",\s*(null|\\d+),\s*(\\d+)\)[\s\S]*?(\\d+),\s*(\\d+),\s*null\)/,
     );
 
     if (match) {
-      const [, tier, division, lp, wins, losses] = match;
-      const normalizedDivision =
-        division === 'null' ? 'I' : String(division).trim().toUpperCase();
+      const [, tier, rawDivision, lp, wins, losses] = match;
+      const divisionMap = { '1': 'I', '2': 'II', '3': 'III', '4': 'IV' };
+      const division =
+        divisionMap[String(rawDivision)] ??
+        (rawDivision === 'null' ? 'I' : String(rawDivision).trim().toUpperCase());
 
       return {
         tier: String(tier).toUpperCase(),
-        division: normalizedDivision,
+        division,
         lp: int(lp),
         wins: int(wins),
         losses: int(losses),
@@ -400,12 +402,13 @@ function findRank(payload) {
 
   if (solo?.tier_info) {
     const info = solo.tier_info;
+    const divisionMap = { 1: 'I', 2: 'II', 3: 'III', 4: 'IV' };
     const wins = int(solo.win);
     const losses = int(solo.lose);
 
     return {
       tier: String(info.tier ?? 'UNRANKED').toUpperCase(),
-      division: String(info.division ?? 'I').toUpperCase(),
+      division: divisionMap[info.division] ?? String(info.division ?? 'I').toUpperCase(),
       lp: int(info.lp),
       wins,
       losses,
@@ -415,51 +418,7 @@ function findRank(payload) {
     };
   }
 
-  // Conservative fallback for future OP.GG schema variants.
-  const candidates = [];
-  walk(payload, (object) => {
-    const info =
-      object?.solo_tier_info ??
-      object?.soloTierInfo ??
-      object?.tier_info ??
-      object?.tierInfo;
-
-    if (
-      info &&
-      typeof info === 'object' &&
-      (info.lp ?? info.league_points ?? info.leaguePoints) !== undefined
-    ) {
-      candidates.push({
-        tier: info.tier ?? info.tier_name ?? object.tier,
-        division:
-          info.division ??
-          info.rank ??
-          object.division ??
-          object.rank ??
-          'I',
-        lp: info.lp ?? info.league_points ?? info.leaguePoints,
-        wins: info.wins ?? object.wins ?? object.win ?? 0,
-        losses: info.losses ?? object.losses ?? object.lose ?? 0,
-      });
-    }
-  });
-
-  const chosen = candidates[0];
-  if (!chosen) return null;
-
-  const wins = int(chosen.wins);
-  const losses = int(chosen.losses);
-
-  return {
-    tier: String(chosen.tier).toUpperCase(),
-    division: String(chosen.division).toUpperCase(),
-    lp: int(chosen.lp),
-    wins,
-    losses,
-    winrate: Number(
-      ((wins / Math.max(1, wins + losses)) * 100).toFixed(1),
-    ),
-  };
+  return null;
 }
 
 function extractIdentifier(payload) {
