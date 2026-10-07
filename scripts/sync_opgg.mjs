@@ -354,14 +354,52 @@ function resultData(result) {
 }
 
 function findRank(payload) {
-  const candidates = [];
+  const summoner =
+    payload?.data?.summoner ??
+    payload?.summoner ??
+    payload?.data?.data?.summoner ??
+    null;
 
+  const leagueStats = Array.isArray(summoner?.league_stats)
+    ? summoner.league_stats
+    : Array.isArray(summoner?.leagueStats)
+      ? summoner.leagueStats
+      : [];
+
+  const solo =
+    leagueStats.find((entry) =>
+      String(entry?.game_type ?? '').toUpperCase().includes('SOLORANKED'),
+    ) ??
+    leagueStats.find((entry) =>
+      String(entry?.game_type ?? '').toUpperCase().includes('SOLO'),
+    ) ??
+    leagueStats.find((entry) => entry?.tier_info);
+
+  if (solo?.tier_info) {
+    const info = solo.tier_info;
+    const wins = int(solo.win);
+    const losses = int(solo.lose);
+
+    return {
+      tier: String(info.tier ?? 'UNRANKED').toUpperCase(),
+      division: String(info.division ?? 'I').toUpperCase(),
+      lp: int(info.lp),
+      wins,
+      losses,
+      winrate: Number(
+        ((wins / Math.max(1, wins + losses)) * 100).toFixed(1),
+      ),
+    };
+  }
+
+  // Conservative fallback for future OP.GG schema variants.
+  const candidates = [];
   walk(payload, (object) => {
     const info =
-      object.solo_tier_info ??
-      object.soloTierInfo ??
-      object.tier_info ??
-      object.tierInfo;
+      object?.solo_tier_info ??
+      object?.soloTierInfo ??
+      object?.tier_info ??
+      object?.tierInfo;
 
     if (
       info &&
@@ -381,37 +419,9 @@ function findRank(payload) {
         losses: info.losses ?? object.losses ?? object.lose ?? 0,
       });
     }
-
-    if (
-      object.tier !== undefined &&
-      (object.lp ?? object.league_points ?? object.leaguePoints) !== undefined
-    ) {
-      candidates.push({
-        tier: object.tier,
-        division: object.division ?? object.rank ?? 'I',
-        lp: object.lp ?? object.league_points ?? object.leaguePoints,
-        wins: object.wins ?? object.win ?? 0,
-        losses: object.losses ?? object.lose ?? 0,
-      });
-    }
   });
 
-  const chosen =
-    candidates.find((item) =>
-      [
-        'CHALLENGER',
-        'GRANDMASTER',
-        'MASTER',
-        'DIAMOND',
-        'EMERALD',
-        'PLATINUM',
-        'GOLD',
-        'SILVER',
-        'BRONZE',
-        'IRON',
-      ].includes(String(item.tier).toUpperCase()),
-    ) ?? candidates[0];
-
+  const chosen = candidates[0];
   if (!chosen) return null;
 
   const wins = int(chosen.wins);
@@ -882,6 +892,10 @@ async function main() {
       );
 
       const profilePayload = resultData(profileResult);
+      if (account.id === 'myrwn') {
+        const profileSummoner = profilePayload?.data?.summoner ?? profilePayload?.summoner ?? null;
+        console.log('PROFILE_DEBUG_SUMMONER=', JSON.stringify(profileSummoner?.league_stats ?? profileSummoner ?? profilePayload).slice(0, 12000));
+      }
       const rank = findRank(profilePayload);
 
       if (!rank) {
