@@ -1,6 +1,8 @@
 {
-  "name": "LoL Bootcamp Tracker & Pro Analyst",
-  "description": "Live tracker and expert analytical reports for pro League of Legends bootcamps, monitoring rank, LP, last 20 rankeds, champion pools, and performance trends.",
+  "name": "KOI Tracker · MKOI",
+  "description": "Tracker de las cinco cuentas de SoloQ de KOI / MKOI con sincronización automática desde OP.GG.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
