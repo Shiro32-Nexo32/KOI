@@ -12,8 +12,8 @@ import { MatchesView } from './components/MatchesView';
 import { EvolutionView } from './components/EvolutionView';
 import { AnalystView } from './components/AnalystView';
 import { Footer } from './components/Footer';
-import { INITIAL_PLAYERS, INITIAL_TEAM_REPORT } from './data/initialPlayers';
-import { LiveTrackerPayload, PlayerProfile, TeamOverviewReport } from './types/lol';
+import { INITIAL_PLAYERS } from './data/initialPlayers';
+import { LiveTrackerPayload, PlayerProfile } from './types/lol';
 
 const LIVE_DATA_URL =
   'https://raw.githubusercontent.com/Shiro32-Nexo32/KOI/main/data/live.json';
@@ -61,7 +61,6 @@ export default function App() {
   const cached = readCachedPlayers();
   const [activeTab, setActiveTab] = useState<NavTab>('overview');
   const [players, setPlayers] = useState<PlayerProfile[]>(cached.players);
-  const [report] = useState<TeamOverviewReport>(INITIAL_TEAM_REPORT);
   const [selectedPlayerId, setSelectedPlayerId] = useState<string>('jojopyun');
   const [lastUpdated, setLastUpdated] = useState<number | null>(cached.generatedAt);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
@@ -202,7 +201,6 @@ export default function App() {
         {activeTab === 'overview' && (
           <OverviewView
             players={players}
-            report={report}
             onSelectPlayer={handleSelectPlayerFromOverview}
             onNavigateToAnalyst={() => setActiveTab('analyst')}
             sourceStatus={sourceStatus}
