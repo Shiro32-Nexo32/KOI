@@ -173,7 +173,7 @@ Puedes pedirme un **"Reporte de los 5"**, preguntarme por un jugador concreto (*
               disabled={isLoading}
               className="rounded-lg border border-slate-700 bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:bg-slate-700 disabled:opacity-50"
             >
-              Botlane (28-3)
+              Botlane
             </button>
             <button
               onClick={() => handleSend('¿Quién tiene mejor racha y KDA?')}
