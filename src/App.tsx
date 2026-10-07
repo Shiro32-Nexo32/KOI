@@ -3,121 +3,160 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
+import { CheckCircle2, DatabaseZap } from 'lucide-react';
 import { Navbar, NavTab } from './components/Navbar';
 import { OverviewView } from './components/OverviewView';
 import { PlayersView } from './components/PlayersView';
 import { MatchesView } from './components/MatchesView';
 import { EvolutionView } from './components/EvolutionView';
 import { AnalystView } from './components/AnalystView';
-import { SimulateMatchModal } from './components/SimulateMatchModal';
 import { EditAccountModal } from './components/EditAccountModal';
 import { Footer } from './components/Footer';
 import { INITIAL_PLAYERS, INITIAL_TEAM_REPORT } from './data/initialPlayers';
-import { PlayerProfile, TeamOverviewReport } from './types/lol';
-import { CheckCircle2 } from 'lucide-react';
+import { LiveTrackerPayload, PlayerProfile, TeamOverviewReport } from './types/lol';
+
+const LIVE_DATA_URL =
+  'https://raw.githubusercontent.com/Shiro32-Nexo32/KOI/main/data/live.json';
+const LOCAL_CACHE_KEY = 'koi_tracker_live_cache_v1';
+
+type SourceStatus = 'live' | 'cached' | 'seed';
 
 function clonePlayers(source: PlayerProfile[]): PlayerProfile[] {
   return JSON.parse(JSON.stringify(source)) as PlayerProfile[];
 }
 
-function loadInitialPlayers(): PlayerProfile[] {
-  if (typeof window === 'undefined') return clonePlayers(INITIAL_PLAYERS);
+function readCachedPlayers(): { players: PlayerProfile[]; generatedAt: number | null } {
+  if (typeof window === 'undefined') return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null };
+
   try {
-    const raw = localStorage.getItem('lol_bootcamp_players');
-    if (raw) {
-      const parsed = JSON.parse(raw);
-      if (Array.isArray(parsed) && parsed.length > 0) return parsed as PlayerProfile[];
+    const raw = localStorage.getItem(LOCAL_CACHE_KEY);
+    if (!raw) return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null };
+
+    const cached = JSON.parse(raw) as LiveTrackerPayload;
+    if (Array.isArray(cached.players) && cached.players.length === 5) {
+      return {
+        players: cached.players,
+        generatedAt: cached.generatedAt ? Date.parse(cached.generatedAt) : null,
+      };
     }
   } catch (error) {
-    console.warn('No se pudo leer la caché local de jugadores:', error);
+    console.warn('No se pudo leer la caché del tracker:', error);
   }
-  return clonePlayers(INITIAL_PLAYERS);
+
+  return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null };
+}
+
+function formatSyncAge(timestamp: number | null): string {
+  if (!timestamp) return 'sin sincronización confirmada';
+  const diff = Math.max(0, Date.now() - timestamp);
+  const mins = Math.floor(diff / 60000);
+  if (mins < 1) return 'hace menos de 1 min';
+  if (mins < 60) return `hace ${mins} min`;
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return `hace ${hours} h`;
+  return `hace ${Math.floor(hours / 24)} d`;
 }
 
 export default function App() {
+  const cached = readCachedPlayers();
   const [activeTab, setActiveTab] = useState<NavTab>('overview');
-  const [players, setPlayers] = useState<PlayerProfile[]>(loadInitialPlayers);
-  const [report, setReport] = useState<TeamOverviewReport>(INITIAL_TEAM_REPORT);
+  const [players, setPlayers] = useState<PlayerProfile[]>(cached.players);
+  const [report] = useState<TeamOverviewReport>(INITIAL_TEAM_REPORT);
   const [selectedPlayerId, setSelectedPlayerId] = useState<string>('jojopyun');
-  const [lastUpdated, setLastUpdated] = useState<number>(Date.now());
-  const [hasRiotKey, setHasRiotKey] = useState<boolean>(false);
+  const [lastUpdated, setLastUpdated] = useState<number | null>(cached.generatedAt);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
-  const [isSimulateModalOpen, setIsSimulateModalOpen] = useState<boolean>(false);
   const [editingPlayer, setEditingPlayer] = useState<PlayerProfile | null>(null);
   const [analystInitialPrompt, setAnalystInitialPrompt] = useState<string>('');
-  const [autoRefresh, setAutoRefresh] = useState<boolean>(false);
-  const [toastMessage, setToastMessage] = useState<{ text: string; type: 'success' | 'info' } | null>(null);
-
-  // Fetch initial data from server API
-  const fetchPlayersData = async (silent = false) => {
-    try {
-      const res = await fetch('/api/players');
-      if (res.ok) {
-        const data = await res.json();
-        if (data.players) setPlayers(data.players);
-        if (data.latestReport) setReport(data.latestReport);
-        if (data.lastUpdated) setLastUpdated(data.lastUpdated);
-        setHasRiotKey(Boolean(data.hasRiotApiKey));
-        if (silent) {
-          // quiet auto-update
-        }
-      }
-    } catch (err) {
-      console.warn('API no disponible; usando datos locales.', err);
-    }
-  };
-
-  useEffect(() => {
-    fetchPlayersData();
-  }, []);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem('lol_bootcamp_players', JSON.stringify(players));
-    } catch (error) {
-      console.warn('No se pudieron guardar los jugadores en caché local:', error);
-    }
-  }, [players]);
-
-  // Background Auto-Refresh Interval
-  useEffect(() => {
-    if (!autoRefresh) return;
-    const interval = setInterval(() => {
-      fetchPlayersData(true);
-    }, 60000); // Poll every 60s
-    return () => clearInterval(interval);
-  }, [autoRefresh]);
+  const [autoRefresh, setAutoRefresh] = useState<boolean>(true);
+  const [sourceStatus, setSourceStatus] = useState<SourceStatus>(
+    cached.generatedAt ? 'cached' : 'seed',
+  );
+  const [toastMessage, setToastMessage] = useState<{
+    text: string;
+    type: 'success' | 'info';
+  } | null>(null);
 
   const showToast = (text: string, type: 'success' | 'info' = 'success') => {
     setToastMessage({ text, type });
-    setTimeout(() => {
-      setToastMessage(null);
-    }, 3500);
+    window.setTimeout(() => setToastMessage(null), 3500);
   };
+
+  const applyLivePayload = useCallback((payload: LiveTrackerPayload): boolean => {
+    if (!Array.isArray(payload.players) || payload.players.length !== 5) return false;
+
+    setPlayers(payload.players);
+    setSourceStatus('live');
+
+    const parsedTime = payload.generatedAt ? Date.parse(payload.generatedAt) : NaN;
+    if (Number.isFinite(parsedTime)) {
+      setLastUpdated(parsedTime);
+    }
+
+    try {
+      localStorage.setItem(LOCAL_CACHE_KEY, JSON.stringify(payload));
+    } catch (error) {
+      console.warn('No se pudo guardar la caché del tracker:', error);
+    }
+
+    return true;
+  }, []);
+
+  const fetchLiveData = useCallback(
+    async (silent = false) => {
+      try {
+        const response = await fetch(`${LIVE_DATA_URL}?ts=${Date.now()}`, {
+          cache: 'no-store',
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const payload = (await response.json()) as LiveTrackerPayload;
+        const applied = applyLivePayload(payload);
+
+        if (!applied) {
+          throw new Error('El archivo live.json todavía no contiene los cinco jugadores.');
+        }
+
+        if (!silent) {
+          const stamp = payload.generatedAt ? Date.parse(payload.generatedAt) : null;
+          showToast(
+            stamp
+              ? `Datos de OP.GG recibidos: ${formatSyncAge(stamp)}.`
+              : 'Datos vivos recibidos desde OP.GG.',
+          );
+        }
+      } catch (error) {
+        console.warn('No se pudo obtener live.json desde GitHub:', error);
+        setSourceStatus((current) => (current === 'live' ? current : cached.generatedAt ? 'cached' : 'seed'));
+        if (!silent) {
+          showToast(
+            'No hay una sincronización nueva disponible. Se mantiene la última copia válida.',
+            'info',
+          );
+        }
+      }
+    },
+    [applyLivePayload, cached.generatedAt],
+  );
+
+  useEffect(() => {
+    fetchLiveData(true);
+  }, [fetchLiveData]);
+
+  useEffect(() => {
+    if (!autoRefresh) return;
+
+    const interval = window.setInterval(() => {
+      fetchLiveData(true);
+    }, 120000);
+
+    return () => window.clearInterval(interval);
+  }, [autoRefresh, fetchLiveData]);
 
   const handleRefresh = async () => {
     setIsRefreshing(true);
-    try {
-      const res = await fetch('/api/players/refresh', { method: 'POST' });
-      const data = await res.json();
-      if (data.players) {
-        setPlayers(data.players);
-        setLastUpdated(data.lastUpdated || Date.now());
-      }
-      if (data.players) {
-        showToast(data.message || 'Métricas y snapshots actualizados con éxito.');
-      } else {
-        setLastUpdated(Date.now());
-        showToast('Servidor no disponible. La aplicación seguirá usando los datos locales.', 'info');
-      }
-    } catch (err) {
-      console.warn('Servidor no disponible durante la actualización:', err);
-      setLastUpdated(Date.now());
-      showToast('Modo local activo. Los datos siguen funcionando en este navegador.', 'info');
-    } finally {
-      setIsRefreshing(false);
-    }
+    await fetchLiveData(false);
+    setIsRefreshing(false);
   };
 
   const handleSelectPlayerFromOverview = (playerId: string) => {
@@ -130,42 +169,50 @@ export default function App() {
     setActiveTab('analyst');
   };
 
-  const handleGameSimulated = (updatedPlayers: PlayerProfile[]) => {
-    setPlayers(updatedPlayers);
-    setLastUpdated(Date.now());
-    showToast('Partida registrada. LP y rankings actualizados.');
-  };
-
   const handleAccountUpdated = (updatedPlayer: PlayerProfile) => {
     setPlayers((prev) =>
-      prev.map((p) => (p.id === updatedPlayer.id ? { ...p, ...updatedPlayer } : p))
+      prev.map((player) =>
+        player.id === updatedPlayer.id ? { ...player, ...updatedPlayer } : player,
+      ),
     );
-    showToast(`Cuenta de ${updatedPlayer.proName} actualizada a ${updatedPlayer.riotId}.`);
+    setSourceStatus('cached');
+    showToast(
+      `Cuenta de ${updatedPlayer.proName} actualizada localmente. La próxima sincronización de OP.GG la validará.`,
+      'info',
+    );
   };
+
+  const statusLabel =
+    sourceStatus === 'live'
+      ? 'OP.GG · sincronización automática'
+      : sourceStatus === 'cached'
+        ? 'Copia local de la última sincronización'
+        : 'Datos de respaldo del proyecto';
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
-      {/* Top Bar */}
       <Navbar
         activeTab={activeTab}
         onTabChange={setActiveTab}
         onRefresh={handleRefresh}
-        onOpenSimulate={() => setIsSimulateModalOpen(true)}
         isRefreshing={isRefreshing}
-        hasRiotKey={hasRiotKey}
         autoRefresh={autoRefresh}
-        onToggleAutoRefresh={() => setAutoRefresh(!autoRefresh)}
+        onToggleAutoRefresh={() => setAutoRefresh((value) => !value)}
+        sourceStatus={sourceStatus}
+        lastUpdated={lastUpdated}
       />
 
-      {/* Toast Notification */}
       {toastMessage && (
-        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/95 px-4 py-3 text-xs font-semibold text-white shadow-2xl backdrop-blur-md transition-all">
-          <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+        <div className="fixed bottom-6 right-6 z-50 flex max-w-sm items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/95 px-4 py-3 text-xs font-semibold text-white shadow-2xl backdrop-blur-md">
+          {toastMessage.type === 'success' ? (
+            <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+          ) : (
+            <DatabaseZap className="h-4 w-4 text-cyan-400" />
+          )}
           <span>{toastMessage.text}</span>
         </div>
       )}
 
-      {/* Main Container */}
       <main className="flex-1 mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         {activeTab === 'overview' && (
           <OverviewView
@@ -173,6 +220,8 @@ export default function App() {
             report={report}
             onSelectPlayer={handleSelectPlayerFromOverview}
             onNavigateToAnalyst={() => setActiveTab('analyst')}
+            sourceStatus={sourceStatus}
+            lastUpdated={lastUpdated}
           />
         )}
 
@@ -181,7 +230,7 @@ export default function App() {
             players={players}
             selectedPlayerId={selectedPlayerId}
             onSelectPlayer={setSelectedPlayerId}
-            onOpenEditAccount={(p) => setEditingPlayer(p)}
+            onOpenEditAccount={(player) => setEditingPlayer(player)}
             onAskAboutPlayer={handleAskAboutPlayer}
           />
         )}
@@ -209,14 +258,6 @@ export default function App() {
         )}
       </main>
 
-      {/* Modals */}
-      <SimulateMatchModal
-        isOpen={isSimulateModalOpen}
-        onClose={() => setIsSimulateModalOpen(false)}
-        players={players}
-        onGameSimulated={handleGameSimulated}
-      />
-
       <EditAccountModal
         isOpen={Boolean(editingPlayer)}
         player={editingPlayer}
@@ -224,8 +265,11 @@ export default function App() {
         onAccountUpdated={handleAccountUpdated}
       />
 
-      {/* Footer */}
-      <Footer lastUpdated={lastUpdated} hasRiotKey={hasRiotKey} />
+      <Footer
+        lastUpdated={lastUpdated}
+        sourceStatus={sourceStatus}
+        statusLabel={statusLabel}
+      />
     </div>
   );
 }
