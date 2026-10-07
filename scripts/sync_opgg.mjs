@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 
 const ROOT = process.cwd();
 const CONFIG = path.join(ROOT, 'data', 'monitored.json');
@@ -11,268 +9,893 @@ const MCP_URL = 'https://mcp-api.op.gg/mcp';
 
 const num = (v, d = 0) => Number.isFinite(Number(v)) ? Number(v) : d;
 const int = (v, d = 0) => Math.trunc(num(v, d));
-const walk = (v, fn) => {
-  if (Array.isArray(v)) return v.forEach(x => walk(x, fn));
-  if (v && typeof v === 'object') {
-    fn(v);
-    Object.values(v).forEach(x => walk(x, fn));
+
+function walk(value, visit) {
+  if (Array.isArray(value)) return value.forEach((x) => walk(x, visit));
+  if (value && typeof value === 'object') {
+    visit(value);
+    Object.values(value).forEach((x) => walk(x, visit));
   }
-};
-const parseTool = (r) => {
-  if (r?.structuredContent) return r.structuredContent;
-  for (const block of r?.content || []) {
+}
+
+function parseSse(text) {
+  const matches = [];
+  for (const line of text.split(/\r?\n/)) {
+    if (line.startsWith('data:')) {
+      const data = line.slice(5).trim();
+      if (data) matches.push(data);
+    }
+  }
+  for (let i = matches.length - 1; i >= 0; i--) {
+    try { return JSON.parse(matches[i]); } catch {}
+  }
+  return null;
+}
+
+function parseHttpBody(text, contentType) {
+  if (!text) return null;
+  if ((contentType || '').includes('text/event-stream')) return parseSse(text);
+  try { return JSON.parse(text); } catch {}
+  return null;
+}
+
+async function postMcp(body, sessionId = null) {
+  const headers = {
+    'Accept': 'application/json, text/event-stream',
+    'Content-Type': 'application/json',
+  };
+  if (sessionId) headers['Mcp-Session-Id'] = sessionId;
+
+  const response = await fetch(MCP_URL, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify(body),
+  });
+
+  const nextSession = response.headers.get('mcp-session-id') || sessionId;
+  const text = await response.text();
+
+  if (!response.ok) {
+    throw new Error(
+      'OP.GG MCP HTTP ' + response.status + ': ' + text.slice(0, 500),
+    );
+  }
+
+  return {
+    sessionId: nextSession,
+    message: parseHttpBody(text, response.headers.get('content-type')),
+  };
+}
+
+async function createMcpSession() {
+  const initialized = await postMcp({
+    jsonrpc: '2.0',
+    id: 1,
+    method: 'initialize',
+    params: {
+      protocolVersion: '2025-06-18',
+      capabilities: {},
+      clientInfo: { name: 'koi-tracker', version: '1.0.0' },
+    },
+  });
+
+  if (!initialized.message?.result) {
+    throw new Error(
+      'OP.GG MCP no respondió correctamente a initialize: ' +
+        JSON.stringify(initialized.message),
+    );
+  }
+
+  await postMcp(
+    {
+      jsonrpc: '2.0',
+      method: 'notifications/initialized',
+      params: {},
+    },
+    initialized.sessionId,
+  );
+
+  return initialized.sessionId;
+}
+
+async function mcpRequest(sessionId, id, method, params = {}) {
+  const response = await postMcp(
+    { jsonrpc: '2.0', id, method, params },
+    sessionId,
+  );
+  if (response.message?.error) {
+    throw new Error(
+      method + ' error: ' + JSON.stringify(response.message.error),
+    );
+  }
+  return response.message?.result;
+}
+
+function schemaProperties(tool) {
+  return tool?.inputSchema?.properties || {};
+}
+
+function pickProperty(tool, names) {
+  const properties = schemaProperties(tool);
+  return names.find((name) => properties[name]) || null;
+}
+
+function pickEnum(tool, names, wanted) {
+  const properties = schemaProperties(tool);
+  for (const name of names) {
+    const enumValues = properties[name]?.enum;
+    if (!Array.isArray(enumValues) || !enumValues.length) continue;
+    const hit = enumValues.find((value) =>
+      String(value).toLowerCase().includes(wanted),
+    );
+    if (hit !== undefined) return hit;
+  }
+  return null;
+}
+
+function setFirst(args, tool, names, value) {
+  const key = pickProperty(tool, names);
+  if (key) args[key] = value;
+}
+
+function desiredFields(tool) {
+  const key = pickProperty(tool, ['desired_output_fields']);
+  if (!key) return null;
+  return 'data';
+}
+
+function buildArgs(tool, account, identifier = null) {
+  const args = {};
+
+  setFirst(
+    args,
+    tool,
+    ['region', 'region_code', 'regionCode', 'server'],
+    pickEnum(tool, ['region', 'region_code', 'regionCode', 'server'], 'na') || 'na',
+  );
+
+  setFirst(
+    args,
+    tool,
+    ['game_name', 'gameName', 'summoner_name', 'summonerName', 'name'],
+    account.gameName,
+  );
+
+  setFirst(
+    args,
+    tool,
+    ['tagline', 'tag_line', 'tagLine', 'tag'],
+    account.tagLine,
+  );
+
+  setFirst(
+    args,
+    tool,
+    ['riot_id', 'riotId', 'riotID'],
+    account.gameName + '#' + account.tagLine,
+  );
+
+  if (identifier) {
+    setFirst(
+      args,
+      tool,
+      ['summoner_id', 'summonerId', 'id', 'puuid', 'player_puuid', 'playerPuuid'],
+      identifier,
+    );
+  }
+
+  const matchType =
+    pickEnum(
+      tool,
+      ['game_type', 'gameType', 'queue', 'queue_type'],
+      'solo',
+    ) ||
+    pickEnum(
+      tool,
+      ['game_type', 'gameType', 'queue', 'queue_type'],
+      'rank',
+    );
+
+  if (matchType) {
+    setFirst(
+      args,
+      tool,
+      ['game_type', 'gameType', 'queue', 'queue_type'],
+      matchType,
+    );
+  }
+
+  setFirst(args, tool, ['limit', 'count', 'results', 'game_count'], 20);
+
+  const fields = desiredFields(tool);
+  if (fields !== null) args.desired_output_fields = fields;
+
+  for (const required of tool?.inputSchema?.required || []) {
+    if (args[required] !== undefined) continue;
+
+    if (required === 'desired_output_fields') {
+      args[required] = 'data';
+      continue;
+    }
+
+    const props = schemaProperties(tool);
+    const schema = props[required] || {};
+
+    if (Array.isArray(schema.enum) && schema.enum.length) {
+      const preferred = schema.enum.find((value) =>
+        String(value).toLowerCase().includes('solo'),
+      ) ??
+        schema.enum.find((value) =>
+          String(value).toLowerCase().includes('rank'),
+        ) ??
+        schema.enum.find((value) =>
+          String(value).toLowerCase() === 'na',
+        ) ??
+        schema.enum[0];
+
+      args[required] = preferred;
+      continue;
+    }
+
+    throw new Error(
+      'No sé rellenar el parámetro requerido "' +
+        required +
+        '" de ' +
+        tool.name +
+        '. Schema=' +
+        JSON.stringify(tool.inputSchema),
+    );
+  }
+
+  return args;
+}
+
+function resultData(result) {
+  if (result?.structuredContent) return result.structuredContent;
+
+  for (const block of result?.content || []) {
     if (block?.type === 'json' && block.json) return block.json;
     if (block?.type === 'text' && typeof block.text === 'string') {
       try { return JSON.parse(block.text); } catch {}
     }
   }
-  return r;
-};
 
-function prop(tool, names) {
-  const p = tool?.inputSchema?.properties || {};
-  return names.find(n => p[n]);
-}
-function setArg(args, tool, names, value) {
-  const key = prop(tool, names);
-  if (key) args[key] = value;
-}
-function argsFor(tool, account, identifier = null) {
-  const p = tool?.inputSchema?.properties || {};
-  const a = {};
-  setArg(a, tool, ['region','region_code','regionCode','server'], 'na');
-  setArg(a, tool, ['game_name','gameName','summoner_name','summonerName','name'], account.gameName);
-  setArg(a, tool, ['tagline','tag_line','tagLine','tag'], account.tagLine);
-  setArg(a, tool, ['riot_id','riotId','riotID'], account.gameName + '#' + account.tagLine);
-  if (identifier) setArg(a, tool, ['summoner_id','summonerId','id','puuid','player_puuid','playerPuuid'], identifier);
-  setArg(a, tool, ['limit','count','results','game_count'], 20);
-  setArg(a, tool, ['game_type','gameType','queue','queue_type'], 'ranked');
-  setArg(a, tool, ['language','lang','hl'], 'en_US');
-
-  for (const required of tool?.inputSchema?.required || []) {
-    if (a[required] !== undefined) continue;
-    const aliases = {
-      region: ['region','region_code','regionCode','server'],
-      game_name: ['game_name','gameName','summoner_name','summonerName','name'],
-      tagline: ['tagline','tag_line','tagLine','tag'],
-      riot_id: ['riot_id','riotId','riotID'],
-      summoner_id: ['summoner_id','summonerId','id','puuid','player_puuid','playerPuuid'],
-      limit: ['limit','count','results','game_count'],
-      game_type: ['game_type','gameType','queue','queue_type'],
-    };
-    const names = aliases[required] || [required];
-    if (names.some(n => p[n])) {
-      const key = names.find(n => p[n]);
-      if (key === 'region' || key === 'region_code' || key === 'regionCode' || key === 'server') a[required] = 'na';
-      else if (key === 'game_name' || key === 'gameName' || key === 'summoner_name' || key === 'summonerName' || key === 'name') a[required] = account.gameName;
-      else if (key === 'tagline' || key === 'tag_line' || key === 'tagLine' || key === 'tag') a[required] = account.tagLine;
-      else if (key === 'riot_id' || key === 'riotId' || key === 'riotID') a[required] = account.gameName + '#' + account.tagLine;
-      else if (identifier) a[required] = identifier;
-      else if (key === 'limit' || key === 'count' || key === 'results' || key === 'game_count') a[required] = 20;
-      else if (key === 'game_type' || key === 'gameType' || key === 'queue' || key === 'queue_type') a[required] = 'ranked';
-    }
-  }
-  return a;
+  return result;
 }
 
 function findRank(payload) {
-  const c = [];
-  walk(payload, o => {
-    const t = o.solo_tier_info || o.soloTierInfo || o.tier_info || o.tierInfo;
-    if (t && typeof t === 'object' && (t.lp ?? t.league_points ?? t.leaguePoints) !== undefined) {
-      c.push({
-        tier: t.tier ?? t.tier_name ?? o.tier,
-        division: t.division ?? t.rank ?? o.division ?? o.rank ?? 'I',
-        lp: t.lp ?? t.league_points ?? t.leaguePoints,
-        wins: t.wins ?? o.wins ?? o.win ?? 0,
-        losses: t.losses ?? o.losses ?? o.lose ?? 0
+  const candidates = [];
+
+  walk(payload, (object) => {
+    const info =
+      object.solo_tier_info ??
+      object.soloTierInfo ??
+      object.tier_info ??
+      object.tierInfo;
+
+    if (
+      info &&
+      typeof info === 'object' &&
+      (info.lp ?? info.league_points ?? info.leaguePoints) !== undefined
+    ) {
+      candidates.push({
+        tier: info.tier ?? info.tier_name ?? object.tier,
+        division:
+          info.division ??
+          info.rank ??
+          object.division ??
+          object.rank ??
+          'I',
+        lp: info.lp ?? info.league_points ?? info.leaguePoints,
+        wins: info.wins ?? object.wins ?? object.win ?? 0,
+        losses: info.losses ?? object.losses ?? object.lose ?? 0,
       });
-    } else if (o.tier !== undefined && (o.lp ?? o.league_points ?? o.leaguePoints) !== undefined) {
-      c.push({
-        tier: o.tier,
-        division: o.division ?? o.rank ?? 'I',
-        lp: o.lp ?? o.league_points ?? o.leaguePoints,
-        wins: o.wins ?? o.win ?? 0,
-        losses: o.losses ?? o.lose ?? 0
+    }
+
+    if (
+      object.tier !== undefined &&
+      (object.lp ?? object.league_points ?? object.leaguePoints) !== undefined
+    ) {
+      candidates.push({
+        tier: object.tier,
+        division: object.division ?? object.rank ?? 'I',
+        lp: object.lp ?? object.league_points ?? object.leaguePoints,
+        wins: object.wins ?? object.win ?? 0,
+        losses: object.losses ?? object.lose ?? 0,
       });
     }
   });
-  const x = c.find(r => ['CHALLENGER','GRANDMASTER','MASTER','DIAMOND','EMERALD','PLATINUM','GOLD','SILVER','BRONZE','IRON'].includes(String(r.tier).toUpperCase())) || c[0];
-  if (!x) return null;
-  const wins = int(x.wins), losses = int(x.losses);
+
+  const chosen =
+    candidates.find((item) =>
+      [
+        'CHALLENGER',
+        'GRANDMASTER',
+        'MASTER',
+        'DIAMOND',
+        'EMERALD',
+        'PLATINUM',
+        'GOLD',
+        'SILVER',
+        'BRONZE',
+        'IRON',
+      ].includes(String(item.tier).toUpperCase()),
+    ) ?? candidates[0];
+
+  if (!chosen) return null;
+
+  const wins = int(chosen.wins);
+  const losses = int(chosen.losses);
+
   return {
-    tier: String(x.tier).toUpperCase(),
-    division: String(x.division).toUpperCase(),
-    lp: int(x.lp),
+    tier: String(chosen.tier).toUpperCase(),
+    division: String(chosen.division).toUpperCase(),
+    lp: int(chosen.lp),
     wins,
     losses,
-    winrate: Number(((wins / Math.max(1, wins + losses)) * 100).toFixed(1))
+    winrate: Number(
+      ((wins / Math.max(1, wins + losses)) * 100).toFixed(1),
+    ),
   };
 }
 
-function gameList(payload) {
-  const out = [];
-  walk(payload, o => {
-    const id = o.game_id ?? o.gameId ?? o.match_id ?? o.matchId ?? o.created_at ?? o.game_creation ?? o.gameCreation;
-    const data = o.my_data || o.myData || o.player || o.stats;
-    if (id !== undefined && data !== undefined) out.push(o);
+function extractIdentifier(payload) {
+  let found = null;
+  walk(payload, (object) => {
+    if (found) return;
+    for (const key of [
+      'summoner_id',
+      'summonerId',
+      'puuid',
+      'acct_id',
+      'id',
+    ]) {
+      if (object[key] !== undefined && object[key] !== null) {
+        found = String(object[key]);
+        break;
+      }
+    }
   });
-  const map = new Map();
-  for (const g of out) {
-    const id = String(g.game_id ?? g.gameId ?? g.match_id ?? g.matchId ?? g.created_at ?? g.game_creation ?? g.gameCreation);
-    if (!map.has(id)) map.set(id, g);
-  }
-  return [...map.values()].slice(0, 20);
+  return found;
 }
 
-function ts(g) {
-  const v = g.created_at ?? g.game_creation ?? g.gameCreation ?? g.timestamp ?? Date.now();
-  if (typeof v === 'string') {
-    const t = Date.parse(v);
-    return Number.isFinite(t) ? t : Date.now();
+function matchObjects(payload) {
+  const candidates = [];
+  walk(payload, (object) => {
+    const identity =
+      object.game_id ??
+      object.gameId ??
+      object.match_id ??
+      object.matchId ??
+      object.created_at ??
+      object.game_creation ??
+      object.gameCreation;
+
+    const details =
+      object.my_data ??
+      object.myData ??
+      object.player ??
+      object.stats ??
+      object.champion;
+
+    if (identity !== undefined && details !== undefined) candidates.push(object);
+  });
+
+  const unique = new Map();
+
+  for (const item of candidates) {
+    const key = String(
+      item.game_id ??
+        item.gameId ??
+        item.match_id ??
+        item.matchId ??
+        item.created_at ??
+        item.game_creation ??
+        item.gameCreation,
+    );
+    if (!unique.has(key)) unique.set(key, item);
   }
-  const n = int(v, Date.now());
+
+  return [...unique.values()].slice(0, 20);
+}
+
+function timestamp(game) {
+  const value =
+    game.created_at ??
+    game.game_creation ??
+    game.gameCreation ??
+    game.timestamp ??
+    Date.now();
+
+  if (typeof value === 'string') {
+    const parsed = Date.parse(value);
+    return Number.isFinite(parsed) ? parsed : Date.now();
+  }
+
+  const n = int(value, Date.now());
   return n < 1e10 ? n * 1000 : n;
 }
 
-function toMatch(g, role) {
-  const d = g.my_data || g.myData || g.player || {};
-  const s = d.stats || g.stats || {};
-  const ch = d.champion || g.champion || {};
-  const duration = int(g.game_length_second ?? g.gameLengthSecond ?? g.duration ?? g.gameDurationSeconds);
-  const kills = int(s.kill ?? s.kills), deaths = int(s.death ?? s.deaths), assists = int(s.assist ?? s.assists);
-  const cs = int(s.minion_kill ?? s.minionKill ?? s.cs ?? s.total_minions_killed ?? s.totalMinionsKilled);
-  const raw = String(s.result ?? s.outcome ?? s.win ?? g.result ?? g.outcome ?? g.win ?? '').toLowerCase();
-  const win = ['win','won','victory','true','1'].includes(raw);
+function toMatch(game, role) {
+  const player =
+    game.my_data ??
+    game.myData ??
+    game.player ??
+    {};
+
+  const stats =
+    player.stats ??
+    game.stats ??
+    {};
+
+  const champion =
+    player.champion ??
+    game.champion ??
+    {};
+
+  const duration = int(
+    game.game_length_second ??
+      game.gameLengthSecond ??
+      game.duration ??
+      game.gameDurationSeconds,
+  );
+
+  const kills = int(stats.kill ?? stats.kills);
+  const deaths = int(stats.death ?? stats.deaths);
+  const assists = int(stats.assist ?? stats.assists);
+  const cs = int(
+    stats.minion_kill ??
+      stats.minionKill ??
+      stats.cs ??
+      stats.total_minions_killed ??
+      stats.totalMinionsKilled,
+  );
+
+  const result = String(
+    stats.result ??
+      stats.outcome ??
+      stats.win ??
+      game.result ??
+      game.outcome ??
+      game.win ??
+      '',
+  ).toLowerCase();
+
+  const win = ['win', 'won', 'victory', 'true', '1'].includes(result);
+  const id =
+    game.game_id ??
+    game.gameId ??
+    game.match_id ??
+    game.matchId ??
+    'OPGG_' + timestamp(game);
+
   return {
-    matchId: String(g.game_id ?? g.gameId ?? g.match_id ?? g.matchId ?? 'OPGG_' + ts(g)),
-    gameCreation: ts(g),
+    matchId: String(id),
+    gameCreation: timestamp(game),
     gameDurationSeconds: duration,
-    queueType: String(g.game_type ?? g.gameType ?? g.queue_type ?? g.queueType ?? 'Ranked Solo/Duo'),
+    queueType: String(
+      game.game_type ??
+        game.gameType ??
+        game.queue_type ??
+        game.queueType ??
+        'Ranked Solo/Duo',
+    ),
     win,
-    championName: String(ch.name ?? ch.champion_name ?? g.champion_name ?? g.championName ?? 'Desconocido'),
-    championId: String(ch.id ?? ch.key ?? g.champion_id ?? g.championId ?? '0'),
-    champLevel: int(s.level ?? s.champ_level ?? s.champLevel),
-    role: String(d.position ?? d.role ?? g.position ?? g.role ?? role).toUpperCase(),
-    kills, deaths, assists,
-    kda: Number(((kills + assists) / Math.max(1, deaths)).toFixed(2)),
+    championName: String(
+      champion.name ??
+        champion.champion_name ??
+        game.champion_name ??
+        game.championName ??
+        'Desconocido',
+    ),
+    championId: String(
+      champion.id ??
+        champion.key ??
+        game.champion_id ??
+        game.championId ??
+        '0',
+    ),
+    champLevel: int(stats.level ?? stats.champ_level ?? stats.champLevel),
+    role: String(
+      player.position ??
+        player.role ??
+        game.position ??
+        game.role ??
+        role,
+    ).toUpperCase(),
+    kills,
+    deaths,
+    assists,
+    kda: Number(
+      ((kills + assists) / Math.max(1, deaths)).toFixed(2),
+    ),
     cs,
-    csPerMin: duration ? Number((cs / Math.max(1, duration / 60)).toFixed(1)) : 0,
-    killParticipationPct: Number(num(s.kill_participation ?? s.killParticipation ?? g.killParticipation, 0).toFixed(1)),
-    damageDealt: int(s.total_damage_to_champions ?? s.damage_to_champions ?? s.damage ?? g.damageDealt),
-    damagePct: Number(num(s.damage_share ?? s.damage_pct ?? g.damagePct, 0).toFixed(1)),
-    visionScore: int(s.vision_score ?? s.visionScore ?? g.visionScore),
-    spells: Array.isArray(d.spells) ? d.spells.slice(0,2).map(String) : ['', ''],
-    items: Array.isArray(d.items) ? d.items.slice(0,7).map(x => int(typeof x === 'object' ? (x.id ?? x.item_id ?? x.itemId) : x)) : [],
-    tags: []
+    csPerMin: duration
+      ? Number((cs / Math.max(1, duration / 60)).toFixed(1))
+      : 0,
+    killParticipationPct: Number(
+      num(
+        stats.kill_participation ??
+          stats.killParticipation ??
+          game.killParticipation,
+        0,
+      ).toFixed(1),
+    ),
+    damageDealt: int(
+      stats.total_damage_to_champions ??
+        stats.damage_to_champions ??
+        stats.damage ??
+        game.damageDealt,
+    ),
+    damagePct: Number(
+      num(stats.damage_share ?? stats.damage_pct ?? game.damagePct, 0).toFixed(1),
+    ),
+    visionScore: int(
+      stats.vision_score ??
+        stats.visionScore ??
+        game.visionScore,
+    ),
+    spells: Array.isArray(player.spells)
+      ? player.spells.slice(0, 2).map(String)
+      : ['', ''],
+    items: Array.isArray(player.items)
+      ? player.items.slice(0, 7).map((item) =>
+          int(
+            typeof item === 'object'
+              ? item.id ?? item.item_id ?? item.itemId
+              : item,
+          ),
+        )
+      : [],
+    tags: [],
   };
 }
 
-function champions(matches) {
+function championStats(matches) {
   const map = new Map();
-  for (const m of matches) {
-    const c = map.get(m.championName) || { championName:m.championName, championId:m.championId, games:0, wins:0, losses:0, winrate:0, kills:0, deaths:0, assists:0, kda:0, csPerMin:0 };
-    c.games++; c.wins += m.win ? 1 : 0; c.losses += m.win ? 0 : 1;
-    c.kills += m.kills; c.deaths += m.deaths; c.assists += m.assists; c.csPerMin += m.csPerMin;
-    map.set(m.championName, c);
+
+  for (const match of matches) {
+    const row =
+      map.get(match.championName) ?? {
+        championName: match.championName,
+        championId: match.championId,
+        games: 0,
+        wins: 0,
+        losses: 0,
+        winrate: 0,
+        kills: 0,
+        deaths: 0,
+        assists: 0,
+        kda: 0,
+        csPerMin: 0,
+      };
+
+    row.games += 1;
+    row.wins += match.win ? 1 : 0;
+    row.losses += match.win ? 0 : 1;
+    row.kills += match.kills;
+    row.deaths += match.deaths;
+    row.assists += match.assists;
+    row.csPerMin += match.csPerMin;
+
+    map.set(match.championName, row);
   }
-  return [...map.values()].map(c => ({
-    ...c,
-    winrate: Number(((c.wins / Math.max(1,c.games))*100).toFixed(1)),
-    kda: Number(((c.kills+c.assists)/Math.max(1,c.deaths)).toFixed(1)),
-    csPerMin: Number((c.csPerMin/Math.max(1,c.games)).toFixed(1))
-  })).sort((a,b)=>b.games-a.games || b.winrate-a.winrate);
+
+  return [...map.values()]
+    .map((row) => ({
+      ...row,
+      winrate: Number(
+        ((row.wins / Math.max(1, row.games)) * 100).toFixed(1),
+      ),
+      kda: Number(
+        ((row.kills + row.assists) / Math.max(1, row.deaths)).toFixed(1),
+      ),
+      csPerMin: Number(
+        (row.csPerMin / Math.max(1, row.games)).toFixed(1),
+      ),
+    }))
+    .sort((a, b) => b.games - a.games || b.winrate - a.winrate);
 }
 
 function streak(matches) {
   if (!matches.length) return 0;
-  const w = !!matches[0].win;
-  let n = 0;
-  for (const m of matches) { if (!!m.win !== w) break; n++; }
-  return w ? n : -n;
+  const first = Boolean(matches[0].win);
+  let count = 0;
+  for (const match of matches) {
+    if (Boolean(match.win) !== first) break;
+    count += 1;
+  }
+  return first ? count : -count;
 }
 
 function playerFrom(account, rank, matches, previous) {
-  const recent = matches.slice(0,20);
-  const avg = k => Number((recent.reduce((s,m)=>s+num(m[k],0),0)/Math.max(1,recent.length)).toFixed(1));
-  const cur = {
-    ...(previous || {}),
-    id:account.id, proName:account.proName, realName:account.realName,
-    riotId:account.gameName+'#'+account.tagLine, gameName:account.gameName, tagLine:account.tagLine,
-    region:'NA', team:'KOI / MKOI', role:account.role, profileIconId:previous?.profileIconId ?? 588,
-    tier:rank.tier, division:rank.division, lp:rank.lp, wins:rank.wins, losses:rank.losses, winrate:rank.winrate,
-    streak:streak(recent), avgKda:avg('kda'), avgKills:avg('kills'), avgDeaths:avg('deaths'), avgAssists:avg('assists'),
-    avgCsPerMin:avg('csPerMin'), avgKillParticipationPct:avg('killParticipationPct'),
-    champions:champions(recent), recentMatches:recent,
-    statusBadge:rank.tier+' '+rank.division+' ('+rank.lp+' LP)',
-    analystSummary:account.proName+': '+rank.tier+' '+rank.division+' '+rank.lp+' LP · '+recent.length+' partidas consultadas · '+rank.winrate+'% WR · KDA medio '+avg('kda')+'.',
-    snapshots:previous?.snapshots || [], formRank:previous?.formRank || 0, eloRank:previous?.eloRank || 0
+  const recent = matches.slice(0, 20);
+  const average = (field) =>
+    Number(
+      (
+        recent.reduce((sum, match) => sum + num(match[field]), 0) /
+        Math.max(1, recent.length)
+      ).toFixed(1),
+    );
+
+  const current = {
+    ...(previous ?? {}),
+    id: account.id,
+    proName: account.proName,
+    realName: account.realName,
+    riotId: account.gameName + '#' + account.tagLine,
+    gameName: account.gameName,
+    tagLine: account.tagLine,
+    region: 'NA',
+    team: 'KOI / MKOI',
+    role: account.role,
+    profileIconId: previous?.profileIconId ?? 588,
+    tier: rank.tier,
+    division: rank.division,
+    lp: rank.lp,
+    wins: rank.wins,
+    losses: rank.losses,
+    winrate: rank.winrate,
+    streak: streak(recent),
+    avgKda: average('kda'),
+    avgKills: average('kills'),
+    avgDeaths: average('deaths'),
+    avgAssists: average('assists'),
+    avgCsPerMin: average('csPerMin'),
+    avgKillParticipationPct: average('killParticipationPct'),
+    champions: championStats(recent),
+    recentMatches: recent,
+    statusBadge: rank.tier + ' ' + rank.division + ' (' + rank.lp + ' LP)',
+    analystSummary:
+      account.proName +
+      ': ' +
+      rank.tier +
+      ' ' +
+      rank.division +
+      ' ' +
+      rank.lp +
+      ' LP · ' +
+      recent.length +
+      ' partidas consultadas · ' +
+      rank.winrate +
+      '% WR · KDA medio ' +
+      average('kda') +
+      '.',
+    snapshots: previous?.snapshots ?? [],
+    formRank: previous?.formRank ?? 0,
+    eloRank: previous?.eloRank ?? 0,
   };
-  const oldSig = previous ? [previous.tier,previous.division,previous.lp].join(':') : null;
-  const newSig = [cur.tier,cur.division,cur.lp].join(':');
-  if (oldSig !== newSig) {
-    cur.snapshots = [...cur.snapshots, {timestamp:Date.now(),tier:cur.tier,division:cur.division,lp:cur.lp,wins:cur.wins,losses:cur.losses,note:'Sincronización automática desde OP.GG'}].slice(-250);
+
+  const oldSignature = previous
+    ? [previous.tier, previous.division, previous.lp].join(':')
+    : null;
+
+  const newSignature = [current.tier, current.division, current.lp].join(':');
+
+  if (oldSignature !== newSignature) {
+    current.snapshots = [
+      ...current.snapshots,
+      {
+        timestamp: Date.now(),
+        tier: current.tier,
+        division: current.division,
+        lp: current.lp,
+        wins: current.wins,
+        losses: current.losses,
+        note: 'Sincronización automática desde OP.GG',
+      },
+    ].slice(-250);
   }
-  return cur;
+
+  return current;
 }
 
-function rankings(players) {
-  const tw={CHALLENGER:10000,GRANDMASTER:9000,MASTER:8000,DIAMOND:7000,EMERALD:6000,PLATINUM:5000,GOLD:4000,SILVER:3000,BRONZE:2000,IRON:1000,UNRANKED:0};
-  const dw={I:400,II:300,III:200,IV:100};
-  const elo=p=>(tw[p.tier]||0)+(dw[p.division]||0)+num(p.lp);
-  const form=p=>num(p.winrate)*1.5+num(p.streak)*4+num(p.avgKda)*2.5+(num(p.wins)/Math.max(1,num(p.wins)+num(p.losses)))*50;
-  [...players].sort((a,b)=>elo(b)-elo(a)).forEach((p,i)=>p.eloRank=i+1);
-  [...players].sort((a,b)=>form(b)-form(a)).forEach((p,i)=>p.formRank=i+1);
+function recalculateRankings(players) {
+  const tierWeight = {
+    CHALLENGER: 10000,
+    GRANDMASTER: 9000,
+    MASTER: 8000,
+    DIAMOND: 7000,
+    EMERALD: 6000,
+    PLATINUM: 5000,
+    GOLD: 4000,
+    SILVER: 3000,
+    BRONZE: 2000,
+    IRON: 1000,
+    UNRANKED: 0,
+  };
+
+  const divisionWeight = { I: 400, II: 300, III: 200, IV: 100 };
+
+  const elo = (player) =>
+    (tierWeight[player.tier] ?? 0) +
+    (divisionWeight[player.division] ?? 0) +
+    num(player.lp);
+
+  const form = (player) =>
+    num(player.winrate) * 1.5 +
+    num(player.streak) * 4 +
+    num(player.avgKda) * 2.5 +
+    (num(player.wins) /
+      Math.max(1, num(player.wins) + num(player.losses))) *
+      50;
+
+  [...players]
+    .sort((a, b) => elo(b) - elo(a))
+    .forEach((player, index) => {
+      player.eloRank = index + 1;
+    });
+
+  [...players]
+    .sort((a, b) => form(b) - form(a))
+    .forEach((player, index) => {
+      player.formRank = index + 1;
+    });
 }
 
 async function main() {
-  const config = JSON.parse(await fs.readFile(CONFIG,'utf8'));
-  const old = JSON.parse(await fs.readFile(LIVE,'utf8')).players || [];
-  const oldMap = new Map(old.map(p => [p.id,p]));
-  const client = new Client({name:'koi-tracker',version:'1.0.0'},{capabilities:{}});
-  await client.connect(new StreamableHTTPClientTransport(new URL(MCP_URL)));
+  const config = JSON.parse(await fs.readFile(CONFIG, 'utf8'));
+  const previous = JSON.parse(await fs.readFile(LIVE, 'utf8')).players ?? [];
 
-  const toolData = await client.listTools();
-  const tools = toolData.tools || [];
-  const profileTool = tools.find(t=>t.name==='lol_get_summoner_profile');
-  const matchesTool = tools.find(t=>t.name==='lol_list_summoner_matches');
-  if (!profileTool || !matchesTool) throw new Error('No están disponibles los tools oficiales de OP.GG MCP.');
+  const sessionId = await createMcpSession();
 
-  const players=[], errors=[];
+  const toolsResult = await mcpRequest(
+    sessionId,
+    2,
+    'tools/list',
+    {},
+  );
+
+  const tools = toolsResult?.tools ?? [];
+
+  const profileTool = tools.find(
+    (tool) => tool.name === 'lol_get_summoner_profile',
+  );
+
+  const matchesTool = tools.find(
+    (tool) => tool.name === 'lol_list_summoner_matches',
+  );
+
+  if (!profileTool || !matchesTool) {
+    throw new Error(
+      'No se encontraron los tools de OP.GG MCP. Tools=' +
+        tools.map((tool) => tool.name).join(', '),
+    );
+  }
+
+  console.log(
+    'Profile schema=' + JSON.stringify(profileTool.inputSchema),
+  );
+  console.log(
+    'Matches schema=' + JSON.stringify(matchesTool.inputSchema),
+  );
+
+  const previousMap = new Map(
+    previous.map((player) => [player.id, player]),
+  );
+
+  const players = [];
+  const errors = [];
+
   for (const account of config.players) {
     try {
-      const profileRes = await client.callTool({name:profileTool.name,arguments:argsFor(profileTool,account)});
-      const profile = parseTool(profileRes);
-      const rank = findRank(profile);
-      if (!rank) throw new Error('No se pudo interpretar rango/LP desde el perfil OP.GG.');
-      let identifier = null;
-      walk(profile,o=>{ if (identifier) return; for (const k of ['summoner_id','summonerId','id','puuid','acct_id']) if (o[k]!=null) { identifier=String(o[k]); break; }});
-      const matchRes = await client.callTool({name:matchesTool.name,arguments:argsFor(matchesTool,account,identifier)});
-      const matches = gameList(parseTool(matchRes)).map(g=>toMatch(g,account.role)).sort((a,b)=>b.gameCreation-a.gameCreation).slice(0,20);
-      players.push(playerFrom(account,rank,matches,oldMap.get(account.id)));
-      console.log(account.proName+': '+rank.tier+' '+rank.division+' '+rank.lp+' LP · '+matches.length+' partidas');
+      const profileArgs = buildArgs(profileTool, account);
+
+      const profileResult = await mcpRequest(
+        sessionId,
+        100 + players.length,
+        'tools/call',
+        {
+          name: profileTool.name,
+          arguments: profileArgs,
+        },
+      );
+
+      const profilePayload = resultData(profileResult);
+      const rank = findRank(profilePayload);
+
+      if (!rank) {
+        throw new Error(
+          'No se pudo interpretar el rango/LP del perfil OP.GG.',
+        );
+      }
+
+      const identifier = extractIdentifier(profilePayload);
+
+      const matchesArgs = buildArgs(
+        matchesTool,
+        account,
+        identifier,
+      );
+
+      const matchesResult = await mcpRequest(
+        sessionId,
+        200 + players.length,
+        'tools/call',
+        {
+          name: matchesTool.name,
+          arguments: matchesArgs,
+        },
+      );
+
+      const matchesPayload = resultData(matchesResult);
+      const matches = matchObjects(matchesPayload)
+        .map((game) => toMatch(game, account.role))
+        .sort((a, b) => b.gameCreation - a.gameCreation)
+        .slice(0, 20);
+
+      players.push(
+        playerFrom(
+          account,
+          rank,
+          matches,
+          previousMap.get(account.id),
+        ),
+      );
+
+      console.log(
+        account.proName +
+          ': ' +
+          rank.tier +
+          ' ' +
+          rank.division +
+          ' ' +
+          rank.lp +
+          ' LP · ' +
+          matches.length +
+          ' partidas',
+      );
     } catch (error) {
-      const msg = error instanceof Error ? error.message : String(error);
-      console.error(account.proName+': '+msg);
-      const previous = oldMap.get(account.id);
-      if (previous) players.push(previous);
-      errors.push(account.proName+': '+msg);
+      const message =
+        error instanceof Error ? error.message : String(error);
+
+      console.error(account.proName + ': ' + message);
+
+      const previousPlayer = previousMap.get(account.id);
+
+      if (previousPlayer) players.push(previousPlayer);
+
+      errors.push(account.proName + ': ' + message);
     }
   }
 
-  rankings(players);
+  recalculateRankings(players);
+
   const payload = {
-    generatedAt:nowIso(), source:'OP.GG', sourceType:'official-opgg-mcp',
-    status:errors.length===0 && players.length===config.players.length ? 'ok' : 'partial',
-    players, errors,
-    meta:{
-      team:config.team, region:config.region.toUpperCase(),
-      accountCount:config.players.length, successfulCount:config.players.length-errors.length,
-      mcpTools:['lol_get_summoner_profile','lol_list_summoner_matches'],
-      message:'Datos obtenidos mediante el servidor oficial de OP.GG MCP. No se utiliza una Riot API key.'
-    }
+    generatedAt: new Date().toISOString(),
+    source: 'OP.GG',
+    sourceType: 'official-opgg-mcp',
+    status:
+      errors.length === 0 &&
+      players.length === config.players.length
+        ? 'ok'
+        : 'partial',
+    players,
+    errors,
+    meta: {
+      team: config.team,
+      region: config.region.toUpperCase(),
+      accountCount: config.players.length,
+      successfulCount: config.players.length - errors.length,
+      mcpTools: [
+        'lol_get_summoner_profile',
+        'lol_list_summoner_matches',
+      ],
+      message:
+        'Datos obtenidos mediante el servidor oficial de OP.GG MCP. No se utiliza una Riot API key.',
+    },
   };
-  await fs.writeFile(LIVE,JSON.stringify(payload,null,2)+'\n','utf8');
-  if (client.close) await client.close();
+
+  await fs.writeFile(
+    LIVE,
+    JSON.stringify(payload, null, 2) + '\n',
+    'utf8',
+  );
+
+  if (errors.length > 0) process.exitCode = 1;
 }
-main().catch(error=>{ console.error(error); process.exit(1); });
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
