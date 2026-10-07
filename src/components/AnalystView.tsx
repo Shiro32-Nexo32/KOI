@@ -8,6 +8,26 @@ interface AnalystViewProps {
   initialQuestion?: string;
 }
 
+function renderAnalystContent(content: string): React.ReactNode {
+  return content.split('\n').map((line, index) => {
+    const parts = line.split(/(\*\*[^*]+\*\*|\`[^\`]+\`)/g);
+    return (
+      <React.Fragment key={index}>
+        {parts.map((part, partIndex) => {
+          if (part.startsWith('**') && part.endsWith('**')) {
+            return <strong key={partIndex} className="font-bold text-white">{part.slice(2, -2)}</strong>;
+          }
+          if (part.startsWith('\\`') && part.endsWith('\\`')) {
+            return <code key={partIndex} className="rounded bg-slate-950 px-1 py-0.5 font-mono text-[11px] text-cyan-300">{part.slice(1, -1)}</code>;
+          }
+          return <React.Fragment key={partIndex}>{part}</React.Fragment>;
+        })}
+        {index < content.split('\n').length - 1 && <br />}
+      </React.Fragment>
+    );
+  });
+}
+
 function buildWelcome(players: PlayerProfile[]): AnalystChatMessage {
   const ordered = [...players].sort((a, b) => a.formRank - b.formRank);
   const lines = ordered.map(
@@ -58,7 +78,27 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
     setIsLoading(true);
 
     try {
-      const reply = getLocalAnalystAnswer(question, players);
+      let reply = '';
+
+      try {
+        const response = await fetch('/api/analyst/ask', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question }),
+        });
+
+        if (response.ok) {
+          const payload = (await response.json()) as { answer?: string };
+          if (payload.answer?.trim()) reply = payload.answer.trim();
+        }
+      } catch {
+        // GitHub Pages no tiene backend; se usa el analista local.
+      }
+
+      if (!reply) {
+        reply = getLocalAnalystAnswer(question, players);
+      }
+
       setMessages((current) => [
         ...current,
         {
@@ -191,8 +231,8 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
                 )}
               </div>
 
-              <div className="mt-3 whitespace-pre-wrap text-sm leading-relaxed text-slate-200">
-                {message.content}
+              <div className="mt-3 text-sm leading-relaxed text-slate-200">
+                {renderAnalystContent(message.content)}
               </div>
 
               {assistant && message.suggestedFollowUps?.length ? (
