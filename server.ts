@@ -13,7 +13,7 @@ const PORT = Number(process.env.PORT || 3000);
 const LIVE_PATH = path.resolve('data/live.json');
 const execFileAsync = promisify(execFile);
 
-let refreshPromise: Promise<void> | null = null;
+let refreshPromise: Promise<LiveTrackerPayload> | null = null;
 let lastRefreshStartedAt = 0;
 const REFRESH_COOLDOWN_MS = 60_000;
 
