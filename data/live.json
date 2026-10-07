@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:32:43.580Z",
+  "generatedAt": "2026-10-07T22:08:38.132Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -15,18 +15,18 @@
       "team": "KOI / MKOI",
       "role": "TOP",
       "profileIconId": 588,
-      "tier": "DIAMOND",
+      "tier": "MASTER",
       "division": "I",
-      "lp": 87,
-      "wins": 14,
+      "lp": 17,
+      "wins": 15,
       "losses": 2,
-      "winrate": 87.5,
-      "streak": 4,
-      "avgKda": 7.3,
+      "winrate": 88.2,
+      "streak": 5,
+      "avgKda": 7.9,
       "avgKills": 8.1,
-      "avgDeaths": 3,
-      "avgAssists": 6.7,
-      "avgCsPerMin": 8.4,
+      "avgDeaths": 2.8,
+      "avgAssists": 6.9,
+      "avgCsPerMin": 8.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -58,15 +58,15 @@
         {
           "championName": "Karma",
           "championId": "43",
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "losses": 0,
           "winrate": 100,
-          "kills": 4,
+          "kills": 12,
           "deaths": 6,
-          "assists": 11,
-          "kda": 2.5,
-          "csPerMin": 5.4
+          "assists": 21,
+          "kda": 5.5,
+          "csPerMin": 7.1
         },
         {
           "championName": "Kai'Sa",
@@ -148,6 +148,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXZ9sUT8TbqZMlIOMhZ1QAtw1HpSWJfBs8=",
+          "gameCreation": 1791409778000,
+          "gameDurationSeconds": 1478,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Karma",
+          "championId": "43",
+          "champLevel": 17,
+          "role": "TOP",
+          "kills": 8,
+          "deaths": 0,
+          "assists": 10,
+          "kda": 18,
+          "cs": 218,
+          "csPerMin": 8.8,
+          "killParticipationPct": 0,
+          "damageDealt": 20946,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            4005,
+            3108,
+            3110,
+            3158,
+            4629,
+            1052
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWsA3P9Sj5MUy5q0JvgU1X3z1naJqsQVbo=",
           "gameCreation": 1791407928000,
@@ -685,8 +719,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "DIAMOND I (87 LP)",
-      "analystSummary": "Myrwn: DIAMOND I 87 LP · 16 partidas consultadas · 87.5% WR · KDA medio 7.3.",
+      "statusBadge": "MASTER I (17 LP)",
+      "analystSummary": "Myrwn: MASTER I 17 LP · 17 partidas consultadas · 88.2% WR · KDA medio 7.9.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -703,6 +737,15 @@
           "division": "I",
           "lp": 87,
           "wins": 14,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791410891069,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 17,
+          "wins": 15,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -723,16 +766,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 87,
-      "wins": 17,
+      "lp": 122,
+      "wins": 18,
       "losses": 2,
-      "winrate": 89.5,
-      "streak": 5,
-      "avgKda": 10.1,
-      "avgKills": 8.5,
-      "avgDeaths": 2.6,
-      "avgAssists": 9.9,
-      "avgCsPerMin": 1.2,
+      "winrate": 90,
+      "streak": 6,
+      "avgKda": 9.8,
+      "avgKills": 8.4,
+      "avgDeaths": 2.8,
+      "avgAssists": 10.3,
+      "avgCsPerMin": 1.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -747,6 +790,19 @@
           "assists": 40,
           "kda": 9.3,
           "csPerMin": 0.8
+        },
+        {
+          "championName": "Jarvan IV",
+          "championId": "59",
+          "games": 3,
+          "wins": 3,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 32,
+          "deaths": 15,
+          "assists": 48,
+          "kda": 5.3,
+          "csPerMin": 1.1
         },
         {
           "championName": "Lee Sin",
@@ -773,19 +829,6 @@
           "assists": 32,
           "kda": 13.5,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Jarvan IV",
-          "championId": "59",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 25,
-          "deaths": 10,
-          "assists": 30,
-          "kda": 5.5,
-          "csPerMin": 0.8
         },
         {
           "championName": "Pantheon",
@@ -854,6 +897,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXZ9sUT8TbqZMlIOMhZ1QAtw1HpSWJfBs8=",
+          "gameCreation": 1791409778000,
+          "gameDurationSeconds": 1478,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Jarvan IV",
+          "championId": "59",
+          "champLevel": 15,
+          "role": "JUNGLE",
+          "kills": 7,
+          "deaths": 5,
+          "assists": 18,
+          "kda": 5,
+          "cs": 47,
+          "csPerMin": 1.9,
+          "killParticipationPct": 0,
+          "damageDealt": 17618,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            3071,
+            3047,
+            6692,
+            1028,
+            6333
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWsA3P9Sj5MUy5q0JvgU1X3z1naJqsQVbo=",
           "gameCreation": 1791407928000,
@@ -1479,8 +1556,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (87 LP)",
-      "analystSummary": "Elyoya: MASTER I 87 LP · 19 partidas consultadas · 89.5% WR · KDA medio 10.1.",
+      "statusBadge": "MASTER I (122 LP)",
+      "analystSummary": "Elyoya: MASTER I 122 LP · 20 partidas consultadas · 90% WR · KDA medio 9.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1497,6 +1574,15 @@
           "division": "I",
           "lp": 87,
           "wins": 17,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791410898595,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 122,
+          "wins": 18,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
         }
