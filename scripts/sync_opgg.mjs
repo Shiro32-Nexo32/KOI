@@ -832,6 +832,156 @@ function streak(matches) {
   return first ? count : -count;
 }
 
+
+function decodeHtmlEntities(value) {
+  return value
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>');
+}
+
+function htmlToPlainText(html) {
+  return decodeHtmlEntities(
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<img\b[^>]*alt=["']([^"']+)["'][^>]*>/gi, ' $1 ')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim(),
+  );
+}
+
+function parseDpmRank(text) {
+  const match = text.match(
+    /(CHALLENGER|GRANDMASTER|MASTER|DIAMOND|EMERALD|PLATINUM|GOLD|SILVER|BRONZE|IRON)(?:\s+(IV|III|II|I))?\s*-\s*(\d+)\s*LP\s+(\d+)W\s*-\s*(\d+)L/i,
+  );
+
+  if (!match) return null;
+
+  const [, tier, division, lp, wins, losses] = match;
+  return {
+    tier: tier.toUpperCase(),
+    division: division ? division.toUpperCase() : 'I',
+    lp: int(lp),
+    wins: int(wins),
+    losses: int(losses),
+    winrate: Number(
+      ((int(wins) / Math.max(1, int(wins) + int(losses))) * 100).toFixed(1),
+    ),
+  };
+}
+
+function relativeAgeMs(segment) {
+  const minute = segment.match(/(\d+)\s*m\s*ago\b/i);
+  if (minute) return int(minute[1]) * 60 * 1000;
+
+  const hour = segment.match(/(\d+)\s*h\s*ago\b/i);
+  if (hour) return int(hour[1]) * 60 * 60 * 1000;
+
+  const day = segment.match(/(\d+)\s*d\s*ago\b/i);
+  if (day) return int(day[1]) * 24 * 60 * 60 * 1000;
+
+  return null;
+}
+
+function parseDpmMatches(text) {
+  const segments = text.split(/\bSolo\/Duo\b/i).slice(1);
+  const now = Date.now();
+  const parsed = [];
+
+  for (let index = 0; index < segments.length; index += 1) {
+    const segment = segments[index];
+
+    const lpMatch = segment.match(/([+-]\d+)\s*LP\b/i);
+    const championMatch = segment.match(
+      /[+-]\d+\s*LP\s+(.+?)\s+Lane\s+(TOP|JUNGLE|MIDDLE|MID|BOTTOM|BOT|UTILITY|SUPPORT)\b/i,
+    );
+    const kdaMatch = segment.match(/(\d+)\/(\d+)\/(\d+)\b/);
+    const kdaValue = segment.match(/(\d+(?:\.\d+)?)\s*KDA\b/i);
+    const csValue = segment.match(/(\d+(?:\.\d+)?)\s*CS\/m\b/i);
+    const kpValue = segment.match(/(\d+(?:\.\d+)?)%\s*KP\b/i);
+
+    if (!lpMatch || !championMatch || !kdaMatch) continue;
+
+    const [, rawDelta] = lpMatch;
+    const [, championName, rawRole] = championMatch;
+    const [, kills, deaths, assists] = kdaMatch;
+    const ageMs = relativeAgeMs(segment);
+
+    const matchAge = ageMs === null ? index * 60 * 1000 : ageMs;
+
+    parsed.push({
+      matchId: 'DPM_' + String(now - matchAge) + '_' + index,
+      gameCreation: now - matchAge,
+      gameDurationSeconds: 0,
+      queueType: 'SOLORANKED',
+      win: Number(rawDelta) > 0,
+      championName: championName.trim(),
+      championId: '0',
+      champLevel: 0,
+      role: String(rawRole).toUpperCase() === 'MIDDLE' ? 'MID' : String(rawRole).toUpperCase() === 'BOTTOM' ? 'ADC' : String(rawRole).toUpperCase() === 'UTILITY' ? 'SUPPORT' : String(rawRole).toUpperCase(),
+      kills: int(kills),
+      deaths: int(deaths),
+      assists: int(assists),
+      kda: Number(
+        kdaValue?.[1] ??
+          ((int(kills) + int(assists)) / Math.max(1, int(deaths))).toFixed(2),
+      ),
+      cs: 0,
+      csPerMin: num(csValue?.[1], 0),
+      killParticipationPct: num(kpValue?.[1], 0),
+      damageDealt: 0,
+      damagePct: 0,
+      visionScore: 0,
+      spells: ['', ''],
+      items: [],
+      tags: [],
+    });
+  }
+
+  const seen = new Set();
+  return parsed
+    .filter((match) => {
+      if (seen.has(match.matchId)) return false;
+      seen.add(match.matchId);
+      return true;
+    })
+    .sort((a, b) => b.gameCreation - a.gameCreation)
+    .slice(0, 20);
+}
+
+async function fetchDpmSnapshot(account) {
+  const dpmUrl = 'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
+  const response = await fetch(dpmUrl, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (KOI Tracker; sync bot)',
+      Accept: 'text/html,application/xhtml+xml',
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error('DPM HTTP ' + response.status + ' for ' + account.proName);
+  }
+
+  const html = await response.text();
+  const plain = htmlToPlainText(html);
+  const rank = parseDpmRank(plain);
+  const matches = parseDpmMatches(plain);
+
+  if (!rank || !matches.length) {
+    throw new Error('DPM no devolvió un perfil/ranking suficientemente parseable para ' + account.proName);
+  }
+
+  return {
+    rank,
+    matches,
+    url: dpmUrl,
+  };
+}
+
 function playerFrom(account, rank, matches, previous, profilePayload) {
   const recent = matches.slice(0, 20);
   const average = (field) =>
@@ -1046,32 +1196,63 @@ async function main() {
       );
 
       const matchesPayload = resultData(matchesResult);
-      const matches = matchObjects(matchesPayload)
+      let matches = matchObjects(matchesPayload)
         .map((game) => toMatch(game, account.role))
         .sort((a, b) => b.gameCreation - a.gameCreation)
         .slice(0, 20);
 
-      players.push(
-        playerFrom(
-          account,
-          rank,
-          matches,
-          previousMap.get(account.id),
-          profilePayload,
-        ),
+      let finalRank = rank;
+      let freshnessSource = 'OP.GG MCP';
+
+      try {
+        const dpm = await fetchDpmSnapshot(account);
+        const opggLatest = matches[0]?.gameCreation ?? 0;
+        const dpmLatest = dpm.matches[0]?.gameCreation ?? 0;
+        const rankChanged =
+          dpm.rank.tier !== rank.tier ||
+          dpm.rank.division !== rank.division ||
+          dpm.rank.lp !== rank.lp;
+
+        if (dpmLatest > opggLatest + 5 * 60 * 1000 || rankChanged) {
+          finalRank = dpm.rank;
+          matches = dpm.matches;
+          freshnessSource = 'DPM fallback';
+        }
+      } catch (dpmError) {
+        console.warn(
+          account.proName +
+            ': no se pudo usar DPM como fallback: ' +
+            (dpmError instanceof Error ? dpmError.message : String(dpmError)),
+        );
+      }
+
+      const previousPlayer = previousMap.get(account.id);
+      const nextPlayer = playerFrom(
+        account,
+        finalRank,
+        matches,
+        previousPlayer,
+        profilePayload,
       );
+
+      if (freshnessSource === 'DPM fallback') {
+        nextPlayer.analystSummary += ' Fuente fresca: DPM.LOL.';
+      }
+
+      players.push(nextPlayer);
 
       console.log(
         account.proName +
           ': ' +
-          rank.tier +
+          finalRank.tier +
           ' ' +
-          rank.division +
+          finalRank.division +
           ' ' +
-          rank.lp +
+          finalRank.lp +
           ' LP · ' +
           matches.length +
-          ' partidas',
+          ' partidas · ' +
+          freshnessSource,
       );
     } catch (error) {
       const message =
@@ -1092,7 +1273,7 @@ async function main() {
   const payload = {
     generatedAt: new Date().toISOString(),
     source: 'OP.GG',
-    sourceType: 'official-opgg-mcp',
+    sourceType: 'official-opgg-mcp-with-dpm-fallback',
     status:
       errors.length === 0 &&
       players.length === config.players.length
@@ -1110,7 +1291,7 @@ async function main() {
         'lol_list_summoner_matches',
       ],
       message:
-        'Datos obtenidos mediante el servidor oficial de OP.GG MCP. No se utiliza una Riot API key.',
+        'OP.GG MCP es la fuente primaria; DPM.LOL se usa como fallback de frescura cuando OP.GG devuelve datos antiguos. No se utiliza una Riot API key.',
     },
   };
 
