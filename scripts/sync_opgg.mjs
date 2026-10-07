@@ -968,8 +968,10 @@ async function fetchDpmSnapshot(account) {
     try {
       const response = await fetch(url, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (compatible; KOI-Tracker/1.0)',
+          'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)',
           Accept: 'text/html,text/plain,application/xhtml+xml',
+          'Cache-Control': 'no-cache, no-store, max-age=0',
+          Pragma: 'no-cache',
         },
       });
 
