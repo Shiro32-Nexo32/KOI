@@ -11,7 +11,6 @@ import { PlayersView } from './components/PlayersView';
 import { MatchesView } from './components/MatchesView';
 import { EvolutionView } from './components/EvolutionView';
 import { AnalystView } from './components/AnalystView';
-import { EditAccountModal } from './components/EditAccountModal';
 import { Footer } from './components/Footer';
 import { INITIAL_PLAYERS, INITIAL_TEAM_REPORT } from './data/initialPlayers';
 import { LiveTrackerPayload, PlayerProfile, TeamOverviewReport } from './types/lol';
@@ -66,7 +65,6 @@ export default function App() {
   const [selectedPlayerId, setSelectedPlayerId] = useState<string>('jojopyun');
   const [lastUpdated, setLastUpdated] = useState<number | null>(cached.generatedAt);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
-  const [editingPlayer, setEditingPlayer] = useState<PlayerProfile | null>(null);
   const [analystInitialPrompt, setAnalystInitialPrompt] = useState<string>('');
   const [autoRefresh, setAutoRefresh] = useState<boolean>(true);
   const [sourceStatus, setSourceStatus] = useState<SourceStatus>(
@@ -169,19 +167,6 @@ export default function App() {
     setActiveTab('analyst');
   };
 
-  const handleAccountUpdated = (updatedPlayer: PlayerProfile) => {
-    setPlayers((prev) =>
-      prev.map((player) =>
-        player.id === updatedPlayer.id ? { ...player, ...updatedPlayer } : player,
-      ),
-    );
-    setSourceStatus('cached');
-    showToast(
-      `Cuenta de ${updatedPlayer.proName} actualizada localmente. La próxima sincronización de OP.GG la validará.`,
-      'info',
-    );
-  };
-
   const statusLabel =
     sourceStatus === 'live'
       ? 'OP.GG · sincronización automática'
@@ -230,7 +215,6 @@ export default function App() {
             players={players}
             selectedPlayerId={selectedPlayerId}
             onSelectPlayer={setSelectedPlayerId}
-            onOpenEditAccount={(player) => setEditingPlayer(player)}
             onAskAboutPlayer={handleAskAboutPlayer}
           />
         )}
@@ -257,13 +241,6 @@ export default function App() {
           />
         )}
       </main>
-
-      <EditAccountModal
-        isOpen={Boolean(editingPlayer)}
-        player={editingPlayer}
-        onClose={() => setEditingPlayer(null)}
-        onAccountUpdated={handleAccountUpdated}
-      />
 
       <Footer
         lastUpdated={lastUpdated}
