@@ -1,0 +1,6 @@
+{
+  "name": "LoL Bootcamp Tracker & Pro Analyst",
+  "description": "Live tracker and expert analytical reports for pro League of Legends bootcamps, monitoring rank, LP, last 20 rankeds, champion pools, and performance trends.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

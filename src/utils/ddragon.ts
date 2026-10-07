@@ -1,0 +1,44 @@
+// Data Dragon CDN helpers for League of Legends assets (Patch 15.5.1)
+
+const DDRAGON_VERSION = '15.5.1';
+const DDRAGON_BASE = `https://ddragon.leagueoflegends.com/cdn/${DDRAGON_VERSION}`;
+
+export function getChampionIconUrl(championIdOrName: string): string {
+  if (!championIdOrName) return 'https://ddragon.leagueoflegends.com/cdn/15.5.1/img/champion/Ahri.png';
+  // Normalize known edge cases
+  const clean = championIdOrName.replace(/[^a-zA-Z0-9]/g, '');
+  return `${DDRAGON_BASE}/img/champion/${clean}.png`;
+}
+
+export function getItemIconUrl(itemId: number): string {
+  if (!itemId || itemId === 0) return '';
+  return `${DDRAGON_BASE}/img/item/${itemId}.png`;
+}
+
+export function getSpellIconUrl(spellName: string): string {
+  if (!spellName) return '';
+  return `${DDRAGON_BASE}/img/spell/${spellName}.png`;
+}
+
+export function getProfileIconUrl(iconId: number = 588): string {
+  return `${DDRAGON_BASE}/img/profileicon/${iconId}.png`;
+}
+
+export function getTierColor(tier: string): { bg: string; text: string; border: string; glow: string } {
+  switch (tier.toUpperCase()) {
+    case 'CHALLENGER':
+      return { bg: 'bg-amber-500/10', text: 'text-amber-400', border: 'border-amber-500/30', glow: 'shadow-amber-500/20' };
+    case 'GRANDMASTER':
+      return { bg: 'bg-rose-500/10', text: 'text-rose-400', border: 'border-rose-500/30', glow: 'shadow-rose-500/20' };
+    case 'MASTER':
+      return { bg: 'bg-purple-500/10', text: 'text-purple-300', border: 'border-purple-500/30', glow: 'shadow-purple-500/20' };
+    case 'DIAMOND':
+      return { bg: 'bg-cyan-500/10', text: 'text-cyan-300', border: 'border-cyan-500/30', glow: 'shadow-cyan-500/20' };
+    case 'EMERALD':
+      return { bg: 'bg-emerald-500/10', text: 'text-emerald-400', border: 'border-emerald-500/30', glow: 'shadow-emerald-500/20' };
+    case 'PLATINUM':
+      return { bg: 'bg-teal-500/10', text: 'text-teal-400', border: 'border-teal-500/30', glow: 'shadow-teal-500/20' };
+    default:
+      return { bg: 'bg-slate-700/20', text: 'text-slate-300', border: 'border-slate-700', glow: 'shadow-slate-500/10' };
+  }
+}
