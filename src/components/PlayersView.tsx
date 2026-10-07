@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { PlayerProfile } from '../types/lol';
 import { getChampionIconUrl, getItemIconUrl, getTierColor, getOpGgUrl, getDpmLolUrl } from '../utils/ddragon';
-import { Flame, Trophy, Swords, Shield, Crosshair, BarChart3, Edit3, ArrowRight, ExternalLink } from 'lucide-react';
+import { Flame, Trophy, Swords, Shield, Crosshair, BarChart3, ArrowRight, ExternalLink } from 'lucide-react';
 
 interface PlayersViewProps {
   players: PlayerProfile[];
   selectedPlayerId: string;
   onSelectPlayer: (id: string) => void;
-  onOpenEditAccount: (player: PlayerProfile) => void;
   onAskAboutPlayer: (playerName: string) => void;
 }
 
@@ -15,7 +14,6 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
   players,
   selectedPlayerId,
   onSelectPlayer,
-  onOpenEditAccount,
   onAskAboutPlayer,
 }) => {
   const activePlayer = players.find((p) => p.id === selectedPlayerId) || players[0];
@@ -67,13 +65,6 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
                   <span className="font-mono text-xs text-slate-300 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">
                     {activePlayer.riotId}
                   </span>
-                  <button
-                    onClick={() => onOpenEditAccount(activePlayer)}
-                    className="rounded p-1 text-slate-400 hover:text-amber-400 hover:bg-slate-800"
-                    title="Editar Riot ID"
-                  >
-                    <Edit3 className="h-3.5 w-3.5" />
-                  </button>
                 </div>
               </div>
 
