@@ -42,6 +42,18 @@ jobs:
             exit 0
           fi
 
+          # Keep concurrent code changes safe: only carry the generated live.json
+          # onto the latest main instead of pushing a stale checkout.
+          cp data/live.json /tmp/koi-live.json
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/koi-live.json data/live.json
+
+          if git diff --quiet -- data/live.json; then
+            echo "Live data became identical after rebasing onto latest main."
+            exit 0
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/live.json
