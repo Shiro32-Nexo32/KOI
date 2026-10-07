@@ -1,12 +1,28 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-10-07T17:29:37Z",
   "source": "OP.GG",
   "sourceType": "opgg-undocumented-api",
-  "status": "waiting_for_first_sync",
+  "status": "partial",
   "players": [],
-  "errors": [],
+  "errors": [
+    "Myrwn: HTTP Error 404: Not Found",
+    "Elyoya: HTTP Error 404: Not Found",
+    "Jojopyun: HTTP Error 404: Not Found",
+    "Supa: HTTP Error 404: Not Found",
+    "Alvaro: HTTP Error 404: Not Found"
+  ],
   "meta": {
-    "syncVersion": 1,
-    "message": "El primer workflow programado rellenará este archivo con datos vivos de OP.GG."
+    "team": "KOI / MKOI",
+    "region": "NA",
+    "accountCount": 5,
+    "successfulCount": 0,
+    "summonerIds": {
+      "myrwn": "121694075",
+      "elyoya": "121694064",
+      "jojopyun": "121694117",
+      "supa": "121694076",
+      "alvaro": "121694077"
+    },
+    "message": "Datos sincronizados automáticamente desde OP.GG. El endpoint utilizado es público pero no documentado como API para terceros."
   }
 }
