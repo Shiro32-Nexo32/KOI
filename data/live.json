@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T22:08:38.132Z",
+  "generatedAt": "2026-10-07T22:09:25.424Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -741,7 +741,7 @@
           "note": "Sincronización automática desde OP.GG"
         },
         {
-          "timestamp": 1791410891069,
+          "timestamp": 1791410937183,
           "tier": "MASTER",
           "division": "I",
           "lp": 17,
@@ -1578,7 +1578,7 @@
           "note": "Sincronización automática desde OP.GG"
         },
         {
-          "timestamp": 1791410898595,
+          "timestamp": 1791410943320,
           "tier": "MASTER",
           "division": "I",
           "lp": 122,
