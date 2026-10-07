@@ -1,77 +1,103 @@
-# LoL Bootcamp Tracker & Pro Analyst 🏆
+# KOI Tracker · MKOI
 
-Seguimiento analítico en tiempo real de jugadores profesionales de League of Legends durante bootcamps y SoloQ competitiva (MAD Lions KOI en Norteamérica: Myrwn, Elyoya, Jojopyun, Supa y Alvaro).
+Tracker de las cinco cuentas de SoloQ monitorizadas de **KOI / MKOI**:
 
-## 🚀 Características
+- Myrwn
+- Elyoya
+- Jojopyun
+- Supa
+- Alvaro
 
-- **Los 5 jugadores registrados de fábrica:**
-  - Myrwn (`Shirin#ilmgf` · TOP)
-  - Elyoya (`Yoyadeodo#tuki` · JUNGLE)
-  - Jojopyun (`jojooooooooo#9999` · MID)
-  - Supa (`Charmander#MKOI` · ADC)
-  - Alvaro (`Treecko#MKOI` · SUPPORT)
-- **Doble Ranking Táctico:**
-  - *Ranking de Forma:* Momentum reciente puro, racha y KDA.
-  - *Ranking de Elo:* Posición ladder en tiempo real (Master > Diamante I > Diamante II).
-- **Últimas 20 Rankeds detalladas:**
-  - KDA, CS/min, daño infligido, porcentaje de participación en muertes, objetos reales con Data Dragon CDN 15.5.1 y etiquetas de rendimiento (*MVP*, *Hypercarry*, *ACE*).
-- **Evolución Temporal de LP (Snapshots):**
-  - Historial secuencial de escalada (`D2 40 LP → D2 72 LP → D1 15 LP → D1 97 LP → Master 62 LP`).
-- **Analista Táctico en Vivo:**
-  - Generación de informes automáticos y chat interactivo para preguntas libres o reportes de sinergia de la botlane.
-- **Riot Games API Server Proxy:**
-  - Las credenciales nunca se exponen al navegador. Enrutamiento regional (`americas` / `na1`) con caché inteligente para respetar los rate limits.
+La aplicación está diseñada como un **tracker de cuentas**, no como una ficha estática. El frontend muestra el último snapshot disponible y GitHub Actions sincroniza los datos automáticamente desde OP.GG.
 
----
+## Fuente de datos
 
-## 🛠️ Instalación y ejecución local
+La fuente principal del tracker es **OP.GG**.
 
-1. **Clonar el repositorio:**
-```bash
-git clone https://github.com/TU_USUARIO/lol-bootcamp-tracker.git
-cd lol-bootcamp-tracker
-```
+El sincronizador usa endpoints internos que consume la propia web de OP.GG para obtener:
 
-2. **Instalar dependencias:**
-```bash
+- rango y LP;
+- victorias, derrotas y winrate;
+- últimas partidas;
+- campeón jugado;
+- KDA;
+- CS/min;
+- snapshots de evolución;
+- ranking de forma y ladder.
+
+No se requiere una Riot API key para este flujo.
+
+**Importante:** el endpoint de OP.GG utilizado no está documentado por OP.GG como una API pública para desarrolladores. Está aislado en `scripts/sync_opgg.py` para poder sustituirlo si cambia.
+
+## Arquitectura
+
+~~~text
+OP.GG
+  │
+  │ cada 15 minutos
+  ▼
+GitHub Actions
+  │
+  │ genera
+  ▼
+data/live.json
+  │
+  ├── frontend en GitHub Pages
+  │
+  └── servidor local opcional
+~~~
+
+El frontend consulta el último `live.json` publicado directamente desde GitHub y guarda una copia local para evitar quedarse vacío cuando una sincronización temporalmente no esté disponible.
+
+La web **no afirma "tiempo real"**: muestra la antigüedad del último snapshot recibido.
+
+## Desarrollo local
+
+Instala dependencias:
+
+~~~bash
 npm install
-```
+~~~
 
-3. **Configurar variables de entorno:**
-Copia `.env.example` a `.env`:
-```bash
-cp .env.example .env
-```
-*(Opcional: Si tienes una Riot API Key de [developer.riotgames.com](https://developer.riotgames.com), añádela en `RIOT_API_KEY`). Si la dejas vacía, la aplicación funciona de forma inmediata con la telemetría y snapshots verificados del bootcamp.*
+Arranca el servidor local:
 
-4. **Arrancar en modo desarrollo:**
-```bash
+~~~bash
 npm run dev
-```
-Abre en tu navegador: [http://localhost:3000](http://localhost:3000)
+~~~
 
----
+El servidor local sirve la interfaz y expone una pequeña API de lectura sobre `data/live.json`.
 
-## 📦 Despliegue
+## Sincronización manual
 
-### GitHub Pages
-La interfaz React se puede publicar como sitio estático. El workflow de `main` ejecuta Vite y publica `dist` en GitHub Pages.
+Desde GitHub Actions se puede ejecutar manualmente:
 
-### Despliegue completo con backend
-Para disponer también de la API de Riot, simulación, edición de cuentas y Gemini, despliega el servidor Node/Express en **Render**, **Railway**, **Fly.io** o un VPS:
+**Actions → Sync KOI accounts from OP.GG → Run workflow**
 
-```bash
-npm install
-npm run build
-npm start
-```
+El workflow también se ejecuta automáticamente cada 15 minutos.
 
-En ese caso configura `RIOT_API_KEY` y, para el analista Gemini, `GEMINI_API_KEY` como variables de entorno.
+## GitHub Pages
 
-La versión de GitHub Pages conserva los datos y las modificaciones en el navegador mediante `localStorage` cuando no existe backend.
+La página se construye con Vite mediante `.github/workflows/static.yml`.
 
----
+Los commits que solo cambian `data/live.json` no vuelven a compilar toda la web; el frontend consume ese archivo directamente. Esto reduce despliegues innecesarios.
 
-## ⚖️ Aviso Legal de Riot Games
+## Estructura importante
 
-LoL Bootcamp Tracker isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+- `data/monitored.json` → las cinco cuentas monitorizadas.
+- `data/live.json` → último snapshot publicado.
+- `scripts/sync_opgg.py` → sincronizador OP.GG.
+- `src/data/initialPlayers.ts` → datos de respaldo iniciales.
+- `src/utils/ddragon.ts` → recursos de campeones, objetos y hechizos.
+- `server.ts` → servidor local opcional.
+- `.github/workflows/sync-opgg.yml` → sincronización automática.
+- `.github/workflows/static.yml` → publicación en GitHub Pages.
+
+## Política de datos
+
+El tracker conserva snapshots de LP cuando detecta cambios de rango o LP. El histórico se almacena dentro de `data/live.json` y queda versionado en Git, de modo que los cambios no dependen de que un proceso Node permanezca vivo.
+
+## Aviso legal
+
+KOI Tracker isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+
+Los logotipos, nombres y recursos de League of Legends siguen perteneciendo a sus respectivos titulares.
