@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PlayerProfile, MatchRecord } from '../types/lol';
 import { getChampionIconUrl, getItemIconUrl, getSpellIconUrl } from '../utils/ddragon';
 import { Filter, Trophy, Swords, Zap } from 'lucide-react';
@@ -23,6 +23,10 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
   const [filterPlayer, setFilterPlayer] = useState<string>(selectedPlayerId || 'all');
   const [filterOutcome, setFilterOutcome] = useState<'all' | 'win' | 'loss'>('all');
   const [filterTag, setFilterTag] = useState<'all' | 'mvp' | 'hypercarry'>('all');
+
+  useEffect(() => {
+    setFilterPlayer(selectedPlayerId || 'all');
+  }, [selectedPlayerId]);
 
   // Flatten and enrich matches
   const allMatches: EnrichedMatch[] = [];
