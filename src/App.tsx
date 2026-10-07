@@ -17,6 +17,8 @@ import { LiveTrackerPayload, PlayerProfile } from './types/lol';
 
 const LIVE_DATA_URL =
   'https://raw.githubusercontent.com/Shiro32-Nexo32/KOI/main/data/live.json';
+const REFRESH_API_URL =
+  (import.meta.env.VITE_REFRESH_API_URL as string | undefined) || '/api/refresh';
 const LOCAL_CACHE_KEY = 'koi_tracker_live_cache_v1';
 
 type SourceStatus = 'live' | 'cached' | 'seed';
@@ -152,8 +154,51 @@ export default function App() {
 
   const handleRefresh = async () => {
     setIsRefreshing(true);
-    await fetchLiveData(false);
-    setIsRefreshing(false);
+
+    try {
+      const response = await fetch(REFRESH_API_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        cache: 'no-store',
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const result = (await response.json()) as {
+        ok: boolean;
+        payload?: LiveTrackerPayload;
+      };
+
+      if (!result.ok || !result.payload || !applyLivePayload(result.payload)) {
+        throw new Error('Respuesta de sincronización inválida.');
+      }
+
+      const stamp = result.payload.generatedAt
+        ? Date.parse(result.payload.generatedAt)
+        : null;
+
+      showToast(
+        stamp
+          ? `Sincronizado ahora desde OP.GG: ${formatSyncAge(stamp)}.`
+          : 'Sincronizado ahora desde OP.GG.',
+      );
+    } catch (error) {
+      console.warn('No se pudo ejecutar la sincronización manual:', error);
+
+      // Fallback: aunque el backend manual no esté disponible, seguimos mostrando
+      // el último snapshot publicado en GitHub.
+      await fetchLiveData(false);
+      showToast(
+        'No se pudo forzar una sincronización ahora. Se mantiene el último snapshot publicado.',
+        'info',
+      );
+    } finally {
+      setIsRefreshing(false);
+    }
   };
 
   const handleSelectPlayerFromOverview = (playerId: string) => {
