@@ -954,113 +954,25 @@ function parseDpmMatches(text) {
 }
 
 
-async function fetchBingDpmSnapshot(account) {
-  const query = '"' + account.gameName + '#' + account.tagLine + '" DPM.LOL "Solo/Duo"';
-  const url = 'https://www.bing.com/search?q=' + encodeURIComponent(query);
-
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
-
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; KOI-Tracker/1.0)',
-        Accept: 'text/html,application/xhtml+xml',
-        'Cache-Control': 'no-cache',
-        Pragma: 'no-cache',
-      },
-      signal: controller.signal,
-    });
-
-    if (!response.ok) throw new Error('Bing HTTP ' + response.status);
-
-    const html = await response.text();
-    const plain = htmlToPlainText(html);
-    const rank = parseDpmRank(plain);
-    const matches = parseDpmMatches(plain);
-
-    if (!rank) {
-      throw new Error('Bing no devolvió un ranking DPM parseable');
-    }
-
-    return {
-      rank,
-      matches,
-      url,
-    };
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
-
-async function fetchGoogleDpmSnapshot(account) {
-  const query =
-    '"' +
-    account.gameName +
-    '#' +
-    account.tagLine +
-    '" DPM.LOL "Ranked Solo"';
-
-  const url =
-    'https://www.google.com/search?hl=en&num=5&q=' +
-    encodeURIComponent(query);
-
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
-
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131 Safari/537.36',
-        Accept: 'text/html,application/xhtml+xml',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Cache-Control': 'no-cache',
-        Pragma: 'no-cache',
-      },
-      signal: controller.signal,
-    });
-
-    if (!response.ok) throw new Error('Google HTTP ' + response.status);
-
-    const html = await response.text();
-    const plain = htmlToPlainText(html);
-    const rank = parseDpmRank(plain);
-    const matches = parseDpmMatches(plain);
-
-    if (!rank) {
-      throw new Error('Google no devolvió un ranking DPM parseable');
-    }
-
-    return { rank, matches, url };
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
 async function fetchDpmSnapshot(account) {
   const targetUrl =
     'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
-  const cacheBuster = 'nocache=' + Date.now();
-  const freshUrl = targetUrl + '?' + cacheBuster;
 
   const urls = [
-    freshUrl,
+    targetUrl + '?nocache=' + Date.now(),
     targetUrl,
-    'https://r.jina.ai/' + freshUrl,
     'https://r.jina.ai/' + targetUrl,
   ];
 
-  let firstDpm = null;
   let lastError = null;
 
   for (const url of urls) {
     try {
       const response = await fetch(url, {
         headers: {
-          'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)',
+          'User-Agent': 'Mozilla/5.0 (compatible; KOI-Tracker/1.0)',
           Accept: 'text/html,text/plain,application/xhtml+xml',
-          'Cache-Control': 'no-cache, no-store, max-age=0',
+          'Cache-Control': 'no-cache',
           Pragma: 'no-cache',
         },
       });
@@ -1074,59 +986,11 @@ async function fetchDpmSnapshot(account) {
 
       if (!rank) throw new Error('ranking no parseable');
 
-      const candidate = { rank, matches, url };
-
-      if (!firstDpm) firstDpm = candidate;
+      return { rank, matches, url };
     } catch (error) {
       lastError = error;
     }
   }
-
-  try {
-    const candidates = [
-      await fetchBingDpmSnapshot(account),
-      await fetchGoogleDpmSnapshot(account),
-    ];
-
-    for (const candidate of candidates) {
-      console.log(
-        account.proName +
-          ': public DPM search candidate ' +
-          candidate.rank.tier +
-          ' ' +
-          candidate.rank.division +
-          ' ' +
-          candidate.rank.lp +
-          ' LP · ' +
-          candidate.matches.length +
-          ' partidas · ' +
-          candidate.url,
-      );
-
-      if (!firstDpm) {
-        firstDpm = candidate;
-        continue;
-      }
-
-      const rankChanged =
-        candidate.rank.tier !== firstDpm.rank.tier ||
-        candidate.rank.division !== firstDpm.rank.division ||
-        candidate.rank.lp !== firstDpm.rank.lp;
-
-      const firstLatest = firstDpm.matches[0]?.gameCreation ?? 0;
-      const candidateLatest = candidate.matches[0]?.gameCreation ?? 0;
-
-      if (rankChanged || candidateLatest > firstLatest + 5 * 60 * 1000) {
-        firstDpm = candidate;
-      }
-    }
-
-    if (firstDpm) return firstDpm;
-  } catch (searchError) {
-    lastError = searchError;
-  }
-
-  if (firstDpm) return firstDpm;
 
   throw new Error(
     'DPM no devolvió un perfil/ranking suficientemente parseable para ' +
@@ -1266,7 +1130,8 @@ function recalculateRankings(players) {
 
 async function main() {
   const config = JSON.parse(await fs.readFile(CONFIG, 'utf8'));
-  const previous = JSON.parse(await fs.readFile(LIVE, 'utf8')).players ?? [];
+  const previousPayload = JSON.parse(await fs.readFile(LIVE, 'utf8'));
+  const previous = previousPayload.players ?? [];
 
   const sessionId = await createMcpSession();
 
@@ -1287,10 +1152,6 @@ async function main() {
     (tool) => tool.name === 'lol_list_summoner_matches',
   );
 
-  const renewalTool = tools.find((tool) =>
-    /(?:summoner.*renewal|renewal.*summoner)/i.test(tool.name),
-  );
-
   if (!profileTool || !matchesTool) {
     throw new Error(
       'No se encontraron los tools de OP.GG MCP. Tools=' +
@@ -1304,18 +1165,6 @@ async function main() {
   console.log(
     'Matches schema=' + JSON.stringify(matchesTool.inputSchema),
   );
-  console.log(
-    'Renewal tool=' + (renewalTool ? renewalTool.name : 'none') +
-      (renewalTool ? ' schema=' + JSON.stringify(renewalTool.inputSchema) : ''),
-  );
-  console.log(
-    'Summoner tools=' +
-      JSON.stringify(
-        tools
-          .filter((tool) => /summoner/i.test(tool.name))
-          .map((tool) => ({ name: tool.name, required: tool.inputSchema?.required })),
-      ),
-  );
 
   const previousMap = new Map(
     previous.map((player) => [player.id, player]),
@@ -1326,28 +1175,6 @@ async function main() {
 
   for (const account of config.players) {
     try {
-      if (renewalTool) {
-        try {
-          const renewalArgs = buildArgs(renewalTool, account);
-          await mcpRequest(
-            sessionId,
-            50 + players.length,
-            'tools/call',
-            {
-              name: renewalTool.name,
-              arguments: renewalArgs,
-            },
-          );
-          console.log(account.proName + ': OP.GG renewal solicitado');
-        } catch (renewalError) {
-          console.warn(
-            account.proName +
-              ': renewal no disponible o rechazado: ' +
-              (renewalError instanceof Error ? renewalError.message : String(renewalError)),
-          );
-        }
-      }
-
       const profileArgs = buildArgs(profileTool, account);
 
       const profileResult = await mcpRequest(
@@ -1404,19 +1231,6 @@ async function main() {
           dpm.rank.tier !== rank.tier ||
           dpm.rank.division !== rank.division ||
           dpm.rank.lp !== rank.lp;
-
-        console.log(
-          account.proName +
-            ': DPM candidate ' +
-            dpm.rank.tier +
-            ' ' +
-            dpm.rank.division +
-            ' ' +
-            dpm.rank.lp +
-            ' LP · ' +
-            dpm.matches.length +
-            ' partidas DPM',
-        );
 
         if (dpmLatest > opggLatest + 5 * 60 * 1000 || rankChanged) {
           finalRank = dpm.rank;
@@ -1477,8 +1291,14 @@ async function main() {
 
   recalculateRankings(players);
 
+  const previousComparable = JSON.stringify(previous);
+  const currentComparable = JSON.stringify(players);
+  const dataChanged = previousComparable !== currentComparable;
+
   const payload = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: dataChanged
+      ? new Date().toISOString()
+      : previousPayload.generatedAt ?? new Date().toISOString(),
     source: 'OP.GG',
     sourceType: 'official-opgg-mcp-with-dpm-fallback',
     status:
