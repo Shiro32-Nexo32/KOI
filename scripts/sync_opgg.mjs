@@ -469,19 +469,13 @@ function extractIdentifier(payload) {
 
   if (typeof payload === 'string') {
     const match = payload.match(
-      /Summoner\(([\s\S]*?)\),\[LeagueStat\(/,
+      /Summoner\(\d+,null,null,"([^"]+)"/,
     );
 
     if (match) {
-      const tokens = match[1].match(/"(?:[^"\\]|\\.)*"|null|-?\d+(?:\.\d+)?/g) || [];
-      const clean = tokens.map((token) =>
-        token === 'null' ? null : token.replace(/^"|"$/g, ''),
-      );
-
-      // Current OP.GG text serialization:
-      // [acct_id, unused, unused, internal_summoner_key, game_name,
-      //  tagline, unused, unused, profile_image_url, level, updated_at, ...]
-      candidates.push(clean[3], clean[6], clean[0]);
+      // Current OP.GG text serialization places the internal 47+ character
+      // summoner key in the fourth constructor argument.
+      candidates.push(match[1]);
     }
   }
 
