@@ -10,7 +10,7 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import { PlayerProfile } from '../types/lol';
-import { getChampionIconUrl, getOpGgMultiSearchUrl, getOpGgUrl, getTierColor } from '../utils/ddragon';
+import { getChampionIconUrl, getOpGgMultiSearchUrl, getOpGgUrl, getTierColor, formatRankLabel } from '../utils/ddragon';
 
 interface OverviewViewProps {
   players: PlayerProfile[];
@@ -40,8 +40,7 @@ function getFormScore(player: PlayerProfile): number {
 }
 
 function formatRank(player: PlayerProfile): string {
-  if (!player.tier || player.tier === 'UNRANKED') return 'Sin ranking';
-  return `${player.tier} ${player.division} · ${player.lp} LP`;
+  return formatRankLabel(player.tier, player.division, player.lp);
 }
 
 export const OverviewView: React.FC<OverviewViewProps> = ({
@@ -209,7 +208,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                 <span className="text-xs text-slate-500">Ordenado por rango + LP</span>
               </div>
             </div>
-            <span className="text-[10px] font-mono text-purple-300">SOLOQ</span>
+            <span className="text-[10px] font-mono text-purple-300">RANGO</span>
           </div>
 
           <div className="mt-4 space-y-2">
@@ -243,7 +242,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
           <div className="mt-4 flex items-center gap-2 border-t border-slate-800/70 pt-4 text-xs text-slate-500">
             <ShieldCheck className="h-3.5 w-3.5 text-purple-400" />
             <span>
-              La posición se recalcula automáticamente con el estado del ladder recibido.
+              La posición se recalcula por rango visible y LP; no representa el puesto global de NA.
             </span>
           </div>
         </div>
