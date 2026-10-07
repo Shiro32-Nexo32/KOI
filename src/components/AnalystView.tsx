@@ -17,7 +17,7 @@ function renderAnalystContent(content: string): React.ReactNode {
           if (part.startsWith('**') && part.endsWith('**')) {
             return <strong key={partIndex} className="font-bold text-white">{part.slice(2, -2)}</strong>;
           }
-          if (part.startsWith('\\`') && part.endsWith('\\`')) {
+          if (part.startsWith('`') && part.endsWith('`')) {
             return <code key={partIndex} className="rounded bg-slate-950 px-1 py-0.5 font-mono text-[11px] text-cyan-300">{part.slice(1, -1)}</code>;
           }
           return <React.Fragment key={partIndex}>{part}</React.Fragment>;
