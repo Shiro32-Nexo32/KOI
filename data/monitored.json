@@ -1,0 +1,46 @@
+{
+  "team": "KOI / MKOI",
+  "region": "na",
+  "players": [
+    {
+      "id": "myrwn",
+      "proName": "Myrwn",
+      "realName": "Myrwn",
+      "gameName": "Shirin",
+      "tagLine": "ilmgf",
+      "role": "TOP"
+    },
+    {
+      "id": "elyoya",
+      "proName": "Elyoya",
+      "realName": "Elyoya",
+      "gameName": "Yoyadeodo",
+      "tagLine": "tuki",
+      "role": "JUNGLE"
+    },
+    {
+      "id": "jojopyun",
+      "proName": "Jojopyun",
+      "realName": "Jojopyun",
+      "gameName": "jojooooooooo",
+      "tagLine": "9999",
+      "role": "MID"
+    },
+    {
+      "id": "supa",
+      "proName": "Supa",
+      "realName": "Supa",
+      "gameName": "Charmander",
+      "tagLine": "MKOI",
+      "role": "ADC"
+    },
+    {
+      "id": "alvaro",
+      "proName": "Alvaro",
+      "realName": "Alvaro",
+      "gameName": "Treecko",
+      "tagLine": "MKOI",
+      "role": "SUPPORT"
+    }
+  ]
+}
