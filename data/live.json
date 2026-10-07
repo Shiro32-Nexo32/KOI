@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:04:24.207Z",
+  "generatedAt": "2026-10-07T21:13:32.162Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp-with-dpm-fallback",
   "status": "ok",
@@ -1927,24 +1927,24 @@
       "wins": 16,
       "losses": 4,
       "winrate": 80,
-      "streak": -1,
-      "avgKda": 4.3,
-      "avgKills": 8.6,
-      "avgDeaths": 4,
-      "avgAssists": 7.2,
-      "avgCsPerMin": 7.3,
+      "streak": 1,
+      "avgKda": 4.2,
+      "avgKills": 8.4,
+      "avgDeaths": 4.3,
+      "avgAssists": 7.5,
+      "avgCsPerMin": 7.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Draven",
           "championId": "119",
-          "games": 6,
-          "wins": 4,
+          "games": 5,
+          "wins": 3,
           "losses": 2,
-          "winrate": 66.7,
-          "kills": 49,
-          "deaths": 22,
-          "assists": 26,
+          "winrate": 60,
+          "kills": 42,
+          "deaths": 18,
+          "assists": 20,
           "kda": 3.4,
           "csPerMin": 8.9
         },
@@ -1960,6 +1960,19 @@
           "assists": 12,
           "kda": 5.6,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Ezreal",
+          "championId": "81",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 8,
+          "deaths": 15,
+          "assists": 23,
+          "kda": 2.1,
+          "csPerMin": 8.2
         },
         {
           "championName": "Aphelios",
@@ -2079,19 +2092,6 @@
           "csPerMin": 6.4
         },
         {
-          "championName": "Ezreal",
-          "championId": "81",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 5,
-          "deaths": 3,
-          "assists": 10,
-          "kda": 5,
-          "csPerMin": 10.2
-        },
-        {
           "championName": "Lee Sin",
           "championId": "64",
           "games": 1,
@@ -2119,6 +2119,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUMpHVuCvyeYrA68FoTy3wTcjBixKUh92o=",
+          "gameCreation": 1791407548000,
+          "gameDurationSeconds": 1867,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 15,
+          "role": "ADC",
+          "kills": 3,
+          "deaths": 12,
+          "assists": 13,
+          "kda": 1.33,
+          "cs": 192,
+          "csPerMin": 6.2,
+          "killParticipationPct": 0,
+          "damageDealt": 29534,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3078,
+            3042,
+            1086,
+            3161,
+            3082,
+            1029
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWK8mG5E_qeBDfd92NddpMZ-5zhWqQUeCw=",
           "gameCreation": 1791390096000,
@@ -2747,43 +2781,10 @@
             2003
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUDVH8on9h-5CSnp7jQAeh56GBTRH1eODw=",
-          "gameCreation": 1791256842000,
-          "gameDurationSeconds": 1401,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Draven",
-          "championId": "119",
-          "champLevel": 13,
-          "role": "ADC",
-          "kills": 7,
-          "deaths": 4,
-          "assists": 6,
-          "kda": 3.25,
-          "cs": 203,
-          "csPerMin": 8.7,
-          "killParticipationPct": 0,
-          "damageDealt": 26239,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            6697,
-            1086,
-            3031,
-            2523,
-            1018
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (47 LP)",
-      "analystSummary": "Supa: MASTER I 47 LP · 20 partidas consultadas · 80% WR · KDA medio 4.3.",
+      "analystSummary": "Supa: MASTER I 47 LP · 20 partidas consultadas · 80% WR · KDA medio 4.2.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -2815,11 +2816,11 @@
       "wins": 14,
       "losses": 2,
       "winrate": 87.5,
-      "streak": -1,
-      "avgKda": 4.8,
-      "avgKills": 3.6,
-      "avgDeaths": 4.1,
-      "avgAssists": 13.3,
+      "streak": 1,
+      "avgKda": 4.7,
+      "avgKills": 3.5,
+      "avgDeaths": 4.2,
+      "avgAssists": 13.5,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -2861,6 +2862,19 @@
           "assists": 7,
           "kda": 5,
           "csPerMin": 0.5
+        },
+        {
+          "championName": "Karma",
+          "championId": "43",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 7,
+          "assists": 16,
+          "kda": 2.7,
+          "csPerMin": 0.9
         },
         {
           "championName": "Neeko",
@@ -3007,6 +3021,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUMpHVuCvyeYrA68FoTy3wTcjBixKUh92o=",
+          "gameCreation": 1791407548000,
+          "gameDurationSeconds": 1867,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Karma",
+          "championId": "43",
+          "champLevel": 15,
+          "role": "SUPPORT",
+          "kills": 3,
+          "deaths": 7,
+          "assists": 16,
+          "kda": 2.71,
+          "cs": 28,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 16588,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3870,
+            3222,
+            3158,
+            6617,
+            6620,
+            3114
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWK8mG5E_qeBDfd92NddpMZ-5zhWqQUeCw=",
           "gameCreation": 1791390096000,
@@ -3602,7 +3650,7 @@
         }
       ],
       "statusBadge": "MASTER I (2 LP)",
-      "analystSummary": "Alvaro: MASTER I 2 LP · 18 partidas consultadas · 87.5% WR · KDA medio 4.8.",
+      "analystSummary": "Alvaro: MASTER I 2 LP · 19 partidas consultadas · 87.5% WR · KDA medio 4.7.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
