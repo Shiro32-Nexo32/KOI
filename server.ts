@@ -1,30 +1,15 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { GoogleGenAI } from '@google/genai';
 import { INITIAL_PLAYERS } from './src/data/initialPlayers.js';
 import { LiveTrackerPayload, PlayerProfile } from './src/types/lol.js';
 
-dotenv.config();
 
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
 const LIVE_PATH = path.resolve('data/live.json');
 
 app.use(express.json());
-
-let aiClient: GoogleGenAI | null = null;
-if (process.env.GEMINI_API_KEY?.trim()) {
-  try {
-    aiClient = new GoogleGenAI({
-      apiKey: process.env.GEMINI_API_KEY.trim(),
-      httpOptions: { headers: { 'User-Agent': 'koi-tracker' } },
-    });
-  } catch (error) {
-    console.error('No se pudo inicializar Gemini:', error);
-  }
-}
 
 function cloneSeed(): PlayerProfile[] {
   return JSON.parse(JSON.stringify(INITIAL_PLAYERS)) as PlayerProfile[];
@@ -99,171 +84,6 @@ async function loadLivePayload(): Promise<LiveTrackerPayload> {
     },
   };
 }
-
-function localAnalyst(question: string, players: PlayerProfile[]): string {
-  const query = question.toLowerCase();
-
-  if (query.includes('reporte') || query.includes('5 jugadores') || query.includes('como van') || query.includes('cómo van')) {
-    const form = [...players].sort((a, b) => a.formRank - b.formRank);
-    const elo = [...players].sort((a, b) => a.eloRank - b.eloRank);
-    return [
-      '**Reporte KOI / MKOI**',
-      '',
-      '**Forma**',
-      ...form.map((p, i) => `${i + 1}. ${p.proName} — ${p.tier} ${p.division} ${p.lp} LP · ${p.winrate}% WR · KDA ${p.avgKda}`),
-      '',
-      '**Ladder**',
-      ...elo.map((p, i) => `${i + 1}. ${p.proName} — ${p.tier} ${p.division} ${p.lp} LP`),
-    ].join('\n');
-  }
-
-  const player = players.find((candidate) =>
-    [candidate.id, candidate.proName, candidate.gameName]
-      .some((alias) => query.includes(alias.toLowerCase())),
-  );
-
-  if (player) {
-    const topChampion = [...player.champions].sort((a, b) => b.games - a.games)[0];
-    return [
-      `**${player.proName}**`,
-      `Rango: **${player.tier} ${player.division} · ${player.lp} LP**`,
-      `Balance: **${player.wins}-${player.losses} (${player.winrate}% WR)**`,
-      `KDA medio: **${player.avgKda}** · CS/min **${player.avgCsPerMin}**`,
-      `Racha: **${player.streak > 0 ? '+' : ''}${player.streak}**`,
-      topChampion ? `Pick principal: **${topChampion.championName}** (${topChampion.winrate}% WR)` : '',
-    ].filter(Boolean).join('\n');
-  }
-
-  if (query.includes('kda') || query.includes('mejor')) {
-    const best = [...players].sort((a, b) => b.avgKda - a.avgKda)[0];
-    return best
-      ? `${best.proName} lidera el KDA medio del grupo con **${best.avgKda}**.`
-      : 'No hay KDA suficientes para comparar.';
-  }
-
-  return 'Puedo analizar rango, LP, winrate, KDA, rachas, campeones y el ranking de las cinco cuentas.';
-}
-
-app.get('/api/players', async (_req, res) => {
-  const payload = await loadLivePayload();
-  res.json(payload);
-});
-
-app.post('/api/players/refresh', async (_req, res) => {
-  const payload = await loadLivePayload();
-  res.json({
-    ...payload,
-    success: true,
-    message:
-      payload.source === 'OP.GG'
-        ? 'Se ha cargado el último snapshot publicado por el sincronizador de OP.GG.'
-        : 'Todavía no existe un snapshot vivo publicado por el sincronizador de OP.GG.',
-  });
-});
-
-app.post('/api/players/update-account', (req, res) => {
-  const { playerId, riotId, region } = req.body || {};
-  const player = cloneSeed().find((item) => item.id === playerId);
-  if (!player) return res.status(404).json({ error: 'Jugador no encontrado' });
-
-  if (typeof riotId === 'string' && riotId.includes('#')) {
-    const [name, tag] = riotId.split('#');
-    player.riotId = riotId.trim();
-    player.gameName = name.trim();
-    player.tagLine = tag.trim();
-  }
-  if (typeof region === 'string' && region.trim()) {
-    player.region = region.trim();
-  }
-
-  res.json({
-    success: true,
-    player,
-    message: 'Cambio local aceptado. La cuenta monitorizada se define en data/monitored.json.',
-  });
-});
-
-app.post('/api/analyst/report', async (req, res) => {
-  const payload = await loadLivePayload();
-  const { playerId } = req.body || {};
-  const player = playerId ? payload.players.find((item) => item.id === playerId) : null;
-
-  if (aiClient) {
-    try {
-      const context = player ? [player] : payload.players;
-      const prompt = [
-        'Eres el analista estadístico de KOI / MKOI.',
-        'Usa únicamente los datos proporcionados. No inventes partidas, LP, winrates o campeones.',
-        JSON.stringify(context, null, 2),
-        player ? `Analiza a ${player.proName}.` : 'Resume el estado de las cinco cuentas.',
-      ].join('\n\n');
-
-      const response = await aiClient.models.generateContent({
-        model: 'gemini-3.8-flash',
-        contents: prompt,
-      });
-
-      return res.json({
-        report: response.text || localAnalyst('reporte', payload.players),
-        source: 'gemini',
-        generatedAt: Date.now(),
-      });
-    } catch (error) {
-      console.warn('Gemini no disponible; usando analista local:', error);
-    }
-  }
-
-  return res.json({
-    report: localAnalyst(player ? `como va ${player.proName}` : 'reporte', payload.players),
-    source: 'tracker-analytics',
-    generatedAt: Date.now(),
-  });
-});
-
-app.post('/api/analyst/ask', async (req, res) => {
-  const question = typeof req.body?.question === 'string' ? req.body.question.trim() : '';
-  if (!question) return res.status(400).json({ error: 'Pregunta requerida' });
-
-  const payload = await loadLivePayload();
-
-  if (aiClient) {
-    try {
-      const context = payload.players.map((player) => ({
-        name: player.proName,
-        riotId: player.riotId,
-        tier: `${player.tier} ${player.division} ${player.lp} LP`,
-        record: `${player.wins}-${player.losses} (${player.winrate}% WR)`,
-        streak: player.streak,
-        kda: player.avgKda,
-        csPerMin: player.avgCsPerMin,
-        champions: player.champions.slice(0, 5).map((champion) => ({
-          name: champion.championName,
-          games: champion.games,
-          winrate: champion.winrate,
-          kda: champion.kda,
-        })),
-      }));
-
-      const response = await aiClient.models.generateContent({
-        model: 'gemini-3.8-flash',
-        contents: [
-          'Eres un analista de KOI / MKOI. Responde en español y no inventes datos.',
-          JSON.stringify(context, null, 2),
-          `Pregunta: ${question}`,
-        ].join('\n\n'),
-      });
-
-      return res.json({
-        answer: response.text || localAnalyst(question, payload.players),
-        source: 'gemini',
-      });
-    } catch (error) {
-      console.warn('Gemini no disponible; usando analista local:', error);
-    }
-  }
-
-  res.json({ answer: localAnalyst(question, payload.players), source: 'tracker-analytics' });
-});
 
 async function startServer() {
   const isProd = process.env.NODE_ENV === 'production';
