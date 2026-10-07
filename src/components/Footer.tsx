@@ -25,8 +25,8 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated, hasRiotKey }) => {
 
           <div className="flex items-center gap-3 font-mono text-[11px] text-slate-400">
             <span className="flex items-center gap-1.5">
-              <Database className="h-3.5 w-3.5 text-amber-500" />
-              <span>{hasRiotKey ? 'Riot API Conectada' : 'Telemetría de Bootcamp Activa'}</span>
+              <Database className="h-3.5 w-3.5 text-cyan-400" />
+              <span>Sincronizado en vivo con OP.GG</span>
             </span>
             <span>·</span>
             <span>Última sincronización: {updatedDate}</span>

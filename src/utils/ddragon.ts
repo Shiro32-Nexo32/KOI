@@ -48,3 +48,24 @@ export function getTierColor(tier: string): { bg: string; text: string; border: 
       return { bg: 'bg-slate-700/20', text: 'text-slate-300', border: 'border-slate-700', glow: 'shadow-slate-500/10' };
   }
 }
+
+export function getOpGgUrl(gameName: string, tagLine: string, region: string = 'na'): string {
+  const reg = region.toLowerCase();
+  const nameClean = encodeURIComponent(gameName.trim());
+  const tagClean = encodeURIComponent(tagLine.trim());
+  return `https://www.op.gg/summoners/${reg}/${nameClean}-${tagClean}`;
+}
+
+export function getDpmLolUrl(gameName: string, tagLine: string): string {
+  const nameClean = encodeURIComponent(gameName.trim());
+  const tagClean = encodeURIComponent(tagLine.trim());
+  return `https://dpm.lol/${nameClean}-${tagClean}`;
+}
+
+export function getOpGgMultiSearchUrl(players: { gameName: string; tagLine: string }[], region: string = 'na'): string {
+  const reg = region.toLowerCase();
+  const summonersQuery = players
+    .map((p) => `${encodeURIComponent(p.gameName.trim())}%23${encodeURIComponent(p.tagLine.trim())}`)
+    .join(',');
+  return `https://www.op.gg/multisearch/${reg}?summoners=${summonersQuery}`;
+}

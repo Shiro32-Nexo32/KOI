@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PlayerProfile, AnalystChatMessage } from '../types/lol';
+import { getLocalAnalystAnswer } from '../utils/localAnalyst';
 import { Bot, Send, Sparkles, Copy, Check, MessageSquare, Flame, Trophy, ShieldAlert } from 'lucide-react';
 
 interface AnalystViewProps {
@@ -37,40 +38,6 @@ Puedes pedirme un **"Reporte de los 5"**, preguntarme por un jugador concreto (*
   const [isLoading, setIsLoading] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
-  const buildLocalAnswer = (question: string): string => {
-    const lower = question.toLowerCase();
-    const findPlayer = (name: string) => players.find((p) => p.proName.toLowerCase() === name.toLowerCase());
-
-    if (lower.includes('reporte de los 5') || lower.includes('como van') || lower.includes('cómo van')) {
-      return players
-        .map((p, index) => `${index + 1}. ${p.proName}: ${p.tier} ${p.division} ${p.lp} LP · ${p.wins}-${p.losses} (${p.winrate}% WR) · KDA ${p.avgKda}`)
-        .join('\n');
-    }
-
-    const names = ['Myrwn', 'Elyoya', 'Jojopyun', 'Supa', 'Alvaro'];
-    const found = names.map(findPlayer).find((p) => p && lower.includes(p.proName.toLowerCase()));
-    if (found) {
-      return `**${found.proName}** está en ${found.tier} ${found.division} con ${found.lp} LP. Balance: **${found.wins}-${found.losses} (${found.winrate}% WR)**, KDA medio ${found.avgKda} y ${found.avgCsPerMin} CS/min. Su ranking actual es #${found.formRank} en forma y #${found.eloRank} en Elo.`;
-    }
-
-    if (lower.includes('botlane') || lower.includes('botlane') || lower.includes('duo')) {
-      const supa = findPlayer('Supa');
-      const alvaro = findPlayer('Alvaro');
-      if (supa && alvaro) {
-        const wins = supa.wins + alvaro.wins;
-        const losses = supa.losses + alvaro.losses;
-        return `La botlane acumula ${wins}-${losses} de forma combinada. Supa está en ${supa.tier} ${supa.division} ${supa.lp} LP y Alvaro en ${alvaro.tier} ${alvaro.division} ${alvaro.lp} LP.`;
-      }
-    }
-
-    if (lower.includes('kda') || lower.includes('mejor')) {
-      const best = [...players].sort((a, b) => b.avgKda - a.avgKda)[0];
-      if (best) return `${best.proName} tiene actualmente el mejor KDA medio del grupo: ${best.avgKda}.`;
-    }
-
-    return `Modo local activo. ${players.length} jugadores cargados. Puedes consultar por jugador, KDA, botlane o pedir un "Reporte de los 5".`;
-  };
-
   const handleSend = async (questionText: string) => {
     const q = questionText.trim();
     if (!q || isLoading) return;
@@ -93,9 +60,12 @@ Puedes pedirme un **"Reporte de los 5"**, preguntarme por un jugador concreto (*
         body: JSON.stringify({ question: q }),
       });
 
-      if (!res.ok) throw new Error('API analyst unavailable');
+      if (!res.ok) {
+        throw new Error(`HTTP error ${res.status}`);
+      }
+
       const data = await res.json();
-      const reply = data.answer || buildLocalAnswer(q);
+      const reply = data.answer || getLocalAnalystAnswer(q, players);
 
       const botMsg: AnalystChatMessage = {
         id: `bot_${Date.now()}`,
@@ -107,11 +77,13 @@ Puedes pedirme un **"Reporte de los 5"**, preguntarme por un jugador concreto (*
 
       setMessages((prev) => [...prev, botMsg]);
     } catch (err) {
-      console.warn('Analyst API unavailable; using local analysis.', err);
+      console.warn('API analyst unavailable, answering via embedded local analyst engine:', err);
+      // Fallback works directly on GitHub Pages
+      const localReply = getLocalAnalystAnswer(q, players);
       const botMsg: AnalystChatMessage = {
-        id: `bot_local_${Date.now()}`,
+        id: `bot_${Date.now()}`,
         role: 'assistant',
-        content: buildLocalAnswer(q),
+        content: localReply,
         timestamp: Date.now(),
         suggestedFollowUps: generateFollowUps(q),
       };
@@ -173,7 +145,7 @@ Puedes pedirme un **"Reporte de los 5"**, preguntarme por un jugador concreto (*
               disabled={isLoading}
               className="rounded-lg border border-slate-700 bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:bg-slate-700 disabled:opacity-50"
             >
-              Botlane
+              Botlane (28-3)
             </button>
             <button
               onClick={() => handleSend('¿Quién tiene mejor racha y KDA?')}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { PlayerProfile, TeamOverviewReport } from '../types/lol';
-import { getChampionIconUrl, getTierColor } from '../utils/ddragon';
-import { Flame, Trophy, TrendingUp, Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
+import { getChampionIconUrl, getTierColor, getOpGgUrl, getOpGgMultiSearchUrl, getDpmLolUrl } from '../utils/ddragon';
+import { Flame, Trophy, TrendingUp, Sparkles, ArrowRight, ShieldCheck, ExternalLink } from 'lucide-react';
 
 interface OverviewViewProps {
   players: PlayerProfile[];
@@ -212,18 +212,31 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
 
       {/* 5 Registered Pro Accounts Detailed Table / Bento Grid */}
       <section className="space-y-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <div>
             <h2 className="text-lg font-bold text-white">Estado Actual de los 5 Jugadores</h2>
             <p className="text-xs text-slate-400">Haz clic en cualquier ficha para ver sus últimas 20 partidas y pool de campeones</p>
           </div>
-          <button
-            onClick={onNavigateToAnalyst}
-            className="flex items-center gap-1.5 text-xs font-medium text-amber-400 hover:text-amber-300"
-          >
-            <span>Generar Reporte Completo</span>
-            <ArrowRight className="h-3.5 w-3.5" />
-          </button>
+          <div className="flex items-center gap-3">
+            <a
+              href={getOpGgMultiSearchUrl(players, 'na')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-3 py-1.5 text-xs font-semibold text-cyan-300 transition hover:bg-cyan-500/20 hover:border-cyan-500/50"
+              title="Abrir las 5 cuentas a la vez en OP.GG Multi-Search"
+            >
+              <span>Ver los 5 en OP.GG</span>
+              <ExternalLink className="h-3 w-3" />
+            </a>
+
+            <button
+              onClick={onNavigateToAnalyst}
+              className="flex items-center gap-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 px-3 py-1.5 text-xs font-semibold text-amber-300 transition hover:bg-amber-500/20"
+            >
+              <span>Generar Reporte Completo</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </button>
+          </div>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -315,6 +328,34 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     </span>
                   </div>
                 )}
+
+                {/* External tracker links */}
+                <div
+                  className="mt-3 flex items-center justify-end gap-2 text-[11px] font-mono border-t border-slate-800/60 pt-2"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <a
+                    href={getOpGgUrl(p.gameName, p.tagLine, p.region)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 hover:underline"
+                    title={`Ver historial de ${p.proName} en OP.GG`}
+                  >
+                    <span>OP.GG</span>
+                    <ExternalLink className="h-2.5 w-2.5" />
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a
+                    href={getDpmLolUrl(p.gameName, p.tagLine)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-slate-400 hover:text-slate-200 hover:underline"
+                    title={`Ver cuenta pro en DPM.LOL`}
+                  >
+                    <span>DPM.LOL</span>
+                    <ExternalLink className="h-2.5 w-2.5" />
+                  </a>
+                </div>
               </div>
             );
           })}

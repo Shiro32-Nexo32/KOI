@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PlayerProfile } from '../types/lol';
-import { getChampionIconUrl, getItemIconUrl, getTierColor } from '../utils/ddragon';
-import { Flame, Trophy, Swords, Shield, Crosshair, BarChart3, Edit3, ArrowRight } from 'lucide-react';
+import { getChampionIconUrl, getItemIconUrl, getTierColor, getOpGgUrl, getDpmLolUrl } from '../utils/ddragon';
+import { Flame, Trophy, Swords, Shield, Crosshair, BarChart3, Edit3, ArrowRight, ExternalLink } from 'lucide-react';
 
 interface PlayersViewProps {
   players: PlayerProfile[];
@@ -136,8 +136,8 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
               </div>
             </div>
 
-            {/* Quick Ask CTA */}
-            <div className="mt-5">
+            {/* Quick Ask CTA & External Links */}
+            <div className="mt-5 space-y-2">
               <button
                 onClick={() => onAskAboutPlayer(activePlayer.proName)}
                 className="w-full flex items-center justify-center gap-2 rounded-xl border border-amber-500/30 bg-amber-500/10 py-2.5 text-xs font-semibold text-amber-300 transition hover:bg-amber-500/20"
@@ -145,6 +145,28 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
                 <span>Preguntar al Analista sobre {activePlayer.proName}</span>
                 <ArrowRight className="h-3.5 w-3.5" />
               </button>
+
+              <div className="grid grid-cols-2 gap-2 pt-1">
+                <a
+                  href={getOpGgUrl(activePlayer.gameName, activePlayer.tagLine, activePlayer.region)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 rounded-lg border border-cyan-500/30 bg-cyan-500/10 py-2 text-xs font-semibold text-cyan-300 transition hover:bg-cyan-500/20"
+                >
+                  <span>Ver en OP.GG</span>
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+
+                <a
+                  href={getDpmLolUrl(activePlayer.gameName, activePlayer.tagLine)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800 py-2 text-xs font-semibold text-slate-300 transition hover:bg-slate-700 hover:text-white"
+                >
+                  <span>Ver en DPM.LOL</span>
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </div>
             </div>
           </div>
 
