@@ -6,7 +6,13 @@ const DDRAGON_BASE = `https://ddragon.leagueoflegends.com/cdn/${DDRAGON_VERSION}
 export function getChampionIconUrl(championIdOrName: string): string {
   if (!championIdOrName) return 'https://ddragon.leagueoflegends.com/cdn/15.5.1/img/champion/Ahri.png';
   // Normalize known edge cases
-  const clean = championIdOrName.replace(/[^a-zA-Z0-9]/g, '');
+  const aliases: Record<string, string> = {
+    "Kai'Sa": 'Kaisa',
+    "K'Sante": 'KSante',
+    "Bel'Veth": 'Belveth',
+    "Rek'Sai": 'RekSai',
+  };
+  const clean = aliases[championIdOrName] || championIdOrName.replace(/[^a-zA-Z0-9]/g, '');
   return `${DDRAGON_BASE}/img/champion/${clean}.png`;
 }
 
