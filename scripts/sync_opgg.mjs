@@ -356,7 +356,7 @@ function resultData(result) {
 function findRank(payload) {
   if (typeof payload === 'string') {
     const match = payload.match(
-      /LeagueStat\\("SOLORANKED",TierInfo\\("([^"]+)",(null|[^,]+),(\\d+)\\),(\\d+),(\\d+),null\\)/,
+      /LeagueStat\("SOLORANKED",TierInfo\("([^"]+)",(null|[^,]+),(\d+)\),(\d+),(\d+),null\)/,
     );
 
     if (match) {
