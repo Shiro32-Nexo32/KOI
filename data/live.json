@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T20:48:10.806Z",
+  "generatedAt": "2026-10-07T21:04:24.207Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp-with-dpm-fallback",
   "status": "ok",
@@ -1409,14 +1409,27 @@
       "wins": 10,
       "losses": 0,
       "winrate": 100,
-      "streak": 10,
+      "streak": 11,
       "avgKda": 5.8,
-      "avgKills": 8,
-      "avgDeaths": 2.9,
-      "avgAssists": 5.7,
-      "avgCsPerMin": 9.2,
+      "avgKills": 9,
+      "avgDeaths": 3.1,
+      "avgAssists": 5.9,
+      "avgCsPerMin": 9.1,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Aurora",
+          "championId": "893",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 36,
+          "deaths": 13,
+          "assists": 17,
+          "kda": 4.1,
+          "csPerMin": 7.4
+        },
         {
           "championName": "Sylas",
           "championId": "517",
@@ -1455,19 +1468,6 @@
           "assists": 1,
           "kda": 3,
           "csPerMin": 10
-        },
-        {
-          "championName": "Aurora",
-          "championId": "893",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 17,
-          "deaths": 8,
-          "assists": 9,
-          "kda": 3.3,
-          "csPerMin": 7.5
         },
         {
           "championName": "Jayce",
@@ -1523,6 +1523,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUlIUIQXWTKMg7uhW5C13EQqRwhTMZBEwc=",
+          "gameCreation": 1791406900000,
+          "gameDurationSeconds": 1661,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Aurora",
+          "championId": "893",
+          "champLevel": 16,
+          "role": "MID",
+          "kills": 19,
+          "deaths": 5,
+          "assists": 8,
+          "kda": 5.4,
+          "cs": 201,
+          "csPerMin": 7.3,
+          "killParticipationPct": 0,
+          "damageDealt": 51618,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            4645,
+            3137,
+            4646,
+            1058,
+            3175,
+            3916
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVB9wNM6r5AJwhwNKpEqrUo94EfbAzFTiE=",
           "gameCreation": 1791394298000,
@@ -1861,7 +1895,7 @@
         }
       ],
       "statusBadge": "DIAMOND II (87 LP)",
-      "analystSummary": "Jojopyun: DIAMOND II 87 LP · 10 partidas consultadas · 100% WR · KDA medio 5.8.",
+      "analystSummary": "Jojopyun: DIAMOND II 87 LP · 11 partidas consultadas · 100% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
