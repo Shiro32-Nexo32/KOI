@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-07T21:32:43.580Z",
   "source": "OP.GG",
-  "sourceType": "official-opgg-mcp-with-dpm-fallback",
+  "sourceType": "official-opgg-mcp",
   "status": "ok",
   "players": [
     {
@@ -3815,6 +3815,6 @@
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
     ],
-    "message": "OP.GG MCP es la fuente primaria; DPM.LOL se usa como fallback de frescura cuando OP.GG devuelve datos antiguos. No se utiliza una Riot API key."
+    "message": "Datos obtenidos mediante el servidor oficial de OP.GG MCP. No se utiliza una Riot API key."
   }
 }
