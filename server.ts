@@ -45,10 +45,11 @@ function recalculateRankings(players: PlayerProfile[]) {
     UNRANKED: 0,
   };
   const divisionWeight: Record<string, number> = { I: 400, II: 300, III: 200, IV: 100 };
+  const apexTiers = new Set(['MASTER', 'GRANDMASTER', 'CHALLENGER']);
 
   const eloScore = (player: PlayerProfile) =>
     (tierWeight[player.tier] || 0) +
-    (divisionWeight[player.division] || 0) +
+    (apexTiers.has(player.tier.toUpperCase()) ? 0 : (divisionWeight[player.division] || 0)) +
     player.lp;
 
   const formScore = (player: PlayerProfile) =>
