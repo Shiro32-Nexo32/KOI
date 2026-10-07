@@ -46,25 +46,94 @@ async function postMcp(body, sessionId = null) {
   };
   if (sessionId) headers['Mcp-Session-Id'] = sessionId;
 
-  const response = await fetch(MCP_URL, {
-    method: 'POST',
-    headers,
-    body: JSON.stringify(body),
-  });
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 45000);
 
-  const nextSession = response.headers.get('mcp-session-id') || sessionId;
-  const text = await response.text();
+  try {
+    const response = await fetch(MCP_URL, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
 
-  if (!response.ok) {
-    throw new Error(
-      'OP.GG MCP HTTP ' + response.status + ': ' + text.slice(0, 500),
-    );
+    const nextSession = response.headers.get('mcp-session-id') || sessionId;
+
+    if (!response.ok) {
+      const text = await response.text();
+      throw new Error(
+        'OP.GG MCP HTTP ' + response.status + ': ' + text.slice(0, 500),
+      );
+    }
+
+    const contentType = response.headers.get('content-type') || '';
+
+    if (contentType.includes('text/event-stream') && response.body) {
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+
+        const events = buffer.split(/\n\n/);
+        buffer = events.pop() || '';
+
+        for (const event of events) {
+          const dataLines = event
+            .split(/\r?\n/)
+            .filter((line) => line.startsWith('data:'))
+            .map((line) => line.slice(5).trim());
+
+          for (const data of dataLines) {
+            if (!data) continue;
+
+            try {
+              const message = JSON.parse(data);
+              if (
+                body.id === undefined ||
+                message.id === body.id ||
+                message.error
+              ) {
+                await reader.cancel();
+                return {
+                  sessionId: nextSession,
+                  message,
+                };
+              }
+            } catch {
+              // Ignore non-JSON SSE frames.
+            }
+          }
+        }
+      }
+
+      return {
+        sessionId: nextSession,
+        message: null,
+      };
+    }
+
+    const text = await response.text();
+    let message = null;
+    if (text.trim()) {
+      try {
+        message = JSON.parse(text);
+      } catch {
+        message = null;
+      }
+    }
+
+    return {
+      sessionId: nextSession,
+      message,
+    };
+  } finally {
+    clearTimeout(timeout);
   }
-
-  return {
-    sessionId: nextSession,
-    message: parseHttpBody(text, response.headers.get('content-type')),
-  };
 }
 
 async function createMcpSession() {
