@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
+
+const execFileAsync = promisify(execFile);
 
 const ROOT = process.cwd();
 const CONFIG = path.join(ROOT, 'data', 'monitored.json');
@@ -855,9 +859,16 @@ function htmlToPlainText(html) {
 }
 
 function parseDpmRank(text) {
-  const match = text.match(
-    /(?:2026\s+)?Ranked\s+Solo[\s\S]{0,160}?(CHALLENGER|GRANDMASTER|MASTER|DIAMOND|EMERALD|PLATINUM|GOLD|SILVER|BRONZE|IRON)(?:\s+(IV|III|II|I))?\s*-?\s*(\d+)\s*LP\s+(\d+)W\s*-\s*(\d+)L/i,
-  );
+  const patterns = [
+    /Ranked\s+Solo[\s\S]{0,220}?(CHALLENGER|GRANDMASTER|MASTER|DIAMOND|EMERALD|PLATINUM|GOLD|SILVER|BRONZE|IRON)(?:\s+(IV|III|II|I))?\s*-?\s*(\d+)\s*LP\s+(\d+)W\s*-\s*(\d+)L/i,
+    /\b(CHALLENGER|GRANDMASTER|MASTER|DIAMOND|EMERALD|PLATINUM|GOLD|SILVER|BRONZE|IRON)(?:\s+(IV|III|II|I))?\s*-?\s*(\d+)\s*LP\s+(\d+)W\s*-\s*(\d+)L/i,
+  ];
+
+  let match = null;
+  for (const pattern of patterns) {
+    match = text.match(pattern);
+    if (match) break;
+  }
 
   if (!match) return null;
 
@@ -954,25 +965,106 @@ function parseDpmMatches(text) {
 }
 
 
-async function fetchDpmSnapshot(account) {
+async function findChromeBinary() {
+  const candidates = [
+    'google-chrome-stable',
+    'google-chrome',
+    'chromium',
+    'chromium-browser',
+  ];
+
+  for (const candidate of candidates) {
+    try {
+      await execFileAsync(candidate, ['--version'], { timeout: 5000 });
+      return candidate;
+    } catch {
+      // Try next browser binary.
+    }
+  }
+
+  return null;
+}
+
+async function fetchDpmSnapshotWithBrowser(account) {
+  const browser = await findChromeBinary();
+  if (!browser) throw new Error('No hay Chromium/Chrome disponible en el runner.');
+
   const targetUrl =
     'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
 
-  const urls = [
-    targetUrl + '?nocache=' + Date.now(),
-    targetUrl,
-    'https://r.jina.ai/' + targetUrl,
-  ];
+  const { stdout } = await execFileAsync(
+    browser,
+    [
+      '--headless=new',
+      '--no-sandbox',
+      '--disable-gpu',
+      '--disable-dev-shm-usage',
+      '--disable-extensions',
+      '--ignore-certificate-errors',
+      '--virtual-time-budget=12000',
+      '--dump-dom',
+      targetUrl + '?tracker_refresh=' + Date.now(),
+    ],
+    {
+      timeout: 30000,
+      maxBuffer: 20 * 1024 * 1024,
+    },
+  );
+
+  const plain = htmlToPlainText(stdout);
+  const rank = parseDpmRank(plain);
+  const matches = parseDpmMatches(plain);
+
+  if (!rank) {
+    throw new Error(
+      'Chrome no encontró el rango DPM de ' + account.proName + ': ' + plain.slice(0, 700),
+    );
+  }
+
+  return { rank, matches, url: targetUrl, source: 'DPM.LOL browser' };
+}
+
+async function fetchDpmSnapshot(account) {
+  try {
+    const browserSnapshot = await fetchDpmSnapshotWithBrowser(account);
+    console.log(
+      account.proName +
+        ': browser DPM candidate ' +
+        browserSnapshot.rank.tier +
+        ' ' +
+        browserSnapshot.rank.division +
+        ' ' +
+        browserSnapshot.rank.lp +
+        ' LP · ' +
+        browserSnapshot.matches.length +
+        ' partidas',
+    );
+
+    return browserSnapshot;
+  } catch (browserError) {
+    console.warn(
+      account.proName +
+        ': Chrome DPM fallback failed: ' +
+        (browserError instanceof Error ? browserError.message : String(browserError)),
+    );
+  }
+
+  const targetUrl =
+    'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
 
   let lastError = null;
 
-  for (const url of urls) {
+  for (const url of [
+    targetUrl + '?nocache=' + Date.now(),
+    targetUrl,
+    'https://r.jina.ai/' + targetUrl,
+  ]) {
     try {
       const response = await fetch(url, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (compatible; KOI-Tracker/1.0)',
+          'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)',
           Accept: 'text/html,text/plain,application/xhtml+xml',
-          'Cache-Control': 'no-cache',
+          'Cache-Control': 'no-cache, no-store, max-age=0',
           Pragma: 'no-cache',
         },
       });
@@ -986,14 +1078,14 @@ async function fetchDpmSnapshot(account) {
 
       if (!rank) throw new Error('ranking no parseable');
 
-      return { rank, matches, url };
+      return { rank, matches, url, source: 'DPM.LOL HTTP' };
     } catch (error) {
       lastError = error;
     }
   }
 
   throw new Error(
-    'DPM no devolvió un perfil/ranking suficientemente parseable para ' +
+    'DPM no devolvió un perfil/ranking parseable para ' +
       account.proName +
       ': ' +
       (lastError instanceof Error ? lastError.message : String(lastError)),
@@ -1237,7 +1329,7 @@ async function main() {
           if (dpm.matches.length && dpmLatest > opggLatest + 5 * 60 * 1000) {
             matches = dpm.matches;
           }
-          freshnessSource = 'DPM fallback';
+          freshnessSource = dpm.source || 'DPM fallback';
         }
       } catch (dpmError) {
         console.warn(
