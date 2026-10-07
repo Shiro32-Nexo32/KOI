@@ -1,4 +1,4 @@
-name: Deploy LoL Bootcamp Tracker
+name: Deploy KOI Tracker
 
 on:
   push:
