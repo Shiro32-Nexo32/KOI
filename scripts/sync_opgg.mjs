@@ -954,32 +954,54 @@ function parseDpmMatches(text) {
 }
 
 async function fetchDpmSnapshot(account) {
-  const dpmUrl = 'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
-  const response = await fetch(dpmUrl, {
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (KOI Tracker; sync bot)',
-      Accept: 'text/html,application/xhtml+xml',
-    },
-  });
+  const targetUrl =
+    'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
 
-  if (!response.ok) {
-    throw new Error('DPM HTTP ' + response.status + ' for ' + account.proName);
+  const urls = [
+    targetUrl,
+    'https://r.jina.ai/' + targetUrl,
+  ];
+
+  let lastError = null;
+
+  for (const url of urls) {
+    try {
+      const response = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; KOI-Tracker/1.0)',
+          Accept: 'text/html,text/plain,application/xhtml+xml',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('HTTP ' + response.status);
+      }
+
+      const body = await response.text();
+      const plain = htmlToPlainText(body);
+      const rank = parseDpmRank(plain);
+      const matches = parseDpmMatches(plain);
+
+      if (!rank || !matches.length) {
+        throw new Error('perfil/ranking no parseable');
+      }
+
+      return {
+        rank,
+        matches,
+        url,
+      };
+    } catch (error) {
+      lastError = error;
+    }
   }
 
-  const html = await response.text();
-  const plain = htmlToPlainText(html);
-  const rank = parseDpmRank(plain);
-  const matches = parseDpmMatches(plain);
-
-  if (!rank || !matches.length) {
-    throw new Error('DPM no devolvió un perfil/ranking suficientemente parseable para ' + account.proName);
-  }
-
-  return {
-    rank,
-    matches,
-    url: dpmUrl,
-  };
+  throw new Error(
+    'DPM no devolvió un perfil/ranking suficientemente parseable para ' +
+      account.proName +
+      ': ' +
+      (lastError instanceof Error ? lastError.message : String(lastError)),
+  );
 }
 
 function playerFrom(account, rank, matches, previous, profilePayload) {
