@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PlayerProfile } from '../types/lol';
-import { getChampionIconUrl, getItemIconUrl, getTierColor, getOpGgUrl, getDpmLolUrl, getProfileIconUrl } from '../utils/ddragon';
+import { getChampionIconUrl, getItemIconUrl, getTierColor, getOpGgUrl, getDpmLolUrl, getProfileIconUrl, formatRankLabel } from '../utils/ddragon';
 import { Flame, Trophy, Swords, Shield, Crosshair, BarChart3, ArrowRight, ExternalLink } from 'lucide-react';
 
 interface PlayersViewProps {
@@ -79,10 +79,10 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
 
               <div className="text-right">
                 <span className={`inline-block rounded px-2.5 py-1 font-mono text-xs font-bold ${tierStyle.bg} ${tierStyle.text} border ${tierStyle.border}`}>
-                  {activePlayer.tier} {activePlayer.division}
+                  {formatRankLabel(activePlayer.tier, activePlayer.division, activePlayer.lp)}
                 </span>
                 <div className="mt-1 font-mono text-xs text-slate-400">
-                  {activePlayer.lp} LP
+                  Rango visible en Solo/Dúo
                 </div>
               </div>
             </div>
@@ -130,9 +130,9 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
               <div className="rounded-xl bg-slate-950/60 p-3">
                 <span className="text-[11px] text-slate-500">Rankings Equipo</span>
                 <div className="font-mono text-sm font-semibold text-slate-200">
-                  Forma: <span className="text-amber-400">#{activePlayer.formRank}</span> · Elo: <span className="text-purple-300">#{activePlayer.eloRank}</span>
+                  Forma: <span className="text-amber-400">#{activePlayer.formRank}</span> · Rango: <span className="text-purple-300">#{activePlayer.eloRank}</span>
                 </div>
-                <span className="text-[11px] text-slate-400">Entre los 5</span>
+                <span className="text-[11px] text-slate-400">Entre las 5 cuentas</span>
               </div>
             </div>
 
