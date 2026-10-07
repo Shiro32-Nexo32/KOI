@@ -983,6 +983,14 @@ async function fetchDpmSnapshot(account) {
       const matches = parseDpmMatches(plain);
 
       if (!rank || !matches.length) {
+        console.warn(
+          'DPM parse diagnostic for ' +
+            account.proName +
+            ' via ' +
+            url +
+            ': ' +
+            plain.slice(0, 1200),
+        );
         throw new Error('perfil/ranking no parseable');
       }
 
