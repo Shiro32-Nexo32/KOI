@@ -874,6 +874,10 @@ async function main() {
       );
 
       const profilePayload = resultData(profileResult);
+      if (account.id === 'myrwn') {
+        console.log('PROFILE_PAYLOAD_TYPE=', typeof profilePayload);
+        console.log('PROFILE_PAYLOAD_DEBUG=', String(profilePayload).slice(0, 30000));
+      }
       const rank = findRank(profilePayload);
 
       if (!rank) {
