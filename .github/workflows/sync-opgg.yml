@@ -1,6 +1,10 @@
 name: Sync KOI accounts from OP.GG
 
 on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - "data/live.json"
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
