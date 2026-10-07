@@ -10,6 +10,7 @@ interface MatchesViewProps {
 }
 
 interface EnrichedMatch extends MatchRecord {
+  playerId: string;
   proName: string;
   riotId: string;
   playerRole: string;
@@ -34,6 +35,7 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
     p.recentMatches.forEach((m) => {
       allMatches.push({
         ...m,
+        playerId: p.id,
         proName: p.proName,
         riotId: p.riotId,
         playerRole: p.role,
@@ -100,10 +102,14 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
 
         {/* Filters */}
         <div className="flex flex-wrap items-center gap-2">
+          <div className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-500">
+            <Filter className="h-3.5 w-3.5" />
+            Filtrar
+          </div>
           {/* Player Selector */}
           <select
             value={filterPlayer}
-            onChange={(e) => setFilterPlayer(e.target.value)}
+            onChange={(e) => handlePlayerFilter(e.target.value)}
             className="rounded-lg border border-slate-800 bg-slate-900 px-3 py-1.5 text-xs font-medium text-slate-200 outline-none focus:border-amber-500"
           >
             <option value="all">Todos los jugadores (5)</option>
@@ -174,7 +180,7 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
 
             return (
               <div
-                key={match.matchId}
+                key={match.playerId + match.matchId}
                 className={`relative flex flex-col gap-4 rounded-xl border p-4 transition-all duration-150 lg:flex-row lg:items-center lg:justify-between ${
                   isWin
                     ? 'border-emerald-950/60 bg-gradient-to-r from-emerald-950/30 via-slate-950/80 to-slate-950 hover:border-emerald-800/60'
