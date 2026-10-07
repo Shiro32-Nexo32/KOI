@@ -10,6 +10,18 @@ dotenv.config();
 const app = express();
 const PORT = 3000;
 
+const RIOT_ROUTES: Record<string, { regional: string; platform: string }> = {
+  NA: { regional: 'americas', platform: 'na1' },
+  EUW: { regional: 'europe', platform: 'euw1' },
+  EUNE: { regional: 'europe', platform: 'eun1' },
+  KR: { regional: 'asia', platform: 'kr' },
+};
+
+function getRiotRoute(region: string) {
+  return RIOT_ROUTES[region?.toUpperCase()] || RIOT_ROUTES.NA;
+}
+
+
 app.use(express.json());
 
 // Initialize Gemini SDK if API key is provided
@@ -99,40 +111,85 @@ app.get('/api/players', (_req, res) => {
   });
 });
 
-// 2. Trigger Refresh (Riot API or telemetry sync)
+// 2. Trigger Refresh (Riot API sync when a key is available)
 app.post('/api/players/refresh', async (_req, res) => {
   const riotKey = process.env.RIOT_API_KEY?.trim();
-  let usedLiveRiotApi = false;
 
-  if (riotKey) {
+  if (!riotKey) {
+    lastUpdated = Date.now();
+    return res.json({
+      success: true,
+      lastUpdated,
+      usedLiveRiotApi: false,
+      players,
+      message: 'No hay RIOT_API_KEY configurada. Se mantienen los datos locales/verificados.',
+    });
+  }
+
+  let updatedPlayers = 0;
+
+  for (const player of players) {
     try {
-      // Attempt live fetch for first player to test key
-      const testPlayer = players[0];
+      const route = getRiotRoute(player.region);
       const accountRes = await fetch(
-        `https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${encodeURIComponent(testPlayer.gameName)}/${encodeURIComponent(testPlayer.tagLine)}`,
+        `https://${route.regional}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${encodeURIComponent(player.gameName)}/${encodeURIComponent(player.tagLine)}`,
         { headers: { 'X-Riot-Token': riotKey } }
       );
-      if (accountRes.ok) {
-        usedLiveRiotApi = true;
+
+      if (!accountRes.ok) continue;
+      const account = await accountRes.json();
+
+      if (account.gameName) player.gameName = account.gameName;
+      if (account.tagLine) player.tagLine = account.tagLine;
+      player.riotId = `${player.gameName}#${player.tagLine}`;
+
+      const summonerRes = await fetch(
+        `https://${route.platform}.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${encodeURIComponent(account.puuid)}`,
+        { headers: { 'X-Riot-Token': riotKey } }
+      );
+
+      if (!summonerRes.ok) continue;
+      const summoner = await summonerRes.json();
+
+      const leagueRes = await fetch(
+        `https://${route.platform}.api.riotgames.com/lol/league/v4/entries/by-summoner/${encodeURIComponent(summoner.id)}`,
+        { headers: { 'X-Riot-Token': riotKey } }
+      );
+
+      if (!leagueRes.ok) continue;
+      const entries = await leagueRes.json();
+      const solo = entries.find((entry: { queueType?: string }) => entry.queueType === 'RANKED_SOLO_5x5') || entries[0];
+
+      if (solo) {
+        player.tier = solo.tier;
+        player.division = solo.rank;
+        player.lp = solo.leaguePoints;
+        player.wins = solo.wins;
+        player.losses = solo.losses;
+        player.winrate = Number(((solo.wins / Math.max(1, solo.wins + solo.losses)) * 100).toFixed(1));
+        player.statusBadge = `${solo.tier} ${solo.rank} (${solo.leaguePoints} LP)`;
       }
-    } catch (e) {
-      console.warn('Riot API query attempt failed, maintaining high-fidelity telemetry cache:', e);
+
+      updatedPlayers += 1;
+    } catch (error) {
+      console.warn(`Riot refresh failed for ${player.proName}:`, error);
     }
   }
 
-  // Update timestamps and verify snapshots
+  recalculateRankings(players);
   lastUpdated = Date.now();
 
   res.json({
     success: true,
     lastUpdated,
-    usedLiveRiotApi,
+    usedLiveRiotApi: updatedPlayers > 0,
     players,
-    message: usedLiveRiotApi
-      ? 'Datos sincronizados exitosamente con Riot Games API.'
-      : 'Historial y clasificaciones de bootcamp sincronizados al instante.',
+    message: updatedPlayers > 0
+      ? `Datos de Riot actualizados para ${updatedPlayers} jugador(es).`
+      : 'Riot API no devolvió datos actualizables; se mantienen los datos actuales.',
   });
 });
+
 
 // 3. Simulate a match / Record new game session for demonstration & progression
 app.post('/api/players/simulate-game', (req, res) => {
@@ -143,15 +200,21 @@ app.post('/api/players/simulate-game', (req, res) => {
     return res.status(404).json({ error: 'Jugador no encontrado' });
   }
 
-  const k = Number(kills) || 6;
-  const d = Math.max(1, Number(deaths) || 2);
-  const a = Number(assists) || 8;
-  const newCs = Number(cs) || 240;
-  const matchKda = Number(((k + a) / d).toFixed(2));
-  const isWin = Boolean(win);
-  const champ = championName || player.champions[0]?.championName || 'Ahri';
+  const toFiniteNumber = (value: unknown, fallback: number) => {
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : fallback;
+  };
 
-  // Update record
+  const k = Math.max(0, toFiniteNumber(kills, 0));
+  const d = Math.max(0, toFiniteNumber(deaths, 0));
+  const a = Math.max(0, toFiniteNumber(assists, 0));
+  const newCs = Math.max(0, toFiniteNumber(cs, 0));
+  const matchKda = Number(((k + a) / Math.max(1, d)).toFixed(2));
+  const isWin = Boolean(win);
+  const champ = typeof championName === 'string' && championName.trim()
+    ? championName.trim()
+    : player.champions[0]?.championName || 'Ahri';
+
   if (isWin) {
     player.wins += 1;
     player.streak = player.streak > 0 ? player.streak + 1 : 1;
@@ -161,30 +224,24 @@ app.post('/api/players/simulate-game', (req, res) => {
   }
 
   const totalGames = player.wins + player.losses;
-  player.winrate = Number(((player.wins / totalGames) * 100).toFixed(1));
+  player.winrate = Number(((player.wins / Math.max(1, totalGames)) * 100).toFixed(1));
 
-  // LP & rank adjustments
-  const deltaLp = Number(lpChange) || (isWin ? 20 : -16);
+  const rawLpChange = toFiniteNumber(lpChange, isWin ? 20 : -16);
+  const deltaLp = isWin ? Math.abs(rawLpChange) : -Math.abs(rawLpChange);
   let nextLp = player.lp + deltaLp;
-  if (nextLp >= 100) {
-    if (player.tier === 'DIAMOND' && player.division === 'I') {
-      player.tier = 'MASTER';
-      player.division = 'I';
-      nextLp = nextLp - 100;
-      player.statusBadge = `Master Tier (${nextLp} LP)`;
-    } else if (player.tier === 'DIAMOND' && player.division === 'II') {
-      player.division = 'I';
-      nextLp = nextLp - 100;
-      player.statusBadge = `Diamante I (${nextLp} LP)`;
-    } else {
-      player.lp = nextLp;
-    }
-  } else if (nextLp < 0) {
-    nextLp = 0;
-  }
-  player.lp = nextLp;
 
-  // Append new match
+  if (nextLp >= 100 && player.tier === 'DIAMOND' && player.division === 'I') {
+    player.tier = 'MASTER';
+    player.division = 'I';
+    nextLp -= 100;
+  } else if (nextLp >= 100 && player.tier === 'DIAMOND' && player.division === 'II') {
+    player.division = 'I';
+    nextLp -= 100;
+  }
+
+  player.lp = Math.max(0, nextLp);
+  player.statusBadge = `${player.tier} ${player.division} (${player.lp} LP)`;
+
   const newMatch: MatchRecord = {
     matchId: `NA1_${Date.now()}`,
     gameCreation: Date.now(),
@@ -205,19 +262,54 @@ app.post('/api/players/simulate-game', (req, res) => {
     damageDealt: Math.floor(18000 + Math.random() * 14000),
     damagePct: Math.floor(25 + Math.random() * 12),
     visionScore: Math.floor(20 + Math.random() * 40),
-    spells: player.role === 'JUNGLE' ? ['SummonerFlash', 'SummonerSmite'] : ['SummonerFlash', 'SummonerTeleport'],
+    spells: player.role === 'JUNGLE'
+      ? ['SummonerFlash', 'SummonerSmite']
+      : ['SummonerFlash', 'SummonerTeleport'],
     items: [3078, 3053, 3111, 3071, 0, 0, 3364],
     laneOpponentChamp: 'Opponent',
     tags: isWin ? (matchKda > 10 ? ['MVP', 'Hypercarry'] : ['MVP']) : (matchKda > 3 ? ['ACE'] : []),
   };
 
   player.recentMatches.unshift(newMatch);
-  if (player.recentMatches.length > 20) {
-    player.recentMatches.pop();
+  player.recentMatches = player.recentMatches.slice(0, 20);
+
+  let champion = player.champions.find((c) => c.championName === champ);
+  if (!champion) {
+    champion = {
+      championName: champ,
+      championId: champ,
+      games: 0,
+      wins: 0,
+      losses: 0,
+      winrate: 0,
+      kills: 0,
+      deaths: 0,
+      assists: 0,
+      kda: 0,
+      csPerMin: 0,
+    };
+    player.champions.unshift(champion);
   }
 
-  // Update snapshots
-  const newSnapshot: LPSnapshot = {
+  champion.games += 1;
+  champion.wins += isWin ? 1 : 0;
+  champion.losses += isWin ? 0 : 1;
+  champion.kills += k;
+  champion.deaths += d;
+  champion.assists += a;
+  champion.winrate = Number(((champion.wins / champion.games) * 100).toFixed(1));
+  champion.kda = Number(((champion.kills + champion.assists) / Math.max(1, champion.deaths)).toFixed(1));
+  champion.csPerMin = newMatch.csPerMin;
+
+  const recent = player.recentMatches;
+  player.avgKda = Number((recent.reduce((sum, match) => sum + match.kda, 0) / Math.max(1, recent.length)).toFixed(1));
+  player.avgKills = Number((recent.reduce((sum, match) => sum + match.kills, 0) / Math.max(1, recent.length)).toFixed(1));
+  player.avgDeaths = Number((recent.reduce((sum, match) => sum + match.deaths, 0) / Math.max(1, recent.length)).toFixed(1));
+  player.avgAssists = Number((recent.reduce((sum, match) => sum + match.assists, 0) / Math.max(1, recent.length)).toFixed(1));
+  player.avgCsPerMin = Number((recent.reduce((sum, match) => sum + match.csPerMin, 0) / Math.max(1, recent.length)).toFixed(1));
+  player.avgKillParticipationPct = Number((recent.reduce((sum, match) => sum + match.killParticipationPct, 0) / Math.max(1, recent.length)).toFixed(1));
+
+  player.snapshots.push({
     timestamp: Date.now(),
     tier: player.tier,
     division: player.division,
@@ -225,8 +317,7 @@ app.post('/api/players/simulate-game', (req, res) => {
     wins: player.wins,
     losses: player.losses,
     note: isWin ? `Victoria con ${champ} (+${deltaLp} LP)` : `Derrota con ${champ} (${deltaLp} LP)`,
-  };
-  player.snapshots.push(newSnapshot);
+  });
 
   recalculateRankings(players);
   lastUpdated = Date.now();
@@ -238,6 +329,7 @@ app.post('/api/players/simulate-game', (req, res) => {
     message: `Partida registrada para ${player.proName} (${isWin ? 'Victoria' : 'Derrota'}). Rango actual: ${player.tier} ${player.division} ${player.lp} LP.`,
   });
 });
+
 
 // 4. Update Riot ID for player
 app.post('/api/players/update-account', (req, res) => {
@@ -343,31 +435,26 @@ Su impacto en las partidas analizadas muestra una capacidad de snowball muy alta
   }
 
   // General 5 players report
-  const generalReport = `### Reporte General del Bootcamp: Los 5 Jugadores
+  const formRanking = [...players].sort((a, b) => a.formRank - b.formRank);
+  const eloRanking = [...players].sort((a, b) => a.eloRank - b.eloRank);
+  const botlane = players.filter((p) => p.role === 'ADC' || p.role === 'SUPPORT');
+  const botlaneWins = botlane.reduce((sum, p) => sum + p.wins, 0);
+  const botlaneLosses = botlane.reduce((sum, p) => sum + p.losses, 0);
 
-**1. Estado de los 5 Jugadores en NA:**
-${players.map((p) => `* **${p.proName}** (${p.role} · \`${p.riotId}\`): ${p.tier} ${p.division} ${p.lp} LP | Balance: ${p.wins}-${p.losses} (${p.winrate}% WR) | KDA: ${p.avgKda}`).join('\n')}
+  const generalReport = `### Reporte General del Bootcamp
 
-**2. Comparativa: Ranking de Forma vs Ranking de Elo:**
-* **Ranking de Forma (Momentum puro):**
-  1. Jojopyun (100% WR, 8-0, KDA 10.4) - Imparable
-  2. Alvaro (92.9% WR, 13-1, KDA 5.9) - Dominio total del mapa
-  3. Supa (88.2% WR, 15-2, 10.1 CS/m) - Hipercarry en Master
-  4. Elyoya (86.7% WR, 13-2, KDA 5.8) - Control de ritmo y objetivos
-  5. Myrwn (84.6% WR, 11-2, KDA 4.8) - Gran winrate pero menor elo de partida
+**1. Estado actual:**
+${players.map((p) => `* **${p.proName}** (${p.role} · \`${p.riotId}\`): ${p.tier} ${p.division} ${p.lp} LP | ${p.wins}-${p.losses} (${p.winrate}% WR) | KDA ${p.avgKda}`).join('\n')}
 
-* **Ranking de Elo (Posición Ladder):**
-  1. Supa (Master 62 LP)
-  2. Alvaro (Diamante I 97 LP)
-  3. Elyoya (Diamante I 57 LP)
-  4. Myrwn (Diamante II 97 LP)
-  5. Jojopyun (Diamante II 27 LP)
+**2. Ranking de Forma:**
+${formRanking.map((p, i) => `${i + 1}. ${p.proName} (${p.winrate}% WR, ${p.wins}-${p.losses}, KDA ${p.avgKda})`).join('\n')}
 
-**3. Claves de la Sesión:**
-* **Jojopyun** tiene el mejor momento reciente individual con 8 victorias sin fallo en mid.
-* **Supa** lidera el ladder siendo el único en Master 62 LP.
-* **Alvaro** está a solo una partida ganada de unirse a Supa en Master Tier (97 LP).
-* La botlane (Supa + Alvaro) acumula un 28-3 conjunto, consolidándose como la dupla más letal del servidor.`;
+**3. Ranking de Elo:**
+${eloRanking.map((p, i) => `${i + 1}. ${p.proName} (${p.tier} ${p.division} ${p.lp} LP)`).join('\n')}
+
+**4. Botlane:**
+Balance combinado: **${botlaneWins}-${botlaneLosses}**.
+`;
 
   return res.json({ report: generalReport, source: 'analytic-engine', timestamp: Date.now() });
 });
