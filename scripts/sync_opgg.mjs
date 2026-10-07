@@ -985,6 +985,169 @@ async function findChromeBinary() {
   return null;
 }
 
+
+let championMapPromise = null;
+
+async function loadChampionMap() {
+  if (!championMapPromise) {
+    championMapPromise = fetch(
+      'https://ddragon.leagueoflegends.com/cdn/16.20.1/data/en_US/champion.json',
+    )
+      .then((response) => {
+        if (!response.ok) throw new Error('DDragon HTTP ' + response.status);
+        return response.json();
+      })
+      .then((payload) => {
+        const map = new Map();
+        for (const champion of Object.values(payload.data || {})) {
+          map.set(String(champion.key), champion.name);
+        }
+        return map;
+      });
+  }
+
+  return championMapPromise;
+}
+
+function normalizeInternalRole(position) {
+  const value = String(position || '').toUpperCase();
+  if (value === 'MIDDLE') return 'MID';
+  if (value === 'BOTTOM') return 'ADC';
+  if (value === 'UTILITY') return 'SUPPORT';
+  return value || 'TOP';
+}
+
+function normalizeResult(value) {
+  const result = String(value || '').toUpperCase();
+  return result === 'WIN' || result === 'VICTORY' || result === 'WON';
+}
+
+async function fetchOpggInternalMatches(account, identifier) {
+  if (!identifier || String(identifier).length < 20) {
+    throw new Error('summoner_id OP.GG no parece válido');
+  }
+
+  const url =
+    'https://lol-web-api.op.gg/api/v1.0/internal/bypass/games/na/summoners/' +
+    encodeURIComponent(identifier) +
+    '?limit=20&hl=en_US&game_type=soloranked';
+
+  const response = await fetch(url, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (compatible; KOI-Tracker/1.0)',
+      Accept: 'application/json,text/plain,*/*',
+      'Cache-Control': 'no-cache, no-store, max-age=0',
+      Pragma: 'no-cache',
+      Referer: 'https://op.gg/',
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error('OP.GG web API HTTP ' + response.status);
+  }
+
+  const payload = await response.json();
+  const games = Array.isArray(payload?.data) ? payload.data : [];
+
+  if (!games.length) throw new Error('OP.GG web API devolvió 0 partidas');
+
+  const champions = await loadChampionMap();
+  const mapped = [];
+
+  for (const game of games) {
+    const mine =
+      game.myData ||
+      game.my_data ||
+      game.participants?.find(
+        (participant) =>
+          String(participant?.summoner?.summoner_id || '') === String(identifier),
+      );
+
+    if (!mine) continue;
+
+    const stats = mine.stats || {};
+    const duration = int(game.game_length_second);
+    const kills = int(stats.kill);
+    const deaths = int(stats.death);
+    const assists = int(stats.assist);
+    const cs = int(stats.minion_kill) + int(stats.neutral_minion_kill);
+    const teamKey = mine.team_key;
+    const team = (game.teams || []).find((entry) => entry.key === teamKey);
+    const teamKills = int(team?.game_stat?.champion_kill);
+    const championId = int(mine.champion_id);
+    const opponent = (game.participants || []).find(
+      (participant) =>
+        participant.team_key !== teamKey &&
+        String(participant.position || '').toUpperCase() ===
+          String(mine.position || '').toUpperCase(),
+    );
+
+    mapped.push({
+      matchId: String(game.id),
+      gameCreation: Date.parse(game.created_at),
+      gameDurationSeconds: duration,
+      queueType: String(game.queue_info?.game_type || 'SOLORANKED').toUpperCase(),
+      win: normalizeResult(stats.result) || Boolean(team?.game_stat?.is_win),
+      championName: champions.get(String(championId)) || 'Unknown',
+      championId: String(championId),
+      champLevel: int(stats.champion_level),
+      role: normalizeInternalRole(mine.position),
+      kills,
+      deaths,
+      assists,
+      kda: Number(((kills + assists) / Math.max(1, deaths)).toFixed(2)),
+      cs,
+      csPerMin: duration > 0 ? Number((cs / (duration / 60)).toFixed(1)) : 0,
+      killParticipationPct: teamKills
+        ? Number((((kills + assists) / teamKills) * 100).toFixed(1))
+        : 0,
+      damageDealt: int(stats.total_damage_dealt_to_champions),
+      damagePct: 0,
+      visionScore: int(stats.vision_score),
+      spells: (mine.spells || []).map((id) => String(id)),
+      items: (mine.items || []).map((id) => int(id)).filter(Boolean),
+      laneOpponentChamp: opponent
+        ? champions.get(String(opponent.champion_id)) || undefined
+        : undefined,
+      tags: [],
+    });
+  }
+
+  mapped.sort((a, b) => b.gameCreation - a.gameCreation);
+
+  const latestTier = mapped.length
+    ? (() => {
+        const latestGame = games.find(
+          (game) => String(game.id) === String(mapped[0].matchId),
+        );
+        const info =
+          latestGame?.myData?.tier_info ||
+          latestGame?.my_data?.tier_info ||
+          {};
+        const tier = String(info.tier || '').toUpperCase();
+        if (!tier) return null;
+
+        const divisionMap = { 1: 'I', 2: 'II', 3: 'III', 4: 'IV' };
+        const division =
+          divisionMap[info.division] ||
+          (info.division ? String(info.division).toUpperCase() : 'I');
+
+        return {
+          tier,
+          division,
+          lp: int(info.lp),
+        };
+      })()
+    : null;
+
+  return {
+    matches: mapped.slice(0, 20),
+    rank: latestTier,
+    latestGame: mapped[0]?.gameCreation || 0,
+    url,
+  };
+}
+
 async function fetchJinaOpggProfile(account) {
   const slug = encodeURIComponent(account.gameName + '-' + account.tagLine);
   const target = 'https://op.gg/lol/summoners/na/' + slug;
@@ -1357,6 +1520,50 @@ async function main() {
 
       let finalRank = rank;
       let freshnessSource = 'OP.GG MCP';
+
+      try {
+        const internal = await fetchOpggInternalMatches(account, identifier);
+        const internalLatest = internal.latestGame || 0;
+        const mcpLatest = matches[0]?.gameCreation || 0;
+        const internalRankChanged =
+          internal.rank &&
+          (
+            internal.rank.tier !== finalRank.tier ||
+            internal.rank.division !== finalRank.division ||
+            internal.rank.lp !== finalRank.lp
+          );
+
+        console.log(
+          account.proName +
+            ': OP.GG web API candidate ' +
+            (internal.rank
+              ? internal.rank.tier +
+                ' ' +
+                internal.rank.division +
+                ' ' +
+                internal.rank.lp +
+                ' LP'
+              : 'sin rango') +
+            ' · ' +
+            internal.matches.length +
+            ' partidas',
+        );
+
+        if (
+          internalLatest > mcpLatest + 60 * 1000 ||
+          internalRankChanged
+        ) {
+          matches = internal.matches;
+          if (internal.rank) finalRank = { ...finalRank, ...internal.rank };
+          freshnessSource = 'OP.GG web API';
+        }
+      } catch (internalError) {
+        console.warn(
+          account.proName +
+            ': OP.GG web API fallback failed: ' +
+            (internalError instanceof Error ? internalError.message : String(internalError)),
+        );
+      }
 
       try {
         const dpm = await fetchDpmSnapshot(account);
