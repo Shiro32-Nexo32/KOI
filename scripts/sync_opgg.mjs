@@ -469,16 +469,19 @@ function extractIdentifier(payload) {
 
   if (typeof payload === 'string') {
     const match = payload.match(
-      /Summoner\("([^"]*)","([^"]*)","([^"]*)",(\d+),"([^"]*)","([^"]*)","([^"]*)","([^"]*)","([^"]*)","([^"]*)",/,
+      /Summoner\(([\s\S]*?)\),\[LeagueStat\(/,
     );
 
     if (match) {
-      // OP.GG text serialization order:
-      // acct_id, game_name, id, level, name, profile_image_url,
-      // puuid, region, summoner_id, tagline, updated_at.
-      // The current OP.GG profile serialization stores the 47+ char
-      // internal summoner key in the 4th constructor argument.
-      candidates.push(match[4], match[7], match[3], match[1]);
+      const tokens = match[1].match(/"(?:[^"\\]|\\.)*"|null|-?\d+(?:\.\d+)?/g) || [];
+      const clean = tokens.map((token) =>
+        token === 'null' ? null : token.replace(/^"|"$/g, ''),
+      );
+
+      // Current OP.GG text serialization:
+      // [acct_id, unused, unused, internal_summoner_key, game_name,
+      //  tagline, unused, unused, profile_image_url, level, updated_at, ...]
+      candidates.push(clean[3], clean[6], clean[0]);
     }
   }
 
