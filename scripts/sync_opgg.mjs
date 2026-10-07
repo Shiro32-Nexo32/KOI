@@ -1163,6 +1163,10 @@ async function main() {
     (tool) => tool.name === 'lol_list_summoner_matches',
   );
 
+  const renewalTool = tools.find((tool) =>
+    /(?:summoner.*renewal|renewal.*summoner)/i.test(tool.name),
+  );
+
   if (!profileTool || !matchesTool) {
     throw new Error(
       'No se encontraron los tools de OP.GG MCP. Tools=' +
@@ -1176,6 +1180,10 @@ async function main() {
   console.log(
     'Matches schema=' + JSON.stringify(matchesTool.inputSchema),
   );
+  console.log(
+    'Renewal tool=' + (renewalTool ? renewalTool.name : 'none') +
+      (renewalTool ? ' schema=' + JSON.stringify(renewalTool.inputSchema) : ''),
+  );
 
   const previousMap = new Map(
     previous.map((player) => [player.id, player]),
@@ -1186,6 +1194,28 @@ async function main() {
 
   for (const account of config.players) {
     try {
+      if (renewalTool) {
+        try {
+          const renewalArgs = buildArgs(renewalTool, account);
+          await mcpRequest(
+            sessionId,
+            50 + players.length,
+            'tools/call',
+            {
+              name: renewalTool.name,
+              arguments: renewalArgs,
+            },
+          );
+          console.log(account.proName + ': OP.GG renewal solicitado');
+        } catch (renewalError) {
+          console.warn(
+            account.proName +
+              ': renewal no disponible o rechazado: ' +
+              (renewalError instanceof Error ? renewalError.message : String(renewalError)),
+          );
+        }
+      }
+
       const profileArgs = buildArgs(profileTool, account);
 
       const profileResult = await mcpRequest(
