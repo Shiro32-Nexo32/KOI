@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PlayerProfile, LPSnapshot } from '../types/lol';
 import { getTierColor } from '../utils/ddragon';
 import { TrendingUp, Clock, Award, Milestone, ArrowRight } from 'lucide-react';
@@ -13,6 +13,13 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
   onSelectPlayer,
 }) => {
   const [activePlayerId, setActivePlayerId] = useState<string>(players[0]?.id || 'jojopyun');
+
+  useEffect(() => {
+    if (!players.some((p) => p.id === activePlayerId)) {
+      setActivePlayerId(players[0]?.id || '');
+    }
+  }, [players, activePlayerId]);
+
   const activePlayer = players.find((p) => p.id === activePlayerId) || players[0];
 
   return (
@@ -36,7 +43,7 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
           return (
             <div
               key={p.id}
-              onClick={() => setActivePlayerId(p.id)}
+              onClick={() => { setActivePlayerId(p.id); onSelectPlayer(p.id); }}
               className={`cursor-pointer rounded-xl border p-4 transition ${
                 isSelected
                   ? 'border-amber-500 bg-slate-900 shadow-md'
