@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PlayerProfile } from '../types/lol';
-import { getChampionIconUrl, getItemIconUrl, getTierColor, getOpGgUrl, getDpmLolUrl } from '../utils/ddragon';
+import { getChampionIconUrl, getItemIconUrl, getTierColor, getOpGgUrl, getDpmLolUrl, getProfileIconUrl } from '../utils/ddragon';
 import { Flame, Trophy, Swords, Shield, Crosshair, BarChart3, ArrowRight, ExternalLink } from 'lucide-react';
 
 interface PlayersViewProps {
@@ -53,18 +53,27 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
         <div className="space-y-6 lg:col-span-1">
           <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
             <div className="flex items-start justify-between">
-              <div>
-                <div className="flex items-center gap-2">
+              <div className="flex items-start gap-3">
+                <img
+                  src={getProfileIconUrl(activePlayer.profileIconId)}
+                  alt=""
+                  className="h-12 w-12 shrink-0 rounded-xl border border-slate-700 object-cover"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                />
+                <div>
+                  <div className="flex items-center gap-2">
                   <h2 className="text-2xl font-bold text-white">{activePlayer.proName}</h2>
                   <span className="font-mono text-xs text-amber-400 border border-amber-500/20 bg-amber-500/10 px-2 py-0.5 rounded">
                     {activePlayer.role}
                   </span>
-                </div>
-                <p className="mt-1 text-xs text-slate-400">{activePlayer.realName} · {activePlayer.team}</p>
-                <div className="mt-2 flex items-center gap-2">
-                  <span className="font-mono text-xs text-slate-300 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">
-                    {activePlayer.riotId}
-                  </span>
+                  </div>
+                  <p className="mt-1 text-xs text-slate-400">{activePlayer.realName} · {activePlayer.team}</p>
+                  <div className="mt-2 flex items-center gap-2">
+                    <span className="font-mono text-xs text-slate-300 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">
+                      {activePlayer.riotId}
+                    </span>
+                  </div>
                 </div>
               </div>
 
@@ -113,9 +122,9 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
               <div className="rounded-xl bg-slate-950/60 p-3">
                 <span className="text-[11px] text-slate-500">Racha Reciente</span>
                 <div className="font-mono text-lg font-bold text-amber-400">
-                  {activePlayer.streak > 0 ? `+${activePlayer.streak} Wins` : `${activePlayer.streak} Losses`}
+                  {activePlayer.streak > 0 ? `+${activePlayer.streak} Wins` : activePlayer.streak < 0 ? `${activePlayer.streak} Losses` : 'Sin racha'}
                 </div>
-                <span className="text-[11px] text-slate-400">Rendimiento continuo</span>
+                <span className="text-[11px] text-slate-400">Últimos resultados</span>
               </div>
 
               <div className="rounded-xl bg-slate-950/60 p-3">
@@ -178,7 +187,7 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <div>
-                <h3 className="text-base font-bold text-white">Pool de Campeones en NA</h3>
+                <h3 className="text-base font-bold text-white">Pool de campeones reciente</h3>
                 <p className="text-xs text-slate-400">Partidas, porcentaje de victoria y estadísticas individuales</p>
               </div>
               <span className="font-mono text-xs text-slate-400">
@@ -256,8 +265,8 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <div>
-                <h3 className="text-base font-bold text-white">Últimas Partidas Registradas</h3>
-                <p className="text-xs text-slate-400">Historial reciente en el servidor de NA</p>
+                <h3 className="text-base font-bold text-white">Últimas partidas recibidas</h3>
+                <p className="text-xs text-slate-400">Historial recibido desde OP.GG</p>
               </div>
               <span className="font-mono text-xs text-slate-400">
                 {activePlayer.recentMatches.length} Partidas
