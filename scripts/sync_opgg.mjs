@@ -141,7 +141,28 @@ function setFirst(args, tool, names, value) {
 function desiredFields(tool) {
   const key = pickProperty(tool, ['desired_output_fields']);
   if (!key) return null;
-  return 'data';
+
+  if (tool.name === 'lol_get_summoner_profile') {
+    return [
+      'data.summoner.{acct_id,game_name,id,level,name,profile_image_url,puuid,region,summoner_id,tagline,updated_at}',
+      'data.summoner.league_stats[].{game_type,lose,win,updated_at}',
+      'data.summoner.league_stats[].tier_info.{division,lp,tier}',
+      'data.summoner.ranked_most_champions.my_champion_stats[].{champion_name,id,play,win,lose}',
+      'data.summoner.ranked_most_champions.{game_type,play,win,lose}'
+    ];
+  }
+
+  if (tool.name === 'lol_list_summoner_matches') {
+    return [
+      'data.game_history[].{created_at,game_length_second,game_type,id}',
+      'data.game_history[].participants[].{champion_id,champion_name,items[],items_names[],position,spells[],team_key}',
+      'data.game_history[].participants[].summoner.{game_name,puuid,tagline}',
+      'data.game_history[].participants[].stats.{assist,champion_level,death,gold_earned,kill,minion_kill,op_score,result,total_damage_dealt_to_champions,total_damage_taken,total_heal,vision_wards_bought_in_game,ward_place}',
+      'data.game_history[].teams[].game_stat.{champion_kill,gold_earned,is_win}'
+    ];
+  }
+
+  return ['data'];
 }
 
 function buildArgs(tool, account, identifier = null) {
@@ -214,7 +235,7 @@ function buildArgs(tool, account, identifier = null) {
     if (args[required] !== undefined) continue;
 
     if (required === 'desired_output_fields') {
-      args[required] = 'data';
+      args[required] = desiredFields(tool) || ['data'];
       continue;
     }
 
