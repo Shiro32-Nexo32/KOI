@@ -1032,10 +1032,6 @@ async function fetchDpmSnapshot(account) {
       const candidate = { rank, matches, url };
 
       if (!firstDpm) firstDpm = candidate;
-
-      if (matches.length) {
-        return candidate;
-      }
     } catch (error) {
       lastError = error;
     }
