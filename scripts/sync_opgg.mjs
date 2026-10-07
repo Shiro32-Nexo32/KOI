@@ -473,7 +473,99 @@ function extractIdentifier(payload) {
   return found;
 }
 
+function parseGameHistoryText(text) {
+  const matches = [];
+  const pattern = /GameHistory\("([^"]+)","([^"]+)","([^"]+)",(\d+),\[Participant\(Summoner\("([^"]+)","([^"]+)","([^"]+)"\),(\d+),"([^"]+)","([^"]+)","([^"]+)",\[(.*?)\],\[(.*?)\],\[(.*?)\],Stats\((\d+),(\d+),(\d+),(\d+),(\d+),(\d+),(\d+),(\d+),(\d+),(\d+),(\d+),"([^"]+)",([0-9.]+)\)\)/g;
+
+  for (const match of text.matchAll(pattern)) {
+    const [
+      ,
+      gameId,
+      createdAt,
+      gameType,
+      duration,
+      puuid,
+      gameName,
+      tagLine,
+      championId,
+      championName,
+      teamKey,
+      position,
+      itemsText,
+      itemsNamesText,
+      spellsText,
+      championLevel,
+      totalDamageTaken,
+      totalDamageDealt,
+      visionWards,
+      wardsPlaced,
+      kills,
+      deaths,
+      assists,
+      minionKills,
+      goldEarned,
+      totalHeal,
+      result,
+      opScore,
+    ] = match;
+
+    matches.push({
+      game_id: gameId,
+      created_at: createdAt,
+      game_type: gameType,
+      game_length_second: int(duration),
+      my_data: {
+        champion: {
+          id: int(championId),
+          name: championName,
+        },
+        position,
+        role: position,
+        team_key: teamKey,
+        items: itemsText
+          .split(',')
+          .map((item) => int(item.trim()))
+          .filter((item) => Number.isFinite(item)),
+        item_names: itemsNamesText
+          .split(',')
+          .map((item) => item.trim())
+          .filter(Boolean),
+        spells: spellsText
+          .split(',')
+          .map((item) => int(item.trim()))
+          .filter((item) => Number.isFinite(item)),
+        summoner: {
+          puuid,
+          game_name: gameName,
+          tagline: tagLine,
+        },
+        stats: {
+          champion_level: int(championLevel),
+          total_damage_taken: int(totalDamageTaken),
+          total_damage_dealt_to_champions: int(totalDamageDealt),
+          vision_wards_bought_in_game: int(visionWards),
+          ward_place: int(wardsPlaced),
+          kill: int(kills),
+          death: int(deaths),
+          assist: int(assists),
+          minion_kill: int(minionKills),
+          gold_earned: int(goldEarned),
+          total_heal: int(totalHeal),
+          result,
+          op_score: Number(opScore),
+        },
+      },
+    });
+  }
+
+  return matches;
+}
+
 function matchObjects(payload) {
+  if (typeof payload === 'string') {
+    return parseGameHistoryText(payload);
+  }
+
   const candidates = [];
   walk(payload, (object) => {
     const identity =
@@ -492,25 +584,12 @@ function matchObjects(payload) {
       object.stats ??
       object.champion;
 
-    if (identity !== undefined && details !== undefined) candidates.push(object);
+    if (identity !== undefined && details !== undefined) {
+      candidates.push(object);
+    }
   });
 
-  const unique = new Map();
-
-  for (const item of candidates) {
-    const key = String(
-      item.game_id ??
-        item.gameId ??
-        item.match_id ??
-        item.matchId ??
-        item.created_at ??
-        item.game_creation ??
-        item.gameCreation,
-    );
-    if (!unique.has(key)) unique.set(key, item);
-  }
-
-  return [...unique.values()].slice(0, 20);
+  return candidates;
 }
 
 function timestamp(game) {
@@ -906,10 +985,6 @@ async function main() {
       );
 
       const profilePayload = resultData(profileResult);
-      if (account.id === 'myrwn') {
-        console.log('PROFILE_PAYLOAD_TYPE=', typeof profilePayload);
-        console.log('PROFILE_PAYLOAD_DEBUG=', JSON.stringify(profilePayload).slice(0, 30000));
-      }
       const rank = findRank(profilePayload);
 
       if (!rank) {
@@ -937,9 +1012,6 @@ async function main() {
       );
 
       const matchesPayload = resultData(matchesResult);
-      if (account.id === 'myrwn') {
-        console.log('MATCHES_DEBUG=', String(matchesPayload).slice(0, 20000));
-      }
       const matches = matchObjects(matchesPayload)
         .map((game) => toMatch(game, account.role))
         .sort((a, b) => b.gameCreation - a.gameCreation)
