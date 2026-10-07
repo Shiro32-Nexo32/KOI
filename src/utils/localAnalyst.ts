@@ -246,9 +246,9 @@ export function getLocalAnalystAnswer(question: string, players: PlayerProfile[]
     const positive = changes.find((row) => (row.delta || 0) > 0);
     const negative = [...changes].reverse().find((row) => (row.delta || 0) < 0);
 
-    return '**Cambios de ladder en las últimas 24 horas**\\n\\n' +
-      (positive ? 'Más subida registrada: **' + positive.player.proName + ' ' + signed(positive.delta || 0) + ' puntos**.\\n' : 'No hay una subida registrada.\\n') +
-      (negative ? 'Más bajada registrada: **' + negative.player.proName + ' ' + signed(negative.delta || 0) + ' puntos**.\\n\\n' : 'No hay una bajada registrada.\\n\\n') +
+    return '**Cambios de ladder en las últimas 24 horas**\n\n' +
+      (positive ? 'Más subida registrada: **' + positive.player.proName + ' ' + signed(positive.delta || 0) + ' puntos**.\n' : 'No hay una subida registrada.\n') +
+      (negative ? 'Más bajada registrada: **' + negative.player.proName + ' ' + signed(negative.delta || 0) + ' puntos**.\n\n' : 'No hay una bajada registrada.\n\n') +
       'Se calcula con los snapshots publicados por el tracker; no es MMR oculto.';
   }
 
