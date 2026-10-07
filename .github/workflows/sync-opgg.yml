@@ -30,9 +30,6 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install dependencies
-        run: npm install
-
       - name: Sync from official OP.GG MCP
         run: node scripts/sync_opgg.mjs
 
