@@ -1184,6 +1184,14 @@ async function main() {
     'Renewal tool=' + (renewalTool ? renewalTool.name : 'none') +
       (renewalTool ? ' schema=' + JSON.stringify(renewalTool.inputSchema) : ''),
   );
+  console.log(
+    'Summoner tools=' +
+      JSON.stringify(
+        tools
+          .filter((tool) => /summoner/i.test(tool.name))
+          .map((tool) => ({ name: tool.name, required: tool.inputSchema?.required })),
+      ),
+  );
 
   const previousMap = new Map(
     previous.map((player) => [player.id, player]),
