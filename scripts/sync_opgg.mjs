@@ -1504,6 +1504,13 @@ async function main() {
       );
 
       const profilePayload = resultData(profileResult);
+      console.log(
+        account.proName +
+          ': profile payload type=' +
+          typeof profilePayload +
+          ' preview=' +
+          String(profilePayload).slice(0, 900),
+      );
       const rank = findRank(profilePayload);
 
       if (!rank) {
