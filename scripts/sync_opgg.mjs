@@ -957,8 +957,13 @@ async function fetchDpmSnapshot(account) {
   const targetUrl =
     'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
 
+  const cacheBuster = 'nocache=' + Date.now();
+  const freshUrl = targetUrl + (targetUrl.includes('?') ? '&' : '?') + cacheBuster;
+
   const urls = [
+    freshUrl,
     targetUrl,
+    'https://r.jina.ai/' + freshUrl,
     'https://r.jina.ai/' + targetUrl,
   ];
 
