@@ -1504,12 +1504,16 @@ async function main() {
       );
 
       const profilePayload = resultData(profileResult);
+      const profileText = String(profilePayload);
+      const summonerPos = profileText.indexOf('Summoner(');
       console.log(
         account.proName +
           ': profile payload type=' +
           typeof profilePayload +
-          ' preview=' +
-          String(profilePayload).slice(0, 900),
+          ' summonerPos=' +
+          summonerPos +
+          ' excerpt=' +
+          profileText.slice(Math.max(0, summonerPos), Math.max(0, summonerPos) + 1600),
       );
       const rank = findRank(profilePayload);
 
