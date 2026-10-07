@@ -993,6 +993,51 @@ async function fetchBingDpmSnapshot(account) {
   }
 }
 
+
+async function fetchGoogleDpmSnapshot(account) {
+  const query =
+    '"' +
+    account.gameName +
+    '#' +
+    account.tagLine +
+    '" DPM.LOL "Ranked Solo"';
+
+  const url =
+    'https://www.google.com/search?hl=en&num=5&q=' +
+    encodeURIComponent(query);
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 20000);
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131 Safari/537.36',
+        Accept: 'text/html,application/xhtml+xml',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Cache-Control': 'no-cache',
+        Pragma: 'no-cache',
+      },
+      signal: controller.signal,
+    });
+
+    if (!response.ok) throw new Error('Google HTTP ' + response.status);
+
+    const html = await response.text();
+    const plain = htmlToPlainText(html);
+    const rank = parseDpmRank(plain);
+    const matches = parseDpmMatches(plain);
+
+    if (!rank) {
+      throw new Error('Google no devolvió un ranking DPM parseable');
+    }
+
+    return { rank, matches, url };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 async function fetchDpmSnapshot(account) {
   const targetUrl =
     'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
@@ -1038,38 +1083,47 @@ async function fetchDpmSnapshot(account) {
   }
 
   try {
-    const bing = await fetchBingDpmSnapshot(account);
+    const candidates = [
+      await fetchBingDpmSnapshot(account),
+      await fetchGoogleDpmSnapshot(account),
+    ];
 
-    console.log(
-      account.proName +
-        ': Bing DPM candidate ' +
-        bing.rank.tier +
-        ' ' +
-        bing.rank.division +
-        ' ' +
-        bing.rank.lp +
-        ' LP · ' +
-        bing.matches.length +
-        ' partidas',
-    );
+    for (const candidate of candidates) {
+      console.log(
+        account.proName +
+          ': public DPM search candidate ' +
+          candidate.rank.tier +
+          ' ' +
+          candidate.rank.division +
+          ' ' +
+          candidate.rank.lp +
+          ' LP · ' +
+          candidate.matches.length +
+          ' partidas · ' +
+          candidate.url,
+      );
 
-    if (!firstDpm) return bing;
+      if (!firstDpm) {
+        firstDpm = candidate;
+        continue;
+      }
 
-    const rankChanged =
-      bing.rank.tier !== firstDpm.rank.tier ||
-      bing.rank.division !== firstDpm.rank.division ||
-      bing.rank.lp !== firstDpm.rank.lp;
+      const rankChanged =
+        candidate.rank.tier !== firstDpm.rank.tier ||
+        candidate.rank.division !== firstDpm.rank.division ||
+        candidate.rank.lp !== firstDpm.rank.lp;
 
-    const firstLatest = firstDpm.matches[0]?.gameCreation ?? 0;
-    const bingLatest = bing.matches[0]?.gameCreation ?? 0;
+      const firstLatest = firstDpm.matches[0]?.gameCreation ?? 0;
+      const candidateLatest = candidate.matches[0]?.gameCreation ?? 0;
 
-    if (rankChanged || bingLatest > firstLatest + 5 * 60 * 1000) {
-      return bing;
+      if (rankChanged || candidateLatest > firstLatest + 5 * 60 * 1000) {
+        firstDpm = candidate;
+      }
     }
 
-    return firstDpm;
-  } catch (bingError) {
-    lastError = bingError;
+    if (firstDpm) return firstDpm;
+  } catch (searchError) {
+    lastError = searchError;
   }
 
   if (firstDpm) return firstDpm;
