@@ -150,21 +150,6 @@ ${latest
           .join('\n')}`
       : 'No hay historial reciente disponible.';
   }
-    const adc = players.find((player) => player.role === 'ADC');
-    const support = players.find((player) => player.role === 'SUPPORT');
-
-    if (adc && support) {
-      const wins = adc.wins + support.wins;
-      const losses = adc.losses + support.losses;
-      const total = Math.max(1, wins + losses);
-      return `**Botlane de KOI / MKOI**
-
-Supa: **${adc.tier} ${adc.division} ${adc.lp} LP · ${adc.winrate}% WR · KDA ${adc.avgKda}**
-Alvaro: **${support.tier} ${support.division} ${support.lp} LP · ${support.winrate}% WR · KDA ${support.avgKda}**
-
-Balance individual combinado: **${wins}-${losses} (${((wins / total) * 100).toFixed(1)}% WR)**.`;
-    }
-  }
 
   if (query.includes('kda')) {
     const best = [...players].sort((a, b) => b.avgKda - a.avgKda)[0];
