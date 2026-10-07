@@ -1,5 +1,6 @@
 import express from 'express';
 import fs from 'node:fs/promises';
+import os from 'node:os';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
@@ -137,7 +138,14 @@ app.post('/api/refresh', async (req, res) => {
 
   if (!refreshPromise) {
     refreshPromise = (async () => {
+      const tempLivePath = path.join(
+        os.tmpdir(),
+        'koi-live-' + process.pid + '.json',
+      );
+
       try {
+        await fs.copyFile(LIVE_PATH, tempLivePath);
+
         await execFileAsync(
           process.execPath,
           [path.resolve('scripts', 'sync_opgg.mjs')],
@@ -145,17 +153,23 @@ app.post('/api/refresh', async (req, res) => {
             cwd: path.resolve('.'),
             timeout: 120_000,
             maxBuffer: 2 * 1024 * 1024,
+            env: {
+              ...process.env,
+              KOI_LIVE_PATH: tempLivePath,
+            },
           },
         );
+
+        return JSON.parse(await fs.readFile(tempLivePath, 'utf8')) as LiveTrackerPayload;
       } finally {
+        await fs.rm(tempLivePath, { force: true });
         refreshPromise = null;
       }
     })();
   }
 
   try {
-    await refreshPromise;
-    const payload = await loadLivePayload();
+    const payload = await refreshPromise;
 
     return res.json({
       ok: true,
