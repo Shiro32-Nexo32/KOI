@@ -464,6 +464,7 @@ def main() -> int:
 
     players: list[dict[str, Any]] = []
     errors: list[str] = []
+    success_count = 0
     summoner_ids = dict(previous.get("meta", {}).get("summonerIds", {}))
 
     for account in monitored_players:
@@ -538,6 +539,7 @@ def main() -> int:
                 )
             current["snapshots"] = snapshots[-250:]
             players.append(current)
+            success_count += 1
         except Exception as exc:
             old = old_players.get(account_id)
             if old:
@@ -557,7 +559,7 @@ def main() -> int:
             "team": config["team"],
             "region": config["region"].upper(),
             "accountCount": len(monitored_players),
-            "successfulCount": len(players) - len(errors),
+            "successfulCount": success_count,
             "summonerIds": summoner_ids,
             "message": (
                 "Datos sincronizados automáticamente desde OP.GG. "
