@@ -8,7 +8,7 @@ const execFileAsync = promisify(execFile);
 
 const ROOT = process.cwd();
 const CONFIG = path.join(ROOT, 'data', 'monitored.json');
-const LIVE = path.join(ROOT, 'data', 'live.json');
+const LIVE = process.env.KOI_LIVE_PATH || path.join(ROOT, 'data', 'live.json');
 const MCP_URL = 'https://mcp-api.op.gg/mcp';
 
 const num = (v, d = 0) => Number.isFinite(Number(v)) ? Number(v) : d;
