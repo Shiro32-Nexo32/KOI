@@ -3,6 +3,6 @@
   "description": "Tracker de las cinco cuentas de SoloQ de KOI / MKOI con sincronización automática desde OP.GG.",
   "requestFramePermissions": [],
   "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+    "MAJOR_CAPABILITY_DETERMINISTIC_TRACKER_ANALYST"
   ]
 }
