@@ -341,12 +341,28 @@ function buildArgs(tool, account, identifier = null) {
 }
 
 function resultData(result) {
-  if (result?.structuredContent) return result.structuredContent;
+  const structured = result?.structuredContent;
+
+  if (typeof structured === 'string') return structured;
+
+  if (structured?.content && Array.isArray(structured.content)) {
+    const textBlock = structured.content.find(
+      (block) => block?.type === 'text' && typeof block.text === 'string',
+    );
+    if (textBlock) return textBlock.text;
+
+    const jsonBlock = structured.content.find(
+      (block) => block?.type === 'json' && block.json,
+    );
+    if (jsonBlock) return jsonBlock.json;
+  }
+
+  if (structured) return structured;
 
   for (const block of result?.content || []) {
     if (block?.type === 'json' && block.json) return block.json;
     if (block?.type === 'text' && typeof block.text === 'string') {
-      try { return JSON.parse(block.text); } catch {}
+      try { return JSON.parse(block.text); } catch { return block.text; }
     }
   }
 
@@ -356,7 +372,7 @@ function resultData(result) {
 function findRank(payload) {
   if (typeof payload === 'string') {
     const match = payload.match(
-      /SOLORANKED[\s\S]*?TierInfo\("([^"]+)",\s*(null|\\d+),\s*(\\d+)\)[\s\S]*?(\\d+),\s*(\\d+),\s*null\)/,
+      /SOLORANKED[\s\S]*?TierInfo\("([^"]+)",\s*(null|\d+),\s*(\d+)\)[\s\S]*?(\d+),\s*(\d+),\s*null\)/,
     );
 
     if (match) {
