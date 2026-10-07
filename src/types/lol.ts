@@ -114,3 +114,21 @@ export interface AnalystChatMessage {
   timestamp: number;
   suggestedFollowUps?: string[];
 }
+
+
+export interface LiveTrackerPayload {
+  generatedAt: string | null;
+  source: string;
+  sourceType?: string;
+  status: 'ok' | 'partial' | 'waiting_for_first_sync';
+  players: PlayerProfile[];
+  errors: string[];
+  meta?: {
+    team?: string;
+    region?: string;
+    accountCount?: number;
+    successfulCount?: number;
+    summonerIds?: Record<string, string>;
+    message?: string;
+  };
+}
