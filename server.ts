@@ -1,6 +1,8 @@
 import express from 'express';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 import { INITIAL_PLAYERS } from './src/data/initialPlayers.js';
 import { LiveTrackerPayload, PlayerProfile } from './src/types/lol.js';
 
@@ -8,6 +10,11 @@ import { LiveTrackerPayload, PlayerProfile } from './src/types/lol.js';
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
 const LIVE_PATH = path.resolve('data/live.json');
+const execFileAsync = promisify(execFile);
+
+let refreshPromise: Promise<void> | null = null;
+let lastRefreshStartedAt = 0;
+const REFRESH_COOLDOWN_MS = 60_000;
 
 app.use(express.json());
 
@@ -83,6 +90,87 @@ async function loadLivePayload(): Promise<LiveTrackerPayload> {
       successfulCount: 0,
     },
   };
+}
+
+function applyRefreshCors(req: express.Request, res: express.Response) {
+  const origin = req.headers.origin;
+  const allowedOrigins = new Set([
+    'https://shiro32-nexo32.github.io',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+  ]);
+
+  if (origin && allowedOrigins.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  }
+}
+
+app.options('/api/refresh', (req, res) => {
+  applyRefreshCors(req, res);
+  res.sendStatus(204);
+});
+
+app.post('/api/refresh', async (req, res) => {
+  applyRefreshCors(req, res);
+  res.setHeader('Cache-Control', 'no-store');
+
+  const now = Date.now();
+
+  if (now - lastRefreshStartedAt < REFRESH_COOLDOWN_MS) {
+    const retryAfter = Math.max(
+      1,
+      Math.ceil((REFRESH_COOLDOWN_MS - (now - lastRefreshStartedAt)) / 1000),
+    );
+
+    res.setHeader('Retry-After', String(retryAfter));
+    return res.status(429).json({
+      ok: false,
+      error: 'Ya se ha solicitado una sincronización hace muy poco.',
+      retryAfter,
+    });
+  }
+
+  lastRefreshStartedAt = now;
+
+  if (!refreshPromise) {
+    refreshPromise = (async () => {
+      try {
+        await execFileAsync(
+          process.execPath,
+          [path.resolve('scripts', 'sync_opgg.mjs')],
+          {
+            cwd: path.resolve('.'),
+            timeout: 120_000,
+            maxBuffer: 2 * 1024 * 1024,
+          },
+        );
+      } finally {
+        refreshPromise = null;
+      }
+    })();
+  }
+
+  try {
+    await refreshPromise;
+    const payload = await loadLivePayload();
+
+    return res.json({
+      ok: true,
+      refreshedAt: new Date().toISOString(),
+      payload,
+    });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error('No se pudo completar la actualización manual:', error);
+
+    return res.status(502).json({
+      ok: false,
+      error: message.slice(0, 500),
+    });
+  }
 }
 
 async function startServer() {
