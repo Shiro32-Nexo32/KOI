@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { BarChart3, Check, Copy, MessageSquareText, Send } from 'lucide-react';
 import { AnalystChatMessage, PlayerProfile } from '../types/lol';
+import { formatRankLabel } from '../utils/ddragon';
 import { getLocalAnalystAnswer } from '../utils/localAnalyst';
 
 interface AnalystViewProps {
@@ -8,50 +9,56 @@ interface AnalystViewProps {
   initialQuestion?: string;
 }
 
-function renderAnalystContent(content: string): React.ReactNode {
-  return content.split('\n').map((line, index) => {
-    const parts = line.split(/(\*\*[^*]+\*\*|\`[^\`]+\`)/g);
-    return (
-      <React.Fragment key={index}>
-        {parts.map((part, partIndex) => {
-          if (part.startsWith('**') && part.endsWith('**')) {
-            return <strong key={partIndex} className="font-bold text-white">{part.slice(2, -2)}</strong>;
-          }
-          if (part.startsWith('`') && part.endsWith('`')) {
-            return <code key={partIndex} className="rounded bg-slate-950 px-1 py-0.5 font-mono text-[11px] text-cyan-300">{part.slice(1, -1)}</code>;
-          }
-          return <React.Fragment key={partIndex}>{part}</React.Fragment>;
-        })}
-        {index < content.split('\n').length - 1 && <br />}
-      </React.Fragment>
-    );
-  });
+const QUICK_QUESTIONS = [
+  '¿Quién va líder ahora?',
+  '¿Cómo ha ido el grupo en la última hora?',
+  '¿Cómo ha ido el grupo en las últimas 24 horas?',
+  '¿Quién ha ganado o perdido ladder hoy?',
+  '¿Quién tiene mejor KDA?',
+  '¿Cómo va Jojopyun?',
+  '¿Qué campeones juega Myrwn?',
+  '¿Cómo va la botlane?',
+];
+
+function renderContent(content: string): React.ReactNode {
+  return content.split('\n').map((line, index, lines) => (
+    <React.Fragment key={index}>
+      {line.split('**').map((part, partIndex) =>
+        partIndex % 2 === 1 ? (
+          <strong key={partIndex} className="font-bold text-white">{part}</strong>
+        ) : (
+          <React.Fragment key={partIndex}>{part}</React.Fragment>
+        ),
+      )}
+      {index < lines.length - 1 && <br />}
+    </React.Fragment>
+  ));
 }
 
 function buildWelcome(players: PlayerProfile[]): AnalystChatMessage {
   const ordered = [...players].sort((a, b) => a.formRank - b.formRank);
   const lines = ordered.map(
     (player) =>
-      `* **${player.proName}** (\`${player.riotId}\`) · ${player.tier} ${player.division} ${player.lp} LP · ${player.winrate}% WR · KDA ${player.avgKda}`,
+      '* **' +
+      player.proName +
+      '** · ' +
+      formatRankLabel(player.tier, player.division, player.lp) +
+      ' · ' +
+      player.winrate +
+      '% WR · KDA ' +
+      player.avgKda,
   );
 
   return {
     id: 'welcome',
     role: 'assistant',
-    content: `Consulta el estado actual de **KOI / MKOI** con preguntas rápidas.
-
-Las respuestas salen de reglas predefinidas y de los datos sincronizados desde OP.GG. No hay generación de texto libre: cada respuesta es un cálculo del tracker.
-
-Estado actual, ordenado por forma:
-${lines.join('\n')}`,
+    content:
+      'Consulta el estado actual de **KOI / MKOI** con preguntas rápidas.\n\n' +
+      'Las respuestas son predefinidas y se calculan directamente con los datos sincronizados de OP.GG. No hay generación de texto libre.\n\n' +
+      'Estado actual, ordenado por forma:\n' +
+      lines.join('\n'),
     timestamp: Date.now(),
-    suggestedFollowUps: [
-      'Reporte de los 5',
-      '¿Cómo va la botlane (Supa y Alvaro)?',
-      '¿Quién tiene mejor racha y KDA?',
-      '¿Qué campeones está jugando Jojopyun?',
-      '¿Cómo va Myrwn?',
-    ],
+    suggestedFollowUps: QUICK_QUESTIONS,
   };
 }
 
@@ -61,39 +68,6 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
   const [inputQuestion, setInputQuestion] = useState(initialQuestion || '');
   const [isLoading, setIsLoading] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
-
-  const handleSend = async (questionText: string) => {
-    const question = questionText.trim();
-    if (!question || isLoading) return;
-
-    const userMsg: AnalystChatMessage = {
-      id: `user_${Date.now()}`,
-      role: 'user',
-      content: question,
-      timestamp: Date.now(),
-    };
-
-    setMessages((current) => [...current, userMsg]);
-    setInputQuestion('');
-    setIsLoading(true);
-
-    try {
-      const reply = getLocalAnalystAnswer(question, players);
-
-      setMessages((current) => [
-        ...current,
-        {
-          id: `bot_${Date.now()}`,
-          role: 'assistant',
-          content: reply,
-          timestamp: Date.now(),
-          suggestedFollowUps: generateFollowUps(question),
-        },
-      ]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   const generateFollowUps = (question: string): string[] => {
     const lower = question.toLowerCase();
@@ -122,11 +96,41 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
       ];
     }
 
-    return [
-      '¿Quién va líder ahora?',
-      '¿Cómo ha ido el grupo en la última hora?',
-      '¿Cómo ha ido el grupo en las últimas 24 horas?',
-    ];
+    return QUICK_QUESTIONS.slice(0, 4);
+  };
+
+  const handleSend = (questionText: string) => {
+    const question = questionText.trim();
+    if (!question || isLoading) return;
+
+    const now = Date.now();
+    setMessages((current) => [
+      ...current,
+      {
+        id: 'user_' + now,
+        role: 'user',
+        content: question,
+        timestamp: now,
+      },
+    ]);
+    setInputQuestion('');
+    setIsLoading(true);
+
+    const reply = getLocalAnalystAnswer(question, players);
+    const replyTime = Date.now();
+
+    setMessages((current) => [
+      ...current,
+      {
+        id: 'tracker_' + replyTime,
+        role: 'assistant',
+        content: reply,
+        timestamp: replyTime,
+        suggestedFollowUps: generateFollowUps(question),
+      },
+    ]);
+
+    window.setTimeout(() => setIsLoading(false), 120);
   };
 
   const copyToClipboard = (text: string, id: string) => {
@@ -138,42 +142,42 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
   return (
     <div className="space-y-6">
       <section className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
-              <BarChart3 className="h-5 w-5" />
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+                <BarChart3 className="h-5 w-5" />
+              </div>
+              <div>
+                <h2 className="text-lg font-bold text-white">Consultas del tracker</h2>
+                <p className="text-xs text-slate-500">
+                  Respuestas predefinidas calculadas con las cinco cuentas y sus partidas sincronizadas.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="text-lg font-bold text-white">Analista del tracker</h2>
-              <p className="text-xs text-slate-500">
-                Respuestas predefinidas calculadas con las cinco cuentas y sus partidas sincronizadas.
-              </p>
+
+            <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-wider text-slate-600">
+              <MessageSquareText className="h-3.5 w-3.5 text-amber-400" />
+              Motor determinista
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => handleSend('¿Quién va líder ahora?')}
-              disabled={isLoading}
-              className="flex items-center gap-1.5 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3 py-1.5 text-xs font-semibold text-amber-300 transition hover:bg-amber-500/20 disabled:opacity-50"
-            >
-              <MessageSquareText className="h-3.5 w-3.5" />
-              Reporte de los 5
-            </button>
-            <button
-              onClick={() => handleSend('¿Cómo ha ido el grupo en la última hora?')}
-              disabled={isLoading}
-              className="rounded-lg border border-slate-700 bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:bg-slate-700 disabled:opacity-50"
-            >
-              Botlane
-            </button>
-            <button
-              onClick={() => handleSend('¿Cómo ha ido el grupo en las últimas 24 horas?')}
-              disabled={isLoading}
-              className="rounded-lg border border-slate-700 bg-slate-800 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:bg-slate-700 disabled:opacity-50"
-            >
-              Rachas & KDA
-            </button>
+          <div className="flex flex-wrap gap-2 border-t border-slate-800 pt-4">
+            {QUICK_QUESTIONS.map((prompt, index) => (
+              <button
+                key={prompt}
+                onClick={() => handleSend(prompt)}
+                disabled={isLoading}
+                className={
+                  'rounded-lg border px-3 py-1.5 text-xs font-medium transition disabled:opacity-50 ' +
+                  (index === 0
+                    ? 'border-amber-500/30 bg-amber-500/10 text-amber-300 hover:bg-amber-500/20'
+                    : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white')
+                }
+              >
+                {prompt}
+              </button>
+            ))}
           </div>
         </div>
       </section>
@@ -185,16 +189,17 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
           return (
             <article
               key={message.id}
-              className={`rounded-2xl border p-5 ${
-                assistant
+              className={
+                'rounded-2xl border p-5 ' +
+                (assistant
                   ? 'border-slate-800 bg-slate-900/70'
-                  : 'ml-6 border-amber-500/30 bg-amber-500/5 sm:ml-12'
-              }`}
+                  : 'ml-6 border-amber-500/30 bg-amber-500/5 sm:ml-12')
+              }
             >
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-2 text-xs font-semibold">
                   <span className={assistant ? 'text-amber-400' : 'text-slate-400'}>
-                    {assistant ? 'Analista' : 'Tú'}
+                    {assistant ? 'Tracker' : 'Tú'}
                   </span>
                   <span className="font-mono text-[10px] text-slate-600">
                     {new Date(message.timestamp).toLocaleTimeString([], {
@@ -225,12 +230,12 @@ export const AnalystView: React.FC<AnalystViewProps> = ({ players, initialQuesti
               </div>
 
               <div className="mt-3 text-sm leading-relaxed text-slate-200">
-                {renderAnalystContent(message.content)}
+                {renderContent(message.content)}
               </div>
 
               {assistant && message.suggestedFollowUps?.length ? (
                 <div className="mt-4 border-t border-slate-800/80 pt-3">
-                  <div className="mb-2 text-[11px] font-mono text-slate-600">Preguntas sugeridas</div>
+                  <div className="mb-2 text-[11px] font-mono text-slate-600">Consultas relacionadas</div>
                   <div className="flex flex-wrap gap-1.5">
                     {message.suggestedFollowUps.map((prompt) => (
                       <button
