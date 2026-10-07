@@ -996,9 +996,8 @@ async function fetchBingDpmSnapshot(account) {
 async function fetchDpmSnapshot(account) {
   const targetUrl =
     'https://dpm.lol/' + encodeURIComponent(account.gameName + '-' + account.tagLine);
-
   const cacheBuster = 'nocache=' + Date.now();
-  const freshUrl = targetUrl + (targetUrl.includes('?') ? '&' : '?') + cacheBuster;
+  const freshUrl = targetUrl + '?' + cacheBuster;
 
   const urls = [
     freshUrl,
@@ -1007,6 +1006,7 @@ async function fetchDpmSnapshot(account) {
     'https://r.jina.ai/' + targetUrl,
   ];
 
+  let firstDpm = null;
   let lastError = null;
 
   for (const url of urls) {
@@ -1020,42 +1020,63 @@ async function fetchDpmSnapshot(account) {
         },
       });
 
-      if (!response.ok) {
-        throw new Error('HTTP ' + response.status);
-      }
+      if (!response.ok) throw new Error('HTTP ' + response.status);
 
       const body = await response.text();
       const plain = htmlToPlainText(body);
       const rank = parseDpmRank(plain);
       const matches = parseDpmMatches(plain);
 
-      if (!rank) {
-        console.warn(
-          'DPM parse diagnostic for ' +
-            account.proName +
-            ' via ' +
-            url +
-            ': ' +
-            plain.slice(0, 1200),
-        );
-        throw new Error('ranking no parseable');
-      }
+      if (!rank) throw new Error('ranking no parseable');
 
-      return {
-        rank,
-        matches,
-        url,
-      };
+      const candidate = { rank, matches, url };
+
+      if (!firstDpm) firstDpm = candidate;
+
+      if (matches.length) {
+        return candidate;
+      }
     } catch (error) {
       lastError = error;
     }
   }
 
   try {
-    return await fetchBingDpmSnapshot(account);
+    const bing = await fetchBingDpmSnapshot(account);
+
+    console.log(
+      account.proName +
+        ': Bing DPM candidate ' +
+        bing.rank.tier +
+        ' ' +
+        bing.rank.division +
+        ' ' +
+        bing.rank.lp +
+        ' LP · ' +
+        bing.matches.length +
+        ' partidas',
+    );
+
+    if (!firstDpm) return bing;
+
+    const rankChanged =
+      bing.rank.tier !== firstDpm.rank.tier ||
+      bing.rank.division !== firstDpm.rank.division ||
+      bing.rank.lp !== firstDpm.rank.lp;
+
+    const firstLatest = firstDpm.matches[0]?.gameCreation ?? 0;
+    const bingLatest = bing.matches[0]?.gameCreation ?? 0;
+
+    if (rankChanged || bingLatest > firstLatest + 5 * 60 * 1000) {
+      return bing;
+    }
+
+    return firstDpm;
   } catch (bingError) {
     lastError = bingError;
   }
+
+  if (firstDpm) return firstDpm;
 
   throw new Error(
     'DPM no devolvió un perfil/ranking suficientemente parseable para ' +
