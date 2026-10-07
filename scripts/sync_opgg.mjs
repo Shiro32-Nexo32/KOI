@@ -1410,10 +1410,41 @@ async function main() {
               (jinaError instanceof Error ? jinaError.message : String(jinaError)),
           );
         }
+
         console.warn(
           account.proName +
             ': no se pudo usar DPM como fallback: ' +
             (dpmError instanceof Error ? dpmError.message : String(dpmError)),
+        );
+      }
+
+      try {
+        const jina = await fetchJinaOpggProfile(account);
+        const rankChanged =
+          jina.rank.tier !== finalRank.tier ||
+          jina.rank.division !== finalRank.division ||
+          jina.rank.lp !== finalRank.lp;
+
+        console.log(
+          account.proName +
+            ': Jina OP.GG verification ' +
+            jina.rank.tier +
+            ' ' +
+            jina.rank.division +
+            ' ' +
+            jina.rank.lp +
+            ' LP',
+        );
+
+        if (rankChanged) {
+          finalRank = jina.rank;
+          freshnessSource = jina.source;
+        }
+      } catch (jinaError) {
+        console.warn(
+          account.proName +
+            ': Jina OP.GG verification failed: ' +
+            (jinaError instanceof Error ? jinaError.message : String(jinaError)),
         );
       }
 
