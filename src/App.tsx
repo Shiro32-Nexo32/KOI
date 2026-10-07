@@ -15,11 +15,29 @@ import { EditAccountModal } from './components/EditAccountModal';
 import { Footer } from './components/Footer';
 import { INITIAL_PLAYERS, INITIAL_TEAM_REPORT } from './data/initialPlayers';
 import { PlayerProfile, TeamOverviewReport } from './types/lol';
-import { CheckCircle2, AlertCircle } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
+
+function clonePlayers(source: PlayerProfile[]): PlayerProfile[] {
+  return JSON.parse(JSON.stringify(source)) as PlayerProfile[];
+}
+
+function loadInitialPlayers(): PlayerProfile[] {
+  if (typeof window === 'undefined') return clonePlayers(INITIAL_PLAYERS);
+  try {
+    const raw = localStorage.getItem('lol_bootcamp_players');
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed as PlayerProfile[];
+    }
+  } catch (error) {
+    console.warn('No se pudo leer la caché local de jugadores:', error);
+  }
+  return clonePlayers(INITIAL_PLAYERS);
+}
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('overview');
-  const [players, setPlayers] = useState<PlayerProfile[]>(INITIAL_PLAYERS);
+  const [players, setPlayers] = useState<PlayerProfile[]>(loadInitialPlayers);
   const [report, setReport] = useState<TeamOverviewReport>(INITIAL_TEAM_REPORT);
   const [selectedPlayerId, setSelectedPlayerId] = useState<string>('jojopyun');
   const [lastUpdated, setLastUpdated] = useState<number>(Date.now());
@@ -28,7 +46,7 @@ export default function App() {
   const [isSimulateModalOpen, setIsSimulateModalOpen] = useState<boolean>(false);
   const [editingPlayer, setEditingPlayer] = useState<PlayerProfile | null>(null);
   const [analystInitialPrompt, setAnalystInitialPrompt] = useState<string>('');
-  const [autoRefresh, setAutoRefresh] = useState<boolean>(true);
+  const [autoRefresh, setAutoRefresh] = useState<boolean>(false);
   const [toastMessage, setToastMessage] = useState<{ text: string; type: 'success' | 'info' } | null>(null);
 
   // Fetch initial data from server API
@@ -46,13 +64,21 @@ export default function App() {
         }
       }
     } catch (err) {
-      console.warn('API fetch players fell back to client cache:', err);
+      console.warn('API no disponible; usando datos locales.', err);
     }
   };
 
   useEffect(() => {
     fetchPlayersData();
   }, []);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('lol_bootcamp_players', JSON.stringify(players));
+    } catch (error) {
+      console.warn('No se pudieron guardar los jugadores en caché local:', error);
+    }
+  }, [players]);
 
   // Background Auto-Refresh Interval
   useEffect(() => {
@@ -79,10 +105,16 @@ export default function App() {
         setPlayers(data.players);
         setLastUpdated(data.lastUpdated || Date.now());
       }
-      showToast(data.message || 'Métricas y snapshots actualizados con éxito.');
+      if (data.players) {
+        showToast(data.message || 'Métricas y snapshots actualizados con éxito.');
+      } else {
+        setLastUpdated(Date.now());
+        showToast('Servidor no disponible. La aplicación seguirá usando los datos locales.', 'info');
+      }
     } catch (err) {
-      console.error('Refresh error:', err);
-      showToast('Error al conectar con el servidor.', 'info');
+      console.warn('Servidor no disponible durante la actualización:', err);
+      setLastUpdated(Date.now());
+      showToast('Modo local activo. Los datos siguen funcionando en este navegador.', 'info');
     } finally {
       setIsRefreshing(false);
     }
