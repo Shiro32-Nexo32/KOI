@@ -52,14 +52,23 @@ Abre en tu navegador: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📦 Despliegue en producción
+## 📦 Despliegue
 
-Para desplegar en servicios como **Render**, **Railway**, **Fly.io** o un VPS:
+### GitHub Pages
+La interfaz React se puede publicar como sitio estático. El workflow de `main` ejecuta Vite y publica `dist` en GitHub Pages.
+
+### Despliegue completo con backend
+Para disponer también de la API de Riot, simulación, edición de cuentas y Gemini, despliega el servidor Node/Express en **Render**, **Railway**, **Fly.io** o un VPS:
 
 ```bash
+npm install
 npm run build
 npm start
 ```
+
+En ese caso configura `RIOT_API_KEY` y, para el analista Gemini, `GEMINI_API_KEY` como variables de entorno.
+
+La versión de GitHub Pages conserva los datos y las modificaciones en el navegador mediante `localStorage` cuando no existe backend.
 
 ---
 
