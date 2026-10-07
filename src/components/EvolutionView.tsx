@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { PlayerProfile, LPSnapshot } from '../types/lol';
-import { getTierColor } from '../utils/ddragon';
+import { getTierColor, formatRankLabel } from '../utils/ddragon';
 import { TrendingUp, Clock, Award, Milestone, ArrowRight } from 'lucide-react';
 
 interface EvolutionViewProps {
@@ -28,7 +28,7 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
       <div className="border-b border-slate-800 pb-4">
         <h2 className="text-xl font-bold text-white">Evolución Temporal de LP y Snapshots</h2>
         <p className="text-xs text-slate-400">
-          Histórico secuencial del ladder. Se crea un snapshot cuando la sincronización detecta un cambio de rango o LP.
+          Histórico secuencial del rango visible. Se crea un snapshot cuando la sincronización detecta un cambio de rango o LP.
         </p>
       </div>
 
@@ -58,7 +58,7 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
 
               <div className="mt-2">
                 <span className={`inline-block rounded px-2 py-0.5 font-mono text-xs font-semibold ${tierStyle.bg} ${tierStyle.text} border ${tierStyle.border}`}>
-                  {p.tier} {p.division} · {p.lp} LP
+                  {formatRankLabel(p.tier, p.division, p.lp)}
                 </span>
               </div>
 
@@ -91,7 +91,7 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
               </h3>
             </div>
             <span className="text-xs text-slate-400">
-              Rango actual: {activePlayer.tier} {activePlayer.division} ({activePlayer.lp} LP) · Balance: {activePlayer.wins}W - {activePlayer.losses}L
+              Rango actual: {formatRankLabel(activePlayer.tier, activePlayer.division, activePlayer.lp)} · Balance: {activePlayer.wins}W - {activePlayer.losses}L
             </span>
           </div>
 
@@ -132,7 +132,7 @@ export const EvolutionView: React.FC<EvolutionViewProps> = ({
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                       <div className="flex items-center gap-2.5">
                         <span className="font-mono text-sm font-bold text-white">
-                          {snap.tier} {snap.division} · {snap.lp} LP
+                          {formatRankLabel(snap.tier, snap.division, snap.lp)}
                         </span>
                         {isLast && (
                           <span className="rounded bg-amber-500/20 px-2 py-0.5 font-mono text-[10px] font-bold text-amber-300">
@@ -180,5 +180,6 @@ function ladderValue(snapshot: LPSnapshot): number {
     CHALLENGER: 10000,
   };
   const divisionWeight: Record<string, number> = { I: 400, II: 300, III: 200, IV: 100 };
-  return (tierWeight[snapshot.tier] || 0) + (divisionWeight[snapshot.division] || 0) + snapshot.lp;
+  const apexTiers = new Set(['MASTER', 'GRANDMASTER', 'CHALLENGER']);
+  return (tierWeight[snapshot.tier] || 0) + (apexTiers.has(snapshot.tier) ? 0 : (divisionWeight[snapshot.division] || 0)) + snapshot.lp;
 }
