@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T01:20:22.453Z",
+  "generatedAt": "2026-10-08T07:47:09.613Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -17,18 +17,31 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 52,
-      "wins": 16,
+      "lp": 192,
+      "wins": 19,
       "losses": 2,
-      "winrate": 88.9,
-      "streak": 6,
-      "avgKda": 7.6,
-      "avgKills": 7.7,
-      "avgDeaths": 2.7,
-      "avgAssists": 6.5,
-      "avgCsPerMin": 8.5,
+      "winrate": 90.5,
+      "streak": 2,
+      "avgKda": 7.2,
+      "avgKills": 6.7,
+      "avgDeaths": 2.3,
+      "avgAssists": 5.7,
+      "avgCsPerMin": 8.4,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 5,
+          "wins": 5,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 37,
+          "deaths": 14,
+          "assists": 30,
+          "kda": 4.8,
+          "csPerMin": 9.2
+        },
         {
           "championName": "Corki",
           "championId": "42",
@@ -43,19 +56,6 @@
           "csPerMin": 9
         },
         {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 4,
-          "wins": 4,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 34,
-          "deaths": 9,
-          "assists": 21,
-          "kda": 6.1,
-          "csPerMin": 9.4
-        },
-        {
           "championName": "Karma",
           "championId": "43",
           "games": 2,
@@ -67,6 +67,32 @@
           "assists": 21,
           "kda": 5.5,
           "csPerMin": 7.1
+        },
+        {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 3,
+          "deaths": 1,
+          "assists": 1,
+          "kda": 4,
+          "csPerMin": 6.4
+        },
+        {
+          "championName": "Aurora",
+          "championId": "893",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 1,
+          "assists": 3,
+          "kda": 8,
+          "csPerMin": 8.6
         },
         {
           "championName": "Ezreal",
@@ -121,32 +147,6 @@
           "csPerMin": 8.2
         },
         {
-          "championName": "Kennen",
-          "championId": "85",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 7,
-          "assists": 14,
-          "kda": 3,
-          "csPerMin": 7.7
-        },
-        {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 9,
-          "deaths": 4,
-          "assists": 2,
-          "kda": 2.8,
-          "csPerMin": 7.5
-        },
-        {
           "championName": "Aatrox",
           "championId": "266",
           "games": 1,
@@ -161,6 +161,138 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUL1RimazHEGGY4_PkVN74_PAnbX36vXno=",
+          "gameCreation": 1791430309000,
+          "gameDurationSeconds": 1342,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Aurora",
+          "championId": "893",
+          "champLevel": 15,
+          "role": "TOP",
+          "kills": 5,
+          "deaths": 1,
+          "assists": 3,
+          "kda": 8,
+          "cs": 192,
+          "csPerMin": 8.6,
+          "killParticipationPct": 0,
+          "damageDealt": 25207,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2503,
+            2055,
+            3020,
+            4645,
+            3113,
+            3145
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgX8-9Aaoqiew9ThgoOc-K7XwT2P_G8FGXY=",
+          "gameCreation": 1791428069000,
+          "gameDurationSeconds": 915,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Camille",
+          "championId": "164",
+          "champLevel": 12,
+          "role": "TOP",
+          "kills": 3,
+          "deaths": 1,
+          "assists": 1,
+          "kda": 4,
+          "cs": 113,
+          "csPerMin": 7.4,
+          "killParticipationPct": 0,
+          "damageDealt": 11081,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerTeleport",
+            "SummonerDot"
+          ],
+          "items": [
+            3078,
+            2031,
+            1036,
+            1054,
+            1036,
+            1001
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
+          "gameCreation": 1791426953000,
+          "gameDurationSeconds": 112,
+          "queueType": "SOLORANKED",
+          "win": false,
+          "championName": "Camille",
+          "championId": "164",
+          "champLevel": 2,
+          "role": "TOP",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "kda": 0,
+          "cs": 10,
+          "csPerMin": 5.4,
+          "killParticipationPct": 0,
+          "damageDealt": 505,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            1054,
+            2003
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgXJKnpZy4rDSRaQE9k1PfhUj5qVicYkWNc=",
+          "gameCreation": 1791426588000,
+          "gameDurationSeconds": 2074,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 20,
+          "role": "TOP",
+          "kills": 3,
+          "deaths": 5,
+          "assists": 9,
+          "kda": 2.4,
+          "cs": 288,
+          "csPerMin": 8.3,
+          "killParticipationPct": 0,
+          "damageDealt": 33553,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            6694,
+            3142,
+            3134,
+            3047,
+            1055,
+            6699
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXA45jkCeke28goWap7gNF8bPUObNOQabM=",
           "gameCreation": 1791411543000,
@@ -696,78 +828,10 @@
             3078
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVgq2fUKhBjVpc2p-3Rue2_Z0CafDgeD4Y=",
-          "gameCreation": 1791255332000,
-          "gameDurationSeconds": 1672,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Kennen",
-          "championId": "85",
-          "champLevel": 18,
-          "role": "TOP",
-          "kills": 7,
-          "deaths": 7,
-          "assists": 14,
-          "kda": 3,
-          "cs": 215,
-          "csPerMin": 7.7,
-          "killParticipationPct": 0,
-          "damageDealt": 43680,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHaste"
-          ],
-          "items": [
-            3006,
-            1018,
-            3032,
-            3031,
-            3046,
-            3035
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWQxnz1QMe9Cy6t01GJTEWJG_0FDvfkrlg=",
-          "gameCreation": 1791253269000,
-          "gameDurationSeconds": 900,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Lucian",
-          "championId": "236",
-          "champLevel": 12,
-          "role": "TOP",
-          "kills": 9,
-          "deaths": 4,
-          "assists": 2,
-          "kda": 2.75,
-          "cs": 113,
-          "csPerMin": 7.5,
-          "killParticipationPct": 0,
-          "damageDealt": 15883,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            1018,
-            2031,
-            3508,
-            1083,
-            3158,
-            1086
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (52 LP)",
-      "analystSummary": "Myrwn: MASTER I 52 LP · 18 partidas consultadas · 88.9% WR · KDA medio 7.6.",
+      "statusBadge": "MASTER I (192 LP)",
+      "analystSummary": "Myrwn: MASTER I 192 LP · 20 partidas consultadas · 90.5% WR · KDA medio 7.2.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -804,9 +868,18 @@
           "wins": 16,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791445603331,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 192,
+          "wins": 19,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 5,
       "eloRank": 4
     },
     {
@@ -822,30 +895,30 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 192,
-      "wins": 19,
+      "lp": 297,
+      "wins": 22,
       "losses": 2,
-      "winrate": 90.5,
-      "streak": 7,
-      "avgKda": 9.6,
-      "avgKills": 8.4,
-      "avgDeaths": 2.8,
-      "avgAssists": 10.2,
+      "winrate": 91.7,
+      "streak": 2,
+      "avgKda": 9.7,
+      "avgKills": 8.3,
+      "avgDeaths": 2.5,
+      "avgAssists": 9.7,
       "avgCsPerMin": 1.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Kha'Zix",
           "championId": "121",
-          "games": 5,
-          "wins": 5,
+          "games": 4,
+          "wins": 4,
           "losses": 0,
           "winrate": 100,
-          "kills": 44,
-          "deaths": 9,
-          "assists": 40,
-          "kda": 9.3,
-          "csPerMin": 0.8
+          "kills": 36,
+          "deaths": 5,
+          "assists": 27,
+          "kda": 12.6,
+          "csPerMin": 0.9
         },
         {
           "championName": "Jarvan IV",
@@ -863,28 +936,15 @@
         {
           "championName": "Lee Sin",
           "championId": "64",
-          "games": 3,
-          "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 27,
-          "deaths": 6,
-          "assists": 35,
-          "kda": 10.3,
-          "csPerMin": 0.9
-        },
-        {
-          "championName": "Nidalee",
-          "championId": "76",
           "games": 2,
           "wins": 2,
           "losses": 0,
           "winrate": 100,
-          "kills": 15,
-          "deaths": 2,
-          "assists": 7,
-          "kda": 11,
-          "csPerMin": 0.4
+          "kills": 21,
+          "deaths": 3,
+          "assists": 31,
+          "kda": 17.3,
+          "csPerMin": 1.1
         },
         {
           "championName": "Lillia",
@@ -913,6 +973,45 @@
           "csPerMin": 0.8
         },
         {
+          "championName": "Poppy",
+          "championId": "78",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 0,
+          "assists": 5,
+          "kda": 8,
+          "csPerMin": 0.1
+        },
+        {
+          "championName": "Rengar",
+          "championId": "107",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 19,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 6,
+          "csPerMin": 1.6
+        },
+        {
+          "championName": "Nidalee",
+          "championId": "76",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 6,
+          "deaths": 0,
+          "assists": 3,
+          "kda": 9,
+          "csPerMin": 0.4
+        },
+        {
           "championName": "Kai'Sa",
           "championId": "145",
           "games": 1,
@@ -939,6 +1038,19 @@
           "csPerMin": 0.5
         },
         {
+          "championName": "Skarner",
+          "championId": "72",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "kda": 0,
+          "csPerMin": 0
+        },
+        {
           "championName": "Elise",
           "championId": "60",
           "games": 1,
@@ -953,6 +1065,135 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUL1RimazHEGGY4_PkVN74_PAnbX36vXno=",
+          "gameCreation": 1791430309000,
+          "gameDurationSeconds": 1342,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Kha'Zix",
+          "championId": "121",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 3,
+          "deaths": 1,
+          "assists": 7,
+          "kda": 10,
+          "cs": 18,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 16185,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2520,
+            1001,
+            1036,
+            3179,
+            6699
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgX8-9Aaoqiew9ThgoOc-K7XwT2P_G8FGXY=",
+          "gameCreation": 1791428069000,
+          "gameDurationSeconds": 915,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Poppy",
+          "championId": "78",
+          "champLevel": 10,
+          "role": "JUNGLE",
+          "kills": 3,
+          "deaths": 0,
+          "assists": 5,
+          "kda": 8,
+          "cs": 1,
+          "csPerMin": 0.1,
+          "killParticipationPct": 0,
+          "damageDealt": 5963,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            1031,
+            2422,
+            3066,
+            2525,
+            1028
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
+          "gameCreation": 1791426953000,
+          "gameDurationSeconds": 112,
+          "queueType": "SOLORANKED",
+          "win": false,
+          "championName": "Skarner",
+          "championId": "72",
+          "champLevel": 2,
+          "role": "JUNGLE",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "kda": 0,
+          "cs": 0,
+          "csPerMin": 0,
+          "killParticipationPct": 0,
+          "damageDealt": 0,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            1101
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgXJKnpZy4rDSRaQE9k1PfhUj5qVicYkWNc=",
+          "gameCreation": 1791426588000,
+          "gameDurationSeconds": 2074,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Rengar",
+          "championId": "107",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 19,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 6,
+          "cs": 54,
+          "csPerMin": 1.6,
+          "killParticipationPct": 0,
+          "damageDealt": 45318,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3036,
+            2512,
+            6699,
+            3179,
+            3031,
+            3142
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXA45jkCeke28goWap7gNF8bPUObNOQabM=",
           "gameCreation": 1791411543000,
@@ -1481,139 +1722,10 @@
             3157
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXapKNz_kyDKUm2Jguas7Pr2QmebjFYOkU=",
-          "gameCreation": 1791260048000,
-          "gameDurationSeconds": 914,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Kha'Zix",
-          "championId": "121",
-          "champLevel": 12,
-          "role": "JUNGLE",
-          "kills": 2,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 7,
-          "cs": 7,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 5333,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3134,
-            1037,
-            1001,
-            2520
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUhd1krrAPamRLmRl5Va2i3PfqTVEeSnvI=",
-          "gameCreation": 1791258776000,
-          "gameDurationSeconds": 911,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Nidalee",
-          "championId": "76",
-          "champLevel": 11,
-          "role": "JUNGLE",
-          "kills": 9,
-          "deaths": 2,
-          "assists": 4,
-          "kda": 6.5,
-          "cs": 6,
-          "csPerMin": 0.4,
-          "killParticipationPct": 0,
-          "damageDealt": 10942,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3152,
-            1001,
-            3100
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgU0DMOexe-RS2UlQRI6_D_D5YImqqaj34k=",
-          "gameCreation": 1791257226000,
-          "gameDurationSeconds": 1596,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 16,
-          "role": "JUNGLE",
-          "kills": 6,
-          "deaths": 3,
-          "assists": 4,
-          "kda": 3.33,
-          "cs": 17,
-          "csPerMin": 0.6,
-          "killParticipationPct": 0,
-          "damageDealt": 17851,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6692,
-            3071,
-            3111,
-            3156
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVgq2fUKhBjVpc2p-3Rue2_Z0CafDgeD4Y=",
-          "gameCreation": 1791255332000,
-          "gameDurationSeconds": 1672,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Kha'Zix",
-          "championId": "121",
-          "champLevel": 17,
-          "role": "JUNGLE",
-          "kills": 9,
-          "deaths": 5,
-          "assists": 15,
-          "kda": 4.8,
-          "cs": 13,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 25247,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            3814,
-            3158,
-            3036,
-            2520,
-            6699
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (192 LP)",
-      "analystSummary": "Elyoya: MASTER I 192 LP · 20 partidas consultadas · 90.5% WR · KDA medio 9.6.",
+      "statusBadge": "MASTER I (297 LP)",
+      "analystSummary": "Elyoya: MASTER I 297 LP · 20 partidas consultadas · 91.7% WR · KDA medio 9.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1650,9 +1762,18 @@
           "wins": 19,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791445610256,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 297,
+          "wins": 22,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 1
     },
     {
@@ -1668,15 +1789,15 @@
       "profileIconId": 588,
       "tier": "DIAMOND",
       "division": "I",
-      "lp": 17,
-      "wins": 11,
+      "lp": 47,
+      "wins": 12,
       "losses": 0,
       "winrate": 100,
-      "streak": 11,
-      "avgKda": 5.8,
-      "avgKills": 9,
-      "avgDeaths": 3.1,
-      "avgAssists": 5.9,
+      "streak": 12,
+      "avgKda": 6.2,
+      "avgKills": 8.8,
+      "avgDeaths": 2.9,
+      "avgAssists": 5.8,
       "avgCsPerMin": 9.1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1718,6 +1839,19 @@
           "assists": 7,
           "kda": 4.8,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Kassadin",
+          "championId": "38",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 1,
+          "assists": 4,
+          "kda": 11,
+          "csPerMin": 9.3
         },
         {
           "championName": "LeBlanc",
@@ -1786,6 +1920,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUyGwqYbM5QiXE9tLghkQIqFUTJsZRMlbo=",
+          "gameCreation": 1791429933000,
+          "gameDurationSeconds": 1190,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Kassadin",
+          "championId": "38",
+          "champLevel": 14,
+          "role": "MID",
+          "kills": 7,
+          "deaths": 1,
+          "assists": 4,
+          "kda": 11,
+          "cs": 185,
+          "csPerMin": 9.3,
+          "killParticipationPct": 0,
+          "damageDealt": 19215,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3040,
+            6657,
+            3171,
+            1082,
+            1056,
+            2022
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUlIUIQXWTKMg7uhW5C13EQqRwhTMZBEwc=",
           "gameCreation": 1791406900000,
@@ -2157,8 +2325,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "DIAMOND I (17 LP)",
-      "analystSummary": "Jojopyun: DIAMOND I 17 LP · 11 partidas consultadas · 100% WR · KDA medio 5.8.",
+      "statusBadge": "DIAMOND I (47 LP)",
+      "analystSummary": "Jojopyun: DIAMOND I 47 LP · 12 partidas consultadas · 100% WR · KDA medio 6.2.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
@@ -2175,6 +2343,15 @@
           "division": "I",
           "lp": 17,
           "wins": 11,
+          "losses": 0,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791445616325,
+          "tier": "DIAMOND",
+          "division": "I",
+          "lp": 47,
+          "wins": 12,
           "losses": 0,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -2195,30 +2372,56 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 152,
-      "wins": 19,
+      "lp": 257,
+      "wins": 22,
       "losses": 4,
-      "winrate": 82.6,
-      "streak": 3,
-      "avgKda": 5.2,
-      "avgKills": 8.7,
-      "avgDeaths": 4.2,
-      "avgAssists": 7.3,
-      "avgCsPerMin": 7.7,
+      "winrate": 84.6,
+      "streak": 6,
+      "avgKda": 5.8,
+      "avgKills": 10.2,
+      "avgDeaths": 4,
+      "avgAssists": 6.5,
+      "avgCsPerMin": 8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Draven",
           "championId": "119",
-          "games": 6,
+          "games": 4,
           "wins": 4,
-          "losses": 2,
-          "winrate": 66.7,
-          "kills": 47,
-          "deaths": 15,
-          "assists": 17,
-          "kda": 4.3,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 39,
+          "deaths": 5,
+          "assists": 12,
+          "kda": 10.2,
           "csPerMin": 9.1
+        },
+        {
+          "championName": "Caitlyn",
+          "championId": "51",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 22,
+          "deaths": 5,
+          "assists": 6,
+          "kda": 5.6,
+          "csPerMin": 9.7
+        },
+        {
+          "championName": "Lucian",
+          "championId": "236",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 16,
+          "deaths": 5,
+          "assists": 14,
+          "kda": 6,
+          "csPerMin": 8.4
         },
         {
           "championName": "Tristana",
@@ -2247,6 +2450,19 @@
           "csPerMin": 8.2
         },
         {
+          "championName": "Miss Fortune",
+          "championId": "21",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 26,
+          "deaths": 6,
+          "assists": 8,
+          "kda": 5.7,
+          "csPerMin": 6.8
+        },
+        {
           "championName": "Aphelios",
           "championId": "523",
           "games": 1,
@@ -2271,19 +2487,6 @@
           "assists": 5,
           "kda": 3,
           "csPerMin": 7.9
-        },
-        {
-          "championName": "Caitlyn",
-          "championId": "51",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 17,
-          "deaths": 4,
-          "assists": 2,
-          "kda": 4.8,
-          "csPerMin": 9.5
         },
         {
           "championName": "Kalista",
@@ -2312,19 +2515,6 @@
           "csPerMin": 8.3
         },
         {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 3,
-          "assists": 12,
-          "kda": 6.3,
-          "csPerMin": 7.9
-        },
-        {
           "championName": "Ashe",
           "championId": "22",
           "games": 1,
@@ -2336,19 +2526,6 @@
           "assists": 11,
           "kda": 2.7,
           "csPerMin": 6.9
-        },
-        {
-          "championName": "Leona",
-          "championId": "89",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 1,
-          "deaths": 4,
-          "assists": 26,
-          "kda": 6.8,
-          "csPerMin": 0.9
         },
         {
           "championName": "Varus",
@@ -2378,6 +2555,107 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVwIeLfp28iFZyy6aQxtpGLGQ4vDM2pfRA=",
+          "gameCreation": 1791431327000,
+          "gameDurationSeconds": 1926,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Miss Fortune",
+          "championId": "21",
+          "champLevel": 17,
+          "role": "ADC",
+          "kills": 26,
+          "deaths": 6,
+          "assists": 8,
+          "kda": 5.67,
+          "cs": 219,
+          "csPerMin": 6.8,
+          "killParticipationPct": 0,
+          "damageDealt": 58366,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            6676,
+            3072,
+            3026,
+            3031,
+            2523,
+            3036
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgWIELpjwgLE4_CI_7wSO6930Vz5cH7JRWE=",
+          "gameCreation": 1791429024000,
+          "gameDurationSeconds": 916,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Caitlyn",
+          "championId": "51",
+          "champLevel": 10,
+          "role": "ADC",
+          "kills": 5,
+          "deaths": 1,
+          "assists": 4,
+          "kda": 9,
+          "cs": 151,
+          "csPerMin": 9.9,
+          "killParticipationPct": 0,
+          "damageDealt": 10830,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            2031,
+            1038,
+            6676,
+            1037,
+            1018
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgVFacD2aMIpX3dZD_T002ZjhDShLwEQ4Fs=",
+          "gameCreation": 1791427690000,
+          "gameDurationSeconds": 964,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Lucian",
+          "championId": "236",
+          "champLevel": 10,
+          "role": "ADC",
+          "kills": 9,
+          "deaths": 2,
+          "assists": 2,
+          "kda": 5.5,
+          "cs": 141,
+          "csPerMin": 8.8,
+          "killParticipationPct": 0,
+          "damageDealt": 22836,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3508,
+            6675,
+            1037,
+            1038,
+            1086
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWBxPvMxyahUzgaNTQJoGrMIVzrrhrTAq0=",
           "gameCreation": 1791412597000,
@@ -2942,109 +3220,10 @@
             1018
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXEJCiN2_wk0-G3PldFRqvyUlfz9lNWYOI=",
-          "gameCreation": 1791299491000,
-          "gameDurationSeconds": 1664,
-          "queueType": "SOLORANKED",
-          "win": false,
-          "championName": "Draven",
-          "championId": "119",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 2,
-          "deaths": 4,
-          "assists": 3,
-          "kda": 1.25,
-          "cs": 279,
-          "csPerMin": 10.1,
-          "killParticipationPct": 0,
-          "damageDealt": 11877,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3032,
-            3036,
-            6697,
-            1086,
-            1037,
-            1018
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWJccXt8SEjvJXBf5XlIz4LCZftg3NUSNE=",
-          "gameCreation": 1791297378000,
-          "gameDurationSeconds": 1466,
-          "queueType": "SOLORANKED",
-          "win": false,
-          "championName": "Draven",
-          "championId": "119",
-          "champLevel": 13,
-          "role": "ADC",
-          "kills": 6,
-          "deaths": 6,
-          "assists": 2,
-          "kda": 1.33,
-          "cs": 202,
-          "csPerMin": 8.3,
-          "killParticipationPct": 0,
-          "damageDealt": 15649,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            6697,
-            2523,
-            1086,
-            3036
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXLOm1fGVnS79yOheHpSpim6EJReutR3AE=",
-          "gameCreation": 1791295691000,
-          "gameDurationSeconds": 1436,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Leona",
-          "championId": "89",
-          "champLevel": 13,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 4,
-          "assists": 26,
-          "kda": 6.75,
-          "cs": 22,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 9986,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerDot",
-            "SummonerFlash"
-          ],
-          "items": [
-            3877,
-            2525,
-            3109,
-            3009,
-            3067
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (152 LP)",
-      "analystSummary": "Supa: MASTER I 152 LP · 20 partidas consultadas · 82.6% WR · KDA medio 5.2.",
+      "statusBadge": "MASTER I (257 LP)",
+      "analystSummary": "Supa: MASTER I 257 LP · 20 partidas consultadas · 84.6% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3072,9 +3251,18 @@
           "wins": 19,
           "losses": 4,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791445622878,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 257,
+          "wins": 22,
+          "losses": 4,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2
     },
     {
@@ -3090,15 +3278,15 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 142,
-      "wins": 17,
+      "lp": 247,
+      "wins": 20,
       "losses": 2,
-      "winrate": 89.5,
-      "streak": 3,
+      "winrate": 90.9,
+      "streak": 6,
       "avgKda": 5,
-      "avgKills": 3.4,
-      "avgDeaths": 4,
-      "avgAssists": 13.3,
+      "avgKills": 3.7,
+      "avgDeaths": 4.7,
+      "avgAssists": 14.1,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3113,6 +3301,19 @@
           "deaths": 9,
           "assists": 51,
           "kda": 6.2,
+          "csPerMin": 0.9
+        },
+        {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 21,
+          "deaths": 18,
+          "assists": 29,
+          "kda": 2.8,
           "csPerMin": 0.9
         },
         {
@@ -3142,17 +3343,30 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 2,
+          "championName": "Elise",
+          "championId": "60",
+          "games": 1,
           "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 13,
-          "deaths": 4,
-          "assists": 7,
-          "kda": 5,
-          "csPerMin": 0.5
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 3,
+          "assists": 9,
+          "kda": 4.3,
+          "csPerMin": 0.8
+        },
+        {
+          "championName": "Milio",
+          "championId": "902",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 0,
+          "deaths": 2,
+          "assists": 13,
+          "kda": 6.5,
+          "csPerMin": 0.7
         },
         {
           "championName": "Karma",
@@ -3259,32 +3473,6 @@
           "csPerMin": 0.8
         },
         {
-          "championName": "Tahm Kench",
-          "championId": "223",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 1,
-          "deaths": 2,
-          "assists": 13,
-          "kda": 7,
-          "csPerMin": 0.9
-        },
-        {
-          "championName": "Vel'Koz",
-          "championId": "161",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 4,
-          "assists": 16,
-          "kda": 5.3,
-          "csPerMin": 0.8
-        },
-        {
           "championName": "Blitzcrank",
           "championId": "53",
           "games": 1,
@@ -3299,6 +3487,105 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVwIeLfp28iFZyy6aQxtpGLGQ4vDM2pfRA=",
+          "gameCreation": 1791431327000,
+          "gameDurationSeconds": 1926,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Camille",
+          "championId": "164",
+          "champLevel": 14,
+          "role": "SUPPORT",
+          "kills": 8,
+          "deaths": 14,
+          "assists": 22,
+          "kda": 2.14,
+          "cs": 28,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 22383,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3877,
+            6610,
+            3073,
+            3111,
+            6609
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgWIELpjwgLE4_CI_7wSO6930Vz5cH7JRWE=",
+          "gameCreation": 1791429024000,
+          "gameDurationSeconds": 916,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Elise",
+          "championId": "60",
+          "champLevel": 8,
+          "role": "SUPPORT",
+          "kills": 4,
+          "deaths": 3,
+          "assists": 9,
+          "kda": 4.33,
+          "cs": 12,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 11349,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3877,
+            3152,
+            4642,
+            3020,
+            1052
+          ],
+          "tags": []
+        },
+        {
+          "matchId": "eq3KyFixtgVFacD2aMIpX3dZD_T002ZjhDShLwEQ4Fs=",
+          "gameCreation": 1791427690000,
+          "gameDurationSeconds": 964,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Milio",
+          "championId": "902",
+          "champLevel": 9,
+          "role": "SUPPORT",
+          "kills": 0,
+          "deaths": 2,
+          "assists": 13,
+          "kda": 6.5,
+          "cs": 12,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 4876,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3870,
+            6620,
+            3158,
+            4642,
+            2022
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWBxPvMxyahUzgaNTQJoGrMIVzrrhrTAq0=",
           "gameCreation": 1791412597000,
@@ -3862,106 +4149,10 @@
             1052
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXAYA07THMyZdCkwg1zZk4-qaXyVTMjv7U=",
-          "gameCreation": 1791257223000,
-          "gameDurationSeconds": 70,
-          "queueType": "SOLORANKED",
-          "win": false,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 1,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 0,
-          "assists": 0,
-          "kda": 0,
-          "cs": 0,
-          "csPerMin": 0,
-          "killParticipationPct": 0,
-          "damageDealt": 638,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3865
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUDVH8on9h-5CSnp7jQAeh56GBTRH1eODw=",
-          "gameCreation": 1791256842000,
-          "gameDurationSeconds": 1401,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Tahm Kench",
-          "championId": "223",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 2,
-          "assists": 13,
-          "kda": 7,
-          "cs": 20,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 8029,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3876,
-            3190,
-            3067,
-            3047,
-            1031
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgW2CH43aK_WdZnqLYqX3TdK5LODQZo9Qlc=",
-          "gameCreation": 1791255012000,
-          "gameDurationSeconds": 1190,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Vel'Koz",
-          "championId": "161",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 5,
-          "deaths": 4,
-          "assists": 16,
-          "kda": 5.25,
-          "cs": 15,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 16239,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3871,
-            2065,
-            4628,
-            3009,
-            1052,
-            1052
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (142 LP)",
-      "analystSummary": "Alvaro: MASTER I 142 LP · 20 partidas consultadas · 89.5% WR · KDA medio 5.",
+      "statusBadge": "MASTER I (247 LP)",
+      "analystSummary": "Alvaro: MASTER I 247 LP · 20 partidas consultadas · 90.9% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -3989,9 +4180,18 @@
           "wins": 17,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791445629612,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 247,
+          "wins": 20,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 2,
       "eloRank": 3
     }
   ],
