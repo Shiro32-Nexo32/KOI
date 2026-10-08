@@ -8,7 +8,7 @@ Tracker de las cinco cuentas de SoloQ monitorizadas de **KOI / MKOI**:
 - Supa
 - Alvaro
 
-El proyecto está diseñado como un **tracker de cuentas**: el frontend muestra el último snapshot disponible y GitHub Actions sincroniza automáticamente desde OP.GG.
+El proyecto está diseñado como un **tracker de cuentas**: el frontend muestra el último snapshot disponible y GitHub Actions comprueba automáticamente OP.GG cada 5 minutos y conserva la hora de la última comprobación correcta.
 
 ## Fuente de datos
 
@@ -34,7 +34,7 @@ No se requiere una Riot API key para este flujo.
 ~~~text
 OP.GG
   │
-  │ cada 15 minutos
+  │ cada 5 minutos
   ▼
 GitHub Actions
   │
@@ -47,7 +47,7 @@ data/live.json
   └── servidor local opcional
 ~~~
 
-El frontend consulta el último `live.json` publicado directamente desde GitHub y guarda una copia local para evitar quedarse vacío cuando una sincronización temporalmente no esté disponible.
+El frontend consulta el último `live.json` publicado directamente desde GitHub cada 2 minutos y guarda una copia local para evitar quedarse vacío cuando una sincronización temporalmente no esté disponible.
 
 La web **no afirma "tiempo real"**: muestra la antigüedad del último snapshot recibido.
 
@@ -73,7 +73,7 @@ Desde GitHub Actions se puede ejecutar manualmente:
 
 **Actions → Sync KOI accounts from OP.GG → Run workflow**
 
-El workflow también se ejecuta automáticamente cada 15 minutos.
+El workflow también se ejecuta automáticamente cada 5 minutos.
 
 ## GitHub Pages
 
