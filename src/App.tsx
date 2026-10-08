@@ -27,25 +27,26 @@ function clonePlayers(source: PlayerProfile[]): PlayerProfile[] {
   return JSON.parse(JSON.stringify(source)) as PlayerProfile[];
 }
 
-function readCachedPlayers(): { players: PlayerProfile[]; generatedAt: number | null } {
-  if (typeof window === 'undefined') return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null };
+function readCachedPlayers(): { players: PlayerProfile[]; generatedAt: number | null; syncedAt: number | null } {
+  if (typeof window === 'undefined') return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null, syncedAt: null };
 
   try {
     const raw = localStorage.getItem(LOCAL_CACHE_KEY);
-    if (!raw) return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null };
+    if (!raw) return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null, syncedAt: null };
 
     const cached = JSON.parse(raw) as LiveTrackerPayload;
     if (Array.isArray(cached.players) && cached.players.length === 5) {
       return {
         players: cached.players,
         generatedAt: cached.generatedAt ? Date.parse(cached.generatedAt) : null,
+        syncedAt: cached.syncedAt ? Date.parse(cached.syncedAt) : (cached.generatedAt ? Date.parse(cached.generatedAt) : null),
       };
     }
   } catch (error) {
     console.warn('No se pudo leer la caché del tracker:', error);
   }
 
-  return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null };
+  return { players: clonePlayers(INITIAL_PLAYERS), generatedAt: null, syncedAt: null };
 }
 
 function formatSyncAge(timestamp: number | null): string {
@@ -64,7 +65,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('overview');
   const [players, setPlayers] = useState<PlayerProfile[]>(cached.players);
   const [selectedPlayerId, setSelectedPlayerId] = useState<string>('jojopyun');
-  const [lastUpdated, setLastUpdated] = useState<number | null>(cached.generatedAt);
+  const [lastUpdated, setLastUpdated] = useState<number | null>(cached.syncedAt ?? cached.generatedAt);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const [analystInitialPrompt, setAnalystInitialPrompt] = useState<string>('');
   const [autoRefresh, setAutoRefresh] = useState<boolean>(true);
@@ -87,7 +88,11 @@ export default function App() {
     setPlayers(payload.players);
     setSourceStatus('live');
 
-    const parsedTime = payload.generatedAt ? Date.parse(payload.generatedAt) : NaN;
+    const parsedTime = payload.syncedAt
+      ? Date.parse(payload.syncedAt)
+      : payload.generatedAt
+        ? Date.parse(payload.generatedAt)
+        : NaN;
     if (Number.isFinite(parsedTime)) {
       setLastUpdated(parsedTime);
     }
@@ -117,10 +122,14 @@ export default function App() {
         }
 
         if (!silent) {
-          const stamp = payload.generatedAt ? Date.parse(payload.generatedAt) : null;
+          const stamp = payload.syncedAt
+            ? Date.parse(payload.syncedAt)
+            : payload.generatedAt
+              ? Date.parse(payload.generatedAt)
+              : null;
           showToast(
             stamp
-              ? `Datos de OP.GG recibidos: ${formatSyncAge(stamp)}.`
+              ? `OP.GG comprobado: ${formatSyncAge(stamp)}.`
               : 'Datos vivos recibidos desde OP.GG.',
           );
         }
@@ -183,8 +192,8 @@ export default function App() {
 
       showToast(
         stamp
-          ? `Sincronizado ahora desde OP.GG: ${formatSyncAge(stamp)}.`
-          : 'Sincronizado ahora desde OP.GG.',
+          ? `OP.GG comprobado ahora: ${formatSyncAge(stamp)}.`
+          : 'OP.GG comprobado ahora.',
       );
     } catch (error) {
       console.warn('No se pudo ejecutar la sincronización manual:', error);
