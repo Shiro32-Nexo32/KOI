@@ -118,6 +118,7 @@ export interface AnalystChatMessage {
 
 export interface LiveTrackerPayload {
   generatedAt: string | null;
+  syncedAt?: string | null;
   source: string;
   sourceType?: string;
   status: 'ok' | 'partial' | 'waiting_for_first_sync';
