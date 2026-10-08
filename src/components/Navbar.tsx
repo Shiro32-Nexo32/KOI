@@ -17,9 +17,9 @@ interface NavbarProps {
 function syncLabel(lastUpdated: number | null): string {
   if (!lastUpdated) return 'Sin sincronización';
   const mins = Math.floor(Math.max(0, Date.now() - lastUpdated) / 60000);
-  if (mins < 1) return 'Actualizado ahora';
-  if (mins < 60) return `Actualizado hace ${mins} min`;
-  return `Actualizado hace ${Math.floor(mins / 60)} h`;
+  if (mins < 1) return 'Comprobado ahora';
+  if (mins < 60) return `Comprobado hace ${mins} min`;
+  return `Comprobado hace ${Math.floor(mins / 60)} h`;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -93,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <div
             className="hidden items-center gap-2 rounded-lg border border-slate-800 bg-slate-900/50 px-2.5 py-1.5 text-[11px] text-slate-400 xl:flex"
-            title="La fuente de datos se sincroniza mediante GitHub Actions"
+            title="Muestra cuándo fue la última comprobación correcta de OP.GG"
           >
             <span className={`h-2 w-2 rounded-full ${
               isLive ? 'bg-emerald-400' : sourceStatus === 'cached' ? 'bg-amber-400' : 'bg-slate-600'
@@ -107,7 +107,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onRefresh}
             disabled={isRefreshing}
             className="flex items-center gap-1.5 rounded-lg bg-amber-500 px-3.5 py-1.5 text-xs font-semibold text-slate-950 transition hover:bg-amber-400 disabled:opacity-60"
-            title="Comprobar la última sincronización publicada desde OP.GG"
+            title="Intentar una comprobación manual de OP.GG"
           >
             <RefreshCw className={`h-3.5 w-3.5 ${isRefreshing ? 'animate-spin' : ''}`} />
             <span>{isRefreshing ? 'Comprobando...' : 'Actualizar'}</span>
