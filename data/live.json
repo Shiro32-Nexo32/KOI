@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-08T17:37:54.588Z",
-  "syncedAt": "2026-10-08T17:37:54.588Z",
+  "generatedAt": "2026-10-08T17:37:09.891Z",
+  "syncedAt": "2026-10-08T17:38:54.584Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -890,7 +890,7 @@
           "note": "Sincronización automática desde OP.GG"
         },
         {
-          "timestamp": 1791481048138,
+          "timestamp": 1791481003507,
           "tier": "MASTER",
           "division": "I",
           "lp": 367,
@@ -3317,7 +3317,7 @@
           "note": "Sincronización automática desde OP.GG"
         },
         {
-          "timestamp": 1791481068041,
+          "timestamp": 1791481023864,
           "tier": "MASTER",
           "division": "I",
           "lp": 327,
@@ -4264,7 +4264,7 @@
           "note": "Sincronización automática desde OP.GG"
         },
         {
-          "timestamp": 1791481074587,
+          "timestamp": 1791481029890,
           "tier": "MASTER",
           "division": "I",
           "lp": 317,
