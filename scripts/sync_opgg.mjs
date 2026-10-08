@@ -1150,6 +1150,7 @@ async function main() {
     generatedAt: dataChanged
       ? new Date().toISOString()
       : previousPayload.generatedAt ?? new Date().toISOString(),
+    syncedAt: new Date().toISOString(),
     source: 'OP.GG',
     sourceType: 'official-opgg-mcp',
     status:
