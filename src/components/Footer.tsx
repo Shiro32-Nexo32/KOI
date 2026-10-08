@@ -43,7 +43,7 @@ export const Footer: React.FC<FooterProps> = ({
               <span>{sourceText}</span>
             </div>
             <div className="mt-1 text-slate-600">
-              Última actualización de datos: {updatedDate}
+              Última comprobación correcta de OP.GG: {updatedDate}
             </div>
             <div className="mt-1 text-slate-600">{statusLabel}</div>
           </div>
