@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T16:31:22.959Z",
-  "syncedAt": "2026-10-09T16:31:22.959Z",
+  "generatedAt": "2026-10-09T17:11:23.302Z",
+  "syncedAt": "2026-10-09T17:11:23.302Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -944,7 +944,7 @@
         }
       ],
       "formRank": 4,
-      "eloRank": 1,
+      "eloRank": 2,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
       ]
@@ -1944,7 +1944,7 @@
         }
       ],
       "formRank": 3,
-      "eloRank": 2,
+      "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
       ]
@@ -2705,30 +2705,30 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 442,
-      "wins": 28,
+      "lp": 477,
+      "wins": 29,
       "losses": 5,
-      "winrate": 84.8,
-      "streak": 4,
-      "avgKda": 5.3,
-      "avgKills": 10.5,
-      "avgDeaths": 4.8,
-      "avgAssists": 6.5,
-      "avgCsPerMin": 8.8,
+      "winrate": 85.3,
+      "streak": 5,
+      "avgKda": 6.3,
+      "avgKills": 10.8,
+      "avgDeaths": 4.6,
+      "avgAssists": 6.9,
+      "avgCsPerMin": 8.7,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Ezreal",
           "championId": "81",
-          "games": 5,
-          "wins": 4,
+          "games": 6,
+          "wins": 5,
           "losses": 1,
-          "winrate": 80,
-          "kills": 34,
-          "deaths": 29,
-          "assists": 46,
-          "kda": 2.8,
-          "csPerMin": 8.7
+          "winrate": 83.3,
+          "kills": 43,
+          "deaths": 30,
+          "assists": 58,
+          "kda": 3.4,
+          "csPerMin": 8.6
         },
         {
           "championName": "Draven",
@@ -2835,19 +2835,6 @@
           "csPerMin": 7.9
         },
         {
-          "championName": "Kalista",
-          "championId": "429",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 5,
-          "assists": 3,
-          "kda": 1.2,
-          "csPerMin": 8.4
-        },
-        {
           "championName": "Xayah",
           "championId": "498",
           "games": 1,
@@ -2875,6 +2862,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWxuiJdGEDNJHMIyVUyDH4F6xvTqSp-pJM=",
+          "gameCreation": 1791565568000,
+          "gameDurationSeconds": 1088,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 12,
+          "role": "ADC",
+          "kills": 9,
+          "deaths": 1,
+          "assists": 12,
+          "kda": 21,
+          "cs": 143,
+          "csPerMin": 7.9,
+          "killParticipationPct": 0,
+          "damageDealt": 28383,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBoost",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            3078,
+            3042,
+            3133,
+            1037,
+            1036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUDi3yqVb1RJiIt8PMMY1EF16wf4tKUM44=",
           "gameCreation": 1791563115000,
@@ -3534,44 +3556,10 @@
             1086
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVk5pkQkSlbLlEjKPw8vFBFugWNMoAb8K4=",
-          "gameCreation": 1791342607000,
-          "gameDurationSeconds": 941,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kalista",
-          "championId": "429",
-          "champLevel": 9,
-          "role": "ADC",
-          "kills": 3,
-          "deaths": 5,
-          "assists": 3,
-          "kda": 1.2,
-          "cs": 132,
-          "csPerMin": 8.4,
-          "killParticipationPct": 0,
-          "damageDealt": 9701,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            1042,
-            3087,
-            1037,
-            1052
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (442 LP)",
-      "analystSummary": "Supa: MASTER I 442 LP · 20 partidas consultadas · 84.8% WR · KDA medio 5.3.",
+      "statusBadge": "MASTER I (477 LP)",
+      "analystSummary": "Supa: MASTER I 477 LP · 20 partidas consultadas · 85.3% WR · KDA medio 6.3.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3662,10 +3650,19 @@
           "wins": 28,
           "losses": 5,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791565876934,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 477,
+          "wins": 29,
+          "losses": 5,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 2,
-      "eloRank": 3,
+      "eloRank": 1,
       "remakeLossMatchIds": []
     },
     {
@@ -3685,11 +3682,11 @@
       "wins": 26,
       "losses": 3,
       "winrate": 89.7,
-      "streak": 4,
-      "avgKda": 5.6,
+      "streak": 5,
+      "avgKda": 5.5,
       "avgKills": 3.5,
       "avgDeaths": 4.9,
-      "avgAssists": 15.1,
+      "avgAssists": 14.9,
       "avgCsPerMin": 1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3744,6 +3741,19 @@
           "assists": 28,
           "kda": 3.3,
           "csPerMin": 0.9
+        },
+        {
+          "championName": "Bard",
+          "championId": "432",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 2,
+          "assists": 14,
+          "kda": 8.5,
+          "csPerMin": 1.1
         },
         {
           "championName": "Soraka",
@@ -3837,19 +3847,6 @@
           "csPerMin": 0.8
         },
         {
-          "championName": "Braum",
-          "championId": "201",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 2,
-          "assists": 17,
-          "kda": 10,
-          "csPerMin": 1
-        },
-        {
           "championName": "Rakan",
           "championId": "497",
           "games": 1,
@@ -3864,6 +3861,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWxuiJdGEDNJHMIyVUyDH4F6xvTqSp-pJM=",
+          "gameCreation": 1791565568000,
+          "gameDurationSeconds": 1088,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Bard",
+          "championId": "432",
+          "champLevel": 9,
+          "role": "SUPPORT",
+          "kills": 3,
+          "deaths": 2,
+          "assists": 14,
+          "kda": 8.5,
+          "cs": 20,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 4956,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3877,
+            3190,
+            2031,
+            3067,
+            3009,
+            3114
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUDi3yqVb1RJiIt8PMMY1EF16wf4tKUM44=",
           "gameCreation": 1791563115000,
@@ -4518,45 +4550,10 @@
             3009
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWnq0erQpKCqvz14ZAMCInMD5e9RFHSu5c=",
-          "gameCreation": 1791339986000,
-          "gameDurationSeconds": 1324,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Braum",
-          "championId": "201",
-          "champLevel": 12,
-          "role": "SUPPORT",
-          "kills": 3,
-          "deaths": 2,
-          "assists": 17,
-          "kda": 10,
-          "cs": 22,
-          "csPerMin": 1,
-          "killParticipationPct": 0,
-          "damageDealt": 8477,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            3869,
-            3190,
-            3109,
-            2031,
-            1028,
-            3158
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (432 LP)",
-      "analystSummary": "Alvaro: MASTER I 432 LP · 20 partidas consultadas · 89.7% WR · KDA medio 5.6.",
+      "analystSummary": "Alvaro: MASTER I 432 LP · 20 partidas consultadas · 89.7% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
