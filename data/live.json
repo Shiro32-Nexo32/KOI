@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T03:56:21.112Z",
-  "syncedAt": "2026-10-09T03:56:21.112Z",
+  "generatedAt": "2026-10-09T04:01:21.819Z",
+  "syncedAt": "2026-10-09T04:01:21.819Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,11 +22,11 @@
       "wins": 25,
       "losses": 2,
       "winrate": 92.6,
-      "streak": 8,
-      "avgKda": 5.6,
-      "avgKills": 6.1,
+      "streak": -1,
+      "avgKda": 5.5,
+      "avgKills": 5.9,
       "avgDeaths": 2.5,
-      "avgAssists": 5.5,
+      "avgAssists": 4.8,
       "avgCsPerMin": 7.9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -85,15 +85,15 @@
         {
           "championName": "Elise",
           "championId": "60",
-          "games": 1,
+          "games": 2,
           "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 0,
-          "assists": 4,
-          "kda": 9,
-          "csPerMin": 8.6
+          "losses": 1,
+          "winrate": 50,
+          "kills": 15,
+          "deaths": 6,
+          "assists": 6,
+          "kda": 3.5,
+          "csPerMin": 7.9
         },
         {
           "championName": "Lulu",
@@ -146,22 +146,43 @@
           "assists": 5,
           "kda": 4.7,
           "csPerMin": 8.1
-        },
-        {
-          "championName": "Aatrox",
-          "championId": "266",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 14,
-          "deaths": 6,
-          "assists": 17,
-          "kda": 5.2,
-          "csPerMin": 7.6
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVDQN1Db96L47IkAD_HiFXOzbDJ3nvNZaM=",
+          "gameCreation": 1791518377000,
+          "gameDurationSeconds": 1535,
+          "queueType": "SOLORANKED",
+          "win": false,
+          "championName": "Elise",
+          "championId": "60",
+          "champLevel": 17,
+          "role": "TOP",
+          "kills": 10,
+          "deaths": 6,
+          "assists": 2,
+          "kda": 2,
+          "cs": 183,
+          "csPerMin": 7.2,
+          "killParticipationPct": 0,
+          "damageDealt": 32205,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3115,
+            4005,
+            1082,
+            2510,
+            3020,
+            3108
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWTa4O0Jcxer-DTIzGhMKXUpNzK1cKjoBc=",
           "gameCreation": 1791516403000,
@@ -796,44 +817,10 @@
             1086
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWE6-Kx7ROHg74xysHPxr5RCg-bQB5CXCc=",
-          "gameCreation": 1791341376000,
-          "gameDurationSeconds": 2358,
-          "queueType": "SOLORANKED",
-          "win": false,
-          "championName": "Aatrox",
-          "championId": "266",
-          "champLevel": 20,
-          "role": "TOP",
-          "kills": 14,
-          "deaths": 6,
-          "assists": 17,
-          "kda": 5.17,
-          "cs": 298,
-          "csPerMin": 7.6,
-          "killParticipationPct": 0,
-          "damageDealt": 69482,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            3156,
-            2517,
-            6692,
-            3111,
-            6333,
-            6694
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (437 LP)",
-      "analystSummary": "Myrwn: MASTER I 437 LP · 20 partidas consultadas · 92.6% WR · KDA medio 5.6.",
+      "analystSummary": "Myrwn: MASTER I 437 LP · 20 partidas consultadas · 92.6% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -917,7 +904,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 3,
       "eloRank": 1
     },
     {
@@ -937,39 +924,26 @@
       "wins": 26,
       "losses": 2,
       "winrate": 92.9,
-      "streak": 6,
-      "avgKda": 8.1,
-      "avgKills": 8.1,
-      "avgDeaths": 2.6,
-      "avgAssists": 8.7,
-      "avgCsPerMin": 1.6,
+      "streak": -1,
+      "avgKda": 7.9,
+      "avgKills": 7.5,
+      "avgDeaths": 2.5,
+      "avgAssists": 7.8,
+      "avgCsPerMin": 1.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Kha'Zix",
           "championId": "121",
-          "games": 3,
+          "games": 4,
           "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 22,
-          "deaths": 4,
-          "assists": 21,
-          "kda": 10.8,
-          "csPerMin": 1
-        },
-        {
-          "championName": "Jarvan IV",
-          "championId": "59",
-          "games": 3,
-          "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 32,
-          "deaths": 15,
-          "assists": 48,
-          "kda": 5.3,
-          "csPerMin": 1.1
+          "losses": 1,
+          "winrate": 75,
+          "kills": 24,
+          "deaths": 9,
+          "assists": 28,
+          "kda": 5.8,
+          "csPerMin": 0.9
         },
         {
           "championName": "Ivern",
@@ -983,6 +957,19 @@
           "assists": 21,
           "kda": 29,
           "csPerMin": 0.4
+        },
+        {
+          "championName": "Jarvan IV",
+          "championId": "59",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 18,
+          "deaths": 9,
+          "assists": 24,
+          "kda": 4.7,
+          "csPerMin": 1.2
         },
         {
           "championName": "Pantheon",
@@ -1129,6 +1116,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVDQN1Db96L47IkAD_HiFXOzbDJ3nvNZaM=",
+          "gameCreation": 1791518377000,
+          "gameDurationSeconds": 1535,
+          "queueType": "SOLORANKED",
+          "win": false,
+          "championName": "Kha'Zix",
+          "championId": "121",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 2,
+          "deaths": 5,
+          "assists": 7,
+          "kda": 1.8,
+          "cs": 21,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 8077,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            1037,
+            3179,
+            6699,
+            1001,
+            3134
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWTa4O0Jcxer-DTIzGhMKXUpNzK1cKjoBc=",
           "gameCreation": 1791516403000,
@@ -1752,44 +1772,10 @@
             6692
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgU605FNnz8si9crdAANhaenxOKKyp8iRZo=",
-          "gameCreation": 1791337722000,
-          "gameDurationSeconds": 1720,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Jarvan IV",
-          "championId": "59",
-          "champLevel": 17,
-          "role": "JUNGLE",
-          "kills": 14,
-          "deaths": 6,
-          "assists": 24,
-          "kda": 6.33,
-          "cs": 29,
-          "csPerMin": 1,
-          "killParticipationPct": 0,
-          "damageDealt": 28981,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3143,
-            6692,
-            3071,
-            3047,
-            3026,
-            3211
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (437 LP)",
-      "analystSummary": "Elyoya: MASTER I 437 LP · 20 partidas consultadas · 92.9% WR · KDA medio 8.1.",
+      "analystSummary": "Elyoya: MASTER I 437 LP · 20 partidas consultadas · 92.9% WR · KDA medio 7.9.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -4514,7 +4500,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 1,
       "eloRank": 4
     }
   ],
