@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T17:36:24.649Z",
-  "syncedAt": "2026-10-09T17:36:24.650Z",
+  "generatedAt": "2026-10-09T17:41:23.000Z",
+  "syncedAt": "2026-10-09T17:41:23.000Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -952,7 +952,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2703,7 +2703,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -2722,10 +2722,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 477,
+      "lp": 452,
       "wins": 29,
-      "losses": 5,
-      "winrate": 85.3,
+      "losses": 6,
+      "winrate": 82.9,
       "streak": -1,
       "avgKda": 6.1,
       "avgKills": 10.2,
@@ -3575,8 +3575,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (477 LP)",
-      "analystSummary": "Supa: MASTER I 477 LP · 20 partidas consultadas · 85.3% WR · KDA medio 6.1.",
+      "statusBadge": "MASTER I (452 LP)",
+      "analystSummary": "Supa: MASTER I 452 LP · 20 partidas consultadas · 82.9% WR · KDA medio 6.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3676,9 +3676,18 @@
           "wins": 29,
           "losses": 5,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791567676223,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 452,
+          "wins": 29,
+          "losses": 6,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
