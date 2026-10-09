@@ -192,7 +192,7 @@ export default function App() {
     const interval = window.setInterval(() => {
       fetchLiveData(true);
       fetchCoordinatorStatus();
-    }, 120000);
+    }, 600000);
 
     return () => window.clearInterval(interval);
   }, [autoRefresh, fetchLiveData, fetchCoordinatorStatus]);
