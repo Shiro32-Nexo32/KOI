@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T17:41:23.000Z",
-  "syncedAt": "2026-10-09T17:41:23.000Z",
+  "generatedAt": "2026-10-09T17:51:25.189Z",
+  "syncedAt": "2026-10-09T17:51:25.189Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -953,7 +953,7 @@
         }
       ],
       "formRank": 4,
-      "eloRank": 3,
+      "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
       ]
@@ -971,16 +971,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 422,
-      "wins": 27,
+      "lp": 492,
+      "wins": 28,
       "losses": 5,
-      "winrate": 84.4,
-      "streak": -1,
-      "avgKda": 7.6,
-      "avgKills": 7.2,
-      "avgDeaths": 2.4,
-      "avgAssists": 7.3,
-      "avgCsPerMin": 1.5,
+      "winrate": 84.8,
+      "streak": 1,
+      "avgKda": 7.1,
+      "avgKills": 7.3,
+      "avgDeaths": 2.5,
+      "avgAssists": 7,
+      "avgCsPerMin": 2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -997,19 +997,6 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Ivern",
-          "championId": "427",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 8,
-          "deaths": 1,
-          "assists": 21,
-          "kda": 29,
-          "csPerMin": 0.4
-        },
-        {
           "championName": "Jarvan IV",
           "championId": "59",
           "games": 2,
@@ -1021,6 +1008,19 @@
           "assists": 24,
           "kda": 4.7,
           "csPerMin": 1.2
+        },
+        {
+          "championName": "Yone",
+          "championId": "777",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 2,
+          "assists": 5,
+          "kda": 6,
+          "csPerMin": 10.1
         },
         {
           "championName": "Cho'Gath",
@@ -1073,6 +1073,19 @@
           "assists": 11,
           "kda": 3.3,
           "csPerMin": 7.9
+        },
+        {
+          "championName": "Ivern",
+          "championId": "427",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 0,
+          "assists": 10,
+          "kda": 13,
+          "csPerMin": 0.3
         },
         {
           "championName": "Poppy",
@@ -1180,6 +1193,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVM_482FoR7e_Bhd_GC29HdIlXbxouqS7U=",
+          "gameCreation": 1791567995000,
+          "gameDurationSeconds": 1263,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Yone",
+          "championId": "777",
+          "champLevel": 16,
+          "role": "TOP",
+          "kills": 7,
+          "deaths": 2,
+          "assists": 5,
+          "kda": 6,
+          "cs": 212,
+          "csPerMin": 10.1,
+          "killParticipationPct": 0,
+          "damageDealt": 25170,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            6673,
+            3153,
+            3006,
+            1018,
+            1086,
+            1037
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUH6U3pRCT1uB-M-5Dzof2-spacYuCv6dg=",
           "gameCreation": 1791566486000,
@@ -1820,45 +1868,10 @@
             4646
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXvlW2XQbZKKdPa1GPKul0DblqiPbthuWI=",
-          "gameCreation": 1791344734000,
-          "gameDurationSeconds": 1295,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ivern",
-          "championId": "427",
-          "champLevel": 14,
-          "role": "JUNGLE",
-          "kills": 5,
-          "deaths": 1,
-          "assists": 11,
-          "kda": 16,
-          "cs": 10,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 7081,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            1001,
-            1082,
-            6617,
-            6620,
-            3504
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (422 LP)",
-      "analystSummary": "Elyoya: MASTER I 422 LP · 20 partidas consultadas · 84.4% WR · KDA medio 7.6.",
+      "statusBadge": "MASTER I (492 LP)",
+      "analystSummary": "Elyoya: MASTER I 492 LP · 20 partidas consultadas · 84.8% WR · KDA medio 7.1.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1958,10 +1971,19 @@
           "wins": 27,
           "losses": 5,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791568264048,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 492,
+          "wins": 28,
+          "losses": 5,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 1,
-      "eloRank": 4,
+      "eloRank": 1,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
       ]
@@ -3688,7 +3710,7 @@
         }
       ],
       "formRank": 5,
-      "eloRank": 1,
+      "eloRank": 2,
       "remakeLossMatchIds": []
     },
     {
@@ -4705,7 +4727,7 @@
         }
       ],
       "formRank": 2,
-      "eloRank": 2,
+      "eloRank": 3,
       "remakeLossMatchIds": []
     }
   ],
