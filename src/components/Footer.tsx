@@ -4,6 +4,8 @@ import { Database, ExternalLink } from 'lucide-react';
 interface FooterProps {
   lastUpdated: number | null;
   lastCheckedAt: number | null;
+  lastCheckStatus: 'ok' | 'partial' | 'error' | 'unknown';
+  lastCheckMessage: string | null;
   sourceStatus: 'live' | 'cached' | 'seed';
   statusLabel: string;
 }
@@ -11,6 +13,8 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({
   lastUpdated,
   lastCheckedAt,
+  lastCheckStatus,
+  lastCheckMessage,
   sourceStatus,
   statusLabel,
 }) => {
@@ -46,8 +50,11 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="mt-1 text-slate-600">
               Última actualización del snapshot: {updatedDate}
             </div>
-            <div className="mt-1 text-slate-600">
-              Última comprobación de OP.GG: {checkedDate}
+            <div
+              className={`mt-1 ${lastCheckStatus === 'error' ? 'text-rose-400' : lastCheckStatus === 'partial' ? 'text-amber-400' : 'text-slate-600'}`}
+              title={lastCheckMessage || 'Resultado de la última comprobación de OP.GG'}
+            >
+              Última comprobación de OP.GG ({lastCheckStatus}): {checkedDate}
             </div>
             <div className="mt-1 text-slate-600">{statusLabel}</div>
           </div>
