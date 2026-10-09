@@ -3,21 +3,22 @@ import { Database, ExternalLink } from 'lucide-react';
 
 interface FooterProps {
   lastUpdated: number | null;
+  lastCheckedAt: number | null;
   sourceStatus: 'live' | 'cached' | 'seed';
   statusLabel: string;
 }
 
 export const Footer: React.FC<FooterProps> = ({
   lastUpdated,
+  lastCheckedAt,
   sourceStatus,
   statusLabel,
 }) => {
-  const updatedDate = lastUpdated
-    ? new Date(lastUpdated).toLocaleString([], {
-        dateStyle: 'medium',
-        timeStyle: 'short',
-      })
-    : 'Pendiente';
+  const formatDate = (timestamp: number | null) => timestamp
+    ? new Date(timestamp).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })
+    : 'No disponible';
+  const updatedDate = formatDate(lastUpdated);
+  const checkedDate = formatDate(lastCheckedAt);
 
   const sourceText =
     sourceStatus === 'live'
@@ -43,7 +44,10 @@ export const Footer: React.FC<FooterProps> = ({
               <span>{sourceText}</span>
             </div>
             <div className="mt-1 text-slate-600">
-              Última comprobación correcta de OP.GG: {updatedDate}
+              Última actualización del snapshot: {updatedDate}
+            </div>
+            <div className="mt-1 text-slate-600">
+              Última comprobación de OP.GG: {checkedDate}
             </div>
             <div className="mt-1 text-slate-600">{statusLabel}</div>
           </div>
