@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T18:36:27.758Z",
-  "syncedAt": "2026-10-09T18:36:27.758Z",
+  "generatedAt": "2026-10-09T18:41:25.021Z",
+  "syncedAt": "2026-10-09T18:41:25.021Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 397,
-      "wins": 26,
+      "lp": 432,
+      "wins": 27,
       "losses": 7,
-      "winrate": 78.8,
+      "winrate": 79.4,
       "streak": 1,
       "avgKda": 5.3,
       "avgKills": 5.6,
@@ -848,8 +848,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (397 LP)",
-      "analystSummary": "Myrwn: MASTER I 397 LP · 20 partidas consultadas · 78.8% WR · KDA medio 5.3.",
+      "statusBadge": "MASTER I (432 LP)",
+      "analystSummary": "Myrwn: MASTER I 432 LP · 20 partidas consultadas · 79.4% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -967,6 +967,15 @@
           "wins": 26,
           "losses": 7,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791571256386,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 432,
+          "wins": 27,
+          "losses": 7,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 5,
@@ -989,10 +998,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 492,
-      "wins": 28,
+      "lp": 527,
+      "wins": 29,
       "losses": 5,
-      "winrate": 84.8,
+      "winrate": 85.3,
       "streak": 2,
       "avgKda": 7.1,
       "avgKills": 7.4,
@@ -1876,8 +1885,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (492 LP)",
-      "analystSummary": "Elyoya: MASTER I 492 LP · 20 partidas consultadas · 84.8% WR · KDA medio 7.1.",
+      "statusBadge": "MASTER I (527 LP)",
+      "analystSummary": "Elyoya: MASTER I 527 LP · 20 partidas consultadas · 85.3% WR · KDA medio 7.1.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1984,6 +1993,15 @@
           "division": "I",
           "lp": 492,
           "wins": 28,
+          "losses": 5,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791571263166,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 527,
+          "wins": 29,
           "losses": 5,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -2750,10 +2768,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 452,
-      "wins": 29,
+      "lp": 487,
+      "wins": 30,
       "losses": 6,
-      "winrate": 82.9,
+      "winrate": 83.3,
       "streak": 1,
       "avgKda": 6.6,
       "avgKills": 9.8,
@@ -3603,8 +3621,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (452 LP)",
-      "analystSummary": "Supa: MASTER I 452 LP · 20 partidas consultadas · 82.9% WR · KDA medio 6.6.",
+      "statusBadge": "MASTER I (487 LP)",
+      "analystSummary": "Supa: MASTER I 487 LP · 20 partidas consultadas · 83.3% WR · KDA medio 6.6.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3713,6 +3731,15 @@
           "wins": 29,
           "losses": 6,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791571277608,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 487,
+          "wins": 30,
+          "losses": 6,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 3,
@@ -3732,10 +3759,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 442,
-      "wins": 27,
+      "lp": 477,
+      "wins": 28,
       "losses": 4,
-      "winrate": 87.1,
+      "winrate": 87.5,
       "streak": 1,
       "avgKda": 4.9,
       "avgKills": 4,
@@ -4634,8 +4661,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (442 LP)",
-      "analystSummary": "Alvaro: MASTER I 442 LP · 20 partidas consultadas · 87.1% WR · KDA medio 4.9.",
+      "statusBadge": "MASTER I (477 LP)",
+      "analystSummary": "Alvaro: MASTER I 477 LP · 20 partidas consultadas · 87.5% WR · KDA medio 4.9.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4742,6 +4769,15 @@
           "division": "I",
           "lp": 442,
           "wins": 27,
+          "losses": 4,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791571285020,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 477,
+          "wins": 28,
           "losses": 4,
           "note": "Sincronización automática desde OP.GG"
         }
