@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T04:06:22.724Z",
-  "syncedAt": "2026-10-09T04:06:22.724Z",
+  "generatedAt": "2026-10-09T04:41:22.188Z",
+  "syncedAt": "2026-10-09T04:41:22.188Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,12 +22,12 @@
       "wins": 25,
       "losses": 3,
       "winrate": 89.3,
-      "streak": -1,
-      "avgKda": 5.5,
-      "avgKills": 5.9,
+      "streak": 1,
+      "avgKda": 5.6,
+      "avgKills": 5.8,
       "avgDeaths": 2.5,
       "avgAssists": 4.8,
-      "avgCsPerMin": 7.9,
+      "avgCsPerMin": 8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -96,6 +96,19 @@
           "csPerMin": 7.9
         },
         {
+          "championName": "Varus",
+          "championId": "110",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 8,
+          "deaths": 2,
+          "assists": 7,
+          "kda": 7.5,
+          "csPerMin": 9.1
+        },
+        {
           "championName": "Lulu",
           "championId": "117",
           "games": 1,
@@ -133,22 +146,43 @@
           "assists": 0,
           "kda": 2,
           "csPerMin": 9.6
-        },
-        {
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 9,
-          "deaths": 3,
-          "assists": 5,
-          "kda": 4.7,
-          "csPerMin": 8.1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgW232TUO_PpwzXvZUT-HWrIFXUV1A1Xtx8=",
+          "gameCreation": 1791520688000,
+          "gameDurationSeconds": 1764,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Varus",
+          "championId": "110",
+          "champLevel": 18,
+          "role": "TOP",
+          "kills": 8,
+          "deaths": 2,
+          "assists": 7,
+          "kda": 7.5,
+          "cs": 269,
+          "csPerMin": 9.1,
+          "killParticipationPct": 0,
+          "damageDealt": 30886,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerExhaust"
+          ],
+          "items": [
+            3111,
+            2421,
+            2510,
+            3115,
+            3087,
+            1086
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVDQN1Db96L47IkAD_HiFXOzbDJ3nvNZaM=",
           "gameCreation": 1791518377000,
@@ -784,43 +818,10 @@
             1086
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXG9pLdkxHL7USGSkmt_l2x4vsnJtd3NcM=",
-          "gameCreation": 1791343094000,
-          "gameDurationSeconds": 1310,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "champLevel": 15,
-          "role": "TOP",
-          "kills": 9,
-          "deaths": 3,
-          "assists": 5,
-          "kda": 4.67,
-          "cs": 176,
-          "csPerMin": 8.1,
-          "killParticipationPct": 0,
-          "damageDealt": 19067,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            3124,
-            3115,
-            3006,
-            6672,
-            1086
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (412 LP)",
-      "analystSummary": "Myrwn: MASTER I 412 LP · 20 partidas consultadas · 89.3% WR · KDA medio 5.5.",
+      "analystSummary": "Myrwn: MASTER I 412 LP · 20 partidas consultadas · 89.3% WR · KDA medio 5.6.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -913,7 +914,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 3,
       "eloRank": 1
     },
     {
@@ -933,11 +934,11 @@
       "wins": 26,
       "losses": 3,
       "winrate": 89.7,
-      "streak": -1,
+      "streak": 1,
       "avgKda": 7.9,
-      "avgKills": 7.5,
-      "avgDeaths": 2.5,
-      "avgAssists": 7.8,
+      "avgKills": 7.3,
+      "avgDeaths": 2.3,
+      "avgAssists": 7.3,
       "avgCsPerMin": 1.5,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -981,17 +982,17 @@
           "csPerMin": 1.2
         },
         {
-          "championName": "Pantheon",
-          "championId": "80",
-          "games": 2,
+          "championName": "Cho'Gath",
+          "championId": "31",
+          "games": 1,
           "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 16,
-          "deaths": 11,
-          "assists": 24,
-          "kda": 3.6,
-          "csPerMin": 0.8
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 4,
+          "assists": 11,
+          "kda": 4,
+          "csPerMin": 0.9
         },
         {
           "championName": "Kindred",
@@ -1085,6 +1086,19 @@
           "csPerMin": 9
         },
         {
+          "championName": "Pantheon",
+          "championId": "80",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 6,
+          "deaths": 2,
+          "assists": 4,
+          "kda": 5,
+          "csPerMin": 0.2
+        },
+        {
           "championName": "Lee Sin",
           "championId": "64",
           "games": 1,
@@ -1125,6 +1139,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgW232TUO_PpwzXvZUT-HWrIFXUV1A1Xtx8=",
+          "gameCreation": 1791520688000,
+          "gameDurationSeconds": 1764,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Cho'Gath",
+          "championId": "31",
+          "champLevel": 16,
+          "role": "JUNGLE",
+          "kills": 5,
+          "deaths": 4,
+          "assists": 11,
+          "kda": 4,
+          "cs": 27,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 15527,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            3109,
+            3084,
+            3111,
+            4401,
+            1028
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVDQN1Db96L47IkAD_HiFXOzbDJ3nvNZaM=",
           "gameCreation": 1791518377000,
@@ -1745,40 +1793,6 @@
             2422,
             6699,
             3035
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWE6-Kx7ROHg74xysHPxr5RCg-bQB5CXCc=",
-          "gameCreation": 1791341376000,
-          "gameDurationSeconds": 2358,
-          "queueType": "SOLORANKED",
-          "win": false,
-          "championName": "Pantheon",
-          "championId": "80",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 10,
-          "deaths": 9,
-          "assists": 20,
-          "kda": 3.33,
-          "cs": 50,
-          "csPerMin": 1.3,
-          "killParticipationPct": 0,
-          "damageDealt": 44216,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3133,
-            3111,
-            3156,
-            3161,
-            3071,
-            6692
           ],
           "tags": []
         }
@@ -2593,7 +2607,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 5
     },
     {
@@ -3550,7 +3564,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 3
     },
     {
