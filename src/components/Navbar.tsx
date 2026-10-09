@@ -13,6 +13,8 @@ interface NavbarProps {
   sourceStatus: 'live' | 'cached' | 'seed';
   lastUpdated: number | null;
   lastCheckedAt: number | null;
+  lastCheckStatus: 'ok' | 'partial' | 'error' | 'unknown';
+  lastCheckMessage: string | null;
 }
 
 function syncLabel(timestamp: number | null): string {
@@ -35,6 +37,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   sourceStatus,
   lastUpdated,
   lastCheckedAt,
+  lastCheckStatus,
+  lastCheckMessage,
 }) => {
   const isLive = sourceStatus === 'live';
 
@@ -106,7 +110,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             {lastCheckedAt !== null && (
               <>
                 <span className="text-slate-600">·</span>
-                <span>OP.GG {syncLabel(lastCheckedAt)}</span>
+                <span
+                  className={lastCheckStatus === 'error' ? 'text-rose-400' : lastCheckStatus === 'partial' ? 'text-amber-400' : 'text-slate-400'}
+                  title={lastCheckMessage || 'Resultado de la última comprobación de OP.GG'}
+                >
+                  OP.GG {lastCheckStatus === 'unknown' ? '' : lastCheckStatus + ' '}{syncLabel(lastCheckedAt)}
+                </span>
               </>
             )}
           </div>
