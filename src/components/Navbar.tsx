@@ -12,14 +12,17 @@ interface NavbarProps {
   onToggleAutoRefresh: () => void;
   sourceStatus: 'live' | 'cached' | 'seed';
   lastUpdated: number | null;
+  lastCheckedAt: number | null;
 }
 
-function syncLabel(lastUpdated: number | null): string {
-  if (!lastUpdated) return 'Sin sincronización';
-  const mins = Math.floor(Math.max(0, Date.now() - lastUpdated) / 60000);
-  if (mins < 1) return 'Comprobado ahora';
-  if (mins < 60) return `Comprobado hace ${mins} min`;
-  return `Comprobado hace ${Math.floor(mins / 60)} h`;
+function syncLabel(timestamp: number | null): string {
+  if (!timestamp) return 'sin dato';
+  const mins = Math.floor(Math.max(0, Date.now() - timestamp) / 60000);
+  if (mins < 1) return 'hace <1 min';
+  if (mins < 60) return 'hace ' + mins + ' min';
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return 'hace ' + hours + ' h';
+  return 'hace ' + Math.floor(hours / 24) + ' d';
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -31,6 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onToggleAutoRefresh,
   sourceStatus,
   lastUpdated,
+  lastCheckedAt,
 }) => {
   const isLive = sourceStatus === 'live';
 
@@ -98,9 +102,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className={`h-2 w-2 rounded-full ${
               isLive ? 'bg-emerald-400' : sourceStatus === 'cached' ? 'bg-amber-400' : 'bg-slate-600'
             }`} />
-            <span>{isLive ? 'OP.GG' : sourceStatus === 'cached' ? 'Caché' : 'Respaldo'}</span>
-            <span className="text-slate-600">·</span>
-            <span>{syncLabel(lastUpdated)}</span>
+            <span>{isLive ? 'Datos' : sourceStatus === 'cached' ? 'Caché' : 'Respaldo'} {syncLabel(lastUpdated)}</span>
+            {lastCheckedAt !== null && (
+              <>
+                <span className="text-slate-600">·</span>
+                <span>OP.GG {syncLabel(lastCheckedAt)}</span>
+              </>
+            )}
           </div>
 
           <button
