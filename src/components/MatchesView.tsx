@@ -196,7 +196,7 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
                         isWin ? 'text-emerald-400' : 'text-rose-400'
                       }`}
                     >
-                      {isWin ? 'Victoria' : 'Derrota'}
+                      {match.isRemake ? 'Remake · Derrota' : isWin ? 'Victoria' : 'Derrota'}
                     </span>
                     <span className="font-mono text-[10px] text-slate-400">
                       {durationMin}m {durationSec}s

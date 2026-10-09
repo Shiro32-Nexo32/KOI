@@ -27,6 +27,7 @@ export interface MatchRecord {
   gameDurationSeconds: number;
   queueType: string;
   win: boolean;
+  isRemake?: boolean;
   championName: string;
   championId: string;
   champLevel: number;
@@ -83,6 +84,8 @@ export interface PlayerProfile {
   avgKillParticipationPct: number;
   champions: ChampionStat[];
   recentMatches: MatchRecord[];
+  /** Match IDs of remakes counted as losses by this tracker. */
+  remakeLossMatchIds?: string[];
   snapshots: LPSnapshot[];
   formRank: number;
   eloRank: number;

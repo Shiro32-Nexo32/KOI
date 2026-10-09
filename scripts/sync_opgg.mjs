@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+import { resolveMatchOutcome } from './remakes.mjs';
 
 const execFileAsync = promisify(execFile);
 
@@ -672,7 +673,7 @@ function toMatch(game, role) {
       stats.totalMinionsKilled,
   );
 
-  const result = String(
+  const rawResult = String(
     stats.result ??
       stats.outcome ??
       stats.win ??
@@ -682,7 +683,20 @@ function toMatch(game, role) {
       '',
   ).toLowerCase();
 
-  const win = ['win', 'won', 'victory', 'true', '1'].includes(result);
+  const queueType = String(
+    game.game_type ??
+      game.gameType ??
+      game.queue_type ??
+      game.queueType ??
+      'Ranked Solo/Duo',
+  );
+  const { isRemake, win } = resolveMatchOutcome({
+    game,
+    stats,
+    rawResult,
+    duration,
+    queueType,
+  });
   const id =
     game.game_id ??
     game.gameId ??
@@ -694,13 +708,8 @@ function toMatch(game, role) {
     matchId: String(id),
     gameCreation: timestamp(game),
     gameDurationSeconds: duration,
-    queueType: String(
-      game.game_type ??
-        game.gameType ??
-        game.queue_type ??
-        game.queueType ??
-        'Ranked Solo/Duo',
-    ),
+    queueType,
+    isRemake,
     win,
     championName: String(
       champion.name ??
@@ -877,6 +886,17 @@ function htmlToPlainText(html) {
 
 function playerFrom(account, rank, matches, previous, profilePayload) {
   const recent = matches.slice(0, 20);
+  // OP.GG's official ranked totals exclude remakes. Keep the IDs previously
+  // counted so a remake remains a loss after it drops out of the latest 20.
+  const remakeLossMatchIds = [...new Set([
+    ...(Array.isArray(previous?.remakeLossMatchIds) ? previous.remakeLossMatchIds : []),
+    ...recent.filter((match) => match.isRemake).map((match) => String(match.matchId)),
+  ])];
+  const wins = int(rank.wins);
+  const losses = int(rank.losses) + remakeLossMatchIds.length;
+  const winrate = Number(
+    ((wins / Math.max(1, wins + losses)) * 100).toFixed(1),
+  );
   const average = (field) =>
     Number(
       (
@@ -900,9 +920,10 @@ function playerFrom(account, rank, matches, previous, profilePayload) {
     tier: rank.tier,
     division: rank.division,
     lp: rank.lp,
-    wins: rank.wins,
-    losses: rank.losses,
-    winrate: rank.winrate,
+    wins,
+    losses,
+    winrate,
+    remakeLossMatchIds,
     streak: streak(recent),
     avgKda: average('kda'),
     avgKills: average('kills'),
@@ -924,7 +945,7 @@ function playerFrom(account, rank, matches, previous, profilePayload) {
       ' LP · ' +
       recent.length +
       ' partidas consultadas · ' +
-      rank.winrate +
+      winrate +
       '% WR · KDA medio ' +
       average('kda') +
       '.',
