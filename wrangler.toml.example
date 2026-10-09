@@ -1,0 +1,19 @@
+name = "koi-sync-coordinator"
+main = "worker/index.js"
+compatibility_date = "2026-10-09"
+workers_dev = true
+
+[vars]
+GITHUB_REPOSITORY = "Shiro32-Nexo32/KOI"
+GITHUB_WORKFLOW = "sync-opgg.yml"
+FRONTEND_ORIGIN = "https://shiro32-nexo32.github.io"
+
+# First create this namespace:
+# npx wrangler@latest kv namespace create SYNC_STATUS
+# Then replace the placeholder below with the returned namespace ID.
+[[kv_namespaces]]
+binding = "SYNC_STATUS"
+id = "REPLACE_WITH_YOUR_32_CHARACTER_KV_NAMESPACE_ID"
+
+[triggers]
+crons = ["*/5 * * * *"]
