@@ -26,6 +26,7 @@ const REFRESH_API_URL = COORDINATOR_URL
 const LOCAL_CACHE_KEY = 'koi_tracker_live_cache_v1';
 
 type SourceStatus = 'live' | 'cached' | 'seed';
+type CoordinatorStatus = 'ok' | 'partial' | 'error' | 'unknown';
 
 function clonePlayers(source: PlayerProfile[]): PlayerProfile[] {
   return JSON.parse(JSON.stringify(source)) as PlayerProfile[];
@@ -71,6 +72,8 @@ export default function App() {
   const [selectedPlayerId, setSelectedPlayerId] = useState<string>('jojopyun');
   const [lastUpdated, setLastUpdated] = useState<number | null>(cached.syncedAt ?? cached.generatedAt);
   const [lastCheckedAt, setLastCheckedAt] = useState<number | null>(null);
+  const [lastCheckStatus, setLastCheckStatus] = useState<CoordinatorStatus>('unknown');
+  const [lastCheckMessage, setLastCheckMessage] = useState<string | null>(null);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const [analystInitialPrompt, setAnalystInitialPrompt] = useState<string>('');
   const [autoRefresh, setAutoRefresh] = useState<boolean>(true);
@@ -159,9 +162,20 @@ export default function App() {
         cache: 'no-store',
       });
       if (!response.ok) throw new Error('HTTP ' + response.status);
-      const result = (await response.json()) as { checkedAt?: string | null };
+      const result = (await response.json()) as {
+        checkedAt?: string | null;
+        status?: CoordinatorStatus;
+        message?: string | null;
+        errors?: string[];
+      };
       const checkedAt = result.checkedAt ? Date.parse(result.checkedAt) : NaN;
       if (Number.isFinite(checkedAt)) setLastCheckedAt(checkedAt);
+      if (result.status && ['ok', 'partial', 'error', 'unknown'].includes(result.status)) {
+        setLastCheckStatus(result.status);
+      }
+      setLastCheckMessage(
+        result.message || (Array.isArray(result.errors) && result.errors.length ? result.errors.join(' · ') : null),
+      );
     } catch (error) {
       console.warn('No se pudo consultar el estado del coordinador:', error);
     }
@@ -275,6 +289,8 @@ export default function App() {
         sourceStatus={sourceStatus}
         lastUpdated={lastUpdated}
         lastCheckedAt={lastCheckedAt}
+        lastCheckStatus={lastCheckStatus}
+        lastCheckMessage={lastCheckMessage}
       />
 
       {toastMessage && (
@@ -297,6 +313,8 @@ export default function App() {
             sourceStatus={sourceStatus}
             lastUpdated={lastUpdated}
         lastCheckedAt={lastCheckedAt}
+        lastCheckStatus={lastCheckStatus}
+        lastCheckMessage={lastCheckMessage}
           />
         )}
 
@@ -335,6 +353,8 @@ export default function App() {
       <Footer
         lastUpdated={lastUpdated}
         lastCheckedAt={lastCheckedAt}
+        lastCheckStatus={lastCheckStatus}
+        lastCheckMessage={lastCheckMessage}
         sourceStatus={sourceStatus}
         statusLabel={statusLabel}
       />
