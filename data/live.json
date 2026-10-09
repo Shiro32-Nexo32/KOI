@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T03:06:20.779Z",
-  "syncedAt": "2026-10-09T03:06:20.779Z",
+  "generatedAt": "2026-10-09T03:11:20.137Z",
+  "syncedAt": "2026-10-09T03:11:20.137Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1856,11 +1856,11 @@
       "wins": 12,
       "losses": 0,
       "winrate": 100,
-      "streak": 12,
+      "streak": 13,
       "avgKda": 6.2,
-      "avgKills": 8.8,
-      "avgDeaths": 2.9,
-      "avgAssists": 5.8,
+      "avgKills": 9.4,
+      "avgDeaths": 3,
+      "avgAssists": 6,
       "avgCsPerMin": 9.1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1902,6 +1902,19 @@
           "assists": 7,
           "kda": 4.8,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Syndra",
+          "championId": "134",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 16,
+          "deaths": 4,
+          "assists": 9,
+          "kda": 6.3,
+          "csPerMin": 9.2
         },
         {
           "championName": "Kassadin",
@@ -1983,6 +1996,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVz6Ptv-bkmVfHhf6lVXxyve2pN_ZhiYSc=",
+          "gameCreation": 1791515359000,
+          "gameDurationSeconds": 1666,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Syndra",
+          "championId": "134",
+          "champLevel": 17,
+          "role": "MID",
+          "kills": 16,
+          "deaths": 4,
+          "assists": 9,
+          "kda": 6.25,
+          "cs": 256,
+          "csPerMin": 9.2,
+          "killParticipationPct": 0,
+          "damageDealt": 53011,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3157,
+            6655,
+            4645,
+            3041,
+            3171,
+            3137
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUyGwqYbM5QiXE9tLghkQIqFUTJsZRMlbo=",
           "gameCreation": 1791429933000,
@@ -2389,7 +2436,7 @@
         }
       ],
       "statusBadge": "DIAMOND I (47 LP)",
-      "analystSummary": "Jojopyun: DIAMOND I 47 LP · 12 partidas consultadas · 100% WR · KDA medio 6.2.",
+      "analystSummary": "Jojopyun: DIAMOND I 47 LP · 13 partidas consultadas · 100% WR · KDA medio 6.2.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
