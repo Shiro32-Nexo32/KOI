@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>KOI Tracker</title>
+  <rect width="64" height="64" rx="16" fill="#050b1b"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" fill="none" stroke="#203249" stroke-width="1.5"/>
+  <path d="M18 15V49" fill="none" stroke="#f4fbff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M21 32 44 15" fill="none" stroke="#53e5e5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21 32 44 49" fill="none" stroke="#53e5e5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M39 13 52 9 48 22Z" fill="#f7b84b"/>
+  <circle cx="28" cy="30" r="2" fill="#f7b84b"/>
+</svg>
