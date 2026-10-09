@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T17:51:25.189Z",
-  "syncedAt": "2026-10-09T17:51:25.189Z",
+  "generatedAt": "2026-10-09T17:56:26.858Z",
+  "syncedAt": "2026-10-09T17:56:26.858Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -20,14 +20,14 @@
       "division": "I",
       "lp": 422,
       "wins": 26,
-      "losses": 5,
-      "winrate": 83.9,
-      "streak": -1,
-      "avgKda": 5.6,
-      "avgKills": 6,
-      "avgDeaths": 2.5,
-      "avgAssists": 4.8,
-      "avgCsPerMin": 7.9,
+      "losses": 6,
+      "winrate": 81.3,
+      "streak": -2,
+      "avgKda": 5.4,
+      "avgKills": 5.6,
+      "avgDeaths": 2.4,
+      "avgAssists": 4.7,
+      "avgCsPerMin": 7.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -37,11 +37,11 @@
           "wins": 4,
           "losses": 1,
           "winrate": 80,
-          "kills": 33,
-          "deaths": 8,
-          "assists": 10,
-          "kda": 5.4,
-          "csPerMin": 9.1
+          "kills": 24,
+          "deaths": 4,
+          "assists": 8,
+          "kda": 8,
+          "csPerMin": 7.6
         },
         {
           "championName": "Camille",
@@ -149,6 +149,37 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUoI52Qb4ARj6Ux_dZ3PnnX1CYje9_XOas=",
+          "gameCreation": 1791568385000,
+          "gameDurationSeconds": 82,
+          "queueType": "SOLORANKED",
+          "isRemake": true,
+          "win": false,
+          "championName": "Corki",
+          "championId": "42",
+          "champLevel": 1,
+          "role": "TOP",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "kda": 0,
+          "cs": 0,
+          "csPerMin": 0,
+          "killParticipationPct": 0,
+          "damageDealt": 0,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerExhaust"
+          ],
+          "items": [
+            1086,
+            2003
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUH6U3pRCT1uB-M-5Dzof2-spacYuCv6dg=",
           "gameCreation": 1791566486000,
@@ -803,45 +834,10 @@
             6699
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWmafwaVASwO0G3sfmXamuPFPz3DuPV3Pc=",
-          "gameCreation": 1791346958000,
-          "gameDurationSeconds": 1743,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Corki",
-          "championId": "42",
-          "champLevel": 17,
-          "role": "TOP",
-          "kills": 9,
-          "deaths": 4,
-          "assists": 2,
-          "kda": 2.75,
-          "cs": 229,
-          "csPerMin": 7.9,
-          "killParticipationPct": 0,
-          "damageDealt": 38008,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            3042,
-            2055,
-            3078,
-            3094,
-            3047,
-            1086
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (422 LP)",
-      "analystSummary": "Myrwn: MASTER I 422 LP · 20 partidas consultadas · 83.9% WR · KDA medio 5.6.",
+      "analystSummary": "Myrwn: MASTER I 422 LP · 20 partidas consultadas · 81.3% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -952,10 +948,11 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
-        "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
+        "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
+        "eq3KyFixtgUoI52Qb4ARj6Ux_dZ3PnnX1CYje9_XOas="
       ]
     },
     {
@@ -3709,7 +3706,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
