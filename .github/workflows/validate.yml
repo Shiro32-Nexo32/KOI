@@ -21,6 +21,8 @@ jobs:
           node-version: 22
       - name: Test Cloudflare coordinator
         run: node --test worker/tests/worker.test.mjs
+      - name: Test remake outcome handling
+        run: node --test scripts/test-remakes.mjs
       - name: Install dependencies
         run: npm install
       - name: Build frontend

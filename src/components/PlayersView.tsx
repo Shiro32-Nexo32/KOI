@@ -302,7 +302,7 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
                       <div>
                         <div className="flex items-center gap-2">
                           <span className={`text-xs font-bold uppercase ${isWin ? 'text-emerald-400' : 'text-rose-400'}`}>
-                            {isWin ? 'Victoria' : 'Derrota'}
+                            {m.isRemake ? 'Remake · Derrota' : isWin ? 'Victoria' : 'Derrota'}
                           </span>
                           <span className="font-semibold text-white">{m.championName}</span>
                           {m.tags && m.tags.map((t) => (
