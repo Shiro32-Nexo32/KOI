@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-08T22:25:50.220Z",
-  "syncedAt": "2026-10-08T22:25:50.220Z",
+  "generatedAt": "2026-10-09T03:01:26.374Z",
+  "syncedAt": "2026-10-09T03:01:26.374Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2439,11 +2439,11 @@
       "wins": 25,
       "losses": 5,
       "winrate": 83.3,
-      "streak": 1,
+      "streak": 2,
       "avgKda": 5.6,
-      "avgKills": 10.2,
+      "avgKills": 10.3,
       "avgDeaths": 4.5,
-      "avgAssists": 6.5,
+      "avgAssists": 6.4,
       "avgCsPerMin": 8.7,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -2459,6 +2459,19 @@
           "assists": 13,
           "kda": 4.8,
           "csPerMin": 9
+        },
+        {
+          "championName": "Ezreal",
+          "championId": "81",
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 17,
+          "deaths": 17,
+          "assists": 26,
+          "kda": 2.5,
+          "csPerMin": 8.5
         },
         {
           "championName": "Aphelios",
@@ -2500,32 +2513,6 @@
           "csPerMin": 8.4
         },
         {
-          "championName": "Tristana",
-          "championId": "18",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 16,
-          "deaths": 5,
-          "assists": 12,
-          "kda": 5.6,
-          "csPerMin": 8.8
-        },
-        {
-          "championName": "Ezreal",
-          "championId": "81",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 8,
-          "deaths": 15,
-          "assists": 23,
-          "kda": 2.1,
-          "csPerMin": 8.2
-        },
-        {
           "championName": "Sivir",
           "championId": "15",
           "games": 1,
@@ -2550,6 +2537,19 @@
           "assists": 8,
           "kda": 5.7,
           "csPerMin": 6.8
+        },
+        {
+          "championName": "Tristana",
+          "championId": "18",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 9,
+          "deaths": 3,
+          "assists": 6,
+          "kda": 5,
+          "csPerMin": 8.7
         },
         {
           "championName": "Kai'Sa",
@@ -2618,6 +2618,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXH0dgI_3wTJBaoZE1Qsu7jKPpspH9LWZU=",
+          "gameCreation": 1791514821000,
+          "gameDurationSeconds": 924,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 10,
+          "role": "ADC",
+          "kills": 9,
+          "deaths": 2,
+          "assists": 3,
+          "kda": 6,
+          "cs": 142,
+          "csPerMin": 9.2,
+          "killParticipationPct": 0,
+          "damageDealt": 12731,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            2031,
+            3070,
+            3078,
+            3133,
+            1036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX-VI8bvy7EAh8jJ4VEBChowmR8snaOHkE=",
           "gameCreation": 1791485080000,
@@ -3254,40 +3288,6 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVC75Ajl_Z7sfckN25CecMn5pxx6Xq1W70=",
-          "gameCreation": 1791306919000,
-          "gameDurationSeconds": 912,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Tristana",
-          "championId": "18",
-          "champLevel": 10,
-          "role": "ADC",
-          "kills": 7,
-          "deaths": 2,
-          "assists": 6,
-          "kda": 6.5,
-          "cs": 134,
-          "csPerMin": 8.8,
-          "killParticipationPct": 0,
-          "damageDealt": 18716,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3032,
-            6676,
-            1086,
-            3086,
-            1042,
-            1042
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (337 LP)",
@@ -3377,11 +3377,11 @@
       "wins": 23,
       "losses": 3,
       "winrate": 88.5,
-      "streak": 1,
-      "avgKda": 5,
-      "avgKills": 3.3,
-      "avgDeaths": 5,
-      "avgAssists": 15.2,
+      "streak": 2,
+      "avgKda": 5.5,
+      "avgKills": 3.1,
+      "avgDeaths": 4.6,
+      "avgAssists": 14.6,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3397,6 +3397,19 @@
           "assists": 48,
           "kda": 5.1,
           "csPerMin": 0.9
+        },
+        {
+          "championName": "Karma",
+          "championId": "43",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 7,
+          "assists": 27,
+          "kda": 4.6,
+          "csPerMin": 1.1
         },
         {
           "championName": "Soraka",
@@ -3490,19 +3503,6 @@
           "csPerMin": 1.4
         },
         {
-          "championName": "Karma",
-          "championId": "43",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 7,
-          "assists": 16,
-          "kda": 2.7,
-          "csPerMin": 0.9
-        },
-        {
           "championName": "Neeko",
           "championId": "518",
           "games": 1,
@@ -3555,19 +3555,6 @@
           "csPerMin": 0.4
         },
         {
-          "championName": "Anivia",
-          "championId": "34",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 8,
-          "assists": 23,
-          "kda": 3.6,
-          "csPerMin": 1.1
-        },
-        {
           "championName": "Rakan",
           "championId": "497",
           "games": 1,
@@ -3582,6 +3569,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXH0dgI_3wTJBaoZE1Qsu7jKPpspH9LWZU=",
+          "gameCreation": 1791514821000,
+          "gameDurationSeconds": 924,
+          "queueType": "SOLORANKED",
+          "win": true,
+          "championName": "Karma",
+          "championId": "43",
+          "champLevel": 8,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 0,
+          "assists": 11,
+          "kda": 13,
+          "cs": 19,
+          "csPerMin": 1.2,
+          "killParticipationPct": 0,
+          "damageDealt": 8639,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3870,
+            2031,
+            6620,
+            4642,
+            3158,
+            1028
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX-VI8bvy7EAh8jJ4VEBChowmR8snaOHkE=",
           "gameCreation": 1791485080000,
@@ -4215,44 +4236,10 @@
             2022
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXx4Jm09TFElenfLyvKhyDY5iXoapAQA6M=",
-          "gameCreation": 1791304285000,
-          "gameDurationSeconds": 1646,
-          "queueType": "SOLORANKED",
-          "win": true,
-          "championName": "Anivia",
-          "championId": "34",
-          "champLevel": 15,
-          "role": "SUPPORT",
-          "kills": 6,
-          "deaths": 8,
-          "assists": 23,
-          "kda": 3.63,
-          "cs": 31,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 15940,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3876,
-            3152,
-            6657,
-            3009,
-            3067,
-            3102
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (327 LP)",
-      "analystSummary": "Alvaro: MASTER I 327 LP · 20 partidas consultadas · 88.5% WR · KDA medio 5.",
+      "analystSummary": "Alvaro: MASTER I 327 LP · 20 partidas consultadas · 88.5% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
