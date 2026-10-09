@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T03:16:22.188Z",
-  "syncedAt": "2026-10-09T03:16:22.188Z",
+  "generatedAt": "2026-10-09T03:21:27.030Z",
+  "syncedAt": "2026-10-09T03:21:27.030Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -896,7 +896,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 1
     },
     {
@@ -1836,7 +1836,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 2
     },
     {
@@ -1856,14 +1856,27 @@
       "wins": 13,
       "losses": 0,
       "winrate": 100,
-      "streak": 13,
-      "avgKda": 6.2,
-      "avgKills": 9.4,
-      "avgDeaths": 3,
-      "avgAssists": 6,
-      "avgCsPerMin": 9.1,
+      "streak": -1,
+      "avgKda": 5.8,
+      "avgKills": 8.7,
+      "avgDeaths": 2.8,
+      "avgAssists": 5.6,
+      "avgCsPerMin": 8.6,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Locke",
+          "championId": "805",
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 12,
+          "deaths": 4,
+          "assists": 7,
+          "kda": 4.8,
+          "csPerMin": 6.4
+        },
         {
           "championName": "Aurora",
           "championId": "893",
@@ -1889,19 +1902,6 @@
           "assists": 7,
           "kda": 17,
           "csPerMin": 9.8
-        },
-        {
-          "championName": "Locke",
-          "championId": "805",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 12,
-          "deaths": 4,
-          "assists": 7,
-          "kda": 4.8,
-          "csPerMin": 8.8
         },
         {
           "championName": "Syndra",
@@ -1996,6 +1996,36 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A=",
+          "gameCreation": 1791515882000,
+          "gameDurationSeconds": 71,
+          "queueType": "SOLORANKED",
+          "win": false,
+          "championName": "Locke",
+          "championId": "805",
+          "champLevel": 1,
+          "role": "MID",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "kda": 0,
+          "cs": 2,
+          "csPerMin": 1.7,
+          "killParticipationPct": 0,
+          "damageDealt": 77,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            1056,
+            2003
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVz6Ptv-bkmVfHhf6lVXxyve2pN_ZhiYSc=",
           "gameCreation": 1791515359000,
@@ -2436,7 +2466,7 @@
         }
       ],
       "statusBadge": "DIAMOND I (77 LP)",
-      "analystSummary": "Jojopyun: DIAMOND I 77 LP · 13 partidas consultadas · 100% WR · KDA medio 6.2.",
+      "analystSummary": "Jojopyun: DIAMOND I 77 LP · 14 partidas consultadas · 100% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
@@ -2475,7 +2505,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 3,
       "eloRank": 5
     },
     {
