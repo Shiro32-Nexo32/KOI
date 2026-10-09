@@ -5,8 +5,9 @@ on:
     branches: [ main ]
     paths-ignore:
       - "data/live.json"
+  # Fallback while the Cloudflare Worker is not deployed, and in case it is unavailable.
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -14,7 +15,7 @@ permissions:
 
 concurrency:
   group: opgg-sync
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -31,26 +32,80 @@ jobs:
         with:
           node-version: 22
 
+      - name: Preserve previously published snapshot
+        run: cp data/live.json /tmp/koi-live-before.json
+
       - name: Sync from official OP.GG MCP
+        id: sync
+        continue-on-error: true
         run: node scripts/sync_opgg.mjs
 
-      - name: Commit sync snapshot
+      - name: Preserve generated snapshot when the sync wrote one
+        if: always()
         run: |
-          # Keep concurrent code changes safe: only carry the generated live.json
-          # onto the latest main instead of pushing a stale checkout.
-          cp data/live.json /tmp/koi-live.json
-          git fetch origin main
-          git reset --hard origin/main
-          cp /tmp/koi-live.json data/live.json
+          if [ -f data/live.json ] && ! cmp -s data/live.json /tmp/koi-live-before.json; then
+            cp data/live.json /tmp/koi-live-generated.json
+            echo "A new snapshot was generated."
+          else
+            echo "The sync did not produce a new snapshot."
+          fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/live.json
-
-          if git diff --cached --quiet; then
-            echo "No sync snapshot changes."
+      - name: Commit only meaningful snapshot changes
+        id: commit
+        if: always()
+        run: |
+          if [ ! -f /tmp/koi-live-generated.json ]; then
+            echo "No new snapshot to publish."
             exit 0
           fi
 
-          git commit -m "data: sync KOI accounts from OP.GG"
-          git push origin HEAD:main
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            # Compare against the newest main to avoid pushing an old checkout.
+            git fetch origin main
+            git reset --hard origin/main
+
+            comparison=$(node --input-type=module - <<'NODE'
+          import fs from 'node:fs';
+          const candidate = JSON.parse(fs.readFileSync('/tmp/koi-live-generated.json', 'utf8'));
+          const current = JSON.parse(fs.readFileSync('data/live.json', 'utf8'));
+          delete candidate.syncedAt;
+          delete current.syncedAt;
+          console.log(JSON.stringify(candidate) === JSON.stringify(current) ? 'same' : 'different');
+          NODE
+            )
+
+            if [ "$comparison" = "same" ]; then
+              echo "No meaningful player/status changes; avoiding an unnecessary data commit."
+              exit 0
+            fi
+
+            cp /tmp/koi-live-generated.json data/live.json
+            git add data/live.json
+            if git diff --cached --quiet; then
+              echo "No snapshot changes to commit."
+              exit 0
+            fi
+
+            git commit -m "data: sync KOI accounts from OP.GG"
+            if git push origin HEAD:main; then
+              echo "Published the changed snapshot."
+              exit 0
+            fi
+            echo "Push raced with another main update; retrying."
+          done
+
+          echo "Could not publish the snapshot after three attempts."
+          exit 1
+
+      - name: Report sync result to Cloudflare
+        if: always()
+        env:
+          KOI_SYNC_STATUS_URL: ${{ secrets.KOI_SYNC_STATUS_URL }}
+          KOI_SYNC_STATUS_TOKEN: ${{ secrets.KOI_SYNC_STATUS_TOKEN }}
+          KOI_SYNC_STATUS_FILE: /tmp/koi-live-generated.json
+          KOI_SYNC_STEP_OUTCOME: ${{ steps.sync.outcome }}
+          KOI_COMMIT_STEP_OUTCOME: ${{ steps.commit.outcome }}
+        run: node scripts/publish_sync_status.mjs

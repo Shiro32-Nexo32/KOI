@@ -31,7 +31,12 @@ jobs:
         with:
           node-version: 22
 
+      - name: Test Cloudflare sync coordinator
+        run: node --test worker/tests/worker.test.mjs
+
       - name: Install and Build
+        env:
+          VITE_COORDINATOR_URL: ${{ vars.VITE_COORDINATOR_URL }}
         run: |
           npm install
           npx vite build
