@@ -17,6 +17,8 @@ function responseJson(request, env, body, status = 200) {
     env.FRONTEND_ORIGIN || "https://shiro32-nexo32.github.io",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
   ]);
   if (origin && allowedOrigins.has(origin)) {
     headers.set("Access-Control-Allow-Origin", origin);
