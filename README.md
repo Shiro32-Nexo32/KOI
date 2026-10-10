@@ -115,6 +115,8 @@ Cloudflare mostrará una URL de `workers.dev`, por ejemplo `https://koi-sync-coo
 
 El Worker incluye un Cron Trigger `*/5 * * * *`, que solicita el workflow de sincronización. Evita lanzar una segunda ejecución cuando ya hay otra activa y aplica un pequeño período de protección frente a despachos duplicados.
 
+El Worker también ofrece `GET` y `POST /api/league/state` para el ranking compartido de League of Colegones. Usa el mismo namespace `SYNC_STATUS`, bajo la clave `league-of-colegones:shared-state:v1`, sin mezclar esos datos con los de la sincronización de KOI. Cuando cambie `worker/index.js`, vuelve a ejecutar `npx wrangler@latest deploy` desde este repositorio con tu `wrangler.toml` local.
+
 ### 4. Conectar GitHub Actions con el Worker
 
 En GitHub, abre **Settings → Secrets and variables → Actions**.
