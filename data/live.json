@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T01:46:22.951Z",
-  "syncedAt": "2026-10-10T01:46:22.951Z",
+  "generatedAt": "2026-10-10T02:21:24.685Z",
+  "syncedAt": "2026-10-10T02:21:24.685Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2806,26 +2806,26 @@
       "wins": 30,
       "losses": 6,
       "winrate": 83.3,
-      "streak": 1,
-      "avgKda": 6.6,
-      "avgKills": 9.8,
+      "streak": 2,
+      "avgKda": 6.5,
+      "avgKills": 9.3,
       "avgDeaths": 4.3,
-      "avgAssists": 7.3,
+      "avgAssists": 7,
       "avgCsPerMin": 8.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Ezreal",
           "championId": "81",
-          "games": 6,
-          "wins": 5,
+          "games": 7,
+          "wins": 6,
           "losses": 1,
-          "winrate": 83.3,
-          "kills": 43,
-          "deaths": 30,
-          "assists": 58,
-          "kda": 3.4,
-          "csPerMin": 8.6
+          "winrate": 85.7,
+          "kills": 52,
+          "deaths": 32,
+          "assists": 62,
+          "kda": 3.6,
+          "csPerMin": 8.7
         },
         {
           "championName": "Draven",
@@ -2841,19 +2841,6 @@
           "csPerMin": 8.8
         },
         {
-          "championName": "Aphelios",
-          "championId": "523",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 32,
-          "deaths": 7,
-          "assists": 14,
-          "kda": 6.6,
-          "csPerMin": 9.3
-        },
-        {
           "championName": "Jhin",
           "championId": "202",
           "games": 1,
@@ -2864,6 +2851,19 @@
           "deaths": 2,
           "assists": 15,
           "kda": 14,
+          "csPerMin": 9.6
+        },
+        {
+          "championName": "Aphelios",
+          "championId": "523",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 14,
+          "deaths": 4,
+          "assists": 3,
+          "kda": 4.3,
           "csPerMin": 9.6
         },
         {
@@ -2959,6 +2959,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUZJTLSSYKi78T9AefqvN7aF5vvSB4rxa8=",
+          "gameCreation": 1791598635000,
+          "gameDurationSeconds": 1262,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 13,
+          "role": "ADC",
+          "kills": 9,
+          "deaths": 2,
+          "assists": 4,
+          "kda": 6.5,
+          "cs": 207,
+          "csPerMin": 9.8,
+          "killParticipationPct": 0,
+          "damageDealt": 17832,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3078,
+            1086,
+            3042,
+            3161,
+            1037
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWCR1Ex5jL0GfVlxvZP4FMDY1HoAws1ub0=",
           "gameCreation": 1791570943000,
@@ -3618,45 +3652,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUzS5XmbUpuAPP04av8twChuhG1576Czg0=",
-          "gameCreation": 1791384094000,
-          "gameDurationSeconds": 1847,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Aphelios",
-          "championId": "523",
-          "champLevel": 16,
-          "role": "ADC",
-          "kills": 18,
-          "deaths": 3,
-          "assists": 11,
-          "kda": 9.67,
-          "cs": 277,
-          "csPerMin": 9,
-          "killParticipationPct": 0,
-          "damageDealt": 36580,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerHaste",
-            "SummonerFlash"
-          ],
-          "items": [
-            3031,
-            3033,
-            3140,
-            6676,
-            3085,
-            3026
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (487 LP)",
-      "analystSummary": "Supa: MASTER I 487 LP · 20 partidas consultadas · 83.3% WR · KDA medio 6.6.",
+      "analystSummary": "Supa: MASTER I 487 LP · 20 partidas consultadas · 83.3% WR · KDA medio 6.5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3797,11 +3796,11 @@
       "wins": 28,
       "losses": 4,
       "winrate": 87.5,
-      "streak": 1,
-      "avgKda": 4.9,
-      "avgKills": 4,
-      "avgDeaths": 5.4,
-      "avgAssists": 15.3,
+      "streak": 2,
+      "avgKda": 5.4,
+      "avgKills": 4.2,
+      "avgDeaths": 5.2,
+      "avgAssists": 14.7,
       "avgCsPerMin": 1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3830,6 +3829,19 @@
           "assists": 46,
           "kda": 2.6,
           "csPerMin": 1.1
+        },
+        {
+          "championName": "Neeko",
+          "championId": "518",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 8,
+          "deaths": 10,
+          "assists": 31,
+          "kda": 3.9,
+          "csPerMin": 1.4
         },
         {
           "championName": "Thresh",
@@ -3936,32 +3948,6 @@
           "csPerMin": 1.4
         },
         {
-          "championName": "Neeko",
-          "championId": "518",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 9,
-          "assists": 22,
-          "kda": 2.7,
-          "csPerMin": 1.1
-        },
-        {
-          "championName": "Lux",
-          "championId": "99",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 5,
-          "assists": 20,
-          "kda": 4.4,
-          "csPerMin": 0.8
-        },
-        {
           "championName": "Nautilus",
           "championId": "111",
           "games": 1,
@@ -4002,6 +3988,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUZJTLSSYKi78T9AefqvN7aF5vvSB4rxa8=",
+          "gameCreation": 1791598635000,
+          "gameDurationSeconds": 1262,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Neeko",
+          "championId": "518",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 6,
+          "deaths": 1,
+          "assists": 9,
+          "kda": 15,
+          "cs": 34,
+          "csPerMin": 1.6,
+          "killParticipationPct": 0,
+          "damageDealt": 13775,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3152,
+            2421,
+            1082,
+            3158,
+            1052
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWCR1Ex5jL0GfVlxvZP4FMDY1HoAws1ub0=",
           "gameCreation": 1791570943000,
@@ -4658,45 +4679,10 @@
             3067
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXwS2dQF6_pWwQz-2PJuYG7HTqP8GQSriY=",
-          "gameCreation": 1791344294000,
-          "gameDurationSeconds": 1384,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lux",
-          "championId": "99",
-          "champLevel": 12,
-          "role": "SUPPORT",
-          "kills": 2,
-          "deaths": 5,
-          "assists": 20,
-          "kda": 4.4,
-          "cs": 19,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 14214,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3871,
-            2065,
-            3190,
-            3067,
-            3158,
-            1004
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (477 LP)",
-      "analystSummary": "Alvaro: MASTER I 477 LP · 20 partidas consultadas · 87.5% WR · KDA medio 4.9.",
+      "analystSummary": "Alvaro: MASTER I 477 LP · 20 partidas consultadas · 87.5% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
