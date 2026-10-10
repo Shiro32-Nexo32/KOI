@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T17:31:22.263Z",
-  "syncedAt": "2026-10-10T17:31:22.263Z",
+  "generatedAt": "2026-10-10T18:41:27.758Z",
+  "syncedAt": "2026-10-10T18:41:27.758Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -23,26 +23,13 @@
       "losses": 9,
       "winrate": 78,
       "streak": 2,
-      "avgKda": 5.7,
-      "avgKills": 6.5,
-      "avgDeaths": 3.2,
-      "avgAssists": 5.6,
+      "avgKda": 5.8,
+      "avgKills": 6.7,
+      "avgDeaths": 3.3,
+      "avgAssists": 5.8,
       "avgCsPerMin": 7.6,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 4,
-          "wins": 4,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 31,
-          "deaths": 8,
-          "assists": 10,
-          "kda": 5.1,
-          "csPerMin": 8
-        },
         {
           "championName": "Elise",
           "championId": "60",
@@ -55,6 +42,19 @@
           "assists": 29,
           "kda": 2.7,
           "csPerMin": 7.3
+        },
+        {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 3,
+          "wins": 3,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 28,
+          "deaths": 7,
+          "assists": 9,
+          "kda": 5.3,
+          "csPerMin": 8.2
         },
         {
           "championName": "Corki",
@@ -815,45 +815,10 @@
             3145
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX8-9Aaoqiew9ThgoOc-K7XwT2P_G8FGXY=",
-          "gameCreation": 1791428069000,
-          "gameDurationSeconds": 915,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 12,
-          "role": "TOP",
-          "kills": 3,
-          "deaths": 1,
-          "assists": 1,
-          "kda": 4,
-          "cs": 113,
-          "csPerMin": 7.4,
-          "killParticipationPct": 0,
-          "damageDealt": 11081,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerTeleport",
-            "SummonerDot"
-          ],
-          "items": [
-            3078,
-            2031,
-            1036,
-            1054,
-            1036,
-            1001
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (557 LP)",
-      "analystSummary": "Myrwn: MASTER I 557 LP · 20 partidas consultadas · 78% WR · KDA medio 5.7.",
+      "analystSummary": "Myrwn: MASTER I 557 LP · 19 partidas consultadas · 78% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1071,10 +1036,10 @@
       "winrate": 86.1,
       "streak": 4,
       "avgKda": 6.5,
-      "avgKills": 7.1,
-      "avgDeaths": 2.5,
-      "avgAssists": 7.4,
-      "avgCsPerMin": 2.8,
+      "avgKills": 7.2,
+      "avgDeaths": 2.6,
+      "avgAssists": 7.6,
+      "avgCsPerMin": 2.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1258,19 +1223,6 @@
           "assists": 18,
           "kda": 5,
           "csPerMin": 1.9
-        },
-        {
-          "championName": "Pantheon",
-          "championId": "80",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 2,
-          "assists": 4,
-          "kda": 5,
-          "csPerMin": 0.2
         },
         {
           "championName": "Lee Sin",
@@ -1944,43 +1896,10 @@
             2520
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUVl0MS1UxbONhjAzMiM1dArjLHMgNTaTY=",
-          "gameCreation": 1791390174000,
-          "gameDurationSeconds": 913,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Pantheon",
-          "championId": "80",
-          "champLevel": 11,
-          "role": "JUNGLE",
-          "kills": 6,
-          "deaths": 2,
-          "assists": 4,
-          "kda": 5,
-          "cs": 3,
-          "csPerMin": 0.2,
-          "killParticipationPct": 0,
-          "damageDealt": 7082,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            2422,
-            6610,
-            3071
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (597 LP)",
-      "analystSummary": "Elyoya: MASTER I 597 LP · 20 partidas consultadas · 86.1% WR · KDA medio 6.5.",
+      "analystSummary": "Elyoya: MASTER I 597 LP · 19 partidas consultadas · 86.1% WR · KDA medio 6.5.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3918,11 +3837,11 @@
       "losses": 4,
       "winrate": 89.2,
       "streak": 6,
-      "avgKda": 5.7,
-      "avgKills": 3.3,
-      "avgDeaths": 4.8,
-      "avgAssists": 15.4,
-      "avgCsPerMin": 1,
+      "avgKda": 5.5,
+      "avgKills": 3.4,
+      "avgDeaths": 5,
+      "avgAssists": 15.8,
+      "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3937,19 +3856,6 @@
           "assists": 32,
           "kda": 5.1,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Alistar",
-          "championId": "12",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 7,
-          "assists": 34,
-          "kda": 5.3,
-          "csPerMin": 0.9
         },
         {
           "championName": "Karma",
@@ -4015,6 +3921,19 @@
           "assists": 14,
           "kda": 7.5,
           "csPerMin": 0.9
+        },
+        {
+          "championName": "Alistar",
+          "championId": "12",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 1,
+          "deaths": 7,
+          "assists": 26,
+          "kda": 3.9,
+          "csPerMin": 0.5
         },
         {
           "championName": "Pantheon",
@@ -4777,45 +4696,10 @@
             1029
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWoa7SgZSeoFBS4JeB4Y4NVJtpI6LLpd2A=",
-          "gameCreation": 1791411060000,
-          "gameDurationSeconds": 638,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Alistar",
-          "championId": "12",
-          "champLevel": 6,
-          "role": "SUPPORT",
-          "kills": 2,
-          "deaths": 0,
-          "assists": 8,
-          "kda": 10,
-          "cs": 15,
-          "csPerMin": 1.4,
-          "killParticipationPct": 0,
-          "damageDealt": 2029,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3866,
-            2031,
-            3009,
-            3067,
-            1033,
-            1029
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (687 LP)",
-      "analystSummary": "Alvaro: MASTER I 687 LP · 20 partidas consultadas · 89.2% WR · KDA medio 5.7.",
+      "analystSummary": "Alvaro: MASTER I 687 LP · 19 partidas consultadas · 89.2% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
