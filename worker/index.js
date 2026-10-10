@@ -3,6 +3,8 @@ const DEFAULT_WORKFLOW = "sync-opgg.yml";
 const MAIN_BRANCH = "main";
 const MANUAL_COOLDOWN_MS = 60_000;
 const DISPATCH_GUARD_MS = 4 * 60_000;
+const LEAGUE_STATE_KEY = "league-of-colegones:shared-state:v1";
+const MAX_LEAGUE_PAYLOAD_BYTES = 500_000;
 
 function responseJson(request, env, body, status = 200) {
   const headers = new Headers({
@@ -174,6 +176,151 @@ async function handleSyncStatus(request, env) {
   return responseJson(request, env, { ok: true, checkedAt });
 }
 
+
+function leagueCounter(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? Math.max(0, Math.min(1_000_000_000, Math.trunc(number))) : 0;
+}
+
+function leagueString(value, maxLength = 120) {
+  return typeof value === "string" ? value.trim().slice(0, maxLength) : "";
+}
+
+function leaguePlayerName(value) {
+  const name = leagueString(value, 32);
+  return name || null;
+}
+
+function sanitizeLeagueHistoryPlayers(value, fallbackNames = []) {
+  const players = Array.isArray(value) ? value : fallbackNames;
+  return players.slice(0, 10).map((rawPlayer) => {
+    const player = typeof rawPlayer === "string" ? { name: rawPlayer } :
+      (rawPlayer && typeof rawPlayer === "object" ? rawPlayer : {});
+    const name = leaguePlayerName(player.name) || "Desconocido";
+    const champion = leagueString(player.champion, 80) || null;
+    const image = leagueString(player.image, 500) || null;
+    return { name, champion, image };
+  });
+}
+
+function sanitizeLeagueHistory(value) {
+  if (!Array.isArray(value)) return null;
+  return value.slice(0, 20)
+    .filter((match) =>
+      match && typeof match === "object" &&
+      Array.isArray(match.blue) && Array.isArray(match.red) &&
+      ["blue", "red"].includes(match.ganador)
+    )
+    .map((match) => {
+      const blue = match.blue.slice(0, 10).map(leaguePlayerName).filter(Boolean);
+      const red = match.red.slice(0, 10).map(leaguePlayerName).filter(Boolean);
+      const perdedor = ["blue", "red"].includes(match.perdedor)
+        ? match.perdedor
+        : (match.ganador === "blue" ? "red" : "blue");
+      return {
+        fecha: leagueString(match.fecha, 100) || "Fecha desconocida",
+        blue,
+        red,
+        blueData: sanitizeLeagueHistoryPlayers(match.blueData, blue),
+        redData: sanitizeLeagueHistoryPlayers(match.redData, red),
+        ganador: match.ganador,
+        perdedor,
+        mvpBlue: leaguePlayerName(match.mvpBlue),
+        mvpRed: leaguePlayerName(match.mvpRed),
+      };
+    });
+}
+
+function sanitizeLeagueState(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return null;
+  const sourcePlayers = value.players;
+  if (!sourcePlayers || typeof sourcePlayers !== "object" || Array.isArray(sourcePlayers)) return null;
+  const entries = Object.entries(sourcePlayers);
+  if (entries.length > 500) return null;
+
+  const players = {};
+  for (const [rawName, rawStats] of entries) {
+    const name = leaguePlayerName(rawName);
+    if (!name || !rawStats || typeof rawStats !== "object" || Array.isArray(rawStats)) continue;
+    const level = Number(rawStats.level);
+    players[name] = {
+      w: leagueCounter(rawStats.w),
+      m: leagueCounter(rawStats.m),
+      games: leagueCounter(rawStats.games),
+      level: Number.isFinite(level) ? Math.max(0, Math.min(5, level)) : 3,
+    };
+  }
+
+  const history = sanitizeLeagueHistory(value.history);
+  if (!history) return null;
+  return { players, history };
+}
+
+async function handleLeagueState(request, env) {
+  if (!env.SYNC_STATUS) {
+    return responseJson(request, env, { ok: false, error: "El almacenamiento compartido no está configurado." }, 503);
+  }
+
+  if (request.method === "GET") {
+    const state = await env.SYNC_STATUS.get(LEAGUE_STATE_KEY, "json");
+    return responseJson(request, env, { ok: true, initialized: Boolean(state), state });
+  }
+
+  const declaredLength = Number(request.headers.get("Content-Length") || 0);
+  if (declaredLength > MAX_LEAGUE_PAYLOAD_BYTES) {
+    return responseJson(request, env, { ok: false, error: "La copia es demasiado grande." }, 413);
+  }
+
+  let payload;
+  try {
+    const raw = await request.text();
+    if (new TextEncoder().encode(raw).byteLength > MAX_LEAGUE_PAYLOAD_BYTES) {
+      return responseJson(request, env, { ok: false, error: "La copia es demasiado grande." }, 413);
+    }
+    payload = JSON.parse(raw);
+  } catch {
+    return responseJson(request, env, { ok: false, error: "JSON no válido." }, 400);
+  }
+
+  const state = sanitizeLeagueState(payload?.state);
+  if (!state || !["initialize", "save"].includes(payload?.action)) {
+    return responseJson(request, env, { ok: false, error: "La copia del ranking no tiene un formato válido." }, 400);
+  }
+
+  const current = await env.SYNC_STATUS.get(LEAGUE_STATE_KEY, "json");
+  if (payload.action === "initialize") {
+    if (current) {
+      return responseJson(request, env, {
+        ok: false, error: "El ranking compartido ya está inicializado.", state: current,
+      }, 409);
+    }
+    const saved = { ...state, revision: 1, updatedAt: new Date().toISOString() };
+    await env.SYNC_STATUS.put(LEAGUE_STATE_KEY, JSON.stringify(saved));
+    return responseJson(request, env, { ok: true, initialized: true, state: saved }, 201);
+  }
+
+  if (!current) {
+    return responseJson(request, env, {
+      ok: false, error: "Todavía no hay un ranking compartido inicializado.", initialized: false,
+    }, 409);
+  }
+  if (!Number.isInteger(payload.revision) || payload.revision !== current.revision) {
+    return responseJson(request, env, {
+      ok: false,
+      error: "El ranking cambió desde otro dispositivo. No se han guardado estos cambios para evitar sobrescribir datos.",
+      state: current,
+    }, 409);
+  }
+
+  const saved = {
+    ...state,
+    revision: current.revision + 1,
+    updatedAt: new Date().toISOString(),
+  };
+  await env.SYNC_STATUS.put(LEAGUE_STATE_KEY, JSON.stringify(saved));
+  return responseJson(request, env, { ok: true, initialized: true, state: saved });
+}
+
 async function handleRefresh(request, env) {
   if (!env.GITHUB_TOKEN || !env.SYNC_STATUS_TOKEN || !env.SYNC_STATUS) {
     return responseJson(request, env, {
@@ -237,6 +384,9 @@ export default {
     if (request.method === "GET" && url.pathname === "/api/status") {
       if (!env.SYNC_STATUS) return responseJson(request, env, { ok: false, error: "KV no está configurado." }, 503);
       return handleStatus(request, env);
+    }
+    if ((request.method === "GET" || request.method === "POST") && url.pathname === "/api/league/state") {
+      return handleLeagueState(request, env);
     }
     if (request.method === "POST" && url.pathname === "/api/refresh") {
       return handleRefresh(request, env);
