@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T04:16:23.225Z",
-  "syncedAt": "2026-10-10T04:16:23.226Z",
+  "generatedAt": "2026-10-10T16:11:25.642Z",
+  "syncedAt": "2026-10-10T16:11:25.642Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,12 +22,12 @@
       "wins": 30,
       "losses": 8,
       "winrate": 78.9,
-      "streak": 1,
+      "streak": -1,
       "avgKda": 5.1,
-      "avgKills": 5.8,
-      "avgDeaths": 3.2,
-      "avgAssists": 5.6,
-      "avgCsPerMin": 7.4,
+      "avgKills": 5.9,
+      "avgDeaths": 3.3,
+      "avgAssists": 5.8,
+      "avgCsPerMin": 7.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -81,6 +81,19 @@
           "assists": 25,
           "kda": 2.8,
           "csPerMin": 7.6
+        },
+        {
+          "championName": "Aurora",
+          "championId": "893",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 8,
+          "deaths": 4,
+          "assists": 7,
+          "kda": 3.8,
+          "csPerMin": 8.3
         },
         {
           "championName": "Zaahen",
@@ -146,35 +159,44 @@
           "assists": 20,
           "kda": 3.4,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Aurora",
-          "championId": "893",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 1,
-          "assists": 3,
-          "kda": 8,
-          "csPerMin": 8.6
-        },
-        {
-          "championName": "Ezreal",
-          "championId": "81",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 1,
-          "assists": 0,
-          "kda": 2,
-          "csPerMin": 9.6
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWsK54pqK8tdggYzp9d5j_yA8EMt5YTyGU=",
+          "gameCreation": 1791648526000,
+          "gameDurationSeconds": 1301,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Aurora",
+          "championId": "893",
+          "champLevel": 15,
+          "role": "TOP",
+          "kills": 3,
+          "deaths": 3,
+          "assists": 4,
+          "kda": 2.33,
+          "cs": 175,
+          "csPerMin": 8.1,
+          "killParticipationPct": 0,
+          "damageDealt": 18398,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3020,
+            4646,
+            1052,
+            1082,
+            6655,
+            1052
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXX2R7mdf0RWC_Kx72Dwgm-nS6iFsMyHF0=",
           "gameCreation": 1791605356000,
@@ -824,41 +846,6 @@
             3047,
             1055,
             6699
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXA45jkCeke28goWap7gNF8bPUObNOQabM=",
-          "gameCreation": 1791411543000,
-          "gameDurationSeconds": 911,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ezreal",
-          "championId": "81",
-          "champLevel": 12,
-          "role": "TOP",
-          "kills": 2,
-          "deaths": 1,
-          "assists": 0,
-          "kda": 2,
-          "cs": 146,
-          "csPerMin": 9.6,
-          "killParticipationPct": 0,
-          "damageDealt": 6350,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            1086,
-            3133,
-            3070,
-            3158,
-            3078,
-            1036
           ],
           "tags": []
         }
