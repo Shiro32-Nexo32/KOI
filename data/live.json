@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T02:31:26.535Z",
-  "syncedAt": "2026-10-10T02:31:26.536Z",
+  "generatedAt": "2026-10-10T02:36:21.114Z",
+  "syncedAt": "2026-10-10T02:36:21.114Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 467,
-      "wins": 28,
+      "lp": 502,
+      "wins": 29,
       "losses": 7,
-      "winrate": 80,
+      "winrate": 80.6,
       "streak": 3,
       "avgKda": 4.8,
       "avgKills": 5.3,
@@ -863,8 +863,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (467 LP)",
-      "analystSummary": "Myrwn: MASTER I 467 LP · 20 partidas consultadas · 80% WR · KDA medio 4.8.",
+      "statusBadge": "MASTER I (502 LP)",
+      "analystSummary": "Myrwn: MASTER I 502 LP · 20 partidas consultadas · 80.6% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -998,6 +998,15 @@
           "division": "I",
           "lp": 467,
           "wins": 28,
+          "losses": 7,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791599754469,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 502,
+          "wins": 29,
           "losses": 7,
           "note": "Sincronización automática desde OP.GG"
         }
