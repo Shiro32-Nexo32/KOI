@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T02:26:20.985Z",
-  "syncedAt": "2026-10-10T02:26:20.986Z",
+  "generatedAt": "2026-10-10T02:31:26.535Z",
+  "syncedAt": "2026-10-10T02:31:26.536Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,27 +22,14 @@
       "wins": 28,
       "losses": 7,
       "winrate": 80,
-      "streak": 2,
+      "streak": 3,
       "avgKda": 4.8,
-      "avgKills": 5.4,
-      "avgDeaths": 2.9,
-      "avgAssists": 5.3,
-      "avgCsPerMin": 7.3,
+      "avgKills": 5.3,
+      "avgDeaths": 3,
+      "avgAssists": 5.4,
+      "avgCsPerMin": 7.4,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Corki",
-          "championId": "42",
-          "games": 4,
-          "wins": 3,
-          "losses": 1,
-          "winrate": 75,
-          "kills": 15,
-          "deaths": 3,
-          "assists": 5,
-          "kda": 6.7,
-          "csPerMin": 7.2
-        },
         {
           "championName": "Camille",
           "championId": "164",
@@ -55,6 +42,19 @@
           "assists": 6,
           "kda": 4.7,
           "csPerMin": 7.1
+        },
+        {
+          "championName": "Corki",
+          "championId": "42",
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 10,
+          "deaths": 3,
+          "assists": 4,
+          "kda": 4.7,
+          "csPerMin": 6.4
         },
         {
           "championName": "Elise",
@@ -94,6 +94,19 @@
           "assists": 21,
           "kda": 5.5,
           "csPerMin": 7.1
+        },
+        {
+          "championName": "Shyvana",
+          "championId": "102",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 1,
+          "assists": 2,
+          "kda": 6,
+          "csPerMin": 10.7
         },
         {
           "championName": "Irelia",
@@ -162,6 +175,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWwvw2fSRTfRH2lKreHqdFhOegIEVqtCbw=",
+          "gameCreation": 1791599360000,
+          "gameDurationSeconds": 1306,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Shyvana",
+          "championId": "102",
+          "champLevel": 16,
+          "role": "TOP",
+          "kills": 4,
+          "deaths": 1,
+          "assists": 2,
+          "kda": 6,
+          "cs": 233,
+          "csPerMin": 10.7,
+          "killParticipationPct": 0,
+          "damageDealt": 15809,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3161,
+            1001,
+            1029,
+            3078,
+            3076
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgU9ZO6gwbhNLR2tCt20WZlnqfOWGFT4JKs=",
           "gameCreation": 1791596357000,
@@ -812,40 +859,6 @@
             3121,
             3108,
             1056
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUhGK4PN_QKsk74sVFvY6tDExUk_mCEdVM=",
-          "gameCreation": 1791393323000,
-          "gameDurationSeconds": 911,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Corki",
-          "championId": "42",
-          "champLevel": 13,
-          "role": "TOP",
-          "kills": 5,
-          "deaths": 0,
-          "assists": 1,
-          "kda": 6,
-          "cs": 146,
-          "csPerMin": 9.6,
-          "killParticipationPct": 0,
-          "damageDealt": 15113,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            2031,
-            3078,
-            3070,
-            3047,
-            1086
           ],
           "tags": []
         }
