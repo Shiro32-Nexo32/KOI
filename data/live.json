@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T16:16:26.349Z",
-  "syncedAt": "2026-10-10T16:16:26.349Z",
+  "generatedAt": "2026-10-10T16:41:22.661Z",
+  "syncedAt": "2026-10-10T16:41:22.661Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2842,12 +2842,12 @@
       "wins": 33,
       "losses": 6,
       "winrate": 84.6,
-      "streak": 4,
-      "avgKda": 6.8,
-      "avgKills": 9.8,
-      "avgDeaths": 4.3,
-      "avgAssists": 7,
-      "avgCsPerMin": 8.7,
+      "streak": 5,
+      "avgKda": 6.9,
+      "avgKills": 9.7,
+      "avgDeaths": 4,
+      "avgAssists": 6.4,
+      "avgCsPerMin": 8.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -2866,15 +2866,15 @@
         {
           "championName": "Draven",
           "championId": "119",
-          "games": 4,
-          "wins": 3,
+          "games": 5,
+          "wins": 4,
           "losses": 1,
-          "winrate": 75,
-          "kills": 35,
-          "deaths": 15,
-          "assists": 14,
-          "kda": 3.3,
-          "csPerMin": 8.8
+          "winrate": 80,
+          "kills": 47,
+          "deaths": 19,
+          "assists": 19,
+          "kda": 3.5,
+          "csPerMin": 8.7
         },
         {
           "championName": "Jhin",
@@ -2979,22 +2979,44 @@
           "assists": 5,
           "kda": 0.8,
           "csPerMin": 9
-        },
-        {
-          "championName": "Varus",
-          "championId": "110",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 15,
-          "deaths": 10,
-          "assists": 18,
-          "kda": 3.3,
-          "csPerMin": 6.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUjs7RNmnRA2WaiAKiymtIaJTcwJWj06Qo=",
+          "gameCreation": 1791650337000,
+          "gameDurationSeconds": 1425,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Draven",
+          "championId": "119",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 12,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 4.25,
+          "cs": 194,
+          "csPerMin": 8.2,
+          "killParticipationPct": 0,
+          "damageDealt": 27995,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3033,
+            2523,
+            1038,
+            6676,
+            3031,
+            2019
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWj4nz6Y2SmMkPa1FTfCZyDAmihY2eDMXI=",
           "gameCreation": 1791602370000,
@@ -3651,45 +3673,10 @@
             1029
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWK8mG5E_qeBDfd92NddpMZ-5zhWqQUeCw=",
-          "gameCreation": 1791390096000,
-          "gameDurationSeconds": 1895,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Varus",
-          "championId": "110",
-          "champLevel": 16,
-          "role": "ADC",
-          "kills": 15,
-          "deaths": 10,
-          "assists": 18,
-          "kda": 3.3,
-          "cs": 203,
-          "csPerMin": 6.4,
-          "killParticipationPct": 0,
-          "damageDealt": 44119,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3087,
-            4633,
-            2420,
-            6665,
-            3302,
-            3073
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (592 LP)",
-      "analystSummary": "Supa: MASTER I 592 LP · 20 partidas consultadas · 84.6% WR · KDA medio 6.8.",
+      "analystSummary": "Supa: MASTER I 592 LP · 20 partidas consultadas · 84.6% WR · KDA medio 6.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3857,11 +3844,11 @@
       "wins": 31,
       "losses": 4,
       "winrate": 88.6,
-      "streak": 4,
+      "streak": 5,
       "avgKda": 5.6,
-      "avgKills": 3.5,
-      "avgDeaths": 5,
-      "avgAssists": 15.3,
+      "avgKills": 3.3,
+      "avgDeaths": 4.8,
+      "avgAssists": 15.1,
       "avgCsPerMin": 1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3916,6 +3903,19 @@
           "assists": 38,
           "kda": 4.2,
           "csPerMin": 1
+        },
+        {
+          "championName": "Galio",
+          "championId": "3",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 5,
+          "assists": 16,
+          "kda": 3.8,
+          "csPerMin": 0.9
         },
         {
           "championName": "Blitzcrank",
@@ -4046,22 +4046,43 @@
           "assists": 13,
           "kda": 1.9,
           "csPerMin": 0.8
-        },
-        {
-          "championName": "Pyke",
-          "championId": "555",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 7,
-          "deaths": 10,
-          "assists": 20,
-          "kda": 2.7,
-          "csPerMin": 0.9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUjs7RNmnRA2WaiAKiymtIaJTcwJWj06Qo=",
+          "gameCreation": 1791650337000,
+          "gameDurationSeconds": 1425,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Galio",
+          "championId": "3",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 3,
+          "deaths": 5,
+          "assists": 16,
+          "kda": 3.8,
+          "cs": 22,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 9460,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3190,
+            3111,
+            2525,
+            3067
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWj4nz6Y2SmMkPa1FTfCZyDAmihY2eDMXI=",
           "gameCreation": 1791602370000,
@@ -4716,41 +4737,6 @@
             6617,
             6620,
             3114
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWK8mG5E_qeBDfd92NddpMZ-5zhWqQUeCw=",
-          "gameCreation": 1791390096000,
-          "gameDurationSeconds": 1895,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Pyke",
-          "championId": "555",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 7,
-          "deaths": 10,
-          "assists": 20,
-          "kda": 2.7,
-          "cs": 29,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 25303,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3869,
-            3142,
-            3111,
-            3179,
-            3814,
-            1036
           ],
           "tags": []
         }
