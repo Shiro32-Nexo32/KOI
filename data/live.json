@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T03:01:22.019Z",
-  "syncedAt": "2026-10-10T03:01:22.019Z",
+  "generatedAt": "2026-10-10T03:21:27.960Z",
+  "syncedAt": "2026-10-10T03:21:27.960Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2828,11 +2828,11 @@
       "wins": 32,
       "losses": 6,
       "winrate": 84.2,
-      "streak": 3,
-      "avgKda": 7,
+      "streak": 4,
+      "avgKda": 6.8,
       "avgKills": 9.8,
       "avgDeaths": 4.3,
-      "avgAssists": 7.3,
+      "avgAssists": 7,
       "avgCsPerMin": 8.7,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -2874,6 +2874,19 @@
           "assists": 30,
           "kda": 14.3,
           "csPerMin": 9
+        },
+        {
+          "championName": "Kalista",
+          "championId": "429",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 11,
+          "deaths": 5,
+          "assists": 2,
+          "kda": 2.6,
+          "csPerMin": 9.3
         },
         {
           "championName": "Aphelios",
@@ -2941,19 +2954,6 @@
           "csPerMin": 8.8
         },
         {
-          "championName": "Tristana",
-          "championId": "18",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 9,
-          "deaths": 3,
-          "assists": 6,
-          "kda": 5,
-          "csPerMin": 8.7
-        },
-        {
           "championName": "Xayah",
           "championId": "498",
           "games": 1,
@@ -2981,6 +2981,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWj4nz6Y2SmMkPa1FTfCZyDAmihY2eDMXI=",
+          "gameCreation": 1791602370000,
+          "gameDurationSeconds": 926,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kalista",
+          "championId": "429",
+          "champLevel": 11,
+          "role": "ADC",
+          "kills": 11,
+          "deaths": 5,
+          "assists": 2,
+          "kda": 2.6,
+          "cs": 143,
+          "csPerMin": 9.3,
+          "killParticipationPct": 0,
+          "damageDealt": 18491,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBoost",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            3087,
+            2055,
+            3124
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXHiyjrNvJyLendh8B-Ai5A38sWosZAVUk=",
           "gameCreation": 1791600733000,
@@ -3639,45 +3672,10 @@
             3073
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWw0eaguWOj-dTveO5pBafpjXndNSVsOBc=",
-          "gameCreation": 1791387874000,
-          "gameDurationSeconds": 1079,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Tristana",
-          "championId": "18",
-          "champLevel": 12,
-          "role": "ADC",
-          "kills": 9,
-          "deaths": 3,
-          "assists": 6,
-          "kda": 5,
-          "cs": 156,
-          "csPerMin": 8.7,
-          "killParticipationPct": 0,
-          "damageDealt": 21203,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            3032,
-            6675,
-            1086,
-            3035,
-            6670,
-            1083
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (557 LP)",
-      "analystSummary": "Supa: MASTER I 557 LP · 20 partidas consultadas · 84.2% WR · KDA medio 7.",
+      "analystSummary": "Supa: MASTER I 557 LP · 20 partidas consultadas · 84.2% WR · KDA medio 6.8.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3832,15 +3830,15 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 582,
-      "wins": 30,
+      "lp": 617,
+      "wins": 31,
       "losses": 4,
-      "winrate": 88.2,
-      "streak": 3,
-      "avgKda": 5.5,
-      "avgKills": 4.1,
-      "avgDeaths": 5.1,
-      "avgAssists": 14.9,
+      "winrate": 88.6,
+      "streak": 4,
+      "avgKda": 5.6,
+      "avgKills": 3.5,
+      "avgDeaths": 5,
+      "avgAssists": 15.3,
       "avgCsPerMin": 1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3858,19 +3856,6 @@
           "csPerMin": 1.1
         },
         {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 3,
-          "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 32,
-          "deaths": 30,
-          "assists": 46,
-          "kda": 2.6,
-          "csPerMin": 1.1
-        },
-        {
           "championName": "Alistar",
           "championId": "12",
           "games": 2,
@@ -3884,6 +3869,19 @@
           "csPerMin": 0.9
         },
         {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 19,
+          "deaths": 26,
+          "assists": 39,
+          "kda": 2.2,
+          "csPerMin": 1.1
+        },
+        {
           "championName": "Thresh",
           "championId": "412",
           "games": 2,
@@ -3895,6 +3893,19 @@
           "assists": 38,
           "kda": 4.2,
           "csPerMin": 1
+        },
+        {
+          "championName": "Blitzcrank",
+          "championId": "53",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 1,
+          "deaths": 2,
+          "assists": 14,
+          "kda": 7.5,
+          "csPerMin": 0.9
         },
         {
           "championName": "Neeko",
@@ -4028,6 +4039,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWj4nz6Y2SmMkPa1FTfCZyDAmihY2eDMXI=",
+          "gameCreation": 1791602370000,
+          "gameDurationSeconds": 926,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Blitzcrank",
+          "championId": "53",
+          "champLevel": 9,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 2,
+          "assists": 14,
+          "kda": 7.5,
+          "cs": 14,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 5887,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            2031,
+            3067,
+            6657,
+            3009
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXHiyjrNvJyLendh8B-Ai5A38sWosZAVUk=",
           "gameCreation": 1791600733000,
@@ -4685,44 +4730,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWw0eaguWOj-dTveO5pBafpjXndNSVsOBc=",
-          "gameCreation": 1791387874000,
-          "gameDurationSeconds": 1079,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 10,
-          "role": "SUPPORT",
-          "kills": 13,
-          "deaths": 4,
-          "assists": 7,
-          "kda": 5,
-          "cs": 17,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 20038,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            2031,
-            1001,
-            6692,
-            6610
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (582 LP)",
-      "analystSummary": "Alvaro: MASTER I 582 LP · 20 partidas consultadas · 88.2% WR · KDA medio 5.5.",
+      "statusBadge": "MASTER I (617 LP)",
+      "analystSummary": "Alvaro: MASTER I 617 LP · 20 partidas consultadas · 88.6% WR · KDA medio 5.6.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4856,6 +4867,15 @@
           "division": "I",
           "lp": 582,
           "wins": 30,
+          "losses": 4,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791602487959,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 617,
+          "wins": 31,
           "losses": 4,
           "note": "Sincronización automática desde OP.GG"
         }
