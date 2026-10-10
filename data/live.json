@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T17:21:25.306Z",
-  "syncedAt": "2026-10-10T17:21:25.306Z",
+  "generatedAt": "2026-10-10T17:26:26.886Z",
+  "syncedAt": "2026-10-10T17:26:26.887Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,26 +22,26 @@
       "wins": 31,
       "losses": 9,
       "winrate": 77.5,
-      "streak": 1,
-      "avgKda": 5.3,
-      "avgKills": 6.2,
-      "avgDeaths": 3.1,
-      "avgAssists": 5.5,
-      "avgCsPerMin": 7.4,
+      "streak": 2,
+      "avgKda": 5.7,
+      "avgKills": 6.5,
+      "avgDeaths": 3.2,
+      "avgAssists": 5.6,
+      "avgCsPerMin": 7.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Camille",
           "championId": "164",
-          "games": 5,
+          "games": 4,
           "wins": 4,
-          "losses": 1,
-          "winrate": 80,
+          "losses": 0,
+          "winrate": 100,
           "kills": 31,
           "deaths": 8,
           "assists": 10,
           "kda": 5.1,
-          "csPerMin": 7.5
+          "csPerMin": 8
         },
         {
           "championName": "Elise",
@@ -70,6 +70,19 @@
           "csPerMin": 6.4
         },
         {
+          "championName": "Zaahen",
+          "championId": "904",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 24,
+          "deaths": 2,
+          "assists": 8,
+          "kda": 16,
+          "csPerMin": 9.4
+        },
+        {
           "championName": "Aurora",
           "championId": "893",
           "games": 2,
@@ -81,19 +94,6 @@
           "assists": 7,
           "kda": 3.8,
           "csPerMin": 8.3
-        },
-        {
-          "championName": "Zaahen",
-          "championId": "904",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 17,
-          "deaths": 1,
-          "assists": 7,
-          "kda": 24,
-          "csPerMin": 9.6
         },
         {
           "championName": "Shyvana",
@@ -162,6 +162,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXj9NPtl5Sat4mkFjzCpS8dejXZzfcGT-8=",
+          "gameCreation": 1791652985000,
+          "gameDurationSeconds": 992,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Zaahen",
+          "championId": "904",
+          "champLevel": 14,
+          "role": "TOP",
+          "kills": 7,
+          "deaths": 1,
+          "assists": 1,
+          "kda": 8,
+          "cs": 152,
+          "csPerMin": 9.2,
+          "killParticipationPct": 0,
+          "damageDealt": 15305,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerExhaust"
+          ],
+          "items": [
+            1055,
+            3077,
+            3009,
+            3078,
+            1036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX4O-xWcHT27bbIZS88aq2ItBV-co2SaXc=",
           "gameCreation": 1791650674000,
@@ -816,41 +850,10 @@
             1001
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
-          "gameCreation": 1791426953000,
-          "gameDurationSeconds": 112,
-          "queueType": "SOLORANKED",
-          "isRemake": true,
-          "win": false,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 2,
-          "role": "TOP",
-          "kills": 0,
-          "deaths": 0,
-          "assists": 0,
-          "kda": 0,
-          "cs": 10,
-          "csPerMin": 5.4,
-          "killParticipationPct": 0,
-          "damageDealt": 505,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            1054,
-            2003
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (522 LP)",
-      "analystSummary": "Myrwn: MASTER I 522 LP · 20 partidas consultadas · 77.5% WR · KDA medio 5.3.",
+      "analystSummary": "Myrwn: MASTER I 522 LP · 20 partidas consultadas · 77.5% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1057,26 +1060,26 @@
       "wins": 30,
       "losses": 5,
       "winrate": 85.7,
-      "streak": 3,
-      "avgKda": 7.3,
-      "avgKills": 7.5,
+      "streak": 4,
+      "avgKda": 6.5,
+      "avgKills": 7.1,
       "avgDeaths": 2.5,
-      "avgAssists": 7.8,
-      "avgCsPerMin": 2.5,
+      "avgAssists": 7.4,
+      "avgCsPerMin": 2.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Kha'Zix",
           "championId": "121",
-          "games": 4,
-          "wins": 3,
+          "games": 3,
+          "wins": 2,
           "losses": 1,
-          "winrate": 75,
-          "kills": 24,
-          "deaths": 9,
-          "assists": 28,
-          "kda": 5.8,
-          "csPerMin": 0.9
+          "winrate": 66.7,
+          "kills": 14,
+          "deaths": 8,
+          "assists": 20,
+          "kda": 4.3,
+          "csPerMin": 0.8
         },
         {
           "championName": "Kai'Sa",
@@ -1090,6 +1093,19 @@
           "assists": 16,
           "kda": 4.1,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Ezreal",
+          "championId": "81",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 2,
+          "deaths": 2,
+          "assists": 0,
+          "kda": 1,
+          "csPerMin": 8
         },
         {
           "championName": "Lillia",
@@ -1275,6 +1291,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXj9NPtl5Sat4mkFjzCpS8dejXZzfcGT-8=",
+          "gameCreation": 1791652985000,
+          "gameDurationSeconds": 992,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 10,
+          "role": "ADC",
+          "kills": 2,
+          "deaths": 2,
+          "assists": 0,
+          "kda": 1,
+          "cs": 133,
+          "csPerMin": 8,
+          "killParticipationPct": 0,
+          "damageDealt": 4905,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerExhaust"
+          ],
+          "items": [
+            2031,
+            3070,
+            1120,
+            3078,
+            1036,
+            2022
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgU9ZO6gwbhNLR2tCt20WZlnqfOWGFT4JKs=",
           "gameCreation": 1791596357000,
@@ -1917,45 +1968,10 @@
             3071
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVlg0hUO1KXkJW60HGa3ts-5cPbThti4aA=",
-          "gameCreation": 1791388856000,
-          "gameDurationSeconds": 1603,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kha'Zix",
-          "championId": "121",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 10,
-          "deaths": 1,
-          "assists": 8,
-          "kda": 18,
-          "cs": 34,
-          "csPerMin": 1.3,
-          "killParticipationPct": 0,
-          "damageDealt": 27971,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3133,
-            1001,
-            3035,
-            3179,
-            2520,
-            6699
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (562 LP)",
-      "analystSummary": "Elyoya: MASTER I 562 LP · 20 partidas consultadas · 85.7% WR · KDA medio 7.3.",
+      "analystSummary": "Elyoya: MASTER I 562 LP · 20 partidas consultadas · 85.7% WR · KDA medio 6.5.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3879,10 +3895,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 652,
-      "wins": 32,
+      "lp": 687,
+      "wins": 33,
       "losses": 4,
-      "winrate": 88.9,
+      "winrate": 89.2,
       "streak": 6,
       "avgKda": 5.7,
       "avgKills": 3.3,
@@ -4780,8 +4796,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (652 LP)",
-      "analystSummary": "Alvaro: MASTER I 652 LP · 20 partidas consultadas · 88.9% WR · KDA medio 5.7.",
+      "statusBadge": "MASTER I (687 LP)",
+      "analystSummary": "Alvaro: MASTER I 687 LP · 20 partidas consultadas · 89.2% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4933,6 +4949,15 @@
           "division": "I",
           "lp": 652,
           "wins": 32,
+          "losses": 4,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791653186885,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 687,
+          "wins": 33,
           "losses": 4,
           "note": "Sincronización automática desde OP.GG"
         }
