@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T03:46:26.786Z",
-  "syncedAt": "2026-10-10T03:46:26.786Z",
+  "generatedAt": "2026-10-10T04:11:22.278Z",
+  "syncedAt": "2026-10-10T04:11:22.278Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,11 +22,11 @@
       "wins": 29,
       "losses": 8,
       "winrate": 78.4,
-      "streak": -1,
-      "avgKda": 4.8,
-      "avgKills": 5.4,
-      "avgDeaths": 3.1,
-      "avgAssists": 5.8,
+      "streak": 1,
+      "avgKda": 5.1,
+      "avgKills": 5.8,
+      "avgDeaths": 3.2,
+      "avgAssists": 5.6,
       "avgCsPerMin": 7.4,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -81,6 +81,19 @@
           "assists": 25,
           "kda": 2.8,
           "csPerMin": 7.6
+        },
+        {
+          "championName": "Zaahen",
+          "championId": "904",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 17,
+          "deaths": 1,
+          "assists": 7,
+          "kda": 24,
+          "csPerMin": 9.6
         },
         {
           "championName": "Shyvana",
@@ -159,22 +172,44 @@
           "assists": 0,
           "kda": 2,
           "csPerMin": 9.6
-        },
-        {
-          "championName": "Karma",
-          "championId": "43",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 8,
-          "deaths": 0,
-          "assists": 10,
-          "kda": 18,
-          "csPerMin": 8.8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXX2R7mdf0RWC_Kx72Dwgm-nS6iFsMyHF0=",
+          "gameCreation": 1791605356000,
+          "gameDurationSeconds": 1568,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Zaahen",
+          "championId": "904",
+          "champLevel": 19,
+          "role": "TOP",
+          "kills": 17,
+          "deaths": 1,
+          "assists": 7,
+          "kda": 24,
+          "cs": 252,
+          "csPerMin": 9.6,
+          "killParticipationPct": 0,
+          "damageDealt": 40618,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            1036,
+            6631,
+            3078,
+            3047,
+            3156,
+            6333
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVVNcPgZNQCzoyvUHxM_vHRcDmhYOfuuwo=",
           "gameCreation": 1791603502000,
@@ -826,45 +861,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXZ9sUT8TbqZMlIOMhZ1QAtw1HpSWJfBs8=",
-          "gameCreation": 1791409778000,
-          "gameDurationSeconds": 1478,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Karma",
-          "championId": "43",
-          "champLevel": 17,
-          "role": "TOP",
-          "kills": 8,
-          "deaths": 0,
-          "assists": 10,
-          "kda": 18,
-          "cs": 218,
-          "csPerMin": 8.8,
-          "killParticipationPct": 0,
-          "damageDealt": 20946,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            4005,
-            3108,
-            3110,
-            3158,
-            4629,
-            1052
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (477 LP)",
-      "analystSummary": "Myrwn: MASTER I 477 LP · 20 partidas consultadas · 78.4% WR · KDA medio 4.8.",
+      "analystSummary": "Myrwn: MASTER I 477 LP · 20 partidas consultadas · 78.4% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
