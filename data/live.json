@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T16:41:22.661Z",
-  "syncedAt": "2026-10-10T16:41:22.661Z",
+  "generatedAt": "2026-10-10T16:46:22.822Z",
+  "syncedAt": "2026-10-10T16:46:22.822Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,26 +22,26 @@
       "wins": 30,
       "losses": 9,
       "winrate": 76.9,
-      "streak": -1,
-      "avgKda": 5.1,
-      "avgKills": 5.9,
-      "avgDeaths": 3.3,
-      "avgAssists": 5.8,
-      "avgCsPerMin": 7.3,
+      "streak": 1,
+      "avgKda": 5.3,
+      "avgKills": 6.2,
+      "avgDeaths": 3.1,
+      "avgAssists": 5.5,
+      "avgCsPerMin": 7.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Camille",
           "championId": "164",
-          "games": 4,
-          "wins": 3,
+          "games": 5,
+          "wins": 4,
           "losses": 1,
-          "winrate": 75,
-          "kills": 22,
-          "deaths": 6,
-          "assists": 6,
-          "kda": 4.7,
-          "csPerMin": 7.1
+          "winrate": 80,
+          "kills": 31,
+          "deaths": 8,
+          "assists": 10,
+          "kda": 5.1,
+          "csPerMin": 7.5
         },
         {
           "championName": "Elise",
@@ -68,19 +68,6 @@
           "assists": 4,
           "kda": 4.7,
           "csPerMin": 6.4
-        },
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 8,
-          "deaths": 12,
-          "assists": 25,
-          "kda": 2.8,
-          "csPerMin": 7.6
         },
         {
           "championName": "Aurora",
@@ -120,6 +107,19 @@
           "assists": 2,
           "kda": 6,
           "csPerMin": 10.7
+        },
+        {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 7,
+          "assists": 16,
+          "kda": 3,
+          "csPerMin": 6.9
         },
         {
           "championName": "Irelia",
@@ -162,6 +162,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX4O-xWcHT27bbIZS88aq2ItBV-co2SaXc=",
+          "gameCreation": 1791650674000,
+          "gameDurationSeconds": 1678,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Camille",
+          "championId": "164",
+          "champLevel": 19,
+          "role": "TOP",
+          "kills": 9,
+          "deaths": 2,
+          "assists": 4,
+          "kda": 6.5,
+          "cs": 256,
+          "csPerMin": 9.2,
+          "killParticipationPct": 0,
+          "damageDealt": 32193,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3078,
+            3074,
+            3047,
+            3026,
+            3073
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWsK54pqK8tdggYzp9d5j_yA8EMt5YTyGU=",
           "gameCreation": 1791648526000,
@@ -813,45 +847,10 @@
             2003
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXJKnpZy4rDSRaQE9k1PfhUj5qVicYkWNc=",
-          "gameCreation": 1791426588000,
-          "gameDurationSeconds": 2074,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 20,
-          "role": "TOP",
-          "kills": 3,
-          "deaths": 5,
-          "assists": 9,
-          "kda": 2.4,
-          "cs": 288,
-          "csPerMin": 8.3,
-          "killParticipationPct": 0,
-          "damageDealt": 33553,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            6694,
-            3142,
-            3134,
-            3047,
-            1055,
-            6699
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (487 LP)",
-      "analystSummary": "Myrwn: MASTER I 487 LP · 20 partidas consultadas · 76.9% WR · KDA medio 5.1.",
+      "analystSummary": "Myrwn: MASTER I 487 LP · 20 partidas consultadas · 76.9% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -2838,10 +2837,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 592,
-      "wins": 33,
+      "lp": 627,
+      "wins": 34,
       "losses": 6,
-      "winrate": 84.6,
+      "winrate": 85,
       "streak": 5,
       "avgKda": 6.9,
       "avgKills": 9.7,
@@ -3675,8 +3674,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (592 LP)",
-      "analystSummary": "Supa: MASTER I 592 LP · 20 partidas consultadas · 84.6% WR · KDA medio 6.9.",
+      "statusBadge": "MASTER I (627 LP)",
+      "analystSummary": "Supa: MASTER I 627 LP · 20 partidas consultadas · 85% WR · KDA medio 6.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3821,6 +3820,15 @@
           "wins": 33,
           "losses": 6,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791650775945,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 627,
+          "wins": 34,
+          "losses": 6,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 2,
@@ -3840,10 +3848,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 617,
-      "wins": 31,
+      "lp": 652,
+      "wins": 32,
       "losses": 4,
-      "winrate": 88.6,
+      "winrate": 88.9,
       "streak": 5,
       "avgKda": 5.6,
       "avgKills": 3.3,
@@ -4741,8 +4749,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (617 LP)",
-      "analystSummary": "Alvaro: MASTER I 617 LP · 20 partidas consultadas · 88.6% WR · KDA medio 5.6.",
+      "statusBadge": "MASTER I (652 LP)",
+      "analystSummary": "Alvaro: MASTER I 652 LP · 20 partidas consultadas · 88.9% WR · KDA medio 5.6.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4885,6 +4893,15 @@
           "division": "I",
           "lp": 617,
           "wins": 31,
+          "losses": 4,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791650782821,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 652,
+          "wins": 32,
           "losses": 4,
           "note": "Sincronización automática desde OP.GG"
         }
