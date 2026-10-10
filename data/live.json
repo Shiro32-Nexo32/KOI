@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T18:41:25.021Z",
-  "syncedAt": "2026-10-09T18:41:25.021Z",
+  "generatedAt": "2026-10-10T01:41:25.825Z",
+  "syncedAt": "2026-10-10T01:41:25.825Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,26 +22,26 @@
       "wins": 27,
       "losses": 7,
       "winrate": 79.4,
-      "streak": 1,
-      "avgKda": 5.3,
-      "avgKills": 5.6,
-      "avgDeaths": 2.6,
-      "avgAssists": 4.7,
-      "avgCsPerMin": 7.4,
+      "streak": 2,
+      "avgKda": 4.8,
+      "avgKills": 5.4,
+      "avgDeaths": 2.9,
+      "avgAssists": 5.3,
+      "avgCsPerMin": 7.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Corki",
           "championId": "42",
-          "games": 5,
-          "wins": 4,
+          "games": 4,
+          "wins": 3,
           "losses": 1,
-          "winrate": 80,
-          "kills": 24,
-          "deaths": 4,
-          "assists": 8,
-          "kda": 8,
-          "csPerMin": 7.6
+          "winrate": 75,
+          "kills": 15,
+          "deaths": 3,
+          "assists": 5,
+          "kda": 6.7,
+          "csPerMin": 7.2
         },
         {
           "championName": "Camille",
@@ -68,6 +68,19 @@
           "assists": 11,
           "kda": 3,
           "csPerMin": 7.7
+        },
+        {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 8,
+          "deaths": 12,
+          "assists": 25,
+          "kda": 2.8,
+          "csPerMin": 7.6
         },
         {
           "championName": "Karma",
@@ -135,19 +148,6 @@
           "csPerMin": 8.6
         },
         {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 5,
-          "assists": 9,
-          "kda": 2.4,
-          "csPerMin": 8.3
-        },
-        {
           "championName": "Ezreal",
           "championId": "81",
           "games": 1,
@@ -162,6 +162,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU9ZO6gwbhNLR2tCt20WZlnqfOWGFT4JKs=",
+          "gameCreation": 1791596357000,
+          "gameDurationSeconds": 2247,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 20,
+          "role": "TOP",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 16,
+          "kda": 3,
+          "cs": 258,
+          "csPerMin": 6.9,
+          "killParticipationPct": 0,
+          "damageDealt": 41159,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            6695,
+            3042,
+            6699,
+            3133,
+            3009,
+            6692
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWwWzLvF81zlApiBcNReekcpLfUMQWa48A=",
           "gameCreation": 1791570848000,
@@ -813,43 +848,10 @@
             1086
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUVl0MS1UxbONhjAzMiM1dArjLHMgNTaTY=",
-          "gameCreation": 1791390174000,
-          "gameDurationSeconds": 913,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Corki",
-          "championId": "42",
-          "champLevel": 13,
-          "role": "TOP",
-          "kills": 9,
-          "deaths": 1,
-          "assists": 3,
-          "kda": 12,
-          "cs": 139,
-          "csPerMin": 9.1,
-          "killParticipationPct": 0,
-          "damageDealt": 16700,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            3078,
-            3004,
-            1001,
-            3155
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (432 LP)",
-      "analystSummary": "Myrwn: MASTER I 432 LP · 20 partidas consultadas · 79.4% WR · KDA medio 5.3.",
+      "analystSummary": "Myrwn: MASTER I 432 LP · 20 partidas consultadas · 79.4% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1002,12 +1004,12 @@
       "wins": 29,
       "losses": 5,
       "winrate": 85.3,
-      "streak": 2,
-      "avgKda": 7.1,
-      "avgKills": 7.4,
+      "streak": 3,
+      "avgKda": 7.3,
+      "avgKills": 7.5,
       "avgDeaths": 2.5,
-      "avgAssists": 7.1,
-      "avgCsPerMin": 2.4,
+      "avgAssists": 7.8,
+      "avgCsPerMin": 2.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1037,17 +1039,17 @@
           "csPerMin": 8.8
         },
         {
-          "championName": "Jarvan IV",
-          "championId": "59",
-          "games": 2,
-          "wins": 2,
+          "championName": "Lillia",
+          "championId": "876",
+          "games": 1,
+          "wins": 1,
           "losses": 0,
           "winrate": 100,
-          "kills": 18,
-          "deaths": 9,
-          "assists": 24,
-          "kda": 4.7,
-          "csPerMin": 1.2
+          "kills": 13,
+          "deaths": 4,
+          "assists": 20,
+          "kda": 8.3,
+          "csPerMin": 1.5
         },
         {
           "championName": "Yone",
@@ -1167,6 +1169,19 @@
           "csPerMin": 0.4
         },
         {
+          "championName": "Jarvan IV",
+          "championId": "59",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 5,
+          "assists": 18,
+          "kda": 5,
+          "csPerMin": 1.9
+        },
+        {
           "championName": "Pantheon",
           "championId": "80",
           "games": 1,
@@ -1207,6 +1222,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU9ZO6gwbhNLR2tCt20WZlnqfOWGFT4JKs=",
+          "gameCreation": 1791596357000,
+          "gameDurationSeconds": 2247,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lillia",
+          "championId": "876",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 13,
+          "deaths": 4,
+          "assists": 20,
+          "kda": 8.25,
+          "cs": 58,
+          "csPerMin": 1.5,
+          "killParticipationPct": 0,
+          "damageDealt": 39784,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3152,
+            3111,
+            6653,
+            4633,
+            8010,
+            3157
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWwWzLvF81zlApiBcNReekcpLfUMQWa48A=",
           "gameCreation": 1791570848000,
@@ -1849,44 +1899,10 @@
             6699
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXdfABkCmJ0PfzhVHn_0gh6odYjyRVlbyI=",
-          "gameCreation": 1791349162000,
-          "gameDurationSeconds": 1598,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jarvan IV",
-          "championId": "59",
-          "champLevel": 15,
-          "role": "JUNGLE",
-          "kills": 11,
-          "deaths": 4,
-          "assists": 6,
-          "kda": 4.25,
-          "cs": 12,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 24407,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2422,
-            3035,
-            3814,
-            6699,
-            2520
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (527 LP)",
-      "analystSummary": "Elyoya: MASTER I 527 LP · 20 partidas consultadas · 85.3% WR · KDA medio 7.1.",
+      "analystSummary": "Elyoya: MASTER I 527 LP · 20 partidas consultadas · 85.3% WR · KDA medio 7.3.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
