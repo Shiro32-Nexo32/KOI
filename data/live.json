@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T17:01:27.326Z",
-  "syncedAt": "2026-10-11T17:01:27.326Z",
+  "generatedAt": "2026-10-11T17:11:23.004Z",
+  "syncedAt": "2026-10-11T17:11:23.004Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2058,7 +2058,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3900,27 +3900,14 @@
       "wins": 33,
       "losses": 4,
       "winrate": 89.2,
-      "streak": 7,
-      "avgKda": 5.4,
-      "avgKills": 3.4,
-      "avgDeaths": 5,
+      "streak": -1,
+      "avgKda": 5.2,
+      "avgKills": 3.6,
+      "avgDeaths": 5.5,
       "avgAssists": 15.6,
-      "avgCsPerMin": 0.9,
+      "avgCsPerMin": 1,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Milio",
-          "championId": "902",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 0,
-          "deaths": 6,
-          "assists": 28,
-          "kda": 4.7,
-          "csPerMin": 0.8
-        },
         {
           "championName": "Neeko",
           "championId": "518",
@@ -3959,6 +3946,19 @@
           "assists": 39,
           "kda": 2.2,
           "csPerMin": 1.1
+        },
+        {
+          "championName": "Milio",
+          "championId": "902",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 0,
+          "deaths": 4,
+          "assists": 15,
+          "kda": 3.8,
+          "csPerMin": 0.9
         },
         {
           "championName": "Galio",
@@ -4078,6 +4078,19 @@
           "csPerMin": 0.8
         },
         {
+          "championName": "Zoe",
+          "championId": "142",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 5,
+          "deaths": 11,
+          "assists": 14,
+          "kda": 1.7,
+          "csPerMin": 1.4
+        },
+        {
           "championName": "Nautilus",
           "championId": "111",
           "games": 1,
@@ -4105,6 +4118,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVVbfwGZrgIjHk78oQ82my0JwHYpjAwfyk=",
+          "gameCreation": 1791738553000,
+          "gameDurationSeconds": 2349,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Zoe",
+          "championId": "142",
+          "champLevel": 16,
+          "role": "SUPPORT",
+          "kills": 5,
+          "deaths": 11,
+          "assists": 14,
+          "kda": 1.73,
+          "cs": 55,
+          "csPerMin": 1.4,
+          "killParticipationPct": 0,
+          "damageDealt": 22559,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3871,
+            2065,
+            3190,
+            3158,
+            4005,
+            4628
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVQKO1lcsXfihT4nMU24eHvahBYwsrzz6s=",
           "gameCreation": 1791695400000,
@@ -4725,44 +4773,10 @@
             1052
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVFacD2aMIpX3dZD_T002ZjhDShLwEQ4Fs=",
-          "gameCreation": 1791427690000,
-          "gameDurationSeconds": 964,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Milio",
-          "championId": "902",
-          "champLevel": 9,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 2,
-          "assists": 13,
-          "kda": 6.5,
-          "cs": 12,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 4876,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3870,
-            6620,
-            3158,
-            4642,
-            2022
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (687 LP)",
-      "analystSummary": "Alvaro: MASTER I 687 LP · 19 partidas consultadas · 89.2% WR · KDA medio 5.4.",
+      "analystSummary": "Alvaro: MASTER I 687 LP · 19 partidas consultadas · 89.2% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4927,7 +4941,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
