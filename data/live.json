@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T05:16:25.059Z",
-  "syncedAt": "2026-10-11T05:16:25.059Z",
+  "generatedAt": "2026-10-11T16:06:25.876Z",
+  "syncedAt": "2026-10-11T16:06:25.876Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2803,11 +2803,11 @@
       "wins": 36,
       "losses": 6,
       "winrate": 85.7,
-      "streak": 7,
-      "avgKda": 6.9,
-      "avgKills": 9.9,
-      "avgDeaths": 3.8,
-      "avgAssists": 6.2,
+      "streak": 8,
+      "avgKda": 6.6,
+      "avgKills": 9.5,
+      "avgDeaths": 3.7,
+      "avgAssists": 6.3,
       "avgCsPerMin": 9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -2827,15 +2827,15 @@
         {
           "championName": "Draven",
           "championId": "119",
-          "games": 4,
-          "wins": 3,
+          "games": 3,
+          "wins": 2,
           "losses": 1,
-          "winrate": 75,
-          "kills": 42,
-          "deaths": 18,
-          "assists": 17,
-          "kda": 3.3,
-          "csPerMin": 8.7
+          "winrate": 66.7,
+          "kills": 28,
+          "deaths": 17,
+          "assists": 14,
+          "kda": 2.5,
+          "csPerMin": 8.3
         },
         {
           "championName": "Lucian",
@@ -2862,6 +2862,19 @@
           "assists": 30,
           "kda": 14.3,
           "csPerMin": 9
+        },
+        {
+          "championName": "Yunara",
+          "championId": "804",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 0,
+          "assists": 6,
+          "kda": 11,
+          "csPerMin": 10
         },
         {
           "championName": "Tristana",
@@ -2956,6 +2969,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVt3JHo03sIj4F0qsm6tCkjWcUOGLH0FK8=",
+          "gameCreation": 1791734595000,
+          "gameDurationSeconds": 1066,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Yunara",
+          "championId": "804",
+          "champLevel": 12,
+          "role": "ADC",
+          "kills": 5,
+          "deaths": 0,
+          "assists": 6,
+          "kda": 11,
+          "cs": 177,
+          "csPerMin": 10,
+          "killParticipationPct": 0,
+          "damageDealt": 12542,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            2055,
+            1018,
+            1038,
+            3085,
+            3032
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVQKO1lcsXfihT4nMU24eHvahBYwsrzz6s=",
           "gameCreation": 1791695400000,
@@ -3615,43 +3663,10 @@
             1086
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWBxPvMxyahUzgaNTQJoGrMIVzrrhrTAq0=",
-          "gameCreation": 1791412597000,
-          "gameDurationSeconds": 1018,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Draven",
-          "championId": "119",
-          "champLevel": 12,
-          "role": "ADC",
-          "kills": 14,
-          "deaths": 1,
-          "assists": 3,
-          "kda": 17,
-          "cs": 167,
-          "csPerMin": 9.8,
-          "killParticipationPct": 0,
-          "damageDealt": 26121,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            3046,
-            3036,
-            2523,
-            6697
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (732 LP)",
-      "analystSummary": "Supa: MASTER I 732 LP · 20 partidas consultadas · 85.7% WR · KDA medio 6.9.",
+      "analystSummary": "Supa: MASTER I 732 LP · 20 partidas consultadas · 85.7% WR · KDA medio 6.6.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3825,7 +3840,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -4873,7 +4888,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
