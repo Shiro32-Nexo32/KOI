@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T18:41:27.758Z",
-  "syncedAt": "2026-10-10T18:41:27.758Z",
+  "generatedAt": "2026-10-11T05:11:19.460Z",
+  "syncedAt": "2026-10-11T05:11:19.460Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2803,11 +2803,11 @@
       "wins": 35,
       "losses": 6,
       "winrate": 85.4,
-      "streak": 6,
+      "streak": 7,
       "avgKda": 6.9,
       "avgKills": 9.9,
-      "avgDeaths": 3.7,
-      "avgAssists": 6,
+      "avgDeaths": 3.8,
+      "avgAssists": 6.2,
       "avgCsPerMin": 9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -2827,15 +2827,28 @@
         {
           "championName": "Draven",
           "championId": "119",
-          "games": 5,
-          "wins": 4,
+          "games": 4,
+          "wins": 3,
           "losses": 1,
-          "winrate": 80,
-          "kills": 47,
-          "deaths": 19,
-          "assists": 19,
-          "kda": 3.5,
+          "winrate": 75,
+          "kills": 42,
+          "deaths": 18,
+          "assists": 17,
+          "kda": 3.3,
           "csPerMin": 8.7
+        },
+        {
+          "championName": "Lucian",
+          "championId": "236",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 15,
+          "deaths": 4,
+          "assists": 7,
+          "kda": 5.5,
+          "csPerMin": 9.2
         },
         {
           "championName": "Jhin",
@@ -2929,19 +2942,6 @@
           "csPerMin": 9.9
         },
         {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 9,
-          "deaths": 2,
-          "assists": 2,
-          "kda": 5.5,
-          "csPerMin": 8.8
-        },
-        {
           "championName": "Xayah",
           "championId": "498",
           "games": 1,
@@ -2956,6 +2956,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVQKO1lcsXfihT4nMU24eHvahBYwsrzz6s=",
+          "gameCreation": 1791695400000,
+          "gameDurationSeconds": 1388,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lucian",
+          "championId": "236",
+          "champLevel": 13,
+          "role": "ADC",
+          "kills": 6,
+          "deaths": 2,
+          "assists": 5,
+          "kda": 5.5,
+          "cs": 223,
+          "csPerMin": 9.6,
+          "killParticipationPct": 0,
+          "damageDealt": 25051,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3508,
+            6675,
+            2055,
+            1037,
+            1038,
+            1086
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWeHtGE1uoU4UftC3X90kBwZA1UeMbOyf0=",
           "gameCreation": 1791652762000,
@@ -3613,40 +3648,6 @@
             6697
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWoa7SgZSeoFBS4JeB4Y4NVJtpI6LLpd2A=",
-          "gameCreation": 1791411060000,
-          "gameDurationSeconds": 638,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Draven",
-          "championId": "119",
-          "champLevel": 8,
-          "role": "ADC",
-          "kills": 5,
-          "deaths": 1,
-          "assists": 2,
-          "kda": 7,
-          "cs": 93,
-          "csPerMin": 8.7,
-          "killParticipationPct": 0,
-          "damageDealt": 5957,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            6697,
-            1037,
-            1036,
-            1036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (697 LP)",
@@ -3836,14 +3837,27 @@
       "wins": 33,
       "losses": 4,
       "winrate": 89.2,
-      "streak": 6,
-      "avgKda": 5.5,
+      "streak": 7,
+      "avgKda": 5.4,
       "avgKills": 3.4,
       "avgDeaths": 5,
-      "avgAssists": 15.8,
+      "avgAssists": 15.6,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Milio",
+          "championId": "902",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 0,
+          "deaths": 6,
+          "assists": 28,
+          "kda": 4.7,
+          "csPerMin": 0.8
+        },
         {
           "championName": "Neeko",
           "championId": "518",
@@ -3882,19 +3896,6 @@
           "assists": 39,
           "kda": 2.2,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Thresh",
-          "championId": "412",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 0,
-          "deaths": 9,
-          "assists": 38,
-          "kda": 4.2,
-          "csPerMin": 1
         },
         {
           "championName": "Galio",
@@ -3975,6 +3976,19 @@
           "csPerMin": 0.6
         },
         {
+          "championName": "Thresh",
+          "championId": "412",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 0,
+          "deaths": 5,
+          "assists": 19,
+          "kda": 3.8,
+          "csPerMin": 0.7
+        },
+        {
           "championName": "Tahm Kench",
           "championId": "223",
           "games": 1,
@@ -3999,19 +4013,6 @@
           "assists": 9,
           "kda": 4.3,
           "csPerMin": 0.8
-        },
-        {
-          "championName": "Milio",
-          "championId": "902",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 0,
-          "deaths": 2,
-          "assists": 13,
-          "kda": 6.5,
-          "csPerMin": 0.7
         },
         {
           "championName": "Nautilus",
@@ -4041,6 +4042,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVQKO1lcsXfihT4nMU24eHvahBYwsrzz6s=",
+          "gameCreation": 1791695400000,
+          "gameDurationSeconds": 1388,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Milio",
+          "championId": "902",
+          "champLevel": 12,
+          "role": "SUPPORT",
+          "kills": 0,
+          "deaths": 4,
+          "assists": 15,
+          "kda": 3.75,
+          "cs": 20,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 4623,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3870,
+            6620,
+            6617,
+            3158
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWeHtGE1uoU4UftC3X90kBwZA1UeMbOyf0=",
           "gameCreation": 1791652762000,
@@ -4662,44 +4696,10 @@
             2022
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWBxPvMxyahUzgaNTQJoGrMIVzrrhrTAq0=",
-          "gameCreation": 1791412597000,
-          "gameDurationSeconds": 1018,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Thresh",
-          "championId": "412",
-          "champLevel": 9,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 4,
-          "assists": 19,
-          "kda": 4.75,
-          "cs": 24,
-          "csPerMin": 1.4,
-          "killParticipationPct": 0,
-          "damageDealt": 6313,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3190,
-            3009,
-            3067,
-            1029
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (687 LP)",
-      "analystSummary": "Alvaro: MASTER I 687 LP · 19 partidas consultadas · 89.2% WR · KDA medio 5.5.",
+      "analystSummary": "Alvaro: MASTER I 687 LP · 19 partidas consultadas · 89.2% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
