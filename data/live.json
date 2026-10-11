@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T16:11:27.242Z",
-  "syncedAt": "2026-10-11T16:11:27.242Z",
+  "generatedAt": "2026-10-11T16:51:21.586Z",
+  "syncedAt": "2026-10-11T16:51:21.587Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2803,12 +2803,12 @@
       "wins": 37,
       "losses": 6,
       "winrate": 86,
-      "streak": 8,
-      "avgKda": 6.6,
-      "avgKills": 9.5,
+      "streak": 9,
+      "avgKda": 6.9,
+      "avgKills": 9.7,
       "avgDeaths": 3.7,
-      "avgAssists": 6.3,
-      "avgCsPerMin": 9,
+      "avgAssists": 7,
+      "avgCsPerMin": 9.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -2838,17 +2838,17 @@
           "csPerMin": 8.3
         },
         {
-          "championName": "Lucian",
-          "championId": "236",
+          "championName": "Yunara",
+          "championId": "804",
           "games": 2,
           "wins": 2,
           "losses": 0,
           "winrate": 100,
-          "kills": 15,
-          "deaths": 4,
-          "assists": 7,
-          "kda": 5.5,
-          "csPerMin": 9.2
+          "kills": 17,
+          "deaths": 2,
+          "assists": 20,
+          "kda": 18.5,
+          "csPerMin": 9.8
         },
         {
           "championName": "Jhin",
@@ -2864,17 +2864,17 @@
           "csPerMin": 9
         },
         {
-          "championName": "Yunara",
-          "championId": "804",
+          "championName": "Lucian",
+          "championId": "236",
           "games": 1,
           "wins": 1,
           "losses": 0,
           "winrate": 100,
-          "kills": 5,
-          "deaths": 0,
-          "assists": 6,
-          "kda": 11,
-          "csPerMin": 10
+          "kills": 6,
+          "deaths": 2,
+          "assists": 5,
+          "kda": 5.5,
+          "csPerMin": 9.6
         },
         {
           "championName": "Tristana",
@@ -2969,6 +2969,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU5LbYFZdEMItpWOwOxDnCbjkRUMEr6eTQ=",
+          "gameCreation": 1791737408000,
+          "gameDurationSeconds": 1305,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Yunara",
+          "championId": "804",
+          "champLevel": 13,
+          "role": "ADC",
+          "kills": 12,
+          "deaths": 2,
+          "assists": 14,
+          "kda": 13,
+          "cs": 206,
+          "csPerMin": 9.5,
+          "killParticipationPct": 0,
+          "damageDealt": 32915,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3032,
+            3085,
+            2055,
+            1086,
+            3036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVt3JHo03sIj4F0qsm6tCkjWcUOGLH0FK8=",
           "gameCreation": 1791734595000,
@@ -3629,44 +3663,10 @@
             1018
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVFacD2aMIpX3dZD_T002ZjhDShLwEQ4Fs=",
-          "gameCreation": 1791427690000,
-          "gameDurationSeconds": 964,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lucian",
-          "championId": "236",
-          "champLevel": 10,
-          "role": "ADC",
-          "kills": 9,
-          "deaths": 2,
-          "assists": 2,
-          "kda": 5.5,
-          "cs": 141,
-          "csPerMin": 8.8,
-          "killParticipationPct": 0,
-          "damageDealt": 22836,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3508,
-            6675,
-            1037,
-            1038,
-            1086
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (767 LP)",
-      "analystSummary": "Supa: MASTER I 767 LP · 20 partidas consultadas · 86% WR · KDA medio 6.6.",
+      "analystSummary": "Supa: MASTER I 767 LP · 20 partidas consultadas · 86% WR · KDA medio 6.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
