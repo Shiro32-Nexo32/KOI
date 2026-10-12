@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:56:25.502Z",
-  "syncedAt": "2026-10-12T04:56:25.502Z",
+  "generatedAt": "2026-10-12T05:11:22.871Z",
+  "syncedAt": "2026-10-12T05:11:22.871Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3771,12 +3771,12 @@
       "wins": 36,
       "losses": 5,
       "winrate": 87.8,
-      "streak": 2,
-      "avgKda": 5.4,
-      "avgKills": 3.2,
+      "streak": 3,
+      "avgKda": 5.3,
+      "avgKills": 3.5,
       "avgDeaths": 5.3,
-      "avgAssists": 16.3,
-      "avgCsPerMin": 1,
+      "avgAssists": 16.2,
+      "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3830,6 +3830,19 @@
           "assists": 23,
           "kda": 14,
           "csPerMin": 1.3
+        },
+        {
+          "championName": "Pyke",
+          "championId": "555",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 4,
+          "assists": 10,
+          "kda": 3.8,
+          "csPerMin": 0.8
         },
         {
           "championName": "Milio",
@@ -3923,19 +3936,6 @@
           "csPerMin": 0.7
         },
         {
-          "championName": "Tahm Kench",
-          "championId": "223",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 0,
-          "deaths": 3,
-          "assists": 13,
-          "kda": 4.3,
-          "csPerMin": 1
-        },
-        {
           "championName": "Zoe",
           "championId": "142",
           "games": 1,
@@ -3976,6 +3976,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUmG2FTlFpNrCMrJTYNasCT14y3hlNe7q4=",
+          "gameCreation": 1791781664000,
+          "gameDurationSeconds": 915,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Pyke",
+          "championId": "555",
+          "champLevel": 8,
+          "role": "SUPPORT",
+          "kills": 5,
+          "deaths": 4,
+          "assists": 10,
+          "kda": 3.75,
+          "cs": 12,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 6999,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3877,
+            2031,
+            3179,
+            3009,
+            1036,
+            1036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWjdYHLDHl1pNnQf1TpnfikdjsFwaC21f0=",
           "gameCreation": 1791744228000,
@@ -4599,44 +4634,10 @@
             3067
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWlH4CKhRYRlLY0CUzj4LKYzHrPE5tu9og=",
-          "gameCreation": 1791476819000,
-          "gameDurationSeconds": 988,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Tahm Kench",
-          "championId": "223",
-          "champLevel": 8,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 3,
-          "assists": 13,
-          "kda": 4.33,
-          "cs": 16,
-          "csPerMin": 1,
-          "killParticipationPct": 0,
-          "damageDealt": 4258,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3190,
-            1011,
-            1011,
-            2422
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (767 LP)",
-      "analystSummary": "Alvaro: MASTER I 767 LP · 19 partidas consultadas · 87.8% WR · KDA medio 5.4.",
+      "analystSummary": "Alvaro: MASTER I 767 LP · 19 partidas consultadas · 87.8% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
