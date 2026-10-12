@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T03:26:27.255Z",
-  "syncedAt": "2026-10-12T03:26:27.255Z",
+  "generatedAt": "2026-10-12T04:31:24.097Z",
+  "syncedAt": "2026-10-12T04:31:24.097Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,10 +22,10 @@
       "wins": 34,
       "losses": 9,
       "winrate": 79.1,
-      "streak": 4,
-      "avgKda": 5.7,
-      "avgKills": 6.8,
-      "avgDeaths": 3.6,
+      "streak": -1,
+      "avgKda": 5.3,
+      "avgKills": 6.5,
+      "avgDeaths": 3.9,
       "avgAssists": 6.8,
       "avgCsPerMin": 7.4,
       "avgKillParticipationPct": 0,
@@ -44,30 +44,17 @@
           "csPerMin": 7.3
         },
         {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 3,
-          "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 28,
-          "deaths": 7,
-          "assists": 9,
-          "kda": 5.3,
-          "csPerMin": 8.2
-        },
-        {
           "championName": "Jayce",
           "championId": "126",
-          "games": 2,
+          "games": 3,
           "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 8,
-          "deaths": 11,
-          "assists": 22,
-          "kda": 2.7,
-          "csPerMin": 8.3
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 10,
+          "deaths": 17,
+          "assists": 24,
+          "kda": 2,
+          "csPerMin": 8.2
         },
         {
           "championName": "Zaahen",
@@ -81,6 +68,19 @@
           "assists": 8,
           "kda": 16,
           "csPerMin": 9.4
+        },
+        {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 20,
+          "deaths": 6,
+          "assists": 8,
+          "kda": 4.7,
+          "csPerMin": 8.3
         },
         {
           "championName": "Ahri",
@@ -175,6 +175,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVq8s80g2U8MDhdbkGqjkCXoVw_YspDB6A=",
+          "gameCreation": 1791779304000,
+          "gameDurationSeconds": 1453,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 14,
+          "role": "TOP",
+          "kills": 2,
+          "deaths": 6,
+          "assists": 2,
+          "kda": 0.67,
+          "cs": 193,
+          "csPerMin": 8,
+          "killParticipationPct": 0,
+          "damageDealt": 21245,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            1055,
+            2055,
+            3158,
+            3042,
+            3071
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWE9vSbhqnUPkLCtGzkQsA1hGCB_ru8Y3U=",
           "gameCreation": 1791742899000,
@@ -757,44 +791,10 @@
             4642
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX645dcCxh6jHn-T50ctgQ-7QJMPNqwaGg=",
-          "gameCreation": 1791477204000,
-          "gameDurationSeconds": 914,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 12,
-          "role": "TOP",
-          "kills": 8,
-          "deaths": 1,
-          "assists": 1,
-          "kda": 9,
-          "cs": 123,
-          "csPerMin": 8.1,
-          "killParticipationPct": 0,
-          "damageDealt": 10475,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            3074,
-            2055,
-            1055,
-            1001,
-            3078
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (627 LP)",
-      "analystSummary": "Myrwn: MASTER I 627 LP · 18 partidas consultadas · 79.1% WR · KDA medio 5.7.",
+      "analystSummary": "Myrwn: MASTER I 627 LP · 18 partidas consultadas · 79.1% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1004,7 +1004,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1028,39 +1028,39 @@
       "wins": 32,
       "losses": 5,
       "winrate": 86.5,
-      "streak": 5,
+      "streak": 6,
       "avgKda": 6.8,
-      "avgKills": 6.9,
-      "avgDeaths": 2.6,
-      "avgAssists": 8.1,
-      "avgCsPerMin": 2.6,
+      "avgKills": 7.1,
+      "avgDeaths": 2.4,
+      "avgAssists": 7.4,
+      "avgCsPerMin": 2.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
-          "championName": "Jarvan IV",
-          "championId": "59",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 16,
-          "deaths": 7,
-          "assists": 32,
-          "kda": 6.9,
-          "csPerMin": 1.4
-        },
-        {
           "championName": "Kha'Zix",
           "championId": "121",
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "losses": 1,
-          "winrate": 50,
-          "kills": 5,
-          "deaths": 6,
+          "winrate": 66.7,
+          "kills": 14,
+          "deaths": 9,
+          "assists": 21,
+          "kda": 3.9,
+          "csPerMin": 0.7
+        },
+        {
+          "championName": "Jarvan IV",
+          "championId": "59",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 9,
+          "deaths": 2,
           "assists": 14,
-          "kda": 3.2,
-          "csPerMin": 0.8
+          "kda": 11.5,
+          "csPerMin": 0.9
         },
         {
           "championName": "Ezreal",
@@ -1246,6 +1246,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVgGALZqhK6L_JtJMiD5P9Kyc6jir9jQKA=",
+          "gameCreation": 1791779204000,
+          "gameDurationSeconds": 1650,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kha'Zix",
+          "championId": "121",
+          "champLevel": 16,
+          "role": "JUNGLE",
+          "kills": 9,
+          "deaths": 3,
+          "assists": 7,
+          "kda": 5.33,
+          "cs": 15,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 23422,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3036,
+            2055,
+            3158,
+            6695,
+            2520,
+            6699
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWE9vSbhqnUPkLCtGzkQsA1hGCB_ru8Y3U=",
           "gameCreation": 1791742899000,
@@ -1820,41 +1855,6 @@
             3100,
             1001,
             2421
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXZ9sUT8TbqZMlIOMhZ1QAtw1HpSWJfBs8=",
-          "gameCreation": 1791409778000,
-          "gameDurationSeconds": 1478,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jarvan IV",
-          "championId": "59",
-          "champLevel": 15,
-          "role": "JUNGLE",
-          "kills": 7,
-          "deaths": 5,
-          "assists": 18,
-          "kda": 5,
-          "cs": 47,
-          "csPerMin": 1.9,
-          "killParticipationPct": 0,
-          "damageDealt": 17618,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            3071,
-            3047,
-            6692,
-            1028,
-            6333
           ],
           "tags": []
         }
@@ -2750,7 +2750,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3824,7 +3824,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
