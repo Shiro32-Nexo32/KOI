@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T18:51:25.836Z",
-  "syncedAt": "2026-10-11T18:51:25.837Z",
+  "generatedAt": "2026-10-12T03:26:27.255Z",
+  "syncedAt": "2026-10-12T03:26:27.255Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -23,11 +23,11 @@
       "losses": 9,
       "winrate": 79.1,
       "streak": 4,
-      "avgKda": 5.9,
+      "avgKda": 5.7,
       "avgKills": 6.8,
-      "avgDeaths": 3.5,
-      "avgAssists": 6.6,
-      "avgCsPerMin": 7.6,
+      "avgDeaths": 3.6,
+      "avgAssists": 6.8,
+      "avgCsPerMin": 7.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -81,19 +81,6 @@
           "assists": 8,
           "kda": 16,
           "csPerMin": 9.4
-        },
-        {
-          "championName": "Corki",
-          "championId": "42",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 6,
-          "deaths": 1,
-          "assists": 3,
-          "kda": 9,
-          "csPerMin": 5.3
         },
         {
           "championName": "Ahri",
@@ -172,6 +159,19 @@
           "assists": 4,
           "kda": 2.3,
           "csPerMin": 8.1
+        },
+        {
+          "championName": "Corki",
+          "championId": "42",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "kda": 0,
+          "csPerMin": 0
         }
       ],
       "recentMatches": [
@@ -791,45 +791,10 @@
             3078
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWrQWeFsYMnmDpUawbDuvYhieyzbEkgBrA=",
-          "gameCreation": 1791474526000,
-          "gameDurationSeconds": 1511,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Corki",
-          "championId": "42",
-          "champLevel": 18,
-          "role": "TOP",
-          "kills": 6,
-          "deaths": 1,
-          "assists": 3,
-          "kda": 9,
-          "cs": 266,
-          "csPerMin": 10.6,
-          "killParticipationPct": 0,
-          "damageDealt": 33209,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            1086,
-            6676,
-            3047,
-            6670,
-            3078,
-            3042
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (627 LP)",
-      "analystSummary": "Myrwn: MASTER I 627 LP · 19 partidas consultadas · 79.1% WR · KDA medio 5.9.",
+      "analystSummary": "Myrwn: MASTER I 627 LP · 18 partidas consultadas · 79.1% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1064,11 +1029,11 @@
       "losses": 5,
       "winrate": 86.5,
       "streak": 5,
-      "avgKda": 6.7,
-      "avgKills": 7.2,
+      "avgKda": 6.8,
+      "avgKills": 6.9,
       "avgDeaths": 2.6,
-      "avgAssists": 8,
-      "avgCsPerMin": 2.9,
+      "avgAssists": 8.1,
+      "avgCsPerMin": 2.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1083,19 +1048,6 @@
           "assists": 32,
           "kda": 6.9,
           "csPerMin": 1.4
-        },
-        {
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 17,
-          "deaths": 8,
-          "assists": 16,
-          "kda": 4.1,
-          "csPerMin": 8.8
         },
         {
           "championName": "Kha'Zix",
@@ -1135,6 +1087,19 @@
           "assists": 20,
           "kda": 8.3,
           "csPerMin": 1.5
+        },
+        {
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 6,
+          "deaths": 5,
+          "assists": 9,
+          "kda": 3,
+          "csPerMin": 8.5
         },
         {
           "championName": "Yone",
@@ -1892,45 +1857,10 @@
             6333
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWsA3P9Sj5MUy5q0JvgU1X3z1naJqsQVbo=",
-          "gameCreation": 1791407928000,
-          "gameDurationSeconds": 1445,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 11,
-          "deaths": 3,
-          "assists": 7,
-          "kda": 6,
-          "cs": 217,
-          "csPerMin": 9,
-          "killParticipationPct": 0,
-          "damageDealt": 30237,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerBarrier"
-          ],
-          "items": [
-            2055,
-            3124,
-            6672,
-            1086,
-            3115,
-            3089
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (667 LP)",
-      "analystSummary": "Elyoya: MASTER I 667 LP · 19 partidas consultadas · 86.5% WR · KDA medio 6.7.",
+      "analystSummary": "Elyoya: MASTER I 667 LP · 18 partidas consultadas · 86.5% WR · KDA medio 6.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
