@@ -1,1 +1,357 @@
 @import "tailwindcss";
+
+/*
+ * KOI visual identity layer
+ * Presentation only: no React state, data, navigation, or tracker behavior changes.
+ */
+
+:root {
+  color-scheme: dark;
+  --koi-ink: #070b19;
+  --koi-panel: #0c1428;
+  --koi-panel-raised: #101c34;
+  --koi-line: rgba(116, 153, 202, .18);
+  --koi-cyan: #50e6f2;
+  --koi-blue: #3988ff;
+  --koi-violet: #8c65ff;
+  --koi-pink: #f05ac8;
+  --koi-gold: #f4c76b;
+  --koi-text: #f0f5ff;
+  --koi-muted: #94a6c4;
+}
+
+html {
+  min-height: 100%;
+  background: var(--koi-ink);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--koi-text) !important;
+  background:
+    radial-gradient(ellipse at 8% -8%, rgba(57, 136, 255, .15), transparent 35rem),
+    radial-gradient(ellipse at 96% 12%, rgba(140, 101, 255, .10), transparent 31rem),
+    radial-gradient(ellipse at 50% 100%, rgba(80, 230, 242, .045), transparent 45rem),
+    linear-gradient(155deg, #080d1d 0%, #070b18 52%, #090e20 100%) !important;
+  font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: -.012em;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .2;
+  background-image: radial-gradient(rgba(143, 174, 220, .22) .65px, transparent .65px);
+  background-size: 21px 21px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
+
+::selection {
+  color: #07111e !important;
+  background: var(--koi-cyan) !important;
+}
+
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  transition:
+    color .18s ease,
+    background-color .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease,
+    transform .18s ease;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--koi-cyan);
+  outline-offset: 3px;
+}
+
+/* KOI masthead */
+header.sticky {
+  background: rgba(6, 10, 24, .88) !important;
+  border-bottom: 1px solid rgba(80, 230, 242, .19) !important;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, .24), 0 1px 0 rgba(140, 101, 255, .08);
+  backdrop-filter: blur(22px) saturate(145%) !important;
+}
+
+header.sticky > div {
+  max-width: 1500px;
+  min-height: 76px;
+}
+
+header.sticky button:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #f6f8ff !important;
+  font-size: 0;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+header.sticky button:first-child::before {
+  content: "K";
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(80, 230, 242, .72);
+  border-radius: 12px 4px 12px 4px;
+  color: #07111e;
+  background: linear-gradient(135deg, var(--koi-cyan), #72b8ff 58%, #bba0ff);
+  box-shadow: 0 0 24px rgba(80, 230, 242, .16), inset 0 1px 0 rgba(255,255,255,.65);
+  font-size: 21px;
+  font-weight: 1000;
+  font-style: italic;
+  letter-spacing: -.08em;
+}
+
+header.sticky button:first-child::after {
+  content: "KOI";
+  font-size: 17px;
+  letter-spacing: .19em;
+  font-weight: 900;
+}
+
+header.sticky button:first-child:hover::before {
+  transform: rotate(-4deg) scale(1.04);
+  box-shadow: 0 0 30px rgba(80, 230, 242, .27);
+}
+
+header.sticky nav button {
+  position: relative;
+  padding: 9px 0;
+  color: #91a2c1 !important;
+  letter-spacing: .015em;
+}
+
+header.sticky nav button:hover {
+  color: white !important;
+}
+
+header.sticky nav button.text-amber-400 {
+  color: var(--koi-cyan) !important;
+  text-decoration: none !important;
+}
+
+header.sticky nav button.text-amber-400::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--koi-cyan), var(--koi-violet));
+  box-shadow: 0 0 14px rgba(80, 230, 242, .35);
+}
+
+/* Consistent glass panels instead of generic flat dashboard cards */
+.rounded-2xl.border,
+.rounded-xl.border,
+.rounded-lg.border {
+  border-color: var(--koi-line) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .10);
+}
+
+.rounded-2xl.border.bg-slate-900,
+.rounded-2xl.border.bg-slate-900\/70,
+.rounded-2xl.border.bg-slate-900\/60,
+.rounded-xl.border.bg-slate-900,
+.rounded-xl.border.bg-slate-900\/50,
+.rounded-xl.border.bg-slate-950\/60 {
+  background-color: rgba(12, 20, 40, .78) !important;
+}
+
+.rounded-2xl.border.bg-gradient-to-br,
+.rounded-xl.border.bg-gradient-to-br {
+  background-image:
+    radial-gradient(ellipse at 100% 0%, rgba(80, 230, 242, .09), transparent 42%),
+    linear-gradient(135deg, rgba(15, 28, 53, .97), rgba(7, 12, 27, .98)) !important;
+  border-color: rgba(105, 150, 211, .23) !important;
+}
+
+.rounded-2xl, .rounded-xl {
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .13);
+}
+
+.rounded-2xl.border:hover,
+.rounded-xl.border:hover {
+  border-color: rgba(80, 230, 242, .32) !important;
+}
+
+/* Brand accents: cyan and violet lead; gold remains a small competitive highlight */
+.text-amber-400, .text-amber-300 {
+  color: var(--koi-cyan) !important;
+}
+
+.text-cyan-400, .text-cyan-300 {
+  color: #66eaf3 !important;
+}
+
+.bg-amber-500 {
+  background-color: var(--koi-cyan) !important;
+}
+
+.text-slate-950.bg-amber-500,
+.bg-amber-500.text-slate-950 {
+  color: #07111e !important;
+}
+
+.border-amber-500, .border-amber-500\/30, .border-amber-500\/20 {
+  border-color: rgba(80, 230, 242, .43) !important;
+}
+
+.bg-amber-500\/10 {
+  background-color: rgba(80, 230, 242, .10) !important;
+}
+
+.bg-amber-500\/5 {
+  background-color: rgba(80, 230, 242, .06) !important;
+}
+
+.hover\\:border-amber-500:hover {
+  border-color: var(--koi-cyan) !important;
+}
+
+.text-emerald-400, .text-emerald-300 {
+  color: #64e9bd !important;
+}
+
+/* Overview hero: the team's own atmosphere, not a stock analytics template */
+section.relative.overflow-hidden.rounded-2xl {
+  min-height: 270px;
+  border-color: rgba(80, 230, 242, .25) !important;
+  background:
+    linear-gradient(105deg, rgba(7, 14, 31, .97) 0%, rgba(12, 24, 49, .92) 53%, rgba(30, 19, 57, .82) 100%) !important;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .24), inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+section.relative.overflow-hidden.rounded-2xl::after {
+  content: "MKOI";
+  position: absolute;
+  right: clamp(16px, 5vw, 76px);
+  bottom: -34px;
+  color: rgba(140, 180, 236, .035);
+  font-size: clamp(100px, 19vw, 250px);
+  font-weight: 1000;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -.1em;
+  pointer-events: none;
+}
+
+section.relative.overflow-hidden.rounded-2xl h1 {
+  letter-spacing: -.055em;
+  text-wrap: balance;
+}
+
+section.relative.overflow-hidden.rounded-2xl h1,
+h2, h3 {
+  text-wrap: balance;
+}
+
+/* Tables, form controls and filter pills */
+input, select, textarea {
+  color: #edf5ff !important;
+  background-color: rgba(5, 10, 23, .82) !important;
+  border-color: rgba(116, 153, 202, .25) !important;
+  border-radius: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #7084a6 !important;
+}
+
+button.bg-slate-900,
+button.bg-slate-900\/60,
+button.bg-slate-950\/70 {
+  border-color: rgba(116, 153, 202, .20);
+}
+
+button.bg-slate-900:hover,
+button.bg-slate-900\/60:hover,
+button.bg-slate-950\/70:hover {
+  border-color: rgba(80, 230, 242, .35) !important;
+}
+
+table {
+  border-color: var(--koi-line);
+}
+
+hr {
+  border-color: var(--koi-line);
+}
+
+/* Footer as a deliberate signature strip */
+footer {
+  background:
+    linear-gradient(180deg, rgba(8, 13, 28, .15), rgba(5, 9, 20, .82)) !important;
+  border-top-color: rgba(80, 230, 242, .15) !important;
+}
+
+footer .font-bold.text-slate-300 {
+  color: #edf6ff !important;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: var(--koi-cyan) !important;
+}
+
+/* Scrollbars */
+* {
+  scrollbar-color: #263c61 #080d1b;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #080d1b;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 2px solid #080d1b;
+  border-radius: 99px;
+  background: linear-gradient(180deg, #2d6689, #4b3d88);
+}
+
+@media (max-width: 640px) {
+  header.sticky > div {
+    min-height: 64px;
+  }
+
+  header.sticky button:first-child::before {
+    width: 34px;
+    height: 34px;
+  }
+
+  header.sticky button:first-child::after {
+    font-size: 15px;
+  }
+
+  section.relative.overflow-hidden.rounded-2xl {
+    min-height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}
