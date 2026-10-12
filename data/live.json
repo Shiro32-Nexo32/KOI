@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:36:23.652Z",
-  "syncedAt": "2026-10-12T04:36:23.652Z",
+  "generatedAt": "2026-10-12T04:56:25.502Z",
+  "syncedAt": "2026-10-12T04:56:25.502Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -23,11 +23,11 @@
       "losses": 10,
       "winrate": 77.3,
       "streak": -1,
-      "avgKda": 5.3,
-      "avgKills": 6.5,
-      "avgDeaths": 3.9,
-      "avgAssists": 6.8,
-      "avgCsPerMin": 7.4,
+      "avgKda": 5.4,
+      "avgKills": 6.6,
+      "avgDeaths": 3.7,
+      "avgAssists": 6.1,
+      "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -133,19 +133,6 @@
           "assists": 7,
           "kda": 7.5,
           "csPerMin": 9.1
-        },
-        {
-          "championName": "Lulu",
-          "championId": "117",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 7,
-          "assists": 20,
-          "kda": 3.4,
-          "csPerMin": 1.1
         },
         {
           "championName": "Aurora",
@@ -757,44 +744,10 @@
             3078
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgV-K9WjmuEWjEts1nBlkUuXkIRktP3zQZw=",
-          "gameCreation": 1791479662000,
-          "gameDurationSeconds": 1511,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lulu",
-          "championId": "117",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 4,
-          "deaths": 7,
-          "assists": 20,
-          "kda": 3.43,
-          "cs": 27,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 9956,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3222,
-            3870,
-            3158,
-            3504,
-            4642
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (602 LP)",
-      "analystSummary": "Myrwn: MASTER I 602 LP · 18 partidas consultadas · 77.3% WR · KDA medio 5.3.",
+      "analystSummary": "Myrwn: MASTER I 602 LP · 17 partidas consultadas · 77.3% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1038,11 +991,11 @@
       "losses": 5,
       "winrate": 86.8,
       "streak": 6,
-      "avgKda": 6.8,
+      "avgKda": 6.7,
       "avgKills": 7.1,
-      "avgDeaths": 2.4,
-      "avgAssists": 7.4,
-      "avgCsPerMin": 2.5,
+      "avgDeaths": 2.6,
+      "avgAssists": 7.7,
+      "avgCsPerMin": 2.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1213,19 +1166,6 @@
           "assists": 5,
           "kda": 6,
           "csPerMin": 1.6
-        },
-        {
-          "championName": "Nidalee",
-          "championId": "76",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 0,
-          "assists": 3,
-          "kda": 9,
-          "csPerMin": 0.4
         },
         {
           "championName": "Lee Sin",
@@ -1834,42 +1774,10 @@
             3142
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXA45jkCeke28goWap7gNF8bPUObNOQabM=",
-          "gameCreation": 1791411543000,
-          "gameDurationSeconds": 911,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Nidalee",
-          "championId": "76",
-          "champLevel": 12,
-          "role": "JUNGLE",
-          "kills": 6,
-          "deaths": 0,
-          "assists": 3,
-          "kda": 9,
-          "cs": 6,
-          "csPerMin": 0.4,
-          "killParticipationPct": 0,
-          "damageDealt": 6854,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3100,
-            1001,
-            2421
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (702 LP)",
-      "analystSummary": "Elyoya: MASTER I 702 LP · 18 partidas consultadas · 86.8% WR · KDA medio 6.8.",
+      "analystSummary": "Elyoya: MASTER I 702 LP · 17 partidas consultadas · 86.8% WR · KDA medio 6.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
