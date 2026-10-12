@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T17:11:21.245Z",
-  "syncedAt": "2026-10-12T17:11:21.246Z",
+  "generatedAt": "2026-10-12T17:36:32.139Z",
+  "syncedAt": "2026-10-12T17:36:32.140Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -986,16 +986,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 677,
-      "wins": 33,
+      "lp": 712,
+      "wins": 34,
       "losses": 6,
-      "winrate": 84.6,
-      "streak": -1,
-      "avgKda": 6.4,
-      "avgKills": 6.4,
+      "winrate": 85,
+      "streak": 1,
+      "avgKda": 7.2,
+      "avgKills": 6.8,
       "avgDeaths": 2.9,
-      "avgAssists": 7.8,
-      "avgCsPerMin": 2.6,
+      "avgAssists": 8.2,
+      "avgCsPerMin": 2.7,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1010,6 +1010,19 @@
           "assists": 21,
           "kda": 3.9,
           "csPerMin": 0.7
+        },
+        {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 18,
+          "deaths": 4,
+          "assists": 17,
+          "kda": 8.8,
+          "csPerMin": 1.1
         },
         {
           "championName": "Jarvan IV",
@@ -1166,35 +1179,43 @@
           "assists": 6,
           "kda": 1.3,
           "csPerMin": 1.3
-        },
-        {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 11,
-          "deaths": 4,
-          "assists": 10,
-          "kda": 5.3,
-          "csPerMin": 1.1
-        },
-        {
-          "championName": "Skarner",
-          "championId": "72",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 0,
-          "deaths": 0,
-          "assists": 0,
-          "kda": 0,
-          "csPerMin": 0
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXEH6K1Y01mJ1RY38BrMtQb4Xw6sjeLDuM=",
+          "gameCreation": 1791826251000,
+          "gameDurationSeconds": 1161,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 7,
+          "deaths": 0,
+          "assists": 7,
+          "kda": 14,
+          "cs": 21,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 10034,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            6692,
+            6610,
+            3156,
+            2422
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgW3bTSrQOX0afesg0DHCYViC5ZeOvJhddM=",
           "gameCreation": 1791824785000,
@@ -1744,40 +1765,10 @@
             1028
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
-          "gameCreation": 1791426953000,
-          "gameDurationSeconds": 112,
-          "queueType": "SOLORANKED",
-          "isRemake": true,
-          "win": false,
-          "championName": "Skarner",
-          "championId": "72",
-          "champLevel": 2,
-          "role": "JUNGLE",
-          "kills": 0,
-          "deaths": 0,
-          "assists": 0,
-          "kda": 0,
-          "cs": 0,
-          "csPerMin": 0,
-          "killParticipationPct": 0,
-          "damageDealt": 0,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            1101
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (677 LP)",
-      "analystSummary": "Elyoya: MASTER I 677 LP · 17 partidas consultadas · 84.6% WR · KDA medio 6.4.",
+      "statusBadge": "MASTER I (712 LP)",
+      "analystSummary": "Elyoya: MASTER I 712 LP · 17 partidas consultadas · 85% WR · KDA medio 7.2.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1940,9 +1931,18 @@
           "wins": 33,
           "losses": 6,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791826570470,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 712,
+          "wins": 34,
+          "losses": 6,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3759,7 +3759,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
