@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T17:36:32.139Z",
-  "syncedAt": "2026-10-12T17:36:32.140Z",
+  "generatedAt": "2026-10-12T18:26:25.689Z",
+  "syncedAt": "2026-10-12T18:26:25.689Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2708,12 +2708,12 @@
       "wins": 38,
       "losses": 7,
       "winrate": 84.4,
-      "streak": -1,
+      "streak": 1,
       "avgKda": 6.7,
-      "avgKills": 10.2,
-      "avgDeaths": 3.9,
-      "avgAssists": 7.3,
-      "avgCsPerMin": 8.9,
+      "avgKills": 9.3,
+      "avgDeaths": 3.8,
+      "avgAssists": 7.5,
+      "avgCsPerMin": 9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -2767,6 +2767,19 @@
           "assists": 20,
           "kda": 18.5,
           "csPerMin": 9.8
+        },
+        {
+          "championName": "Ziggs",
+          "championId": "115",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 8,
+          "deaths": 4,
+          "assists": 13,
+          "kda": 5.3,
+          "csPerMin": 7.8
         },
         {
           "championName": "Lucian",
@@ -2834,19 +2847,6 @@
           "csPerMin": 10.8
         },
         {
-          "championName": "Miss Fortune",
-          "championId": "21",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 26,
-          "deaths": 6,
-          "assists": 8,
-          "kda": 5.7,
-          "csPerMin": 6.8
-        },
-        {
           "championName": "Xayah",
           "championId": "498",
           "games": 1,
@@ -2861,6 +2861,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWsO8ItRGFbUO1jZuiyNyC3atXyWPKoVJ0=",
+          "gameCreation": 1791829395000,
+          "gameDurationSeconds": 1454,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ziggs",
+          "championId": "115",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 8,
+          "deaths": 4,
+          "assists": 13,
+          "kda": 5.25,
+          "cs": 190,
+          "csPerMin": 7.8,
+          "killParticipationPct": 0,
+          "damageDealt": 33555,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerTeleport",
+            "SummonerFlash"
+          ],
+          "items": [
+            6655,
+            3916,
+            3089,
+            4645,
+            1056,
+            4630
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXupg24cVjgjsIHanhIk-r08lHw_cdM0zg=",
           "gameCreation": 1791744094000,
@@ -3518,41 +3553,6 @@
             3032,
             1038,
             1036
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVwIeLfp28iFZyy6aQxtpGLGQ4vDM2pfRA=",
-          "gameCreation": 1791431327000,
-          "gameDurationSeconds": 1926,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Miss Fortune",
-          "championId": "21",
-          "champLevel": 17,
-          "role": "ADC",
-          "kills": 26,
-          "deaths": 6,
-          "assists": 8,
-          "kda": 5.67,
-          "cs": 219,
-          "csPerMin": 6.8,
-          "killParticipationPct": 0,
-          "damageDealt": 58366,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            6676,
-            3072,
-            3026,
-            3031,
-            2523,
-            3036
           ],
           "tags": []
         }
