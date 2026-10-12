@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T05:16:24.118Z",
-  "syncedAt": "2026-10-12T05:16:24.118Z",
+  "generatedAt": "2026-10-12T17:11:21.245Z",
+  "syncedAt": "2026-10-12T17:11:21.246Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -986,15 +986,15 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 702,
+      "lp": 677,
       "wins": 33,
-      "losses": 5,
-      "winrate": 86.8,
-      "streak": 6,
-      "avgKda": 6.7,
-      "avgKills": 7.1,
-      "avgDeaths": 2.6,
-      "avgAssists": 7.7,
+      "losses": 6,
+      "winrate": 84.6,
+      "streak": -1,
+      "avgKda": 6.4,
+      "avgKills": 6.4,
+      "avgDeaths": 2.9,
+      "avgAssists": 7.8,
       "avgCsPerMin": 2.6,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1155,17 +1155,17 @@
           "csPerMin": 0.1
         },
         {
-          "championName": "Rengar",
-          "championId": "107",
+          "championName": "Jayce",
+          "championId": "126",
           "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 19,
-          "deaths": 4,
-          "assists": 5,
-          "kda": 6,
-          "csPerMin": 1.6
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 6,
+          "deaths": 9,
+          "assists": 6,
+          "kda": 1.3,
+          "csPerMin": 1.3
         },
         {
           "championName": "Lee Sin",
@@ -1195,6 +1195,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgW3bTSrQOX0afesg0DHCYViC5ZeOvJhddM=",
+          "gameCreation": 1791824785000,
+          "gameDurationSeconds": 2093,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 6,
+          "deaths": 9,
+          "assists": 6,
+          "kda": 1.33,
+          "cs": 44,
+          "csPerMin": 1.3,
+          "killParticipationPct": 0,
+          "damageDealt": 32979,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6694,
+            6695,
+            3158,
+            6699,
+            2520,
+            3142
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVgGALZqhK6L_JtJMiD5P9Kyc6jir9jQKA=",
           "gameCreation": 1791779204000,
@@ -1739,45 +1774,10 @@
             1101
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXJKnpZy4rDSRaQE9k1PfhUj5qVicYkWNc=",
-          "gameCreation": 1791426588000,
-          "gameDurationSeconds": 2074,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Rengar",
-          "championId": "107",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 19,
-          "deaths": 4,
-          "assists": 5,
-          "kda": 6,
-          "cs": 54,
-          "csPerMin": 1.6,
-          "killParticipationPct": 0,
-          "damageDealt": 45318,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3036,
-            2512,
-            6699,
-            3179,
-            3031,
-            3142
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (702 LP)",
-      "analystSummary": "Elyoya: MASTER I 702 LP · 17 partidas consultadas · 86.8% WR · KDA medio 6.7.",
+      "statusBadge": "MASTER I (677 LP)",
+      "analystSummary": "Elyoya: MASTER I 677 LP · 17 partidas consultadas · 84.6% WR · KDA medio 6.4.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1931,9 +1931,18 @@
           "wins": 33,
           "losses": 5,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791825061615,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 677,
+          "wins": 33,
+          "losses": 6,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3750,7 +3759,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -4838,7 +4847,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
