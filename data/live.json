@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T04:16:26.550Z",
-  "syncedAt": "2026-10-13T04:16:26.550Z",
+  "generatedAt": "2026-10-13T04:36:21.994Z",
+  "syncedAt": "2026-10-13T04:36:21.994Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -994,12 +994,12 @@
       "wins": 34,
       "losses": 6,
       "winrate": 85,
-      "streak": 1,
-      "avgKda": 7.2,
-      "avgKills": 6.8,
-      "avgDeaths": 2.9,
-      "avgAssists": 8.2,
-      "avgCsPerMin": 2.7,
+      "streak": -1,
+      "avgKda": 6.9,
+      "avgKills": 7.5,
+      "avgDeaths": 3.3,
+      "avgAssists": 8.4,
+      "avgCsPerMin": 2.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1159,17 +1159,17 @@
           "csPerMin": 0.3
         },
         {
-          "championName": "Poppy",
-          "championId": "78",
+          "championName": "Viego",
+          "championId": "234",
           "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 8,
-          "csPerMin": 0.1
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 15,
+          "deaths": 7,
+          "assists": 8,
+          "kda": 3.3,
+          "csPerMin": 1.1
         },
         {
           "championName": "Jayce",
@@ -1186,6 +1186,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgV770-rySuO1xgRParKmjHEAQJcABLp-I0=",
+          "gameCreation": 1791865988000,
+          "gameDurationSeconds": 1740,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Viego",
+          "championId": "234",
+          "champLevel": 16,
+          "role": "JUNGLE",
+          "kills": 15,
+          "deaths": 7,
+          "assists": 8,
+          "kda": 3.29,
+          "cs": 32,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 23336,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            6672,
+            3111,
+            6673,
+            6676,
+            3036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXEH6K1Y01mJ1RY38BrMtQb4Xw6sjeLDuM=",
           "gameCreation": 1791826251000,
@@ -1735,44 +1770,10 @@
             6699
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX8-9Aaoqiew9ThgoOc-K7XwT2P_G8FGXY=",
-          "gameCreation": 1791428069000,
-          "gameDurationSeconds": 915,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Poppy",
-          "championId": "78",
-          "champLevel": 10,
-          "role": "JUNGLE",
-          "kills": 3,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 8,
-          "cs": 1,
-          "csPerMin": 0.1,
-          "killParticipationPct": 0,
-          "damageDealt": 5963,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            1031,
-            2422,
-            3066,
-            2525,
-            1028
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (712 LP)",
-      "analystSummary": "Elyoya: MASTER I 712 LP · 17 partidas consultadas · 85% WR · KDA medio 7.2.",
+      "analystSummary": "Elyoya: MASTER I 712 LP · 17 partidas consultadas · 85% WR · KDA medio 6.9.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1946,7 +1947,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3772,7 +3773,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
