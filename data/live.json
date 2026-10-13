@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T16:36:22.828Z",
-  "syncedAt": "2026-10-13T16:36:22.828Z",
+  "generatedAt": "2026-10-13T16:41:26.046Z",
+  "syncedAt": "2026-10-13T16:41:26.047Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 587,
-      "wins": 35,
+      "lp": 622,
+      "wins": 36,
       "losses": 12,
-      "winrate": 74.5,
+      "winrate": 75,
       "streak": 2,
       "avgKda": 5.3,
       "avgKills": 5.4,
@@ -723,8 +723,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (587 LP)",
-      "analystSummary": "Myrwn: MASTER I 587 LP · 16 partidas consultadas · 74.5% WR · KDA medio 5.3.",
+      "statusBadge": "MASTER I (622 LP)",
+      "analystSummary": "Myrwn: MASTER I 622 LP · 16 partidas consultadas · 75% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -966,6 +966,15 @@
           "division": "I",
           "lp": 587,
           "wins": 35,
+          "losses": 12,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791909658340,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 622,
+          "wins": 36,
           "losses": 12,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -2728,10 +2737,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 787,
-      "wins": 39,
+      "lp": 822,
+      "wins": 40,
       "losses": 8,
-      "winrate": 83,
+      "winrate": 83.3,
       "streak": 1,
       "avgKda": 6.4,
       "avgKills": 9.2,
@@ -3556,8 +3565,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (787 LP)",
-      "analystSummary": "Supa: MASTER I 787 LP · 20 partidas consultadas · 83% WR · KDA medio 6.4.",
+      "statusBadge": "MASTER I (822 LP)",
+      "analystSummary": "Supa: MASTER I 822 LP · 20 partidas consultadas · 83.3% WR · KDA medio 6.4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3774,9 +3783,18 @@
           "wins": 39,
           "losses": 8,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791909679882,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 822,
+          "wins": 40,
+          "losses": 8,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -4878,7 +4896,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
