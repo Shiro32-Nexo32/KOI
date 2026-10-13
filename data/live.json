@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T04:46:23.733Z",
-  "syncedAt": "2026-10-13T04:46:23.733Z",
+  "generatedAt": "2026-10-13T04:51:23.690Z",
+  "syncedAt": "2026-10-13T04:51:23.690Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1956,7 +1956,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2699,7 +2699,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 1,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -2718,10 +2718,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 812,
+      "lp": 787,
       "wins": 39,
-      "losses": 7,
-      "winrate": 84.8,
+      "losses": 8,
+      "winrate": 83,
       "streak": -1,
       "avgKda": 6.5,
       "avgKills": 9.6,
@@ -3559,8 +3559,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (812 LP)",
-      "analystSummary": "Supa: MASTER I 812 LP · 20 partidas consultadas · 84.8% WR · KDA medio 6.5.",
+      "statusBadge": "MASTER I (787 LP)",
+      "analystSummary": "Supa: MASTER I 787 LP · 20 partidas consultadas · 83% WR · KDA medio 6.5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3768,10 +3768,19 @@
           "wins": 39,
           "losses": 7,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791867076482,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 787,
+          "wins": 39,
+          "losses": 8,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
-      "eloRank": 1,
+      "formRank": 4,
+      "eloRank": 2,
       "remakeLossMatchIds": []
     },
     {
@@ -3791,11 +3800,11 @@
       "wins": 38,
       "losses": 6,
       "winrate": 86.4,
-      "streak": -1,
-      "avgKda": 5.6,
-      "avgKills": 3.9,
+      "streak": -2,
+      "avgKda": 5.4,
+      "avgKills": 4.1,
       "avgDeaths": 5.2,
-      "avgAssists": 16.8,
+      "avgAssists": 15.8,
       "avgCsPerMin": 1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3854,15 +3863,15 @@
         {
           "championName": "Pyke",
           "championId": "555",
-          "games": 1,
+          "games": 2,
           "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 4,
-          "assists": 10,
-          "kda": 3.8,
-          "csPerMin": 0.8
+          "losses": 1,
+          "winrate": 50,
+          "kills": 11,
+          "deaths": 9,
+          "assists": 16,
+          "kda": 3,
+          "csPerMin": 1
         },
         {
           "championName": "Milio",
@@ -3930,19 +3939,6 @@
           "csPerMin": 0.7
         },
         {
-          "championName": "Soraka",
-          "championId": "16",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 6,
-          "assists": 25,
-          "kda": 4.7,
-          "csPerMin": 0.6
-        },
-        {
           "championName": "Lux",
           "championId": "99",
           "games": 1,
@@ -3983,6 +3979,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVT5DiZqB4Kqpm3j4Co47g61fvQ7xOPyp8=",
+          "gameCreation": 1791866940000,
+          "gameDurationSeconds": 1966,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Pyke",
+          "championId": "555",
+          "champLevel": 13,
+          "role": "SUPPORT",
+          "kills": 6,
+          "deaths": 5,
+          "assists": 6,
+          "kda": 2.4,
+          "cs": 36,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 14150,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3877,
+            3155,
+            3179,
+            3134,
+            3009,
+            3814
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVSfDCAU9mt9Zy6D8YRqAunm-bKIoiM384=",
           "gameCreation": 1791864614000,
@@ -4607,45 +4638,10 @@
             1028
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX-VI8bvy7EAh8jJ4VEBChowmR8snaOHkE=",
-          "gameCreation": 1791485080000,
-          "gameDurationSeconds": 1757,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Soraka",
-          "championId": "16",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 3,
-          "deaths": 6,
-          "assists": 25,
-          "kda": 4.67,
-          "cs": 18,
-          "csPerMin": 0.6,
-          "killParticipationPct": 0,
-          "damageDealt": 8607,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3870,
-            3222,
-            3107,
-            3158,
-            6617,
-            3114
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (812 LP)",
-      "analystSummary": "Alvaro: MASTER I 812 LP · 19 partidas consultadas · 86.4% WR · KDA medio 5.6.",
+      "analystSummary": "Alvaro: MASTER I 812 LP · 19 partidas consultadas · 86.4% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4864,8 +4860,8 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
-      "eloRank": 2,
+      "formRank": 3,
+      "eloRank": 1,
       "remakeLossMatchIds": []
     }
   ],
