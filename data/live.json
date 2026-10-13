@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T04:41:26.567Z",
-  "syncedAt": "2026-10-13T04:41:26.568Z",
+  "generatedAt": "2026-10-13T04:46:23.733Z",
+  "syncedAt": "2026-10-13T04:46:23.733Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2722,12 +2722,12 @@
       "wins": 39,
       "losses": 7,
       "winrate": 84.8,
-      "streak": 1,
-      "avgKda": 6.7,
-      "avgKills": 9.3,
-      "avgDeaths": 3.8,
-      "avgAssists": 7.5,
-      "avgCsPerMin": 9,
+      "streak": -1,
+      "avgKda": 6.5,
+      "avgKills": 9.6,
+      "avgDeaths": 4.1,
+      "avgAssists": 8.1,
+      "avgCsPerMin": 8.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -2746,15 +2746,15 @@
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 3,
+          "games": 4,
           "wins": 2,
-          "losses": 1,
-          "winrate": 66.7,
-          "kills": 42,
-          "deaths": 9,
-          "assists": 40,
-          "kda": 9.1,
-          "csPerMin": 8.5
+          "losses": 2,
+          "winrate": 50,
+          "kills": 53,
+          "deaths": 16,
+          "assists": 55,
+          "kda": 6.8,
+          "csPerMin": 8.8
         },
         {
           "championName": "Draven",
@@ -2848,19 +2848,6 @@
           "csPerMin": 9.6
         },
         {
-          "championName": "Sivir",
-          "championId": "15",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 1,
-          "assists": 3,
-          "kda": 8,
-          "csPerMin": 10.8
-        },
-        {
           "championName": "Xayah",
           "championId": "498",
           "games": 1,
@@ -2875,6 +2862,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUUpzUVP-6ZQOaM_30RuXW4NSMHFBmL0IU=",
+          "gameCreation": 1791866536000,
+          "gameDurationSeconds": 2207,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jhin",
+          "championId": "202",
+          "champLevel": 18,
+          "role": "ADC",
+          "kills": 11,
+          "deaths": 7,
+          "assists": 15,
+          "kda": 3.71,
+          "cs": 362,
+          "csPerMin": 9.8,
+          "killParticipationPct": 0,
+          "damageDealt": 38966,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3046,
+            3036,
+            6670,
+            3031,
+            6697,
+            3026
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWsO8ItRGFbUO1jZuiyNyC3atXyWPKoVJ0=",
           "gameCreation": 1791829395000,
@@ -3535,44 +3557,10 @@
             1086
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWlH4CKhRYRlLY0CUzj4LKYzHrPE5tu9og=",
-          "gameCreation": 1791476819000,
-          "gameDurationSeconds": 988,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Sivir",
-          "championId": "15",
-          "champLevel": 12,
-          "role": "ADC",
-          "kills": 5,
-          "deaths": 1,
-          "assists": 3,
-          "kda": 8,
-          "cs": 178,
-          "csPerMin": 10.8,
-          "killParticipationPct": 0,
-          "damageDealt": 14589,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            1083,
-            3032,
-            1038,
-            1036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (812 LP)",
-      "analystSummary": "Supa: MASTER I 812 LP · 20 partidas consultadas · 84.8% WR · KDA medio 6.7.",
+      "analystSummary": "Supa: MASTER I 812 LP · 20 partidas consultadas · 84.8% WR · KDA medio 6.5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3782,7 +3770,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -4876,7 +4864,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
