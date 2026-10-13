@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T18:51:33.984Z",
-  "syncedAt": "2026-10-12T18:51:33.984Z",
+  "generatedAt": "2026-10-13T03:11:22.089Z",
+  "syncedAt": "2026-10-13T03:11:22.089Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,27 +22,14 @@
       "wins": 34,
       "losses": 10,
       "winrate": 77.3,
-      "streak": -1,
-      "avgKda": 5.5,
-      "avgKills": 6.4,
-      "avgDeaths": 3.7,
-      "avgAssists": 6.2,
+      "streak": -2,
+      "avgKda": 5,
+      "avgKills": 6.1,
+      "avgDeaths": 3.9,
+      "avgAssists": 6.3,
       "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Elise",
-          "championId": "60",
-          "games": 4,
-          "wins": 1,
-          "losses": 3,
-          "winrate": 25,
-          "kills": 30,
-          "deaths": 22,
-          "assists": 29,
-          "kda": 2.7,
-          "csPerMin": 7.3
-        },
         {
           "championName": "Jayce",
           "championId": "126",
@@ -55,6 +42,19 @@
           "assists": 24,
           "kda": 2,
           "csPerMin": 8.2
+        },
+        {
+          "championName": "Elise",
+          "championId": "60",
+          "games": 3,
+          "wins": 0,
+          "losses": 3,
+          "winrate": 0,
+          "kills": 25,
+          "deaths": 22,
+          "assists": 25,
+          "kda": 2.3,
+          "csPerMin": 6.8
         },
         {
           "championName": "Zaahen",
@@ -135,6 +135,19 @@
           "csPerMin": 9.1
         },
         {
+          "championName": "Swain",
+          "championId": "50",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 1,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 1.5,
+          "csPerMin": 8.3
+        },
+        {
           "championName": "Aurora",
           "championId": "893",
           "games": 1,
@@ -162,6 +175,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUyclcAGEsLmGPq0oWxBcHSE8xzaobqclI=",
+          "gameCreation": 1791860749000,
+          "gameDurationSeconds": 1575,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Swain",
+          "championId": "50",
+          "champLevel": 16,
+          "role": "TOP",
+          "kills": 1,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 1.5,
+          "cs": 219,
+          "csPerMin": 8.3,
+          "killParticipationPct": 0,
+          "damageDealt": 18865,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3116,
+            1052,
+            3047,
+            2503,
+            3916,
+            1056
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVq8s80g2U8MDhdbkGqjkCXoVw_YspDB6A=",
           "gameCreation": 1791779304000,
@@ -675,44 +723,10 @@
             3108
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWTa4O0Jcxer-DTIzGhMKXUpNzK1cKjoBc=",
-          "gameCreation": 1791516403000,
-          "gameDurationSeconds": 912,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Elise",
-          "championId": "60",
-          "champLevel": 13,
-          "role": "TOP",
-          "kills": 5,
-          "deaths": 0,
-          "assists": 4,
-          "kda": 9,
-          "cs": 130,
-          "csPerMin": 8.6,
-          "killParticipationPct": 0,
-          "damageDealt": 11264,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            1086,
-            3020,
-            2510,
-            1026,
-            1052
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (602 LP)",
-      "analystSummary": "Myrwn: MASTER I 602 LP · 16 partidas consultadas · 77.3% WR · KDA medio 5.5.",
+      "analystSummary": "Myrwn: MASTER I 602 LP · 16 partidas consultadas · 77.3% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
