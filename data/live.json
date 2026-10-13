@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T18:36:27.333Z",
-  "syncedAt": "2026-10-13T18:36:27.333Z",
+  "generatedAt": "2026-10-13T18:41:26.009Z",
+  "syncedAt": "2026-10-13T18:41:26.009Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -23,10 +23,10 @@
       "losses": 12,
       "winrate": 75.5,
       "streak": 3,
-      "avgKda": 5.8,
-      "avgKills": 5.7,
-      "avgDeaths": 3.8,
-      "avgAssists": 7.6,
+      "avgKda": 6,
+      "avgKills": 5.6,
+      "avgDeaths": 3.5,
+      "avgAssists": 7.5,
       "avgCsPerMin": 8.4,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -107,19 +107,6 @@
           "assists": 2,
           "kda": 6,
           "csPerMin": 10.7
-        },
-        {
-          "championName": "Irelia",
-          "championId": "39",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 8,
-          "assists": 9,
-          "kda": 2,
-          "csPerMin": 8.1
         },
         {
           "championName": "Nidalee",
@@ -678,44 +665,10 @@
             6692
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWwWzLvF81zlApiBcNReekcpLfUMQWa48A=",
-          "gameCreation": 1791570848000,
-          "gameDurationSeconds": 1783,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Irelia",
-          "championId": "39",
-          "champLevel": 17,
-          "role": "TOP",
-          "kills": 7,
-          "deaths": 8,
-          "assists": 9,
-          "kda": 2,
-          "cs": 241,
-          "csPerMin": 8.1,
-          "killParticipationPct": 0,
-          "damageDealt": 23266,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            3153,
-            3181,
-            3111,
-            1055,
-            3091
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (657 LP)",
-      "analystSummary": "Myrwn: MASTER I 657 LP · 16 partidas consultadas · 75.5% WR · KDA medio 5.8.",
+      "analystSummary": "Myrwn: MASTER I 657 LP · 15 partidas consultadas · 75.5% WR · KDA medio 6.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -979,7 +932,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1004,11 +957,11 @@
       "losses": 7,
       "winrate": 83.3,
       "streak": 1,
-      "avgKda": 6.6,
-      "avgKills": 7.6,
-      "avgDeaths": 3.4,
-      "avgAssists": 8.1,
-      "avgCsPerMin": 3.3,
+      "avgKda": 6.2,
+      "avgKills": 7.9,
+      "avgDeaths": 3.6,
+      "avgAssists": 7.9,
+      "avgCsPerMin": 3.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1153,19 +1106,6 @@
           "assists": 5,
           "kda": 18,
           "csPerMin": 1.2
-        },
-        {
-          "championName": "Ivern",
-          "championId": "427",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 0,
-          "assists": 10,
-          "kda": 13,
-          "csPerMin": 0.3
         },
         {
           "championName": "Viego",
@@ -1746,44 +1686,10 @@
             3072
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX645dcCxh6jHn-T50ctgQ-7QJMPNqwaGg=",
-          "gameCreation": 1791477204000,
-          "gameDurationSeconds": 914,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ivern",
-          "championId": "427",
-          "champLevel": 10,
-          "role": "JUNGLE",
-          "kills": 3,
-          "deaths": 0,
-          "assists": 10,
-          "kda": 13,
-          "cs": 4,
-          "csPerMin": 0.3,
-          "killParticipationPct": 0,
-          "damageDealt": 4120,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3107,
-            2055,
-            1082,
-            6620,
-            3158
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (722 LP)",
-      "analystSummary": "Elyoya: MASTER I 722 LP · 17 partidas consultadas · 83.3% WR · KDA medio 6.6.",
+      "analystSummary": "Elyoya: MASTER I 722 LP · 16 partidas consultadas · 83.3% WR · KDA medio 6.2.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2718,7 +2624,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3807,10 +3713,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 892,
+      "lp": 867,
       "wins": 41,
-      "losses": 7,
-      "winrate": 85.4,
+      "losses": 8,
+      "winrate": 83.7,
       "streak": -1,
       "avgKda": 5.6,
       "avgKills": 4.1,
@@ -4662,8 +4568,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (892 LP)",
-      "analystSummary": "Alvaro: MASTER I 892 LP · 19 partidas consultadas · 85.4% WR · KDA medio 5.6.",
+      "statusBadge": "MASTER I (867 LP)",
+      "analystSummary": "Alvaro: MASTER I 867 LP · 19 partidas consultadas · 83.7% WR · KDA medio 5.6.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4907,9 +4813,18 @@
           "wins": 41,
           "losses": 7,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791916886008,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 867,
+          "wins": 41,
+          "losses": 8,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
