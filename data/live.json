@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T17:26:27.355Z",
-  "syncedAt": "2026-10-13T17:26:27.355Z",
+  "generatedAt": "2026-10-13T17:31:36.142Z",
+  "syncedAt": "2026-10-13T17:31:36.142Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,30 +18,30 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 622,
-      "wins": 36,
+      "lp": 657,
+      "wins": 37,
       "losses": 12,
-      "winrate": 75,
-      "streak": 2,
-      "avgKda": 5.3,
-      "avgKills": 5.4,
-      "avgDeaths": 3.7,
-      "avgAssists": 7,
-      "avgCsPerMin": 7.8,
+      "winrate": 75.5,
+      "streak": 3,
+      "avgKda": 5.8,
+      "avgKills": 5.7,
+      "avgDeaths": 3.8,
+      "avgAssists": 7.6,
+      "avgCsPerMin": 8.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Swain",
           "championId": "50",
-          "games": 3,
-          "wins": 2,
+          "games": 4,
+          "wins": 3,
           "losses": 1,
-          "winrate": 66.7,
-          "kills": 13,
-          "deaths": 8,
-          "assists": 17,
-          "kda": 3.8,
-          "csPerMin": 8.3
+          "winrate": 75,
+          "kills": 18,
+          "deaths": 10,
+          "assists": 26,
+          "kda": 4.4,
+          "csPerMin": 8.4
         },
         {
           "championName": "Jayce",
@@ -159,22 +159,44 @@
           "assists": 18,
           "kda": 2.3,
           "csPerMin": 6
-        },
-        {
-          "championName": "Corki",
-          "championId": "42",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 0,
-          "deaths": 0,
-          "assists": 0,
-          "kda": 0,
-          "csPerMin": 0
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX-IkbRmBpzT2soxRMERhrlkAhnOANipK4=",
+          "gameCreation": 1791912413000,
+          "gameDurationSeconds": 1667,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Swain",
+          "championId": "50",
+          "champLevel": 17,
+          "role": "TOP",
+          "kills": 5,
+          "deaths": 2,
+          "assists": 9,
+          "kda": 7,
+          "cs": 245,
+          "csPerMin": 8.8,
+          "killParticipationPct": 0,
+          "damageDealt": 27152,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2503,
+            6653,
+            1052,
+            3116,
+            1056,
+            3009
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXmX5oIPohZD7mvKJo2XYg88_sMt9qTYuk=",
           "gameCreation": 1791908992000,
@@ -690,41 +712,10 @@
             3091
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUoI52Qb4ARj6Ux_dZ3PnnX1CYje9_XOas=",
-          "gameCreation": 1791568385000,
-          "gameDurationSeconds": 82,
-          "queueType": "SOLORANKED",
-          "isRemake": true,
-          "win": false,
-          "championName": "Corki",
-          "championId": "42",
-          "champLevel": 1,
-          "role": "TOP",
-          "kills": 0,
-          "deaths": 0,
-          "assists": 0,
-          "kda": 0,
-          "cs": 0,
-          "csPerMin": 0,
-          "killParticipationPct": 0,
-          "damageDealt": 0,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            1086,
-            2003
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (622 LP)",
-      "analystSummary": "Myrwn: MASTER I 622 LP · 16 partidas consultadas · 75% WR · KDA medio 5.3.",
+      "statusBadge": "MASTER I (657 LP)",
+      "analystSummary": "Myrwn: MASTER I 657 LP · 16 partidas consultadas · 75.5% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -977,9 +968,18 @@
           "wins": 36,
           "losses": 12,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791912667124,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 657,
+          "wins": 37,
+          "losses": 12,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -3790,7 +3790,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
