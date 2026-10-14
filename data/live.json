@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T04:21:53.263Z",
-  "syncedAt": "2026-10-14T04:21:53.264Z",
+  "generatedAt": "2026-10-14T04:36:43.763Z",
+  "syncedAt": "2026-10-14T04:36:43.763Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -918,12 +918,12 @@
       "wins": 37,
       "losses": 9,
       "winrate": 80.4,
-      "streak": 1,
-      "avgKda": 5.8,
-      "avgKills": 8.7,
+      "streak": 2,
+      "avgKda": 5.6,
+      "avgKills": 8.3,
       "avgDeaths": 3.6,
-      "avgAssists": 7.1,
-      "avgCsPerMin": 3.8,
+      "avgAssists": 6.7,
+      "avgCsPerMin": 4.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -953,17 +953,17 @@
           "csPerMin": 8.4
         },
         {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 2,
+          "championName": "Akali",
+          "championId": "84",
+          "games": 1,
           "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 18,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
           "deaths": 4,
-          "assists": 17,
-          "kda": 8.8,
-          "csPerMin": 1.1
+          "assists": 4,
+          "kda": 2,
+          "csPerMin": 6.6
         },
         {
           "championName": "Qiyana",
@@ -1003,6 +1003,19 @@
           "assists": 2,
           "kda": 3.5,
           "csPerMin": 9.7
+        },
+        {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 0,
+          "assists": 7,
+          "kda": 14,
+          "csPerMin": 1.1
         },
         {
           "championName": "Jarvan IV",
@@ -1084,6 +1097,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWDPBTrPF2dZSN7Jj4fhQ-DHEEsw5C8Yts=",
+          "gameCreation": 1791952328000,
+          "gameDurationSeconds": 1325,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Akali",
+          "championId": "84",
+          "champLevel": 14,
+          "role": "TOP",
+          "kills": 4,
+          "deaths": 4,
+          "assists": 4,
+          "kda": 2,
+          "cs": 145,
+          "csPerMin": 6.6,
+          "killParticipationPct": 0,
+          "damageDealt": 17686,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3146,
+            3047,
+            1056,
+            4645,
+            2031
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXK2k2dDwWLKlSjBmvSMumqiu6oDP0kZxI=",
           "gameCreation": 1791950247000,
@@ -1570,44 +1617,10 @@
             1037
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUH6U3pRCT1uB-M-5Dzof2-spacYuCv6dg=",
-          "gameCreation": 1791566486000,
-          "gameDurationSeconds": 1745,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 16,
-          "role": "JUNGLE",
-          "kills": 11,
-          "deaths": 4,
-          "assists": 10,
-          "kda": 5.25,
-          "cs": 33,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 32247,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6692,
-            6333,
-            3047,
-            3071,
-            2517
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (742 LP)",
-      "analystSummary": "Elyoya: MASTER I 742 LP · 15 partidas consultadas · 80.4% WR · KDA medio 5.8.",
+      "analystSummary": "Elyoya: MASTER I 742 LP · 15 partidas consultadas · 80.4% WR · KDA medio 5.6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
