@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:41:26.854Z",
-  "syncedAt": "2026-10-14T00:21:46.145Z",
+  "generatedAt": "2026-10-14T02:21:45.523Z",
+  "syncedAt": "2026-10-14T02:21:45.523Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -897,7 +897,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -921,14 +921,27 @@
       "wins": 35,
       "losses": 7,
       "winrate": 83.3,
-      "streak": 1,
-      "avgKda": 6.3,
-      "avgKills": 7.6,
-      "avgDeaths": 3.3,
+      "streak": -1,
+      "avgKda": 5.3,
+      "avgKills": 7.7,
+      "avgDeaths": 3.7,
       "avgAssists": 7.7,
-      "avgCsPerMin": 3.2,
+      "avgCsPerMin": 3.6,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 20,
+          "deaths": 11,
+          "assists": 13,
+          "kda": 3,
+          "csPerMin": 8.4
+        },
         {
           "championName": "Lee Sin",
           "championId": "64",
@@ -1008,19 +1021,6 @@
           "csPerMin": 1.5
         },
         {
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 5,
-          "assists": 9,
-          "kda": 3,
-          "csPerMin": 8.5
-        },
-        {
           "championName": "Yone",
           "championId": "777",
           "games": 1,
@@ -1060,19 +1060,6 @@
           "csPerMin": 0.8
         },
         {
-          "championName": "Qiyana",
-          "championId": "246",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 13,
-          "deaths": 1,
-          "assists": 5,
-          "kda": 18,
-          "csPerMin": 1.2
-        },
-        {
           "championName": "Viego",
           "championId": "234",
           "games": 1,
@@ -1100,6 +1087,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVRL100piR3qb_iCbnbHJdqvmXk-Gryuws=",
+          "gameCreation": 1791944219000,
+          "gameDurationSeconds": 2019,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "champLevel": 17,
+          "role": "ADC",
+          "kills": 14,
+          "deaths": 6,
+          "assists": 4,
+          "kda": 3,
+          "cs": 284,
+          "csPerMin": 8.4,
+          "killParticipationPct": 0,
+          "damageDealt": 49331,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHaste"
+          ],
+          "items": [
+            4645,
+            3137,
+            3089,
+            6699,
+            3087,
+            2421
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXziTh9hWO0nBNk1cr9hetb2DXKUOVYhzI=",
           "gameCreation": 1791867419000,
@@ -1582,45 +1604,10 @@
             1001
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXajErDOCJqJ69KRlmVew6Nq9Lxa7LW9O0=",
-          "gameCreation": 1791483865000,
-          "gameDurationSeconds": 1583,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Qiyana",
-          "championId": "246",
-          "champLevel": 17,
-          "role": "JUNGLE",
-          "kills": 13,
-          "deaths": 1,
-          "assists": 5,
-          "kda": 18,
-          "cs": 31,
-          "csPerMin": 1.2,
-          "killParticipationPct": 0,
-          "damageDealt": 23920,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            6699,
-            3036,
-            3814,
-            3111,
-            2520
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (722 LP)",
-      "analystSummary": "Elyoya: MASTER I 722 LP · 15 partidas consultadas · 83.3% WR · KDA medio 6.3.",
+      "analystSummary": "Elyoya: MASTER I 722 LP · 15 partidas consultadas · 83.3% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1812,7 +1799,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2555,7 +2542,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3636,7 +3623,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
