@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-13T19:41:26.854Z",
-  "syncedAt": "2026-10-13T23:17:54.303Z",
+  "syncedAt": "2026-10-14T00:16:47.080Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "partial",
@@ -4768,15 +4768,13 @@
   "errors": [
     "Myrwn: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}",
     "Elyoya: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}",
-    "Jojopyun: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}",
-    "Supa: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}",
-    "Alvaro: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}"
+    "Jojopyun: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}"
   ],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 0,
+    "successfulCount": 2,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
