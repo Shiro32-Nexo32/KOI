@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T02:52:35.065Z",
-  "syncedAt": "2026-10-14T02:52:35.065Z",
+  "generatedAt": "2026-10-14T03:26:53.463Z",
+  "syncedAt": "2026-10-14T03:26:53.463Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -918,14 +918,27 @@
       "wins": 36,
       "losses": 8,
       "winrate": 81.8,
-      "streak": 1,
+      "streak": -1,
       "avgKda": 5.3,
-      "avgKills": 7.7,
+      "avgKills": 7.8,
       "avgDeaths": 3.7,
-      "avgAssists": 7.7,
+      "avgAssists": 7.5,
       "avgCsPerMin": 3.8,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Kha'Zix",
+          "championId": "121",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 13,
+          "deaths": 9,
+          "assists": 12,
+          "kda": 2.8,
+          "csPerMin": 0.7
+        },
         {
           "championName": "Kai'Sa",
           "championId": "145",
@@ -951,19 +964,6 @@
           "assists": 17,
           "kda": 8.8,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Kha'Zix",
-          "championId": "121",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 11,
-          "deaths": 8,
-          "assists": 14,
-          "kda": 3.1,
-          "csPerMin": 0.7
         },
         {
           "championName": "Kindred",
@@ -1084,6 +1084,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVxHR_m0Rjt9H8NMHLyRQhuY2cZShPHuAs=",
+          "gameCreation": 1791948325000,
+          "gameDurationSeconds": 1719,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Kha'Zix",
+          "championId": "121",
+          "champLevel": 16,
+          "role": "JUNGLE",
+          "kills": 4,
+          "deaths": 6,
+          "assists": 5,
+          "kda": 1.5,
+          "cs": 26,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 15146,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3035,
+            1001,
+            2055,
+            3179,
+            2520,
+            6699
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUMrjDBGZY38KAbnhfBWKrqhkrfKFYDFjw=",
           "gameCreation": 1791946144000,
@@ -1569,40 +1604,6 @@
             1028
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVDQN1Db96L47IkAD_HiFXOzbDJ3nvNZaM=",
-          "gameCreation": 1791518377000,
-          "gameDurationSeconds": 1535,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Kha'Zix",
-          "championId": "121",
-          "champLevel": 14,
-          "role": "JUNGLE",
-          "kills": 2,
-          "deaths": 5,
-          "assists": 7,
-          "kda": 1.8,
-          "cs": 21,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 8077,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            1037,
-            3179,
-            6699,
-            1001,
-            3134
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (732 LP)",
@@ -1816,7 +1817,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2559,7 +2560,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
