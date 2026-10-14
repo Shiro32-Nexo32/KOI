@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T03:31:49.793Z",
-  "syncedAt": "2026-10-14T03:31:49.793Z",
+  "generatedAt": "2026-10-14T03:46:47.318Z",
+  "syncedAt": "2026-10-14T03:46:47.318Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3667,30 +3667,43 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 937,
-      "wins": 43,
+      "lp": 1007,
+      "wins": 44,
       "losses": 8,
-      "winrate": 84.3,
-      "streak": 2,
-      "avgKda": 5.7,
-      "avgKills": 3.7,
-      "avgDeaths": 5.1,
-      "avgAssists": 16.3,
+      "winrate": 84.6,
+      "streak": 3,
+      "avgKda": 5.1,
+      "avgKills": 3.5,
+      "avgDeaths": 5.4,
+      "avgAssists": 17.4,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
-          "championName": "Neeko",
-          "championId": "518",
+          "championName": "Alistar",
+          "championId": "12",
           "games": 3,
           "wins": 3,
           "losses": 0,
           "winrate": 100,
-          "kills": 15,
-          "deaths": 13,
-          "assists": 42,
-          "kda": 4.4,
-          "csPerMin": 1
+          "kills": 5,
+          "deaths": 17,
+          "assists": 83,
+          "kda": 5.2,
+          "csPerMin": 0.7
+        },
+        {
+          "championName": "Neeko",
+          "championId": "518",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 9,
+          "deaths": 12,
+          "assists": 33,
+          "kda": 3.5,
+          "csPerMin": 0.6
         },
         {
           "championName": "Karma",
@@ -3704,19 +3717,6 @@
           "assists": 53,
           "kda": 5.7,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Alistar",
-          "championId": "12",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 9,
-          "assists": 54,
-          "kda": 6.2,
-          "csPerMin": 0.6
         },
         {
           "championName": "Sylas",
@@ -3837,6 +3837,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVNvf8hflTsiqx0cwR4m7_tHoKyzu-HTq4=",
+          "gameCreation": 1791949312000,
+          "gameDurationSeconds": 1808,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Alistar",
+          "championId": "12",
+          "champLevel": 15,
+          "role": "SUPPORT",
+          "kills": 3,
+          "deaths": 8,
+          "assists": 29,
+          "kda": 4,
+          "cs": 25,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 10724,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3876,
+            3190,
+            3050,
+            3009,
+            3067,
+            1011
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXlsisvJLJDZJvIx4f9JA6bokEk81iMbUk=",
           "gameCreation": 1791945589000,
@@ -4459,45 +4494,10 @@
             1028
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUZJTLSSYKi78T9AefqvN7aF5vvSB4rxa8=",
-          "gameCreation": 1791598635000,
-          "gameDurationSeconds": 1262,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Neeko",
-          "championId": "518",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 6,
-          "deaths": 1,
-          "assists": 9,
-          "kda": 15,
-          "cs": 34,
-          "csPerMin": 1.6,
-          "killParticipationPct": 0,
-          "damageDealt": 13775,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3152,
-            2421,
-            1082,
-            3158,
-            1052
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (937 LP)",
-      "analystSummary": "Alvaro: MASTER I 937 LP · 19 partidas consultadas · 84.3% WR · KDA medio 5.7.",
+      "statusBadge": "MASTER I (1007 LP)",
+      "analystSummary": "Alvaro: MASTER I 1007 LP · 19 partidas consultadas · 84.6% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4766,6 +4766,15 @@
           "division": "I",
           "lp": 937,
           "wins": 43,
+          "losses": 8,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791949607316,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1007,
+          "wins": 44,
           "losses": 8,
           "note": "Sincronización automática desde OP.GG"
         }
