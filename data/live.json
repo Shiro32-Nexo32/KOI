@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T04:41:42.396Z",
-  "syncedAt": "2026-10-14T04:41:42.397Z",
+  "generatedAt": "2026-10-14T04:56:43.184Z",
+  "syncedAt": "2026-10-14T04:56:43.185Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2600,7 +2600,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3723,11 +3723,11 @@
       "wins": 44,
       "losses": 9,
       "winrate": 83,
-      "streak": -1,
-      "avgKda": 5,
-      "avgKills": 4.2,
-      "avgDeaths": 5.6,
-      "avgAssists": 16.7,
+      "streak": 1,
+      "avgKda": 4.9,
+      "avgKills": 4.4,
+      "avgDeaths": 5.8,
+      "avgAssists": 17.1,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3810,6 +3810,19 @@
           "csPerMin": 1
         },
         {
+          "championName": "Tahm Kench",
+          "championId": "223",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 6,
+          "assists": 21,
+          "kda": 4.2,
+          "csPerMin": 1.1
+        },
+        {
           "championName": "Bard",
           "championId": "432",
           "games": 1,
@@ -3849,19 +3862,6 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Blitzcrank",
-          "championId": "53",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 1,
-          "deaths": 2,
-          "assists": 14,
-          "kda": 7.5,
-          "csPerMin": 0.9
-        },
-        {
           "championName": "Lux",
           "championId": "99",
           "games": 1,
@@ -3889,6 +3889,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWKz-cIa2vHSreMRuv4Z7-yudU3FI17L9A=",
+          "gameCreation": 1791953601000,
+          "gameDurationSeconds": 1696,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Tahm Kench",
+          "championId": "223",
+          "champLevel": 13,
+          "role": "SUPPORT",
+          "kills": 4,
+          "deaths": 6,
+          "assists": 21,
+          "kda": 4.17,
+          "cs": 31,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 20664,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3877,
+            3190,
+            3084,
+            3111,
+            2525
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVpHB3qG_s1z5TYOOogQqKpsR8sJqgv6Ao=",
           "gameCreation": 1791951448000,
@@ -4512,44 +4546,10 @@
             3067
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWj4nz6Y2SmMkPa1FTfCZyDAmihY2eDMXI=",
-          "gameCreation": 1791602370000,
-          "gameDurationSeconds": 926,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Blitzcrank",
-          "championId": "53",
-          "champLevel": 9,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 2,
-          "assists": 14,
-          "kda": 7.5,
-          "cs": 14,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 5887,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            2031,
-            3067,
-            6657,
-            3009
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (982 LP)",
-      "analystSummary": "Alvaro: MASTER I 982 LP · 19 partidas consultadas · 83% WR · KDA medio 5.",
+      "analystSummary": "Alvaro: MASTER I 982 LP · 19 partidas consultadas · 83% WR · KDA medio 4.9.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4840,7 +4840,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
