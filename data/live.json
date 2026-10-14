@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T02:31:51.534Z",
-  "syncedAt": "2026-10-14T02:31:51.534Z",
+  "generatedAt": "2026-10-14T02:41:53.368Z",
+  "syncedAt": "2026-10-14T02:41:53.369Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3650,14 +3650,27 @@
       "wins": 42,
       "losses": 8,
       "winrate": 84,
-      "streak": 1,
-      "avgKda": 5.8,
-      "avgKills": 4.2,
-      "avgDeaths": 5.2,
-      "avgAssists": 16.6,
-      "avgCsPerMin": 1,
+      "streak": 2,
+      "avgKda": 5.7,
+      "avgKills": 3.7,
+      "avgDeaths": 5.1,
+      "avgAssists": 16.3,
+      "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Neeko",
+          "championId": "518",
+          "games": 3,
+          "wins": 3,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 15,
+          "deaths": 13,
+          "assists": 42,
+          "kda": 4.4,
+          "csPerMin": 1
+        },
         {
           "championName": "Karma",
           "championId": "43",
@@ -3696,19 +3709,6 @@
           "assists": 23,
           "kda": 5.3,
           "csPerMin": 0.7
-        },
-        {
-          "championName": "Neeko",
-          "championId": "518",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 9,
-          "deaths": 8,
-          "assists": 32,
-          "kda": 5.1,
-          "csPerMin": 1.1
         },
         {
           "championName": "Camille",
@@ -3789,19 +3789,6 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Pantheon",
-          "championId": "80",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 16,
-          "deaths": 7,
-          "assists": 15,
-          "kda": 4.4,
-          "csPerMin": 0.7
-        },
-        {
           "championName": "Lux",
           "championId": "99",
           "games": 1,
@@ -3829,6 +3816,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXlsisvJLJDZJvIx4f9JA6bokEk81iMbUk=",
+          "gameCreation": 1791945589000,
+          "gameDurationSeconds": 1281,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Neeko",
+          "championId": "518",
+          "champLevel": 10,
+          "role": "SUPPORT",
+          "kills": 6,
+          "deaths": 5,
+          "assists": 10,
+          "kda": 3.2,
+          "cs": 12,
+          "csPerMin": 0.6,
+          "killParticipationPct": 0,
+          "damageDealt": 13473,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3152,
+            2065,
+            1028,
+            3158,
+            3067
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUVOwl8CyI0nkhjuweAp-3GrYzd8y7qC0A=",
           "gameCreation": 1791919933000,
@@ -4451,45 +4473,10 @@
             1052
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWCR1Ex5jL0GfVlxvZP4FMDY1HoAws1ub0=",
-          "gameCreation": 1791570943000,
-          "gameDurationSeconds": 1542,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Pantheon",
-          "championId": "80",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 16,
-          "deaths": 7,
-          "assists": 15,
-          "kda": 4.43,
-          "cs": 19,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 31548,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            6333,
-            3179,
-            3009,
-            6697,
-            3067
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (902 LP)",
-      "analystSummary": "Alvaro: MASTER I 902 LP · 19 partidas consultadas · 84% WR · KDA medio 5.8.",
+      "analystSummary": "Alvaro: MASTER I 902 LP · 19 partidas consultadas · 84% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
