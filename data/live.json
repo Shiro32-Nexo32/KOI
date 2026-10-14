@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T03:56:48.149Z",
-  "syncedAt": "2026-10-14T03:56:48.149Z",
+  "generatedAt": "2026-10-14T04:01:54.336Z",
+  "syncedAt": "2026-10-14T04:01:54.336Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -914,15 +914,15 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 707,
-      "wins": 36,
+      "lp": 742,
+      "wins": 37,
       "losses": 9,
-      "winrate": 80,
-      "streak": -1,
-      "avgKda": 5.3,
-      "avgKills": 7.8,
-      "avgDeaths": 3.7,
-      "avgAssists": 7.5,
+      "winrate": 80.4,
+      "streak": 1,
+      "avgKda": 5.8,
+      "avgKills": 8.7,
+      "avgDeaths": 3.6,
+      "avgAssists": 7.1,
       "avgCsPerMin": 3.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -964,6 +964,19 @@
           "assists": 17,
           "kda": 8.8,
           "csPerMin": 1.1
+        },
+        {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 19,
+          "deaths": 2,
+          "assists": 4,
+          "kda": 11.5,
+          "csPerMin": 1.9
         },
         {
           "championName": "Kindred",
@@ -1044,19 +1057,6 @@
           "csPerMin": 10.1
         },
         {
-          "championName": "Cho'Gath",
-          "championId": "31",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 4,
-          "assists": 11,
-          "kda": 4,
-          "csPerMin": 0.9
-        },
-        {
           "championName": "Viego",
           "championId": "234",
           "games": 1,
@@ -1084,6 +1084,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXK2k2dDwWLKlSjBmvSMumqiu6oDP0kZxI=",
+          "gameCreation": 1791950247000,
+          "gameDurationSeconds": 1535,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 19,
+          "deaths": 2,
+          "assists": 4,
+          "kda": 11.5,
+          "cs": 49,
+          "csPerMin": 1.9,
+          "killParticipationPct": 0,
+          "damageDealt": 35269,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6698,
+            3026,
+            3158,
+            6699,
+            2520,
+            3036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVxHR_m0Rjt9H8NMHLyRQhuY2cZShPHuAs=",
           "gameCreation": 1791948325000,
@@ -1569,45 +1604,10 @@
             2517
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgW232TUO_PpwzXvZUT-HWrIFXUV1A1Xtx8=",
-          "gameCreation": 1791520688000,
-          "gameDurationSeconds": 1764,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Cho'Gath",
-          "championId": "31",
-          "champLevel": 16,
-          "role": "JUNGLE",
-          "kills": 5,
-          "deaths": 4,
-          "assists": 11,
-          "kda": 4,
-          "cs": 27,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 15527,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            3109,
-            3084,
-            3111,
-            4401,
-            1028
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (707 LP)",
-      "analystSummary": "Elyoya: MASTER I 707 LP · 15 partidas consultadas · 80% WR · KDA medio 5.3.",
+      "statusBadge": "MASTER I (742 LP)",
+      "analystSummary": "Elyoya: MASTER I 742 LP · 15 partidas consultadas · 80.4% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1824,9 +1824,18 @@
           "wins": 36,
           "losses": 9,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791950492535,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 742,
+          "wins": 37,
+          "losses": 9,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2569,7 +2578,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
