@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T02:21:45.523Z",
-  "syncedAt": "2026-10-14T02:21:45.523Z",
+  "generatedAt": "2026-10-14T02:26:42.379Z",
+  "syncedAt": "2026-10-14T02:26:42.379Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,25 +22,25 @@
       "wins": 37,
       "losses": 12,
       "winrate": 75.5,
-      "streak": 3,
-      "avgKda": 6.2,
-      "avgKills": 5.6,
+      "streak": 4,
+      "avgKda": 6.7,
+      "avgKills": 5.8,
       "avgDeaths": 3.3,
-      "avgAssists": 6.9,
-      "avgCsPerMin": 8.5,
+      "avgAssists": 7.1,
+      "avgCsPerMin": 8.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Swain",
           "championId": "50",
-          "games": 4,
-          "wins": 3,
+          "games": 5,
+          "wins": 4,
           "losses": 1,
-          "winrate": 75,
-          "kills": 18,
-          "deaths": 10,
-          "assists": 26,
-          "kda": 4.4,
+          "winrate": 80,
+          "kills": 24,
+          "deaths": 11,
+          "assists": 32,
+          "kda": 5.1,
           "csPerMin": 8.4
         },
         {
@@ -96,19 +96,6 @@
           "csPerMin": 9.2
         },
         {
-          "championName": "Shyvana",
-          "championId": "102",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 1,
-          "assists": 2,
-          "kda": 6,
-          "csPerMin": 10.7
-        },
-        {
           "championName": "Nidalee",
           "championId": "76",
           "games": 1,
@@ -149,6 +136,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVk3J1BA0fryEq2pW1IkMJPB-lonOy66FI=",
+          "gameCreation": 1791944563000,
+          "gameDurationSeconds": 1149,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Swain",
+          "championId": "50",
+          "champLevel": 14,
+          "role": "TOP",
+          "kills": 6,
+          "deaths": 1,
+          "assists": 6,
+          "kda": 12,
+          "cs": 161,
+          "csPerMin": 8.4,
+          "killParticipationPct": 0,
+          "damageDealt": 14982,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerExhaust"
+          ],
+          "items": [
+            3158,
+            3211,
+            2503,
+            2055,
+            3116,
+            1056
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX-IkbRmBpzT2soxRMERhrlkAhnOANipK4=",
           "gameCreation": 1791912413000,
@@ -596,44 +618,10 @@
             2510
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWwvw2fSRTfRH2lKreHqdFhOegIEVqtCbw=",
-          "gameCreation": 1791599360000,
-          "gameDurationSeconds": 1306,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Shyvana",
-          "championId": "102",
-          "champLevel": 16,
-          "role": "TOP",
-          "kills": 4,
-          "deaths": 1,
-          "assists": 2,
-          "kda": 6,
-          "cs": 233,
-          "csPerMin": 10.7,
-          "killParticipationPct": 0,
-          "damageDealt": 15809,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            3161,
-            1001,
-            1029,
-            3078,
-            3076
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (657 LP)",
-      "analystSummary": "Myrwn: MASTER I 657 LP · 14 partidas consultadas · 75.5% WR · KDA medio 6.2.",
+      "analystSummary": "Myrwn: MASTER I 657 LP · 14 partidas consultadas · 75.5% WR · KDA medio 6.7.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -897,7 +885,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -917,10 +905,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 722,
+      "lp": 697,
       "wins": 35,
-      "losses": 7,
-      "winrate": 83.3,
+      "losses": 8,
+      "winrate": 81.4,
       "streak": -1,
       "avgKda": 5.3,
       "avgKills": 7.7,
@@ -1606,8 +1594,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (722 LP)",
-      "analystSummary": "Elyoya: MASTER I 722 LP · 15 partidas consultadas · 83.3% WR · KDA medio 5.3.",
+      "statusBadge": "MASTER I (697 LP)",
+      "analystSummary": "Elyoya: MASTER I 697 LP · 15 partidas consultadas · 81.4% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1796,6 +1784,15 @@
           "lp": 722,
           "wins": 35,
           "losses": 7,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791944782683,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 697,
+          "wins": 35,
+          "losses": 8,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
@@ -2542,7 +2539,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
