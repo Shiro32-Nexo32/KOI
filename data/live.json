@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T02:41:53.368Z",
-  "syncedAt": "2026-10-14T02:41:53.369Z",
+  "generatedAt": "2026-10-14T02:52:35.065Z",
+  "syncedAt": "2026-10-14T02:52:35.065Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -914,16 +914,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 697,
-      "wins": 35,
+      "lp": 732,
+      "wins": 36,
       "losses": 8,
-      "winrate": 81.4,
-      "streak": -1,
+      "winrate": 81.8,
+      "streak": 1,
       "avgKda": 5.3,
       "avgKills": 7.7,
       "avgDeaths": 3.7,
       "avgAssists": 7.7,
-      "avgCsPerMin": 3.6,
+      "avgCsPerMin": 3.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -964,6 +964,19 @@
           "assists": 14,
           "kda": 3.1,
           "csPerMin": 0.7
+        },
+        {
+          "championName": "Kindred",
+          "championId": "203",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 0,
+          "assists": 5,
+          "kda": 9,
+          "csPerMin": 2.6
         },
         {
           "championName": "Yunara",
@@ -1044,19 +1057,6 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Kindred",
-          "championId": "203",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 9,
-          "csPerMin": 0.8
-        },
-        {
           "championName": "Viego",
           "championId": "234",
           "games": 1,
@@ -1084,6 +1084,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUMrjDBGZY38KAbnhfBWKrqhkrfKFYDFjw=",
+          "gameCreation": 1791946144000,
+          "gameDurationSeconds": 1142,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kindred",
+          "championId": "203",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 4,
+          "deaths": 0,
+          "assists": 5,
+          "kda": 9,
+          "cs": 49,
+          "csPerMin": 2.6,
+          "killParticipationPct": 0,
+          "damageDealt": 10458,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            1001,
+            3032,
+            3078
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVRL100piR3qb_iCbnbHJdqvmXk-Gryuws=",
           "gameCreation": 1791944219000,
@@ -1570,41 +1603,10 @@
             3134
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWTa4O0Jcxer-DTIzGhMKXUpNzK1cKjoBc=",
-          "gameCreation": 1791516403000,
-          "gameDurationSeconds": 912,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kindred",
-          "championId": "203",
-          "champLevel": 11,
-          "role": "JUNGLE",
-          "kills": 4,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 9,
-          "cs": 12,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 8575,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3078,
-            1001
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (697 LP)",
-      "analystSummary": "Elyoya: MASTER I 697 LP · 15 partidas consultadas · 81.4% WR · KDA medio 5.3.",
+      "statusBadge": "MASTER I (732 LP)",
+      "analystSummary": "Elyoya: MASTER I 732 LP · 15 partidas consultadas · 81.8% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1803,9 +1805,18 @@
           "wins": 35,
           "losses": 8,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791946334679,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 732,
+          "wins": 36,
+          "losses": 8,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2548,7 +2559,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3646,10 +3657,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 902,
-      "wins": 42,
+      "lp": 937,
+      "wins": 43,
       "losses": 8,
-      "winrate": 84,
+      "winrate": 84.3,
       "streak": 2,
       "avgKda": 5.7,
       "avgKills": 3.7,
@@ -4475,8 +4486,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (902 LP)",
-      "analystSummary": "Alvaro: MASTER I 902 LP · 19 partidas consultadas · 84% WR · KDA medio 5.7.",
+      "statusBadge": "MASTER I (937 LP)",
+      "analystSummary": "Alvaro: MASTER I 937 LP · 19 partidas consultadas · 84.3% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4736,6 +4747,15 @@
           "division": "I",
           "lp": 902,
           "wins": 42,
+          "losses": 8,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791946355064,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 937,
+          "wins": 43,
           "losses": 8,
           "note": "Sincronización automática desde OP.GG"
         }
