@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T04:01:54.336Z",
-  "syncedAt": "2026-10-14T04:01:54.336Z",
+  "generatedAt": "2026-10-14T04:21:53.263Z",
+  "syncedAt": "2026-10-14T04:21:53.264Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -894,7 +894,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1835,7 +1835,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2578,7 +2578,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3680,7 +3680,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -3697,30 +3697,43 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1007,
+      "lp": 982,
       "wins": 44,
-      "losses": 8,
-      "winrate": 84.6,
-      "streak": 3,
-      "avgKda": 5.1,
-      "avgKills": 3.5,
-      "avgDeaths": 5.4,
-      "avgAssists": 17.4,
+      "losses": 9,
+      "winrate": 83,
+      "streak": -1,
+      "avgKda": 5,
+      "avgKills": 4.2,
+      "avgDeaths": 5.6,
+      "avgAssists": 16.7,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winrate": 33.3,
+          "kills": 22,
+          "deaths": 30,
+          "assists": 43,
+          "kda": 2.2,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Alistar",
           "championId": "12",
-          "games": 3,
-          "wins": 3,
+          "games": 2,
+          "wins": 2,
           "losses": 0,
           "winrate": 100,
-          "kills": 5,
-          "deaths": 17,
-          "assists": 83,
-          "kda": 5.2,
-          "csPerMin": 0.7
+          "kills": 4,
+          "deaths": 10,
+          "assists": 57,
+          "kda": 6.1,
+          "csPerMin": 0.8
         },
         {
           "championName": "Neeko",
@@ -3760,19 +3773,6 @@
           "assists": 23,
           "kda": 5.3,
           "csPerMin": 0.7
-        },
-        {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 8,
-          "deaths": 19,
-          "assists": 30,
-          "kda": 2,
-          "csPerMin": 0.9
         },
         {
           "championName": "Pyke",
@@ -3867,6 +3867,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVpHB3qG_s1z5TYOOogQqKpsR8sJqgv6Ao=",
+          "gameCreation": 1791951448000,
+          "gameDurationSeconds": 1840,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Camille",
+          "championId": "164",
+          "champLevel": 13,
+          "role": "SUPPORT",
+          "kills": 14,
+          "deaths": 11,
+          "assists": 13,
+          "kda": 2.45,
+          "cs": 28,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 32996,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3877,
+            6610,
+            6692,
+            2021,
+            3111,
+            1028
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVNvf8hflTsiqx0cwR4m7_tHoKyzu-HTq4=",
           "gameCreation": 1791949312000,
@@ -4489,45 +4524,10 @@
             3009
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXHiyjrNvJyLendh8B-Ai5A38sWosZAVUk=",
-          "gameCreation": 1791600733000,
-          "gameDurationSeconds": 1687,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Alistar",
-          "championId": "12",
-          "champLevel": 13,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 7,
-          "assists": 26,
-          "kda": 3.86,
-          "cs": 15,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 10326,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3876,
-            3190,
-            3050,
-            3009,
-            3067,
-            1028
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1007 LP)",
-      "analystSummary": "Alvaro: MASTER I 1007 LP · 19 partidas consultadas · 84.6% WR · KDA medio 5.1.",
+      "statusBadge": "MASTER I (982 LP)",
+      "analystSummary": "Alvaro: MASTER I 982 LP · 19 partidas consultadas · 83% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4807,9 +4807,18 @@
           "wins": 44,
           "losses": 8,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1791951713262,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 982,
+          "wins": 44,
+          "losses": 9,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
