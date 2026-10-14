@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T03:46:47.318Z",
-  "syncedAt": "2026-10-14T03:46:47.318Z",
+  "generatedAt": "2026-10-14T03:51:44.818Z",
+  "syncedAt": "2026-10-14T03:51:44.818Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -894,7 +894,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -2592,25 +2592,25 @@
       "wins": 41,
       "losses": 9,
       "winrate": 82,
-      "streak": 1,
-      "avgKda": 6.6,
-      "avgKills": 9.4,
+      "streak": 2,
+      "avgKda": 6.9,
+      "avgKills": 9.1,
       "avgDeaths": 4,
-      "avgAssists": 8.4,
-      "avgCsPerMin": 8.8,
+      "avgAssists": 9.4,
+      "avgCsPerMin": 8.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Ezreal",
           "championId": "81",
-          "games": 6,
-          "wins": 5,
+          "games": 5,
+          "wins": 4,
           "losses": 1,
-          "winrate": 83.3,
-          "kills": 51,
-          "deaths": 23,
-          "assists": 45,
-          "kda": 4.2,
+          "winrate": 80,
+          "kills": 42,
+          "deaths": 21,
+          "assists": 42,
+          "kda": 4,
           "csPerMin": 8.8
         },
         {
@@ -2666,6 +2666,19 @@
           "csPerMin": 8.1
         },
         {
+          "championName": "Renata Glasc",
+          "championId": "888",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 1,
+          "deaths": 2,
+          "assists": 23,
+          "kda": 12,
+          "csPerMin": 0.8
+        },
+        {
           "championName": "Ziggs",
           "championId": "115",
           "games": 1,
@@ -2706,6 +2719,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgW3tQO-D7wkIzoRuvMbxsCgJFvciUmPREo=",
+          "gameCreation": 1791949617000,
+          "gameDurationSeconds": 1413,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Renata Glasc",
+          "championId": "888",
+          "champLevel": 12,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 2,
+          "assists": 23,
+          "kda": 12,
+          "cs": 19,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 5469,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerHeal",
+            "SummonerFlash"
+          ],
+          "items": [
+            3869,
+            3190,
+            3222,
+            3158,
+            4642
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUVOwl8CyI0nkhjuweAp-3GrYzd8y7qC0A=",
           "gameCreation": 1791919933000,
@@ -3366,45 +3413,10 @@
             1086
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXH0dgI_3wTJBaoZE1Qsu7jKPpspH9LWZU=",
-          "gameCreation": 1791514821000,
-          "gameDurationSeconds": 924,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ezreal",
-          "championId": "81",
-          "champLevel": 10,
-          "role": "ADC",
-          "kills": 9,
-          "deaths": 2,
-          "assists": 3,
-          "kda": 6,
-          "cs": 142,
-          "csPerMin": 9.2,
-          "killParticipationPct": 0,
-          "damageDealt": 12731,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            2031,
-            3070,
-            3078,
-            3133,
-            1036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (832 LP)",
-      "analystSummary": "Supa: MASTER I 832 LP · 20 partidas consultadas · 82% WR · KDA medio 6.6.",
+      "analystSummary": "Supa: MASTER I 832 LP · 20 partidas consultadas · 82% WR · KDA medio 6.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3650,7 +3662,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
