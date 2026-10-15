@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T01:46:41.651Z",
-  "syncedAt": "2026-10-15T01:46:41.651Z",
+  "generatedAt": "2026-10-15T03:01:52.447Z",
+  "syncedAt": "2026-10-15T03:01:52.447Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2654,27 +2654,14 @@
       "wins": 42,
       "losses": 9,
       "winrate": 82.4,
-      "streak": 2,
-      "avgKda": 6.9,
-      "avgKills": 9.1,
-      "avgDeaths": 4,
-      "avgAssists": 9.4,
+      "streak": 3,
+      "avgKda": 7.1,
+      "avgKills": 9,
+      "avgDeaths": 3.6,
+      "avgAssists": 9.1,
       "avgCsPerMin": 8.4,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Ezreal",
-          "championId": "81",
-          "games": 5,
-          "wins": 4,
-          "losses": 1,
-          "winrate": 80,
-          "kills": 42,
-          "deaths": 21,
-          "assists": 42,
-          "kda": 4,
-          "csPerMin": 8.8
-        },
         {
           "championName": "Jhin",
           "championId": "202",
@@ -2689,17 +2676,30 @@
           "csPerMin": 8.7
         },
         {
+          "championName": "Ezreal",
+          "championId": "81",
+          "games": 4,
+          "wins": 3,
+          "losses": 1,
+          "winrate": 75,
+          "kills": 32,
+          "deaths": 13,
+          "assists": 30,
+          "kda": 4.8,
+          "csPerMin": 8.8
+        },
+        {
           "championName": "Lucian",
           "championId": "236",
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "losses": 0,
           "winrate": 100,
-          "kills": 13,
-          "deaths": 10,
-          "assists": 14,
-          "kda": 2.7,
-          "csPerMin": 9.1
+          "kills": 22,
+          "deaths": 12,
+          "assists": 18,
+          "kda": 3.3,
+          "csPerMin": 8.9
         },
         {
           "championName": "Yunara",
@@ -2781,6 +2781,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXGEgyWsZ0CFr4_htCAaAdDF64TFSbgaIE=",
+          "gameCreation": 1792033017000,
+          "gameDurationSeconds": 1949,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lucian",
+          "championId": "236",
+          "champLevel": 16,
+          "role": "ADC",
+          "kills": 9,
+          "deaths": 2,
+          "assists": 4,
+          "kda": 6.5,
+          "cs": 269,
+          "csPerMin": 8.3,
+          "killParticipationPct": 0,
+          "damageDealt": 38676,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3508,
+            6675,
+            1086,
+            3033,
+            3031,
+            1033
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgW3tQO-D7wkIzoRuvMbxsCgJFvciUmPREo=",
           "gameCreation": 1791949617000,
@@ -3440,45 +3475,10 @@
             3161
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWEFIrngM-nGH2xTlFVyupoeVnqDHsBG98=",
-          "gameCreation": 1791517586000,
-          "gameDurationSeconds": 1853,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ezreal",
-          "championId": "81",
-          "champLevel": 17,
-          "role": "ADC",
-          "kills": 10,
-          "deaths": 8,
-          "assists": 12,
-          "kda": 2.75,
-          "cs": 265,
-          "csPerMin": 8.6,
-          "killParticipationPct": 0,
-          "damageDealt": 43011,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            3078,
-            3161,
-            3133,
-            6694,
-            3042,
-            1086
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (882 LP)",
-      "analystSummary": "Supa: MASTER I 882 LP · 20 partidas consultadas · 82.4% WR · KDA medio 6.9.",
+      "analystSummary": "Supa: MASTER I 882 LP · 20 partidas consultadas · 82.4% WR · KDA medio 7.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
