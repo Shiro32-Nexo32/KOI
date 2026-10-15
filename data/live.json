@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T05:41:49.289Z",
-  "syncedAt": "2026-10-15T05:41:49.289Z",
+  "generatedAt": "2026-10-15T16:36:52.300Z",
+  "syncedAt": "2026-10-15T16:36:52.300Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,12 +22,12 @@
       "wins": 39,
       "losses": 13,
       "winrate": 75,
-      "streak": 1,
-      "avgKda": 5.2,
-      "avgKills": 5.4,
+      "streak": 2,
+      "avgKda": 5,
+      "avgKills": 5.2,
       "avgDeaths": 3.1,
-      "avgAssists": 5.9,
-      "avgCsPerMin": 8.5,
+      "avgAssists": 5.6,
+      "avgCsPerMin": 8.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -68,6 +68,19 @@
           "assists": 8,
           "kda": 1.3,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Corki",
+          "championId": "42",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "kda": 0,
+          "csPerMin": 9.3
         },
         {
           "championName": "Ahri",
@@ -120,22 +133,43 @@
           "assists": 14,
           "kda": 3,
           "csPerMin": 6.8
-        },
-        {
-          "championName": "Aurora",
-          "championId": "893",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 3,
-          "deaths": 3,
-          "assists": 4,
-          "kda": 2.3,
-          "csPerMin": 8.1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXWQ6i4ggBrHYT17YNFRb3Z6eU4_c_m5Vg=",
+          "gameCreation": 1792082093000,
+          "gameDurationSeconds": 925,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Corki",
+          "championId": "42",
+          "champLevel": 11,
+          "role": "TOP",
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "kda": 0,
+          "cs": 144,
+          "csPerMin": 9.3,
+          "killParticipationPct": 0,
+          "damageDealt": 10561,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerExhaust"
+          ],
+          "items": [
+            2031,
+            3078,
+            1001,
+            1086,
+            1033
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVEDAwBB3qPATvDLGMDxoI0vHxo2KjMu-Y=",
           "gameCreation": 1792035809000,
@@ -583,45 +617,10 @@
             3073
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWsK54pqK8tdggYzp9d5j_yA8EMt5YTyGU=",
-          "gameCreation": 1791648526000,
-          "gameDurationSeconds": 1301,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Aurora",
-          "championId": "893",
-          "champLevel": 15,
-          "role": "TOP",
-          "kills": 3,
-          "deaths": 3,
-          "assists": 4,
-          "kda": 2.33,
-          "cs": 175,
-          "csPerMin": 8.1,
-          "killParticipationPct": 0,
-          "damageDealt": 18398,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            3020,
-            4646,
-            1052,
-            1082,
-            6655,
-            1052
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (702 LP)",
-      "analystSummary": "Myrwn: MASTER I 702 LP · 14 partidas consultadas · 75% WR · KDA medio 5.2.",
+      "analystSummary": "Myrwn: MASTER I 702 LP · 14 partidas consultadas · 75% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
