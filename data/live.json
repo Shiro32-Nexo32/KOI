@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T04:31:43.522Z",
-  "syncedAt": "2026-10-15T04:31:43.522Z",
+  "generatedAt": "2026-10-15T04:56:43.449Z",
+  "syncedAt": "2026-10-15T04:56:43.449Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2696,7 +2696,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3837,11 +3837,11 @@
       "wins": 46,
       "losses": 10,
       "winrate": 82.1,
-      "streak": 1,
-      "avgKda": 4.8,
-      "avgKills": 4.2,
-      "avgDeaths": 5.8,
-      "avgAssists": 16.6,
+      "streak": -1,
+      "avgKda": 4.7,
+      "avgKills": 4,
+      "avgDeaths": 6,
+      "avgAssists": 16.8,
       "avgCsPerMin": 1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3963,6 +3963,19 @@
           "csPerMin": 0.9
         },
         {
+          "championName": "Thresh",
+          "championId": "412",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 1,
+          "deaths": 9,
+          "assists": 21,
+          "kda": 2.4,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Lux",
           "championId": "99",
           "games": 1,
@@ -3990,6 +4003,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXAcNU0skUxWnFDJVAdk37Oa4hG4woheE8=",
+          "gameCreation": 1792040144000,
+          "gameDurationSeconds": 1932,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Thresh",
+          "championId": "412",
+          "champLevel": 14,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 9,
+          "assists": 21,
+          "kda": 2.44,
+          "cs": 28,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 10877,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3190,
+            3222,
+            3009,
+            3067,
+            1011
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWB-7DcHEGxWU3sswgMWKhB_4TshxkY2Rc=",
           "gameCreation": 1792037812000,
@@ -4649,7 +4697,7 @@
         }
       ],
       "statusBadge": "MASTER I (1027 LP)",
-      "analystSummary": "Alvaro: MASTER I 1027 LP · 19 partidas consultadas · 82.1% WR · KDA medio 4.8.",
+      "analystSummary": "Alvaro: MASTER I 1027 LP · 20 partidas consultadas · 82.1% WR · KDA medio 4.7.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -4967,7 +5015,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
