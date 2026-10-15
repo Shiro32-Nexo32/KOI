@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T17:31:57.241Z",
-  "syncedAt": "2026-10-15T17:31:57.241Z",
+  "generatedAt": "2026-10-15T17:47:00.318Z",
+  "syncedAt": "2026-10-15T17:47:00.318Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3908,27 +3908,14 @@
       "wins": 48,
       "losses": 11,
       "winrate": 81.4,
-      "streak": 2,
+      "streak": 3,
       "avgKda": 4.8,
-      "avgKills": 4.5,
-      "avgDeaths": 5.7,
-      "avgAssists": 16.3,
+      "avgKills": 4.8,
+      "avgDeaths": 5.3,
+      "avgAssists": 15.4,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 4,
-          "wins": 1,
-          "losses": 3,
-          "winrate": 25,
-          "kills": 25,
-          "deaths": 37,
-          "assists": 50,
-          "kda": 2,
-          "csPerMin": 1
-        },
         {
           "championName": "Karma",
           "championId": "43",
@@ -3940,6 +3927,19 @@
           "deaths": 15,
           "assists": 76,
           "kda": 5.3,
+          "csPerMin": 1
+        },
+        {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 3,
+          "wins": 0,
+          "losses": 3,
+          "winrate": 0,
+          "kills": 22,
+          "deaths": 27,
+          "assists": 29,
+          "kda": 1.9,
           "csPerMin": 1
         },
         {
@@ -3980,6 +3980,19 @@
           "assists": 16,
           "kda": 3,
           "csPerMin": 1
+        },
+        {
+          "championName": "Viego",
+          "championId": "234",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 3,
+          "assists": 3,
+          "kda": 3.3,
+          "csPerMin": 0.7
         },
         {
           "championName": "Lee Sin",
@@ -4074,6 +4087,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUsJkfIDB9IF-VXqKLRii8nbUDwN5rOLwM=",
+          "gameCreation": 1792086258000,
+          "gameDurationSeconds": 1103,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Viego",
+          "championId": "234",
+          "champLevel": 12,
+          "role": "JUNGLE",
+          "kills": 7,
+          "deaths": 3,
+          "assists": 3,
+          "kda": 3.33,
+          "cs": 13,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 13550,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6676,
+            1036,
+            6672,
+            2422
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVhoKuB0st5H3Z-rtZuZUIaks28Lz43AvE=",
           "gameCreation": 1792084328000,
@@ -4729,41 +4775,6 @@
             3109,
             3009,
             3067
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXBwuH6ZRz_ohWaSodINgbIWnEqliZmSpk=",
-          "gameCreation": 1791740792000,
-          "gameDurationSeconds": 1924,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 3,
-          "deaths": 10,
-          "assists": 21,
-          "kda": 2.4,
-          "cs": 34,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 23443,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            6692,
-            6610,
-            2021,
-            3047,
-            1028
           ],
           "tags": []
         }
