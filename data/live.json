@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T03:46:49.459Z",
-  "syncedAt": "2026-10-15T03:46:49.459Z",
+  "generatedAt": "2026-10-15T03:51:44.468Z",
+  "syncedAt": "2026-10-15T03:51:44.468Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 667,
-      "wins": 38,
+      "lp": 702,
+      "wins": 39,
       "losses": 13,
-      "winrate": 74.5,
+      "winrate": 75,
       "streak": 1,
       "avgKda": 5.2,
       "avgKills": 5.4,
@@ -620,8 +620,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (667 LP)",
-      "analystSummary": "Myrwn: MASTER I 667 LP · 14 partidas consultadas · 74.5% WR · KDA medio 5.2.",
+      "statusBadge": "MASTER I (702 LP)",
+      "analystSummary": "Myrwn: MASTER I 702 LP · 14 partidas consultadas · 75% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -901,9 +901,18 @@
           "wins": 38,
           "losses": 13,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792036278653,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 702,
+          "wins": 39,
+          "losses": 13,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -923,16 +932,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 857,
+      "lp": 832,
       "wins": 40,
-      "losses": 10,
-      "winrate": 80,
-      "streak": 1,
+      "losses": 11,
+      "winrate": 78.4,
+      "streak": -1,
       "avgKda": 5.5,
       "avgKills": 8.9,
-      "avgDeaths": 3.7,
-      "avgAssists": 5.9,
-      "avgCsPerMin": 3.6,
+      "avgDeaths": 3.8,
+      "avgAssists": 6,
+      "avgCsPerMin": 3.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1040,17 +1049,17 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Ezreal",
-          "championId": "81",
+          "championName": "Naafiri",
+          "championId": "950",
           "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 2,
-          "assists": 0,
-          "kda": 1,
-          "csPerMin": 8
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 3,
+          "deaths": 4,
+          "assists": 2,
+          "kda": 1.3,
+          "csPerMin": 1.8
         },
         {
           "championName": "Skarner",
@@ -1106,6 +1115,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWBJP5AEDRAHQubzGtqna5abjX_4RjAojM=",
+          "gameCreation": 1792036106000,
+          "gameDurationSeconds": 1056,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Naafiri",
+          "championId": "950",
+          "champLevel": 11,
+          "role": "JUNGLE",
+          "kills": 3,
+          "deaths": 4,
+          "assists": 2,
+          "kda": 1.25,
+          "cs": 31,
+          "csPerMin": 1.8,
+          "killParticipationPct": 0,
+          "damageDealt": 7499,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            2422,
+            3044,
+            3067,
+            6699
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUe1v1gjdOf-t9sCgsjWHccpen4jniwnQM=",
           "gameCreation": 1792034155000,
@@ -1590,45 +1633,10 @@
             3814
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXj9NPtl5Sat4mkFjzCpS8dejXZzfcGT-8=",
-          "gameCreation": 1791652985000,
-          "gameDurationSeconds": 992,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ezreal",
-          "championId": "81",
-          "champLevel": 10,
-          "role": "ADC",
-          "kills": 2,
-          "deaths": 2,
-          "assists": 0,
-          "kda": 1,
-          "cs": 133,
-          "csPerMin": 8,
-          "killParticipationPct": 0,
-          "damageDealt": 4905,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            2031,
-            3070,
-            1120,
-            3078,
-            1036,
-            2022
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (857 LP)",
-      "analystSummary": "Elyoya: MASTER I 857 LP · 15 partidas consultadas · 80% WR · KDA medio 5.5.",
+      "statusBadge": "MASTER I (832 LP)",
+      "analystSummary": "Elyoya: MASTER I 832 LP · 15 partidas consultadas · 78.4% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1890,9 +1898,18 @@
           "wins": 40,
           "losses": 10,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792036285317,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 832,
+          "wins": 40,
+          "losses": 11,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -4888,7 +4905,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
