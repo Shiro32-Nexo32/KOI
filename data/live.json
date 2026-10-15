@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T03:21:46.662Z",
-  "syncedAt": "2026-10-15T03:21:46.662Z",
+  "generatedAt": "2026-10-15T03:46:49.459Z",
+  "syncedAt": "2026-10-15T03:46:49.459Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,12 +22,12 @@
       "wins": 38,
       "losses": 13,
       "winrate": 74.5,
-      "streak": -1,
-      "avgKda": 6.6,
-      "avgKills": 5.6,
-      "avgDeaths": 2.9,
-      "avgAssists": 6.1,
-      "avgCsPerMin": 8.6,
+      "streak": 1,
+      "avgKda": 5.2,
+      "avgKills": 5.4,
+      "avgDeaths": 3.1,
+      "avgAssists": 5.9,
+      "avgCsPerMin": 8.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -44,17 +44,17 @@
           "csPerMin": 8.4
         },
         {
-          "championName": "Zaahen",
-          "championId": "904",
+          "championName": "Zeri",
+          "championId": "221",
           "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 24,
-          "deaths": 2,
-          "assists": 8,
-          "kda": 16,
-          "csPerMin": 9.4
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 17,
+          "deaths": 8,
+          "assists": 7,
+          "kda": 3,
+          "csPerMin": 9.1
         },
         {
           "championName": "Jayce",
@@ -83,6 +83,19 @@
           "csPerMin": 8
         },
         {
+          "championName": "Zaahen",
+          "championId": "904",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 1,
+          "assists": 1,
+          "kda": 8,
+          "csPerMin": 9.2
+        },
+        {
           "championName": "Camille",
           "championId": "164",
           "games": 1,
@@ -93,19 +106,6 @@
           "deaths": 2,
           "assists": 4,
           "kda": 6.5,
-          "csPerMin": 9.2
-        },
-        {
-          "championName": "Zeri",
-          "championId": "221",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 3,
-          "deaths": 4,
-          "assists": 3,
-          "kda": 1.5,
           "csPerMin": 9.2
         },
         {
@@ -136,6 +136,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVEDAwBB3qPATvDLGMDxoI0vHxo2KjMu-Y=",
+          "gameCreation": 1792035809000,
+          "gameDurationSeconds": 1887,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Zeri",
+          "championId": "221",
+          "champLevel": 19,
+          "role": "TOP",
+          "kills": 14,
+          "deaths": 4,
+          "assists": 4,
+          "kda": 4.5,
+          "cs": 283,
+          "csPerMin": 9,
+          "killParticipationPct": 0,
+          "damageDealt": 35647,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerExhaust"
+          ],
+          "items": [
+            3032,
+            3140,
+            3031,
+            6673,
+            3006,
+            3085
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXsxq0Vj9OghJPrChFhii4NC8YGVFlaweE=",
           "gameCreation": 1792033467000,
@@ -583,45 +618,10 @@
             1052
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXX2R7mdf0RWC_Kx72Dwgm-nS6iFsMyHF0=",
-          "gameCreation": 1791605356000,
-          "gameDurationSeconds": 1568,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Zaahen",
-          "championId": "904",
-          "champLevel": 19,
-          "role": "TOP",
-          "kills": 17,
-          "deaths": 1,
-          "assists": 7,
-          "kda": 24,
-          "cs": 252,
-          "csPerMin": 9.6,
-          "killParticipationPct": 0,
-          "damageDealt": 40618,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            1036,
-            6631,
-            3078,
-            3047,
-            3156,
-            6333
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (667 LP)",
-      "analystSummary": "Myrwn: MASTER I 667 LP · 14 partidas consultadas · 74.5% WR · KDA medio 6.6.",
+      "analystSummary": "Myrwn: MASTER I 667 LP · 14 partidas consultadas · 74.5% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
