@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T17:11:55.897Z",
-  "syncedAt": "2026-10-15T17:11:55.898Z",
+  "generatedAt": "2026-10-15T17:16:51.599Z",
+  "syncedAt": "2026-10-15T17:16:51.599Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 737,
-      "wins": 40,
+      "lp": 772,
+      "wins": 41,
       "losses": 13,
-      "winrate": 75.5,
+      "winrate": 75.9,
       "streak": 3,
       "avgKda": 4.8,
       "avgKills": 5.1,
@@ -607,8 +607,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (737 LP)",
-      "analystSummary": "Myrwn: MASTER I 737 LP · 14 partidas consultadas · 75.5% WR · KDA medio 4.8.",
+      "statusBadge": "MASTER I (772 LP)",
+      "analystSummary": "Myrwn: MASTER I 772 LP · 14 partidas consultadas · 75.9% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -940,6 +940,15 @@
           "division": "I",
           "lp": 737,
           "wins": 40,
+          "losses": 13,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792084582059,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 772,
+          "wins": 41,
           "losses": 13,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -2723,7 +2732,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3908,16 +3917,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1037,
-      "wins": 47,
+      "lp": 1072,
+      "wins": 48,
       "losses": 11,
-      "winrate": 81,
-      "streak": 1,
-      "avgKda": 4.7,
+      "winrate": 81.4,
+      "streak": 2,
+      "avgKda": 4.8,
       "avgKills": 4.5,
-      "avgDeaths": 6,
-      "avgAssists": 16.4,
-      "avgCsPerMin": 1,
+      "avgDeaths": 5.7,
+      "avgAssists": 16.3,
+      "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3984,6 +3993,19 @@
           "assists": 16,
           "kda": 3,
           "csPerMin": 1
+        },
+        {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 4,
+          "assists": 12,
+          "kda": 4.3,
+          "csPerMin": 0.4
         },
         {
           "championName": "Qiyana",
@@ -4062,22 +4084,43 @@
           "assists": 10,
           "kda": 4,
           "csPerMin": 1.7
-        },
-        {
-          "championName": "Zoe",
-          "championId": "142",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 5,
-          "deaths": 11,
-          "assists": 14,
-          "kda": 1.7,
-          "csPerMin": 1.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVhoKuB0st5H3Z-rtZuZUIaks28Lz43AvE=",
+          "gameCreation": 1792084328000,
+          "gameDurationSeconds": 1496,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 15,
+          "role": "JUNGLE",
+          "kills": 5,
+          "deaths": 4,
+          "assists": 12,
+          "kda": 4.25,
+          "cs": 10,
+          "csPerMin": 0.4,
+          "killParticipationPct": 0,
+          "damageDealt": 19062,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            3156,
+            3111,
+            6692,
+            6333
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX05RptEOEU-mLdbrqsGJk9IKfJt1Cc-2U=",
           "gameCreation": 1792042429000,
@@ -4736,45 +4779,10 @@
             1028
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVVbfwGZrgIjHk78oQ82my0JwHYpjAwfyk=",
-          "gameCreation": 1791738553000,
-          "gameDurationSeconds": 2349,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Zoe",
-          "championId": "142",
-          "champLevel": 16,
-          "role": "SUPPORT",
-          "kills": 5,
-          "deaths": 11,
-          "assists": 14,
-          "kda": 1.73,
-          "cs": 55,
-          "csPerMin": 1.4,
-          "killParticipationPct": 0,
-          "damageDealt": 22559,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3871,
-            2065,
-            3190,
-            3158,
-            4005,
-            4628
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1037 LP)",
-      "analystSummary": "Alvaro: MASTER I 1037 LP · 20 partidas consultadas · 81% WR · KDA medio 4.7.",
+      "statusBadge": "MASTER I (1072 LP)",
+      "analystSummary": "Alvaro: MASTER I 1072 LP · 20 partidas consultadas · 81.4% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5108,9 +5116,18 @@
           "wins": 47,
           "losses": 11,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792084611598,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1072,
+          "wins": 48,
+          "losses": 11,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
