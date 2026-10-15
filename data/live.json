@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T05:06:44.126Z",
-  "syncedAt": "2026-10-15T05:06:44.127Z",
+  "generatedAt": "2026-10-15T05:36:44.704Z",
+  "syncedAt": "2026-10-15T05:36:44.705Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3824,7 +3824,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -3845,11 +3845,11 @@
       "wins": 46,
       "losses": 11,
       "winrate": 80.7,
-      "streak": -1,
+      "streak": 1,
       "avgKda": 4.7,
-      "avgKills": 4,
+      "avgKills": 4.5,
       "avgDeaths": 6,
-      "avgAssists": 16.8,
+      "avgAssists": 16.4,
       "avgCsPerMin": 1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3919,6 +3919,19 @@
           "csPerMin": 1
         },
         {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 10,
+          "deaths": 5,
+          "assists": 7,
+          "kda": 3.4,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Tahm Kench",
           "championId": "223",
           "games": 1,
@@ -3956,19 +3969,6 @@
           "assists": 23,
           "kda": 8,
           "csPerMin": 0.7
-        },
-        {
-          "championName": "Milio",
-          "championId": "902",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 0,
-          "deaths": 4,
-          "assists": 15,
-          "kda": 3.8,
-          "csPerMin": 0.9
         },
         {
           "championName": "Thresh",
@@ -4011,6 +4011,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX05RptEOEU-mLdbrqsGJk9IKfJt1Cc-2U=",
+          "gameCreation": 1792042429000,
+          "gameDurationSeconds": 1872,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 10,
+          "deaths": 5,
+          "assists": 7,
+          "kda": 3.4,
+          "cs": 28,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 26855,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3134,
+            6699,
+            3158,
+            6696,
+            3814,
+            6697
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXAcNU0skUxWnFDJVAdk37Oa4hG4woheE8=",
           "gameCreation": 1792040144000,
@@ -4669,39 +4704,6 @@
             4628
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVQKO1lcsXfihT4nMU24eHvahBYwsrzz6s=",
-          "gameCreation": 1791695400000,
-          "gameDurationSeconds": 1388,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Milio",
-          "championId": "902",
-          "champLevel": 12,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 4,
-          "assists": 15,
-          "kda": 3.75,
-          "cs": 20,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 4623,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3870,
-            6620,
-            6617,
-            3158
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1002 LP)",
@@ -5032,7 +5034,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
