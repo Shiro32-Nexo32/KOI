@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T05:01:50.495Z",
-  "syncedAt": "2026-10-14T19:07:06.794Z",
+  "generatedAt": "2026-10-15T00:56:44.613Z",
+  "syncedAt": "2026-10-15T00:56:44.613Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -894,7 +894,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -918,12 +918,12 @@
       "wins": 38,
       "losses": 9,
       "winrate": 80.9,
-      "streak": 2,
-      "avgKda": 5.6,
-      "avgKills": 8.3,
-      "avgDeaths": 3.6,
-      "avgAssists": 6.7,
-      "avgCsPerMin": 4.2,
+      "streak": 3,
+      "avgKda": 5.5,
+      "avgKills": 8.5,
+      "avgDeaths": 3.8,
+      "avgAssists": 6.9,
+      "avgCsPerMin": 4.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -951,6 +951,19 @@
           "assists": 13,
           "kda": 3,
           "csPerMin": 8.4
+        },
+        {
+          "championName": "Sylas",
+          "championId": "517",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 10,
+          "deaths": 5,
+          "assists": 9,
+          "kda": 3.8,
+          "csPerMin": 8.5
         },
         {
           "championName": "Akali",
@@ -1057,19 +1070,6 @@
           "csPerMin": 1.5
         },
         {
-          "championName": "Yone",
-          "championId": "777",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 2,
-          "assists": 5,
-          "kda": 6,
-          "csPerMin": 10.1
-        },
-        {
           "championName": "Viego",
           "championId": "234",
           "games": 1,
@@ -1097,6 +1097,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUQNo7IpEpPWKIhfRloBK2z-SXwJJOh6KM=",
+          "gameCreation": 1792025722000,
+          "gameDurationSeconds": 1477,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Sylas",
+          "championId": "517",
+          "champLevel": 17,
+          "role": "MID",
+          "kills": 10,
+          "deaths": 5,
+          "assists": 9,
+          "kda": 3.8,
+          "cs": 210,
+          "csPerMin": 8.5,
+          "killParticipationPct": 0,
+          "damageDealt": 32371,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3152,
+            2031,
+            4645,
+            1056,
+            3173,
+            3157
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWDPBTrPF2dZSN7Jj4fhQ-DHEEsw5C8Yts=",
           "gameCreation": 1791952328000,
@@ -1582,45 +1617,10 @@
             2420
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVM_482FoR7e_Bhd_GC29HdIlXbxouqS7U=",
-          "gameCreation": 1791567995000,
-          "gameDurationSeconds": 1263,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Yone",
-          "championId": "777",
-          "champLevel": 16,
-          "role": "TOP",
-          "kills": 7,
-          "deaths": 2,
-          "assists": 5,
-          "kda": 6,
-          "cs": 212,
-          "csPerMin": 10.1,
-          "killParticipationPct": 0,
-          "damageDealt": 25170,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            6673,
-            3153,
-            3006,
-            1018,
-            1086,
-            1037
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (812 LP)",
-      "analystSummary": "Elyoya: MASTER I 812 LP · 15 partidas consultadas · 80.9% WR · KDA medio 5.6.",
+      "analystSummary": "Elyoya: MASTER I 812 LP · 15 partidas consultadas · 80.9% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1857,7 +1857,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
