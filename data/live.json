@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T17:21:48.318Z",
-  "syncedAt": "2026-10-15T17:21:48.318Z",
+  "generatedAt": "2026-10-15T17:26:47.300Z",
+  "syncedAt": "2026-10-15T17:26:47.300Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -919,7 +919,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1955,7 +1955,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2698,7 +2698,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -2721,26 +2721,26 @@
       "wins": 44,
       "losses": 11,
       "winrate": 80,
-      "streak": -2,
-      "avgKda": 6.8,
-      "avgKills": 8.8,
-      "avgDeaths": 3.8,
-      "avgAssists": 8.8,
-      "avgCsPerMin": 8.4,
+      "streak": 1,
+      "avgKda": 6.1,
+      "avgKills": 8.3,
+      "avgDeaths": 3.9,
+      "avgAssists": 8.3,
+      "avgCsPerMin": 8.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 6,
-          "wins": 4,
+          "games": 5,
+          "wins": 3,
           "losses": 2,
-          "winrate": 66.7,
-          "kills": 73,
-          "deaths": 21,
-          "assists": 72,
-          "kda": 6.9,
-          "csPerMin": 8.7
+          "winrate": 60,
+          "kills": 60,
+          "deaths": 19,
+          "assists": 57,
+          "kda": 6.2,
+          "csPerMin": 8.5
         },
         {
           "championName": "Lucian",
@@ -2780,6 +2780,19 @@
           "assists": 10,
           "kda": 3.3,
           "csPerMin": 9.1
+        },
+        {
+          "championName": "Vayne",
+          "championId": "67",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 4,
+          "assists": 3,
+          "kda": 1.5,
+          "csPerMin": 7.8
         },
         {
           "championName": "Renata Glasc",
@@ -2861,6 +2874,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVMXgyz0ESwwzE4LS054qhqz51dg5Pf1eg=",
+          "gameCreation": 1792085017000,
+          "gameDurationSeconds": 1178,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Vayne",
+          "championId": "67",
+          "champLevel": 14,
+          "role": "TOP",
+          "kills": 3,
+          "deaths": 4,
+          "assists": 3,
+          "kda": 1.5,
+          "cs": 154,
+          "csPerMin": 7.8,
+          "killParticipationPct": 0,
+          "damageDealt": 10834,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerHaste",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            3008,
+            3078,
+            3144,
+            1018
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUXNoDtSh6I1shjJLQgyHK-Vad5xxVT3t0=",
           "gameCreation": 1792083322000,
@@ -3519,45 +3566,10 @@
             1037
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWCR1Ex5jL0GfVlxvZP4FMDY1HoAws1ub0=",
-          "gameCreation": 1791570943000,
-          "gameDurationSeconds": 1542,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jhin",
-          "championId": "202",
-          "champLevel": 16,
-          "role": "ADC",
-          "kills": 13,
-          "deaths": 2,
-          "assists": 15,
-          "kda": 14,
-          "cs": 247,
-          "csPerMin": 9.6,
-          "killParticipationPct": 0,
-          "damageDealt": 31488,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            1120,
-            3031,
-            3036,
-            6697,
-            3094,
-            1038
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (902 LP)",
-      "analystSummary": "Supa: MASTER I 902 LP · 20 partidas consultadas · 80% WR · KDA medio 6.8.",
+      "analystSummary": "Supa: MASTER I 902 LP · 20 partidas consultadas · 80% WR · KDA medio 6.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3866,7 +3878,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
