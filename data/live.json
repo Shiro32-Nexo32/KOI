@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T17:06:49.703Z",
-  "syncedAt": "2026-10-15T17:06:49.703Z",
+  "generatedAt": "2026-10-15T17:11:55.897Z",
+  "syncedAt": "2026-10-15T17:11:55.898Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -964,10 +964,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 807,
-      "wins": 40,
+      "lp": 842,
+      "wins": 41,
       "losses": 12,
-      "winrate": 76.9,
+      "winrate": 77.4,
       "streak": 1,
       "avgKda": 4.7,
       "avgKills": 8.8,
@@ -1688,8 +1688,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (807 LP)",
-      "analystSummary": "Elyoya: MASTER I 807 LP · 16 partidas consultadas · 76.9% WR · KDA medio 4.7.",
+      "statusBadge": "MASTER I (842 LP)",
+      "analystSummary": "Elyoya: MASTER I 842 LP · 16 partidas consultadas · 77.4% WR · KDA medio 4.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -1969,9 +1969,18 @@
           "wins": 40,
           "losses": 12,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792084289506,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 842,
+          "wins": 41,
+          "losses": 12,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2733,10 +2742,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 927,
+      "lp": 902,
       "wins": 44,
-      "losses": 10,
-      "winrate": 81.5,
+      "losses": 11,
+      "winrate": 80,
       "streak": -2,
       "avgKda": 6.8,
       "avgKills": 8.8,
@@ -3572,8 +3581,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (927 LP)",
-      "analystSummary": "Supa: MASTER I 927 LP · 20 partidas consultadas · 81.5% WR · KDA medio 6.8.",
+      "statusBadge": "MASTER I (902 LP)",
+      "analystSummary": "Supa: MASTER I 902 LP · 20 partidas consultadas · 80% WR · KDA medio 6.8.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3871,9 +3880,18 @@
           "wins": 44,
           "losses": 10,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792084306383,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 902,
+          "wins": 44,
+          "losses": 11,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
