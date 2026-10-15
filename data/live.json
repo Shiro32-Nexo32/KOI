@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T03:01:52.447Z",
-  "syncedAt": "2026-10-15T03:01:52.447Z",
+  "generatedAt": "2026-10-15T03:06:42.659Z",
+  "syncedAt": "2026-10-15T03:06:42.659Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,16 +18,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 692,
+      "lp": 667,
       "wins": 38,
-      "losses": 12,
-      "winrate": 76,
-      "streak": 4,
-      "avgKda": 6.7,
-      "avgKills": 5.8,
-      "avgDeaths": 3.3,
-      "avgAssists": 7.1,
-      "avgCsPerMin": 8.3,
+      "losses": 13,
+      "winrate": 74.5,
+      "streak": -1,
+      "avgKda": 6.6,
+      "avgKills": 5.6,
+      "avgDeaths": 2.9,
+      "avgAssists": 6.1,
+      "avgCsPerMin": 8.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -96,6 +96,19 @@
           "csPerMin": 9.2
         },
         {
+          "championName": "Zeri",
+          "championId": "221",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 3,
+          "deaths": 4,
+          "assists": 3,
+          "kda": 1.5,
+          "csPerMin": 9.2
+        },
+        {
           "championName": "Nidalee",
           "championId": "76",
           "games": 1,
@@ -120,22 +133,44 @@
           "assists": 4,
           "kda": 2.3,
           "csPerMin": 8.1
-        },
-        {
-          "championName": "Elise",
-          "championId": "60",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 5,
-          "deaths": 10,
-          "assists": 18,
-          "kda": 2.3,
-          "csPerMin": 6
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXsxq0Vj9OghJPrChFhii4NC8YGVFlaweE=",
+          "gameCreation": 1792033467000,
+          "gameDurationSeconds": 1708,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Zeri",
+          "championId": "221",
+          "champLevel": 16,
+          "role": "TOP",
+          "kills": 3,
+          "deaths": 4,
+          "assists": 3,
+          "kda": 1.5,
+          "cs": 263,
+          "csPerMin": 9.2,
+          "killParticipationPct": 0,
+          "damageDealt": 23052,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2055,
+            2512,
+            3006,
+            3031,
+            3032,
+            1086
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVk3J1BA0fryEq2pW1IkMJPB-lonOy66FI=",
           "gameCreation": 1791944563000,
@@ -583,45 +618,10 @@
             6333
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVVNcPgZNQCzoyvUHxM_vHRcDmhYOfuuwo=",
-          "gameCreation": 1791603502000,
-          "gameDurationSeconds": 2321,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Elise",
-          "championId": "60",
-          "champLevel": 20,
-          "role": "TOP",
-          "kills": 5,
-          "deaths": 10,
-          "assists": 18,
-          "kda": 2.3,
-          "cs": 234,
-          "csPerMin": 6,
-          "killParticipationPct": 0,
-          "damageDealt": 39408,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3137,
-            3115,
-            3041,
-            3047,
-            4005,
-            2510
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (692 LP)",
-      "analystSummary": "Myrwn: MASTER I 692 LP · 14 partidas consultadas · 76% WR · KDA medio 6.7.",
+      "statusBadge": "MASTER I (667 LP)",
+      "analystSummary": "Myrwn: MASTER I 667 LP · 14 partidas consultadas · 74.5% WR · KDA medio 6.6.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -892,9 +892,18 @@
           "wins": 38,
           "losses": 12,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792033575780,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 667,
+          "wins": 38,
+          "losses": 13,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1888,7 +1897,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2631,7 +2640,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -2650,10 +2659,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 882,
-      "wins": 42,
+      "lp": 917,
+      "wins": 43,
       "losses": 9,
-      "winrate": 82.4,
+      "winrate": 82.7,
       "streak": 3,
       "avgKda": 7.1,
       "avgKills": 9,
@@ -3477,8 +3486,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (882 LP)",
-      "analystSummary": "Supa: MASTER I 882 LP · 20 partidas consultadas · 82.4% WR · KDA medio 7.1.",
+      "statusBadge": "MASTER I (917 LP)",
+      "analystSummary": "Supa: MASTER I 917 LP · 20 partidas consultadas · 82.7% WR · KDA medio 7.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -3729,6 +3738,15 @@
           "division": "I",
           "lp": 882,
           "wins": 42,
+          "losses": 9,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792033596000,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 917,
+          "wins": 43,
           "losses": 9,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -4880,7 +4898,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
