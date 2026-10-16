@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T18:02:22.504Z",
-  "syncedAt": "2026-10-15T18:02:22.504Z",
+  "generatedAt": "2026-10-16T05:31:48.137Z",
+  "syncedAt": "2026-10-16T05:31:48.137Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -919,7 +919,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -2698,7 +2698,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3918,11 +3918,11 @@
       "wins": 49,
       "losses": 11,
       "winrate": 81.7,
-      "streak": 3,
-      "avgKda": 4.8,
-      "avgKills": 4.8,
-      "avgDeaths": 5.3,
-      "avgAssists": 15.4,
+      "streak": -1,
+      "avgKda": 4.5,
+      "avgKills": 4.7,
+      "avgDeaths": 5.6,
+      "avgAssists": 14.8,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3992,6 +3992,19 @@
           "csPerMin": 1
         },
         {
+          "championName": "Thresh",
+          "championId": "412",
+          "games": 2,
+          "wins": 0,
+          "losses": 2,
+          "winrate": 0,
+          "kills": 1,
+          "deaths": 17,
+          "assists": 33,
+          "kda": 2,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Viego",
           "championId": "234",
           "games": 1,
@@ -4057,32 +4070,6 @@
           "csPerMin": 0.6
         },
         {
-          "championName": "Bard",
-          "championId": "432",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 1,
-          "deaths": 3,
-          "assists": 23,
-          "kda": 8,
-          "csPerMin": 0.7
-        },
-        {
-          "championName": "Thresh",
-          "championId": "412",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 1,
-          "deaths": 9,
-          "assists": 21,
-          "kda": 2.4,
-          "csPerMin": 0.9
-        },
-        {
           "championName": "Lux",
           "championId": "99",
           "games": 1,
@@ -4097,6 +4084,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUEWUGWiAIrojSy8JAxnPDYFNLDI_GKeNA=",
+          "gameCreation": 1792128440000,
+          "gameDurationSeconds": 1705,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Thresh",
+          "championId": "412",
+          "champLevel": 12,
+          "role": "SUPPORT",
+          "kills": 0,
+          "deaths": 8,
+          "assists": 12,
+          "kda": 1.5,
+          "cs": 23,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 6517,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3190,
+            3109,
+            3158,
+            2022
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUsJkfIDB9IF-VXqKLRii8nbUDwN5rOLwM=",
           "gameCreation": 1792086258000,
@@ -4752,45 +4773,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWjdYHLDHl1pNnQf1TpnfikdjsFwaC21f0=",
-          "gameCreation": 1791744228000,
-          "gameDurationSeconds": 1848,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Bard",
-          "championId": "432",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 3,
-          "assists": 23,
-          "kda": 8,
-          "cs": 21,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 11745,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3190,
-            3222,
-            3109,
-            3009,
-            3067
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1107 LP)",
-      "analystSummary": "Alvaro: MASTER I 1107 LP · 20 partidas consultadas · 81.7% WR · KDA medio 4.8.",
+      "analystSummary": "Alvaro: MASTER I 1107 LP · 20 partidas consultadas · 81.7% WR · KDA medio 4.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5144,7 +5130,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
