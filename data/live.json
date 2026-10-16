@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T05:31:48.137Z",
-  "syncedAt": "2026-10-16T05:31:48.137Z",
+  "generatedAt": "2026-10-16T05:36:45.701Z",
+  "syncedAt": "2026-10-16T05:36:45.701Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1955,7 +1955,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3897,7 +3897,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -3914,10 +3914,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1107,
+      "lp": 1082,
       "wins": 49,
-      "losses": 11,
-      "winrate": 81.7,
+      "losses": 12,
+      "winrate": 80.3,
       "streak": -1,
       "avgKda": 4.5,
       "avgKills": 4.7,
@@ -4775,8 +4775,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1107 LP)",
-      "analystSummary": "Alvaro: MASTER I 1107 LP · 20 partidas consultadas · 81.7% WR · KDA medio 4.5.",
+      "statusBadge": "MASTER I (1082 LP)",
+      "analystSummary": "Alvaro: MASTER I 1082 LP · 20 partidas consultadas · 80.3% WR · KDA medio 4.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5128,9 +5128,18 @@
           "wins": 49,
           "losses": 11,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792129005700,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1082,
+          "wins": 49,
+          "losses": 12,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
