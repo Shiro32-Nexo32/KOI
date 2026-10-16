@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:11:51.023Z",
-  "syncedAt": "2026-10-16T17:11:51.023Z",
+  "generatedAt": "2026-10-16T17:46:51.829Z",
+  "syncedAt": "2026-10-16T17:46:51.829Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2012,7 +2012,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3954,7 +3954,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -3975,11 +3975,11 @@
       "wins": 49,
       "losses": 12,
       "winrate": 80.3,
-      "streak": -1,
-      "avgKda": 4.5,
-      "avgKills": 4.7,
-      "avgDeaths": 5.6,
-      "avgAssists": 14.8,
+      "streak": 1,
+      "avgKda": 4.9,
+      "avgKills": 4.8,
+      "avgDeaths": 5.5,
+      "avgAssists": 15.1,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4010,6 +4010,19 @@
           "csPerMin": 1
         },
         {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 13,
+          "deaths": 6,
+          "assists": 27,
+          "kda": 6.7,
+          "csPerMin": 0.6
+        },
+        {
           "championName": "Alistar",
           "championId": "12",
           "games": 2,
@@ -4036,19 +4049,6 @@
           "csPerMin": 0.7
         },
         {
-          "championName": "Pyke",
-          "championId": "555",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 11,
-          "deaths": 9,
-          "assists": 16,
-          "kda": 3,
-          "csPerMin": 1
-        },
-        {
           "championName": "Thresh",
           "championId": "412",
           "games": 2,
@@ -4073,19 +4073,6 @@
           "assists": 3,
           "kda": 3.3,
           "csPerMin": 0.7
-        },
-        {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 4,
-          "assists": 12,
-          "kda": 4.3,
-          "csPerMin": 0.4
         },
         {
           "championName": "Qiyana",
@@ -4127,6 +4114,19 @@
           "csPerMin": 0.6
         },
         {
+          "championName": "Pyke",
+          "championId": "555",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 6,
+          "deaths": 5,
+          "assists": 6,
+          "kda": 2.4,
+          "csPerMin": 1.1
+        },
+        {
           "championName": "Lux",
           "championId": "99",
           "games": 1,
@@ -4141,6 +4141,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUx19-dNiOCwhWKaAyr_uSAcm0RuBCAXCY=",
+          "gameCreation": 1792172601000,
+          "gameDurationSeconds": 1882,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 8,
+          "deaths": 2,
+          "assists": 15,
+          "kda": 11.5,
+          "cs": 25,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 23782,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6333,
+            6692,
+            3026,
+            3047,
+            3044
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUEWUGWiAIrojSy8JAxnPDYFNLDI_GKeNA=",
           "gameCreation": 1792128440000,
@@ -4795,45 +4829,10 @@
             3158
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUmG2FTlFpNrCMrJTYNasCT14y3hlNe7q4=",
-          "gameCreation": 1791781664000,
-          "gameDurationSeconds": 915,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Pyke",
-          "championId": "555",
-          "champLevel": 8,
-          "role": "SUPPORT",
-          "kills": 5,
-          "deaths": 4,
-          "assists": 10,
-          "kda": 3.75,
-          "cs": 12,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 6999,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            2031,
-            3179,
-            3009,
-            1036,
-            1036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1082 LP)",
-      "analystSummary": "Alvaro: MASTER I 1082 LP · 20 partidas consultadas · 80.3% WR · KDA medio 4.5.",
+      "analystSummary": "Alvaro: MASTER I 1082 LP · 20 partidas consultadas · 80.3% WR · KDA medio 4.9.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5196,7 +5195,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
