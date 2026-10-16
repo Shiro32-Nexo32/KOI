@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:51:50.701Z",
-  "syncedAt": "2026-10-16T17:51:50.701Z",
+  "generatedAt": "2026-10-16T17:56:47.574Z",
+  "syncedAt": "2026-10-16T17:56:47.574Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3971,10 +3971,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1117,
-      "wins": 50,
+      "lp": 1082,
+      "wins": 49,
       "losses": 12,
-      "winrate": 80.6,
+      "winrate": 80.3,
       "streak": 1,
       "avgKda": 4.9,
       "avgKills": 4.8,
@@ -4831,8 +4831,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1117 LP)",
-      "analystSummary": "Alvaro: MASTER I 1117 LP · 20 partidas consultadas · 80.6% WR · KDA medio 4.9.",
+      "statusBadge": "MASTER I (1082 LP)",
+      "analystSummary": "Alvaro: MASTER I 1082 LP · 20 partidas consultadas · 80.3% WR · KDA medio 4.9.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5200,6 +5200,15 @@
           "division": "I",
           "lp": 1117,
           "wins": 50,
+          "losses": 12,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792173407573,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1082,
+          "wins": 49,
           "losses": 12,
           "note": "Sincronización automática desde OP.GG"
         }
