@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T05:36:45.701Z",
-  "syncedAt": "2026-10-16T05:36:45.701Z",
+  "generatedAt": "2026-10-16T17:06:49.905Z",
+  "syncedAt": "2026-10-16T17:06:49.905Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,12 +22,12 @@
       "wins": 41,
       "losses": 13,
       "winrate": 75.9,
-      "streak": 3,
-      "avgKda": 4.6,
-      "avgKills": 4.9,
-      "avgDeaths": 3.4,
-      "avgAssists": 6,
-      "avgCsPerMin": 8.4,
+      "streak": 4,
+      "avgKda": 4.7,
+      "avgKills": 5.3,
+      "avgDeaths": 3.3,
+      "avgAssists": 5.9,
+      "avgCsPerMin": 8.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -68,6 +68,19 @@
           "assists": 8,
           "kda": 1.3,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Ambessa",
+          "championId": "799",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 10,
+          "deaths": 2,
+          "assists": 4,
+          "kda": 7,
+          "csPerMin": 10.1
         },
         {
           "championName": "Zaahen",
@@ -123,6 +136,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUmeqOjgUhyYh3e00RUGOomBzNDT_1XxA8=",
+          "gameCreation": 1792170168000,
+          "gameDurationSeconds": 1741,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ambessa",
+          "championId": "799",
+          "champLevel": 19,
+          "role": "TOP",
+          "kills": 10,
+          "deaths": 2,
+          "assists": 4,
+          "kda": 7,
+          "cs": 293,
+          "csPerMin": 10.1,
+          "killParticipationPct": 0,
+          "damageDealt": 38245,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2520,
+            6694,
+            1001,
+            3814,
+            6696,
+            6699
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUu66sQnp9hijQC9rRa_mcTsJP_0CRD1sQ=",
           "gameCreation": 1792083257000,
@@ -574,7 +622,7 @@
         }
       ],
       "statusBadge": "MASTER I (772 LP)",
-      "analystSummary": "Myrwn: MASTER I 772 LP · 13 partidas consultadas · 75.9% WR · KDA medio 4.6.",
+      "analystSummary": "Myrwn: MASTER I 772 LP · 14 partidas consultadas · 75.9% WR · KDA medio 4.7.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -919,7 +967,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -2698,7 +2746,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
