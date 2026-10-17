@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T16:01:46.939Z",
-  "syncedAt": "2026-10-17T16:01:46.939Z",
+  "generatedAt": "2026-10-17T16:16:45.643Z",
+  "syncedAt": "2026-10-17T16:16:45.643Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 852,
-      "wins": 44,
+      "lp": 887,
+      "wins": 45,
       "losses": 14,
-      "winrate": 75.9,
+      "winrate": 76.3,
       "streak": 2,
       "avgKda": 6.8,
       "avgKills": 5.9,
@@ -642,8 +642,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (852 LP)",
-      "analystSummary": "Myrwn: MASTER I 852 LP · 15 partidas consultadas · 75.9% WR · KDA medio 6.8.",
+      "statusBadge": "MASTER I (887 LP)",
+      "analystSummary": "Myrwn: MASTER I 887 LP · 15 partidas consultadas · 76.3% WR · KDA medio 6.8.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1022,10 +1022,19 @@
           "wins": 44,
           "losses": 14,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792253776018,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 887,
+          "wins": 45,
+          "losses": 14,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
-      "eloRank": 4,
+      "formRank": 2,
+      "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
         "eq3KyFixtgUoI52Qb4ARj6Ux_dZ3PnnX1CYje9_XOas="
@@ -2147,7 +2156,7 @@
         }
       ],
       "formRank": 5,
-      "eloRank": 3,
+      "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
       ]
@@ -4116,7 +4125,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
