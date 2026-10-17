@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T17:41:46.260Z",
-  "syncedAt": "2026-10-17T17:41:46.260Z",
+  "generatedAt": "2026-10-17T17:46:48.897Z",
+  "syncedAt": "2026-10-17T17:46:48.897Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2923,10 +2923,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1024,
+      "lp": 998,
       "wins": 47,
-      "losses": 13,
-      "winrate": 78.3,
+      "losses": 14,
+      "winrate": 77,
       "streak": -1,
       "avgKda": 5,
       "avgKills": 7.1,
@@ -3776,8 +3776,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1024 LP)",
-      "analystSummary": "Supa: MASTER I 1024 LP · 20 partidas consultadas · 78.3% WR · KDA medio 5.",
+      "statusBadge": "MASTER I (998 LP)",
+      "analystSummary": "Supa: MASTER I 998 LP · 20 partidas consultadas · 77% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4147,9 +4147,18 @@
           "wins": 47,
           "losses": 13,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792259202123,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 998,
+          "wins": 47,
+          "losses": 14,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -5462,7 +5471,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
