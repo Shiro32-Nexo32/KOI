@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T16:16:45.643Z",
-  "syncedAt": "2026-10-17T16:16:45.643Z",
+  "generatedAt": "2026-10-17T17:01:45.130Z",
+  "syncedAt": "2026-10-17T17:01:45.130Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -4146,14 +4146,27 @@
       "wins": 52,
       "losses": 14,
       "winrate": 78.8,
-      "streak": -1,
-      "avgKda": 4.4,
-      "avgKills": 4.8,
-      "avgDeaths": 5.9,
-      "avgAssists": 15.2,
+      "streak": 1,
+      "avgKda": 4.6,
+      "avgKills": 4.7,
+      "avgDeaths": 5.7,
+      "avgAssists": 14.8,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 3,
+          "wins": 3,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 21,
+          "deaths": 8,
+          "assists": 34,
+          "kda": 6.9,
+          "csPerMin": 0.6
+        },
         {
           "championName": "Alistar",
           "championId": "12",
@@ -4179,19 +4192,6 @@
           "assists": 29,
           "kda": 1.9,
           "csPerMin": 1
-        },
-        {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 13,
-          "deaths": 6,
-          "assists": 27,
-          "kda": 6.7,
-          "csPerMin": 0.6
         },
         {
           "championName": "Karma",
@@ -4285,19 +4285,6 @@
           "csPerMin": 0.6
         },
         {
-          "championName": "Sylas",
-          "championId": "517",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 9,
-          "deaths": 6,
-          "assists": 14,
-          "kda": 3.8,
-          "csPerMin": 0.6
-        },
-        {
           "championName": "Pantheon",
           "championId": "80",
           "games": 1,
@@ -4312,6 +4299,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU16wMUsdL1l8IUznfOVCWGimVT35oxybc=",
+          "gameCreation": 1792256409000,
+          "gameDurationSeconds": 1149,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 12,
+          "role": "JUNGLE",
+          "kills": 8,
+          "deaths": 2,
+          "assists": 7,
+          "kda": 7.5,
+          "cs": 14,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 12545,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3111,
+            1037,
+            1036,
+            6610,
+            6692
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXuUEFyWHWO4rIA4-AgqORt3y8dS7vFBpU=",
           "gameCreation": 1792214333000,
@@ -4965,45 +4986,10 @@
             3009
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXxRVGgqFkFBM2iJEy7sOMl_IAGbMKZHQc=",
-          "gameCreation": 1791909904000,
-          "gameDurationSeconds": 1747,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Sylas",
-          "championId": "517",
-          "champLevel": 16,
-          "role": "JUNGLE",
-          "kills": 9,
-          "deaths": 6,
-          "assists": 14,
-          "kda": 3.83,
-          "cs": 18,
-          "csPerMin": 0.6,
-          "killParticipationPct": 0,
-          "damageDealt": 32839,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3152,
-            3157,
-            3145,
-            4633,
-            3111,
-            1082
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1137 LP)",
-      "analystSummary": "Alvaro: MASTER I 1137 LP · 20 partidas consultadas · 78.8% WR · KDA medio 4.4.",
+      "analystSummary": "Alvaro: MASTER I 1137 LP · 20 partidas consultadas · 78.8% WR · KDA medio 4.6.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
