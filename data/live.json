@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T17:36:47.552Z",
-  "syncedAt": "2026-10-17T17:36:47.552Z",
+  "generatedAt": "2026-10-17T17:41:46.260Z",
+  "syncedAt": "2026-10-17T17:41:46.260Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -4149,7 +4149,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -4170,11 +4170,11 @@
       "wins": 53,
       "losses": 14,
       "winrate": 79.1,
-      "streak": 1,
-      "avgKda": 4.6,
-      "avgKills": 4.7,
-      "avgDeaths": 5.7,
-      "avgAssists": 14.8,
+      "streak": -1,
+      "avgKda": 4,
+      "avgKills": 5.1,
+      "avgDeaths": 5.9,
+      "avgAssists": 13.7,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4192,19 +4192,6 @@
           "csPerMin": 0.6
         },
         {
-          "championName": "Alistar",
-          "championId": "12",
-          "games": 3,
-          "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 12,
-          "assists": 69,
-          "kda": 6.1,
-          "csPerMin": 0.8
-        },
-        {
           "championName": "Camille",
           "championId": "164",
           "games": 3,
@@ -4216,6 +4203,19 @@
           "assists": 29,
           "kda": 1.9,
           "csPerMin": 1
+        },
+        {
+          "championName": "Alistar",
+          "championId": "12",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 10,
+          "assists": 41,
+          "kda": 4.4,
+          "csPerMin": 0.9
         },
         {
           "championName": "Karma",
@@ -4309,6 +4309,19 @@
           "csPerMin": 0.6
         },
         {
+          "championName": "Sylas",
+          "championId": "517",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 9,
+          "deaths": 6,
+          "assists": 5,
+          "kda": 2.3,
+          "csPerMin": 0.6
+        },
+        {
           "championName": "Pantheon",
           "championId": "80",
           "games": 1,
@@ -4323,6 +4336,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUCiulQPimMJMzvfjprmQopUcicb1AcaRs=",
+          "gameCreation": 1792258827000,
+          "gameDurationSeconds": 1643,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Sylas",
+          "championId": "517",
+          "champLevel": 15,
+          "role": "JUNGLE",
+          "kills": 9,
+          "deaths": 6,
+          "assists": 5,
+          "kda": 2.33,
+          "cs": 17,
+          "csPerMin": 0.6,
+          "killParticipationPct": 0,
+          "damageDealt": 26711,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3152,
+            3157,
+            3020,
+            3916,
+            4633,
+            1082
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgU16wMUsdL1l8IUznfOVCWGimVT35oxybc=",
           "gameCreation": 1792256409000,
@@ -4976,44 +5024,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXoKANh4sG0SkapWLPLsi2lvLDtvgZTf_U=",
-          "gameCreation": 1791911830000,
-          "gameDurationSeconds": 1290,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Alistar",
-          "championId": "12",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 2,
-          "assists": 28,
-          "kda": 14.5,
-          "cs": 15,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 9688,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3876,
-            3067,
-            3050,
-            3109,
-            3009
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1172 LP)",
-      "analystSummary": "Alvaro: MASTER I 1172 LP · 20 partidas consultadas · 79.1% WR · KDA medio 4.6.",
+      "analystSummary": "Alvaro: MASTER I 1172 LP · 20 partidas consultadas · 79.1% WR · KDA medio 4.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5448,7 +5462,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
