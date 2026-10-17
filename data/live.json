@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T04:06:46.033Z",
-  "syncedAt": "2026-10-17T04:06:46.033Z",
+  "generatedAt": "2026-10-17T04:16:43.679Z",
+  "syncedAt": "2026-10-17T04:16:43.679Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1018,12 +1018,12 @@
       "wins": 42,
       "losses": 12,
       "winrate": 77.8,
-      "streak": 2,
-      "avgKda": 4.5,
-      "avgKills": 9.1,
-      "avgDeaths": 4.9,
-      "avgAssists": 5.6,
-      "avgCsPerMin": 3.8,
+      "streak": 3,
+      "avgKda": 4.8,
+      "avgKills": 8.6,
+      "avgDeaths": 4.7,
+      "avgAssists": 6.3,
+      "avgCsPerMin": 3.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1076,6 +1076,19 @@
           "deaths": 9,
           "assists": 13,
           "kda": 3,
+          "csPerMin": 1.1
+        },
+        {
+          "championName": "Renata Glasc",
+          "championId": "888",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 2,
+          "deaths": 2,
+          "assists": 17,
+          "kda": 9.5,
           "csPerMin": 1.1
         },
         {
@@ -1184,6 +1197,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVjdt4zOtmeHldXvThOBxXT-_XMe0qKlHc=",
+          "gameCreation": 1792210371000,
+          "gameDurationSeconds": 1304,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Renata Glasc",
+          "championId": "888",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 2,
+          "assists": 17,
+          "kda": 9.5,
+          "cs": 24,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 6823,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3222,
+            3109,
+            3158
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUiLfvUcwTcVGZ6SgSMtxI68ouBHCCrr64=",
           "gameCreation": 1792175959000,
@@ -1739,7 +1785,7 @@
         }
       ],
       "statusBadge": "MASTER I (877 LP)",
-      "analystSummary": "Elyoya: MASTER I 877 LP · 16 partidas consultadas · 77.8% WR · KDA medio 4.5.",
+      "analystSummary": "Elyoya: MASTER I 877 LP · 17 partidas consultadas · 77.8% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2039,7 +2085,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2782,7 +2828,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -2805,11 +2851,11 @@
       "wins": 45,
       "losses": 13,
       "winrate": 77.6,
-      "streak": -2,
+      "streak": 1,
       "avgKda": 5.2,
       "avgKills": 7.6,
       "avgDeaths": 4.3,
-      "avgAssists": 7.5,
+      "avgAssists": 7.8,
       "avgCsPerMin": 8.2,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -2851,6 +2897,19 @@
           "assists": 20,
           "kda": 18.5,
           "csPerMin": 9.8
+        },
+        {
+          "championName": "Kalista",
+          "championId": "429",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 11,
+          "deaths": 5,
+          "assists": 6,
+          "kda": 3.4,
+          "csPerMin": 8.1
         },
         {
           "championName": "Vayne",
@@ -2918,19 +2977,6 @@
           "csPerMin": 8.2
         },
         {
-          "championName": "Kalista",
-          "championId": "429",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 11,
-          "deaths": 5,
-          "assists": 2,
-          "kda": 2.6,
-          "csPerMin": 9.3
-        },
-        {
           "championName": "Zeri",
           "championId": "221",
           "games": 1,
@@ -2971,6 +3017,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVjdt4zOtmeHldXvThOBxXT-_XMe0qKlHc=",
+          "gameCreation": 1792210371000,
+          "gameDurationSeconds": 1304,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kalista",
+          "championId": "429",
+          "champLevel": 13,
+          "role": "ADC",
+          "kills": 11,
+          "deaths": 5,
+          "assists": 6,
+          "kda": 3.4,
+          "cs": 176,
+          "csPerMin": 8.1,
+          "killParticipationPct": 0,
+          "damageDealt": 21718,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            1033,
+            3087,
+            3124,
+            3302
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWauxVlTWmo2Kg9-cr-WuoU-HHkPUxVQSw=",
           "gameCreation": 1792208771000,
@@ -3631,39 +3711,6 @@
             2019
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWj4nz6Y2SmMkPa1FTfCZyDAmihY2eDMXI=",
-          "gameCreation": 1791602370000,
-          "gameDurationSeconds": 926,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kalista",
-          "championId": "429",
-          "champLevel": 11,
-          "role": "ADC",
-          "kills": 11,
-          "deaths": 5,
-          "assists": 2,
-          "kda": 2.6,
-          "cs": 143,
-          "csPerMin": 9.3,
-          "killParticipationPct": 0,
-          "damageDealt": 18491,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            3087,
-            2055,
-            3124
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (920 LP)",
@@ -4003,7 +4050,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -5288,7 +5335,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
