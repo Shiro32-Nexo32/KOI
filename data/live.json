@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T05:26:42.307Z",
-  "syncedAt": "2026-10-17T05:26:42.307Z",
+  "generatedAt": "2026-10-17T16:01:46.939Z",
+  "syncedAt": "2026-10-17T16:01:46.939Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,12 +22,12 @@
       "wins": 44,
       "losses": 14,
       "winrate": 75.9,
-      "streak": 1,
-      "avgKda": 6.2,
-      "avgKills": 5.8,
-      "avgDeaths": 3.1,
-      "avgAssists": 5.6,
-      "avgCsPerMin": 8.5,
+      "streak": 2,
+      "avgKda": 6.8,
+      "avgKills": 5.9,
+      "avgDeaths": 2.7,
+      "avgAssists": 5.9,
+      "avgCsPerMin": 8.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -46,15 +46,15 @@
         {
           "championName": "Ahri",
           "championId": "103",
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "losses": 0,
           "winrate": 100,
-          "kills": 17,
+          "kills": 21,
           "deaths": 2,
-          "assists": 20,
-          "kda": 18.5,
-          "csPerMin": 8.4
+          "assists": 26,
+          "kda": 23.5,
+          "csPerMin": 8.7
         },
         {
           "championName": "Zaahen",
@@ -120,22 +120,42 @@
           "assists": 14,
           "kda": 3,
           "csPerMin": 6.8
-        },
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 2,
-          "deaths": 6,
-          "assists": 2,
-          "kda": 0.7,
-          "csPerMin": 8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVE4TH798PGWj6Hv-FrNYHW1Vk_jUtESYY=",
+          "gameCreation": 1792252742000,
+          "gameDurationSeconds": 911,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ahri",
+          "championId": "103",
+          "champLevel": 12,
+          "role": "MID",
+          "kills": 4,
+          "deaths": 0,
+          "assists": 6,
+          "kda": 10,
+          "cs": 143,
+          "csPerMin": 9.4,
+          "killParticipationPct": 0,
+          "damageDealt": 13437,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2503,
+            3171,
+            3108,
+            1056
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgW5If5CYe9jETDhe073w0r1tBtrSjFtFTU=",
           "gameCreation": 1792210998000,
@@ -620,44 +640,10 @@
             1056
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVq8s80g2U8MDhdbkGqjkCXoVw_YspDB6A=",
-          "gameCreation": 1791779304000,
-          "gameDurationSeconds": 1453,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 14,
-          "role": "TOP",
-          "kills": 2,
-          "deaths": 6,
-          "assists": 2,
-          "kda": 0.67,
-          "cs": 193,
-          "csPerMin": 8,
-          "killParticipationPct": 0,
-          "damageDealt": 21245,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            1055,
-            2055,
-            3158,
-            3042,
-            3071
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (852 LP)",
-      "analystSummary": "Myrwn: MASTER I 852 LP · 15 partidas consultadas · 75.9% WR · KDA medio 6.2.",
+      "analystSummary": "Myrwn: MASTER I 852 LP · 15 partidas consultadas · 75.9% WR · KDA medio 6.8.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
