@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T04:31:45.380Z",
-  "syncedAt": "2026-10-17T04:31:45.380Z",
+  "generatedAt": "2026-10-17T04:41:41.724Z",
+  "syncedAt": "2026-10-17T04:41:41.724Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1038,7 +1038,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -4112,7 +4112,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -4133,12 +4133,12 @@
       "wins": 51,
       "losses": 13,
       "winrate": 79.7,
-      "streak": -1,
-      "avgKda": 4.8,
-      "avgKills": 4.8,
+      "streak": 1,
+      "avgKda": 5,
+      "avgKills": 4.5,
       "avgDeaths": 5.5,
-      "avgAssists": 14.3,
-      "avgCsPerMin": 0.9,
+      "avgAssists": 15.3,
+      "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -4220,6 +4220,19 @@
           "csPerMin": 0.9
         },
         {
+          "championName": "Milio",
+          "championId": "902",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 2,
+          "deaths": 5,
+          "assists": 26,
+          "kda": 5.6,
+          "csPerMin": 0.7
+        },
+        {
           "championName": "Viego",
           "championId": "234",
           "games": 1,
@@ -4283,22 +4296,44 @@
           "assists": 16,
           "kda": 3.1,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Pyke",
-          "championId": "555",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 6,
-          "deaths": 5,
-          "assists": 6,
-          "kda": 2.4,
-          "csPerMin": 1.1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUFvOXPRk6Nv-768ofHsS_wTgl4VzdELs4=",
+          "gameCreation": 1792211927000,
+          "gameDurationSeconds": 1644,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Milio",
+          "championId": "902",
+          "champLevel": 13,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 5,
+          "assists": 26,
+          "kda": 5.6,
+          "cs": 20,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 4932,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3870,
+            3222,
+            6620,
+            3158,
+            4642,
+            3067
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWF4DKnvuFaYvT9mhO8o-tdm8M34G9uFSM=",
           "gameCreation": 1792209773000,
@@ -4951,45 +4986,10 @@
             1052
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVT5DiZqB4Kqpm3j4Co47g61fvQ7xOPyp8=",
-          "gameCreation": 1791866940000,
-          "gameDurationSeconds": 1966,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Pyke",
-          "championId": "555",
-          "champLevel": 13,
-          "role": "SUPPORT",
-          "kills": 6,
-          "deaths": 5,
-          "assists": 6,
-          "kda": 2.4,
-          "cs": 36,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 14150,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            3155,
-            3179,
-            3134,
-            3009,
-            3814
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1127 LP)",
-      "analystSummary": "Alvaro: MASTER I 1127 LP · 20 partidas consultadas · 79.7% WR · KDA medio 4.8.",
+      "analystSummary": "Alvaro: MASTER I 1127 LP · 20 partidas consultadas · 79.7% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5397,7 +5397,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
