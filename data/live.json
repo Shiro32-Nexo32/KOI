@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T03:51:45.240Z",
-  "syncedAt": "2026-10-17T03:51:45.241Z",
+  "generatedAt": "2026-10-17T04:06:46.033Z",
+  "syncedAt": "2026-10-17T04:06:46.033Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2039,7 +2039,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2782,7 +2782,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -4020,15 +4020,15 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1152,
+      "lp": 1127,
       "wins": 51,
-      "losses": 12,
-      "winrate": 81,
-      "streak": 2,
-      "avgKda": 4.9,
+      "losses": 13,
+      "winrate": 79.7,
+      "streak": -1,
+      "avgKda": 4.8,
       "avgKills": 4.8,
-      "avgDeaths": 5.3,
-      "avgAssists": 13.9,
+      "avgDeaths": 5.5,
+      "avgAssists": 14.3,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4163,6 +4163,19 @@
           "csPerMin": 0.6
         },
         {
+          "championName": "Pantheon",
+          "championId": "80",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 6,
+          "deaths": 7,
+          "assists": 16,
+          "kda": 3.1,
+          "csPerMin": 1.1
+        },
+        {
           "championName": "Pyke",
           "championId": "555",
           "games": 1,
@@ -4174,22 +4187,44 @@
           "assists": 6,
           "kda": 2.4,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Lux",
-          "championId": "99",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 6,
-          "deaths": 4,
-          "assists": 10,
-          "kda": 4,
-          "csPerMin": 1.7
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWF4DKnvuFaYvT9mhO8o-tdm8M34G9uFSM=",
+          "gameCreation": 1792209773000,
+          "gameDurationSeconds": 1584,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Pantheon",
+          "championId": "80",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 6,
+          "deaths": 7,
+          "assists": 16,
+          "kda": 3.14,
+          "cs": 30,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 18895,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3877,
+            2031,
+            6697,
+            3009,
+            3179,
+            3067
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXNzVKB4flxke-sv2-SBfPL8YR4OE-yOhI=",
           "gameCreation": 1792174924000,
@@ -4842,45 +4877,10 @@
             3814
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVSfDCAU9mt9Zy6D8YRqAunm-bKIoiM384=",
-          "gameCreation": 1791864614000,
-          "gameDurationSeconds": 1364,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Lux",
-          "championId": "99",
-          "champLevel": 12,
-          "role": "SUPPORT",
-          "kills": 6,
-          "deaths": 4,
-          "assists": 10,
-          "kda": 4,
-          "cs": 38,
-          "csPerMin": 1.7,
-          "killParticipationPct": 0,
-          "damageDealt": 14498,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            2065,
-            3190,
-            1082,
-            3009,
-            3114
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1152 LP)",
-      "analystSummary": "Alvaro: MASTER I 1152 LP · 20 partidas consultadas · 81% WR · KDA medio 4.9.",
+      "statusBadge": "MASTER I (1127 LP)",
+      "analystSummary": "Alvaro: MASTER I 1127 LP · 20 partidas consultadas · 79.7% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5277,9 +5277,18 @@
           "wins": 51,
           "losses": 12,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792210006032,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1127,
+          "wins": 51,
+          "losses": 13,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
