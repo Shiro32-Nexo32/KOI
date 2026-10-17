@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T04:16:43.679Z",
-  "syncedAt": "2026-10-17T04:16:43.679Z",
+  "generatedAt": "2026-10-17T04:21:42.765Z",
+  "syncedAt": "2026-10-17T04:21:42.765Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1014,10 +1014,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 877,
-      "wins": 42,
+      "lp": 912,
+      "wins": 43,
       "losses": 12,
-      "winrate": 77.8,
+      "winrate": 78.2,
       "streak": 3,
       "avgKda": 4.8,
       "avgKills": 8.6,
@@ -1784,8 +1784,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (877 LP)",
-      "analystSummary": "Elyoya: MASTER I 877 LP · 17 partidas consultadas · 77.8% WR · KDA medio 4.8.",
+      "statusBadge": "MASTER I (912 LP)",
+      "analystSummary": "Elyoya: MASTER I 912 LP · 17 partidas consultadas · 78.2% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2081,6 +2081,15 @@
           "division": "I",
           "lp": 877,
           "wins": 42,
+          "losses": 12,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792210884243,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 912,
+          "wins": 43,
           "losses": 12,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -2847,10 +2856,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 920,
-      "wins": 45,
+      "lp": 954,
+      "wins": 46,
       "losses": 13,
-      "winrate": 77.6,
+      "winrate": 78,
       "streak": 1,
       "avgKda": 5.2,
       "avgKills": 7.6,
@@ -3713,8 +3722,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (920 LP)",
-      "analystSummary": "Supa: MASTER I 920 LP · 20 partidas consultadas · 77.6% WR · KDA medio 5.2.",
+      "statusBadge": "MASTER I (954 LP)",
+      "analystSummary": "Supa: MASTER I 954 LP · 20 partidas consultadas · 78% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4046,6 +4055,15 @@
           "division": "I",
           "lp": 920,
           "wins": 45,
+          "losses": 13,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792210896805,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 954,
+          "wins": 46,
           "losses": 13,
           "note": "Sincronización automática desde OP.GG"
         }
