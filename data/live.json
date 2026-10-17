@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T04:46:45.141Z",
-  "syncedAt": "2026-10-17T04:46:45.141Z",
+  "generatedAt": "2026-10-17T04:51:43.714Z",
+  "syncedAt": "2026-10-17T04:51:43.714Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1038,7 +1038,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1062,12 +1062,12 @@
       "wins": 43,
       "losses": 12,
       "winrate": 78.2,
-      "streak": 3,
+      "streak": -1,
       "avgKda": 4.8,
-      "avgKills": 8.6,
-      "avgDeaths": 4.7,
-      "avgAssists": 6.3,
-      "avgCsPerMin": 3.6,
+      "avgKills": 8.5,
+      "avgDeaths": 4.6,
+      "avgAssists": 6.5,
+      "avgCsPerMin": 3.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1082,19 +1082,6 @@
           "assists": 11,
           "kda": 2.2,
           "csPerMin": 7.4
-        },
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 15,
-          "deaths": 13,
-          "assists": 11,
-          "kda": 2,
-          "csPerMin": 1.3
         },
         {
           "championName": "Yunara",
@@ -1134,6 +1121,19 @@
           "assists": 17,
           "kda": 9.5,
           "csPerMin": 1.1
+        },
+        {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 9,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 3.5,
+          "csPerMin": 1.3
         },
         {
           "championName": "Sylas",
@@ -1201,6 +1201,19 @@
           "csPerMin": 1.1
         },
         {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 4,
+          "deaths": 8,
+          "assists": 9,
+          "kda": 1.6,
+          "csPerMin": 0.5
+        },
+        {
           "championName": "Naafiri",
           "championId": "950",
           "games": 1,
@@ -1241,6 +1254,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVdYLLi7B_ZB86yhI_br1vjtodRRhwNcVE=",
+          "gameCreation": 1792212462000,
+          "gameDurationSeconds": 1779,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Camille",
+          "championId": "164",
+          "champLevel": 12,
+          "role": "SUPPORT",
+          "kills": 4,
+          "deaths": 8,
+          "assists": 9,
+          "kda": 1.63,
+          "cs": 16,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 12429,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3877,
+            1037,
+            3073,
+            2021,
+            3047,
+            1028
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVjdt4zOtmeHldXvThOBxXT-_XMe0qKlHc=",
           "gameCreation": 1792210371000,
@@ -1791,41 +1839,6 @@
             2422
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgW3bTSrQOX0afesg0DHCYViC5ZeOvJhddM=",
-          "gameCreation": 1791824785000,
-          "gameDurationSeconds": 2093,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 6,
-          "deaths": 9,
-          "assists": 6,
-          "kda": 1.33,
-          "cs": 44,
-          "csPerMin": 1.3,
-          "killParticipationPct": 0,
-          "damageDealt": 32979,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6694,
-            6695,
-            3158,
-            6699,
-            2520,
-            3142
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (912 LP)",
@@ -2138,7 +2151,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -2881,7 +2894,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -2904,12 +2917,12 @@
       "wins": 46,
       "losses": 13,
       "winrate": 78,
-      "streak": 1,
-      "avgKda": 5.2,
-      "avgKills": 7.6,
-      "avgDeaths": 4.3,
-      "avgAssists": 7.8,
-      "avgCsPerMin": 8.2,
+      "streak": 2,
+      "avgKda": 5.1,
+      "avgKills": 7.3,
+      "avgDeaths": 4.6,
+      "avgAssists": 7.9,
+      "avgCsPerMin": 8.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -2937,6 +2950,19 @@
           "assists": 42,
           "kda": 5.2,
           "csPerMin": 8.5
+        },
+        {
+          "championName": "Tristana",
+          "championId": "18",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 14,
+          "deaths": 15,
+          "assists": 14,
+          "kda": 1.9,
+          "csPerMin": 7.9
         },
         {
           "championName": "Yunara",
@@ -3004,32 +3030,6 @@
           "csPerMin": 7.8
         },
         {
-          "championName": "Tristana",
-          "championId": "18",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 5,
-          "assists": 6,
-          "kda": 2.6,
-          "csPerMin": 8.8
-        },
-        {
-          "championName": "Draven",
-          "championId": "119",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 12,
-          "deaths": 4,
-          "assists": 5,
-          "kda": 4.3,
-          "csPerMin": 8.2
-        },
-        {
           "championName": "Zeri",
           "championId": "221",
           "games": 1,
@@ -3070,6 +3070,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVdYLLi7B_ZB86yhI_br1vjtodRRhwNcVE=",
+          "gameCreation": 1792212462000,
+          "gameDurationSeconds": 1779,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Tristana",
+          "championId": "18",
+          "champLevel": 17,
+          "role": "TOP",
+          "kills": 7,
+          "deaths": 10,
+          "assists": 8,
+          "kda": 1.5,
+          "cs": 206,
+          "csPerMin": 6.9,
+          "killParticipationPct": 0,
+          "damageDealt": 20724,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3032,
+            1086,
+            3035,
+            3031,
+            6675,
+            3047
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVjdt4zOtmeHldXvThOBxXT-_XMe0qKlHc=",
           "gameCreation": 1792210371000,
@@ -3729,45 +3764,10 @@
             3036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUjs7RNmnRA2WaiAKiymtIaJTcwJWj06Qo=",
-          "gameCreation": 1791650337000,
-          "gameDurationSeconds": 1425,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Draven",
-          "championId": "119",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 12,
-          "deaths": 4,
-          "assists": 5,
-          "kda": 4.25,
-          "cs": 194,
-          "csPerMin": 8.2,
-          "killParticipationPct": 0,
-          "damageDealt": 27995,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3033,
-            2523,
-            1038,
-            6676,
-            3031,
-            2019
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (954 LP)",
-      "analystSummary": "Supa: MASTER I 954 LP · 20 partidas consultadas · 78% WR · KDA medio 5.2.",
+      "analystSummary": "Supa: MASTER I 954 LP · 20 partidas consultadas · 78% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4112,7 +4112,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
