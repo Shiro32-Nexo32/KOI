@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T21:06:30.535Z",
-  "syncedAt": "2026-10-18T21:06:30.535Z",
+  "generatedAt": "2026-10-18T22:11:32.282Z",
+  "syncedAt": "2026-10-18T22:11:32.282Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1237,16 +1237,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 881,
-      "wins": 45,
+      "lp": 916,
+      "wins": 46,
       "losses": 16,
-      "winrate": 73.8,
-      "streak": -2,
-      "avgKda": 5.6,
-      "avgKills": 8.9,
-      "avgDeaths": 4.4,
-      "avgAssists": 6.6,
-      "avgCsPerMin": 2.9,
+      "winrate": 74.2,
+      "streak": 1,
+      "avgKda": 6.2,
+      "avgKills": 8.8,
+      "avgDeaths": 4.2,
+      "avgAssists": 7.3,
+      "avgCsPerMin": 2.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1276,19 +1276,6 @@
           "csPerMin": 1.8
         },
         {
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 27,
-          "deaths": 17,
-          "assists": 11,
-          "kda": 2.2,
-          "csPerMin": 7.4
-        },
-        {
           "championName": "Kha'Zix",
           "championId": "121",
           "games": 2,
@@ -1302,6 +1289,19 @@
           "csPerMin": 1.1
         },
         {
+          "championName": "Cho'Gath",
+          "championId": "31",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 12,
+          "deaths": 2,
+          "assists": 16,
+          "kda": 14,
+          "csPerMin": 1.8
+        },
+        {
           "championName": "Renata Glasc",
           "championId": "888",
           "games": 1,
@@ -1313,6 +1313,19 @@
           "assists": 17,
           "kda": 9.5,
           "csPerMin": 1.1
+        },
+        {
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 13,
+          "deaths": 11,
+          "assists": 7,
+          "kda": 1.8,
+          "csPerMin": 6.4
         },
         {
           "championName": "Sylas",
@@ -1420,6 +1433,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXojDaWJP19E3RrbOSdizXbz-fpYCUvIJA=",
+          "gameCreation": 1792361189000,
+          "gameDurationSeconds": 1534,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Cho'Gath",
+          "championId": "31",
+          "champLevel": 16,
+          "role": "JUNGLE",
+          "kills": 12,
+          "deaths": 2,
+          "assists": 16,
+          "kda": 14,
+          "cs": 46,
+          "csPerMin": 1.8,
+          "killParticipationPct": 0,
+          "damageDealt": 20546,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            3742,
+            3067,
+            3084,
+            3047,
+            4401
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVOPFyclFfFIzmxcNSk5ksp5pqJVFAlR2A=",
           "gameCreation": 1792296524000,
@@ -2038,45 +2086,10 @@
             3078
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVRL100piR3qb_iCbnbHJdqvmXk-Gryuws=",
-          "gameCreation": 1791944219000,
-          "gameDurationSeconds": 2019,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "champLevel": 17,
-          "role": "ADC",
-          "kills": 14,
-          "deaths": 6,
-          "assists": 4,
-          "kda": 3,
-          "cs": 284,
-          "csPerMin": 8.4,
-          "killParticipationPct": 0,
-          "damageDealt": 49331,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHaste"
-          ],
-          "items": [
-            4645,
-            3137,
-            3089,
-            6699,
-            3087,
-            2421
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (881 LP)",
-      "analystSummary": "Elyoya: MASTER I 881 LP · 19 partidas consultadas · 73.8% WR · KDA medio 5.6.",
+      "statusBadge": "MASTER I (916 LP)",
+      "analystSummary": "Elyoya: MASTER I 916 LP · 19 partidas consultadas · 74.2% WR · KDA medio 6.2.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2437,9 +2450,18 @@
           "wins": 45,
           "losses": 16,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792361473218,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 916,
+          "wins": 46,
+          "losses": 16,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -4381,7 +4403,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
