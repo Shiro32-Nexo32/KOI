@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T22:21:29.542Z",
-  "syncedAt": "2026-10-18T22:21:29.542Z",
+  "generatedAt": "2026-10-18T22:31:33.079Z",
+  "syncedAt": "2026-10-18T22:31:33.079Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1217,7 +1217,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1241,12 +1241,12 @@
       "wins": 46,
       "losses": 16,
       "winrate": 74.2,
-      "streak": 1,
-      "avgKda": 6.2,
-      "avgKills": 8.8,
-      "avgDeaths": 4.2,
-      "avgAssists": 7.3,
-      "avgCsPerMin": 2.6,
+      "streak": 2,
+      "avgKda": 6.7,
+      "avgKills": 9.2,
+      "avgDeaths": 4.3,
+      "avgAssists": 7.4,
+      "avgCsPerMin": 2.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1287,6 +1287,19 @@
           "assists": 13,
           "kda": 3,
           "csPerMin": 1.1
+        },
+        {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 11,
+          "deaths": 1,
+          "assists": 8,
+          "kda": 19,
+          "csPerMin": 0.3
         },
         {
           "championName": "Cho'Gath",
@@ -1367,19 +1380,6 @@
           "csPerMin": 1.9
         },
         {
-          "championName": "Kindred",
-          "championId": "203",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 9,
-          "csPerMin": 2.6
-        },
-        {
           "championName": "Graves",
           "championId": "104",
           "games": 1,
@@ -1433,6 +1433,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXh9R1C93F1VeVrExfANfatom3WF4TRafE=",
+          "gameCreation": 1792362604000,
+          "gameDurationSeconds": 912,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 11,
+          "role": "JUNGLE",
+          "kills": 11,
+          "deaths": 1,
+          "assists": 8,
+          "kda": 19,
+          "cs": 5,
+          "csPerMin": 0.3,
+          "killParticipationPct": 0,
+          "damageDealt": 16821,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6692,
+            2422,
+            3071,
+            2019
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXojDaWJP19E3RrbOSdizXbz-fpYCUvIJA=",
           "gameCreation": 1792361189000,
@@ -2053,43 +2086,10 @@
             6699
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUMrjDBGZY38KAbnhfBWKrqhkrfKFYDFjw=",
-          "gameCreation": 1791946144000,
-          "gameDurationSeconds": 1142,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kindred",
-          "championId": "203",
-          "champLevel": 14,
-          "role": "JUNGLE",
-          "kills": 4,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 9,
-          "cs": 49,
-          "csPerMin": 2.6,
-          "killParticipationPct": 0,
-          "damageDealt": 10458,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            1001,
-            3032,
-            3078
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (916 LP)",
-      "analystSummary": "Elyoya: MASTER I 916 LP · 19 partidas consultadas · 74.2% WR · KDA medio 6.2.",
+      "analystSummary": "Elyoya: MASTER I 916 LP · 19 partidas consultadas · 74.2% WR · KDA medio 6.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2461,7 +2461,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
