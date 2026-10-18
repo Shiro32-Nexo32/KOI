@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T04:51:35.423Z",
-  "syncedAt": "2026-10-18T04:51:35.423Z",
+  "generatedAt": "2026-10-18T04:56:32.338Z",
+  "syncedAt": "2026-10-18T04:56:32.338Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 907,
-      "wins": 47,
+      "lp": 872,
+      "wins": 46,
       "losses": 16,
-      "winrate": 74.6,
+      "winrate": 74.2,
       "streak": 1,
       "avgKda": 6.3,
       "avgKills": 6.1,
@@ -726,8 +726,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (907 LP)",
-      "analystSummary": "Myrwn: MASTER I 907 LP · 17 partidas consultadas · 74.6% WR · KDA medio 6.3.",
+      "statusBadge": "MASTER I (872 LP)",
+      "analystSummary": "Myrwn: MASTER I 872 LP · 17 partidas consultadas · 74.2% WR · KDA medio 6.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1187,10 +1187,19 @@
           "wins": 47,
           "losses": 16,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792299365220,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 872,
+          "wins": 46,
+          "losses": 16,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
-      "eloRank": 3,
+      "formRank": 3,
+      "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
         "eq3KyFixtgUoI52Qb4ARj6Ux_dZ3PnnX1CYje9_XOas="
@@ -2412,7 +2421,7 @@
         }
       ],
       "formRank": 5,
-      "eloRank": 4,
+      "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
       ]
@@ -3036,7 +3045,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3059,12 +3068,12 @@
       "wins": 51,
       "losses": 14,
       "winrate": 78.5,
-      "streak": 4,
-      "avgKda": 4.1,
-      "avgKills": 7.2,
-      "avgDeaths": 5,
-      "avgAssists": 7.4,
-      "avgCsPerMin": 8.2,
+      "streak": -1,
+      "avgKda": 3.9,
+      "avgKills": 7.4,
+      "avgDeaths": 5.3,
+      "avgAssists": 7,
+      "avgCsPerMin": 8.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3107,6 +3116,19 @@
           "csPerMin": 8.8
         },
         {
+          "championName": "Kalista",
+          "championId": "429",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 23,
+          "deaths": 13,
+          "assists": 11,
+          "kda": 2.6,
+          "csPerMin": 7.5
+        },
+        {
           "championName": "Xayah",
           "championId": "498",
           "games": 1,
@@ -3146,19 +3168,6 @@
           "csPerMin": 6.9
         },
         {
-          "championName": "Kalista",
-          "championId": "429",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 11,
-          "deaths": 5,
-          "assists": 6,
-          "kda": 3.4,
-          "csPerMin": 8.1
-        },
-        {
           "championName": "Vayne",
           "championId": "67",
           "games": 1,
@@ -3183,19 +3192,6 @@
           "assists": 23,
           "kda": 12,
           "csPerMin": 0.8
-        },
-        {
-          "championName": "Ziggs",
-          "championId": "115",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 8,
-          "deaths": 4,
-          "assists": 13,
-          "kda": 5.3,
-          "csPerMin": 7.8
         },
         {
           "championName": "Zeri",
@@ -3225,6 +3221,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUcasO0uyAE2YUovVJw9xN0BBOhsnvprcU=",
+          "gameCreation": 1792299241000,
+          "gameDurationSeconds": 1678,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Kalista",
+          "championId": "429",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 12,
+          "deaths": 8,
+          "assists": 5,
+          "kda": 2.13,
+          "cs": 196,
+          "csPerMin": 7,
+          "killParticipationPct": 0,
+          "damageDealt": 33544,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBoost",
+            "SummonerFlash"
+          ],
+          "items": [
+            3087,
+            6665,
+            1086,
+            3302,
+            3124
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgURKZiTWL0PljfXu1D0xH0awW7l61Prvpw=",
           "gameCreation": 1792297103000,
@@ -3885,45 +3915,10 @@
             3026
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWsO8ItRGFbUO1jZuiyNyC3atXyWPKoVJ0=",
-          "gameCreation": 1791829395000,
-          "gameDurationSeconds": 1454,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ziggs",
-          "championId": "115",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 8,
-          "deaths": 4,
-          "assists": 13,
-          "kda": 5.25,
-          "cs": 190,
-          "csPerMin": 7.8,
-          "killParticipationPct": 0,
-          "damageDealt": 33555,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerTeleport",
-            "SummonerFlash"
-          ],
-          "items": [
-            6655,
-            3916,
-            3089,
-            4645,
-            1056,
-            4630
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1134 LP)",
-      "analystSummary": "Supa: MASTER I 1134 LP · 20 partidas consultadas · 78.5% WR · KDA medio 4.1.",
+      "analystSummary": "Supa: MASTER I 1134 LP · 20 partidas consultadas · 78.5% WR · KDA medio 3.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4340,7 +4335,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -5719,7 +5714,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
