@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T22:11:32.282Z",
-  "syncedAt": "2026-10-18T22:11:32.282Z",
+  "generatedAt": "2026-10-18T22:16:31.730Z",
+  "syncedAt": "2026-10-18T22:16:31.730Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3109,11 +3109,11 @@
       "wins": 51,
       "losses": 15,
       "winrate": 77.3,
-      "streak": -1,
-      "avgKda": 3.9,
-      "avgKills": 7.4,
-      "avgDeaths": 5.3,
-      "avgAssists": 7,
+      "streak": -2,
+      "avgKda": 4,
+      "avgKills": 7.3,
+      "avgDeaths": 5,
+      "avgAssists": 6.7,
       "avgCsPerMin": 8.1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3131,19 +3131,6 @@
           "csPerMin": 8.4
         },
         {
-          "championName": "Jhin",
-          "championId": "202",
-          "games": 3,
-          "wins": 2,
-          "losses": 1,
-          "winrate": 66.7,
-          "kills": 31,
-          "deaths": 12,
-          "assists": 32,
-          "kda": 5.3,
-          "csPerMin": 8.9
-        },
-        {
           "championName": "Ezreal",
           "championId": "81",
           "games": 3,
@@ -3155,6 +3142,19 @@
           "assists": 16,
           "kda": 2.4,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Jhin",
+          "championId": "202",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 20,
+          "deaths": 5,
+          "assists": 17,
+          "kda": 7.4,
+          "csPerMin": 8.4
         },
         {
           "championName": "Kalista",
@@ -3235,6 +3235,19 @@
           "csPerMin": 0.8
         },
         {
+          "championName": "Caitlyn",
+          "championId": "51",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 8,
+          "deaths": 3,
+          "assists": 8,
+          "kda": 5.3,
+          "csPerMin": 9.8
+        },
+        {
           "championName": "Zeri",
           "championId": "221",
           "games": 1,
@@ -3262,6 +3275,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU10ZQMoFTYXD4TyKvsRe49BApyPBfc84w=",
+          "gameCreation": 1792361492000,
+          "gameDurationSeconds": 1634,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Caitlyn",
+          "championId": "51",
+          "champLevel": 15,
+          "role": "ADC",
+          "kills": 8,
+          "deaths": 3,
+          "assists": 8,
+          "kda": 5.33,
+          "cs": 267,
+          "csPerMin": 9.8,
+          "killParticipationPct": 0,
+          "damageDealt": 20229,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerHaste",
+            "SummonerFlash"
+          ],
+          "items": [
+            3031,
+            3095,
+            2055,
+            3094,
+            3033,
+            1038
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUcasO0uyAE2YUovVJw9xN0BBOhsnvprcU=",
           "gameCreation": 1792299241000,
@@ -3921,45 +3969,10 @@
             3031
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUUpzUVP-6ZQOaM_30RuXW4NSMHFBmL0IU=",
-          "gameCreation": 1791866536000,
-          "gameDurationSeconds": 2207,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Jhin",
-          "championId": "202",
-          "champLevel": 18,
-          "role": "ADC",
-          "kills": 11,
-          "deaths": 7,
-          "assists": 15,
-          "kda": 3.71,
-          "cs": 362,
-          "csPerMin": 9.8,
-          "killParticipationPct": 0,
-          "damageDealt": 38966,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3046,
-            3036,
-            6670,
-            3031,
-            6697,
-            3026
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1108 LP)",
-      "analystSummary": "Supa: MASTER I 1108 LP · 20 partidas consultadas · 77.3% WR · KDA medio 3.9.",
+      "analystSummary": "Supa: MASTER I 1108 LP · 20 partidas consultadas · 77.3% WR · KDA medio 4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
