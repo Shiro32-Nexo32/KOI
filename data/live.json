@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T03:11:30.422Z",
-  "syncedAt": "2026-10-18T03:11:30.423Z",
+  "generatedAt": "2026-10-18T03:16:35.489Z",
+  "syncedAt": "2026-10-18T03:16:35.489Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1078,7 +1078,7 @@
         }
       ],
       "formRank": 1,
-      "eloRank": 3,
+      "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
         "eq3KyFixtgUoI52Qb4ARj6Ux_dZ3PnnX1CYje9_XOas="
@@ -1097,10 +1097,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 897,
-      "wins": 44,
+      "lp": 932,
+      "wins": 45,
       "losses": 14,
-      "winrate": 75.9,
+      "winrate": 76.3,
       "streak": 2,
       "avgKda": 5.8,
       "avgKills": 8.6,
@@ -1853,8 +1853,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (897 LP)",
-      "analystSummary": "Elyoya: MASTER I 897 LP · 17 partidas consultadas · 75.9% WR · KDA medio 5.8.",
+      "statusBadge": "MASTER I (932 LP)",
+      "analystSummary": "Elyoya: MASTER I 932 LP · 17 partidas consultadas · 76.3% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2188,10 +2188,19 @@
           "wins": 44,
           "losses": 14,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792293375090,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 932,
+          "wins": 45,
+          "losses": 14,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 3,
-      "eloRank": 4,
+      "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
       ]
@@ -2886,12 +2895,12 @@
       "wins": 48,
       "losses": 14,
       "winrate": 77.4,
-      "streak": 1,
-      "avgKda": 4.9,
-      "avgKills": 7.5,
-      "avgDeaths": 4.7,
-      "avgAssists": 7.5,
-      "avgCsPerMin": 8.2,
+      "streak": 2,
+      "avgKda": 4.6,
+      "avgKills": 7.7,
+      "avgDeaths": 4.8,
+      "avgAssists": 7.7,
+      "avgCsPerMin": 8.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -2921,30 +2930,30 @@
           "csPerMin": 8.5
         },
         {
-          "championName": "Yunara",
-          "championId": "804",
-          "games": 3,
-          "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 31,
-          "deaths": 6,
-          "assists": 23,
-          "kda": 9,
-          "csPerMin": 10.1
-        },
-        {
           "championName": "Ezreal",
           "championId": "81",
-          "games": 2,
-          "wins": 0,
+          "games": 3,
+          "wins": 1,
           "losses": 2,
-          "winrate": 0,
-          "kills": 9,
-          "deaths": 10,
-          "assists": 7,
-          "kda": 1.6,
+          "winrate": 33.3,
+          "kills": 18,
+          "deaths": 14,
+          "assists": 16,
+          "kda": 2.4,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Yunara",
+          "championId": "804",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 26,
+          "deaths": 6,
+          "assists": 17,
+          "kda": 7.2,
+          "csPerMin": 10.1
         },
         {
           "championName": "Tristana",
@@ -3039,6 +3048,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX7iAUJguYXx2xz0nS12Nxj3GDUBzgfeSw=",
+          "gameCreation": 1792293155000,
+          "gameDurationSeconds": 1597,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 9,
+          "deaths": 4,
+          "assists": 9,
+          "kda": 4.5,
+          "cs": 233,
+          "csPerMin": 8.8,
+          "killParticipationPct": 0,
+          "damageDealt": 50767,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            3042,
+            2055,
+            3035,
+            2517,
+            3078
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXGP1Qucbfl8PEoVTQpAFN1qtbKPaRwVWs=",
           "gameCreation": 1792259967000,
@@ -3698,45 +3742,10 @@
             3036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVt3JHo03sIj4F0qsm6tCkjWcUOGLH0FK8=",
-          "gameCreation": 1791734595000,
-          "gameDurationSeconds": 1066,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Yunara",
-          "championId": "804",
-          "champLevel": 12,
-          "role": "ADC",
-          "kills": 5,
-          "deaths": 0,
-          "assists": 6,
-          "kda": 11,
-          "cs": 177,
-          "csPerMin": 10,
-          "killParticipationPct": 0,
-          "damageDealt": 12542,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            2055,
-            1018,
-            1038,
-            3085,
-            3032
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1032 LP)",
-      "analystSummary": "Supa: MASTER I 1032 LP · 20 partidas consultadas · 77.4% WR · KDA medio 4.9.",
+      "analystSummary": "Supa: MASTER I 1032 LP · 20 partidas consultadas · 77.4% WR · KDA medio 4.6.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
