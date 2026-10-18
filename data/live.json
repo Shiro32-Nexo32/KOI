@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T04:26:28.744Z",
-  "syncedAt": "2026-10-18T04:26:28.744Z",
+  "generatedAt": "2026-10-18T04:30:27.984Z",
+  "syncedAt": "2026-10-18T04:30:27.984Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3026,7 +3026,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -4338,15 +4338,15 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1252,
-      "wins": 55,
+      "lp": 1287,
+      "wins": 56,
       "losses": 15,
-      "winrate": 78.6,
-      "streak": 2,
-      "avgKda": 4.5,
-      "avgKills": 5.2,
-      "avgDeaths": 5.6,
-      "avgAssists": 13.5,
+      "winrate": 78.9,
+      "streak": 3,
+      "avgKda": 4.8,
+      "avgKills": 4.9,
+      "avgDeaths": 5.5,
+      "avgAssists": 13.8,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4416,6 +4416,19 @@
           "csPerMin": 1.1
         },
         {
+          "championName": "Bard",
+          "championId": "432",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 1,
+          "deaths": 2,
+          "assists": 17,
+          "kda": 9,
+          "csPerMin": 0.7
+        },
+        {
           "championName": "Vi",
           "championId": "254",
           "games": 1,
@@ -4481,19 +4494,6 @@
           "csPerMin": 1.1
         },
         {
-          "championName": "Neeko",
-          "championId": "518",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 5,
-          "assists": 10,
-          "kda": 3.2,
-          "csPerMin": 0.6
-        },
-        {
           "championName": "Sylas",
           "championId": "517",
           "games": 1,
@@ -4521,6 +4521,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUfZuRx9Uall9g4-4Ob4voLyl2Y7x_PTOA=",
+          "gameCreation": 1792297685000,
+          "gameDurationSeconds": 1164,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Bard",
+          "championId": "432",
+          "champLevel": 10,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 2,
+          "assists": 17,
+          "kda": 9,
+          "cs": 14,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 13374,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3877,
+            3222,
+            2031,
+            2525,
+            2422
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWxxa5LFz9O_mOwm91OnKMAI7e58sYTI10=",
           "gameCreation": 1792295990000,
@@ -5174,45 +5208,10 @@
             1011
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXlsisvJLJDZJvIx4f9JA6bokEk81iMbUk=",
-          "gameCreation": 1791945589000,
-          "gameDurationSeconds": 1281,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Neeko",
-          "championId": "518",
-          "champLevel": 10,
-          "role": "SUPPORT",
-          "kills": 6,
-          "deaths": 5,
-          "assists": 10,
-          "kda": 3.2,
-          "cs": 12,
-          "csPerMin": 0.6,
-          "killParticipationPct": 0,
-          "damageDealt": 13473,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3152,
-            2065,
-            1028,
-            3158,
-            3067
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1252 LP)",
-      "analystSummary": "Alvaro: MASTER I 1252 LP · 20 partidas consultadas · 78.6% WR · KDA medio 4.5.",
+      "statusBadge": "MASTER I (1287 LP)",
+      "analystSummary": "Alvaro: MASTER I 1287 LP · 20 partidas consultadas · 78.9% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5690,9 +5689,18 @@
           "wins": 55,
           "losses": 15,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792297827983,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1287,
+          "wins": 56,
+          "losses": 15,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
