@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T03:41:32.967Z",
-  "syncedAt": "2026-10-18T03:41:32.967Z",
+  "generatedAt": "2026-10-18T03:46:33.277Z",
+  "syncedAt": "2026-10-18T03:46:33.277Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1159,10 +1159,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 932,
+      "lp": 907,
       "wins": 45,
-      "losses": 14,
-      "winrate": 76.3,
+      "losses": 15,
+      "winrate": 75,
       "streak": -1,
       "avgKda": 5.6,
       "avgKills": 8.7,
@@ -1950,8 +1950,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (932 LP)",
-      "analystSummary": "Elyoya: MASTER I 932 LP · 18 partidas consultadas · 76.3% WR · KDA medio 5.6.",
+      "statusBadge": "MASTER I (907 LP)",
+      "analystSummary": "Elyoya: MASTER I 907 LP · 18 partidas consultadas · 75% WR · KDA medio 5.6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2293,6 +2293,15 @@
           "lp": 932,
           "wins": 45,
           "losses": 14,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792295174262,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 907,
+          "wins": 45,
+          "losses": 15,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
@@ -2921,7 +2930,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -2940,30 +2949,30 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1066,
-      "wins": 49,
+      "lp": 1100,
+      "wins": 50,
       "losses": 14,
-      "winrate": 77.8,
-      "streak": 2,
-      "avgKda": 4.6,
+      "winrate": 78.1,
+      "streak": 3,
+      "avgKda": 4.2,
       "avgKills": 7.7,
-      "avgDeaths": 4.8,
-      "avgAssists": 7.7,
+      "avgDeaths": 5,
+      "avgAssists": 7.3,
       "avgCsPerMin": 8.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Lucian",
           "championId": "236",
-          "games": 4,
-          "wins": 2,
+          "games": 5,
+          "wins": 3,
           "losses": 2,
-          "winrate": 50,
-          "kills": 19,
-          "deaths": 21,
-          "assists": 17,
-          "kda": 1.7,
-          "csPerMin": 8.3
+          "winrate": 60,
+          "kills": 31,
+          "deaths": 25,
+          "assists": 23,
+          "kda": 2.2,
+          "csPerMin": 8.4
         },
         {
           "championName": "Jhin",
@@ -2994,15 +3003,15 @@
         {
           "championName": "Yunara",
           "championId": "804",
-          "games": 2,
-          "wins": 2,
+          "games": 1,
+          "wins": 1,
           "losses": 0,
           "winrate": 100,
-          "kills": 26,
-          "deaths": 6,
-          "assists": 17,
-          "kda": 7.2,
-          "csPerMin": 10.1
+          "kills": 14,
+          "deaths": 4,
+          "assists": 3,
+          "kda": 4.3,
+          "csPerMin": 10.7
         },
         {
           "championName": "Tristana",
@@ -3097,6 +3106,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUVQqHvuQ_jk5iI4c3l5vvCucdOL_oeFqY=",
+          "gameCreation": 1792294861000,
+          "gameDurationSeconds": 1438,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lucian",
+          "championId": "236",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 12,
+          "deaths": 4,
+          "assists": 6,
+          "kda": 4.5,
+          "cs": 216,
+          "csPerMin": 9,
+          "killParticipationPct": 0,
+          "damageDealt": 27384,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBoost",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            2031,
+            6670,
+            3508,
+            3094,
+            3031
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX7iAUJguYXx2xz0nS12Nxj3GDUBzgfeSw=",
           "gameCreation": 1792293155000,
@@ -3757,44 +3801,10 @@
             1053
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgU5LbYFZdEMItpWOwOxDnCbjkRUMEr6eTQ=",
-          "gameCreation": 1791737408000,
-          "gameDurationSeconds": 1305,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Yunara",
-          "championId": "804",
-          "champLevel": 13,
-          "role": "ADC",
-          "kills": 12,
-          "deaths": 2,
-          "assists": 14,
-          "kda": 13,
-          "cs": 206,
-          "csPerMin": 9.5,
-          "killParticipationPct": 0,
-          "damageDealt": 32915,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            3032,
-            3085,
-            2055,
-            1086,
-            3036
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1066 LP)",
-      "analystSummary": "Supa: MASTER I 1066 LP · 20 partidas consultadas · 77.8% WR · KDA medio 4.6.",
+      "statusBadge": "MASTER I (1100 LP)",
+      "analystSummary": "Supa: MASTER I 1100 LP · 20 partidas consultadas · 78.1% WR · KDA medio 4.2.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4191,9 +4201,18 @@
           "wins": 49,
           "losses": 14,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792295186764,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1100,
+          "wins": 50,
+          "losses": 14,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
