@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T03:46:33.277Z",
-  "syncedAt": "2026-10-18T03:46:33.277Z",
+  "generatedAt": "2026-10-18T04:01:37.455Z",
+  "syncedAt": "2026-10-18T04:01:37.456Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -4233,11 +4233,11 @@
       "wins": 54,
       "losses": 15,
       "winrate": 78.3,
-      "streak": 1,
-      "avgKda": 4,
-      "avgKills": 5,
-      "avgDeaths": 5.8,
-      "avgAssists": 13.9,
+      "streak": 2,
+      "avgKda": 4.5,
+      "avgKills": 5.2,
+      "avgDeaths": 5.6,
+      "avgAssists": 13.5,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4281,19 +4281,6 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Karma",
-          "championId": "43",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 9,
-          "assists": 41,
-          "kda": 4.8,
-          "csPerMin": 0.9
-        },
-        {
           "championName": "Thresh",
           "championId": "412",
           "games": 2,
@@ -4320,6 +4307,19 @@
           "csPerMin": 1.1
         },
         {
+          "championName": "Vi",
+          "championId": "254",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 1,
+          "assists": 10,
+          "kda": 14,
+          "csPerMin": 0.4
+        },
+        {
           "championName": "Milio",
           "championId": "902",
           "games": 1,
@@ -4343,6 +4343,19 @@
           "deaths": 3,
           "assists": 3,
           "kda": 3.3,
+          "csPerMin": 0.7
+        },
+        {
+          "championName": "Karma",
+          "championId": "43",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 0,
+          "deaths": 5,
+          "assists": 23,
+          "kda": 4.6,
           "csPerMin": 0.7
         },
         {
@@ -4399,6 +4412,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWxxa5LFz9O_mOwm91OnKMAI7e58sYTI10=",
+          "gameCreation": 1792295990000,
+          "gameDurationSeconds": 1302,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Vi",
+          "championId": "254",
+          "champLevel": 15,
+          "role": "JUNGLE",
+          "kills": 4,
+          "deaths": 1,
+          "assists": 10,
+          "kda": 14,
+          "cs": 8,
+          "csPerMin": 0.4,
+          "killParticipationPct": 0,
+          "damageDealt": 12148,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3078,
+            3071,
+            1037,
+            1036,
+            2422
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVgFwsAyqA52zgy93hqeMK1SLsnitCn4co=",
           "gameCreation": 1792293783000,
@@ -5053,44 +5100,10 @@
             3067
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUVOwl8CyI0nkhjuweAp-3GrYzd8y7qC0A=",
-          "gameCreation": 1791919933000,
-          "gameDurationSeconds": 1310,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Karma",
-          "championId": "43",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 2,
-          "deaths": 4,
-          "assists": 18,
-          "kda": 5,
-          "cs": 27,
-          "csPerMin": 1.2,
-          "killParticipationPct": 0,
-          "damageDealt": 10740,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3870,
-            6617,
-            6620,
-            3158,
-            1004
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1182 LP)",
-      "analystSummary": "Alvaro: MASTER I 1182 LP · 20 partidas consultadas · 78.3% WR · KDA medio 4.",
+      "analystSummary": "Alvaro: MASTER I 1182 LP · 20 partidas consultadas · 78.3% WR · KDA medio 4.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
