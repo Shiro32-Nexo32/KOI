@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T04:16:37.912Z",
-  "syncedAt": "2026-10-18T04:16:37.913Z",
+  "generatedAt": "2026-10-18T04:21:31.544Z",
+  "syncedAt": "2026-10-18T04:21:31.544Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3031,12 +3031,12 @@
       "wins": 50,
       "losses": 14,
       "winrate": 78.1,
-      "streak": 3,
-      "avgKda": 4.2,
-      "avgKills": 7.7,
+      "streak": 4,
+      "avgKda": 4.1,
+      "avgKills": 7.2,
       "avgDeaths": 5,
-      "avgAssists": 7.3,
-      "avgCsPerMin": 8.1,
+      "avgAssists": 7.4,
+      "avgCsPerMin": 8.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3055,15 +3055,15 @@
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 4,
+          "games": 3,
           "wins": 2,
-          "losses": 2,
-          "winrate": 50,
-          "kills": 46,
-          "deaths": 17,
-          "assists": 42,
-          "kda": 5.2,
-          "csPerMin": 8.5
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 31,
+          "deaths": 12,
+          "assists": 32,
+          "kda": 5.3,
+          "csPerMin": 8.9
         },
         {
           "championName": "Ezreal",
@@ -3077,6 +3077,19 @@
           "assists": 16,
           "kda": 2.4,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Xayah",
+          "championId": "498",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 7,
+          "assists": 12,
+          "kda": 2.4,
+          "csPerMin": 9
         },
         {
           "championName": "Yunara",
@@ -3184,6 +3197,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgURKZiTWL0PljfXu1D0xH0awW7l61Prvpw=",
+          "gameCreation": 1792297103000,
+          "gameDurationSeconds": 1840,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Xayah",
+          "championId": "498",
+          "champLevel": 16,
+          "role": "ADC",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 12,
+          "kda": 2.43,
+          "cs": 275,
+          "csPerMin": 9,
+          "killParticipationPct": 0,
+          "damageDealt": 22895,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerHaste",
+            "SummonerFlash"
+          ],
+          "items": [
+            3031,
+            3032,
+            3033,
+            1086,
+            6675,
+            1036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUVQqHvuQ_jk5iI4c3l5vvCucdOL_oeFqY=",
           "gameCreation": 1792294861000,
@@ -3844,45 +3892,10 @@
             4630
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXupg24cVjgjsIHanhIk-r08lHw_cdM0zg=",
-          "gameCreation": 1791744094000,
-          "gameDurationSeconds": 1757,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Jhin",
-          "championId": "202",
-          "champLevel": 15,
-          "role": "ADC",
-          "kills": 15,
-          "deaths": 5,
-          "assists": 10,
-          "kda": 5,
-          "cs": 220,
-          "csPerMin": 7.5,
-          "killParticipationPct": 0,
-          "damageDealt": 42390,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3031,
-            3033,
-            6697,
-            1038,
-            3094,
-            1053
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1100 LP)",
-      "analystSummary": "Supa: MASTER I 1100 LP · 20 partidas consultadas · 78.1% WR · KDA medio 4.2.",
+      "analystSummary": "Supa: MASTER I 1100 LP · 20 partidas consultadas · 78.1% WR · KDA medio 4.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
