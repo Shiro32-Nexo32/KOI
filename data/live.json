@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T00:31:32.615Z",
-  "syncedAt": "2026-10-19T00:31:32.615Z",
+  "generatedAt": "2026-10-19T01:11:29.671Z",
+  "syncedAt": "2026-10-19T01:11:29.671Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3149,16 +3149,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1150,
+      "lp": 1124,
       "wins": 53,
-      "losses": 16,
-      "winrate": 76.8,
-      "streak": 2,
-      "avgKda": 4.2,
-      "avgKills": 8.1,
-      "avgDeaths": 5,
-      "avgAssists": 7,
-      "avgCsPerMin": 8,
+      "losses": 17,
+      "winrate": 75.7,
+      "streak": -1,
+      "avgKda": 4,
+      "avgKills": 7.7,
+      "avgDeaths": 5.1,
+      "avgAssists": 6.8,
+      "avgCsPerMin": 8.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3177,13 +3177,13 @@
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 3,
-          "wins": 3,
+          "games": 2,
+          "wins": 2,
           "losses": 0,
           "winrate": 100,
-          "kills": 33,
-          "deaths": 12,
-          "assists": 27,
+          "kills": 21,
+          "deaths": 8,
+          "assists": 19,
           "kda": 5,
           "csPerMin": 7.9
         },
@@ -3225,6 +3225,19 @@
           "assists": 10,
           "kda": 2.6,
           "csPerMin": 9
+        },
+        {
+          "championName": "Caitlyn",
+          "championId": "51",
+          "games": 2,
+          "wins": 0,
+          "losses": 2,
+          "winrate": 0,
+          "kills": 12,
+          "deaths": 8,
+          "assists": 12,
+          "kda": 3,
+          "csPerMin": 9.8
         },
         {
           "championName": "Xayah",
@@ -3292,19 +3305,6 @@
           "csPerMin": 0.8
         },
         {
-          "championName": "Caitlyn",
-          "championId": "51",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 8,
-          "deaths": 3,
-          "assists": 8,
-          "kda": 5.3,
-          "csPerMin": 9.8
-        },
-        {
           "championName": "Zeri",
           "championId": "221",
           "games": 1,
@@ -3319,6 +3319,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXMod2D-MFU1H9P4fJAPRq1y-tMEPjMxaQ=",
+          "gameCreation": 1792372009000,
+          "gameDurationSeconds": 1481,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Caitlyn",
+          "championId": "51",
+          "champLevel": 13,
+          "role": "ADC",
+          "kills": 4,
+          "deaths": 5,
+          "assists": 4,
+          "kda": 1.6,
+          "cs": 242,
+          "csPerMin": 9.8,
+          "killParticipationPct": 0,
+          "damageDealt": 21432,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3031,
+            3036,
+            1086,
+            3095
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWYj4BLk8yp_6aEW6bQbWalVRdQqG3RTqA=",
           "gameCreation": 1792369284000,
@@ -3978,45 +4011,10 @@
             4642
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUVOwl8CyI0nkhjuweAp-3GrYzd8y7qC0A=",
-          "gameCreation": 1791919933000,
-          "gameDurationSeconds": 1310,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jhin",
-          "championId": "202",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 12,
-          "deaths": 4,
-          "assists": 8,
-          "kda": 5,
-          "cs": 174,
-          "csPerMin": 8,
-          "killParticipationPct": 0,
-          "damageDealt": 25912,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            6697,
-            1120,
-            3036,
-            3046,
-            1038,
-            2055
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1150 LP)",
-      "analystSummary": "Supa: MASTER I 1150 LP · 20 partidas consultadas · 76.8% WR · KDA medio 4.2.",
+      "statusBadge": "MASTER I (1124 LP)",
+      "analystSummary": "Supa: MASTER I 1124 LP · 20 partidas consultadas · 75.7% WR · KDA medio 4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4484,6 +4482,15 @@
           "lp": 1150,
           "wins": 53,
           "losses": 16,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792372282621,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1124,
+          "wins": 53,
+          "losses": 17,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
