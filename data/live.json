@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T01:11:29.671Z",
-  "syncedAt": "2026-10-19T01:11:29.671Z",
+  "generatedAt": "2026-10-19T01:16:31.878Z",
+  "syncedAt": "2026-10-19T01:16:31.878Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1237,16 +1237,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1021,
-      "wins": 49,
+      "lp": 1056,
+      "wins": 50,
       "losses": 16,
-      "winrate": 75.4,
-      "streak": 4,
-      "avgKda": 6.4,
-      "avgKills": 8.6,
-      "avgDeaths": 4.5,
-      "avgAssists": 8.4,
-      "avgCsPerMin": 2.5,
+      "winrate": 75.8,
+      "streak": 5,
+      "avgKda": 7,
+      "avgKills": 9.1,
+      "avgDeaths": 4.3,
+      "avgAssists": 8.3,
+      "avgCsPerMin": 2.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1261,6 +1261,19 @@
           "assists": 44,
           "kda": 4,
           "csPerMin": 1.3
+        },
+        {
+          "championName": "Kha'Zix",
+          "championId": "121",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 22,
+          "deaths": 3,
+          "assists": 10,
+          "kda": 10.7,
+          "csPerMin": 0.9
         },
         {
           "championName": "Naafiri",
@@ -1341,19 +1354,6 @@
           "csPerMin": 6.4
         },
         {
-          "championName": "Kha'Zix",
-          "championId": "121",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 10,
-          "deaths": 3,
-          "assists": 8,
-          "kda": 6,
-          "csPerMin": 1.3
-        },
-        {
           "championName": "Sylas",
           "championId": "517",
           "games": 1,
@@ -1365,19 +1365,6 @@
           "assists": 9,
           "kda": 3.8,
           "csPerMin": 8.5
-        },
-        {
-          "championName": "Akali",
-          "championId": "84",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 4,
-          "assists": 4,
-          "kda": 2,
-          "csPerMin": 6.6
         },
         {
           "championName": "Graves",
@@ -1433,6 +1420,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWCXaSSDqccrCDVJlEFq-VrV77nKPU63iQ=",
+          "gameCreation": 1792372476000,
+          "gameDurationSeconds": 939,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kha'Zix",
+          "championId": "121",
+          "champLevel": 12,
+          "role": "JUNGLE",
+          "kills": 12,
+          "deaths": 0,
+          "assists": 2,
+          "kda": 14,
+          "cs": 10,
+          "csPerMin": 0.6,
+          "killParticipationPct": 0,
+          "damageDealt": 13383,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2520,
+            1001,
+            3134,
+            6699
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUrrPXohAfeGySSiuMcUA7tHMh2cBlSBes=",
           "gameCreation": 1792368485000,
@@ -2051,44 +2071,10 @@
             3157
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWDPBTrPF2dZSN7Jj4fhQ-DHEEsw5C8Yts=",
-          "gameCreation": 1791952328000,
-          "gameDurationSeconds": 1325,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Akali",
-          "championId": "84",
-          "champLevel": 14,
-          "role": "TOP",
-          "kills": 4,
-          "deaths": 4,
-          "assists": 4,
-          "kda": 2,
-          "cs": 145,
-          "csPerMin": 6.6,
-          "killParticipationPct": 0,
-          "damageDealt": 17686,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            3146,
-            3047,
-            1056,
-            4645,
-            2031
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1021 LP)",
-      "analystSummary": "Elyoya: MASTER I 1021 LP · 19 partidas consultadas · 75.4% WR · KDA medio 6.4.",
+      "statusBadge": "MASTER I (1056 LP)",
+      "analystSummary": "Elyoya: MASTER I 1056 LP · 19 partidas consultadas · 75.8% WR · KDA medio 7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2501,6 +2487,15 @@
           "division": "I",
           "lp": 1021,
           "wins": 49,
+          "losses": 16,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792372570022,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1056,
+          "wins": 50,
           "losses": 16,
           "note": "Sincronización automática desde OP.GG"
         }
