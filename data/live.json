@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T17:01:22.192Z",
-  "syncedAt": "2026-10-19T17:01:22.192Z",
+  "generatedAt": "2026-10-19T17:06:07.604Z",
+  "syncedAt": "2026-10-19T17:06:07.605Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1246,10 +1246,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1091,
-      "wins": 51,
+      "lp": 1056,
+      "wins": 50,
       "losses": 16,
-      "winrate": 76.1,
+      "winrate": 75.8,
       "streak": 6,
       "avgKda": 7.6,
       "avgKills": 8.9,
@@ -2068,8 +2068,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1091 LP)",
-      "analystSummary": "Elyoya: MASTER I 1091 LP · 19 partidas consultadas · 76.1% WR · KDA medio 7.6.",
+      "statusBadge": "MASTER I (1056 LP)",
+      "analystSummary": "Elyoya: MASTER I 1056 LP · 19 partidas consultadas · 75.8% WR · KDA medio 7.6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2518,6 +2518,15 @@
           "division": "I",
           "lp": 1091,
           "wins": 51,
+          "losses": 16,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792429542401,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1056,
+          "wins": 50,
           "losses": 16,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -3170,11 +3179,11 @@
       "wins": 55,
       "losses": 18,
       "winrate": 75.3,
-      "streak": -1,
-      "avgKda": 3.6,
-      "avgKills": 8.7,
+      "streak": -2,
+      "avgKda": 3.7,
+      "avgKills": 8.8,
       "avgDeaths": 5.3,
-      "avgAssists": 6.3,
+      "avgAssists": 6.2,
       "avgCsPerMin": 8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3205,17 +3214,30 @@
           "csPerMin": 8
         },
         {
+          "championName": "Yunara",
+          "championId": "804",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 18,
+          "deaths": 7,
+          "assists": 5,
+          "kda": 3.3,
+          "csPerMin": 9.8
+        },
+        {
           "championName": "Lucian",
           "championId": "236",
-          "games": 3,
+          "games": 2,
           "wins": 1,
-          "losses": 2,
-          "winrate": 33.3,
-          "kills": 15,
-          "deaths": 15,
-          "assists": 10,
-          "kda": 1.7,
-          "csPerMin": 8.4
+          "losses": 1,
+          "winrate": 50,
+          "kills": 13,
+          "deaths": 10,
+          "assists": 6,
+          "kda": 1.9,
+          "csPerMin": 7.9
         },
         {
           "championName": "Ezreal",
@@ -3283,19 +3305,6 @@
           "csPerMin": 9
         },
         {
-          "championName": "Yunara",
-          "championId": "804",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 14,
-          "deaths": 4,
-          "assists": 3,
-          "kda": 4.3,
-          "csPerMin": 10.7
-        },
-        {
           "championName": "Tristana",
           "championId": "18",
           "games": 1,
@@ -3336,6 +3345,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXvJX-jF80FwNVxrdpPAONfdRr9mkGz0oA=",
+          "gameCreation": 1792429352000,
+          "gameDurationSeconds": 1312,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Yunara",
+          "championId": "804",
+          "champLevel": 13,
+          "role": "ADC",
+          "kills": 4,
+          "deaths": 3,
+          "assists": 2,
+          "kda": 2,
+          "cs": 196,
+          "csPerMin": 9,
+          "killParticipationPct": 0,
+          "damageDealt": 9290,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3032,
+            1086,
+            2055,
+            1038,
+            1018,
+            3085
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUnOIe5RHNcJrnAYK4jyMBtXkCrxl7LFBo=",
           "gameCreation": 1792427433000,
@@ -3994,44 +4038,10 @@
             1053
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUNN-MIvht-QSFI5WxmNo1l4ze6VRv0xn4=",
-          "gameCreation": 1792040279000,
-          "gameDurationSeconds": 1579,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Lucian",
-          "championId": "236",
-          "champLevel": 13,
-          "role": "ADC",
-          "kills": 2,
-          "deaths": 5,
-          "assists": 4,
-          "kda": 1.2,
-          "cs": 247,
-          "csPerMin": 9.4,
-          "killParticipationPct": 0,
-          "damageDealt": 22852,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            3508,
-            1086,
-            1018,
-            6675,
-            3036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1200 LP)",
-      "analystSummary": "Supa: MASTER I 1200 LP · 20 partidas consultadas · 75.3% WR · KDA medio 3.6.",
+      "analystSummary": "Supa: MASTER I 1200 LP · 20 partidas consultadas · 75.3% WR · KDA medio 3.7.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4555,10 +4565,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1348,
-      "wins": 60,
+      "lp": 1314,
+      "wins": 59,
       "losses": 18,
-      "winrate": 76.9,
+      "winrate": 76.6,
       "streak": 1,
       "avgKda": 5.1,
       "avgKills": 4.5,
@@ -5438,8 +5448,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1348 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1348 LP · 20 partidas consultadas · 76.9% WR · KDA medio 5.1.",
+      "statusBadge": "GRANDMASTER I (1314 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1314 LP · 20 partidas consultadas · 76.6% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5996,6 +6006,15 @@
           "division": "I",
           "lp": 1348,
           "wins": 60,
+          "losses": 18,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792429567603,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1314,
+          "wins": 59,
           "losses": 18,
           "note": "Sincronización automática desde OP.GG"
         }
