@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T01:42:32.529Z",
-  "syncedAt": "2026-10-19T01:42:32.530Z",
+  "generatedAt": "2026-10-19T01:47:14.153Z",
+  "syncedAt": "2026-10-19T01:47:14.153Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3162,16 +3162,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1124,
-      "wins": 53,
+      "lp": 1158,
+      "wins": 54,
       "losses": 17,
-      "winrate": 75.7,
-      "streak": -1,
-      "avgKda": 4,
-      "avgKills": 7.7,
+      "winrate": 76.1,
+      "streak": 1,
+      "avgKda": 4.1,
+      "avgKills": 8.7,
       "avgDeaths": 5.1,
-      "avgAssists": 6.8,
-      "avgCsPerMin": 8.1,
+      "avgAssists": 6,
+      "avgCsPerMin": 8.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3186,6 +3186,19 @@
           "assists": 14,
           "kda": 2.2,
           "csPerMin": 8.4
+        },
+        {
+          "championName": "Kalista",
+          "championId": "429",
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 45,
+          "deaths": 15,
+          "assists": 18,
+          "kda": 4.2,
+          "csPerMin": 7.6
         },
         {
           "championName": "Jhin",
@@ -3212,19 +3225,6 @@
           "assists": 16,
           "kda": 2.9,
           "csPerMin": 7.9
-        },
-        {
-          "championName": "Kalista",
-          "championId": "429",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 23,
-          "deaths": 13,
-          "assists": 11,
-          "kda": 2.6,
-          "csPerMin": 7.5
         },
         {
           "championName": "Ezreal",
@@ -3305,19 +3305,6 @@
           "csPerMin": 7.8
         },
         {
-          "championName": "Renata Glasc",
-          "championId": "888",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 1,
-          "deaths": 2,
-          "assists": 23,
-          "kda": 12,
-          "csPerMin": 0.8
-        },
-        {
           "championName": "Zeri",
           "championId": "221",
           "games": 1,
@@ -3332,6 +3319,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVYTTpfyFj_Q_nkBaCawYpfJ8eGXYnbujo=",
+          "gameCreation": 1792374185000,
+          "gameDurationSeconds": 1810,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kalista",
+          "championId": "429",
+          "champLevel": 16,
+          "role": "ADC",
+          "kills": 22,
+          "deaths": 2,
+          "assists": 7,
+          "kda": 14.5,
+          "cs": 235,
+          "csPerMin": 7.8,
+          "killParticipationPct": 0,
+          "damageDealt": 54059,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            1038,
+            3087,
+            3140,
+            6665,
+            3124,
+            3302
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXMod2D-MFU1H9P4fJAPRq1y-tMEPjMxaQ=",
           "gameCreation": 1792372009000,
@@ -3990,44 +4012,10 @@
             1033
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgW3tQO-D7wkIzoRuvMbxsCgJFvciUmPREo=",
-          "gameCreation": 1791949617000,
-          "gameDurationSeconds": 1413,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Renata Glasc",
-          "championId": "888",
-          "champLevel": 12,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 2,
-          "assists": 23,
-          "kda": 12,
-          "cs": 19,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 5469,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerHeal",
-            "SummonerFlash"
-          ],
-          "items": [
-            3869,
-            3190,
-            3222,
-            3158,
-            4642
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1124 LP)",
-      "analystSummary": "Supa: MASTER I 1124 LP · 20 partidas consultadas · 75.7% WR · KDA medio 4.",
+      "statusBadge": "MASTER I (1158 LP)",
+      "analystSummary": "Supa: MASTER I 1158 LP · 20 partidas consultadas · 76.1% WR · KDA medio 4.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4503,6 +4491,15 @@
           "division": "I",
           "lp": 1124,
           "wins": 53,
+          "losses": 17,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792374426127,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1158,
+          "wins": 54,
           "losses": 17,
           "note": "Sincronización automática desde OP.GG"
         }
