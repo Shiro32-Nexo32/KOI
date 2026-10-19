@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T01:47:14.153Z",
-  "syncedAt": "2026-10-19T01:47:14.153Z",
+  "generatedAt": "2026-10-19T02:01:32.499Z",
+  "syncedAt": "2026-10-19T02:01:32.499Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -4525,11 +4525,11 @@
       "wins": 56,
       "losses": 15,
       "winrate": 78.9,
-      "streak": 3,
-      "avgKda": 4.8,
-      "avgKills": 4.9,
-      "avgDeaths": 5.5,
-      "avgAssists": 13.8,
+      "streak": 4,
+      "avgKda": 4.7,
+      "avgKills": 4.8,
+      "avgDeaths": 5.4,
+      "avgAssists": 13.5,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4560,17 +4560,17 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Alistar",
-          "championId": "12",
+          "championName": "Bard",
+          "championId": "432",
           "games": 2,
           "wins": 2,
           "losses": 0,
           "winrate": 100,
-          "kills": 3,
-          "deaths": 10,
-          "assists": 41,
+          "kills": 1,
+          "deaths": 9,
+          "assists": 39,
           "kda": 4.4,
-          "csPerMin": 0.9
+          "csPerMin": 0.6
         },
         {
           "championName": "Thresh",
@@ -4599,19 +4599,6 @@
           "csPerMin": 1.1
         },
         {
-          "championName": "Bard",
-          "championId": "432",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 1,
-          "deaths": 2,
-          "assists": 17,
-          "kda": 9,
-          "csPerMin": 0.7
-        },
-        {
           "championName": "Vi",
           "championId": "254",
           "games": 1,
@@ -4636,6 +4623,19 @@
           "assists": 26,
           "kda": 5.6,
           "csPerMin": 0.7
+        },
+        {
+          "championName": "Alistar",
+          "championId": "12",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 0,
+          "deaths": 2,
+          "assists": 12,
+          "kda": 6,
+          "csPerMin": 1
         },
         {
           "championName": "Viego",
@@ -4704,6 +4704,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX6n2_ukYNPxKVwrFV4mR47ZII6OhNf8SU=",
+          "gameCreation": 1792375034000,
+          "gameDurationSeconds": 2000,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Bard",
+          "championId": "432",
+          "champLevel": 14,
+          "role": "SUPPORT",
+          "kills": 0,
+          "deaths": 7,
+          "assists": 22,
+          "kda": 3.14,
+          "cs": 21,
+          "csPerMin": 0.6,
+          "killParticipationPct": 0,
+          "damageDealt": 13640,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3190,
+            2524,
+            3158,
+            2525
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUfZuRx9Uall9g4-4Ob4voLyl2Y7x_PTOA=",
           "gameCreation": 1792297685000,
@@ -5356,45 +5390,10 @@
             1028
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVNvf8hflTsiqx0cwR4m7_tHoKyzu-HTq4=",
-          "gameCreation": 1791949312000,
-          "gameDurationSeconds": 1808,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Alistar",
-          "championId": "12",
-          "champLevel": 15,
-          "role": "SUPPORT",
-          "kills": 3,
-          "deaths": 8,
-          "assists": 29,
-          "kda": 4,
-          "cs": 25,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 10724,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3876,
-            3190,
-            3050,
-            3009,
-            3067,
-            1011
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1287 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1287 LP · 20 partidas consultadas · 78.9% WR · KDA medio 4.8.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1287 LP · 20 partidas consultadas · 78.9% WR · KDA medio 4.7.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
