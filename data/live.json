@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-10-19T01:26:32.574Z",
-  "syncedAt": "2026-10-19T01:26:32.574Z",
+  "syncedAt": "2026-10-19T01:38:45.459Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "ok",
+  "status": "partial",
   "players": [
     {
       "id": "myrwn",
@@ -5891,12 +5891,18 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [],
+  "errors": [
+    "Myrwn: This operation was aborted",
+    "Elyoya: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n<html>\\r\\n<head><title>500 Internal Server Error</title></head>\\r\\n<body>\\r\\n<center><h1>500 Internal Server Error</h1></cente (truncated...)\\n\"}",
+    "Jojopyun: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n<html>\\r\\n<head><title>500 Internal Server Error</title></head>\\r\\n<body>\\r\\n<center><h1>500 Internal Server Error</h1></cente (truncated...)\\n\"}",
+    "Supa: This operation was aborted",
+    "Alvaro: This operation was aborted"
+  ],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 5,
+    "successfulCount": 0,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
