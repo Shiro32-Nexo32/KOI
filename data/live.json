@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-19T01:26:32.574Z",
-  "syncedAt": "2026-10-19T01:38:45.459Z",
+  "generatedAt": "2026-10-19T01:42:32.529Z",
+  "syncedAt": "2026-10-19T01:42:32.530Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -1237,10 +1237,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1021,
-      "wins": 49,
+      "lp": 1056,
+      "wins": 50,
       "losses": 16,
-      "winrate": 75.4,
+      "winrate": 75.8,
       "streak": 5,
       "avgKda": 7,
       "avgKills": 9.1,
@@ -2073,8 +2073,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1021 LP)",
-      "analystSummary": "Elyoya: MASTER I 1021 LP · 19 partidas consultadas · 75.4% WR · KDA medio 7.",
+      "statusBadge": "MASTER I (1056 LP)",
+      "analystSummary": "Elyoya: MASTER I 1056 LP · 19 partidas consultadas · 75.8% WR · KDA medio 7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2505,6 +2505,15 @@
           "division": "I",
           "lp": 1021,
           "wins": 49,
+          "losses": 16,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792374096992,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1056,
+          "wins": 50,
           "losses": 16,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -5891,18 +5900,12 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Myrwn: This operation was aborted",
-    "Elyoya: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n<html>\\r\\n<head><title>500 Internal Server Error</title></head>\\r\\n<body>\\r\\n<center><h1>500 Internal Server Error</h1></cente (truncated...)\\n\"}",
-    "Jojopyun: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n<html>\\r\\n<head><title>500 Internal Server Error</title></head>\\r\\n<body>\\r\\n<center><h1>500 Internal Server Error</h1></cente (truncated...)\\n\"}",
-    "Supa: This operation was aborted",
-    "Alvaro: This operation was aborted"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 0,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
