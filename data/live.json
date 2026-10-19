@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-10-19T02:06:29.763Z",
-  "syncedAt": "2026-10-19T02:06:29.763Z",
+  "syncedAt": "2026-10-19T02:59:06.132Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "ok",
+  "status": "partial",
   "players": [
     {
       "id": "myrwn",
@@ -5905,12 +5905,17 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [],
+  "errors": [
+    "Elyoya: This operation was aborted",
+    "Jojopyun: This operation was aborted",
+    "Supa: This operation was aborted",
+    "Alvaro: This operation was aborted"
+  ],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 5,
+    "successfulCount": 1,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
