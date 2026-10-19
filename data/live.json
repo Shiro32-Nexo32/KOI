@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T02:06:29.763Z",
-  "syncedAt": "2026-10-19T03:06:31.767Z",
+  "generatedAt": "2026-10-19T03:41:30.499Z",
+  "syncedAt": "2026-10-19T03:41:30.499Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2518,7 +2518,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -4525,11 +4525,11 @@
       "wins": 57,
       "losses": 15,
       "winrate": 79.2,
-      "streak": 4,
-      "avgKda": 4.7,
-      "avgKills": 4.8,
-      "avgDeaths": 5.4,
-      "avgAssists": 13.5,
+      "streak": 5,
+      "avgKda": 5.3,
+      "avgKills": 4.2,
+      "avgDeaths": 4.9,
+      "avgAssists": 13.4,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4586,17 +4586,17 @@
           "csPerMin": 0.9
         },
         {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 2,
-          "wins": 0,
-          "losses": 2,
-          "winrate": 0,
-          "kills": 17,
-          "deaths": 18,
-          "assists": 20,
-          "kda": 2.1,
-          "csPerMin": 1.1
+          "championName": "Lulu",
+          "championId": "117",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 1,
+          "assists": 11,
+          "kda": 14,
+          "csPerMin": 0.9
         },
         {
           "championName": "Vi",
@@ -4701,9 +4701,56 @@
           "assists": 16,
           "kda": 3.1,
           "csPerMin": 1.1
+        },
+        {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 3,
+          "deaths": 7,
+          "assists": 7,
+          "kda": 1.4,
+          "csPerMin": 1.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUzwgYv4uDH7_MKKlevu1sGlhdaDpW14bg=",
+          "gameCreation": 1792381134000,
+          "gameDurationSeconds": 1258,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lulu",
+          "championId": "117",
+          "champLevel": 10,
+          "role": "SUPPORT",
+          "kills": 3,
+          "deaths": 1,
+          "assists": 11,
+          "kda": 14,
+          "cs": 18,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 6414,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3870,
+            3222,
+            2031,
+            3504,
+            3158
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX6n2_ukYNPxKVwrFV4mR47ZII6OhNf8SU=",
           "gameCreation": 1792375034000,
@@ -5355,45 +5402,10 @@
             2525
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVpHB3qG_s1z5TYOOogQqKpsR8sJqgv6Ao=",
-          "gameCreation": 1791951448000,
-          "gameDurationSeconds": 1840,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 13,
-          "role": "SUPPORT",
-          "kills": 14,
-          "deaths": 11,
-          "assists": 13,
-          "kda": 2.45,
-          "cs": 28,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 32996,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            6610,
-            6692,
-            2021,
-            3111,
-            1028
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1322 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1322 LP · 20 partidas consultadas · 79.2% WR · KDA medio 4.7.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1322 LP · 20 partidas consultadas · 79.2% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -5900,7 +5912,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
