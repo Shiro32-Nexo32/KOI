@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T05:41:29.017Z",
-  "syncedAt": "2026-10-19T05:41:29.017Z",
+  "generatedAt": "2026-10-19T06:10:58.740Z",
+  "syncedAt": "2026-10-19T06:10:58.740Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -4547,12 +4547,12 @@
       "wins": 59,
       "losses": 16,
       "winrate": 78.7,
-      "streak": -1,
-      "avgKda": 5.2,
-      "avgKills": 4.3,
-      "avgDeaths": 5,
-      "avgAssists": 13.1,
-      "avgCsPerMin": 0.7,
+      "streak": -2,
+      "avgKda": 5,
+      "avgKills": 4.7,
+      "avgDeaths": 5.3,
+      "avgAssists": 12.2,
+      "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -4673,17 +4673,17 @@
           "csPerMin": 0.7
         },
         {
-          "championName": "Karma",
-          "championId": "43",
+          "championName": "Zoe",
+          "championId": "142",
           "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 0,
-          "deaths": 5,
-          "assists": 23,
-          "kda": 4.6,
-          "csPerMin": 0.7
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 6,
+          "deaths": 11,
+          "assists": 6,
+          "kda": 1.1,
+          "csPerMin": 1.5
         },
         {
           "championName": "Renata Glasc",
@@ -4726,6 +4726,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUvCdU_bSGqMY6IDy1rxGRanqMmfAx2C-Q=",
+          "gameCreation": 1792390055000,
+          "gameDurationSeconds": 1961,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Zoe",
+          "championId": "142",
+          "champLevel": 14,
+          "role": "SUPPORT",
+          "kills": 6,
+          "deaths": 11,
+          "assists": 6,
+          "kda": 1.09,
+          "cs": 49,
+          "csPerMin": 1.5,
+          "killParticipationPct": 0,
+          "damageDealt": 24669,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3871,
+            6655,
+            4005,
+            3158,
+            4628,
+            1052
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWVByCi0YKAoaUO2yH4kAo4D4E_q8oQIQM=",
           "gameCreation": 1792387870000,
@@ -5377,45 +5412,10 @@
             1011
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWB-7DcHEGxWU3sswgMWKhB_4TshxkY2Rc=",
-          "gameCreation": 1792037812000,
-          "gameDurationSeconds": 1840,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Karma",
-          "championId": "43",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 5,
-          "assists": 23,
-          "kda": 4.6,
-          "cs": 22,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 13639,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3870,
-            3222,
-            3158,
-            6620,
-            6621,
-            3114
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1366 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1366 LP · 20 partidas consultadas · 78.7% WR · KDA medio 5.2.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1366 LP · 20 partidas consultadas · 78.7% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
