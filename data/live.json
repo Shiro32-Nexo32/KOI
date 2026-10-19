@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T04:16:28.847Z",
-  "syncedAt": "2026-10-19T04:16:28.847Z",
+  "generatedAt": "2026-10-19T05:01:30.732Z",
+  "syncedAt": "2026-10-19T05:01:30.732Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -4547,25 +4547,25 @@
       "wins": 58,
       "losses": 15,
       "winrate": 79.5,
-      "streak": 5,
-      "avgKda": 5.3,
-      "avgKills": 4.2,
-      "avgDeaths": 4.9,
-      "avgAssists": 13.4,
+      "streak": 6,
+      "avgKda": 5.2,
+      "avgKills": 4.5,
+      "avgDeaths": 5,
+      "avgAssists": 12.9,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Lee Sin",
           "championId": "64",
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "losses": 0,
           "winrate": 100,
-          "kills": 21,
-          "deaths": 8,
-          "assists": 34,
-          "kda": 6.9,
+          "kills": 31,
+          "deaths": 16,
+          "assists": 46,
+          "kda": 4.8,
           "csPerMin": 0.6
         },
         {
@@ -4686,19 +4686,6 @@
           "csPerMin": 0.7
         },
         {
-          "championName": "Tahm Kench",
-          "championId": "223",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 6,
-          "assists": 21,
-          "kda": 4.2,
-          "csPerMin": 1.1
-        },
-        {
           "championName": "Sylas",
           "championId": "517",
           "games": 1,
@@ -4739,6 +4726,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUcFrAB9TFxUte6UcljdS18KFIXGCYV2ig=",
+          "gameCreation": 1792385932000,
+          "gameDurationSeconds": 2091,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 10,
+          "deaths": 8,
+          "assists": 12,
+          "kda": 2.75,
+          "cs": 17,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 48874,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3133,
+            3111,
+            3071,
+            6692,
+            3026,
+            3156
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUzwgYv4uDH7_MKKlevu1sGlhdaDpW14bg=",
           "gameCreation": 1792381134000,
@@ -5390,44 +5412,10 @@
             1001
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWKz-cIa2vHSreMRuv4Z7-yudU3FI17L9A=",
-          "gameCreation": 1791953601000,
-          "gameDurationSeconds": 1696,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Tahm Kench",
-          "championId": "223",
-          "champLevel": 13,
-          "role": "SUPPORT",
-          "kills": 4,
-          "deaths": 6,
-          "assists": 21,
-          "kda": 4.17,
-          "cs": 31,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 20664,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3877,
-            3190,
-            3084,
-            3111,
-            2525
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1357 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1357 LP · 20 partidas consultadas · 79.5% WR · KDA medio 5.3.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1357 LP · 20 partidas consultadas · 79.5% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
