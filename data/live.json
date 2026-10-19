@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-19T02:06:29.763Z",
-  "syncedAt": "2026-10-19T02:59:06.132Z",
+  "syncedAt": "2026-10-19T03:04:18.618Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "partial",
@@ -5906,16 +5906,14 @@
     }
   ],
   "errors": [
-    "Elyoya: This operation was aborted",
-    "Jojopyun: This operation was aborted",
-    "Supa: This operation was aborted",
-    "Alvaro: This operation was aborted"
+    "Myrwn: This operation was aborted",
+    "Elyoya: This operation was aborted"
   ],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 1,
+    "successfulCount": 3,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
