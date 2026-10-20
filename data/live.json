@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T21:51:08.373Z",
-  "syncedAt": "2026-10-20T21:51:08.373Z",
+  "generatedAt": "2026-10-20T21:55:57.663Z",
+  "syncedAt": "2026-10-20T21:55:57.663Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2799,7 +2799,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3376,7 +3376,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3397,28 +3397,28 @@
       "division": "I",
       "lp": 1318,
       "wins": 59,
-      "losses": 20,
-      "winrate": 74.7,
-      "streak": 4,
-      "avgKda": 5,
-      "avgKills": 8.2,
-      "avgDeaths": 4.5,
-      "avgAssists": 7.9,
+      "losses": 21,
+      "winrate": 73.8,
+      "streak": -1,
+      "avgKda": 5.1,
+      "avgKills": 8,
+      "avgDeaths": 4,
+      "avgAssists": 7.6,
       "avgCsPerMin": 8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 3,
+          "games": 4,
           "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 20,
-          "deaths": 8,
-          "assists": 25,
-          "kda": 5.6,
-          "csPerMin": 9
+          "losses": 1,
+          "winrate": 75,
+          "kills": 23,
+          "deaths": 10,
+          "assists": 27,
+          "kda": 5,
+          "csPerMin": 8.7
         },
         {
           "championName": "Lucian",
@@ -3549,22 +3549,44 @@
           "assists": 12,
           "kda": 2.4,
           "csPerMin": 9
-        },
-        {
-          "championName": "Tristana",
-          "championId": "18",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 10,
-          "assists": 8,
-          "kda": 1.5,
-          "csPerMin": 6.9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUlSQcuSp1RrbCAAwUyQuvL-97ha5usVSM=",
+          "gameCreation": 1792533044000,
+          "gameDurationSeconds": 1412,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jhin",
+          "championId": "202",
+          "champLevel": 12,
+          "role": "ADC",
+          "kills": 3,
+          "deaths": 2,
+          "assists": 2,
+          "kda": 2.5,
+          "cs": 184,
+          "csPerMin": 7.8,
+          "killParticipationPct": 0,
+          "damageDealt": 11471,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBoost",
+            "SummonerFlash"
+          ],
+          "items": [
+            1120,
+            2055,
+            3046,
+            6697,
+            3035,
+            1018
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUu7DUymvMtPGo0-n9W5b5oBva1gqwkC4k=",
           "gameCreation": 1792528175000,
@@ -4221,45 +4243,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVdYLLi7B_ZB86yhI_br1vjtodRRhwNcVE=",
-          "gameCreation": 1792212462000,
-          "gameDurationSeconds": 1779,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Tristana",
-          "championId": "18",
-          "champLevel": 17,
-          "role": "TOP",
-          "kills": 7,
-          "deaths": 10,
-          "assists": 8,
-          "kda": 1.5,
-          "cs": 206,
-          "csPerMin": 6.9,
-          "killParticipationPct": 0,
-          "damageDealt": 20724,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            3032,
-            1086,
-            3035,
-            3031,
-            6675,
-            3047
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1318 LP)",
-      "analystSummary": "Supa: MASTER I 1318 LP · 20 partidas consultadas · 74.7% WR · KDA medio 5.",
+      "analystSummary": "Supa: MASTER I 1318 LP · 20 partidas consultadas · 73.8% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4856,7 +4843,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -6413,7 +6400,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
