@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T22:11:00.625Z",
-  "syncedAt": "2026-10-20T22:11:00.625Z",
+  "generatedAt": "2026-10-20T22:16:00.650Z",
+  "syncedAt": "2026-10-20T22:16:00.651Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1365,26 +1365,39 @@
       "wins": 56,
       "losses": 20,
       "winrate": 73.7,
-      "streak": -1,
-      "avgKda": 9,
-      "avgKills": 9.4,
-      "avgDeaths": 3.2,
-      "avgAssists": 8.3,
+      "streak": -2,
+      "avgKda": 8.8,
+      "avgKills": 9.5,
+      "avgDeaths": 3.4,
+      "avgAssists": 7.8,
       "avgCsPerMin": 1.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jayce",
           "championId": "126",
-          "games": 7,
+          "games": 6,
           "wins": 5,
-          "losses": 2,
-          "winrate": 71.4,
-          "kills": 61,
-          "deaths": 22,
-          "assists": 65,
-          "kda": 5.7,
+          "losses": 1,
+          "winrate": 83.3,
+          "kills": 58,
+          "deaths": 18,
+          "assists": 53,
+          "kda": 6.2,
           "csPerMin": 1.4
+        },
+        {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 15,
+          "deaths": 8,
+          "assists": 11,
+          "kda": 3.3,
+          "csPerMin": 0.8
         },
         {
           "championName": "Zaahen",
@@ -1450,19 +1463,6 @@
           "assists": 13,
           "kda": 2.9,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 11,
-          "deaths": 1,
-          "assists": 8,
-          "kda": 19,
-          "csPerMin": 0.3
         },
         {
           "championName": "Cho'Gath",
@@ -1557,6 +1557,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUcoZwNdLZfe_B-9oX3w_pYwit_iCKUZ_A=",
+          "gameCreation": 1792534318000,
+          "gameDurationSeconds": 1607,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 4,
+          "deaths": 7,
+          "assists": 3,
+          "kda": 1,
+          "cs": 31,
+          "csPerMin": 1.2,
+          "killParticipationPct": 0,
+          "damageDealt": 13170,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3071,
+            1037,
+            1033,
+            3047,
+            2520
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVkH-edtjmckE3D635LZCxth9wHItw-adQ=",
           "gameCreation": 1792532126000,
@@ -2210,45 +2244,10 @@
             2517
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgV5r8hPmzSpnB40MBB6f2IqnRahvFKWUqU=",
-          "gameCreation": 1792257103000,
-          "gameDurationSeconds": 2468,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 3,
-          "deaths": 4,
-          "assists": 12,
-          "kda": 3.75,
-          "cs": 74,
-          "csPerMin": 1.8,
-          "killParticipationPct": 0,
-          "damageDealt": 41985,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3036,
-            2517,
-            3158,
-            6699,
-            3179,
-            2520
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1165 LP)",
-      "analystSummary": "Elyoya: MASTER I 1165 LP · 20 partidas consultadas · 73.7% WR · KDA medio 9.",
+      "analystSummary": "Elyoya: MASTER I 1165 LP · 20 partidas consultadas · 73.7% WR · KDA medio 8.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
