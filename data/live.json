@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T17:26:01.171Z",
-  "syncedAt": "2026-10-19T17:26:01.171Z",
+  "generatedAt": "2026-10-20T04:16:01.377Z",
+  "syncedAt": "2026-10-20T04:16:01.377Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,14 +22,27 @@
       "wins": 48,
       "losses": 17,
       "winrate": 73.8,
-      "streak": -1,
-      "avgKda": 5.7,
-      "avgKills": 5.9,
-      "avgDeaths": 3.6,
-      "avgAssists": 5.8,
+      "streak": 1,
+      "avgKda": 5.5,
+      "avgKills": 6.1,
+      "avgDeaths": 3.8,
+      "avgAssists": 6.2,
       "avgCsPerMin": 8.5,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 4,
+          "wins": 2,
+          "losses": 2,
+          "winrate": 50,
+          "kills": 22,
+          "deaths": 24,
+          "assists": 31,
+          "kda": 2.2,
+          "csPerMin": 8.2
+        },
         {
           "championName": "Zaahen",
           "championId": "904",
@@ -55,32 +68,6 @@
           "assists": 26,
           "kda": 23.5,
           "csPerMin": 8.7
-        },
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 3,
-          "wins": 1,
-          "losses": 2,
-          "winrate": 33.3,
-          "kills": 15,
-          "deaths": 19,
-          "assists": 16,
-          "kda": 1.6,
-          "csPerMin": 8.4
-        },
-        {
-          "championName": "Swain",
-          "championId": "50",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 11,
-          "deaths": 3,
-          "assists": 15,
-          "kda": 8.7,
-          "csPerMin": 8.6
         },
         {
           "championName": "Zeri",
@@ -133,9 +120,57 @@
           "assists": 0,
           "kda": 0,
           "csPerMin": 9.3
+        },
+        {
+          "championName": "Swain",
+          "championId": "50",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 6,
+          "deaths": 1,
+          "assists": 6,
+          "kda": 12,
+          "csPerMin": 8.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWDAYNR6fOr7oTToxmnfesG_gD6PWE4m08=",
+          "gameCreation": 1792469482000,
+          "gameDurationSeconds": 2227,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 20,
+          "role": "TOP",
+          "kills": 7,
+          "deaths": 5,
+          "assists": 15,
+          "kda": 4.4,
+          "cs": 279,
+          "csPerMin": 7.5,
+          "killParticipationPct": 0,
+          "damageDealt": 55398,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2520,
+            3036,
+            3047,
+            3042,
+            3134,
+            6699
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX9dZQLpqBDbHu2eAKXgtQUI8UbMqjz60s=",
           "gameCreation": 1792427146000,
@@ -690,45 +725,10 @@
             1056
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX-IkbRmBpzT2soxRMERhrlkAhnOANipK4=",
-          "gameCreation": 1791912413000,
-          "gameDurationSeconds": 1667,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Swain",
-          "championId": "50",
-          "champLevel": 17,
-          "role": "TOP",
-          "kills": 5,
-          "deaths": 2,
-          "assists": 9,
-          "kda": 7,
-          "cs": 245,
-          "csPerMin": 8.8,
-          "killParticipationPct": 0,
-          "damageDealt": 27152,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            2503,
-            6653,
-            1052,
-            3116,
-            1056,
-            3009
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (917 LP)",
-      "analystSummary": "Myrwn: MASTER I 917 LP · 17 partidas consultadas · 73.8% WR · KDA medio 5.7.",
+      "analystSummary": "Myrwn: MASTER I 917 LP · 17 partidas consultadas · 73.8% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -3188,11 +3188,11 @@
       "wins": 55,
       "losses": 19,
       "winrate": 74.3,
-      "streak": -2,
-      "avgKda": 3.7,
-      "avgKills": 8.8,
-      "avgDeaths": 5.3,
-      "avgAssists": 6.2,
+      "streak": -3,
+      "avgKda": 3.6,
+      "avgKills": 8.4,
+      "avgDeaths": 5.1,
+      "avgAssists": 6,
       "avgCsPerMin": 8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3210,17 +3210,17 @@
           "csPerMin": 7.6
         },
         {
-          "championName": "Kai'Sa",
-          "championId": "145",
+          "championName": "Lucian",
+          "championId": "236",
           "games": 3,
           "wins": 1,
           "losses": 2,
           "winrate": 33.3,
-          "kills": 29,
-          "deaths": 20,
-          "assists": 21,
-          "kda": 2.5,
-          "csPerMin": 8
+          "kills": 14,
+          "deaths": 14,
+          "assists": 7,
+          "kda": 1.5,
+          "csPerMin": 8.2
         },
         {
           "championName": "Yunara",
@@ -3236,17 +3236,17 @@
           "csPerMin": 9.8
         },
         {
-          "championName": "Lucian",
-          "championId": "236",
+          "championName": "Kai'Sa",
+          "championId": "145",
           "games": 2,
           "wins": 1,
           "losses": 1,
           "winrate": 50,
-          "kills": 13,
-          "deaths": 10,
-          "assists": 6,
-          "kda": 1.9,
-          "csPerMin": 7.9
+          "kills": 22,
+          "deaths": 13,
+          "assists": 17,
+          "kda": 3,
+          "csPerMin": 7.8
         },
         {
           "championName": "Ezreal",
@@ -3354,6 +3354,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUGvDFT1c_yMT1-nrlDlPuD-uHb_nVo04Q=",
+          "gameCreation": 1792469513000,
+          "gameDurationSeconds": 965,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Lucian",
+          "championId": "236",
+          "champLevel": 9,
+          "role": "ADC",
+          "kills": 1,
+          "deaths": 4,
+          "assists": 1,
+          "kda": 0.5,
+          "cs": 141,
+          "csPerMin": 8.8,
+          "killParticipationPct": 0,
+          "damageDealt": 7208,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            3508,
+            1037,
+            1018
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXvJX-jF80FwNVxrdpPAONfdRr9mkGz0oA=",
           "gameCreation": 1792429352000,
@@ -4012,45 +4045,10 @@
             1018
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUXNoDtSh6I1shjJLQgyHK-Vad5xxVT3t0=",
-          "gameCreation": 1792083322000,
-          "gameDurationSeconds": 1913,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "champLevel": 15,
-          "role": "ADC",
-          "kills": 7,
-          "deaths": 7,
-          "assists": 4,
-          "kda": 1.57,
-          "cs": 260,
-          "csPerMin": 8.2,
-          "killParticipationPct": 0,
-          "damageDealt": 30894,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            6672,
-            3124,
-            3046,
-            1038,
-            3302,
-            1053
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1174 LP)",
-      "analystSummary": "Supa: MASTER I 1174 LP · 20 partidas consultadas · 74.3% WR · KDA medio 3.7.",
+      "analystSummary": "Supa: MASTER I 1174 LP · 20 partidas consultadas · 74.3% WR · KDA medio 3.6.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
