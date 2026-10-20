@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T20:46:07.589Z",
-  "syncedAt": "2026-10-20T20:46:07.589Z",
+  "generatedAt": "2026-10-20T20:56:00.051Z",
+  "syncedAt": "2026-10-20T20:56:00.051Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1318,7 +1318,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1342,12 +1342,12 @@
       "wins": 55,
       "losses": 19,
       "winrate": 74.3,
-      "streak": -2,
-      "avgKda": 9.1,
-      "avgKills": 8.7,
-      "avgDeaths": 3.3,
-      "avgAssists": 8.6,
-      "avgCsPerMin": 1.5,
+      "streak": 1,
+      "avgKda": 8.7,
+      "avgKills": 8.8,
+      "avgDeaths": 3.4,
+      "avgAssists": 8.3,
+      "avgCsPerMin": 1.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1362,6 +1362,19 @@
           "assists": 65,
           "kda": 5.7,
           "csPerMin": 1.4
+        },
+        {
+          "championName": "Zaahen",
+          "championId": "904",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 5,
+          "assists": 11,
+          "kda": 3.2,
+          "csPerMin": 8
         },
         {
           "championName": "Qiyana",
@@ -1455,19 +1468,6 @@
           "csPerMin": 1.7
         },
         {
-          "championName": "Renata Glasc",
-          "championId": "888",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 2,
-          "assists": 17,
-          "kda": 9.5,
-          "csPerMin": 1.1
-        },
-        {
           "championName": "Tahm Kench",
           "championId": "223",
           "games": 1,
@@ -1534,6 +1534,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVPcsOTVmJ3zCJOjLGTSoLwJGBTKdoJVE8=",
+          "gameCreation": 1792529695000,
+          "gameDurationSeconds": 1834,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Zaahen",
+          "championId": "904",
+          "champLevel": 18,
+          "role": "TOP",
+          "kills": 5,
+          "deaths": 5,
+          "assists": 11,
+          "kda": 3.2,
+          "cs": 246,
+          "csPerMin": 8,
+          "killParticipationPct": 0,
+          "damageDealt": 33050,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            6631,
+            2019,
+            1055,
+            3133,
+            3047,
+            3078
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVNlkvS--loydM20SLRaQOVpqffe0FadH4=",
           "gameCreation": 1792527553000,
@@ -2187,43 +2222,10 @@
             1028
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVjdt4zOtmeHldXvThOBxXT-_XMe0qKlHc=",
-          "gameCreation": 1792210371000,
-          "gameDurationSeconds": 1304,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Renata Glasc",
-          "championId": "888",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 2,
-          "deaths": 2,
-          "assists": 17,
-          "kda": 9.5,
-          "cs": 24,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 6823,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3222,
-            3109,
-            3158
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1156 LP)",
-      "analystSummary": "Elyoya: MASTER I 1156 LP · 20 partidas consultadas · 74.3% WR · KDA medio 9.1.",
+      "analystSummary": "Elyoya: MASTER I 1156 LP · 20 partidas consultadas · 74.3% WR · KDA medio 8.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2757,7 +2759,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -6371,7 +6373,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
