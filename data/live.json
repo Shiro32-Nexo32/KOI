@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T22:16:00.650Z",
-  "syncedAt": "2026-10-20T22:16:00.651Z",
+  "generatedAt": "2026-10-20T22:19:07.398Z",
+  "syncedAt": "2026-10-20T22:19:07.398Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1361,10 +1361,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1165,
+      "lp": 1139,
       "wins": 56,
-      "losses": 20,
-      "winrate": 73.7,
+      "losses": 21,
+      "winrate": 72.7,
       "streak": -2,
       "avgKda": 8.8,
       "avgKills": 9.5,
@@ -2246,8 +2246,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1165 LP)",
-      "analystSummary": "Elyoya: MASTER I 1165 LP · 20 partidas consultadas · 73.7% WR · KDA medio 8.8.",
+      "statusBadge": "MASTER I (1139 LP)",
+      "analystSummary": "Elyoya: MASTER I 1139 LP · 20 partidas consultadas · 72.7% WR · KDA medio 8.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2797,9 +2797,18 @@
           "wins": 56,
           "losses": 20,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792534726425,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1139,
+          "wins": 56,
+          "losses": 21,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -6396,7 +6405,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
