@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T04:48:00.528Z",
-  "syncedAt": "2026-10-20T04:48:00.528Z",
+  "generatedAt": "2026-10-20T05:05:56.514Z",
+  "syncedAt": "2026-10-20T05:05:56.515Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2613,10 +2613,10 @@
       "losses": 2,
       "winrate": 86.7,
       "streak": -2,
-      "avgKda": 4.8,
-      "avgKills": 8.3,
-      "avgDeaths": 3.4,
-      "avgAssists": 4.7,
+      "avgKda": 4.6,
+      "avgKills": 8.5,
+      "avgDeaths": 3.5,
+      "avgAssists": 4.5,
       "avgCsPerMin": 8.3,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -2723,19 +2723,6 @@
           "assists": 7,
           "kda": 11,
           "csPerMin": 9.4
-        },
-        {
-          "championName": "Twisted Fate",
-          "championId": "4",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 2,
-          "assists": 7,
-          "kda": 6.5,
-          "csPerMin": 9.2
         },
         {
           "championName": "Rumble",
@@ -3128,45 +3115,10 @@
             1056
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVy7KADqjcqv-Rxri4M0EG64yjZT22n-bw=",
-          "gameCreation": 1791260606000,
-          "gameDurationSeconds": 1567,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Twisted Fate",
-          "championId": "4",
-          "champLevel": 16,
-          "role": "MID",
-          "kills": 6,
-          "deaths": 2,
-          "assists": 7,
-          "kda": 6.5,
-          "cs": 241,
-          "csPerMin": 9.2,
-          "killParticipationPct": 0,
-          "damageDealt": 21649,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            2421,
-            3100,
-            6657,
-            3094,
-            3170,
-            1082
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "DIAMOND I (67 LP)",
-      "analystSummary": "Jojopyun: DIAMOND I 67 LP · 12 partidas consultadas · 86.7% WR · KDA medio 4.8.",
+      "analystSummary": "Jojopyun: DIAMOND I 67 LP · 11 partidas consultadas · 86.7% WR · KDA medio 4.6.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
@@ -4679,11 +4631,11 @@
       "wins": 60,
       "losses": 19,
       "winrate": 75.9,
-      "streak": -1,
-      "avgKda": 4.9,
+      "streak": 1,
+      "avgKda": 5,
       "avgKills": 4.3,
-      "avgDeaths": 5.5,
-      "avgAssists": 11.6,
+      "avgDeaths": 5.7,
+      "avgAssists": 12.5,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4740,6 +4692,19 @@
           "csPerMin": 0.9
         },
         {
+          "championName": "Tahm Kench",
+          "championId": "223",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 5,
+          "assists": 22,
+          "kda": 5.8,
+          "csPerMin": 0.7
+        },
+        {
           "championName": "Lulu",
           "championId": "117",
           "games": 1,
@@ -4790,19 +4755,6 @@
           "assists": 12,
           "kda": 6,
           "csPerMin": 1
-        },
-        {
-          "championName": "Viego",
-          "championId": "234",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 3,
-          "assists": 3,
-          "kda": 3.3,
-          "csPerMin": 0.7
         },
         {
           "championName": "Nautilus",
@@ -4871,6 +4823,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVMmHE7H5gBOqCkOy6Sb6jR-AQd_p8lo1M=",
+          "gameCreation": 1792472438000,
+          "gameDurationSeconds": 1601,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Tahm Kench",
+          "championId": "223",
+          "champLevel": 13,
+          "role": "SUPPORT",
+          "kills": 7,
+          "deaths": 5,
+          "assists": 22,
+          "kda": 5.8,
+          "cs": 19,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 13304,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3876,
+            3190,
+            3084,
+            3009,
+            3067,
+            3114
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVNj18C3iPjV5ejv1Hr3yrHGYZNqspZ0p4=",
           "gameCreation": 1792470460000,
@@ -5524,43 +5511,10 @@
             2022
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUsJkfIDB9IF-VXqKLRii8nbUDwN5rOLwM=",
-          "gameCreation": 1792086258000,
-          "gameDurationSeconds": 1103,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Viego",
-          "championId": "234",
-          "champLevel": 12,
-          "role": "JUNGLE",
-          "kills": 7,
-          "deaths": 3,
-          "assists": 3,
-          "kda": 3.33,
-          "cs": 13,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 13550,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6676,
-            1036,
-            6672,
-            2422
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1322 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1322 LP · 20 partidas consultadas · 75.9% WR · KDA medio 4.9.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1322 LP · 20 partidas consultadas · 75.9% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
