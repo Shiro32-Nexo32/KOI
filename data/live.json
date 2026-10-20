@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T21:01:18.287Z",
-  "syncedAt": "2026-10-20T21:01:18.287Z",
+  "generatedAt": "2026-10-20T21:06:04.724Z",
+  "syncedAt": "2026-10-20T21:06:04.725Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,26 +22,26 @@
       "wins": 51,
       "losses": 18,
       "winrate": 73.9,
-      "streak": 2,
+      "streak": 3,
       "avgKda": 5.3,
       "avgKills": 6,
       "avgDeaths": 3.7,
-      "avgAssists": 6.6,
-      "avgCsPerMin": 8.3,
+      "avgAssists": 7.1,
+      "avgCsPerMin": 8.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Ahri",
           "championId": "103",
-          "games": 6,
-          "wins": 5,
+          "games": 7,
+          "wins": 6,
           "losses": 1,
-          "winrate": 83.3,
-          "kills": 38,
-          "deaths": 9,
-          "assists": 52,
-          "kda": 10,
-          "csPerMin": 8.2
+          "winrate": 85.7,
+          "kills": 41,
+          "deaths": 14,
+          "assists": 65,
+          "kda": 7.6,
+          "csPerMin": 8.1
         },
         {
           "championName": "Jayce",
@@ -68,19 +68,6 @@
           "assists": 17,
           "kda": 2.6,
           "csPerMin": 8.1
-        },
-        {
-          "championName": "Zeri",
-          "championId": "221",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 17,
-          "deaths": 8,
-          "assists": 7,
-          "kda": 3,
-          "csPerMin": 9.1
         },
         {
           "championName": "Shyvana",
@@ -120,9 +107,57 @@
           "assists": 0,
           "kda": 0,
           "csPerMin": 9.3
+        },
+        {
+          "championName": "Zeri",
+          "championId": "221",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 14,
+          "deaths": 4,
+          "assists": 4,
+          "kda": 4.5,
+          "csPerMin": 9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU0pmcf-z7rNiTkBCl2WkhclbQUqitncPY=",
+          "gameCreation": 1792530298000,
+          "gameDurationSeconds": 1604,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ahri",
+          "championId": "103",
+          "champLevel": 15,
+          "role": "MID",
+          "kills": 3,
+          "deaths": 5,
+          "assists": 13,
+          "kda": 3.2,
+          "cs": 205,
+          "csPerMin": 7.7,
+          "killParticipationPct": 0,
+          "damageDealt": 26093,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2503,
+            1058,
+            1082,
+            4629,
+            3171,
+            1052
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXe06d2_CNmcwdZTy4Iupb4q6_X3i40nnc=",
           "gameCreation": 1792521518000,
@@ -744,41 +779,6 @@
             6673,
             3006,
             3085
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXsxq0Vj9OghJPrChFhii4NC8YGVFlaweE=",
-          "gameCreation": 1792033467000,
-          "gameDurationSeconds": 1708,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Zeri",
-          "championId": "221",
-          "champLevel": 16,
-          "role": "TOP",
-          "kills": 3,
-          "deaths": 4,
-          "assists": 3,
-          "kda": 1.5,
-          "cs": 263,
-          "csPerMin": 9.2,
-          "killParticipationPct": 0,
-          "damageDealt": 23052,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            2055,
-            2512,
-            3006,
-            3031,
-            3032,
-            1086
           ],
           "tags": []
         }
