@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T18:06:05.821Z",
-  "syncedAt": "2026-10-20T18:06:05.821Z",
+  "generatedAt": "2026-10-20T18:36:07.260Z",
+  "syncedAt": "2026-10-20T18:36:07.261Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1347,12 +1347,12 @@
       "wins": 53,
       "losses": 17,
       "winrate": 75.7,
-      "streak": 1,
-      "avgKda": 9.1,
-      "avgKills": 8.9,
-      "avgDeaths": 3.7,
-      "avgAssists": 8.4,
-      "avgCsPerMin": 2.1,
+      "streak": 2,
+      "avgKda": 9.3,
+      "avgKills": 9.2,
+      "avgDeaths": 3.3,
+      "avgAssists": 8.1,
+      "avgCsPerMin": 1.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1367,6 +1367,19 @@
           "assists": 60,
           "kda": 5.3,
           "csPerMin": 1.3
+        },
+        {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 12,
+          "deaths": 3,
+          "assists": 3,
+          "kda": 5,
+          "csPerMin": 0.5
         },
         {
           "championName": "Locke",
@@ -1510,22 +1523,44 @@
           "assists": 9,
           "kda": 1.6,
           "csPerMin": 0.5
-        },
-        {
-          "championName": "Yunara",
-          "championId": "804",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 7,
-          "deaths": 11,
-          "assists": 9,
-          "kda": 1.5,
-          "csPerMin": 6.2
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWKt3W97ajFTgJll1bFvEohPue0I0KSjjk=",
+          "gameCreation": 1792521287000,
+          "gameDurationSeconds": 1612,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 16,
+          "role": "JUNGLE",
+          "kills": 12,
+          "deaths": 3,
+          "assists": 3,
+          "kda": 5,
+          "cs": 14,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 23208,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3814,
+            2520,
+            3158,
+            3036,
+            1038,
+            6699
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXYOogUh93d5URLDOP0YWm7eewzwjSd51o=",
           "gameCreation": 1792519094000,
@@ -2142,45 +2177,10 @@
             3158
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXTdM6HnDmCHH1-q5z5ppMJaHYywrXWI9A=",
-          "gameCreation": 1792037894000,
-          "gameDurationSeconds": 1538,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Yunara",
-          "championId": "804",
-          "champLevel": 12,
-          "role": "ADC",
-          "kills": 7,
-          "deaths": 11,
-          "assists": 9,
-          "kda": 1.45,
-          "cs": 158,
-          "csPerMin": 6.2,
-          "killParticipationPct": 0,
-          "damageDealt": 21771,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerBarrier"
-          ],
-          "items": [
-            3031,
-            1086,
-            1018,
-            6672,
-            2512,
-            1083
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1136 LP)",
-      "analystSummary": "Elyoya: MASTER I 1136 LP · 19 partidas consultadas · 75.7% WR · KDA medio 9.1.",
+      "analystSummary": "Elyoya: MASTER I 1136 LP · 19 partidas consultadas · 75.7% WR · KDA medio 9.3.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
