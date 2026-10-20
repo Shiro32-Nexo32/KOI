@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T21:26:05.193Z",
-  "syncedAt": "2026-10-20T21:26:05.193Z",
+  "generatedAt": "2026-10-20T21:41:03.394Z",
+  "syncedAt": "2026-10-20T21:41:03.394Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1345,7 +1345,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1369,10 +1369,10 @@
       "wins": 56,
       "losses": 19,
       "winrate": 74.7,
-      "streak": 1,
-      "avgKda": 8.7,
-      "avgKills": 8.8,
-      "avgDeaths": 3.4,
+      "streak": -1,
+      "avgKda": 9,
+      "avgKills": 9.4,
+      "avgDeaths": 3.2,
       "avgAssists": 8.3,
       "avgCsPerMin": 1.9,
       "avgKillParticipationPct": 0,
@@ -1495,6 +1495,19 @@
           "csPerMin": 1.7
         },
         {
+          "championName": "Nidalee",
+          "championId": "76",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 17,
+          "deaths": 4,
+          "assists": 8,
+          "kda": 6.3,
+          "csPerMin": 1.4
+        },
+        {
           "championName": "Tahm Kench",
           "championId": "223",
           "games": 1,
@@ -1545,22 +1558,44 @@
           "assists": 3,
           "kda": 5.3,
           "csPerMin": 1.9
-        },
-        {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 4,
-          "deaths": 8,
-          "assists": 9,
-          "kda": 1.6,
-          "csPerMin": 0.5
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVkH-edtjmckE3D635LZCxth9wHItw-adQ=",
+          "gameCreation": 1792532126000,
+          "gameDurationSeconds": 2034,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Nidalee",
+          "championId": "76",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 17,
+          "deaths": 4,
+          "assists": 8,
+          "kda": 6.25,
+          "cs": 49,
+          "csPerMin": 1.4,
+          "killParticipationPct": 0,
+          "damageDealt": 64359,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3135,
+            3100,
+            4645,
+            3089,
+            3041,
+            3157
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVPcsOTVmJ3zCJOjLGTSoLwJGBTKdoJVE8=",
           "gameCreation": 1792529695000,
@@ -2214,45 +2249,10 @@
             2520
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVdYLLi7B_ZB86yhI_br1vjtodRRhwNcVE=",
-          "gameCreation": 1792212462000,
-          "gameDurationSeconds": 1779,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 12,
-          "role": "SUPPORT",
-          "kills": 4,
-          "deaths": 8,
-          "assists": 9,
-          "kda": 1.63,
-          "cs": 16,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 12429,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            1037,
-            3073,
-            2021,
-            3047,
-            1028
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1191 LP)",
-      "analystSummary": "Elyoya: MASTER I 1191 LP · 20 partidas consultadas · 74.7% WR · KDA medio 8.7.",
+      "analystSummary": "Elyoya: MASTER I 1191 LP · 20 partidas consultadas · 74.7% WR · KDA medio 9.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2795,7 +2795,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -6409,7 +6409,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
