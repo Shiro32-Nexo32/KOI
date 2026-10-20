@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T18:36:07.260Z",
-  "syncedAt": "2026-10-20T18:36:07.261Z",
+  "generatedAt": "2026-10-20T18:41:03.427Z",
+  "syncedAt": "2026-10-20T18:41:03.428Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,26 +22,26 @@
       "wins": 50,
       "losses": 18,
       "winrate": 73.5,
-      "streak": 1,
-      "avgKda": 5.5,
-      "avgKills": 5.9,
-      "avgDeaths": 3.6,
-      "avgAssists": 6.1,
-      "avgCsPerMin": 8.4,
+      "streak": 2,
+      "avgKda": 5.3,
+      "avgKills": 6,
+      "avgDeaths": 3.7,
+      "avgAssists": 6.6,
+      "avgCsPerMin": 8.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Ahri",
           "championId": "103",
-          "games": 5,
-          "wins": 4,
+          "games": 6,
+          "wins": 5,
           "losses": 1,
-          "winrate": 80,
-          "kills": 30,
-          "deaths": 6,
-          "assists": 36,
-          "kda": 11,
-          "csPerMin": 8.4
+          "winrate": 83.3,
+          "kills": 38,
+          "deaths": 9,
+          "assists": 52,
+          "kda": 10,
+          "csPerMin": 8.2
         },
         {
           "championName": "Jayce",
@@ -120,22 +120,43 @@
           "assists": 0,
           "kda": 0,
           "csPerMin": 9.3
-        },
-        {
-          "championName": "Swain",
-          "championId": "50",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 1,
-          "assists": 6,
-          "kda": 12,
-          "csPerMin": 8.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXe06d2_CNmcwdZTy4Iupb4q6_X3i40nnc=",
+          "gameCreation": 1792521518000,
+          "gameDurationSeconds": 1492,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ahri",
+          "championId": "103",
+          "champLevel": 15,
+          "role": "MID",
+          "kills": 8,
+          "deaths": 3,
+          "assists": 16,
+          "kda": 8,
+          "cs": 175,
+          "csPerMin": 7,
+          "killParticipationPct": 0,
+          "damageDealt": 36516,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2503,
+            3171,
+            3145,
+            1058,
+            4629
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXYOogUh93d5URLDOP0YWm7eewzwjSd51o=",
           "gameCreation": 1792519094000,
@@ -760,45 +781,10 @@
             1086
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVk3J1BA0fryEq2pW1IkMJPB-lonOy66FI=",
-          "gameCreation": 1791944563000,
-          "gameDurationSeconds": 1149,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Swain",
-          "championId": "50",
-          "champLevel": 14,
-          "role": "TOP",
-          "kills": 6,
-          "deaths": 1,
-          "assists": 6,
-          "kda": 12,
-          "cs": 161,
-          "csPerMin": 8.4,
-          "killParticipationPct": 0,
-          "damageDealt": 14982,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            3158,
-            3211,
-            2503,
-            2055,
-            3116,
-            1056
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (962 LP)",
-      "analystSummary": "Myrwn: MASTER I 962 LP · 19 partidas consultadas · 73.5% WR · KDA medio 5.5.",
+      "analystSummary": "Myrwn: MASTER I 962 LP · 19 partidas consultadas · 73.5% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
