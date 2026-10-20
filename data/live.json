@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T20:01:14.751Z",
-  "syncedAt": "2026-10-20T20:01:14.751Z",
+  "generatedAt": "2026-10-20T20:06:01.377Z",
+  "syncedAt": "2026-10-20T20:06:01.377Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1318,7 +1318,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -2740,7 +2740,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3340,11 +3340,11 @@
       "wins": 57,
       "losses": 20,
       "winrate": 74,
-      "streak": 2,
-      "avgKda": 4.2,
-      "avgKills": 8.8,
-      "avgDeaths": 5,
-      "avgAssists": 7.7,
+      "streak": 3,
+      "avgKda": 4.7,
+      "avgKills": 8.6,
+      "avgDeaths": 4.7,
+      "avgAssists": 7.9,
       "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3360,6 +3360,19 @@
           "assists": 18,
           "kda": 4.2,
           "csPerMin": 7.6
+        },
+        {
+          "championName": "Jhin",
+          "championId": "202",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 16,
+          "deaths": 8,
+          "assists": 19,
+          "kda": 4.4,
+          "csPerMin": 8.4
         },
         {
           "championName": "Lucian",
@@ -3466,19 +3479,6 @@
           "csPerMin": 0.5
         },
         {
-          "championName": "Jhin",
-          "championId": "202",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 13,
-          "deaths": 7,
-          "assists": 10,
-          "kda": 3.3,
-          "csPerMin": 6.9
-        },
-        {
           "championName": "Xayah",
           "championId": "498",
           "games": 1,
@@ -3503,22 +3503,44 @@
           "assists": 8,
           "kda": 1.5,
           "csPerMin": 6.9
-        },
-        {
-          "championName": "Zeri",
-          "championId": "221",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 8,
-          "deaths": 7,
-          "assists": 5,
-          "kda": 1.9,
-          "csPerMin": 9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVsmqARLXSI-UAQwODZSr00HZzXiPkbpMs=",
+          "gameCreation": 1792526446000,
+          "gameDurationSeconds": 1169,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jhin",
+          "championId": "202",
+          "champLevel": 12,
+          "role": "ADC",
+          "kills": 3,
+          "deaths": 1,
+          "assists": 9,
+          "kda": 12,
+          "cs": 192,
+          "csPerMin": 9.9,
+          "killParticipationPct": 0,
+          "damageDealt": 15606,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3046,
+            2031,
+            2055,
+            6697,
+            1037,
+            1120
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXn_VhboMjtgzwYFU3epKE_O_0Uwl7kZK8=",
           "gameCreation": 1792524701000,
@@ -4175,45 +4197,10 @@
             3302
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWauxVlTWmo2Kg9-cr-WuoU-HHkPUxVQSw=",
-          "gameCreation": 1792208771000,
-          "gameDurationSeconds": 1739,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Zeri",
-          "championId": "221",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 8,
-          "deaths": 7,
-          "assists": 5,
-          "kda": 1.86,
-          "cs": 261,
-          "csPerMin": 9,
-          "killParticipationPct": 0,
-          "damageDealt": 25828,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            2523,
-            1037,
-            3026,
-            3031,
-            3036,
-            3085
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1250 LP)",
-      "analystSummary": "Supa: MASTER I 1250 LP · 20 partidas consultadas · 74% WR · KDA medio 4.2.",
+      "analystSummary": "Supa: MASTER I 1250 LP · 20 partidas consultadas · 74% WR · KDA medio 4.7.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4792,7 +4779,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -6335,7 +6322,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
