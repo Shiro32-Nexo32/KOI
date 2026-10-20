@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T04:45:56.135Z",
-  "syncedAt": "2026-10-20T04:45:56.135Z",
+  "generatedAt": "2026-10-20T04:48:00.528Z",
+  "syncedAt": "2026-10-20T04:48:00.528Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 952,
+      "lp": 927,
       "wins": 49,
-      "losses": 17,
-      "winrate": 74.2,
+      "losses": 18,
+      "winrate": 73.1,
       "streak": -1,
       "avgKda": 5.4,
       "avgKills": 6.1,
@@ -762,8 +762,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (952 LP)",
-      "analystSummary": "Myrwn: MASTER I 952 LP · 18 partidas consultadas · 74.2% WR · KDA medio 5.4.",
+      "statusBadge": "MASTER I (927 LP)",
+      "analystSummary": "Myrwn: MASTER I 927 LP · 18 partidas consultadas · 73.1% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1268,6 +1268,15 @@
           "wins": 49,
           "losses": 17,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792471654200,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 927,
+          "wins": 49,
+          "losses": 18,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 4,
@@ -1290,10 +1299,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1091,
-      "wins": 51,
+      "lp": 1126,
+      "wins": 52,
       "losses": 16,
-      "winrate": 76.1,
+      "winrate": 76.5,
       "streak": 7,
       "avgKda": 8.6,
       "avgKills": 8.9,
@@ -2099,8 +2108,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1091 LP)",
-      "analystSummary": "Elyoya: MASTER I 1091 LP · 19 partidas consultadas · 76.1% WR · KDA medio 8.6.",
+      "statusBadge": "MASTER I (1126 LP)",
+      "analystSummary": "Elyoya: MASTER I 1126 LP · 19 partidas consultadas · 76.5% WR · KDA medio 8.6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2567,6 +2576,15 @@
           "division": "I",
           "lp": 1091,
           "wins": 51,
+          "losses": 16,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792471660740,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1126,
+          "wins": 52,
           "losses": 16,
           "note": "Sincronización automática desde OP.GG"
         }
