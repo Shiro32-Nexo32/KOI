@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T23:16:00.886Z",
-  "syncedAt": "2026-10-20T23:16:00.887Z",
+  "generatedAt": "2026-10-20T23:35:57.081Z",
+  "syncedAt": "2026-10-20T23:35:57.081Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1379,7 +1379,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -4911,11 +4911,11 @@
       "wins": 64,
       "losses": 21,
       "winrate": 75.3,
-      "streak": -1,
+      "streak": 1,
       "avgKda": 5.2,
-      "avgKills": 4.8,
-      "avgDeaths": 5.8,
-      "avgAssists": 11.8,
+      "avgKills": 4.3,
+      "avgDeaths": 6,
+      "avgAssists": 12.9,
       "avgCsPerMin": 1.3,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4959,17 +4959,17 @@
           "csPerMin": 1.2
         },
         {
-          "championName": "Qiyana",
-          "championId": "246",
-          "games": 2,
+          "championName": "Camille",
+          "championId": "164",
+          "games": 1,
           "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 13,
-          "deaths": 16,
-          "assists": 21,
-          "kda": 2.1,
-          "csPerMin": 0.9
+          "losses": 0,
+          "winrate": 100,
+          "kills": 1,
+          "deaths": 15,
+          "assists": 32,
+          "kda": 2.2,
+          "csPerMin": 1.2
         },
         {
           "championName": "Orianna",
@@ -5037,6 +5037,19 @@
           "csPerMin": 0.4
         },
         {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 6,
+          "assists": 13,
+          "kda": 2.8,
+          "csPerMin": 0.8
+        },
+        {
           "championName": "Seraphine",
           "championId": "147",
           "games": 1,
@@ -5090,6 +5103,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUfeG7Ab2oFVYq1vBjBd3SClmXS7UmGB68=",
+          "gameCreation": 1792539111000,
+          "gameDurationSeconds": 2983,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Camille",
+          "championId": "164",
+          "champLevel": 18,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 15,
+          "assists": 32,
+          "kda": 2.2,
+          "cs": 60,
+          "csPerMin": 1.2,
+          "killParticipationPct": 0,
+          "damageDealt": 32593,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3877,
+            3190,
+            3053,
+            3047,
+            3073,
+            1011
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVadSnUDedDdjtzJPCuym_PGmtjclZbbw4=",
           "gameCreation": 1792533788000,
@@ -5743,41 +5791,6 @@
             1036,
             6610,
             6692
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXuUEFyWHWO4rIA4-AgqORt3y8dS7vFBpU=",
-          "gameCreation": 1792214333000,
-          "gameDurationSeconds": 2174,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Qiyana",
-          "championId": "246",
-          "champLevel": 17,
-          "role": "JUNGLE",
-          "kills": 9,
-          "deaths": 10,
-          "assists": 8,
-          "kda": 1.7,
-          "cs": 33,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 37292,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3814,
-            6699,
-            3158,
-            6694,
-            6695,
-            2520
           ],
           "tags": []
         }
@@ -6443,7 +6456,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
