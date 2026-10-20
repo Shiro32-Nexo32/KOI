@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T05:10:59.598Z",
-  "syncedAt": "2026-10-20T05:10:59.598Z",
+  "generatedAt": "2026-10-20T05:36:00.202Z",
+  "syncedAt": "2026-10-20T05:36:00.202Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -4631,11 +4631,11 @@
       "wins": 61,
       "losses": 19,
       "winrate": 76.3,
-      "streak": 1,
-      "avgKda": 5,
-      "avgKills": 4.3,
-      "avgDeaths": 5.7,
-      "avgAssists": 12.5,
+      "streak": 2,
+      "avgKda": 5.3,
+      "avgKills": 4.5,
+      "avgDeaths": 5.4,
+      "avgAssists": 12.9,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -4690,6 +4690,19 @@
           "assists": 10,
           "kda": 1.3,
           "csPerMin": 0.9
+        },
+        {
+          "championName": "Rakan",
+          "championId": "497",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 2,
+          "deaths": 3,
+          "assists": 20,
+          "kda": 7.3,
+          "csPerMin": 1.2
         },
         {
           "championName": "Tahm Kench",
@@ -4807,22 +4820,43 @@
           "assists": 16,
           "kda": 3.1,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Thresh",
-          "championId": "412",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 0,
-          "deaths": 8,
-          "assists": 12,
-          "kda": 1.5,
-          "csPerMin": 0.8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUsSXjpANkhuxRoqAS-1yngJMG7m1BO8oM=",
+          "gameCreation": 1792474346000,
+          "gameDurationSeconds": 1268,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Rakan",
+          "championId": "497",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 3,
+          "assists": 20,
+          "kda": 7.33,
+          "cs": 26,
+          "csPerMin": 1.2,
+          "killParticipationPct": 0,
+          "damageDealt": 6834,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3111,
+            3050,
+            2525,
+            2022
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVMmHE7H5gBOqCkOy6Sb6jR-AQd_p8lo1M=",
           "gameCreation": 1792472438000,
@@ -5477,44 +5511,10 @@
             3044
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUEWUGWiAIrojSy8JAxnPDYFNLDI_GKeNA=",
-          "gameCreation": 1792128440000,
-          "gameDurationSeconds": 1705,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Thresh",
-          "championId": "412",
-          "champLevel": 12,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 8,
-          "assists": 12,
-          "kda": 1.5,
-          "cs": 23,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 6517,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3190,
-            3109,
-            3158,
-            2022
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1356 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1356 LP · 20 partidas consultadas · 76.3% WR · KDA medio 5.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1356 LP · 20 partidas consultadas · 76.3% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
