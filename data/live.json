@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T22:05:58.661Z",
-  "syncedAt": "2026-10-20T22:05:58.662Z",
+  "generatedAt": "2026-10-20T22:11:00.625Z",
+  "syncedAt": "2026-10-20T22:11:00.625Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,11 +22,11 @@
       "wins": 52,
       "losses": 19,
       "winrate": 73.2,
-      "streak": -1,
-      "avgKda": 5.3,
-      "avgKills": 5.7,
+      "streak": -2,
+      "avgKda": 5.4,
+      "avgKills": 5.9,
       "avgDeaths": 3.7,
-      "avgAssists": 7.1,
+      "avgAssists": 7.3,
       "avgCsPerMin": 8.2,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -96,20 +96,55 @@
           "csPerMin": 10.1
         },
         {
-          "championName": "Corki",
-          "championId": "42",
+          "championName": "Camille",
+          "championId": "164",
           "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 0,
-          "deaths": 3,
-          "assists": 0,
-          "kda": 0,
-          "csPerMin": 9.3
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 5,
+          "deaths": 4,
+          "assists": 3,
+          "kda": 2,
+          "csPerMin": 8.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWzQ35hRsyVw0MaTuKDfPgujsPVJXQJkvQ=",
+          "gameCreation": 1792534199000,
+          "gameDurationSeconds": 1390,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Camille",
+          "championId": "164",
+          "champLevel": 15,
+          "role": "TOP",
+          "kills": 5,
+          "deaths": 4,
+          "assists": 3,
+          "kda": 2,
+          "cs": 195,
+          "csPerMin": 8.4,
+          "killParticipationPct": 0,
+          "damageDealt": 18535,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerTeleport",
+            "SummonerDot"
+          ],
+          "items": [
+            3078,
+            3074,
+            3047,
+            1036,
+            1055,
+            1036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXRCFLjGSH3LZ-530PGzxH7EahowNWOKro=",
           "gameCreation": 1792532508000,
@@ -733,44 +768,10 @@
             3044
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXWQ6i4ggBrHYT17YNFRb3Z6eU4_c_m5Vg=",
-          "gameCreation": 1792082093000,
-          "gameDurationSeconds": 925,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Corki",
-          "championId": "42",
-          "champLevel": 11,
-          "role": "TOP",
-          "kills": 0,
-          "deaths": 3,
-          "assists": 0,
-          "kda": 0,
-          "cs": 144,
-          "csPerMin": 9.3,
-          "killParticipationPct": 0,
-          "damageDealt": 10561,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            2031,
-            3078,
-            1001,
-            1086,
-            1033
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1007 LP)",
-      "analystSummary": "Myrwn: MASTER I 1007 LP · 19 partidas consultadas · 73.2% WR · KDA medio 5.3.",
+      "analystSummary": "Myrwn: MASTER I 1007 LP · 19 partidas consultadas · 73.2% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -4860,10 +4861,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1466,
+      "lp": 1440,
       "wins": 64,
-      "losses": 20,
-      "winrate": 76.2,
+      "losses": 21,
+      "winrate": 75.3,
       "streak": -1,
       "avgKda": 5.2,
       "avgKills": 4.8,
@@ -5735,8 +5736,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1466 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1466 LP · 20 partidas consultadas · 76.2% WR · KDA medio 5.2.",
+      "statusBadge": "GRANDMASTER I (1440 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1440 LP · 20 partidas consultadas · 75.3% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -6384,6 +6385,15 @@
           "lp": 1466,
           "wins": 64,
           "losses": 20,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792534260624,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1440,
+          "wins": 64,
+          "losses": 21,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
