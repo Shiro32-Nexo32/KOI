@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T21:41:03.394Z",
-  "syncedAt": "2026-10-20T21:41:03.394Z",
+  "generatedAt": "2026-10-20T21:46:01.409Z",
+  "syncedAt": "2026-10-20T21:46:01.409Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,9 +22,9 @@
       "wins": 52,
       "losses": 18,
       "winrate": 74.3,
-      "streak": 3,
+      "streak": -1,
       "avgKda": 5.3,
-      "avgKills": 6,
+      "avgKills": 5.7,
       "avgDeaths": 3.7,
       "avgAssists": 7.1,
       "avgCsPerMin": 8.2,
@@ -33,15 +33,15 @@
         {
           "championName": "Ahri",
           "championId": "103",
-          "games": 7,
+          "games": 8,
           "wins": 6,
-          "losses": 1,
-          "winrate": 85.7,
-          "kills": 41,
-          "deaths": 14,
-          "assists": 65,
-          "kda": 7.6,
-          "csPerMin": 8.1
+          "losses": 2,
+          "winrate": 75,
+          "kills": 49,
+          "deaths": 17,
+          "assists": 69,
+          "kda": 6.9,
+          "csPerMin": 8.2
         },
         {
           "championName": "Jayce",
@@ -107,22 +107,43 @@
           "assists": 0,
           "kda": 0,
           "csPerMin": 9.3
-        },
-        {
-          "championName": "Zeri",
-          "championId": "221",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 14,
-          "deaths": 4,
-          "assists": 4,
-          "kda": 4.5,
-          "csPerMin": 9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXRCFLjGSH3LZ-530PGzxH7EahowNWOKro=",
+          "gameCreation": 1792532508000,
+          "gameDurationSeconds": 1492,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Ahri",
+          "championId": "103",
+          "champLevel": 16,
+          "role": "TOP",
+          "kills": 8,
+          "deaths": 3,
+          "assists": 4,
+          "kda": 4,
+          "cs": 214,
+          "csPerMin": 8.6,
+          "killParticipationPct": 0,
+          "damageDealt": 21283,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            4645,
+            3118,
+            3158,
+            1082,
+            3089
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgU0pmcf-z7rNiTkBCl2WkhclbQUqitncPY=",
           "gameCreation": 1792530298000,
@@ -746,41 +767,6 @@
             1033
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVEDAwBB3qPATvDLGMDxoI0vHxo2KjMu-Y=",
-          "gameCreation": 1792035809000,
-          "gameDurationSeconds": 1887,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Zeri",
-          "championId": "221",
-          "champLevel": 19,
-          "role": "TOP",
-          "kills": 14,
-          "deaths": 4,
-          "assists": 4,
-          "kda": 4.5,
-          "cs": 283,
-          "csPerMin": 9,
-          "killParticipationPct": 0,
-          "damageDealt": 35647,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            3032,
-            3140,
-            3031,
-            6673,
-            3006,
-            3085
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1032 LP)",
@@ -1345,7 +1331,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1365,10 +1351,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1191,
+      "lp": 1165,
       "wins": 56,
-      "losses": 19,
-      "winrate": 74.7,
+      "losses": 20,
+      "winrate": 73.7,
       "streak": -1,
       "avgKda": 9,
       "avgKills": 9.4,
@@ -2251,8 +2237,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1191 LP)",
-      "analystSummary": "Elyoya: MASTER I 1191 LP · 20 partidas consultadas · 74.7% WR · KDA medio 9.",
+      "statusBadge": "MASTER I (1165 LP)",
+      "analystSummary": "Elyoya: MASTER I 1165 LP · 20 partidas consultadas · 73.7% WR · KDA medio 9.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2793,9 +2779,18 @@
           "wins": 56,
           "losses": 19,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792532739373,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1165,
+          "wins": 56,
+          "losses": 20,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
