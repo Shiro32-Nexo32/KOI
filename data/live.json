@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T19:06:03.634Z",
-  "syncedAt": "2026-10-20T19:06:03.635Z",
+  "generatedAt": "2026-10-20T19:11:03.348Z",
+  "syncedAt": "2026-10-20T19:11:03.348Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1342,11 +1342,11 @@
       "wins": 54,
       "losses": 17,
       "winrate": 76.1,
-      "streak": 2,
-      "avgKda": 9.3,
-      "avgKills": 9.2,
+      "streak": 3,
+      "avgKda": 9.4,
+      "avgKills": 9.4,
       "avgDeaths": 3.3,
-      "avgAssists": 8.1,
+      "avgAssists": 8.4,
       "avgCsPerMin": 1.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1357,11 +1357,11 @@
           "wins": 5,
           "losses": 2,
           "winrate": 71.4,
-          "kills": 57,
+          "kills": 61,
           "deaths": 22,
-          "assists": 60,
-          "kda": 5.3,
-          "csPerMin": 1.3
+          "assists": 65,
+          "kda": 5.7,
+          "csPerMin": 1.4
         },
         {
           "championName": "Qiyana",
@@ -1521,6 +1521,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUUy64gk3wFynfskCvRyZvkE2E5yi9pq_I=",
+          "gameCreation": 1792523344000,
+          "gameDurationSeconds": 1690,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 13,
+          "deaths": 4,
+          "assists": 10,
+          "kda": 5.75,
+          "cs": 71,
+          "csPerMin": 2.5,
+          "killParticipationPct": 0,
+          "damageDealt": 48196,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3036,
+            2520,
+            3158,
+            1038,
+            6699,
+            3814
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWKt3W97ajFTgJll1bFvEohPue0I0KSjjk=",
           "gameCreation": 1792521287000,
@@ -2138,44 +2173,10 @@
             3157
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUXNoDtSh6I1shjJLQgyHK-Vad5xxVT3t0=",
-          "gameCreation": 1792083322000,
-          "gameDurationSeconds": 1913,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 9,
-          "deaths": 4,
-          "assists": 5,
-          "kda": 3.5,
-          "cs": 43,
-          "csPerMin": 1.3,
-          "killParticipationPct": 0,
-          "damageDealt": 28057,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3036,
-            3814,
-            6699,
-            2520,
-            3158
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1171 LP)",
-      "analystSummary": "Elyoya: MASTER I 1171 LP · 19 partidas consultadas · 76.1% WR · KDA medio 9.3.",
+      "analystSummary": "Elyoya: MASTER I 1171 LP · 19 partidas consultadas · 76.1% WR · KDA medio 9.4.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -4729,10 +4730,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1424,
+      "lp": 1398,
       "wins": 62,
-      "losses": 19,
-      "winrate": 76.5,
+      "losses": 20,
+      "winrate": 75.6,
       "streak": -1,
       "avgKda": 4.8,
       "avgKills": 4,
@@ -5629,8 +5630,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1424 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1424 LP · 20 partidas consultadas · 76.5% WR · KDA medio 4.8.",
+      "statusBadge": "GRANDMASTER I (1398 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1398 LP · 20 partidas consultadas · 75.6% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -6233,6 +6234,15 @@
           "lp": 1424,
           "wins": 62,
           "losses": 19,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792523463347,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1398,
+          "wins": 62,
+          "losses": 20,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
