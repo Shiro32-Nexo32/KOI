@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T20:26:04.593Z",
-  "syncedAt": "2026-10-20T20:26:04.593Z",
+  "generatedAt": "2026-10-20T20:31:06.329Z",
+  "syncedAt": "2026-10-20T20:31:06.329Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3325,7 +3325,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3348,39 +3348,26 @@
       "wins": 58,
       "losses": 20,
       "winrate": 74.4,
-      "streak": 3,
-      "avgKda": 4.7,
-      "avgKills": 8.6,
-      "avgDeaths": 4.7,
+      "streak": 4,
+      "avgKda": 5,
+      "avgKills": 8.2,
+      "avgDeaths": 4.5,
       "avgAssists": 7.9,
-      "avgCsPerMin": 7.8,
+      "avgCsPerMin": 8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
-          "championName": "Kalista",
-          "championId": "429",
-          "games": 3,
-          "wins": 2,
-          "losses": 1,
-          "winrate": 66.7,
-          "kills": 45,
-          "deaths": 15,
-          "assists": 18,
-          "kda": 4.2,
-          "csPerMin": 7.6
-        },
-        {
           "championName": "Jhin",
           "championId": "202",
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "losses": 0,
           "winrate": 100,
-          "kills": 16,
+          "kills": 20,
           "deaths": 8,
-          "assists": 19,
-          "kda": 4.4,
-          "csPerMin": 8.4
+          "assists": 25,
+          "kda": 5.6,
+          "csPerMin": 9
         },
         {
           "championName": "Lucian",
@@ -3420,6 +3407,19 @@
           "assists": 17,
           "kda": 3,
           "csPerMin": 7.8
+        },
+        {
+          "championName": "Kalista",
+          "championId": "429",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 34,
+          "deaths": 10,
+          "assists": 12,
+          "kda": 4.6,
+          "csPerMin": 7.4
         },
         {
           "championName": "Ezreal",
@@ -3514,6 +3514,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUu7DUymvMtPGo0-n9W5b5oBva1gqwkC4k=",
+          "gameCreation": 1792528175000,
+          "gameDurationSeconds": 918,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jhin",
+          "championId": "202",
+          "champLevel": 11,
+          "role": "ADC",
+          "kills": 4,
+          "deaths": 0,
+          "assists": 6,
+          "kda": 10,
+          "cs": 154,
+          "csPerMin": 10.1,
+          "killParticipationPct": 0,
+          "damageDealt": 8317,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            3046,
+            2055,
+            6697,
+            1037
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVsmqARLXSI-UAQwODZSr00HZzXiPkbpMs=",
           "gameCreation": 1792526446000,
@@ -4171,44 +4205,10 @@
             3047
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVjdt4zOtmeHldXvThOBxXT-_XMe0qKlHc=",
-          "gameCreation": 1792210371000,
-          "gameDurationSeconds": 1304,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kalista",
-          "championId": "429",
-          "champLevel": 13,
-          "role": "ADC",
-          "kills": 11,
-          "deaths": 5,
-          "assists": 6,
-          "kda": 3.4,
-          "cs": 176,
-          "csPerMin": 8.1,
-          "killParticipationPct": 0,
-          "damageDealt": 21718,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            1033,
-            3087,
-            3124,
-            3302
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1284 LP)",
-      "analystSummary": "Supa: MASTER I 1284 LP · 20 partidas consultadas · 74.4% WR · KDA medio 4.7.",
+      "analystSummary": "Supa: MASTER I 1284 LP · 20 partidas consultadas · 74.4% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4796,7 +4796,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 1,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -4813,10 +4813,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1432,
-      "wins": 63,
+      "lp": 1466,
+      "wins": 64,
       "losses": 20,
-      "winrate": 75.9,
+      "winrate": 76.2,
       "streak": 2,
       "avgKda": 5.4,
       "avgKills": 4.7,
@@ -5701,8 +5701,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1432 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1432 LP · 20 partidas consultadas · 75.9% WR · KDA medio 5.4.",
+      "statusBadge": "GRANDMASTER I (1466 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1466 LP · 20 partidas consultadas · 76.2% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -6324,9 +6324,18 @@
           "wins": 63,
           "losses": 20,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792528266328,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1466,
+          "wins": 64,
+          "losses": 20,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
