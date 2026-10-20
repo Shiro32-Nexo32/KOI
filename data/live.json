@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-20T20:21:53.674Z",
-  "syncedAt": "2026-10-20T20:21:53.675Z",
+  "generatedAt": "2026-10-20T20:26:04.593Z",
+  "syncedAt": "2026-10-20T20:26:04.593Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -4796,7 +4796,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -4817,12 +4817,12 @@
       "wins": 63,
       "losses": 20,
       "winrate": 75.9,
-      "streak": 1,
+      "streak": 2,
       "avgKda": 5.4,
-      "avgKills": 4.3,
+      "avgKills": 4.7,
       "avgDeaths": 5.6,
-      "avgAssists": 12.8,
-      "avgCsPerMin": 1.2,
+      "avgAssists": 12.6,
+      "avgCsPerMin": 1.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -4837,6 +4837,19 @@
           "assists": 26,
           "kda": 3.8,
           "csPerMin": 0.7
+        },
+        {
+          "championName": "Sylas",
+          "championId": "517",
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winrate": 33.3,
+          "kills": 24,
+          "deaths": 23,
+          "assists": 21,
+          "kda": 2,
+          "csPerMin": 1.2
         },
         {
           "championName": "Bard",
@@ -4862,19 +4875,6 @@
           "deaths": 16,
           "assists": 21,
           "kda": 2.1,
-          "csPerMin": 0.9
-        },
-        {
-          "championName": "Sylas",
-          "championId": "517",
-          "games": 2,
-          "wins": 0,
-          "losses": 2,
-          "winrate": 0,
-          "kills": 10,
-          "deaths": 16,
-          "assists": 10,
-          "kda": 1.3,
           "csPerMin": 0.9
         },
         {
@@ -5006,22 +5006,44 @@
           "assists": 9,
           "kda": 1.5,
           "csPerMin": 0.7
-        },
-        {
-          "championName": "Pantheon",
-          "championId": "80",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 6,
-          "deaths": 7,
-          "assists": 16,
-          "kda": 3.1,
-          "csPerMin": 1.1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgW9gwQ1RsCyF2g7az7lNFp9oB_nF-3WdDU=",
+          "gameCreation": 1792527926000,
+          "gameDurationSeconds": 1989,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Sylas",
+          "championId": "517",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 14,
+          "deaths": 7,
+          "assists": 11,
+          "kda": 3.57,
+          "cs": 56,
+          "csPerMin": 1.7,
+          "killParticipationPct": 0,
+          "damageDealt": 38966,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3152,
+            3157,
+            1052,
+            4633,
+            3089,
+            3111
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWqEWwDnxlmVATQWYLbc4F0IdhmryOMy04=",
           "gameCreation": 1792524761000,
@@ -5677,41 +5699,6 @@
             3067
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWF4DKnvuFaYvT9mhO8o-tdm8M34G9uFSM=",
-          "gameCreation": 1792209773000,
-          "gameDurationSeconds": 1584,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Pantheon",
-          "championId": "80",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 6,
-          "deaths": 7,
-          "assists": 16,
-          "kda": 3.14,
-          "cs": 30,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 18895,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            2031,
-            6697,
-            3009,
-            3179,
-            3067
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1432 LP)",
@@ -6339,19 +6326,17 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Myrwn: This operation was aborted"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 4,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
