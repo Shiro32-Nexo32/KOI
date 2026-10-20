@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T19:41:06.527Z",
-  "syncedAt": "2026-10-20T19:41:06.528Z",
+  "generatedAt": "2026-10-20T20:01:14.751Z",
+  "syncedAt": "2026-10-20T20:01:14.751Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1342,11 +1342,11 @@
       "wins": 55,
       "losses": 17,
       "winrate": 76.4,
-      "streak": 3,
-      "avgKda": 9.4,
-      "avgKills": 9.4,
-      "avgDeaths": 3.3,
-      "avgAssists": 8.4,
+      "streak": -1,
+      "avgKda": 9.1,
+      "avgKills": 9.3,
+      "avgDeaths": 3.4,
+      "avgAssists": 8.5,
       "avgCsPerMin": 1.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1481,6 +1481,19 @@
           "csPerMin": 6.4
         },
         {
+          "championName": "Rengar",
+          "championId": "107",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 7,
+          "deaths": 6,
+          "assists": 11,
+          "kda": 3,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Maokai",
           "championId": "57",
           "games": 1,
@@ -1521,6 +1534,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUkFChKTvIM1yyC7QS5bpWlSI5F20hCDwA=",
+          "gameCreation": 1792526310000,
+          "gameDurationSeconds": 1926,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Rengar",
+          "championId": "107",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 7,
+          "deaths": 6,
+          "assists": 11,
+          "kda": 3,
+          "cs": 29,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 20779,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            3179,
+            2520,
+            6699,
+            3036,
+            3158
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUUy64gk3wFynfskCvRyZvkE2E5yi9pq_I=",
           "gameCreation": 1792523344000,
@@ -2176,7 +2224,7 @@
         }
       ],
       "statusBadge": "MASTER I (1206 LP)",
-      "analystSummary": "Elyoya: MASTER I 1206 LP · 19 partidas consultadas · 76.4% WR · KDA medio 9.4.",
+      "analystSummary": "Elyoya: MASTER I 1206 LP · 20 partidas consultadas · 76.4% WR · KDA medio 9.1.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2692,7 +2740,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3269,7 +3317,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
