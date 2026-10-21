@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T17:51:04.180Z",
-  "syncedAt": "2026-10-21T19:06:07.523Z",
+  "generatedAt": "2026-10-21T22:41:48.799Z",
+  "syncedAt": "2026-10-21T22:41:48.799Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,26 +22,26 @@
       "wins": 54,
       "losses": 20,
       "winrate": 73,
-      "streak": 2,
+      "streak": 3,
       "avgKda": 5.4,
       "avgKills": 5.8,
-      "avgDeaths": 3.7,
-      "avgAssists": 7.5,
-      "avgCsPerMin": 7.8,
+      "avgDeaths": 3.8,
+      "avgAssists": 8,
+      "avgCsPerMin": 7.7,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Ahri",
           "championId": "103",
-          "games": 9,
-          "wins": 7,
+          "games": 10,
+          "wins": 8,
           "losses": 2,
-          "winrate": 77.8,
-          "kills": 58,
-          "deaths": 20,
-          "assists": 75,
-          "kda": 6.7,
-          "csPerMin": 8.2
+          "winrate": 80,
+          "kills": 69,
+          "deaths": 24,
+          "assists": 90,
+          "kda": 6.6,
+          "csPerMin": 8
         },
         {
           "championName": "Jayce",
@@ -96,19 +96,6 @@
           "csPerMin": 6.6
         },
         {
-          "championName": "Ambessa",
-          "championId": "799",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 10,
-          "deaths": 2,
-          "assists": 4,
-          "kda": 7,
-          "csPerMin": 10.1
-        },
-        {
           "championName": "Camille",
           "championId": "164",
           "games": 1,
@@ -123,6 +110,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX9uRgOJmDTA_2o2cg-oM4VE_Fo431B_0o=",
+          "gameCreation": 1792622253000,
+          "gameDurationSeconds": 1591,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ahri",
+          "championId": "103",
+          "champLevel": 18,
+          "role": "TOP",
+          "kills": 11,
+          "deaths": 4,
+          "assists": 15,
+          "kda": 6.5,
+          "cs": 178,
+          "csPerMin": 6.7,
+          "killParticipationPct": 0,
+          "damageDealt": 36186,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3116,
+            1033,
+            2503,
+            3158,
+            4629
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgU4B025mkgxOvP8mBgdDWo14fIdhgApCO4=",
           "gameCreation": 1792558669000,
@@ -777,41 +798,6 @@
             3041,
             3171,
             2503
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUmeqOjgUhyYh3e00RUGOomBzNDT_1XxA8=",
-          "gameCreation": 1792170168000,
-          "gameDurationSeconds": 1741,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ambessa",
-          "championId": "799",
-          "champLevel": 19,
-          "role": "TOP",
-          "kills": 10,
-          "deaths": 2,
-          "assists": 4,
-          "kda": 7,
-          "cs": 293,
-          "csPerMin": 10.1,
-          "killParticipationPct": 0,
-          "damageDealt": 38245,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            2520,
-            6694,
-            1001,
-            3814,
-            6696,
-            6699
           ],
           "tags": []
         }
