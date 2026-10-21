@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T23:51:01.455Z",
-  "syncedAt": "2026-10-20T23:51:01.456Z",
+  "generatedAt": "2026-10-21T05:01:04.942Z",
+  "syncedAt": "2026-10-21T05:01:04.942Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,9 +22,9 @@
       "wins": 53,
       "losses": 20,
       "winrate": 72.6,
-      "streak": 1,
+      "streak": 2,
       "avgKda": 5.4,
-      "avgKills": 5.6,
+      "avgKills": 5.8,
       "avgDeaths": 3.7,
       "avgAssists": 7.5,
       "avgCsPerMin": 7.8,
@@ -33,14 +33,14 @@
         {
           "championName": "Ahri",
           "championId": "103",
-          "games": 8,
-          "wins": 6,
+          "games": 9,
+          "wins": 7,
           "losses": 2,
-          "winrate": 75,
-          "kills": 49,
-          "deaths": 17,
-          "assists": 69,
-          "kda": 6.9,
+          "winrate": 77.8,
+          "kills": 58,
+          "deaths": 20,
+          "assists": 75,
+          "kda": 6.7,
           "csPerMin": 8.2
         },
         {
@@ -123,6 +123,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU4B025mkgxOvP8mBgdDWo14fIdhgApCO4=",
+          "gameCreation": 1792558669000,
+          "gameDurationSeconds": 1612,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ahri",
+          "championId": "103",
+          "champLevel": 18,
+          "role": "TOP",
+          "kills": 9,
+          "deaths": 3,
+          "assists": 6,
+          "kda": 5,
+          "cs": 223,
+          "csPerMin": 8.3,
+          "killParticipationPct": 0,
+          "damageDealt": 22866,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3108,
+            3116,
+            3158,
+            4629,
+            3108,
+            2503
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX48zFXyLAKbVWunHmTbphfB23wlz8AS98=",
           "gameCreation": 1792537188000,
@@ -782,7 +817,7 @@
         }
       ],
       "statusBadge": "MASTER I (1032 LP)",
-      "analystSummary": "Myrwn: MASTER I 1032 LP · 19 partidas consultadas · 72.6% WR · KDA medio 5.4.",
+      "analystSummary": "Myrwn: MASTER I 1032 LP · 20 partidas consultadas · 72.6% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
