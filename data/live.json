@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-10-21T17:51:04.180Z",
-  "syncedAt": "2026-10-21T17:51:04.181Z",
+  "syncedAt": "2026-10-21T19:01:49.338Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "ok",
+  "status": "partial",
   "players": [
     {
       "id": "myrwn",
@@ -6568,12 +6568,14 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [],
+  "errors": [
+    "Alvaro: This operation was aborted"
+  ],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 5,
+    "successfulCount": 4,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
