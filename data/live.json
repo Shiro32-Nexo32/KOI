@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T17:36:04.479Z",
-  "syncedAt": "2026-10-21T17:36:04.480Z",
+  "generatedAt": "2026-10-21T17:41:01.010Z",
+  "syncedAt": "2026-10-21T17:41:01.010Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3499,12 +3499,12 @@
       "wins": 59,
       "losses": 21,
       "winrate": 73.8,
-      "streak": -1,
+      "streak": -2,
       "avgKda": 5.1,
-      "avgKills": 8,
-      "avgDeaths": 4,
-      "avgAssists": 7.6,
-      "avgCsPerMin": 8,
+      "avgKills": 8.3,
+      "avgDeaths": 4.3,
+      "avgAssists": 7.9,
+      "avgCsPerMin": 7.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3519,6 +3519,19 @@
           "assists": 27,
           "kda": 5,
           "csPerMin": 8.7
+        },
+        {
+          "championName": "Ezreal",
+          "championId": "81",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 17,
+          "deaths": 13,
+          "assists": 16,
+          "kda": 2.5,
+          "csPerMin": 8.4
         },
         {
           "championName": "Lucian",
@@ -3571,19 +3584,6 @@
           "assists": 12,
           "kda": 4.6,
           "csPerMin": 7.4
-        },
-        {
-          "championName": "Ezreal",
-          "championId": "81",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 11,
-          "deaths": 8,
-          "assists": 10,
-          "kda": 2.6,
-          "csPerMin": 9
         },
         {
           "championName": "Caitlyn",
@@ -3652,6 +3652,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXcpiq_T4loAfSyIKa_5-B8UzIMYYihn8s=",
+          "gameCreation": 1792604346000,
+          "gameDurationSeconds": 1950,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 15,
+          "role": "ADC",
+          "kills": 8,
+          "deaths": 9,
+          "assists": 7,
+          "kda": 1.67,
+          "cs": 260,
+          "csPerMin": 8,
+          "killParticipationPct": 0,
+          "damageDealt": 34979,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3161,
+            3078,
+            2055,
+            3035,
+            2517,
+            3042
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUlSQcuSp1RrbCAAwUyQuvL-97ha5usVSM=",
           "gameCreation": 1792533044000,
@@ -4306,41 +4341,6 @@
             3085,
             6672,
             1086
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWx65xj9yEn9nxGzDU7lVAL-xO8jl24I6E=",
-          "gameCreation": 1792257858000,
-          "gameDurationSeconds": 1580,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Ezreal",
-          "championId": "81",
-          "champLevel": 13,
-          "role": "ADC",
-          "kills": 2,
-          "deaths": 4,
-          "assists": 1,
-          "kda": 0.75,
-          "cs": 243,
-          "csPerMin": 9.2,
-          "killParticipationPct": 0,
-          "damageDealt": 20654,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            3161,
-            2055,
-            3042,
-            3078,
-            1036
           ],
           "tags": []
         }
