@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T05:15:58.450Z",
-  "syncedAt": "2026-10-21T05:15:58.450Z",
+  "generatedAt": "2026-10-21T06:55:56.324Z",
+  "syncedAt": "2026-10-21T06:55:56.324Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3484,7 +3484,7 @@
       "team": "KOI / MKOI",
       "role": "ADC",
       "profileIconId": 588,
-      "tier": "MASTER",
+      "tier": "GRANDMASTER",
       "division": "I",
       "lp": 1318,
       "wins": 59,
@@ -4336,8 +4336,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1318 LP)",
-      "analystSummary": "Supa: MASTER I 1318 LP · 20 partidas consultadas · 73.8% WR · KDA medio 5.1.",
+      "statusBadge": "GRANDMASTER I (1318 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1318 LP · 20 partidas consultadas · 73.8% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4931,6 +4931,15 @@
           "lp": 1318,
           "wins": 59,
           "losses": 20,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792565749223,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1318,
+          "wins": 59,
+          "losses": 21,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
