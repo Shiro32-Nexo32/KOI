@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T22:56:46.903Z",
-  "syncedAt": "2026-10-21T22:56:46.904Z",
+  "generatedAt": "2026-10-22T16:01:19.790Z",
+  "syncedAt": "2026-10-22T16:01:19.790Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -2894,7 +2894,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3494,12 +3494,12 @@
       "wins": 59,
       "losses": 22,
       "winrate": 72.8,
-      "streak": -2,
-      "avgKda": 5.1,
-      "avgKills": 8.3,
-      "avgDeaths": 4.3,
-      "avgAssists": 7.9,
-      "avgCsPerMin": 7.9,
+      "streak": 1,
+      "avgKda": 5.5,
+      "avgKills": 8.7,
+      "avgDeaths": 4.2,
+      "avgAssists": 7.8,
+      "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3518,14 +3518,14 @@
         {
           "championName": "Ezreal",
           "championId": "81",
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "losses": 1,
-          "winrate": 50,
-          "kills": 17,
-          "deaths": 13,
-          "assists": 16,
-          "kda": 2.5,
+          "winrate": 66.7,
+          "kills": 38,
+          "deaths": 15,
+          "assists": 18,
+          "kda": 3.7,
           "csPerMin": 8.4
         },
         {
@@ -3540,19 +3540,6 @@
           "assists": 7,
           "kda": 2.5,
           "csPerMin": 8.9
-        },
-        {
-          "championName": "Yunara",
-          "championId": "804",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 18,
-          "deaths": 7,
-          "assists": 5,
-          "kda": 3.3,
-          "csPerMin": 9.8
         },
         {
           "championName": "Kai'Sa",
@@ -3644,9 +3631,57 @@
           "assists": 12,
           "kda": 2.4,
           "csPerMin": 9
+        },
+        {
+          "championName": "Yunara",
+          "championId": "804",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 4,
+          "deaths": 3,
+          "assists": 2,
+          "kda": 2,
+          "csPerMin": 9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUE4PlzojIZcfKPnRgDSm3FccM_sxOhVng=",
+          "gameCreation": 1792684630000,
+          "gameDurationSeconds": 1325,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 21,
+          "deaths": 2,
+          "assists": 2,
+          "kda": 11.5,
+          "cs": 186,
+          "csPerMin": 8.4,
+          "killParticipationPct": 0,
+          "damageDealt": 30394,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3078,
+            3042,
+            3110,
+            3035,
+            1086,
+            3161
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXcpiq_T4loAfSyIKa_5-B8UzIMYYihn8s=",
           "gameCreation": 1792604346000,
@@ -4303,45 +4338,10 @@
             3078
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXGP1Qucbfl8PEoVTQpAFN1qtbKPaRwVWs=",
-          "gameCreation": 1792259967000,
-          "gameDurationSeconds": 1772,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Yunara",
-          "championId": "804",
-          "champLevel": 16,
-          "role": "ADC",
-          "kills": 14,
-          "deaths": 4,
-          "assists": 3,
-          "kda": 4.25,
-          "cs": 317,
-          "csPerMin": 10.7,
-          "killParticipationPct": 0,
-          "damageDealt": 48481,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            3031,
-            3033,
-            3139,
-            3085,
-            6672,
-            1086
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1291 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1291 LP · 20 partidas consultadas · 72.8% WR · KDA medio 5.1.",
+      "analystSummary": "Supa: GRANDMASTER I 1291 LP · 20 partidas consultadas · 72.8% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4956,7 +4956,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -6558,7 +6558,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
