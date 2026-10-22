@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T16:06:09.938Z",
-  "syncedAt": "2026-10-22T16:06:09.938Z",
+  "generatedAt": "2026-10-22T16:36:08.209Z",
+  "syncedAt": "2026-10-22T16:36:08.209Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3494,39 +3494,39 @@
       "wins": 60,
       "losses": 22,
       "winrate": 73.2,
-      "streak": 1,
-      "avgKda": 5.5,
-      "avgKills": 8.7,
-      "avgDeaths": 4.2,
-      "avgAssists": 7.8,
-      "avgCsPerMin": 7.8,
+      "streak": 2,
+      "avgKda": 5.4,
+      "avgKills": 8.5,
+      "avgDeaths": 4.3,
+      "avgAssists": 7.9,
+      "avgCsPerMin": 7.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 4,
-          "wins": 3,
+          "games": 5,
+          "wins": 4,
           "losses": 1,
-          "winrate": 75,
-          "kills": 23,
-          "deaths": 10,
-          "assists": 27,
-          "kda": 5,
-          "csPerMin": 8.7
+          "winrate": 80,
+          "kills": 29,
+          "deaths": 16,
+          "assists": 37,
+          "kda": 4.1,
+          "csPerMin": 8.8
         },
         {
           "championName": "Ezreal",
           "championId": "81",
-          "games": 3,
-          "wins": 2,
+          "games": 2,
+          "wins": 1,
           "losses": 1,
-          "winrate": 66.7,
-          "kills": 38,
-          "deaths": 15,
-          "assists": 18,
-          "kda": 3.7,
-          "csPerMin": 8.4
+          "winrate": 50,
+          "kills": 29,
+          "deaths": 11,
+          "assists": 9,
+          "kda": 3.5,
+          "csPerMin": 8.2
         },
         {
           "championName": "Lucian",
@@ -3647,6 +3647,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXnp65Iyi2-VTjOdoSsF4oIag31uJSbTsE=",
+          "gameCreation": 1792686902000,
+          "gameDurationSeconds": 1571,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jhin",
+          "championId": "202",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 6,
+          "deaths": 6,
+          "assists": 10,
+          "kda": 2.67,
+          "cs": 249,
+          "csPerMin": 9.5,
+          "killParticipationPct": 0,
+          "damageDealt": 30451,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3036,
+            3142,
+            1120,
+            3095,
+            1042
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUE4PlzojIZcfKPnRgDSm3FccM_sxOhVng=",
           "gameCreation": 1792684630000,
@@ -4303,45 +4337,10 @@
             3031
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX7iAUJguYXx2xz0nS12Nxj3GDUBzgfeSw=",
-          "gameCreation": 1792293155000,
-          "gameDurationSeconds": 1597,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ezreal",
-          "championId": "81",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 9,
-          "deaths": 4,
-          "assists": 9,
-          "kda": 4.5,
-          "cs": 233,
-          "csPerMin": 8.8,
-          "killParticipationPct": 0,
-          "damageDealt": 50767,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            3042,
-            2055,
-            3035,
-            2517,
-            3078
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1324 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1324 LP · 20 partidas consultadas · 73.2% WR · KDA medio 5.5.",
+      "analystSummary": "Supa: GRANDMASTER I 1324 LP · 20 partidas consultadas · 73.2% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
