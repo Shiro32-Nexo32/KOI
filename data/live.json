@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T03:31:13.189Z",
-  "syncedAt": "2026-10-23T03:31:13.189Z",
+  "generatedAt": "2026-10-23T03:36:12.615Z",
+  "syncedAt": "2026-10-23T03:36:12.615Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3509,7 +3509,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3532,12 +3532,12 @@
       "wins": 62,
       "losses": 22,
       "winrate": 73.8,
-      "streak": 3,
-      "avgKda": 5.3,
-      "avgKills": 8.7,
-      "avgDeaths": 4.5,
-      "avgAssists": 7.9,
-      "avgCsPerMin": 7.9,
+      "streak": 4,
+      "avgKda": 5.4,
+      "avgKills": 9.1,
+      "avgDeaths": 4.4,
+      "avgAssists": 8,
+      "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3552,6 +3552,19 @@
           "assists": 37,
           "kda": 4.1,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Lucian",
+          "championId": "236",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 14,
+          "deaths": 9,
+          "assists": 15,
+          "kda": 3.2,
+          "csPerMin": 8.7
         },
         {
           "championName": "Yunara",
@@ -3656,35 +3669,44 @@
           "assists": 14,
           "kda": 12.5,
           "csPerMin": 0.5
-        },
-        {
-          "championName": "Xayah",
-          "championId": "498",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 7,
-          "assists": 12,
-          "kda": 2.4,
-          "csPerMin": 9
-        },
-        {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 1,
-          "deaths": 4,
-          "assists": 1,
-          "kda": 0.5,
-          "csPerMin": 8.8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVGL-SZxM76MgGKSEGWCADZZUezmgKkvps=",
+          "gameCreation": 1792726384000,
+          "gameDurationSeconds": 1519,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lucian",
+          "championId": "236",
+          "champLevel": 16,
+          "role": "ADC",
+          "kills": 13,
+          "deaths": 5,
+          "assists": 14,
+          "kda": 5.4,
+          "cs": 217,
+          "csPerMin": 8.6,
+          "killParticipationPct": 0,
+          "damageDealt": 43455,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            1038,
+            1037,
+            3140,
+            3508,
+            6675,
+            3036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgV-cr0TVrdvLITn54MxbtKUqaOSRkyF-RU=",
           "gameCreation": 1792724334000,
@@ -4340,45 +4362,10 @@
             3124
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgURKZiTWL0PljfXu1D0xH0awW7l61Prvpw=",
-          "gameCreation": 1792297103000,
-          "gameDurationSeconds": 1840,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Xayah",
-          "championId": "498",
-          "champLevel": 16,
-          "role": "ADC",
-          "kills": 5,
-          "deaths": 7,
-          "assists": 12,
-          "kda": 2.43,
-          "cs": 275,
-          "csPerMin": 9,
-          "killParticipationPct": 0,
-          "damageDealt": 22895,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerHaste",
-            "SummonerFlash"
-          ],
-          "items": [
-            3031,
-            3032,
-            3033,
-            1086,
-            6675,
-            1036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1390 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1390 LP · 20 partidas consultadas · 73.8% WR · KDA medio 5.3.",
+      "analystSummary": "Supa: GRANDMASTER I 1390 LP · 20 partidas consultadas · 73.8% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5020,7 +5007,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
