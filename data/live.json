@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T15:36:09.008Z",
-  "syncedAt": "2026-10-23T15:36:09.008Z",
+  "generatedAt": "2026-10-23T15:46:09.026Z",
+  "syncedAt": "2026-10-23T15:46:09.026Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3537,12 +3537,12 @@
       "wins": 64,
       "losses": 22,
       "winrate": 74.4,
-      "streak": 5,
-      "avgKda": 5.5,
-      "avgKills": 8.9,
+      "streak": 6,
+      "avgKda": 5.4,
+      "avgKills": 8.6,
       "avgDeaths": 4.4,
-      "avgAssists": 8.3,
-      "avgCsPerMin": 7.8,
+      "avgAssists": 8.6,
+      "avgCsPerMin": 7.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3570,6 +3570,19 @@
           "assists": 25,
           "kda": 2.8,
           "csPerMin": 7.9
+        },
+        {
+          "championName": "Bard",
+          "championId": "432",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 8,
+          "assists": 33,
+          "kda": 4.6,
+          "csPerMin": 0.8
         },
         {
           "championName": "Yunara",
@@ -3611,32 +3624,6 @@
           "csPerMin": 7.8
         },
         {
-          "championName": "Caitlyn",
-          "championId": "51",
-          "games": 2,
-          "wins": 0,
-          "losses": 2,
-          "winrate": 0,
-          "kills": 12,
-          "deaths": 8,
-          "assists": 12,
-          "kda": 3,
-          "csPerMin": 9.8
-        },
-        {
-          "championName": "Bard",
-          "championId": "432",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 3,
-          "deaths": 5,
-          "assists": 19,
-          "kda": 4.4,
-          "csPerMin": 0.7
-        },
-        {
           "championName": "Sivir",
           "championId": "15",
           "games": 1,
@@ -3674,9 +3661,55 @@
           "assists": 7,
           "kda": 14.5,
           "csPerMin": 7.8
+        },
+        {
+          "championName": "Caitlyn",
+          "championId": "51",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 4,
+          "deaths": 5,
+          "assists": 4,
+          "kda": 1.6,
+          "csPerMin": 9.8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU_2sfQ1IKGVr60VNB02t9ibWQ9gzc2aXA=",
+          "gameCreation": 1792770317000,
+          "gameDurationSeconds": 1311,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Bard",
+          "championId": "432",
+          "champLevel": 10,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 3,
+          "assists": 14,
+          "kda": 5,
+          "cs": 22,
+          "csPerMin": 1,
+          "killParticipationPct": 0,
+          "damageDealt": 7866,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerHeal",
+            "SummonerFlash"
+          ],
+          "items": [
+            3877,
+            3190,
+            3222,
+            3009
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXKKwzIfgdH2tVQHqP_a-w9Fq39C7JvnUw=",
           "gameCreation": 1792768604000,
@@ -4331,45 +4364,10 @@
             3091
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgU10ZQMoFTYXD4TyKvsRe49BApyPBfc84w=",
-          "gameCreation": 1792361492000,
-          "gameDurationSeconds": 1634,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Caitlyn",
-          "championId": "51",
-          "champLevel": 15,
-          "role": "ADC",
-          "kills": 8,
-          "deaths": 3,
-          "assists": 8,
-          "kda": 5.33,
-          "cs": 267,
-          "csPerMin": 9.8,
-          "killParticipationPct": 0,
-          "damageDealt": 20229,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerHaste",
-            "SummonerFlash"
-          ],
-          "items": [
-            3031,
-            3095,
-            2055,
-            3094,
-            3033,
-            1038
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1457 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1457 LP · 20 partidas consultadas · 74.4% WR · KDA medio 5.5.",
+      "analystSummary": "Supa: GRANDMASTER I 1457 LP · 20 partidas consultadas · 74.4% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
