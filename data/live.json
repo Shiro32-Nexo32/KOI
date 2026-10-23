@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T16:26:06.987Z",
-  "syncedAt": "2026-10-23T16:26:06.987Z",
+  "generatedAt": "2026-10-23T16:31:10.746Z",
+  "syncedAt": "2026-10-23T16:31:10.746Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1451,12 +1451,12 @@
       "wins": 58,
       "losses": 23,
       "winrate": 71.6,
-      "streak": -1,
-      "avgKda": 7.6,
-      "avgKills": 8.2,
+      "streak": 1,
+      "avgKda": 7.2,
+      "avgKills": 7.7,
       "avgDeaths": 3.6,
-      "avgAssists": 8,
-      "avgCsPerMin": 2.6,
+      "avgAssists": 7.8,
+      "avgCsPerMin": 2.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1471,6 +1471,19 @@
           "assists": 55,
           "kda": 5,
           "csPerMin": 1.3
+        },
+        {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 14,
+          "deaths": 5,
+          "assists": 14,
+          "kda": 5.6,
+          "csPerMin": 0.6
         },
         {
           "championName": "Zaahen",
@@ -1512,19 +1525,6 @@
           "csPerMin": 8.3
         },
         {
-          "championName": "Qiyana",
-          "championId": "246",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 12,
-          "deaths": 3,
-          "assists": 3,
-          "kda": 5,
-          "csPerMin": 0.5
-        },
-        {
           "championName": "Locke",
           "championId": "805",
           "games": 1,
@@ -1562,19 +1562,6 @@
           "assists": 13,
           "kda": 2.9,
           "csPerMin": 1.1
-        },
-        {
-          "championName": "Cho'Gath",
-          "championId": "31",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 12,
-          "deaths": 2,
-          "assists": 16,
-          "kda": 14,
-          "csPerMin": 1.8
         },
         {
           "championName": "Nidalee",
@@ -1630,6 +1617,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU8fpLWiVvnJc6cPJ1dJNO2ExGLFljIsg0=",
+          "gameCreation": 1792772820000,
+          "gameDurationSeconds": 1611,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 15,
+          "role": "JUNGLE",
+          "kills": 2,
+          "deaths": 2,
+          "assists": 11,
+          "kda": 6.5,
+          "cs": 17,
+          "csPerMin": 0.6,
+          "killParticipationPct": 0,
+          "damageDealt": 15714,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2520,
+            3158,
+            6699,
+            3036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUMN_Jnt3BdWajjK6_4vD5dpcY99mFYXzI=",
           "gameCreation": 1792729684000,
@@ -2284,45 +2304,10 @@
             2019
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXojDaWJP19E3RrbOSdizXbz-fpYCUvIJA=",
-          "gameCreation": 1792361189000,
-          "gameDurationSeconds": 1534,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Cho'Gath",
-          "championId": "31",
-          "champLevel": 16,
-          "role": "JUNGLE",
-          "kills": 12,
-          "deaths": 2,
-          "assists": 16,
-          "kda": 14,
-          "cs": 46,
-          "csPerMin": 1.8,
-          "killParticipationPct": 0,
-          "damageDealt": 20546,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            3742,
-            3067,
-            3084,
-            3047,
-            4401
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1156 LP)",
-      "analystSummary": "Elyoya: MASTER I 1156 LP · 20 partidas consultadas · 71.6% WR · KDA medio 7.6.",
+      "analystSummary": "Elyoya: MASTER I 1156 LP · 20 partidas consultadas · 71.6% WR · KDA medio 7.2.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
