@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T02:31:13.850Z",
-  "syncedAt": "2026-10-23T02:31:13.850Z",
+  "generatedAt": "2026-10-23T02:51:09.194Z",
+  "syncedAt": "2026-10-23T02:51:09.194Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1447,16 +1447,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1139,
-      "wins": 56,
+      "lp": 1174,
+      "wins": 57,
       "losses": 21,
-      "winrate": 72.7,
-      "streak": -2,
-      "avgKda": 8.8,
-      "avgKills": 9.5,
-      "avgDeaths": 3.4,
+      "winrate": 73.1,
+      "streak": 1,
+      "avgKda": 7.8,
+      "avgKills": 8.8,
+      "avgDeaths": 3.5,
       "avgAssists": 7.8,
-      "avgCsPerMin": 1.9,
+      "avgCsPerMin": 2.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1484,6 +1484,19 @@
           "assists": 11,
           "kda": 3.3,
           "csPerMin": 0.8
+        },
+        {
+          "championName": "Aatrox",
+          "championId": "266",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 2.5,
+          "csPerMin": 8.3
         },
         {
           "championName": "Zaahen",
@@ -1564,19 +1577,6 @@
           "csPerMin": 1.8
         },
         {
-          "championName": "Naafiri",
-          "championId": "950",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 18,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 23,
-          "csPerMin": 1.7
-        },
-        {
           "championName": "Nidalee",
           "championId": "76",
           "games": 1,
@@ -1643,6 +1643,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXoTgtoyV2jTi1i6Or6pyovKk2EENVNm-0=",
+          "gameCreation": 1792723485000,
+          "gameDurationSeconds": 1783,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Aatrox",
+          "championId": "266",
+          "champLevel": 18,
+          "role": "TOP",
+          "kills": 5,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 2.5,
+          "cs": 247,
+          "csPerMin": 8.3,
+          "killParticipationPct": 0,
+          "damageDealt": 18793,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3035,
+            3133,
+            3047,
+            6333,
+            3155,
+            3161
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUcoZwNdLZfe_B-9oX3w_pYwit_iCKUZ_A=",
           "gameCreation": 1792534318000,
@@ -2296,44 +2331,10 @@
             6699
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX-eCI5Q5dIeNBmq88lhIaRi7hsNhbeWlM=",
-          "gameCreation": 1792259453000,
-          "gameDurationSeconds": 1470,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Naafiri",
-          "championId": "950",
-          "champLevel": 17,
-          "role": "JUNGLE",
-          "kills": 18,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 23,
-          "cs": 41,
-          "csPerMin": 1.7,
-          "killParticipationPct": 0,
-          "damageDealt": 32512,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2422,
-            6333,
-            6699,
-            3071,
-            2517
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1139 LP)",
-      "analystSummary": "Elyoya: MASTER I 1139 LP · 20 partidas consultadas · 72.7% WR · KDA medio 8.8.",
+      "statusBadge": "MASTER I (1174 LP)",
+      "analystSummary": "Elyoya: MASTER I 1174 LP · 20 partidas consultadas · 73.1% WR · KDA medio 7.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2892,9 +2893,18 @@
           "wins": 56,
           "losses": 21,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792723847915,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1174,
+          "wins": 57,
+          "losses": 21,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -4973,7 +4983,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
