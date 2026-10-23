@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T03:21:14.795Z",
-  "syncedAt": "2026-10-23T03:21:14.795Z",
+  "generatedAt": "2026-10-23T03:26:08.065Z",
+  "syncedAt": "2026-10-23T03:26:08.065Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1451,11 +1451,11 @@
       "wins": 57,
       "losses": 21,
       "winrate": 73.1,
-      "streak": 1,
-      "avgKda": 7.8,
-      "avgKills": 8.8,
-      "avgDeaths": 3.5,
-      "avgAssists": 7.8,
+      "streak": -1,
+      "avgKda": 7.4,
+      "avgKills": 8.9,
+      "avgDeaths": 3.8,
+      "avgAssists": 8,
       "avgCsPerMin": 2.2,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1463,13 +1463,13 @@
           "championName": "Jayce",
           "championId": "126",
           "games": 6,
-          "wins": 5,
-          "losses": 1,
-          "winrate": 83.3,
-          "kills": 58,
-          "deaths": 18,
-          "assists": 53,
-          "kda": 6.2,
+          "wins": 4,
+          "losses": 2,
+          "winrate": 66.7,
+          "kills": 59,
+          "deaths": 23,
+          "assists": 57,
+          "kda": 5,
           "csPerMin": 1.4
         },
         {
@@ -1643,6 +1643,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVrdGhj31LAEWWeJ9k5l4Owh0fvy0hGc6Y=",
+          "gameCreation": 1792725891000,
+          "gameDurationSeconds": 1834,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 9,
+          "deaths": 5,
+          "assists": 7,
+          "kda": 3.2,
+          "cs": 32,
+          "csPerMin": 1,
+          "killParticipationPct": 0,
+          "damageDealt": 31303,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            1038,
+            2520,
+            3158,
+            6699,
+            3036,
+            3814
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXoTgtoyV2jTi1i6Or6pyovKk2EENVNm-0=",
           "gameCreation": 1792723485000,
@@ -2297,44 +2332,10 @@
             3142
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVrEuf_YDVHGjEN23bCpnIFJq6XRoICqwI=",
-          "gameCreation": 1792292085000,
-          "gameDurationSeconds": 933,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 11,
-          "role": "JUNGLE",
-          "kills": 8,
-          "deaths": 0,
-          "assists": 3,
-          "kda": 11,
-          "cs": 13,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 11028,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2520,
-            1036,
-            1001,
-            1028,
-            6699
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1174 LP)",
-      "analystSummary": "Elyoya: MASTER I 1174 LP · 20 partidas consultadas · 73.1% WR · KDA medio 7.8.",
+      "analystSummary": "Elyoya: MASTER I 1174 LP · 20 partidas consultadas · 73.1% WR · KDA medio 7.4.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2922,7 +2923,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -6641,7 +6642,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
