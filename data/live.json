@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T03:06:16.506Z",
-  "syncedAt": "2026-10-23T03:06:16.506Z",
+  "generatedAt": "2026-10-23T03:11:13.360Z",
+  "syncedAt": "2026-10-23T03:11:13.360Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -5022,11 +5022,11 @@
       "wins": 65,
       "losses": 23,
       "winrate": 73.9,
-      "streak": -2,
+      "streak": 1,
       "avgKda": 4.9,
-      "avgKills": 3.9,
-      "avgDeaths": 6.2,
-      "avgAssists": 13.1,
+      "avgKills": 3.8,
+      "avgDeaths": 6.3,
+      "avgAssists": 13.6,
       "avgCsPerMin": 1.3,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5081,6 +5081,19 @@
           "assists": 16,
           "kda": 1.8,
           "csPerMin": 1.5
+        },
+        {
+          "championName": "Shen",
+          "championId": "98",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 2,
+          "deaths": 8,
+          "assists": 23,
+          "kda": 3.1,
+          "csPerMin": 0.7
         },
         {
           "championName": "Orianna",
@@ -5146,19 +5159,6 @@
           "assists": 10,
           "kda": 14,
           "csPerMin": 0.4
-        },
-        {
-          "championName": "Qiyana",
-          "championId": "246",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 6,
-          "assists": 13,
-          "kda": 2.8,
-          "csPerMin": 0.8
         },
         {
           "championName": "Poppy",
@@ -5227,6 +5227,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgW-AKXqUd9dwqnaYZt41i82IkpVE3VfamE=",
+          "gameCreation": 1792724986000,
+          "gameDurationSeconds": 2134,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Shen",
+          "championId": "98",
+          "champLevel": 15,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 8,
+          "assists": 23,
+          "kda": 3.13,
+          "cs": 25,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 9863,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3190,
+            3050,
+            3047,
+            2525,
+            1028
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUPDVDlrmkGCcCy5LbfCnRTM7cSjEbJPVs=",
           "gameCreation": 1792722171000,
@@ -5877,41 +5912,6 @@
             3071,
             1037,
             1036,
-            2422
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVgFwsAyqA52zgy93hqeMK1SLsnitCn4co=",
-          "gameCreation": 1792293783000,
-          "gameDurationSeconds": 1773,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Qiyana",
-          "championId": "246",
-          "champLevel": 16,
-          "role": "JUNGLE",
-          "kills": 4,
-          "deaths": 6,
-          "assists": 13,
-          "kda": 2.83,
-          "cs": 25,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 27387,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            6694,
-            6699,
-            6696,
-            3814,
             2422
           ],
           "tags": []
