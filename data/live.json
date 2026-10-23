@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T02:56:08.938Z",
-  "syncedAt": "2026-10-23T02:56:08.938Z",
+  "generatedAt": "2026-10-23T03:01:16.285Z",
+  "syncedAt": "2026-10-23T03:01:16.286Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1427,7 +1427,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -2913,7 +2913,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3513,10 +3513,10 @@
       "wins": 61,
       "losses": 22,
       "winrate": 73.5,
-      "streak": 2,
-      "avgKda": 5.4,
-      "avgKills": 8.5,
-      "avgDeaths": 4.3,
+      "streak": 3,
+      "avgKda": 5.3,
+      "avgKills": 8.7,
+      "avgDeaths": 4.5,
       "avgAssists": 7.9,
       "avgCsPerMin": 7.9,
       "avgKillParticipationPct": 0,
@@ -3535,6 +3535,19 @@
           "csPerMin": 8.8
         },
         {
+          "championName": "Yunara",
+          "championId": "804",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 20,
+          "deaths": 11,
+          "assists": 8,
+          "kda": 2.5,
+          "csPerMin": 9
+        },
+        {
           "championName": "Ezreal",
           "championId": "81",
           "games": 2,
@@ -3546,19 +3559,6 @@
           "assists": 9,
           "kda": 3.5,
           "csPerMin": 8.2
-        },
-        {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 13,
-          "deaths": 8,
-          "assists": 7,
-          "kda": 2.5,
-          "csPerMin": 8.9
         },
         {
           "championName": "Kai'Sa",
@@ -3652,20 +3652,55 @@
           "csPerMin": 9
         },
         {
-          "championName": "Yunara",
-          "championId": "804",
+          "championName": "Lucian",
+          "championId": "236",
           "games": 1,
           "wins": 0,
           "losses": 1,
           "winrate": 0,
-          "kills": 4,
-          "deaths": 3,
-          "assists": 2,
-          "kda": 2,
-          "csPerMin": 9
+          "kills": 1,
+          "deaths": 4,
+          "assists": 1,
+          "kda": 0.5,
+          "csPerMin": 8.8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgV-cr0TVrdvLITn54MxbtKUqaOSRkyF-RU=",
+          "gameCreation": 1792724334000,
+          "gameDurationSeconds": 1867,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Yunara",
+          "championId": "804",
+          "champLevel": 15,
+          "role": "ADC",
+          "kills": 16,
+          "deaths": 8,
+          "assists": 6,
+          "kda": 2.75,
+          "cs": 280,
+          "csPerMin": 9,
+          "killParticipationPct": 0,
+          "damageDealt": 49916,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBoost",
+            "SummonerFlash"
+          ],
+          "items": [
+            3032,
+            3085,
+            2019,
+            3072,
+            3031,
+            3036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXnp65Iyi2-VTjOdoSsF4oIag31uJSbTsE=",
           "gameCreation": 1792686902000,
@@ -4321,45 +4356,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUVQqHvuQ_jk5iI4c3l5vvCucdOL_oeFqY=",
-          "gameCreation": 1792294861000,
-          "gameDurationSeconds": 1438,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lucian",
-          "championId": "236",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 12,
-          "deaths": 4,
-          "assists": 6,
-          "kda": 4.5,
-          "cs": 216,
-          "csPerMin": 9,
-          "killParticipationPct": 0,
-          "damageDealt": 27384,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            2031,
-            6670,
-            3508,
-            3094,
-            3031
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1357 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1357 LP · 20 partidas consultadas · 73.5% WR · KDA medio 5.4.",
+      "analystSummary": "Supa: GRANDMASTER I 1357 LP · 20 partidas consultadas · 73.5% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -4992,7 +4992,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
