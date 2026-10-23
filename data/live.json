@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T04:06:09.862Z",
-  "syncedAt": "2026-10-23T04:06:09.862Z",
+  "generatedAt": "2026-10-23T04:31:11.007Z",
+  "syncedAt": "2026-10-23T04:31:11.007Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1451,26 +1451,26 @@
       "wins": 58,
       "losses": 22,
       "winrate": 72.5,
-      "streak": 1,
-      "avgKda": 7.7,
-      "avgKills": 8.6,
-      "avgDeaths": 3.5,
-      "avgAssists": 7.8,
+      "streak": -1,
+      "avgKda": 7.6,
+      "avgKills": 8.2,
+      "avgDeaths": 3.6,
+      "avgAssists": 8,
       "avgCsPerMin": 2.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jayce",
           "championId": "126",
-          "games": 5,
+          "games": 6,
           "wins": 4,
-          "losses": 1,
-          "winrate": 80,
-          "kills": 49,
-          "deaths": 16,
-          "assists": 47,
-          "kda": 6,
-          "csPerMin": 1.4
+          "losses": 2,
+          "winrate": 66.7,
+          "kills": 54,
+          "deaths": 22,
+          "assists": 55,
+          "kda": 5,
+          "csPerMin": 1.3
         },
         {
           "championName": "Zaahen",
@@ -1627,22 +1627,43 @@
           "assists": 5,
           "kda": 3.3,
           "csPerMin": 0.9
-        },
-        {
-          "championName": "Graves",
-          "championId": "104",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 13,
-          "deaths": 3,
-          "assists": 3,
-          "kda": 5.3,
-          "csPerMin": 1.9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUMN_Jnt3BdWajjK6_4vD5dpcY99mFYXzI=",
+          "gameCreation": 1792729684000,
+          "gameDurationSeconds": 1332,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 5,
+          "deaths": 6,
+          "assists": 8,
+          "kda": 2.17,
+          "cs": 14,
+          "csPerMin": 0.6,
+          "killParticipationPct": 0,
+          "damageDealt": 16183,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3035,
+            1001,
+            6699,
+            2520,
+            3142
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgW6Px4Qa9mgfE2fvf1c0nIFL8VpVzmuyJk=",
           "gameCreation": 1792727511000,
@@ -2298,44 +2319,10 @@
             4401
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVOPFyclFfFIzmxcNSk5ksp5pqJVFAlR2A=",
-          "gameCreation": 1792296524000,
-          "gameDurationSeconds": 1432,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Graves",
-          "championId": "104",
-          "champLevel": 15,
-          "role": "JUNGLE",
-          "kills": 13,
-          "deaths": 3,
-          "assists": 3,
-          "kda": 5.33,
-          "cs": 45,
-          "csPerMin": 1.9,
-          "killParticipationPct": 0,
-          "damageDealt": 21250,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6697,
-            6676,
-            1011,
-            3111,
-            3036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1182 LP)",
-      "analystSummary": "Elyoya: MASTER I 1182 LP · 20 partidas consultadas · 72.5% WR · KDA medio 7.7.",
+      "analystSummary": "Elyoya: MASTER I 1182 LP · 20 partidas consultadas · 72.5% WR · KDA medio 7.6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -5046,27 +5033,14 @@
       "wins": 66,
       "losses": 24,
       "winrate": 73.3,
-      "streak": -1,
-      "avgKda": 4.3,
-      "avgKills": 3.6,
-      "avgDeaths": 6.9,
-      "avgAssists": 13.8,
-      "avgCsPerMin": 1.3,
+      "streak": -2,
+      "avgKda": 3.9,
+      "avgKills": 3.7,
+      "avgDeaths": 7.3,
+      "avgAssists": 13,
+      "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Bard",
-          "championId": "432",
-          "games": 3,
-          "wins": 2,
-          "losses": 1,
-          "winrate": 66.7,
-          "kills": 5,
-          "deaths": 17,
-          "assists": 49,
-          "kda": 3.2,
-          "csPerMin": 0.8
-        },
         {
           "championName": "Lee Sin",
           "championId": "64",
@@ -5092,6 +5066,19 @@
           "assists": 45,
           "kda": 2.4,
           "csPerMin": 1.1
+        },
+        {
+          "championName": "Bard",
+          "championId": "432",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 4,
+          "deaths": 15,
+          "assists": 32,
+          "kda": 2.4,
+          "csPerMin": 0.8
         },
         {
           "championName": "Sylas",
@@ -5170,6 +5157,19 @@
           "assists": 11,
           "kda": 14,
           "csPerMin": 0.9
+        },
+        {
+          "championName": "Ambessa",
+          "championId": "799",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 2,
+          "deaths": 9,
+          "assists": 2,
+          "kda": 0.4,
+          "csPerMin": 5.9
         },
         {
           "championName": "Pyke",
@@ -5251,6 +5251,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVV_Y5rMFCDmvv9RZ6oC6l0OB5__MRmQyg=",
+          "gameCreation": 1792729666000,
+          "gameDurationSeconds": 1312,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Ambessa",
+          "championId": "799",
+          "champLevel": 13,
+          "role": "TOP",
+          "kills": 2,
+          "deaths": 9,
+          "assists": 2,
+          "kda": 0.44,
+          "cs": 129,
+          "csPerMin": 5.9,
+          "killParticipationPct": 0,
+          "damageDealt": 7761,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            6692,
+            1001,
+            1120,
+            3133,
+            1037,
+            1029
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXDIqVFiFPR4-7c6PbX51cR86J0-ljQEKM=",
           "gameCreation": 1792727053000,
@@ -5906,44 +5941,10 @@
             2525
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUfZuRx9Uall9g4-4Ob4voLyl2Y7x_PTOA=",
-          "gameCreation": 1792297685000,
-          "gameDurationSeconds": 1164,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Bard",
-          "championId": "432",
-          "champLevel": 10,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 2,
-          "assists": 17,
-          "kda": 9,
-          "cs": 14,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 13374,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3877,
-            3222,
-            2031,
-            2525,
-            2422
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1430 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1430 LP · 20 partidas consultadas · 73.3% WR · KDA medio 4.3.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1430 LP · 20 partidas consultadas · 73.3% WR · KDA medio 3.9.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
