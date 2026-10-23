@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T15:51:20.956Z",
-  "syncedAt": "2026-10-23T15:51:20.957Z",
+  "generatedAt": "2026-10-23T16:11:11.589Z",
+  "syncedAt": "2026-10-23T16:11:11.590Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1427,7 +1427,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -3514,7 +3514,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3537,11 +3537,11 @@
       "wins": 65,
       "losses": 22,
       "winrate": 74.7,
-      "streak": 6,
-      "avgKda": 5.4,
-      "avgKills": 8.6,
+      "streak": -1,
+      "avgKda": 5.2,
+      "avgKills": 7.8,
       "avgDeaths": 4.4,
-      "avgAssists": 8.6,
+      "avgAssists": 8,
       "avgCsPerMin": 7.4,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3572,6 +3572,19 @@
           "csPerMin": 7.9
         },
         {
+          "championName": "Ezreal",
+          "championId": "81",
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winrate": 33.3,
+          "kills": 31,
+          "deaths": 18,
+          "assists": 9,
+          "kda": 2.2,
+          "csPerMin": 8
+        },
+        {
           "championName": "Bard",
           "championId": "432",
           "games": 2,
@@ -3596,32 +3609,6 @@
           "assists": 8,
           "kda": 2.5,
           "csPerMin": 9
-        },
-        {
-          "championName": "Ezreal",
-          "championId": "81",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 29,
-          "deaths": 11,
-          "assists": 9,
-          "kda": 3.5,
-          "csPerMin": 8.2
-        },
-        {
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 22,
-          "deaths": 13,
-          "assists": 17,
-          "kda": 3,
-          "csPerMin": 7.8
         },
         {
           "championName": "Sivir",
@@ -3663,6 +3650,19 @@
           "csPerMin": 7.8
         },
         {
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 5,
+          "deaths": 6,
+          "assists": 5,
+          "kda": 1.7,
+          "csPerMin": 8.1
+        },
+        {
           "championName": "Caitlyn",
           "championId": "51",
           "games": 1,
@@ -3677,6 +3677,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVkFCU0-Kg8-PXP1BgrSsA3-EnA9PlNvgk=",
+          "gameCreation": 1792771846000,
+          "gameDurationSeconds": 972,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Ezreal",
+          "championId": "81",
+          "champLevel": 9,
+          "role": "ADC",
+          "kills": 2,
+          "deaths": 7,
+          "assists": 0,
+          "kda": 0.29,
+          "cs": 123,
+          "csPerMin": 7.6,
+          "killParticipationPct": 0,
+          "damageDealt": 9632,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            2031,
+            3078,
+            3070,
+            1036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgU_2sfQ1IKGVr60VNB02t9ibWQ9gzc2aXA=",
           "gameCreation": 1792770317000,
@@ -4329,45 +4363,10 @@
             1018
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXnHyGG1M-GJypuuMY5jfXKuyQ2GxkVq2g=",
-          "gameCreation": 1792366051000,
-          "gameDurationSeconds": 2072,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "champLevel": 18,
-          "role": "ADC",
-          "kills": 17,
-          "deaths": 7,
-          "assists": 12,
-          "kda": 4.14,
-          "cs": 261,
-          "csPerMin": 7.6,
-          "killParticipationPct": 0,
-          "damageDealt": 38104,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            6672,
-            3302,
-            3139,
-            3124,
-            3026,
-            3091
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1525 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1525 LP · 20 partidas consultadas · 74.7% WR · KDA medio 5.4.",
+      "analystSummary": "Supa: GRANDMASTER I 1525 LP · 20 partidas consultadas · 74.7% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5036,7 +5035,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
