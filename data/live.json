@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T04:36:07.909Z",
-  "syncedAt": "2026-10-24T04:36:07.909Z",
+  "generatedAt": "2026-10-24T05:01:25.661Z",
+  "syncedAt": "2026-10-24T05:01:25.661Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1427,7 +1427,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1451,11 +1451,11 @@
       "wins": 60,
       "losses": 23,
       "winrate": 72.3,
-      "streak": 2,
+      "streak": 3,
       "avgKda": 6.9,
-      "avgKills": 7.3,
-      "avgDeaths": 3.6,
-      "avgAssists": 7.9,
+      "avgKills": 7.2,
+      "avgDeaths": 3.5,
+      "avgAssists": 7.5,
       "avgCsPerMin": 2.5,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1499,6 +1499,19 @@
           "csPerMin": 8.7
         },
         {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 10,
+          "deaths": 11,
+          "assists": 8,
+          "kda": 1.6,
+          "csPerMin": 0.8
+        },
+        {
           "championName": "Aatrox",
           "championId": "266",
           "games": 1,
@@ -1536,32 +1549,6 @@
           "assists": 2,
           "kda": 14,
           "csPerMin": 0.6
-        },
-        {
-          "championName": "Zyra",
-          "championId": "143",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 7,
-          "assists": 13,
-          "kda": 2.9,
-          "csPerMin": 1.1
-        },
-        {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 4,
-          "deaths": 7,
-          "assists": 3,
-          "kda": 1,
-          "csPerMin": 1.2
         },
         {
           "championName": "Nidalee",
@@ -1617,6 +1604,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWZd97FNU3VB4ERVGVeMVNZqeDMX6_uk70=",
+          "gameCreation": 1792817950000,
+          "gameDurationSeconds": 1312,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 6,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 2.75,
+          "cs": 11,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 13770,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            6698,
+            6333,
+            3155,
+            2022,
+            3047
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXDpslNtRVxnhnjN1zu0sOVJ5_IgEUwZqU=",
           "gameCreation": 1792815516000,
@@ -2269,41 +2291,6 @@
             3814
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVPJ7MRcCuMsSP3kwPkTovtQLs4_YcpmxY=",
-          "gameCreation": 1792365599000,
-          "gameDurationSeconds": 2140,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Zyra",
-          "championId": "143",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 7,
-          "deaths": 7,
-          "assists": 13,
-          "kda": 2.86,
-          "cs": 39,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 36929,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            1058,
-            4645,
-            3020,
-            4005,
-            6653,
-            3157
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1258 LP)",
@@ -2940,7 +2927,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
