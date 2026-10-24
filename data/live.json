@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-24T16:15:48.946Z",
-  "syncedAt": "2026-10-24T18:35:53.013Z",
+  "syncedAt": "2026-10-24T19:16:16.513Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "partial",
@@ -6790,17 +6790,13 @@
     }
   ],
   "errors": [
-    "Myrwn: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n{\\n    \\\"message\\\": \\\"Server Error\\\"\\n}\\n\"}",
-    "Elyoya: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n{\\n    \\\"message\\\": \\\"Server Error\\\"\\n}\\n\"}",
-    "Jojopyun: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n{\\n    \\\"message\\\": \\\"Server Error\\\"\\n}\\n\"}",
-    "Supa: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n{\\n    \\\"message\\\": \\\"Server Error\\\"\\n}\\n\"}",
-    "Alvaro: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n{\\n    \\\"message\\\": \\\"Server Error\\\"\\n}\\n\"}"
+    "Jojopyun: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n{\\n    \\\"message\\\": \\\"Server Error\\\"\\n}\\n\"}"
   ],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 0,
+    "successfulCount": 4,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
