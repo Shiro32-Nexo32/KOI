@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-10-24T16:15:48.946Z",
-  "syncedAt": "2026-10-24T19:16:16.513Z",
+  "syncedAt": "2026-10-24T19:20:51.478Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -6789,14 +6789,12 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Jojopyun: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 500:\\n{\\n    \\\"message\\\": \\\"Server Error\\\"\\n}\\n\"}"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 4,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
