@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T15:25:49.723Z",
-  "syncedAt": "2026-10-24T15:25:49.723Z",
+  "generatedAt": "2026-10-24T16:05:54.342Z",
+  "syncedAt": "2026-10-24T16:05:54.342Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3545,12 +3545,12 @@
       "wins": 66,
       "losses": 23,
       "winrate": 74.2,
-      "streak": 1,
-      "avgKda": 5.7,
-      "avgKills": 7.5,
+      "streak": 2,
+      "avgKda": 5.9,
+      "avgKills": 8,
       "avgDeaths": 4.1,
-      "avgAssists": 7.8,
-      "avgCsPerMin": 7.4,
+      "avgAssists": 8.1,
+      "avgCsPerMin": 7.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3606,19 +3606,6 @@
           "csPerMin": 0.8
         },
         {
-          "championName": "Caitlyn",
-          "championId": "51",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 10,
-          "deaths": 6,
-          "assists": 11,
-          "kda": 3.5,
-          "csPerMin": 8.9
-        },
-        {
           "championName": "Yunara",
           "championId": "804",
           "games": 2,
@@ -3630,6 +3617,32 @@
           "assists": 8,
           "kda": 2.5,
           "csPerMin": 9
+        },
+        {
+          "championName": "Jinx",
+          "championId": "222",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 13,
+          "deaths": 5,
+          "assists": 9,
+          "kda": 4.4,
+          "csPerMin": 8.4
+        },
+        {
+          "championName": "Caitlyn",
+          "championId": "51",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 6,
+          "deaths": 1,
+          "assists": 7,
+          "kda": 13,
+          "csPerMin": 8.1
         },
         {
           "championName": "Sivir",
@@ -3685,6 +3698,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX7Im-MuJpjmtbiRfLRN2pfZ5yL_dVDWWs=",
+          "gameCreation": 1792857645000,
+          "gameDurationSeconds": 1704,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jinx",
+          "championId": "222",
+          "champLevel": 15,
+          "role": "ADC",
+          "kills": 13,
+          "deaths": 5,
+          "assists": 9,
+          "kda": 4.4,
+          "cs": 239,
+          "csPerMin": 8.4,
+          "killParticipationPct": 0,
+          "damageDealt": 35118,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3031,
+            3095,
+            3036,
+            1037,
+            1053,
+            3094
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWVneytv6e0Sjh_bpDT3pg_ps82pB9N3ZM=",
           "gameCreation": 1792854970000,
@@ -4338,43 +4386,10 @@
             3302
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXMod2D-MFU1H9P4fJAPRq1y-tMEPjMxaQ=",
-          "gameCreation": 1792372009000,
-          "gameDurationSeconds": 1481,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Caitlyn",
-          "championId": "51",
-          "champLevel": 13,
-          "role": "ADC",
-          "kills": 4,
-          "deaths": 5,
-          "assists": 4,
-          "kda": 1.6,
-          "cs": 242,
-          "csPerMin": 9.8,
-          "killParticipationPct": 0,
-          "damageDealt": 21432,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3031,
-            3036,
-            1086,
-            3095
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1531 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1531 LP · 20 partidas consultadas · 74.2% WR · KDA medio 5.7.",
+      "analystSummary": "Supa: GRANDMASTER I 1531 LP · 20 partidas consultadas · 74.2% WR · KDA medio 5.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
