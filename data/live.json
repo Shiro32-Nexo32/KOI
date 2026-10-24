@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T05:01:25.661Z",
-  "syncedAt": "2026-10-24T05:01:25.661Z",
+  "generatedAt": "2026-10-24T05:16:11.710Z",
+  "syncedAt": "2026-10-24T05:16:11.710Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1447,10 +1447,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1258,
-      "wins": 60,
+      "lp": 1292,
+      "wins": 61,
       "losses": 23,
-      "winrate": 72.3,
+      "winrate": 72.6,
       "streak": 3,
       "avgKda": 6.9,
       "avgKills": 7.2,
@@ -2293,8 +2293,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1258 LP)",
-      "analystSummary": "Elyoya: MASTER I 1258 LP · 20 partidas consultadas · 72.3% WR · KDA medio 6.9.",
+      "statusBadge": "MASTER I (1292 LP)",
+      "analystSummary": "Elyoya: MASTER I 1292 LP · 20 partidas consultadas · 72.6% WR · KDA medio 6.9.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2923,6 +2923,15 @@
           "division": "I",
           "lp": 1258,
           "wins": 60,
+          "losses": 23,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792818951156,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1292,
+          "wins": 61,
           "losses": 23,
           "note": "Sincronización automática desde OP.GG"
         }
