@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T16:15:48.946Z",
-  "syncedAt": "2026-10-24T19:20:51.478Z",
+  "generatedAt": "2026-10-25T06:50:48.510Z",
+  "syncedAt": "2026-10-25T06:50:48.510Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1445,7 +1445,7 @@
       "team": "KOI / MKOI",
       "role": "JUNGLE",
       "profileIconId": 588,
-      "tier": "GRANDMASTER",
+      "tier": "MASTER",
       "division": "I",
       "lp": 1266,
       "wins": 61,
@@ -2294,8 +2294,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1266 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1266 LP · 20 partidas consultadas · 71.8% WR · KDA medio 6.9.",
+      "statusBadge": "MASTER I (1266 LP)",
+      "analystSummary": "Elyoya: MASTER I 1266 LP · 20 partidas consultadas · 71.8% WR · KDA medio 6.9.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2948,6 +2948,15 @@
         {
           "timestamp": 1792858537355,
           "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1266,
+          "wins": 61,
+          "losses": 24,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792911039378,
+          "tier": "MASTER",
           "division": "I",
           "lp": 1266,
           "wins": 61,
