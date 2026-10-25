@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-10-25T15:50:47.624Z",
-  "syncedAt": "2026-10-25T21:16:05.151Z",
+  "syncedAt": "2026-10-25T21:20:47.579Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -6821,16 +6821,12 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Jojopyun: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}",
-    "Supa: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}",
-    "Alvaro: tools/call error: {\"code\":-32603,\"message\":\"HTTP request returned status code 503:\\n<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Una (truncated...)\\n\"}"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 2,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
