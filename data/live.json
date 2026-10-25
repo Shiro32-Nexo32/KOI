@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T14:50:47.010Z",
-  "syncedAt": "2026-10-25T14:50:47.011Z",
+  "generatedAt": "2026-10-25T15:45:52.094Z",
+  "syncedAt": "2026-10-25T15:45:52.094Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1427,7 +1427,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -3564,26 +3564,26 @@
       "wins": 68,
       "losses": 23,
       "winrate": 74.7,
-      "streak": 3,
-      "avgKda": 5.4,
-      "avgKills": 7.7,
-      "avgDeaths": 4.2,
-      "avgAssists": 8.1,
-      "avgCsPerMin": 7.5,
+      "streak": -1,
+      "avgKda": 5,
+      "avgKills": 7.3,
+      "avgDeaths": 4.3,
+      "avgAssists": 7.8,
+      "avgCsPerMin": 7.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 4,
+          "games": 5,
           "wins": 3,
-          "losses": 1,
-          "winrate": 75,
-          "kills": 16,
-          "deaths": 9,
-          "assists": 27,
-          "kda": 4.8,
-          "csPerMin": 9.3
+          "losses": 2,
+          "winrate": 60,
+          "kills": 20,
+          "deaths": 12,
+          "assists": 35,
+          "kda": 4.6,
+          "csPerMin": 9.1
         },
         {
           "championName": "Lucian",
@@ -3690,19 +3690,6 @@
           "csPerMin": 9.4
         },
         {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 11,
-          "deaths": 2,
-          "assists": 14,
-          "kda": 12.5,
-          "csPerMin": 0.5
-        },
-        {
           "championName": "Kai'Sa",
           "championId": "145",
           "games": 1,
@@ -3717,6 +3704,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXPzQS_oE7s05bMZrxSytiqgr_hIqEWp2w=",
+          "gameCreation": 1792943046000,
+          "gameDurationSeconds": 1572,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jhin",
+          "championId": "202",
+          "champLevel": 13,
+          "role": "ADC",
+          "kills": 4,
+          "deaths": 3,
+          "assists": 8,
+          "kda": 4,
+          "cs": 218,
+          "csPerMin": 8.3,
+          "killParticipationPct": 0,
+          "damageDealt": 14012,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3095,
+            2523,
+            3094,
+            1120,
+            1018,
+            1037
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVAfIeyzvXV4YJDaPms0DD7WwqGs0agjf4=",
           "gameCreation": 1792938902000,
@@ -4370,45 +4392,10 @@
             3087
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUMbnnRl4FqKNoizqBDu-hciTu5ZxRXVbA=",
-          "gameCreation": 1792382422000,
-          "gameDurationSeconds": 1572,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 17,
-          "role": "JUNGLE",
-          "kills": 11,
-          "deaths": 2,
-          "assists": 14,
-          "kda": 12.5,
-          "cs": 13,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 21259,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerSmite",
-            "SummonerFlash"
-          ],
-          "items": [
-            3071,
-            6692,
-            1038,
-            6333,
-            2422,
-            2019
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1597 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1597 LP · 20 partidas consultadas · 74.7% WR · KDA medio 5.4.",
+      "analystSummary": "Supa: GRANDMASTER I 1597 LP · 20 partidas consultadas · 74.7% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5131,7 +5118,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
