@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T06:50:48.510Z",
-  "syncedAt": "2026-10-25T06:50:48.510Z",
+  "generatedAt": "2026-10-25T14:40:46.215Z",
+  "syncedAt": "2026-10-25T14:40:46.216Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1427,7 +1427,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -3560,16 +3560,16 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1564,
-      "wins": 67,
+      "lp": 1597,
+      "wins": 68,
       "losses": 23,
-      "winrate": 74.4,
-      "streak": 2,
-      "avgKda": 5.9,
-      "avgKills": 8,
-      "avgDeaths": 4.1,
+      "winrate": 74.7,
+      "streak": 3,
+      "avgKda": 5.4,
+      "avgKills": 7.7,
+      "avgDeaths": 4.2,
       "avgAssists": 8.1,
-      "avgCsPerMin": 7.3,
+      "avgCsPerMin": 7.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3638,6 +3638,19 @@
           "csPerMin": 9
         },
         {
+          "championName": "Kalista",
+          "championId": "429",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 17,
+          "deaths": 4,
+          "assists": 7,
+          "kda": 6,
+          "csPerMin": 10.2
+        },
+        {
           "championName": "Jinx",
           "championId": "222",
           "games": 1,
@@ -3690,19 +3703,6 @@
           "csPerMin": 0.5
         },
         {
-          "championName": "Kalista",
-          "championId": "429",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 22,
-          "deaths": 2,
-          "assists": 7,
-          "kda": 14.5,
-          "csPerMin": 7.8
-        },
-        {
           "championName": "Kai'Sa",
           "championId": "145",
           "games": 1,
@@ -3717,6 +3717,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVAfIeyzvXV4YJDaPms0DD7WwqGs0agjf4=",
+          "gameCreation": 1792938902000,
+          "gameDurationSeconds": 1365,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kalista",
+          "championId": "429",
+          "champLevel": 15,
+          "role": "ADC",
+          "kills": 17,
+          "deaths": 4,
+          "assists": 7,
+          "kda": 6,
+          "cs": 231,
+          "csPerMin": 10.2,
+          "killParticipationPct": 0,
+          "damageDealt": 45004,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            1011,
+            1057,
+            3124,
+            3087,
+            3302
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX7Im-MuJpjmtbiRfLRN2pfZ5yL_dVDWWs=",
           "gameCreation": 1792857645000,
@@ -4370,45 +4405,10 @@
             2019
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVYTTpfyFj_Q_nkBaCawYpfJ8eGXYnbujo=",
-          "gameCreation": 1792374185000,
-          "gameDurationSeconds": 1810,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kalista",
-          "championId": "429",
-          "champLevel": 16,
-          "role": "ADC",
-          "kills": 22,
-          "deaths": 2,
-          "assists": 7,
-          "kda": 14.5,
-          "cs": 235,
-          "csPerMin": 7.8,
-          "killParticipationPct": 0,
-          "damageDealt": 54059,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            1038,
-            3087,
-            3140,
-            6665,
-            3124,
-            3302
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1564 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1564 LP · 20 partidas consultadas · 74.4% WR · KDA medio 5.9.",
+      "statusBadge": "GRANDMASTER I (1597 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1597 LP · 20 partidas consultadas · 74.7% WR · KDA medio 5.4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5102,9 +5102,18 @@
           "wins": 67,
           "losses": 23,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792939243368,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1597,
+          "wins": 68,
+          "losses": 23,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
