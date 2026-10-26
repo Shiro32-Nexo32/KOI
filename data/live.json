@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T15:50:47.624Z",
-  "syncedAt": "2026-10-25T21:20:47.579Z",
+  "generatedAt": "2026-10-26T02:10:52.576Z",
+  "syncedAt": "2026-10-26T02:10:52.576Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1447,29 +1447,29 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1266,
-      "wins": 61,
+      "lp": 1300,
+      "wins": 62,
       "losses": 24,
-      "winrate": 71.8,
-      "streak": -1,
-      "avgKda": 6.9,
-      "avgKills": 7.7,
-      "avgDeaths": 3.5,
-      "avgAssists": 7.3,
+      "winrate": 72.1,
+      "streak": 1,
+      "avgKda": 6.4,
+      "avgKills": 7.4,
+      "avgDeaths": 3.8,
+      "avgAssists": 7.9,
       "avgCsPerMin": 2.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jayce",
           "championId": "126",
-          "games": 6,
-          "wins": 4,
+          "games": 7,
+          "wins": 5,
           "losses": 2,
-          "winrate": 66.7,
-          "kills": 51,
-          "deaths": 18,
-          "assists": 52,
-          "kda": 5.7,
+          "winrate": 71.4,
+          "kills": 58,
+          "deaths": 23,
+          "assists": 65,
+          "kda": 5.3,
           "csPerMin": 1.2
         },
         {
@@ -1538,19 +1538,6 @@
           "csPerMin": 8
         },
         {
-          "championName": "Kha'Zix",
-          "championId": "121",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 12,
-          "deaths": 0,
-          "assists": 2,
-          "kda": 14,
-          "csPerMin": 0.6
-        },
-        {
           "championName": "Nidalee",
           "championId": "76",
           "games": 1,
@@ -1604,6 +1591,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUp_8P4pJZI1PqcJkEcFz1uy4K9Da0j80c=",
+          "gameCreation": 1792980491000,
+          "gameDurationSeconds": 2067,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 7,
+          "deaths": 5,
+          "assists": 13,
+          "kda": 4,
+          "cs": 54,
+          "csPerMin": 1.6,
+          "killParticipationPct": 0,
+          "damageDealt": 46152,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3036,
+            6695,
+            3158,
+            6699,
+            2520,
+            3142
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUQTs8HXs71lfGEMKhf1K-xLaKfB-5y2ec=",
           "gameCreation": 1792857935000,
@@ -2259,43 +2281,10 @@
             6699
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWCXaSSDqccrCDVJlEFq-VrV77nKPU63iQ=",
-          "gameCreation": 1792372476000,
-          "gameDurationSeconds": 939,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kha'Zix",
-          "championId": "121",
-          "champLevel": 12,
-          "role": "JUNGLE",
-          "kills": 12,
-          "deaths": 0,
-          "assists": 2,
-          "kda": 14,
-          "cs": 10,
-          "csPerMin": 0.6,
-          "killParticipationPct": 0,
-          "damageDealt": 13383,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2520,
-            1001,
-            3134,
-            6699
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1266 LP)",
-      "analystSummary": "Elyoya: MASTER I 1266 LP · 20 partidas consultadas · 71.8% WR · KDA medio 6.9.",
+      "statusBadge": "MASTER I (1300 LP)",
+      "analystSummary": "Elyoya: MASTER I 1300 LP · 20 partidas consultadas · 72.1% WR · KDA medio 6.4.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2960,6 +2949,15 @@
           "division": "I",
           "lp": 1266,
           "wins": 61,
+          "losses": 24,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792980640349,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1300,
+          "wins": 62,
           "losses": 24,
           "note": "Sincronización automática desde OP.GG"
         }
