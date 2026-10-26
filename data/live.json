@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T06:55:48.073Z",
-  "syncedAt": "2026-10-26T06:55:48.073Z",
+  "generatedAt": "2026-10-26T16:30:47.707Z",
+  "syncedAt": "2026-10-26T16:30:47.707Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3582,7 +3582,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3605,11 +3605,11 @@
       "wins": 71,
       "losses": 24,
       "winrate": 74.7,
-      "streak": 3,
-      "avgKda": 5.5,
+      "streak": 4,
+      "avgKda": 5.2,
       "avgKills": 8.4,
-      "avgDeaths": 4.3,
-      "avgAssists": 8.8,
+      "avgDeaths": 4.4,
+      "avgAssists": 8.1,
       "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3664,6 +3664,19 @@
           "assists": 24,
           "kda": 3.5,
           "csPerMin": 7.4
+        },
+        {
+          "championName": "Vayne",
+          "championId": "67",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 9,
+          "deaths": 5,
+          "assists": 3,
+          "kda": 2.4,
+          "csPerMin": 7.8
         },
         {
           "championName": "Ziggs",
@@ -3742,22 +3755,44 @@
           "assists": 6,
           "kda": 2.8,
           "csPerMin": 9
-        },
-        {
-          "championName": "Sivir",
-          "championId": "15",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 8,
-          "deaths": 3,
-          "assists": 17,
-          "kda": 8.3,
-          "csPerMin": 9.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVN7zXSDUGzkLrwsPft-G4rIRO87qDKDLA=",
+          "gameCreation": 1793032067000,
+          "gameDurationSeconds": 1797,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Vayne",
+          "championId": "67",
+          "champLevel": 17,
+          "role": "TOP",
+          "kills": 9,
+          "deaths": 5,
+          "assists": 3,
+          "kda": 2.4,
+          "cs": 233,
+          "csPerMin": 7.8,
+          "killParticipationPct": 0,
+          "damageDealt": 21832,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3078,
+            3095,
+            1038,
+            2512,
+            3008,
+            1018
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgV2y3M80fZCdV3QqrQ6EFnR4MAYvJgoU1s=",
           "gameCreation": 1792987379000,
@@ -4413,44 +4448,10 @@
             3147
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUQoLOxQGEtWoEDhT1KzIUaIKM6HDXFTNo=",
-          "gameCreation": 1792522525000,
-          "gameDurationSeconds": 1977,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Sivir",
-          "championId": "15",
-          "champLevel": 18,
-          "role": "ADC",
-          "kills": 8,
-          "deaths": 3,
-          "assists": 17,
-          "kda": 8.33,
-          "cs": 309,
-          "csPerMin": 9.4,
-          "killParticipationPct": 0,
-          "damageDealt": 38729,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            3072,
-            3508,
-            3031,
-            3033,
-            6675
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1669 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1669 LP · 20 partidas consultadas · 74.7% WR · KDA medio 5.5.",
+      "analystSummary": "Supa: GRANDMASTER I 1669 LP · 20 partidas consultadas · 74.7% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5227,7 +5228,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
