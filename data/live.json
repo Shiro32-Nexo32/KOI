@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T17:50:50.376Z",
-  "syncedAt": "2026-10-26T17:50:50.376Z",
+  "generatedAt": "2026-10-26T18:30:50.794Z",
+  "syncedAt": "2026-10-26T18:30:50.794Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1418,25 +1418,25 @@
       "wins": 64,
       "losses": 25,
       "winrate": 71.9,
-      "streak": 2,
-      "avgKda": 5.6,
+      "streak": -1,
+      "avgKda": 5,
       "avgKills": 7.6,
-      "avgDeaths": 4.2,
+      "avgDeaths": 4.6,
       "avgAssists": 8.2,
-      "avgCsPerMin": 2.6,
+      "avgCsPerMin": 2.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jayce",
           "championId": "126",
-          "games": 7,
+          "games": 8,
           "wins": 4,
-          "losses": 3,
-          "winrate": 57.1,
-          "kills": 57,
-          "deaths": 33,
-          "assists": 67,
-          "kda": 3.8,
+          "losses": 4,
+          "winrate": 50,
+          "kills": 65,
+          "deaths": 42,
+          "assists": 72,
+          "kda": 3.3,
           "csPerMin": 1.4
         },
         {
@@ -1492,19 +1492,6 @@
           "csPerMin": 8.3
         },
         {
-          "championName": "Locke",
-          "championId": "805",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 8,
-          "deaths": 0,
-          "assists": 6,
-          "kda": 14,
-          "csPerMin": 8
-        },
-        {
           "championName": "Nidalee",
           "championId": "76",
           "games": 1,
@@ -1545,6 +1532,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUsvFdM-4oITIy7SUI5m35qZQPwldYELSc=",
+          "gameCreation": 1793039215000,
+          "gameDurationSeconds": 1682,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 15,
+          "role": "JUNGLE",
+          "kills": 8,
+          "deaths": 9,
+          "assists": 5,
+          "kda": 1.44,
+          "cs": 29,
+          "csPerMin": 1,
+          "killParticipationPct": 0,
+          "damageDealt": 27016,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2520,
+            3036,
+            6699,
+            3158,
+            3134,
+            3142
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgV2y3M80fZCdV3QqrQ6EFnR4MAYvJgoU1s=",
           "gameCreation": 1792987379000,
@@ -2202,45 +2224,10 @@
             6699
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXYOogUh93d5URLDOP0YWm7eewzwjSd51o=",
-          "gameCreation": 1792519094000,
-          "gameDurationSeconds": 913,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Locke",
-          "championId": "805",
-          "champLevel": 12,
-          "role": "MID",
-          "kills": 8,
-          "deaths": 0,
-          "assists": 6,
-          "kda": 14,
-          "cs": 121,
-          "csPerMin": 8,
-          "killParticipationPct": 0,
-          "damageDealt": 12382,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3145,
-            3100,
-            1056,
-            3041,
-            3175,
-            1052
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1342 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1342 LP · 20 partidas consultadas · 71.9% WR · KDA medio 5.6.",
+      "analystSummary": "Elyoya: GRANDMASTER I 1342 LP · 20 partidas consultadas · 71.9% WR · KDA medio 5.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2972,7 +2959,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -6928,7 +6915,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
