@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T02:15:47.253Z",
-  "syncedAt": "2026-10-26T02:15:47.253Z",
+  "generatedAt": "2026-10-26T02:20:50.696Z",
+  "syncedAt": "2026-10-26T02:20:50.696Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1447,10 +1447,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1266,
-      "wins": 61,
+      "lp": 1300,
+      "wins": 62,
       "losses": 24,
-      "winrate": 71.8,
+      "winrate": 72.1,
       "streak": 1,
       "avgKda": 6.4,
       "avgKills": 7.4,
@@ -2283,8 +2283,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1266 LP)",
-      "analystSummary": "Elyoya: MASTER I 1266 LP · 20 partidas consultadas · 71.8% WR · KDA medio 6.4.",
+      "statusBadge": "MASTER I (1300 LP)",
+      "analystSummary": "Elyoya: MASTER I 1300 LP · 20 partidas consultadas · 72.1% WR · KDA medio 6.4.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2967,6 +2967,15 @@
           "division": "I",
           "lp": 1266,
           "wins": 61,
+          "losses": 24,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792981240887,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1300,
+          "wins": 62,
           "losses": 24,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -5134,7 +5143,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -5155,11 +5164,11 @@
       "wins": 67,
       "losses": 26,
       "winrate": 72,
-      "streak": -1,
-      "avgKda": 4.1,
-      "avgKills": 4.3,
-      "avgDeaths": 7.2,
-      "avgAssists": 12.3,
+      "streak": 1,
+      "avgKda": 4.2,
+      "avgKills": 4.4,
+      "avgDeaths": 7,
+      "avgAssists": 12.2,
       "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5170,10 +5179,10 @@
           "wins": 3,
           "losses": 1,
           "winrate": 75,
-          "kills": 31,
-          "deaths": 18,
-          "assists": 37,
-          "kda": 3.8,
+          "kills": 33,
+          "deaths": 14,
+          "assists": 36,
+          "kda": 4.9,
           "csPerMin": 0.6
         },
         {
@@ -5360,6 +5369,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUiCXzzxDLZVBx-JnRFy-AKZ8BpmKhtBWw=",
+          "gameCreation": 1792980934000,
+          "gameDurationSeconds": 1258,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 12,
+          "deaths": 4,
+          "assists": 11,
+          "kda": 5.75,
+          "cs": 10,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 23067,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2020,
+            3071,
+            6692,
+            2055,
+            2422,
+            6333
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUiznCE0U3MYsElMBLRGTL8G89b3HyOFSE=",
           "gameCreation": 1792815327000,
@@ -6017,45 +6061,10 @@
             3158
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUcFrAB9TFxUte6UcljdS18KFIXGCYV2ig=",
-          "gameCreation": 1792385932000,
-          "gameDurationSeconds": 2091,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 10,
-          "deaths": 8,
-          "assists": 12,
-          "kda": 2.75,
-          "cs": 17,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 48874,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3133,
-            3111,
-            3071,
-            6692,
-            3026,
-            3156
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1412 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1412 LP · 20 partidas consultadas · 72% WR · KDA medio 4.1.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1412 LP · 20 partidas consultadas · 72% WR · KDA medio 4.2.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -6823,7 +6832,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
