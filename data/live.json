@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T03:05:49.905Z",
-  "syncedAt": "2026-10-26T03:05:49.905Z",
+  "generatedAt": "2026-10-26T03:10:50.472Z",
+  "syncedAt": "2026-10-26T03:10:50.472Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -5166,10 +5166,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1446,
-      "wins": 68,
+      "lp": 1480,
+      "wins": 69,
       "losses": 26,
-      "winrate": 72.3,
+      "winrate": 72.6,
       "streak": 2,
       "avgKda": 4.5,
       "avgKills": 5.2,
@@ -6071,8 +6071,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1446 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1446 LP · 20 partidas consultadas · 72.3% WR · KDA medio 4.5.",
+      "statusBadge": "GRANDMASTER I (1480 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1480 LP · 20 partidas consultadas · 72.6% WR · KDA medio 4.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -6845,6 +6845,15 @@
           "division": "I",
           "lp": 1446,
           "wins": 68,
+          "losses": 26,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792984250471,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1480,
+          "wins": 69,
           "losses": 26,
           "note": "Sincronización automática desde OP.GG"
         }
