@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T02:50:52.806Z",
-  "syncedAt": "2026-10-26T02:50:52.806Z",
+  "generatedAt": "2026-10-26T03:05:49.905Z",
+  "syncedAt": "2026-10-26T03:05:49.905Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3586,10 +3586,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1570,
-      "wins": 68,
+      "lp": 1603,
+      "wins": 69,
       "losses": 24,
-      "winrate": 73.9,
+      "winrate": 74.2,
       "streak": 1,
       "avgKda": 5.3,
       "avgKills": 7.6,
@@ -4407,8 +4407,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1570 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1570 LP · 20 partidas consultadas · 73.9% WR · KDA medio 5.3.",
+      "statusBadge": "GRANDMASTER I (1603 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1603 LP · 20 partidas consultadas · 74.2% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5138,6 +5138,15 @@
           "wins": 68,
           "losses": 24,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792983946403,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1603,
+          "wins": 69,
+          "losses": 24,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 3,
@@ -5161,11 +5170,11 @@
       "wins": 68,
       "losses": 26,
       "winrate": 72.3,
-      "streak": 1,
-      "avgKda": 4.2,
-      "avgKills": 4.4,
+      "streak": 2,
+      "avgKda": 4.5,
+      "avgKills": 5.2,
       "avgDeaths": 7,
-      "avgAssists": 12.2,
+      "avgAssists": 12.6,
       "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5207,6 +5216,19 @@
           "assists": 16,
           "kda": 1.8,
           "csPerMin": 1.5
+        },
+        {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 16,
+          "deaths": 5,
+          "assists": 17,
+          "kda": 6.6,
+          "csPerMin": 1.1
         },
         {
           "championName": "Shen",
@@ -5350,22 +5372,44 @@
           "assists": 6,
           "kda": 1.1,
           "csPerMin": 1.5
-        },
-        {
-          "championName": "Renata Glasc",
-          "championId": "888",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 0,
-          "deaths": 6,
-          "assists": 9,
-          "kda": 1.5,
-          "csPerMin": 0.7
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWm3e987k92tQqfT8G9mtZQLI4S2NCWQis=",
+          "gameCreation": 1792983757000,
+          "gameDurationSeconds": 2295,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 16,
+          "deaths": 5,
+          "assists": 17,
+          "kda": 6.6,
+          "cs": 42,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 52113,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3142,
+            6694,
+            6699,
+            6333,
+            3814,
+            2520
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUiCXzzxDLZVBx-JnRFy-AKZ8BpmKhtBWw=",
           "gameCreation": 1792980934000,
@@ -6025,43 +6069,10 @@
             1052
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWVByCi0YKAoaUO2yH4kAo4D4E_q8oQIQM=",
-          "gameCreation": 1792387870000,
-          "gameDurationSeconds": 1420,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Renata Glasc",
-          "championId": "888",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 6,
-          "assists": 9,
-          "kda": 1.5,
-          "cs": 17,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 6864,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3190,
-            3222,
-            3158
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1446 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1446 LP · 20 partidas consultadas · 72.3% WR · KDA medio 4.2.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1446 LP · 20 partidas consultadas · 72.3% WR · KDA medio 4.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
