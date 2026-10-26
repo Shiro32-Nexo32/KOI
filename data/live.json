@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T02:45:55.595Z",
-  "syncedAt": "2026-10-26T02:45:55.595Z",
+  "generatedAt": "2026-10-26T02:50:52.806Z",
+  "syncedAt": "2026-10-26T02:50:52.806Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1447,10 +1447,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1300,
+      "lp": 1274,
       "wins": 62,
-      "losses": 24,
-      "winrate": 72.1,
+      "losses": 25,
+      "winrate": 71.3,
       "streak": -1,
       "avgKda": 5.8,
       "avgKills": 7.3,
@@ -2284,8 +2284,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1300 LP)",
-      "analystSummary": "Elyoya: MASTER I 1300 LP · 20 partidas consultadas · 72.1% WR · KDA medio 5.8.",
+      "statusBadge": "MASTER I (1274 LP)",
+      "analystSummary": "Elyoya: MASTER I 1274 LP · 20 partidas consultadas · 71.3% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2979,6 +2979,15 @@
           "wins": 62,
           "losses": 24,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792983043636,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1274,
+          "wins": 62,
+          "losses": 25,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 5,
@@ -3581,26 +3590,26 @@
       "wins": 68,
       "losses": 24,
       "winrate": 73.9,
-      "streak": -1,
-      "avgKda": 5,
-      "avgKills": 7.3,
-      "avgDeaths": 4.3,
-      "avgAssists": 7.8,
+      "streak": 1,
+      "avgKda": 5.3,
+      "avgKills": 7.6,
+      "avgDeaths": 4.2,
+      "avgAssists": 8.3,
       "avgCsPerMin": 7.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 5,
-          "wins": 3,
+          "games": 6,
+          "wins": 4,
           "losses": 2,
-          "winrate": 60,
-          "kills": 20,
-          "deaths": 12,
-          "assists": 35,
-          "kda": 4.6,
-          "csPerMin": 9.1
+          "winrate": 66.7,
+          "kills": 30,
+          "deaths": 16,
+          "assists": 52,
+          "kda": 5.1,
+          "csPerMin": 8.9
         },
         {
           "championName": "Lucian",
@@ -3705,22 +3714,43 @@
           "assists": 17,
           "kda": 8.3,
           "csPerMin": 9.4
-        },
-        {
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 5,
-          "deaths": 6,
-          "assists": 5,
-          "kda": 1.7,
-          "csPerMin": 8.1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU_7U8cbMSP4eUCL6I7uNGHTYC7VXLpWpQ=",
+          "gameCreation": 1792982862000,
+          "gameDurationSeconds": 1290,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jhin",
+          "championId": "202",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 10,
+          "deaths": 4,
+          "assists": 17,
+          "kda": 6.75,
+          "cs": 175,
+          "csPerMin": 8.1,
+          "killParticipationPct": 0,
+          "damageDealt": 24041,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3095,
+            1038,
+            3094,
+            1086,
+            1018
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXPzQS_oE7s05bMZrxSytiqgr_hIqEWp2w=",
           "gameCreation": 1792943046000,
@@ -4375,44 +4405,10 @@
             3085
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUnOIe5RHNcJrnAYK4jyMBtXkCrxl7LFBo=",
-          "gameCreation": 1792427433000,
-          "gameDurationSeconds": 1661,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Kai'Sa",
-          "championId": "145",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 5,
-          "deaths": 6,
-          "assists": 5,
-          "kda": 1.67,
-          "cs": 225,
-          "csPerMin": 8.1,
-          "killParticipationPct": 0,
-          "damageDealt": 18963,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerHaste",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            2420,
-            3115,
-            3124,
-            3087
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1570 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1570 LP · 20 partidas consultadas · 73.9% WR · KDA medio 5.",
+      "analystSummary": "Supa: GRANDMASTER I 1570 LP · 20 partidas consultadas · 73.9% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5144,7 +5140,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -6842,7 +6838,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
