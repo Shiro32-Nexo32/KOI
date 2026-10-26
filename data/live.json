@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T03:50:52.374Z",
-  "syncedAt": "2026-10-26T03:50:52.375Z",
+  "generatedAt": "2026-10-26T04:05:51.555Z",
+  "syncedAt": "2026-10-26T04:05:51.555Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1427,7 +1427,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1451,11 +1451,11 @@
       "wins": 63,
       "losses": 25,
       "winrate": 71.6,
-      "streak": 1,
-      "avgKda": 4.8,
-      "avgKills": 7.3,
-      "avgDeaths": 4.3,
-      "avgAssists": 8,
+      "streak": 2,
+      "avgKda": 5.6,
+      "avgKills": 7.6,
+      "avgDeaths": 4.2,
+      "avgAssists": 8.2,
       "avgCsPerMin": 2.6,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1473,6 +1473,19 @@
           "csPerMin": 1.4
         },
         {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 3,
+          "wins": 3,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 24,
+          "deaths": 5,
+          "assists": 23,
+          "kda": 9.4,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Lee Sin",
           "championId": "64",
           "games": 3,
@@ -1484,19 +1497,6 @@
           "assists": 19,
           "kda": 2.5,
           "csPerMin": 0.9
-        },
-        {
-          "championName": "Qiyana",
-          "championId": "246",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 14,
-          "deaths": 5,
-          "assists": 14,
-          "kda": 5.6,
-          "csPerMin": 0.6
         },
         {
           "championName": "Zaahen",
@@ -1575,22 +1575,44 @@
           "assists": 11,
           "kda": 3,
           "csPerMin": 0.9
-        },
-        {
-          "championName": "Maokai",
-          "championId": "57",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 5,
-          "deaths": 3,
-          "assists": 5,
-          "kda": 3.3,
-          "csPerMin": 0.9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgV2y3M80fZCdV3QqrQ6EFnR4MAYvJgoU1s=",
+          "gameCreation": 1792987379000,
+          "gameDurationSeconds": 1501,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 10,
+          "deaths": 0,
+          "assists": 9,
+          "kda": 19,
+          "cs": 39,
+          "csPerMin": 1.6,
+          "killParticipationPct": 0,
+          "damageDealt": 23086,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            6699,
+            3158,
+            2520,
+            3814,
+            3142
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXhukq9r66l8rdywQotv1sNB9pumLQSicA=",
           "gameCreation": 1792985567000,
@@ -2248,44 +2270,10 @@
             1052
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXBZ6EHFTsDSTBzsUfopm57pAj3Rsz21pQ=",
-          "gameCreation": 1792515441000,
-          "gameDurationSeconds": 1864,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Maokai",
-          "championId": "57",
-          "champLevel": 15,
-          "role": "JUNGLE",
-          "kills": 5,
-          "deaths": 3,
-          "assists": 5,
-          "kda": 3.33,
-          "cs": 29,
-          "csPerMin": 0.9,
-          "killParticipationPct": 0,
-          "damageDealt": 24116,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6653,
-            2502,
-            3047,
-            8010,
-            3082
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1308 LP)",
-      "analystSummary": "Elyoya: MASTER I 1308 LP · 20 partidas consultadas · 71.6% WR · KDA medio 4.8.",
+      "analystSummary": "Elyoya: MASTER I 1308 LP · 20 partidas consultadas · 71.6% WR · KDA medio 5.6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3599,12 +3587,12 @@
       "wins": 70,
       "losses": 24,
       "winrate": 74.5,
-      "streak": 2,
-      "avgKda": 5.3,
-      "avgKills": 8.1,
+      "streak": 3,
+      "avgKda": 5.5,
+      "avgKills": 8.4,
       "avgDeaths": 4.3,
-      "avgAssists": 8.4,
-      "avgCsPerMin": 7.9,
+      "avgAssists": 8.8,
+      "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3619,19 +3607,6 @@
           "assists": 52,
           "kda": 5.1,
           "csPerMin": 8.9
-        },
-        {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 3,
-          "wins": 2,
-          "losses": 1,
-          "winrate": 66.7,
-          "kills": 23,
-          "deaths": 17,
-          "assists": 25,
-          "kda": 2.8,
-          "csPerMin": 7.9
         },
         {
           "championName": "Ezreal",
@@ -3658,6 +3633,32 @@
           "assists": 33,
           "kda": 4.6,
           "csPerMin": 0.8
+        },
+        {
+          "championName": "Lucian",
+          "championId": "236",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 22,
+          "deaths": 13,
+          "assists": 24,
+          "kda": 3.5,
+          "csPerMin": 7.4
+        },
+        {
+          "championName": "Ziggs",
+          "championId": "115",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 8,
+          "deaths": 5,
+          "assists": 8,
+          "kda": 3.2,
+          "csPerMin": 8.2
         },
         {
           "championName": "Tristana",
@@ -3739,6 +3740,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgV2y3M80fZCdV3QqrQ6EFnR4MAYvJgoU1s=",
+          "gameCreation": 1792987379000,
+          "gameDurationSeconds": 1501,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Ziggs",
+          "championId": "115",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 8,
+          "deaths": 5,
+          "assists": 8,
+          "kda": 3.2,
+          "cs": 206,
+          "csPerMin": 8.2,
+          "killParticipationPct": 0,
+          "damageDealt": 24317,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerTeleport",
+            "SummonerFlash"
+          ],
+          "items": [
+            1056,
+            1058,
+            1082,
+            6655,
+            4646,
+            4645
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXJF8rnNqPQQwq7KjLSedyTJ-8Z3_NwLLY=",
           "gameCreation": 1792985155000,
@@ -4393,43 +4429,10 @@
             6675
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUGvDFT1c_yMT1-nrlDlPuD-uHb_nVo04Q=",
-          "gameCreation": 1792469513000,
-          "gameDurationSeconds": 965,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Lucian",
-          "championId": "236",
-          "champLevel": 9,
-          "role": "ADC",
-          "kills": 1,
-          "deaths": 4,
-          "assists": 1,
-          "kda": 0.5,
-          "cs": 141,
-          "csPerMin": 8.8,
-          "killParticipationPct": 0,
-          "damageDealt": 7208,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            3508,
-            1037,
-            1018
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1636 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1636 LP · 20 partidas consultadas · 74.5% WR · KDA medio 5.3.",
+      "analystSummary": "Supa: GRANDMASTER I 1636 LP · 20 partidas consultadas · 74.5% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5179,7 +5182,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
