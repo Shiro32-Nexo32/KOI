@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T03:35:50.304Z",
-  "syncedAt": "2026-10-26T03:35:50.304Z",
+  "generatedAt": "2026-10-26T03:40:50.465Z",
+  "syncedAt": "2026-10-26T03:40:50.465Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1447,10 +1447,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1274,
-      "wins": 62,
+      "lp": 1308,
+      "wins": 63,
       "losses": 25,
-      "winrate": 71.3,
+      "winrate": 71.6,
       "streak": 1,
       "avgKda": 4.8,
       "avgKills": 7.3,
@@ -2284,8 +2284,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1274 LP)",
-      "analystSummary": "Elyoya: MASTER I 1274 LP · 20 partidas consultadas · 71.3% WR · KDA medio 4.8.",
+      "statusBadge": "MASTER I (1308 LP)",
+      "analystSummary": "Elyoya: MASTER I 1308 LP · 20 partidas consultadas · 71.6% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -2988,9 +2988,18 @@
           "wins": 62,
           "losses": 25,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792986040594,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1308,
+          "wins": 63,
+          "losses": 25,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3586,10 +3595,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1603,
-      "wins": 69,
+      "lp": 1636,
+      "wins": 70,
       "losses": 24,
-      "winrate": 74.2,
+      "winrate": 74.5,
       "streak": 2,
       "avgKda": 5.3,
       "avgKills": 8.1,
@@ -4419,8 +4428,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1603 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1603 LP · 20 partidas consultadas · 74.2% WR · KDA medio 5.3.",
+      "statusBadge": "GRANDMASTER I (1636 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1636 LP · 20 partidas consultadas · 74.5% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5159,6 +5168,15 @@
           "wins": 69,
           "losses": 24,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1792986046846,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1636,
+          "wins": 70,
+          "losses": 24,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 3,
@@ -5182,11 +5200,11 @@
       "wins": 69,
       "losses": 26,
       "winrate": 72.6,
-      "streak": 2,
-      "avgKda": 4.5,
-      "avgKills": 5.2,
-      "avgDeaths": 7,
-      "avgAssists": 12.6,
+      "streak": -1,
+      "avgKda": 4.6,
+      "avgKills": 5,
+      "avgDeaths": 6.7,
+      "avgAssists": 13.2,
       "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5295,6 +5313,19 @@
           "csPerMin": 0.7
         },
         {
+          "championName": "Alistar",
+          "championId": "12",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 2,
+          "deaths": 6,
+          "assists": 18,
+          "kda": 3.3,
+          "csPerMin": 0.8
+        },
+        {
           "championName": "Ambessa",
           "championId": "799",
           "games": 1,
@@ -5371,22 +5402,44 @@
           "assists": 15,
           "kda": 1.6,
           "csPerMin": 0.9
-        },
-        {
-          "championName": "Zoe",
-          "championId": "142",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 6,
-          "deaths": 11,
-          "assists": 6,
-          "kda": 1.1,
-          "csPerMin": 1.5
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVUfITsNC96cTppmm18vXNOzBfIAlvosqQ=",
+          "gameCreation": 1792985741000,
+          "gameDurationSeconds": 1561,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Alistar",
+          "championId": "12",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 6,
+          "assists": 18,
+          "kda": 3.33,
+          "cs": 20,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 10433,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3876,
+            3190,
+            3050,
+            3009,
+            1028,
+            2022
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWm3e987k92tQqfT8G9mtZQLI4S2NCWQis=",
           "gameCreation": 1792983757000,
@@ -6046,45 +6099,10 @@
             1029
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUvCdU_bSGqMY6IDy1rxGRanqMmfAx2C-Q=",
-          "gameCreation": 1792390055000,
-          "gameDurationSeconds": 1961,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Zoe",
-          "championId": "142",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 6,
-          "deaths": 11,
-          "assists": 6,
-          "kda": 1.09,
-          "cs": 49,
-          "csPerMin": 1.5,
-          "killParticipationPct": 0,
-          "damageDealt": 24669,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3871,
-            6655,
-            4005,
-            3158,
-            4628,
-            1052
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1480 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1480 LP · 20 partidas consultadas · 72.6% WR · KDA medio 4.5.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1480 LP · 20 partidas consultadas · 72.6% WR · KDA medio 4.6.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -6870,7 +6888,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
