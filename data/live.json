@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T17:15:57.028Z",
-  "syncedAt": "2026-10-27T17:15:57.028Z",
+  "generatedAt": "2026-10-27T17:20:48.422Z",
+  "syncedAt": "2026-10-27T17:20:48.422Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -5307,7 +5307,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -5328,26 +5328,26 @@
       "wins": 74,
       "losses": 27,
       "winrate": 73.3,
-      "streak": 5,
-      "avgKda": 6.3,
-      "avgKills": 6.7,
-      "avgDeaths": 5.9,
-      "avgAssists": 13.4,
+      "streak": 6,
+      "avgKda": 6.5,
+      "avgKills": 7,
+      "avgDeaths": 5.8,
+      "avgAssists": 13.8,
       "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Lee Sin",
           "championId": "64",
-          "games": 6,
-          "wins": 5,
+          "games": 7,
+          "wins": 6,
           "losses": 1,
-          "winrate": 83.3,
-          "kills": 64,
-          "deaths": 21,
-          "assists": 71,
+          "winrate": 85.7,
+          "kills": 70,
+          "deaths": 25,
+          "assists": 89,
           "kda": 6.4,
-          "csPerMin": 0.9
+          "csPerMin": 0.8
         },
         {
           "championName": "Qiyana",
@@ -5478,22 +5478,43 @@
           "assists": 10,
           "kda": 1.8,
           "csPerMin": 1
-        },
-        {
-          "championName": "Seraphine",
-          "championId": "147",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 0,
-          "deaths": 7,
-          "assists": 11,
-          "kda": 1.6,
-          "csPerMin": 0.8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWj-wvz1a4IACyfE3C6D0desFJ2W9LPxD8=",
+          "gameCreation": 1793121549000,
+          "gameDurationSeconds": 1704,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 6,
+          "deaths": 4,
+          "assists": 18,
+          "kda": 6,
+          "cs": 12,
+          "csPerMin": 0.4,
+          "killParticipationPct": 0,
+          "damageDealt": 28205,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6692,
+            3071,
+            6333,
+            1028,
+            2422
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWVpB1gttPLsjmQW6XYSAOqPhRu4vcci4w=",
           "gameCreation": 1793077696000,
@@ -6154,45 +6175,10 @@
             3175
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUQoLOxQGEtWoEDhT1KzIUaIKM6HDXFTNo=",
-          "gameCreation": 1792522525000,
-          "gameDurationSeconds": 1977,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Seraphine",
-          "championId": "147",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 0,
-          "deaths": 7,
-          "assists": 11,
-          "kda": 1.57,
-          "cs": 27,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 11181,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3870,
-            3222,
-            3916,
-            3158,
-            6620,
-            3114
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1619 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1619 LP · 20 partidas consultadas · 73.3% WR · KDA medio 6.3.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1619 LP · 20 partidas consultadas · 73.3% WR · KDA medio 6.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7068,7 +7054,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
