@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T18:35:50.269Z",
-  "syncedAt": "2026-10-27T18:35:50.270Z",
+  "generatedAt": "2026-10-27T18:41:05.004Z",
+  "syncedAt": "2026-10-27T18:41:05.004Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1048,
-      "wins": 56,
+      "lp": 1082,
+      "wins": 57,
       "losses": 25,
-      "winrate": 69.1,
+      "winrate": 69.5,
       "streak": 1,
       "avgKda": 3.3,
       "avgKills": 5.9,
@@ -791,8 +791,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1048 LP)",
-      "analystSummary": "Myrwn: MASTER I 1048 LP · 19 partidas consultadas · 69.1% WR · KDA medio 3.3.",
+      "statusBadge": "MASTER I (1082 LP)",
+      "analystSummary": "Myrwn: MASTER I 1082 LP · 19 partidas consultadas · 69.5% WR · KDA medio 3.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1457,6 +1457,15 @@
           "division": "I",
           "lp": 1048,
           "wins": 56,
+          "losses": 25,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793126446045,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1082,
+          "wins": 57,
           "losses": 25,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -3113,11 +3122,11 @@
       "losses": 2,
       "winrate": 86.7,
       "streak": -2,
-      "avgKda": 4.6,
-      "avgKills": 8.5,
-      "avgDeaths": 3.5,
-      "avgAssists": 4.5,
-      "avgCsPerMin": 8.3,
+      "avgKda": 4,
+      "avgKills": 9,
+      "avgDeaths": 3.9,
+      "avgAssists": 4.2,
+      "avgCsPerMin": 8.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3210,19 +3219,6 @@
           "assists": 5,
           "kda": 2,
           "csPerMin": 10
-        },
-        {
-          "championName": "Viktor",
-          "championId": "112",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 0,
-          "assists": 7,
-          "kda": 11,
-          "csPerMin": 9.4
         },
         {
           "championName": "Rumble",
@@ -3582,43 +3578,10 @@
             1055
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVrKCQDvFrV0516YmezwU19zZ0bcTWp6y4=",
-          "gameCreation": 1791306003000,
-          "gameDurationSeconds": 964,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Viktor",
-          "championId": "112",
-          "champLevel": 12,
-          "role": "MID",
-          "kills": 4,
-          "deaths": 0,
-          "assists": 7,
-          "kda": 11,
-          "cs": 151,
-          "csPerMin": 9.4,
-          "killParticipationPct": 0,
-          "damageDealt": 15605,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            2421,
-            6655,
-            3173,
-            1056
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "DIAMOND I (67 LP)",
-      "analystSummary": "Jojopyun: DIAMOND I 67 LP · 11 partidas consultadas · 86.7% WR · KDA medio 4.6.",
+      "analystSummary": "Jojopyun: DIAMOND I 67 LP · 10 partidas consultadas · 86.7% WR · KDA medio 4.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
