@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T05:01:01.510Z",
-  "syncedAt": "2026-10-27T05:01:01.510Z",
+  "generatedAt": "2026-10-27T05:10:50.041Z",
+  "syncedAt": "2026-10-27T05:10:50.042Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -5260,15 +5260,15 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1586,
-      "wins": 73,
+      "lp": 1619,
+      "wins": 74,
       "losses": 27,
-      "winrate": 73,
-      "streak": 4,
-      "avgKda": 6.1,
-      "avgKills": 6.2,
-      "avgDeaths": 6,
-      "avgAssists": 13.8,
+      "winrate": 73.3,
+      "streak": 5,
+      "avgKda": 6.3,
+      "avgKills": 6.7,
+      "avgDeaths": 5.9,
+      "avgAssists": 13.4,
       "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5284,6 +5284,19 @@
           "assists": 71,
           "kda": 6.4,
           "csPerMin": 0.9
+        },
+        {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 28,
+          "deaths": 7,
+          "assists": 29,
+          "kda": 8.1,
+          "csPerMin": 1.2
         },
         {
           "championName": "Alistar",
@@ -5309,19 +5322,6 @@
           "deaths": 22,
           "assists": 45,
           "kda": 2.4,
-          "csPerMin": 1.1
-        },
-        {
-          "championName": "Qiyana",
-          "championId": "246",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 16,
-          "deaths": 5,
-          "assists": 17,
-          "kda": 6.6,
           "csPerMin": 1.1
         },
         {
@@ -5362,19 +5362,6 @@
           "assists": 14,
           "kda": 18,
           "csPerMin": 8.9
-        },
-        {
-          "championName": "Rakan",
-          "championId": "497",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 3,
-          "assists": 20,
-          "kda": 7.3,
-          "csPerMin": 1.2
         },
         {
           "championName": "Ambessa",
@@ -5443,6 +5430,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWVpB1gttPLsjmQW6XYSAOqPhRu4vcci4w=",
+          "gameCreation": 1793077696000,
+          "gameDurationSeconds": 2085,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 12,
+          "deaths": 2,
+          "assists": 12,
+          "kda": 12,
+          "cs": 45,
+          "csPerMin": 1.3,
+          "killParticipationPct": 0,
+          "damageDealt": 44848,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3036,
+            6699,
+            3814,
+            2520,
+            3158,
+            3026
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXFj2yLLO98Ge3xVCqv1324AOFZsqhIAuc=",
           "gameCreation": 1793074944000,
@@ -6103,44 +6125,10 @@
             3114
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUsSXjpANkhuxRoqAS-1yngJMG7m1BO8oM=",
-          "gameCreation": 1792474346000,
-          "gameDurationSeconds": 1268,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Rakan",
-          "championId": "497",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 2,
-          "deaths": 3,
-          "assists": 20,
-          "kda": 7.33,
-          "cs": 26,
-          "csPerMin": 1.2,
-          "killParticipationPct": 0,
-          "damageDealt": 6834,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3111,
-            3050,
-            2525,
-            2022
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1586 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1586 LP · 20 partidas consultadas · 73% WR · KDA medio 6.1.",
+      "statusBadge": "GRANDMASTER I (1619 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1619 LP · 20 partidas consultadas · 73.3% WR · KDA medio 6.3.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -6985,6 +6973,15 @@
           "division": "I",
           "lp": 1586,
           "wins": 73,
+          "losses": 27,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793077850040,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1619,
+          "wins": 74,
           "losses": 27,
           "note": "Sincronización automática desde OP.GG"
         }
