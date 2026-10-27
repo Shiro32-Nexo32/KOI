@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T17:30:50.656Z",
-  "syncedAt": "2026-10-27T17:30:50.656Z",
+  "generatedAt": "2026-10-27T17:35:51.997Z",
+  "syncedAt": "2026-10-27T17:35:51.998Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3649,7 +3649,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -3672,26 +3672,39 @@
       "wins": 73,
       "losses": 24,
       "winrate": 75.3,
-      "streak": 5,
-      "avgKda": 5.4,
-      "avgKills": 8.9,
-      "avgDeaths": 4.3,
+      "streak": -1,
+      "avgKda": 4.9,
+      "avgKills": 9.1,
+      "avgDeaths": 4.6,
       "avgAssists": 7.3,
-      "avgCsPerMin": 8.2,
+      "avgCsPerMin": 8.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 6,
-          "wins": 4,
+          "games": 5,
+          "wins": 3,
           "losses": 2,
+          "winrate": 60,
+          "kills": 27,
+          "deaths": 15,
+          "assists": 43,
+          "kda": 4.7,
+          "csPerMin": 8.8
+        },
+        {
+          "championName": "Lucian",
+          "championId": "236",
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
           "winrate": 66.7,
-          "kills": 30,
-          "deaths": 16,
-          "assists": 52,
-          "kda": 5.1,
-          "csPerMin": 8.9
+          "kills": 27,
+          "deaths": 21,
+          "assists": 33,
+          "kda": 2.9,
+          "csPerMin": 7.6
         },
         {
           "championName": "Ezreal",
@@ -3718,19 +3731,6 @@
           "assists": 8,
           "kda": 4.9,
           "csPerMin": 9.3
-        },
-        {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 22,
-          "deaths": 13,
-          "assists": 24,
-          "kda": 3.5,
-          "csPerMin": 7.4
         },
         {
           "championName": "Vayne",
@@ -3825,6 +3825,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXGF9RXZ8uZHuby7TlZuuM55n1-AffRN3g=",
+          "gameCreation": 1793122241000,
+          "gameDurationSeconds": 2074,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Lucian",
+          "championId": "236",
+          "champLevel": 16,
+          "role": "ADC",
+          "kills": 5,
+          "deaths": 8,
+          "assists": 9,
+          "kda": 1.75,
+          "cs": 281,
+          "csPerMin": 8.1,
+          "killParticipationPct": 0,
+          "damageDealt": 33432,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBoost",
+            "SummonerFlash"
+          ],
+          "items": [
+            3508,
+            6675,
+            1038,
+            3031,
+            3033,
+            2019
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUWDq7lPJSOIMeCyzPJWmvWj-QfiS2ArV0=",
           "gameCreation": 1793057893000,
@@ -4479,45 +4514,10 @@
             1037
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVsmqARLXSI-UAQwODZSr00HZzXiPkbpMs=",
-          "gameCreation": 1792526446000,
-          "gameDurationSeconds": 1169,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jhin",
-          "championId": "202",
-          "champLevel": 12,
-          "role": "ADC",
-          "kills": 3,
-          "deaths": 1,
-          "assists": 9,
-          "kda": 12,
-          "cs": 192,
-          "csPerMin": 9.9,
-          "killParticipationPct": 0,
-          "damageDealt": 15606,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3046,
-            2031,
-            2055,
-            6697,
-            1037,
-            1120
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1768 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1768 LP · 20 partidas consultadas · 75.3% WR · KDA medio 5.4.",
+      "analystSummary": "Supa: GRANDMASTER I 1768 LP · 20 partidas consultadas · 75.3% WR · KDA medio 4.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5312,7 +5312,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -5329,10 +5329,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1619,
-      "wins": 74,
+      "lp": 1652,
+      "wins": 75,
       "losses": 27,
-      "winrate": 73.3,
+      "winrate": 73.5,
       "streak": 6,
       "avgKda": 6.5,
       "avgKills": 7,
@@ -6182,8 +6182,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1619 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1619 LP · 20 partidas consultadas · 73.3% WR · KDA medio 6.5.",
+      "statusBadge": "GRANDMASTER I (1652 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1652 LP · 20 partidas consultadas · 73.5% WR · KDA medio 6.5.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7055,6 +7055,15 @@
           "division": "I",
           "lp": 1619,
           "wins": 74,
+          "losses": 27,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793122551996,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1652,
+          "wins": 75,
           "losses": 27,
           "note": "Sincronización automática desde OP.GG"
         }
