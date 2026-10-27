@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T16:35:52.857Z",
-  "syncedAt": "2026-10-27T16:35:52.858Z",
+  "generatedAt": "2026-10-27T17:05:48.156Z",
+  "syncedAt": "2026-10-27T17:05:48.156Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,26 +22,26 @@
       "wins": 56,
       "losses": 21,
       "winrate": 72.7,
-      "streak": -1,
-      "avgKda": 3.8,
-      "avgKills": 5.7,
-      "avgDeaths": 4.4,
-      "avgAssists": 7.9,
-      "avgCsPerMin": 7.5,
+      "streak": -2,
+      "avgKda": 3.4,
+      "avgKills": 5.9,
+      "avgDeaths": 4.7,
+      "avgAssists": 7.8,
+      "avgCsPerMin": 7.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Ahri",
           "championId": "103",
-          "games": 8,
-          "wins": 6,
+          "games": 7,
+          "wins": 5,
           "losses": 2,
-          "winrate": 75,
-          "kills": 52,
+          "winrate": 71.4,
+          "kills": 48,
           "deaths": 22,
-          "assists": 70,
-          "kda": 5.5,
-          "csPerMin": 7.9
+          "assists": 64,
+          "kda": 5.1,
+          "csPerMin": 7.7
         },
         {
           "championName": "Jayce",
@@ -109,6 +109,19 @@
           "csPerMin": 6.6
         },
         {
+          "championName": "Akali",
+          "championId": "84",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 7,
+          "deaths": 6,
+          "assists": 3,
+          "kda": 1.7,
+          "csPerMin": 7.4
+        },
+        {
           "championName": "Olaf",
           "championId": "2",
           "games": 1,
@@ -136,6 +149,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUScRWVe6-P1TrocDTvVef8iiNTBQtRrVU=",
+          "gameCreation": 1793120404000,
+          "gameDurationSeconds": 1595,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Akali",
+          "championId": "84",
+          "champLevel": 16,
+          "role": "TOP",
+          "kills": 7,
+          "deaths": 6,
+          "assists": 3,
+          "kda": 1.67,
+          "cs": 196,
+          "csPerMin": 7.4,
+          "killParticipationPct": 0,
+          "damageDealt": 22623,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            3145,
+            3146,
+            3020,
+            1082,
+            4646,
+            1058
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUXxn4FjTIfkw1fHxoXEKBrutcEsi2Hpo0=",
           "gameCreation": 1793118444000,
@@ -760,43 +808,10 @@
             6610
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVE4TH798PGWj6Hv-FrNYHW1Vk_jUtESYY=",
-          "gameCreation": 1792252742000,
-          "gameDurationSeconds": 911,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ahri",
-          "championId": "103",
-          "champLevel": 12,
-          "role": "MID",
-          "kills": 4,
-          "deaths": 0,
-          "assists": 6,
-          "kda": 10,
-          "cs": 143,
-          "csPerMin": 9.4,
-          "killParticipationPct": 0,
-          "damageDealt": 13437,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            2503,
-            3171,
-            3108,
-            1056
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1126 LP)",
-      "analystSummary": "Myrwn: MASTER I 1126 LP · 19 partidas consultadas · 72.7% WR · KDA medio 3.8.",
+      "analystSummary": "Myrwn: MASTER I 1126 LP · 19 partidas consultadas · 72.7% WR · KDA medio 3.4.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
