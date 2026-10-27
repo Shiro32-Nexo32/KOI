@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T17:25:49.596Z",
-  "syncedAt": "2026-10-27T17:25:49.596Z",
+  "generatedAt": "2026-10-27T17:30:50.656Z",
+  "syncedAt": "2026-10-27T17:30:50.656Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,16 +18,16 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1100,
+      "lp": 1074,
       "wins": 56,
-      "losses": 22,
-      "winrate": 71.8,
-      "streak": -3,
-      "avgKda": 3.4,
-      "avgKills": 5.8,
-      "avgDeaths": 4.6,
-      "avgAssists": 7.6,
-      "avgCsPerMin": 7.2,
+      "losses": 24,
+      "winrate": 70,
+      "streak": -4,
+      "avgKda": 3.1,
+      "avgKills": 5.4,
+      "avgDeaths": 4.4,
+      "avgAssists": 7.2,
+      "avgCsPerMin": 6.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -109,6 +109,19 @@
           "csPerMin": 6.6
         },
         {
+          "championName": "Pantheon",
+          "championId": "80",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "kda": 0,
+          "csPerMin": 0
+        },
+        {
           "championName": "Olaf",
           "championId": "2",
           "games": 1,
@@ -133,22 +146,40 @@
           "assists": 3,
           "kda": 2,
           "csPerMin": 8.4
-        },
-        {
-          "championName": "Zaahen",
-          "championId": "904",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 8,
-          "deaths": 4,
-          "assists": 8,
-          "kda": 4,
-          "csPerMin": 7.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUG6RN3k6haiA_3TsAb-P0A9NIyAOWGRa4=",
+          "gameCreation": 1793122058000,
+          "gameDurationSeconds": 71,
+          "queueType": "SOLORANKED",
+          "isRemake": true,
+          "win": false,
+          "championName": "Pantheon",
+          "championId": "80",
+          "champLevel": 1,
+          "role": "TOP",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "kda": 0,
+          "cs": 0,
+          "csPerMin": 0,
+          "killParticipationPct": 0,
+          "damageDealt": 14,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            1055,
+            2003
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWUUDa4wgV9z5GvdGQaLtIVyuKZi6_8yLM=",
           "gameCreation": 1793121676000,
@@ -772,45 +803,10 @@
             3036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVgFwsAyqA52zgy93hqeMK1SLsnitCn4co=",
-          "gameCreation": 1792293783000,
-          "gameDurationSeconds": 1773,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Zaahen",
-          "championId": "904",
-          "champLevel": 17,
-          "role": "TOP",
-          "kills": 8,
-          "deaths": 4,
-          "assists": 8,
-          "kda": 4,
-          "cs": 219,
-          "csPerMin": 7.4,
-          "killParticipationPct": 0,
-          "damageDealt": 26687,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3140,
-            6631,
-            3076,
-            3078,
-            3047,
-            2021
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1100 LP)",
-      "analystSummary": "Myrwn: MASTER I 1100 LP · 19 partidas consultadas · 71.8% WR · KDA medio 3.4.",
+      "statusBadge": "MASTER I (1074 LP)",
+      "analystSummary": "Myrwn: MASTER I 1074 LP · 19 partidas consultadas · 70% WR · KDA medio 3.1.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1459,13 +1455,23 @@
           "wins": 56,
           "losses": 22,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793122237462,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1074,
+          "wins": 56,
+          "losses": 24,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
-        "eq3KyFixtgUoI52Qb4ARj6Ux_dZ3PnnX1CYje9_XOas="
+        "eq3KyFixtgUoI52Qb4ARj6Ux_dZ3PnnX1CYje9_XOas=",
+        "eq3KyFixtgUG6RN3k6haiA_3TsAb-P0A9NIyAOWGRa4="
       ]
     },
     {
