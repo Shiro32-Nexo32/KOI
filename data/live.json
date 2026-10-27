@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T17:20:48.422Z",
-  "syncedAt": "2026-10-27T17:20:48.422Z",
+  "generatedAt": "2026-10-27T17:25:49.596Z",
+  "syncedAt": "2026-10-27T17:25:49.596Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,12 +22,12 @@
       "wins": 56,
       "losses": 22,
       "winrate": 71.8,
-      "streak": -2,
+      "streak": -3,
       "avgKda": 3.4,
-      "avgKills": 5.9,
-      "avgDeaths": 4.7,
-      "avgAssists": 7.8,
-      "avgCsPerMin": 7.4,
+      "avgKills": 5.8,
+      "avgDeaths": 4.6,
+      "avgAssists": 7.6,
+      "avgCsPerMin": 7.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -57,17 +57,17 @@
           "csPerMin": 8.2
         },
         {
-          "championName": "Zaahen",
-          "championId": "904",
+          "championName": "Akali",
+          "championId": "84",
           "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 11,
+          "wins": 0,
+          "losses": 2,
+          "winrate": 0,
+          "kills": 9,
           "deaths": 8,
-          "assists": 12,
-          "kda": 2.9,
-          "csPerMin": 8.4
+          "assists": 4,
+          "kda": 1.6,
+          "csPerMin": 6.5
         },
         {
           "championName": "Varus",
@@ -109,19 +109,6 @@
           "csPerMin": 6.6
         },
         {
-          "championName": "Akali",
-          "championId": "84",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 7,
-          "deaths": 6,
-          "assists": 3,
-          "kda": 1.7,
-          "csPerMin": 7.4
-        },
-        {
           "championName": "Olaf",
           "championId": "2",
           "games": 1,
@@ -146,9 +133,56 @@
           "assists": 3,
           "kda": 2,
           "csPerMin": 8.4
+        },
+        {
+          "championName": "Zaahen",
+          "championId": "904",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 8,
+          "deaths": 4,
+          "assists": 8,
+          "kda": 4,
+          "csPerMin": 7.4
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWUUDa4wgV9z5GvdGQaLtIVyuKZi6_8yLM=",
+          "gameCreation": 1793121676000,
+          "gameDurationSeconds": 925,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Akali",
+          "championId": "84",
+          "champLevel": 11,
+          "role": "TOP",
+          "kills": 2,
+          "deaths": 2,
+          "assists": 1,
+          "kda": 1.5,
+          "cs": 87,
+          "csPerMin": 5.6,
+          "killParticipationPct": 0,
+          "damageDealt": 5002,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerDot"
+          ],
+          "items": [
+            2055,
+            3146,
+            2031,
+            1029,
+            3020
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUScRWVe6-P1TrocDTvVef8iiNTBQtRrVU=",
           "gameCreation": 1793120404000,
@@ -771,41 +805,6 @@
             3078,
             3047,
             2021
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgV5r8hPmzSpnB40MBB6f2IqnRahvFKWUqU=",
-          "gameCreation": 1792257103000,
-          "gameDurationSeconds": 2468,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Zaahen",
-          "championId": "904",
-          "champLevel": 20,
-          "role": "TOP",
-          "kills": 3,
-          "deaths": 4,
-          "assists": 4,
-          "kda": 1.75,
-          "cs": 383,
-          "csPerMin": 9.3,
-          "killParticipationPct": 0,
-          "damageDealt": 28579,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerExhaust"
-          ],
-          "items": [
-            3133,
-            6631,
-            3078,
-            3047,
-            6333,
-            6610
           ],
           "tags": []
         }
