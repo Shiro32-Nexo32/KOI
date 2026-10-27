@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T17:55:50.701Z",
-  "syncedAt": "2026-10-27T17:55:50.701Z",
+  "generatedAt": "2026-10-27T18:05:49.652Z",
+  "syncedAt": "2026-10-27T18:05:49.652Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3680,26 +3680,26 @@
       "wins": 73,
       "losses": 25,
       "winrate": 74.5,
-      "streak": -1,
-      "avgKda": 4.9,
-      "avgKills": 9.1,
-      "avgDeaths": 4.6,
+      "streak": 1,
+      "avgKda": 4.5,
+      "avgKills": 9,
+      "avgDeaths": 4.8,
       "avgAssists": 7.3,
-      "avgCsPerMin": 8.1,
+      "avgCsPerMin": 8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jhin",
           "championId": "202",
-          "games": 5,
-          "wins": 3,
+          "games": 4,
+          "wins": 2,
           "losses": 2,
-          "winrate": 60,
-          "kills": 27,
+          "winrate": 50,
+          "kills": 23,
           "deaths": 15,
-          "assists": 43,
-          "kda": 4.7,
-          "csPerMin": 8.8
+          "assists": 37,
+          "kda": 4,
+          "csPerMin": 8.4
         },
         {
           "championName": "Lucian",
@@ -3739,6 +3739,19 @@
           "assists": 8,
           "kda": 4.9,
           "csPerMin": 9.3
+        },
+        {
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 3,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 2,
+          "csPerMin": 7.7
         },
         {
           "championName": "Vayne",
@@ -3833,6 +3846,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXrO0qnU5btx_FCQxCmto5WzSgzoaZSeKo=",
+          "gameCreation": 1793123983000,
+          "gameDurationSeconds": 1158,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "champLevel": 11,
+          "role": "ADC",
+          "kills": 3,
+          "deaths": 4,
+          "assists": 5,
+          "kda": 2,
+          "cs": 149,
+          "csPerMin": 7.7,
+          "killParticipationPct": 0,
+          "damageDealt": 15194,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            3124,
+            2055,
+            1083,
+            6672
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXGF9RXZ8uZHuby7TlZuuM55n1-AffRN3g=",
           "gameCreation": 1793122241000,
@@ -4488,44 +4535,10 @@
             1018
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUu7DUymvMtPGo0-n9W5b5oBva1gqwkC4k=",
-          "gameCreation": 1792528175000,
-          "gameDurationSeconds": 918,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jhin",
-          "championId": "202",
-          "champLevel": 11,
-          "role": "ADC",
-          "kills": 4,
-          "deaths": 0,
-          "assists": 6,
-          "kda": 10,
-          "cs": 154,
-          "csPerMin": 10.1,
-          "killParticipationPct": 0,
-          "damageDealt": 8317,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            3046,
-            2055,
-            6697,
-            1037
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1740 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1740 LP · 20 partidas consultadas · 74.5% WR · KDA medio 4.9.",
+      "analystSummary": "Supa: GRANDMASTER I 1740 LP · 20 partidas consultadas · 74.5% WR · KDA medio 4.5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
