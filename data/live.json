@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T00:05:52.598Z",
-  "syncedAt": "2026-10-27T00:05:52.598Z",
+  "generatedAt": "2026-10-27T04:25:52.461Z",
+  "syncedAt": "2026-10-27T04:25:52.461Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1416,7 +1416,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -5251,11 +5251,11 @@
       "wins": 72,
       "losses": 27,
       "winrate": 72.7,
-      "streak": 3,
+      "streak": 4,
       "avgKda": 6.1,
-      "avgKills": 6.3,
+      "avgKills": 6.2,
       "avgDeaths": 6,
-      "avgAssists": 13.9,
+      "avgAssists": 13.8,
       "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5270,6 +5270,19 @@
           "deaths": 21,
           "assists": 71,
           "kda": 6.4,
+          "csPerMin": 0.9
+        },
+        {
+          "championName": "Alistar",
+          "championId": "12",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 5,
+          "deaths": 10,
+          "assists": 38,
+          "kda": 4.3,
           "csPerMin": 0.9
         },
         {
@@ -5351,32 +5364,6 @@
           "csPerMin": 1.2
         },
         {
-          "championName": "Tahm Kench",
-          "championId": "223",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 5,
-          "assists": 22,
-          "kda": 5.8,
-          "csPerMin": 0.7
-        },
-        {
-          "championName": "Alistar",
-          "championId": "12",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 2,
-          "deaths": 6,
-          "assists": 18,
-          "kda": 3.3,
-          "csPerMin": 0.8
-        },
-        {
           "championName": "Ambessa",
           "championId": "799",
           "games": 1,
@@ -5443,6 +5430,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXFj2yLLO98Ge3xVCqv1324AOFZsqhIAuc=",
+          "gameCreation": 1793074944000,
+          "gameDurationSeconds": 2014,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Alistar",
+          "championId": "12",
+          "champLevel": 14,
+          "role": "SUPPORT",
+          "kills": 3,
+          "deaths": 4,
+          "assists": 20,
+          "kda": 5.75,
+          "cs": 35,
+          "csPerMin": 1,
+          "killParticipationPct": 0,
+          "damageDealt": 12350,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3876,
+            3190,
+            3109,
+            3050,
+            3009,
+            3067
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXRKZzQfZeJD5wwrbBaRdBt5XalPi06-7U=",
           "gameCreation": 1793058468000,
@@ -6100,41 +6122,6 @@
             3050,
             2525,
             2022
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVMmHE7H5gBOqCkOy6Sb6jR-AQd_p8lo1M=",
-          "gameCreation": 1792472438000,
-          "gameDurationSeconds": 1601,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Tahm Kench",
-          "championId": "223",
-          "champLevel": 13,
-          "role": "SUPPORT",
-          "kills": 7,
-          "deaths": 5,
-          "assists": 22,
-          "kda": 5.8,
-          "cs": 19,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 13304,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3876,
-            3190,
-            3084,
-            3009,
-            3067,
-            3114
           ],
           "tags": []
         }
@@ -6962,7 +6949,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
