@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T05:10:50.041Z",
-  "syncedAt": "2026-10-27T05:10:50.042Z",
+  "generatedAt": "2026-10-27T05:15:50.062Z",
+  "syncedAt": "2026-10-27T05:15:50.063Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1436,10 +1436,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1316,
+      "lp": 1289,
       "wins": 64,
-      "losses": 26,
-      "winrate": 71.1,
+      "losses": 27,
+      "winrate": 70.3,
       "streak": -2,
       "avgKda": 4.8,
       "avgKills": 7.3,
@@ -2261,8 +2261,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1316 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1316 LP · 20 partidas consultadas · 71.1% WR · KDA medio 4.8.",
+      "statusBadge": "GRANDMASTER I (1289 LP)",
+      "analystSummary": "Elyoya: GRANDMASTER I 1289 LP · 20 partidas consultadas · 70.3% WR · KDA medio 4.8.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3000,6 +3000,15 @@
           "lp": 1316,
           "wins": 64,
           "losses": 26,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793078140786,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1289,
+          "wins": 64,
+          "losses": 27,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
@@ -5260,10 +5269,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1619,
-      "wins": 74,
+      "lp": 1586,
+      "wins": 73,
       "losses": 27,
-      "winrate": 73.3,
+      "winrate": 73,
       "streak": 5,
       "avgKda": 6.3,
       "avgKills": 6.7,
@@ -6127,8 +6136,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1619 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1619 LP · 20 partidas consultadas · 73.3% WR · KDA medio 6.3.",
+      "statusBadge": "GRANDMASTER I (1586 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1586 LP · 20 partidas consultadas · 73% WR · KDA medio 6.3.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -6982,6 +6991,15 @@
           "division": "I",
           "lp": 1619,
           "wins": 74,
+          "losses": 27,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793078150061,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1586,
+          "wins": 73,
           "losses": 27,
           "note": "Sincronización automática desde OP.GG"
         }
