@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T18:10:48.558Z",
-  "syncedAt": "2026-10-27T18:10:48.558Z",
+  "generatedAt": "2026-10-27T18:20:49.919Z",
+  "syncedAt": "2026-10-27T18:20:49.920Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1499,26 +1499,26 @@
       "wins": 64,
       "losses": 27,
       "winrate": 70.3,
-      "streak": -2,
-      "avgKda": 4.8,
-      "avgKills": 7.3,
-      "avgDeaths": 4.7,
-      "avgAssists": 8.2,
-      "avgCsPerMin": 2.3,
+      "streak": 1,
+      "avgKda": 4.6,
+      "avgKills": 7,
+      "avgDeaths": 4.8,
+      "avgAssists": 8.1,
+      "avgCsPerMin": 2.5,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jayce",
           "championId": "126",
-          "games": 8,
-          "wins": 4,
+          "games": 7,
+          "wins": 3,
           "losses": 4,
-          "winrate": 50,
-          "kills": 65,
-          "deaths": 42,
-          "assists": 72,
-          "kda": 3.3,
-          "csPerMin": 1.4
+          "winrate": 42.9,
+          "kills": 52,
+          "deaths": 38,
+          "assists": 62,
+          "kda": 3,
+          "csPerMin": 1.2
         },
         {
           "championName": "Lee Sin",
@@ -1558,6 +1558,19 @@
           "assists": 16,
           "kda": 4.2,
           "csPerMin": 8.7
+        },
+        {
+          "championName": "Yone",
+          "championId": "777",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 6,
+          "deaths": 7,
+          "assists": 8,
+          "kda": 2,
+          "csPerMin": 7.5
         },
         {
           "championName": "Aatrox",
@@ -1626,6 +1639,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUApSyWh5QrZy9th0Y_dgczc-Md1Lx7cs8=",
+          "gameCreation": 1793125066000,
+          "gameDurationSeconds": 2151,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Yone",
+          "championId": "777",
+          "champLevel": 20,
+          "role": "TOP",
+          "kills": 6,
+          "deaths": 7,
+          "assists": 8,
+          "kda": 2,
+          "cs": 268,
+          "csPerMin": 7.5,
+          "killParticipationPct": 0,
+          "damageDealt": 33397,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            1038,
+            3031,
+            3006,
+            6673,
+            1054,
+            6333
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX9U5xFaNhb5Qxj9Q2x0d_CMyDdfPFgtYg=",
           "gameCreation": 1793077169000,
@@ -2283,45 +2331,10 @@
             3158
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUUy64gk3wFynfskCvRyZvkE2E5yi9pq_I=",
-          "gameCreation": 1792523344000,
-          "gameDurationSeconds": 1690,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 13,
-          "deaths": 4,
-          "assists": 10,
-          "kda": 5.75,
-          "cs": 71,
-          "csPerMin": 2.5,
-          "killParticipationPct": 0,
-          "damageDealt": 48196,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3036,
-            2520,
-            3158,
-            1038,
-            6699,
-            3814
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1289 LP)",
-      "analystSummary": "Elyoya: MASTER I 1289 LP · 20 partidas consultadas · 70.3% WR · KDA medio 4.8.",
+      "analystSummary": "Elyoya: MASTER I 1289 LP · 20 partidas consultadas · 70.3% WR · KDA medio 4.6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
