@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T07:06:03.068Z",
-  "syncedAt": "2026-10-28T07:06:03.068Z",
+  "generatedAt": "2026-10-28T16:51:25.031Z",
+  "syncedAt": "2026-10-28T16:51:25.032Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -23,10 +23,10 @@
       "losses": 25,
       "winrate": 69.9,
       "streak": 2,
-      "avgKda": 3.3,
-      "avgKills": 6.4,
-      "avgDeaths": 4,
-      "avgAssists": 6.5,
+      "avgKda": 3.4,
+      "avgKills": 6.5,
+      "avgDeaths": 3.9,
+      "avgAssists": 6.6,
       "avgCsPerMin": 6.7,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -55,19 +55,6 @@
           "assists": 11,
           "kda": 3.3,
           "csPerMin": 5.3
-        },
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 12,
-          "deaths": 11,
-          "assists": 21,
-          "kda": 3,
-          "csPerMin": 7.9
         },
         {
           "championName": "Akali",
@@ -107,6 +94,19 @@
           "assists": 10,
           "kda": 2.8,
           "csPerMin": 0.7
+        },
+        {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 5,
+          "assists": 15,
+          "kda": 4.4,
+          "csPerMin": 7.5
         },
         {
           "championName": "Olaf",
@@ -754,45 +754,10 @@
             6699
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX9dZQLpqBDbHu2eAKXgtQUI8UbMqjz60s=",
-          "gameCreation": 1792427146000,
-          "gameDurationSeconds": 2270,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 20,
-          "role": "TOP",
-          "kills": 5,
-          "deaths": 6,
-          "assists": 6,
-          "kda": 1.83,
-          "cs": 314,
-          "csPerMin": 8.3,
-          "killParticipationPct": 0,
-          "damageDealt": 57594,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            6699,
-            3036,
-            6695,
-            3042,
-            2520,
-            3158
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1116 LP)",
-      "analystSummary": "Myrwn: MASTER I 1116 LP · 19 partidas consultadas · 69.9% WR · KDA medio 3.3.",
+      "analystSummary": "Myrwn: MASTER I 1116 LP · 18 partidas consultadas · 69.9% WR · KDA medio 3.4.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
