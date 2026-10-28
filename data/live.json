@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T17:11:23.131Z",
-  "syncedAt": "2026-10-28T17:11:23.131Z",
+  "generatedAt": "2026-10-28T17:21:28.928Z",
+  "syncedAt": "2026-10-28T17:21:28.929Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -25,9 +25,9 @@
       "streak": 2,
       "avgKda": 3.4,
       "avgKills": 6.5,
-      "avgDeaths": 3.9,
-      "avgAssists": 6.6,
-      "avgCsPerMin": 6.7,
+      "avgDeaths": 3.8,
+      "avgAssists": 6.1,
+      "avgCsPerMin": 6.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -94,19 +94,6 @@
           "assists": 10,
           "kda": 2.8,
           "csPerMin": 0.7
-        },
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 7,
-          "deaths": 5,
-          "assists": 15,
-          "kda": 4.4,
-          "csPerMin": 7.5
         },
         {
           "championName": "Olaf",
@@ -719,45 +706,10 @@
             3158
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWDAYNR6fOr7oTToxmnfesG_gD6PWE4m08=",
-          "gameCreation": 1792469482000,
-          "gameDurationSeconds": 2227,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 20,
-          "role": "TOP",
-          "kills": 7,
-          "deaths": 5,
-          "assists": 15,
-          "kda": 4.4,
-          "cs": 279,
-          "csPerMin": 7.5,
-          "killParticipationPct": 0,
-          "damageDealt": 55398,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            2520,
-            3036,
-            3047,
-            3042,
-            3134,
-            6699
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1116 LP)",
-      "analystSummary": "Myrwn: MASTER I 1116 LP · 18 partidas consultadas · 69.9% WR · KDA medio 3.4.",
+      "analystSummary": "Myrwn: MASTER I 1116 LP · 17 partidas consultadas · 69.9% WR · KDA medio 3.4.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1465,10 +1417,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1429,
-      "wins": 68,
+      "lp": 1462,
+      "wins": 69,
       "losses": 28,
-      "winrate": 70.8,
+      "winrate": 71.1,
       "streak": 3,
       "avgKda": 5.7,
       "avgKills": 7.6,
@@ -2289,8 +2241,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1429 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1429 LP · 20 partidas consultadas · 70.8% WR · KDA medio 5.7.",
+      "statusBadge": "GRANDMASTER I (1462 LP)",
+      "analystSummary": "Elyoya: GRANDMASTER I 1462 LP · 20 partidas consultadas · 71.1% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3099,6 +3051,15 @@
           "division": "I",
           "lp": 1429,
           "wins": 68,
+          "losses": 28,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793208075499,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1462,
+          "wins": 69,
           "losses": 28,
           "note": "Sincronización automática desde OP.GG"
         }
