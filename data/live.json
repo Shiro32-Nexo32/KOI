@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T23:46:32.534Z",
-  "syncedAt": "2026-10-27T23:46:32.535Z",
+  "generatedAt": "2026-10-28T04:01:06.712Z",
+  "syncedAt": "2026-10-28T04:01:06.712Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3137,11 +3137,11 @@
       "losses": 2,
       "winrate": 86.7,
       "streak": -2,
-      "avgKda": 4,
+      "avgKda": 4.2,
       "avgKills": 9,
-      "avgDeaths": 3.9,
-      "avgAssists": 4.2,
-      "avgCsPerMin": 8.2,
+      "avgDeaths": 3.6,
+      "avgAssists": 4.1,
+      "avgCsPerMin": 7.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3220,19 +3220,6 @@
           "deaths": 2,
           "assists": 1,
           "kda": 3,
-          "csPerMin": 10
-        },
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 9,
-          "deaths": 7,
-          "assists": 5,
-          "kda": 2,
           "csPerMin": 10
         },
         {
@@ -3558,45 +3545,10 @@
             1082
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVINwTDDtJ2LCP_BLhpACUvcoNyVlF9mEw=",
-          "gameCreation": 1791308630000,
-          "gameDurationSeconds": 1885,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 19,
-          "role": "TOP",
-          "kills": 9,
-          "deaths": 7,
-          "assists": 5,
-          "kda": 2,
-          "cs": 313,
-          "csPerMin": 10,
-          "killParticipationPct": 0,
-          "damageDealt": 35603,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            3071,
-            3042,
-            6695,
-            3161,
-            3158,
-            1055
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "DIAMOND I (67 LP)",
-      "analystSummary": "Jojopyun: DIAMOND I 67 LP · 10 partidas consultadas · 86.7% WR · KDA medio 4.",
+      "analystSummary": "Jojopyun: DIAMOND I 67 LP · 9 partidas consultadas · 86.7% WR · KDA medio 4.2.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
