@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T04:31:05.901Z",
-  "syncedAt": "2026-10-28T04:31:05.901Z",
+  "generatedAt": "2026-10-28T04:51:04.553Z",
+  "syncedAt": "2026-10-28T04:51:04.553Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3604,7 +3604,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 1,
       "eloRank": 5,
       "remakeLossMatchIds": [
         "eq3KyFixtgWRrHwjCERdYBvDPB5uGIhtQ4D3sSnOC6A="
@@ -5340,12 +5340,12 @@
       "wins": 75,
       "losses": 27,
       "winrate": 73.5,
-      "streak": 6,
-      "avgKda": 6.5,
-      "avgKills": 7,
-      "avgDeaths": 5.8,
-      "avgAssists": 13.8,
-      "avgCsPerMin": 1.6,
+      "streak": -1,
+      "avgKda": 5.8,
+      "avgKills": 6.8,
+      "avgDeaths": 6,
+      "avgAssists": 14.3,
+      "avgCsPerMin": 1.2,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -5362,6 +5362,19 @@
           "csPerMin": 0.8
         },
         {
+          "championName": "Alistar",
+          "championId": "12",
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winrate": 33.3,
+          "kills": 6,
+          "deaths": 17,
+          "assists": 61,
+          "kda": 3.9,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Qiyana",
           "championId": "246",
           "games": 2,
@@ -5373,19 +5386,6 @@
           "assists": 29,
           "kda": 8.1,
           "csPerMin": 1.2
-        },
-        {
-          "championName": "Alistar",
-          "championId": "12",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 5,
-          "deaths": 10,
-          "assists": 38,
-          "kda": 4.3,
-          "csPerMin": 0.9
         },
         {
           "championName": "Camille",
@@ -5425,19 +5425,6 @@
           "assists": 11,
           "kda": 3.6,
           "csPerMin": 1.7
-        },
-        {
-          "championName": "Orianna",
-          "championId": "61",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 1,
-          "assists": 14,
-          "kda": 18,
-          "csPerMin": 8.9
         },
         {
           "championName": "Ambessa",
@@ -5493,6 +5480,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgW1cWC54Db42vO1d9OYiU9MKY0woG88mRg=",
+          "gameCreation": 1793162999000,
+          "gameDurationSeconds": 1828,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Alistar",
+          "championId": "12",
+          "champLevel": 12,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 7,
+          "assists": 23,
+          "kda": 3.43,
+          "cs": 30,
+          "csPerMin": 1,
+          "killParticipationPct": 0,
+          "damageDealt": 6607,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3876,
+            3109,
+            3190,
+            3009,
+            3050
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWj-wvz1a4IACyfE3C6D0desFJ2W9LPxD8=",
           "gameCreation": 1793121549000,
@@ -6152,45 +6173,10 @@
             3111
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWqEWwDnxlmVATQWYLbc4F0IdhmryOMy04=",
-          "gameCreation": 1792524761000,
-          "gameDurationSeconds": 1562,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Orianna",
-          "championId": "61",
-          "champLevel": 17,
-          "role": "MID",
-          "kills": 4,
-          "deaths": 1,
-          "assists": 14,
-          "kda": 18,
-          "cs": 232,
-          "csPerMin": 8.9,
-          "killParticipationPct": 0,
-          "damageDealt": 25109,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            1058,
-            4646,
-            6655,
-            1052,
-            1056,
-            3175
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1652 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1652 LP · 20 partidas consultadas · 73.5% WR · KDA medio 6.5.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1652 LP · 20 partidas consultadas · 73.5% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7075,7 +7061,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 1,
+      "formRank": 2,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
