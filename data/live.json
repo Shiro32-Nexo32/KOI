@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T17:06:21.141Z",
-  "syncedAt": "2026-10-28T17:06:21.141Z",
+  "generatedAt": "2026-10-28T17:11:23.131Z",
+  "syncedAt": "2026-10-28T17:11:23.131Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1469,11 +1469,11 @@
       "wins": 68,
       "losses": 28,
       "winrate": 70.8,
-      "streak": 2,
-      "avgKda": 4.9,
-      "avgKills": 7.5,
-      "avgDeaths": 4.6,
-      "avgAssists": 7.3,
+      "streak": 3,
+      "avgKda": 5.7,
+      "avgKills": 7.6,
+      "avgDeaths": 4.3,
+      "avgAssists": 7.7,
       "avgCsPerMin": 2.2,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1491,30 +1491,30 @@
           "csPerMin": 1.2
         },
         {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 4,
-          "wins": 2,
-          "losses": 2,
-          "winrate": 50,
-          "kills": 30,
-          "deaths": 19,
-          "assists": 27,
-          "kda": 3,
-          "csPerMin": 0.8
-        },
-        {
           "championName": "Qiyana",
           "championId": "246",
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "losses": 0,
           "winrate": 100,
-          "kills": 12,
-          "deaths": 2,
-          "assists": 20,
+          "kills": 18,
+          "deaths": 3,
+          "assists": 30,
           "kda": 16,
-          "csPerMin": 1.1
+          "csPerMin": 1
+        },
+        {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 26,
+          "deaths": 12,
+          "assists": 24,
+          "kda": 4.2,
+          "csPerMin": 0.7
         },
         {
           "championName": "Kindred",
@@ -1596,6 +1596,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWyZRq1vQzxG7So1fspXDGYItcU7odUIK0=",
+          "gameCreation": 1793207310000,
+          "gameDurationSeconds": 1693,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 6,
+          "deaths": 1,
+          "assists": 10,
+          "kda": 16,
+          "cs": 19,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 22372,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3179,
+            2055,
+            3158,
+            3036,
+            6699,
+            2520
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVNhLUxEJFLLJbgnBwo38Sam1HqfPIMaPE=",
           "gameCreation": 1793164410000,
@@ -2252,44 +2287,10 @@
             3161
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUcoZwNdLZfe_B-9oX3w_pYwit_iCKUZ_A=",
-          "gameCreation": 1792534318000,
-          "gameDurationSeconds": 1607,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 14,
-          "role": "JUNGLE",
-          "kills": 4,
-          "deaths": 7,
-          "assists": 3,
-          "kda": 1,
-          "cs": 31,
-          "csPerMin": 1.2,
-          "killParticipationPct": 0,
-          "damageDealt": 13170,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3071,
-            1037,
-            1033,
-            3047,
-            2520
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1429 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1429 LP · 20 partidas consultadas · 70.8% WR · KDA medio 4.9.",
+      "analystSummary": "Elyoya: GRANDMASTER I 1429 LP · 20 partidas consultadas · 70.8% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3604,10 +3605,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1717,
+      "lp": 1689,
       "wins": 74,
-      "losses": 27,
-      "winrate": 73.3,
+      "losses": 28,
+      "winrate": 72.5,
       "streak": -3,
       "avgKda": 3.9,
       "avgKills": 7.8,
@@ -4474,8 +4475,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1717 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1717 LP · 20 partidas consultadas · 73.3% WR · KDA medio 3.9.",
+      "statusBadge": "GRANDMASTER I (1689 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1689 LP · 20 partidas consultadas · 72.5% WR · KDA medio 3.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5321,6 +5322,15 @@
           "lp": 1717,
           "wins": 74,
           "losses": 27,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793207478674,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1689,
+          "wins": 74,
+          "losses": 28,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
