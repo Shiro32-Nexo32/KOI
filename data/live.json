@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T05:21:05.384Z",
-  "syncedAt": "2026-10-28T05:21:05.384Z",
+  "generatedAt": "2026-10-28T05:31:04.038Z",
+  "syncedAt": "2026-10-28T05:31:04.038Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1479,7 +1479,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -5350,30 +5350,30 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1625,
+      "lp": 1598,
       "wins": 75,
-      "losses": 28,
-      "winrate": 72.8,
-      "streak": -1,
-      "avgKda": 5.8,
-      "avgKills": 6.8,
-      "avgDeaths": 6,
-      "avgAssists": 14.3,
-      "avgCsPerMin": 1.2,
+      "losses": 29,
+      "winrate": 72.1,
+      "streak": -2,
+      "avgKda": 5.7,
+      "avgKills": 6.5,
+      "avgDeaths": 6.1,
+      "avgAssists": 13.8,
+      "avgCsPerMin": 1.1,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Lee Sin",
           "championId": "64",
-          "games": 7,
+          "games": 8,
           "wins": 6,
-          "losses": 1,
-          "winrate": 85.7,
-          "kills": 70,
-          "deaths": 25,
-          "assists": 89,
-          "kda": 6.4,
-          "csPerMin": 0.8
+          "losses": 2,
+          "winrate": 75,
+          "kills": 77,
+          "deaths": 33,
+          "assists": 91,
+          "kda": 5.1,
+          "csPerMin": 0.7
         },
         {
           "championName": "Alistar",
@@ -5426,19 +5426,6 @@
           "assists": 23,
           "kda": 3.1,
           "csPerMin": 0.7
-        },
-        {
-          "championName": "Sylas",
-          "championId": "517",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 14,
-          "deaths": 7,
-          "assists": 11,
-          "kda": 3.6,
-          "csPerMin": 1.7
         },
         {
           "championName": "Ambessa",
@@ -5494,6 +5481,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUU6WIjeCzCX7lW1yW8HEeyRZnKoy9N0tg=",
+          "gameCreation": 1793165191000,
+          "gameDurationSeconds": 1652,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 13,
+          "role": "JUNGLE",
+          "kills": 7,
+          "deaths": 8,
+          "assists": 2,
+          "kda": 1.13,
+          "cs": 4,
+          "csPerMin": 0.1,
+          "killParticipationPct": 0,
+          "damageDealt": 16915,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            1028,
+            6333,
+            6692,
+            2021,
+            1037,
+            3111
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgW1cWC54Db42vO1d9OYiU9MKY0woG88mRg=",
           "gameCreation": 1793162999000,
@@ -6152,45 +6174,10 @@
             2022
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgW9gwQ1RsCyF2g7az7lNFp9oB_nF-3WdDU=",
-          "gameCreation": 1792527926000,
-          "gameDurationSeconds": 1989,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Sylas",
-          "championId": "517",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 14,
-          "deaths": 7,
-          "assists": 11,
-          "kda": 3.57,
-          "cs": 56,
-          "csPerMin": 1.7,
-          "killParticipationPct": 0,
-          "damageDealt": 38966,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3152,
-            3157,
-            1052,
-            4633,
-            3089,
-            3111
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1625 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1625 LP · 20 partidas consultadas · 72.8% WR · KDA medio 5.8.",
+      "statusBadge": "GRANDMASTER I (1598 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1598 LP · 20 partidas consultadas · 72.1% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7082,9 +7069,18 @@
           "wins": 75,
           "losses": 28,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793165464037,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1598,
+          "wins": 75,
+          "losses": 29,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
