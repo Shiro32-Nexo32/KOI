@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T17:11:05.663Z",
-  "syncedAt": "2026-10-29T17:11:05.663Z",
+  "generatedAt": "2026-10-29T17:16:01.624Z",
+  "syncedAt": "2026-10-29T17:16:01.624Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3622,14 +3622,27 @@
       "wins": 76,
       "losses": 30,
       "winrate": 71.7,
-      "streak": -1,
-      "avgKda": 4.6,
-      "avgKills": 7.3,
+      "streak": -2,
+      "avgKda": 4.5,
+      "avgKills": 7.5,
       "avgDeaths": 5,
-      "avgAssists": 8.3,
-      "avgCsPerMin": 7.8,
+      "avgAssists": 8,
+      "avgCsPerMin": 8.2,
       "avgKillParticipationPct": 0,
       "champions": [
+        {
+          "championName": "Jhin",
+          "championId": "202",
+          "games": 4,
+          "wins": 1,
+          "losses": 3,
+          "winrate": 25,
+          "kills": 24,
+          "deaths": 23,
+          "assists": 49,
+          "kda": 3.2,
+          "csPerMin": 8.1
+        },
         {
           "championName": "Tristana",
           "championId": "18",
@@ -3642,19 +3655,6 @@
           "assists": 18,
           "kda": 6.4,
           "csPerMin": 9.5
-        },
-        {
-          "championName": "Jhin",
-          "championId": "202",
-          "games": 3,
-          "wins": 1,
-          "losses": 2,
-          "winrate": 33.3,
-          "kills": 20,
-          "deaths": 19,
-          "assists": 40,
-          "kda": 3.2,
-          "csPerMin": 7.9
         },
         {
           "championName": "Ezreal",
@@ -3761,19 +3761,6 @@
           "csPerMin": 8.1
         },
         {
-          "championName": "Bard",
-          "championId": "432",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 1,
-          "deaths": 3,
-          "assists": 14,
-          "kda": 5,
-          "csPerMin": 1
-        },
-        {
           "championName": "Aphelios",
           "championId": "523",
           "games": 1,
@@ -3827,6 +3814,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWQdKUDRnuV_Q6VSZkfhNPub-SXN5m7yrQ=",
+          "gameCreation": 1793293874000,
+          "gameDurationSeconds": 1988,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jhin",
+          "championId": "202",
+          "champLevel": 16,
+          "role": "ADC",
+          "kills": 4,
+          "deaths": 4,
+          "assists": 9,
+          "kda": 3.25,
+          "cs": 299,
+          "csPerMin": 9,
+          "killParticipationPct": 0,
+          "damageDealt": 28270,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            6697,
+            3036,
+            3031,
+            3094,
+            1036
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUyAMka2pYA5HudE3l-9QcGeG5Ohy3lWR4=",
           "gameCreation": 1793291053000,
@@ -4481,43 +4502,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgU_2sfQ1IKGVr60VNB02t9ibWQ9gzc2aXA=",
-          "gameCreation": 1792770317000,
-          "gameDurationSeconds": 1311,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Bard",
-          "championId": "432",
-          "champLevel": 10,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 3,
-          "assists": 14,
-          "kda": 5,
-          "cs": 22,
-          "csPerMin": 1,
-          "killParticipationPct": 0,
-          "damageDealt": 7866,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerHeal",
-            "SummonerFlash"
-          ],
-          "items": [
-            3877,
-            3190,
-            3222,
-            3009
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1697 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1697 LP · 20 partidas consultadas · 71.7% WR · KDA medio 4.6.",
+      "analystSummary": "Supa: GRANDMASTER I 1697 LP · 20 partidas consultadas · 71.7% WR · KDA medio 4.5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
