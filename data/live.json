@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T03:05:55.557Z",
-  "syncedAt": "2026-10-29T03:05:55.557Z",
+  "generatedAt": "2026-10-29T03:25:56.350Z",
+  "syncedAt": "2026-10-29T03:25:56.350Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1421,12 +1421,12 @@
       "wins": 70,
       "losses": 29,
       "winrate": 70.7,
-      "streak": -1,
-      "avgKda": 5.9,
-      "avgKills": 8.1,
-      "avgDeaths": 4.3,
-      "avgAssists": 7.9,
-      "avgCsPerMin": 1.8,
+      "streak": 1,
+      "avgKda": 5.7,
+      "avgKills": 8.4,
+      "avgDeaths": 4.5,
+      "avgAssists": 8.1,
+      "avgCsPerMin": 1.4,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1469,6 +1469,19 @@
           "csPerMin": 0.7
         },
         {
+          "championName": "Rengar",
+          "championId": "107",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 12,
+          "deaths": 4,
+          "assists": 9,
+          "kda": 5.3,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Kindred",
           "championId": "203",
           "games": 1,
@@ -1508,19 +1521,6 @@
           "csPerMin": 7.5
         },
         {
-          "championName": "Zaahen",
-          "championId": "904",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 4,
-          "deaths": 1,
-          "assists": 5,
-          "kda": 9,
-          "csPerMin": 9.4
-        },
-        {
           "championName": "Cho'Gath",
           "championId": "31",
           "games": 1,
@@ -1535,6 +1535,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWcs4OAghbhrrXccC18tIrwlULztnERfyk=",
+          "gameCreation": 1793244139000,
+          "gameDurationSeconds": 1669,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Rengar",
+          "championId": "107",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 12,
+          "deaths": 4,
+          "assists": 9,
+          "kda": 5.25,
+          "cs": 26,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 26794,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6698,
+            3009,
+            3031,
+            3179,
+            6676
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXO6QrGpI2XcYK2qt_Bv_LxUH5h2DT5nw8=",
           "gameCreation": 1793242088000,
@@ -2191,45 +2225,10 @@
             3142
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgW6Px4Qa9mgfE2fvf1c0nIFL8VpVzmuyJk=",
-          "gameCreation": 1792727511000,
-          "gameDurationSeconds": 1356,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Zaahen",
-          "championId": "904",
-          "champLevel": 16,
-          "role": "TOP",
-          "kills": 4,
-          "deaths": 1,
-          "assists": 5,
-          "kda": 9,
-          "cs": 212,
-          "csPerMin": 9.4,
-          "killParticipationPct": 0,
-          "damageDealt": 21186,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            2031,
-            6631,
-            2055,
-            1055,
-            3078,
-            3047
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1468 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1468 LP · 20 partidas consultadas · 70.7% WR · KDA medio 5.9.",
+      "analystSummary": "Elyoya: GRANDMASTER I 1468 LP · 20 partidas consultadas · 70.7% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3087,7 +3086,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3589,15 +3588,15 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1721,
+      "lp": 1693,
       "wins": 75,
-      "losses": 28,
-      "winrate": 72.8,
-      "streak": 1,
+      "losses": 29,
+      "winrate": 72.1,
+      "streak": -1,
       "avgKda": 4,
-      "avgKills": 8,
+      "avgKills": 7.5,
       "avgDeaths": 5.1,
-      "avgAssists": 8.2,
+      "avgAssists": 8.3,
       "avgCsPerMin": 7.6,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3758,17 +3757,17 @@
           "csPerMin": 1
         },
         {
-          "championName": "Yunara",
-          "championId": "804",
+          "championName": "Varus",
+          "championId": "110",
           "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 16,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 7,
           "deaths": 8,
-          "assists": 6,
-          "kda": 2.8,
-          "csPerMin": 9
+          "assists": 9,
+          "kda": 2,
+          "csPerMin": 8.1
         },
         {
           "championName": "Alistar",
@@ -3785,6 +3784,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVu4TwU7Cco7bJMIfAEVZA5J0Cy_fgnIg8=",
+          "gameCreation": 1793243921000,
+          "gameDurationSeconds": 2301,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Varus",
+          "championId": "110",
+          "champLevel": 18,
+          "role": "ADC",
+          "kills": 7,
+          "deaths": 8,
+          "assists": 9,
+          "kda": 2,
+          "cs": 311,
+          "csPerMin": 8.1,
+          "killParticipationPct": 0,
+          "damageDealt": 35012,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerHaste",
+            "SummonerFlash"
+          ],
+          "items": [
+            3087,
+            4632,
+            3157,
+            3302,
+            3073,
+            4633
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXMswEuT4oLlcrfISJ611f3EYbLjfJTZes=",
           "gameCreation": 1793241122000,
@@ -4436,45 +4470,10 @@
             3036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgV-cr0TVrdvLITn54MxbtKUqaOSRkyF-RU=",
-          "gameCreation": 1792724334000,
-          "gameDurationSeconds": 1867,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Yunara",
-          "championId": "804",
-          "champLevel": 15,
-          "role": "ADC",
-          "kills": 16,
-          "deaths": 8,
-          "assists": 6,
-          "kda": 2.75,
-          "cs": 280,
-          "csPerMin": 9,
-          "killParticipationPct": 0,
-          "damageDealt": 49916,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            3032,
-            3085,
-            2019,
-            3072,
-            3031,
-            3036
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1721 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1721 LP · 20 partidas consultadas · 72.8% WR · KDA medio 4.",
+      "statusBadge": "GRANDMASTER I (1693 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1693 LP · 20 partidas consultadas · 72.1% WR · KDA medio 4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5339,10 +5338,19 @@
           "wins": 75,
           "losses": 28,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793244352578,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1693,
+          "wins": 75,
+          "losses": 29,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
-      "eloRank": 1,
+      "formRank": 5,
+      "eloRank": 2,
       "remakeLossMatchIds": []
     },
     {
@@ -5358,15 +5366,15 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1631,
-      "wins": 76,
+      "lp": 1697,
+      "wins": 77,
       "losses": 29,
-      "winrate": 72.4,
-      "streak": 1,
+      "winrate": 72.6,
+      "streak": 2,
       "avgKda": 5.9,
       "avgKills": 6.5,
-      "avgDeaths": 5.9,
-      "avgAssists": 14.3,
+      "avgDeaths": 5.5,
+      "avgAssists": 14.1,
       "avgCsPerMin": 1.1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5410,17 +5418,17 @@
           "csPerMin": 1.2
         },
         {
-          "championName": "Camille",
-          "championId": "164",
-          "games": 2,
+          "championName": "Bard",
+          "championId": "432",
+          "games": 1,
           "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 8,
-          "deaths": 22,
-          "assists": 45,
-          "kda": 2.4,
-          "csPerMin": 1.1
+          "losses": 0,
+          "winrate": 100,
+          "kills": 2,
+          "deaths": 8,
+          "assists": 28,
+          "kda": 3.8,
+          "csPerMin": 1
         },
         {
           "championName": "Karma",
@@ -5486,9 +5494,56 @@
           "assists": 2,
           "kda": 0.4,
           "csPerMin": 0.8
+        },
+        {
+          "championName": "Camille",
+          "championId": "164",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 7,
+          "deaths": 7,
+          "assists": 13,
+          "kda": 2.9,
+          "csPerMin": 1.1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVu4TwU7Cco7bJMIfAEVZA5J0Cy_fgnIg8=",
+          "gameCreation": 1793243921000,
+          "gameDurationSeconds": 2301,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Bard",
+          "championId": "432",
+          "champLevel": 16,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 8,
+          "assists": 28,
+          "kda": 3.75,
+          "cs": 40,
+          "csPerMin": 1,
+          "killParticipationPct": 0,
+          "damageDealt": 17076,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3190,
+            3222,
+            2525,
+            3158
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXMswEuT4oLlcrfISJ611f3EYbLjfJTZes=",
           "gameCreation": 1793241122000,
@@ -6147,45 +6202,10 @@
             6610
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUfeG7Ab2oFVYq1vBjBd3SClmXS7UmGB68=",
-          "gameCreation": 1792539111000,
-          "gameDurationSeconds": 2983,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Camille",
-          "championId": "164",
-          "champLevel": 18,
-          "role": "SUPPORT",
-          "kills": 1,
-          "deaths": 15,
-          "assists": 32,
-          "kda": 2.2,
-          "cs": 60,
-          "csPerMin": 1.2,
-          "killParticipationPct": 0,
-          "damageDealt": 32593,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            3877,
-            3190,
-            3053,
-            3047,
-            3073,
-            1011
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1631 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1631 LP · 20 partidas consultadas · 72.4% WR · KDA medio 5.9.",
+      "statusBadge": "GRANDMASTER I (1697 LP)",
+      "analystSummary": "Alvaro: GRANDMASTER I 1697 LP · 20 partidas consultadas · 72.6% WR · KDA medio 5.9.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7113,10 +7133,19 @@
           "wins": 76,
           "losses": 29,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793244356348,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1697,
+          "wins": 77,
+          "losses": 29,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 2,
-      "eloRank": 2,
+      "eloRank": 1,
       "remakeLossMatchIds": []
     }
   ],
