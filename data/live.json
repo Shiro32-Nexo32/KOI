@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T17:21:28.928Z",
-  "syncedAt": "2026-10-28T17:21:28.929Z",
+  "generatedAt": "2026-10-29T02:06:17.398Z",
+  "syncedAt": "2026-10-29T02:06:17.398Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1421,12 +1421,12 @@
       "wins": 69,
       "losses": 28,
       "winrate": 71.1,
-      "streak": 3,
-      "avgKda": 5.7,
-      "avgKills": 7.6,
-      "avgDeaths": 4.3,
-      "avgAssists": 7.7,
-      "avgCsPerMin": 2.2,
+      "streak": 4,
+      "avgKda": 5.9,
+      "avgKills": 7.9,
+      "avgDeaths": 4.2,
+      "avgAssists": 7.5,
+      "avgCsPerMin": 1.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1445,15 +1445,15 @@
         {
           "championName": "Qiyana",
           "championId": "246",
-          "games": 3,
-          "wins": 3,
+          "games": 4,
+          "wins": 4,
           "losses": 0,
           "winrate": 100,
-          "kills": 18,
-          "deaths": 3,
-          "assists": 30,
-          "kda": 16,
-          "csPerMin": 1
+          "kills": 29,
+          "deaths": 5,
+          "assists": 32,
+          "kda": 12.2,
+          "csPerMin": 0.9
         },
         {
           "championName": "Lee Sin",
@@ -1521,19 +1521,6 @@
           "csPerMin": 9.4
         },
         {
-          "championName": "Aatrox",
-          "championId": "266",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 5,
-          "deaths": 4,
-          "assists": 5,
-          "kda": 2.5,
-          "csPerMin": 8.3
-        },
-        {
           "championName": "Cho'Gath",
           "championId": "31",
           "games": 1,
@@ -1548,6 +1535,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVdbRrfnvePXjp91ztRkpCSdg2NFOXFDrk=",
+          "gameCreation": 1793239470000,
+          "gameDurationSeconds": 1500,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Qiyana",
+          "championId": "246",
+          "champLevel": 16,
+          "role": "JUNGLE",
+          "kills": 11,
+          "deaths": 2,
+          "assists": 2,
+          "kda": 6.5,
+          "cs": 17,
+          "csPerMin": 0.7,
+          "killParticipationPct": 0,
+          "damageDealt": 21056,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            6699,
+            3814,
+            3035,
+            2520,
+            3158
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWyZRq1vQzxG7So1fspXDGYItcU7odUIK0=",
           "gameCreation": 1793207310000,
@@ -2204,45 +2226,10 @@
             3814
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXoTgtoyV2jTi1i6Or6pyovKk2EENVNm-0=",
-          "gameCreation": 1792723485000,
-          "gameDurationSeconds": 1783,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Aatrox",
-          "championId": "266",
-          "champLevel": 18,
-          "role": "TOP",
-          "kills": 5,
-          "deaths": 4,
-          "assists": 5,
-          "kda": 2.5,
-          "cs": 247,
-          "csPerMin": 8.3,
-          "killParticipationPct": 0,
-          "damageDealt": 18793,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            3035,
-            3133,
-            3047,
-            6333,
-            3155,
-            3161
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1462 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1462 LP · 20 partidas consultadas · 71.1% WR · KDA medio 5.7.",
+      "analystSummary": "Elyoya: GRANDMASTER I 1462 LP · 20 partidas consultadas · 71.1% WR · KDA medio 5.9.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
