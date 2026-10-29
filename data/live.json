@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T19:45:59.454Z",
-  "syncedAt": "2026-10-29T19:45:59.454Z",
+  "generatedAt": "2026-10-29T19:55:57.771Z",
+  "syncedAt": "2026-10-29T19:55:57.772Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1438,7 +1438,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -3137,7 +3137,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -5434,7 +5434,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -5455,10 +5455,10 @@
       "wins": 79,
       "losses": 30,
       "winrate": 72.5,
-      "streak": 2,
-      "avgKda": 6,
+      "streak": -1,
+      "avgKda": 6.1,
       "avgKills": 7.5,
-      "avgDeaths": 5.7,
+      "avgDeaths": 5.4,
       "avgAssists": 13.6,
       "avgCsPerMin": 1.1,
       "avgKillParticipationPct": 0,
@@ -5542,6 +5542,19 @@
           "csPerMin": 1
         },
         {
+          "championName": "Poppy",
+          "championId": "78",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 2,
+          "deaths": 7,
+          "assists": 14,
+          "kda": 2.3,
+          "csPerMin": 1
+        },
+        {
           "championName": "Ambessa",
           "championId": "799",
           "games": 1,
@@ -5553,22 +5566,44 @@
           "assists": 2,
           "kda": 0.4,
           "csPerMin": 5.9
-        },
-        {
-          "championName": "Pyke",
-          "championId": "555",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 2,
-          "deaths": 13,
-          "assists": 13,
-          "kda": 1.2,
-          "csPerMin": 0.8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX3nw5VI3HT_5lYhZL_VftQQ30mzx8djbU=",
+          "gameCreation": 1793303716000,
+          "gameDurationSeconds": 1721,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Poppy",
+          "championId": "78",
+          "champLevel": 12,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 7,
+          "assists": 14,
+          "kda": 2.29,
+          "cs": 30,
+          "csPerMin": 1,
+          "killParticipationPct": 0,
+          "damageDealt": 14012,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3877,
+            3190,
+            1031,
+            3009,
+            2525,
+            3067
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXWClDCjMURnGvxJXA9rdLGLCU4h0plOIM=",
           "gameCreation": 1793296068000,
@@ -6227,45 +6262,10 @@
             1029
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXDIqVFiFPR4-7c6PbX51cR86J0-ljQEKM=",
-          "gameCreation": 1792727053000,
-          "gameDurationSeconds": 1519,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Pyke",
-          "championId": "555",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 2,
-          "deaths": 13,
-          "assists": 13,
-          "kda": 1.15,
-          "cs": 19,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 11263,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3142,
-            2031,
-            1001,
-            3179,
-            1036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1736 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1736 LP · 20 partidas consultadas · 72.5% WR · KDA medio 6.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1736 LP · 20 partidas consultadas · 72.5% WR · KDA medio 6.1.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7231,7 +7231,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
