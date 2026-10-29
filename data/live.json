@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T16:01:06.656Z",
-  "syncedAt": "2026-10-29T16:01:06.656Z",
+  "generatedAt": "2026-10-29T16:25:59.644Z",
+  "syncedAt": "2026-10-29T16:25:59.644Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1396,7 +1396,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -3095,7 +3095,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3601,12 +3601,12 @@
       "wins": 76,
       "losses": 29,
       "winrate": 72.4,
-      "streak": 1,
+      "streak": -1,
       "avgKda": 4.6,
       "avgKills": 7.3,
-      "avgDeaths": 4.9,
-      "avgAssists": 8.1,
-      "avgCsPerMin": 7.7,
+      "avgDeaths": 5,
+      "avgAssists": 8.3,
+      "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3634,19 +3634,6 @@
           "assists": 40,
           "kda": 3.2,
           "csPerMin": 7.9
-        },
-        {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 2,
-          "wins": 1,
-          "losses": 1,
-          "winrate": 50,
-          "kills": 14,
-          "deaths": 16,
-          "assists": 19,
-          "kda": 2.1,
-          "csPerMin": 7.2
         },
         {
           "championName": "Ezreal",
@@ -3766,6 +3753,19 @@
           "csPerMin": 1
         },
         {
+          "championName": "Aphelios",
+          "championId": "523",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 10,
+          "deaths": 9,
+          "assists": 13,
+          "kda": 2.6,
+          "csPerMin": 8.6
+        },
+        {
           "championName": "Varus",
           "championId": "110",
           "games": 1,
@@ -3790,9 +3790,56 @@
           "assists": 13,
           "kda": 2.6,
           "csPerMin": 0.6
+        },
+        {
+          "championName": "Lucian",
+          "championId": "236",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 5,
+          "deaths": 8,
+          "assists": 9,
+          "kda": 1.8,
+          "csPerMin": 8.1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUyAMka2pYA5HudE3l-9QcGeG5Ohy3lWR4=",
+          "gameCreation": 1793291053000,
+          "gameDurationSeconds": 1896,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Aphelios",
+          "championId": "523",
+          "champLevel": 16,
+          "role": "ADC",
+          "kills": 10,
+          "deaths": 9,
+          "assists": 13,
+          "kda": 2.56,
+          "cs": 272,
+          "csPerMin": 8.6,
+          "killParticipationPct": 0,
+          "damageDealt": 32740,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerHaste",
+            "SummonerFlash"
+          ],
+          "items": [
+            3036,
+            3026,
+            6676,
+            3031,
+            6673
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXSCVSL3_vcDmN6Vt-_b430LTvA_K24D2s=",
           "gameCreation": 1793288712000,
@@ -4444,39 +4491,6 @@
             3190,
             3222,
             3009
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXKKwzIfgdH2tVQHqP_a-w9Fq39C7JvnUw=",
-          "gameCreation": 1792768604000,
-          "gameDurationSeconds": 1450,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lucian",
-          "championId": "236",
-          "champLevel": 13,
-          "role": "ADC",
-          "kills": 9,
-          "deaths": 8,
-          "assists": 10,
-          "kda": 2.38,
-          "cs": 151,
-          "csPerMin": 6.2,
-          "killParticipationPct": 0,
-          "damageDealt": 29009,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            3508,
-            6675,
-            1086,
-            3036
           ],
           "tags": []
         }
@@ -5367,7 +5381,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -7159,7 +7173,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
