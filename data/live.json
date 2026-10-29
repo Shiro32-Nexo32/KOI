@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T16:25:59.644Z",
-  "syncedAt": "2026-10-29T16:25:59.644Z",
+  "generatedAt": "2026-10-29T16:35:57.779Z",
+  "syncedAt": "2026-10-29T16:35:57.779Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3597,10 +3597,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1725,
+      "lp": 1697,
       "wins": 76,
-      "losses": 29,
-      "winrate": 72.4,
+      "losses": 30,
+      "winrate": 71.7,
       "streak": -1,
       "avgKda": 4.6,
       "avgKills": 7.3,
@@ -4495,8 +4495,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1725 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1725 LP · 20 partidas consultadas · 72.4% WR · KDA medio 4.6.",
+      "statusBadge": "GRANDMASTER I (1697 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1697 LP · 20 partidas consultadas · 71.7% WR · KDA medio 4.6.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5378,6 +5378,15 @@
           "lp": 1725,
           "wins": 76,
           "losses": 29,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793291754973,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1697,
+          "wins": 76,
+          "losses": 30,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
