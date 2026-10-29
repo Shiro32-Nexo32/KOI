@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T21:45:59.089Z",
-  "syncedAt": "2026-10-29T21:45:59.089Z",
+  "generatedAt": "2026-10-29T22:30:58.094Z",
+  "syncedAt": "2026-10-29T22:30:58.094Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1463,26 +1463,26 @@
       "wins": 72,
       "losses": 30,
       "winrate": 70.6,
-      "streak": -1,
-      "avgKda": 6,
-      "avgKills": 9.4,
-      "avgDeaths": 4.5,
+      "streak": 1,
+      "avgKda": 5.5,
+      "avgKills": 9.8,
+      "avgDeaths": 4.8,
       "avgAssists": 8,
-      "avgCsPerMin": 1.5,
+      "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Jayce",
           "championId": "126",
-          "games": 8,
-          "wins": 4,
+          "games": 7,
+          "wins": 3,
           "losses": 4,
-          "winrate": 50,
-          "kills": 75,
-          "deaths": 44,
-          "assists": 76,
-          "kda": 3.4,
-          "csPerMin": 1.6
+          "winrate": 42.9,
+          "kills": 73,
+          "deaths": 43,
+          "assists": 65,
+          "kda": 3.2,
+          "csPerMin": 1.8
         },
         {
           "championName": "Qiyana",
@@ -1509,6 +1509,19 @@
           "assists": 24,
           "kda": 4.2,
           "csPerMin": 0.7
+        },
+        {
+          "championName": "Jax",
+          "championId": "24",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 8,
+          "deaths": 6,
+          "assists": 10,
+          "kda": 3,
+          "csPerMin": 2.2
         },
         {
           "championName": "Rengar",
@@ -1590,6 +1603,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVJYrbOPqmLUkGcxbOHwcSu7g0_Kn8FC8A=",
+          "gameCreation": 1793312829000,
+          "gameDurationSeconds": 1862,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Jax",
+          "championId": "24",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 8,
+          "deaths": 6,
+          "assists": 10,
+          "kda": 3,
+          "cs": 69,
+          "csPerMin": 2.2,
+          "killParticipationPct": 0,
+          "damageDealt": 24276,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6610,
+            3078,
+            3091,
+            3111,
+            2421
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUMdKClXPUgjcu8Lf3WXiInpZ5jRY55vH0=",
           "gameCreation": 1793309352000,
@@ -2250,43 +2297,10 @@
             3047
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXDpslNtRVxnhnjN1zu0sOVJ5_IgEUwZqU=",
-          "gameCreation": 1792815516000,
-          "gameDurationSeconds": 946,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 11,
-          "role": "JUNGLE",
-          "kills": 2,
-          "deaths": 1,
-          "assists": 11,
-          "kda": 13,
-          "cs": 10,
-          "csPerMin": 0.6,
-          "killParticipationPct": 0,
-          "damageDealt": 8386,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            1001,
-            1036,
-            6699,
-            2520
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1507 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1507 LP · 20 partidas consultadas · 70.6% WR · KDA medio 6.",
+      "analystSummary": "Elyoya: GRANDMASTER I 1507 LP · 20 partidas consultadas · 70.6% WR · KDA medio 5.5.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3189,7 +3203,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -7301,7 +7315,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
