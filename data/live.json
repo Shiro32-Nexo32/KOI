@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T18:16:00.180Z",
-  "syncedAt": "2026-10-29T18:16:00.180Z",
+  "generatedAt": "2026-10-29T18:41:04.836Z",
+  "syncedAt": "2026-10-29T18:41:04.836Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3643,12 +3643,12 @@
       "wins": 76,
       "losses": 32,
       "winrate": 70.4,
-      "streak": -3,
-      "avgKda": 4.5,
-      "avgKills": 7.4,
-      "avgDeaths": 4.8,
-      "avgAssists": 8,
-      "avgCsPerMin": 8.2,
+      "streak": 1,
+      "avgKda": 4,
+      "avgKills": 7.8,
+      "avgDeaths": 5.2,
+      "avgAssists": 8.1,
+      "avgCsPerMin": 8.3,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -3680,15 +3680,15 @@
         {
           "championName": "Kai'Sa",
           "championId": "145",
-          "games": 2,
-          "wins": 1,
+          "games": 3,
+          "wins": 2,
           "losses": 1,
-          "winrate": 50,
-          "kills": 4,
-          "deaths": 8,
-          "assists": 5,
-          "kda": 1.1,
-          "csPerMin": 7.9
+          "winrate": 66.7,
+          "kills": 17,
+          "deaths": 15,
+          "assists": 13,
+          "kda": 2,
+          "csPerMin": 8.4
         },
         {
           "championName": "Sivir",
@@ -3754,19 +3754,6 @@
           "assists": 9,
           "kda": 4.4,
           "csPerMin": 8.4
-        },
-        {
-          "championName": "Caitlyn",
-          "championId": "51",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 1,
-          "assists": 7,
-          "kda": 13,
-          "csPerMin": 8.1
         },
         {
           "championName": "Aphelios",
@@ -3835,6 +3822,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXHZuMSQE_tloHg_QSPDEaoro83c3muzQQ=",
+          "gameCreation": 1793299203000,
+          "gameDurationSeconds": 1942,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Kai'Sa",
+          "championId": "145",
+          "champLevel": 17,
+          "role": "ADC",
+          "kills": 13,
+          "deaths": 7,
+          "assists": 8,
+          "kda": 3,
+          "cs": 304,
+          "csPerMin": 9.4,
+          "killParticipationPct": 0,
+          "damageDealt": 40147,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            6672,
+            3124,
+            3302,
+            3072,
+            3091
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVxt509kRsUiWtOl1oQEMoIisBKF3kRhh8=",
           "gameCreation": 1793296810000,
@@ -4489,45 +4510,10 @@
             3094
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWVneytv6e0Sjh_bpDT3pg_ps82pB9N3ZM=",
-          "gameCreation": 1792854970000,
-          "gameDurationSeconds": 1518,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Caitlyn",
-          "championId": "51",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 6,
-          "deaths": 1,
-          "assists": 7,
-          "kda": 13,
-          "cs": 205,
-          "csPerMin": 8.1,
-          "killParticipationPct": 0,
-          "damageDealt": 21806,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerHaste",
-            "SummonerFlash"
-          ],
-          "items": [
-            2523,
-            3031,
-            2055,
-            3094,
-            1018,
-            1086
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1641 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1641 LP · 20 partidas consultadas · 70.4% WR · KDA medio 4.5.",
+      "analystSummary": "Supa: GRANDMASTER I 1641 LP · 20 partidas consultadas · 70.4% WR · KDA medio 4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
