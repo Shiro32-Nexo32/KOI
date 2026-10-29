@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T17:21:00.451Z",
-  "syncedAt": "2026-10-29T17:21:00.451Z",
+  "generatedAt": "2026-10-29T17:41:03.213Z",
+  "syncedAt": "2026-10-29T17:41:03.213Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,10 +22,10 @@
       "wins": 59,
       "losses": 25,
       "winrate": 70.2,
-      "streak": 3,
-      "avgKda": 3.4,
-      "avgKills": 6.4,
-      "avgDeaths": 3.8,
+      "streak": 4,
+      "avgKda": 3.3,
+      "avgKills": 6.5,
+      "avgDeaths": 3.9,
       "avgAssists": 6.3,
       "avgCsPerMin": 6.7,
       "avgKillParticipationPct": 0,
@@ -33,15 +33,15 @@
         {
           "championName": "Ahri",
           "championId": "103",
-          "games": 6,
-          "wins": 5,
+          "games": 5,
+          "wins": 4,
           "losses": 1,
-          "winrate": 83.3,
-          "kills": 41,
+          "winrate": 80,
+          "kills": 39,
           "deaths": 18,
-          "assists": 59,
-          "kda": 5.6,
-          "csPerMin": 7.8
+          "assists": 54,
+          "kda": 5.2,
+          "csPerMin": 7.7
         },
         {
           "championName": "Pantheon",
@@ -68,6 +68,19 @@
           "assists": 4,
           "kda": 1.6,
           "csPerMin": 6.5
+        },
+        {
+          "championName": "Rumble",
+          "championId": "68",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 5,
+          "deaths": 2,
+          "assists": 5,
+          "kda": 5,
+          "csPerMin": 8
         },
         {
           "championName": "Corki",
@@ -136,6 +149,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUFVEwJvPjh7jWYt51lNN0dZCnny6jf_nk=",
+          "gameCreation": 1793295415000,
+          "gameDurationSeconds": 1583,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Rumble",
+          "championId": "68",
+          "champLevel": 17,
+          "role": "TOP",
+          "kills": 5,
+          "deaths": 2,
+          "assists": 5,
+          "kda": 5,
+          "cs": 211,
+          "csPerMin": 8,
+          "killParticipationPct": 0,
+          "damageDealt": 19519,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            3152,
+            3047,
+            1082,
+            4630,
+            6653
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUe8ua2Gg11NCaBbA2xZHctEg3LyIFMsmc=",
           "gameCreation": 1793293320000,
@@ -683,45 +730,10 @@
             4629
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXYOogUh93d5URLDOP0YWm7eewzwjSd51o=",
-          "gameCreation": 1792519094000,
-          "gameDurationSeconds": 913,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ahri",
-          "championId": "103",
-          "champLevel": 13,
-          "role": "TOP",
-          "kills": 2,
-          "deaths": 0,
-          "assists": 5,
-          "kda": 7,
-          "cs": 129,
-          "csPerMin": 8.5,
-          "killParticipationPct": 0,
-          "damageDealt": 10428,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerDot"
-          ],
-          "items": [
-            2055,
-            2031,
-            3158,
-            1056,
-            1011,
-            2503
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1150 LP)",
-      "analystSummary": "Myrwn: MASTER I 1150 LP · 17 partidas consultadas · 70.2% WR · KDA medio 3.4.",
+      "analystSummary": "Myrwn: MASTER I 1150 LP · 17 partidas consultadas · 70.2% WR · KDA medio 3.3.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1417,7 +1429,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -7196,7 +7208,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
