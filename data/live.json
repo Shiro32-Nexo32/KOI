@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T23:06:00.017Z",
-  "syncedAt": "2026-10-29T23:06:00.017Z",
+  "generatedAt": "2026-10-29T23:20:57.978Z",
+  "syncedAt": "2026-10-29T23:20:57.978Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1463,12 +1463,12 @@
       "wins": 73,
       "losses": 30,
       "winrate": 70.9,
-      "streak": 1,
+      "streak": -1,
       "avgKda": 5.5,
-      "avgKills": 9.8,
-      "avgDeaths": 4.8,
-      "avgAssists": 8,
-      "avgCsPerMin": 1.6,
+      "avgKills": 10.2,
+      "avgDeaths": 5,
+      "avgAssists": 7.8,
+      "avgCsPerMin": 1.7,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -1500,15 +1500,15 @@
         {
           "championName": "Lee Sin",
           "championId": "64",
-          "games": 3,
-          "wins": 2,
+          "games": 2,
+          "wins": 1,
           "losses": 1,
-          "winrate": 66.7,
-          "kills": 26,
-          "deaths": 12,
-          "assists": 24,
-          "kda": 4.2,
-          "csPerMin": 0.7
+          "winrate": 50,
+          "kills": 20,
+          "deaths": 8,
+          "assists": 19,
+          "kda": 4.9,
+          "csPerMin": 0.8
         },
         {
           "championName": "Jax",
@@ -1576,6 +1576,19 @@
           "csPerMin": 7.5
         },
         {
+          "championName": "Locke",
+          "championId": "805",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 15,
+          "deaths": 9,
+          "assists": 3,
+          "kda": 2,
+          "csPerMin": 1.8
+        },
+        {
           "championName": "Xin Zhao",
           "championId": "5",
           "games": 1,
@@ -1603,6 +1616,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVVSVjH6mmm8Cx_YwpWX3zJLfJmGqIkQ_A=",
+          "gameCreation": 1793315856000,
+          "gameDurationSeconds": 1713,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Locke",
+          "championId": "805",
+          "champLevel": 14,
+          "role": "JUNGLE",
+          "kills": 15,
+          "deaths": 9,
+          "assists": 3,
+          "kda": 2,
+          "cs": 50,
+          "csPerMin": 1.8,
+          "killParticipationPct": 0,
+          "damageDealt": 25233,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            1058,
+            3100,
+            3020,
+            4645,
+            3041,
+            3157
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVJYrbOPqmLUkGcxbOHwcSu7g0_Kn8FC8A=",
           "gameCreation": 1793312829000,
@@ -2260,41 +2308,6 @@
             6333,
             6692,
             3071
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWZd97FNU3VB4ERVGVeMVNZqeDMX6_uk70=",
-          "gameCreation": 1792817950000,
-          "gameDurationSeconds": 1312,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 14,
-          "role": "JUNGLE",
-          "kills": 6,
-          "deaths": 4,
-          "assists": 5,
-          "kda": 2.75,
-          "cs": 11,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 13770,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            6698,
-            6333,
-            3155,
-            2022,
-            3047
           ],
           "tags": []
         }
