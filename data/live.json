@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T20:25:59.818Z",
-  "syncedAt": "2026-10-29T20:25:59.819Z",
+  "generatedAt": "2026-10-29T21:31:01.670Z",
+  "syncedAt": "2026-10-29T21:31:01.670Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1438,7 +1438,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1463,11 +1463,11 @@
       "wins": 72,
       "losses": 29,
       "winrate": 71.3,
-      "streak": 2,
-      "avgKda": 6.2,
-      "avgKills": 8.9,
-      "avgDeaths": 4.3,
-      "avgAssists": 8.2,
+      "streak": -1,
+      "avgKda": 6,
+      "avgKills": 9.4,
+      "avgDeaths": 4.5,
+      "avgAssists": 8,
       "avgCsPerMin": 1.5,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1487,15 +1487,15 @@
         {
           "championName": "Qiyana",
           "championId": "246",
-          "games": 4,
-          "wins": 4,
+          "games": 3,
+          "wins": 3,
           "losses": 0,
           "winrate": 100,
-          "kills": 29,
-          "deaths": 5,
-          "assists": 32,
-          "kda": 12.2,
-          "csPerMin": 0.9
+          "kills": 27,
+          "deaths": 3,
+          "assists": 21,
+          "kda": 16,
+          "csPerMin": 1
         },
         {
           "championName": "Lee Sin",
@@ -1563,6 +1563,19 @@
           "csPerMin": 7.5
         },
         {
+          "championName": "Xin Zhao",
+          "championId": "5",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 13,
+          "deaths": 7,
+          "assists": 8,
+          "kda": 3,
+          "csPerMin": 0.4
+        },
+        {
           "championName": "Cho'Gath",
           "championId": "31",
           "games": 1,
@@ -1577,6 +1590,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUMdKClXPUgjcu8Lf3WXiInpZ5jRY55vH0=",
+          "gameCreation": 1793309352000,
+          "gameDurationSeconds": 1887,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Xin Zhao",
+          "championId": "5",
+          "champLevel": 17,
+          "role": "JUNGLE",
+          "kills": 13,
+          "deaths": 7,
+          "assists": 8,
+          "kda": 3,
+          "cs": 14,
+          "csPerMin": 0.4,
+          "killParticipationPct": 0,
+          "damageDealt": 33547,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3748,
+            2055,
+            3071,
+            3047,
+            2501,
+            3078
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgU58mivjpcwZMYfKfGKR7snb96j0cfzvuA=",
           "gameCreation": 1793304438000,
@@ -2235,43 +2283,10 @@
             2520
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgU8fpLWiVvnJc6cPJ1dJNO2ExGLFljIsg0=",
-          "gameCreation": 1792772820000,
-          "gameDurationSeconds": 1611,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Qiyana",
-          "championId": "246",
-          "champLevel": 15,
-          "role": "JUNGLE",
-          "kills": 2,
-          "deaths": 2,
-          "assists": 11,
-          "kda": 6.5,
-          "cs": 17,
-          "csPerMin": 0.6,
-          "killParticipationPct": 0,
-          "damageDealt": 15714,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2520,
-            3158,
-            6699,
-            3036
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1534 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1534 LP · 20 partidas consultadas · 71.3% WR · KDA medio 6.2.",
+      "analystSummary": "Elyoya: GRANDMASTER I 1534 LP · 20 partidas consultadas · 71.3% WR · KDA medio 6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3165,7 +3180,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -5471,7 +5486,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -7277,7 +7292,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
