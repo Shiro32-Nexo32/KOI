@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T23:30:59.034Z",
-  "syncedAt": "2026-10-29T23:30:59.035Z",
+  "generatedAt": "2026-10-29T23:46:02.154Z",
+  "syncedAt": "2026-10-29T23:46:02.154Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1438,7 +1438,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -5557,10 +5557,10 @@
       "wins": 80,
       "losses": 31,
       "winrate": 72.1,
-      "streak": 1,
+      "streak": 2,
       "avgKda": 6.3,
       "avgKills": 7.4,
-      "avgDeaths": 5.2,
+      "avgDeaths": 5.3,
       "avgAssists": 14.4,
       "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
@@ -5573,9 +5573,9 @@
           "losses": 3,
           "winrate": 70,
           "kills": 103,
-          "deaths": 45,
+          "deaths": 46,
           "assists": 104,
-          "kda": 4.6,
+          "kda": 4.5,
           "csPerMin": 0.7
         },
         {
@@ -5671,6 +5671,39 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWgHeiIxWMSg-aoXJTy7xxSXRWp0hlBo0Y=",
+          "gameCreation": 1793317181000,
+          "gameDurationSeconds": 1365,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 15,
+          "role": "JUNGLE",
+          "kills": 11,
+          "deaths": 1,
+          "assists": 8,
+          "kda": 19,
+          "cs": 11,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 22343,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            3156,
+            6692,
+            2422,
+            6333
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXQRf-c_6D3o8vzJmpX_3d-l8MPOlZZ3JE=",
           "gameCreation": 1793314138000,
@@ -6327,41 +6360,6 @@
             6333,
             3047,
             1036
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVsURkA5sssJa9zAU3TN-Cpwl1BdYhgHcQ=",
-          "gameCreation": 1792797394000,
-          "gameDurationSeconds": 918,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 12,
-          "role": "JUNGLE",
-          "kills": 11,
-          "deaths": 0,
-          "assists": 8,
-          "kda": 19,
-          "cs": 7,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 15292,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2055,
-            1036,
-            6692,
-            1029,
-            6333,
-            2422
           ],
           "tags": []
         }
@@ -7351,7 +7349,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
