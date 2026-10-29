@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T02:25:58.812Z",
-  "syncedAt": "2026-10-29T02:25:58.813Z",
+  "generatedAt": "2026-10-29T02:35:57.614Z",
+  "syncedAt": "2026-10-29T02:35:57.614Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1396,7 +1396,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -3584,27 +3584,14 @@
       "wins": 74,
       "losses": 28,
       "winrate": 72.5,
-      "streak": -3,
-      "avgKda": 3.9,
-      "avgKills": 7.8,
-      "avgDeaths": 5.2,
+      "streak": 1,
+      "avgKda": 4,
+      "avgKills": 8,
+      "avgDeaths": 5.1,
       "avgAssists": 8.2,
       "avgCsPerMin": 7.6,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Jhin",
-          "championId": "202",
-          "games": 4,
-          "wins": 2,
-          "losses": 2,
-          "winrate": 50,
-          "kills": 26,
-          "deaths": 25,
-          "assists": 50,
-          "kda": 3,
-          "csPerMin": 8.3
-        },
         {
           "championName": "Lucian",
           "championId": "236",
@@ -3617,6 +3604,19 @@
           "assists": 33,
           "kda": 2.9,
           "csPerMin": 7.6
+        },
+        {
+          "championName": "Jhin",
+          "championId": "202",
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winrate": 33.3,
+          "kills": 20,
+          "deaths": 19,
+          "assists": 40,
+          "kda": 3.2,
+          "csPerMin": 7.9
         },
         {
           "championName": "Tristana",
@@ -3643,6 +3643,19 @@
           "assists": 0,
           "kda": 0.3,
           "csPerMin": 8.6
+        },
+        {
+          "championName": "Sivir",
+          "championId": "15",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 11,
+          "deaths": 5,
+          "assists": 10,
+          "kda": 4.2,
+          "csPerMin": 9.5
         },
         {
           "championName": "Kai'Sa",
@@ -3763,6 +3776,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXMswEuT4oLlcrfISJ611f3EYbLjfJTZes=",
+          "gameCreation": 1793241122000,
+          "gameDurationSeconds": 1409,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Sivir",
+          "championId": "15",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 11,
+          "deaths": 5,
+          "assists": 10,
+          "kda": 4.2,
+          "cs": 222,
+          "csPerMin": 9.5,
+          "killParticipationPct": 0,
+          "damageDealt": 37704,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3031,
+            3032,
+            3155,
+            1086,
+            3033,
+            6675
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX4OSvNMpTD5vKQn6YKbQ6fE6fGjrutRxU=",
           "gameCreation": 1793206527000,
@@ -4414,44 +4462,10 @@
             3036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXnp65Iyi2-VTjOdoSsF4oIag31uJSbTsE=",
-          "gameCreation": 1792686902000,
-          "gameDurationSeconds": 1571,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jhin",
-          "championId": "202",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 6,
-          "deaths": 6,
-          "assists": 10,
-          "kda": 2.67,
-          "cs": 249,
-          "csPerMin": 9.5,
-          "killParticipationPct": 0,
-          "damageDealt": 30451,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3036,
-            3142,
-            1120,
-            3095,
-            1042
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1689 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1689 LP · 20 partidas consultadas · 72.5% WR · KDA medio 3.9.",
+      "analystSummary": "Supa: GRANDMASTER I 1689 LP · 20 partidas consultadas · 72.5% WR · KDA medio 4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5309,7 +5323,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 1,
       "remakeLossMatchIds": []
     },
@@ -5330,11 +5344,11 @@
       "wins": 75,
       "losses": 29,
       "winrate": 72.1,
-      "streak": -2,
-      "avgKda": 5.7,
+      "streak": 1,
+      "avgKda": 5.9,
       "avgKills": 6.5,
-      "avgDeaths": 6.1,
-      "avgAssists": 13.8,
+      "avgDeaths": 5.9,
+      "avgAssists": 14.3,
       "avgCsPerMin": 1.1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5391,6 +5405,19 @@
           "csPerMin": 1.1
         },
         {
+          "championName": "Karma",
+          "championId": "43",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 4,
+          "deaths": 4,
+          "assists": 19,
+          "kda": 5.8,
+          "csPerMin": 1
+        },
+        {
           "championName": "Shen",
           "championId": "98",
           "games": 1,
@@ -5441,22 +5468,44 @@
           "assists": 2,
           "kda": 0.4,
           "csPerMin": 0.8
-        },
-        {
-          "championName": "Bard",
-          "championId": "432",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 4,
-          "deaths": 8,
-          "assists": 10,
-          "kda": 1.8,
-          "csPerMin": 1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXMswEuT4oLlcrfISJ611f3EYbLjfJTZes=",
+          "gameCreation": 1793241122000,
+          "gameDurationSeconds": 1409,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Karma",
+          "championId": "43",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 4,
+          "deaths": 4,
+          "assists": 19,
+          "kda": 5.75,
+          "cs": 24,
+          "csPerMin": 1,
+          "killParticipationPct": 0,
+          "damageDealt": 11956,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3870,
+            2065,
+            6620,
+            3158,
+            3067,
+            3114
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUU6WIjeCzCX7lW1yW8HEeyRZnKoy9N0tg=",
           "gameCreation": 1793165191000,
@@ -6115,45 +6164,10 @@
             1011
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVadSnUDedDdjtzJPCuym_PGmtjclZbbw4=",
-          "gameCreation": 1792533788000,
-          "gameDurationSeconds": 1586,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Bard",
-          "championId": "432",
-          "champLevel": 12,
-          "role": "SUPPORT",
-          "kills": 4,
-          "deaths": 8,
-          "assists": 10,
-          "kda": 1.75,
-          "cs": 27,
-          "csPerMin": 1,
-          "killParticipationPct": 0,
-          "damageDealt": 12870,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3877,
-            3190,
-            3742,
-            3067,
-            3158,
-            2022
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1598 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1598 LP · 20 partidas consultadas · 72.1% WR · KDA medio 5.7.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1598 LP · 20 partidas consultadas · 72.1% WR · KDA medio 5.9.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7074,7 +7088,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     }
