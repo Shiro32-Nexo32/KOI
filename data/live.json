@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T18:51:04.143Z",
-  "syncedAt": "2026-10-29T18:51:04.143Z",
+  "generatedAt": "2026-10-29T19:45:59.454Z",
+  "syncedAt": "2026-10-29T19:45:59.454Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3643,11 +3643,11 @@
       "wins": 77,
       "losses": 32,
       "winrate": 70.6,
-      "streak": 1,
-      "avgKda": 4,
-      "avgKills": 7.8,
+      "streak": 2,
+      "avgKda": 3.9,
+      "avgKills": 7.7,
       "avgDeaths": 5.2,
-      "avgAssists": 8.1,
+      "avgAssists": 8,
       "avgCsPerMin": 8.3,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3689,6 +3689,19 @@
           "assists": 13,
           "kda": 2,
           "csPerMin": 8.4
+        },
+        {
+          "championName": "Miss Fortune",
+          "championId": "21",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 12,
+          "deaths": 6,
+          "assists": 7,
+          "kda": 3.2,
+          "csPerMin": 8.8
         },
         {
           "championName": "Sivir",
@@ -3741,19 +3754,6 @@
           "assists": 7,
           "kda": 6,
           "csPerMin": 10.2
-        },
-        {
-          "championName": "Jinx",
-          "championId": "222",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 13,
-          "deaths": 5,
-          "assists": 9,
-          "kda": 4.4,
-          "csPerMin": 8.4
         },
         {
           "championName": "Aphelios",
@@ -3822,6 +3822,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgWMpJBuaNxbMsqSaaeLcfBQGDKfmV1tDYU=",
+          "gameCreation": 1793303001000,
+          "gameDurationSeconds": 1916,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Miss Fortune",
+          "championId": "21",
+          "champLevel": 18,
+          "role": "ADC",
+          "kills": 12,
+          "deaths": 6,
+          "assists": 7,
+          "kda": 3.17,
+          "cs": 282,
+          "csPerMin": 8.8,
+          "killParticipationPct": 0,
+          "damageDealt": 40230,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3072,
+            3031,
+            3026,
+            6676,
+            3033,
+            1018
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXHZuMSQE_tloHg_QSPDEaoro83c3muzQQ=",
           "gameCreation": 1793299203000,
@@ -4475,45 +4510,10 @@
             3302
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX7Im-MuJpjmtbiRfLRN2pfZ5yL_dVDWWs=",
-          "gameCreation": 1792857645000,
-          "gameDurationSeconds": 1704,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jinx",
-          "championId": "222",
-          "champLevel": 15,
-          "role": "ADC",
-          "kills": 13,
-          "deaths": 5,
-          "assists": 9,
-          "kda": 4.4,
-          "cs": 239,
-          "csPerMin": 8.4,
-          "killParticipationPct": 0,
-          "damageDealt": 35118,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            3031,
-            3095,
-            3036,
-            1037,
-            1053,
-            3094
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1673 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1673 LP · 20 partidas consultadas · 70.6% WR · KDA medio 4.",
+      "analystSummary": "Supa: GRANDMASTER I 1673 LP · 20 partidas consultadas · 70.6% WR · KDA medio 3.9.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
