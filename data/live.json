@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T17:41:03.213Z",
-  "syncedAt": "2026-10-29T17:41:03.213Z",
+  "generatedAt": "2026-10-29T17:51:22.022Z",
+  "syncedAt": "2026-10-29T17:51:22.023Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1429,7 +1429,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -5441,11 +5441,11 @@
       "wins": 78,
       "losses": 30,
       "winrate": 72.2,
-      "streak": 1,
-      "avgKda": 6.1,
+      "streak": 2,
+      "avgKda": 6,
       "avgKills": 7.5,
-      "avgDeaths": 5.5,
-      "avgAssists": 13.9,
+      "avgDeaths": 5.7,
+      "avgAssists": 13.6,
       "avgCsPerMin": 1.1,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -5489,6 +5489,19 @@
           "csPerMin": 1.2
         },
         {
+          "championName": "Nautilus",
+          "championId": "111",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 2,
+          "deaths": 11,
+          "assists": 15,
+          "kda": 1.5,
+          "csPerMin": 0.9
+        },
+        {
           "championName": "Bard",
           "championId": "432",
           "games": 1,
@@ -5513,19 +5526,6 @@
           "assists": 19,
           "kda": 5.8,
           "csPerMin": 1
-        },
-        {
-          "championName": "Shen",
-          "championId": "98",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 8,
-          "assists": 23,
-          "kda": 3.1,
-          "csPerMin": 0.7
         },
         {
           "championName": "Ambessa",
@@ -5555,6 +5555,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXWClDCjMURnGvxJXA9rdLGLCU4h0plOIM=",
+          "gameCreation": 1793296068000,
+          "gameDurationSeconds": 1984,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Nautilus",
+          "championId": "111",
+          "champLevel": 13,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 11,
+          "assists": 15,
+          "kda": 1.55,
+          "cs": 29,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 9785,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3190,
+            3109,
+            3111,
+            2525,
+            2022
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWSn2opDfdFZC-aPczZAhAxjjLjbFhOavI=",
           "gameCreation": 1793293088000,
@@ -6213,45 +6248,10 @@
             1036
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgW-AKXqUd9dwqnaYZt41i82IkpVE3VfamE=",
-          "gameCreation": 1792724986000,
-          "gameDurationSeconds": 2134,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Shen",
-          "championId": "98",
-          "champLevel": 15,
-          "role": "SUPPORT",
-          "kills": 2,
-          "deaths": 8,
-          "assists": 23,
-          "kda": 3.13,
-          "cs": 25,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 9863,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3869,
-            3190,
-            3050,
-            3047,
-            2525,
-            1028
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1703 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1703 LP · 20 partidas consultadas · 72.2% WR · KDA medio 6.1.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1703 LP · 20 partidas consultadas · 72.2% WR · KDA medio 6.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7208,7 +7208,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
