@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T22:45:58.974Z",
-  "syncedAt": "2026-10-29T22:45:58.974Z",
+  "generatedAt": "2026-10-29T22:50:59.622Z",
+  "syncedAt": "2026-10-29T22:50:59.622Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3212,7 +3212,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM="
@@ -3718,11 +3718,11 @@
       "wins": 78,
       "losses": 32,
       "winrate": 70.9,
-      "streak": 2,
-      "avgKda": 3.9,
-      "avgKills": 7.7,
-      "avgDeaths": 5.2,
-      "avgAssists": 8,
+      "streak": 3,
+      "avgKda": 3.8,
+      "avgKills": 7.3,
+      "avgDeaths": 5.3,
+      "avgAssists": 7.9,
       "avgCsPerMin": 8.3,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3764,6 +3764,19 @@
           "assists": 13,
           "kda": 2,
           "csPerMin": 8.4
+        },
+        {
+          "championName": "Lucian",
+          "championId": "236",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 15,
+          "deaths": 13,
+          "assists": 15,
+          "kda": 2.3,
+          "csPerMin": 8.7
         },
         {
           "championName": "Miss Fortune",
@@ -3818,19 +3831,6 @@
           "csPerMin": 8.2
         },
         {
-          "championName": "Kalista",
-          "championId": "429",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 17,
-          "deaths": 4,
-          "assists": 7,
-          "kda": 6,
-          "csPerMin": 10.2
-        },
-        {
           "championName": "Aphelios",
           "championId": "523",
           "games": 1,
@@ -3881,22 +3881,44 @@
           "assists": 13,
           "kda": 2.6,
           "csPerMin": 0.6
-        },
-        {
-          "championName": "Lucian",
-          "championId": "236",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 5,
-          "deaths": 8,
-          "assists": 9,
-          "kda": 1.8,
-          "csPerMin": 8.1
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXQRf-c_6D3o8vzJmpX_3d-l8MPOlZZ3JE=",
+          "gameCreation": 1793314138000,
+          "gameDurationSeconds": 1531,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lucian",
+          "championId": "236",
+          "champLevel": 15,
+          "role": "ADC",
+          "kills": 10,
+          "deaths": 5,
+          "assists": 6,
+          "kda": 3.2,
+          "cs": 237,
+          "csPerMin": 9.3,
+          "killParticipationPct": 0,
+          "damageDealt": 35666,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBarrier",
+            "SummonerFlash"
+          ],
+          "items": [
+            3508,
+            6675,
+            3036,
+            1038,
+            1037,
+            1086
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWMpJBuaNxbMsqSaaeLcfBQGDKfmV1tDYU=",
           "gameCreation": 1793303001000,
@@ -4550,45 +4572,10 @@
             1037
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVAfIeyzvXV4YJDaPms0DD7WwqGs0agjf4=",
-          "gameCreation": 1792938902000,
-          "gameDurationSeconds": 1365,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kalista",
-          "championId": "429",
-          "champLevel": 15,
-          "role": "ADC",
-          "kills": 17,
-          "deaths": 4,
-          "assists": 7,
-          "kda": 6,
-          "cs": 231,
-          "csPerMin": 10.2,
-          "killParticipationPct": 0,
-          "damageDealt": 45004,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBarrier",
-            "SummonerFlash"
-          ],
-          "items": [
-            1086,
-            1011,
-            1057,
-            3124,
-            3087,
-            3302
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1705 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1705 LP · 20 partidas consultadas · 70.9% WR · KDA medio 3.9.",
+      "analystSummary": "Supa: GRANDMASTER I 1705 LP · 20 partidas consultadas · 70.9% WR · KDA medio 3.8.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5518,7 +5505,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -5539,12 +5526,12 @@
       "wins": 79,
       "losses": 31,
       "winrate": 71.8,
-      "streak": -1,
-      "avgKda": 6.1,
-      "avgKills": 7.5,
-      "avgDeaths": 5.4,
-      "avgAssists": 13.6,
-      "avgCsPerMin": 1.1,
+      "streak": 1,
+      "avgKda": 6.3,
+      "avgKills": 7.4,
+      "avgDeaths": 5.2,
+      "avgAssists": 14.4,
+      "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -5585,6 +5572,19 @@
           "assists": 29,
           "kda": 8.1,
           "csPerMin": 1.2
+        },
+        {
+          "championName": "Milio",
+          "championId": "902",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 1,
+          "deaths": 5,
+          "assists": 18,
+          "kda": 3.8,
+          "csPerMin": 0.9
         },
         {
           "championName": "Nautilus",
@@ -5637,22 +5637,44 @@
           "assists": 14,
           "kda": 2.3,
           "csPerMin": 1
-        },
-        {
-          "championName": "Ambessa",
-          "championId": "799",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 2,
-          "deaths": 9,
-          "assists": 2,
-          "kda": 0.4,
-          "csPerMin": 5.9
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXQRf-c_6D3o8vzJmpX_3d-l8MPOlZZ3JE=",
+          "gameCreation": 1793314138000,
+          "gameDurationSeconds": 1531,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Milio",
+          "championId": "902",
+          "champLevel": 14,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 5,
+          "assists": 18,
+          "kda": 3.8,
+          "cs": 22,
+          "csPerMin": 0.9,
+          "killParticipationPct": 0,
+          "damageDealt": 7161,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3870,
+            6620,
+            3504,
+            3158,
+            1004,
+            3113
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX3nw5VI3HT_5lYhZL_VftQQ30mzx8djbU=",
           "gameCreation": 1793303716000,
@@ -6311,45 +6333,10 @@
             2422
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVV_Y5rMFCDmvv9RZ6oC6l0OB5__MRmQyg=",
-          "gameCreation": 1792729666000,
-          "gameDurationSeconds": 1312,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Ambessa",
-          "championId": "799",
-          "champLevel": 13,
-          "role": "TOP",
-          "kills": 2,
-          "deaths": 9,
-          "assists": 2,
-          "kda": 0.44,
-          "cs": 129,
-          "csPerMin": 5.9,
-          "killParticipationPct": 0,
-          "damageDealt": 7761,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            6692,
-            1001,
-            1120,
-            3133,
-            1037,
-            1029
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1709 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1709 LP · 20 partidas consultadas · 71.8% WR · KDA medio 6.1.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1709 LP · 20 partidas consultadas · 71.8% WR · KDA medio 6.3.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7324,7 +7311,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 3,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
