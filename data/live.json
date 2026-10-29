@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T03:25:56.350Z",
-  "syncedAt": "2026-10-29T03:25:56.350Z",
+  "generatedAt": "2026-10-29T03:30:58.397Z",
+  "syncedAt": "2026-10-29T03:30:58.397Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1417,10 +1417,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1468,
-      "wins": 70,
+      "lp": 1501,
+      "wins": 71,
       "losses": 29,
-      "winrate": 70.7,
+      "winrate": 71,
       "streak": 1,
       "avgKda": 5.7,
       "avgKills": 8.4,
@@ -2227,8 +2227,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1468 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1468 LP · 20 partidas consultadas · 70.7% WR · KDA medio 5.7.",
+      "statusBadge": "GRANDMASTER I (1501 LP)",
+      "analystSummary": "Elyoya: GRANDMASTER I 1501 LP · 20 partidas consultadas · 71% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3082,6 +3082,15 @@
           "division": "I",
           "lp": 1468,
           "wins": 70,
+          "losses": 29,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793244648674,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1501,
+          "wins": 71,
           "losses": 29,
           "note": "Sincronización automática desde OP.GG"
         }
