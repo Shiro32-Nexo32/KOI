@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T02:55:56.354Z",
-  "syncedAt": "2026-10-30T02:55:56.354Z",
+  "generatedAt": "2026-10-30T03:25:59.172Z",
+  "syncedAt": "2026-10-30T03:25:59.172Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1463,27 +1463,14 @@
       "wins": 76,
       "losses": 31,
       "winrate": 71,
-      "streak": 3,
+      "streak": 4,
       "avgKda": 6,
-      "avgKills": 10.1,
-      "avgDeaths": 4.8,
-      "avgAssists": 8.4,
-      "avgCsPerMin": 1.7,
+      "avgKills": 9.3,
+      "avgDeaths": 4.6,
+      "avgAssists": 8.6,
+      "avgCsPerMin": 1.6,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 5,
-          "wins": 2,
-          "losses": 3,
-          "winrate": 40,
-          "kills": 59,
-          "deaths": 33,
-          "assists": 47,
-          "kda": 3.2,
-          "csPerMin": 1.8
-        },
         {
           "championName": "Qiyana",
           "championId": "246",
@@ -1498,6 +1485,19 @@
           "csPerMin": 0.9
         },
         {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 4,
+          "wins": 1,
+          "losses": 3,
+          "winrate": 25,
+          "kills": 45,
+          "deaths": 26,
+          "assists": 34,
+          "kda": 3,
+          "csPerMin": 1.8
+        },
+        {
           "championName": "Kindred",
           "championId": "203",
           "games": 2,
@@ -1509,6 +1509,19 @@
           "assists": 22,
           "kda": 4.9,
           "csPerMin": 1.9
+        },
+        {
+          "championName": "Alistar",
+          "championId": "12",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 0,
+          "deaths": 4,
+          "assists": 16,
+          "kda": 4,
+          "csPerMin": 0.6
         },
         {
           "championName": "Senna",
@@ -1629,6 +1642,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVfxU9SYZxlUH71_doBnXCMA7sH-IJrX5s=",
+          "gameCreation": 1793330495000,
+          "gameDurationSeconds": 1268,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Alistar",
+          "championId": "12",
+          "champLevel": 10,
+          "role": "SUPPORT",
+          "kills": 0,
+          "deaths": 4,
+          "assists": 16,
+          "kda": 4,
+          "cs": 13,
+          "csPerMin": 0.6,
+          "killParticipationPct": 0,
+          "damageDealt": 5086,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3158,
+            2031,
+            3067,
+            1029,
+            3190
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXoDVXQ0lBsRFLoEoDF17b7gbpmE4m99jE=",
           "gameCreation": 1793328002000,
@@ -2283,41 +2331,6 @@
             3158,
             2520,
             3814,
-            3142
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXhukq9r66l8rdywQotv1sNB9pumLQSicA=",
-          "gameCreation": 1792985567000,
-          "gameDurationSeconds": 2644,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 14,
-          "deaths": 7,
-          "assists": 13,
-          "kda": 3.86,
-          "cs": 82,
-          "csPerMin": 1.9,
-          "killParticipationPct": 0,
-          "damageDealt": 69081,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6694,
-            3814,
-            2517,
-            6699,
-            2520,
             3142
           ],
           "tags": []
