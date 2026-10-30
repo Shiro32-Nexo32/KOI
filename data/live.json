@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T02:46:03.120Z",
-  "syncedAt": "2026-10-30T02:46:03.120Z",
+  "generatedAt": "2026-10-30T02:55:56.354Z",
+  "syncedAt": "2026-10-30T02:55:56.354Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1459,10 +1459,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1579,
-      "wins": 75,
+      "lp": 1612,
+      "wins": 76,
       "losses": 31,
-      "winrate": 70.8,
+      "winrate": 71,
       "streak": 3,
       "avgKda": 6,
       "avgKills": 10.1,
@@ -2323,8 +2323,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1579 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1579 LP · 20 partidas consultadas · 70.8% WR · KDA medio 6.",
+      "statusBadge": "GRANDMASTER I (1612 LP)",
+      "analystSummary": "Elyoya: GRANDMASTER I 1612 LP · 20 partidas consultadas · 71% WR · KDA medio 6.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3279,6 +3279,15 @@
           "wins": 75,
           "losses": 31,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793328947058,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1612,
+          "wins": 76,
+          "losses": 31,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 2,
@@ -3783,10 +3792,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1709,
+      "lp": 1681,
       "wins": 79,
-      "losses": 33,
-      "winrate": 70.5,
+      "losses": 34,
+      "winrate": 69.9,
       "streak": -2,
       "avgKda": 3.4,
       "avgKills": 7.3,
@@ -4656,8 +4665,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1709 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1709 LP · 20 partidas consultadas · 70.5% WR · KDA medio 3.4.",
+      "statusBadge": "GRANDMASTER I (1681 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1681 LP · 20 partidas consultadas · 69.9% WR · KDA medio 3.4.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5621,10 +5630,19 @@
           "wins": 79,
           "losses": 33,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793328953452,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1681,
+          "wins": 79,
+          "losses": 34,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
       "formRank": 5,
-      "eloRank": 1,
+      "eloRank": 2,
       "remakeLossMatchIds": []
     },
     {
@@ -7503,7 +7521,7 @@
         }
       ],
       "formRank": 4,
-      "eloRank": 2,
+      "eloRank": 1,
       "remakeLossMatchIds": []
     }
   ],
