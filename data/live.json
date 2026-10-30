@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T04:05:58.660Z",
-  "syncedAt": "2026-10-30T04:05:58.660Z",
+  "generatedAt": "2026-10-30T05:11:00.206Z",
+  "syncedAt": "2026-10-30T05:11:00.206Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1459,31 +1459,18 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1645,
+      "lp": 1618,
       "wins": 77,
-      "losses": 32,
-      "winrate": 70.6,
-      "streak": -1,
+      "losses": 33,
+      "winrate": 70,
+      "streak": -2,
       "avgKda": 5.1,
-      "avgKills": 8.8,
+      "avgKills": 8.5,
       "avgDeaths": 4.6,
-      "avgAssists": 8.1,
+      "avgAssists": 8.9,
       "avgCsPerMin": 1.5,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Jayce",
-          "championId": "126",
-          "games": 4,
-          "wins": 1,
-          "losses": 3,
-          "winrate": 25,
-          "kills": 45,
-          "deaths": 26,
-          "assists": 34,
-          "kda": 3,
-          "csPerMin": 1.8
-        },
         {
           "championName": "Qiyana",
           "championId": "246",
@@ -1496,6 +1483,19 @@
           "assists": 19,
           "kda": 9.2,
           "csPerMin": 0.7
+        },
+        {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winrate": 33.3,
+          "kills": 37,
+          "deaths": 17,
+          "assists": 29,
+          "kda": 3.9,
+          "csPerMin": 2.1
         },
         {
           "championName": "Kindred",
@@ -1602,6 +1602,19 @@
           "csPerMin": 7.5
         },
         {
+          "championName": "Blitzcrank",
+          "championId": "53",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 1,
+          "deaths": 9,
+          "assists": 21,
+          "kda": 2.4,
+          "csPerMin": 0.8
+        },
+        {
           "championName": "Rakan",
           "championId": "497",
           "games": 1,
@@ -1655,6 +1668,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgW5Kg5r0ZaUkLdt1VlTpetQVUqx8TrmP74=",
+          "gameCreation": 1793336776000,
+          "gameDurationSeconds": 2063,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Blitzcrank",
+          "championId": "53",
+          "champLevel": 14,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 9,
+          "assists": 21,
+          "kda": 2.44,
+          "cs": 29,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 9866,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3222,
+            3109,
+            3110,
+            1029,
+            3158
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVVswhULfXGK6vDJRLqz0ihBxPaxCftpcA=",
           "gameCreation": 1793333057000,
@@ -2308,45 +2356,10 @@
             3009
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUsvFdM-4oITIy7SUI5m35qZQPwldYELSc=",
-          "gameCreation": 1793039215000,
-          "gameDurationSeconds": 1682,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Jayce",
-          "championId": "126",
-          "champLevel": 15,
-          "role": "JUNGLE",
-          "kills": 8,
-          "deaths": 9,
-          "assists": 5,
-          "kda": 1.44,
-          "cs": 29,
-          "csPerMin": 1,
-          "killParticipationPct": 0,
-          "damageDealt": 27016,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2520,
-            3036,
-            6699,
-            3158,
-            3134,
-            3142
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1645 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1645 LP · 20 partidas consultadas · 70.6% WR · KDA medio 5.1.",
+      "statusBadge": "GRANDMASTER I (1618 LP)",
+      "analystSummary": "Elyoya: GRANDMASTER I 1618 LP · 20 partidas consultadas · 70% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3318,6 +3331,15 @@
           "lp": 1645,
           "wins": 77,
           "losses": 31,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793337050612,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1618,
+          "wins": 77,
+          "losses": 33,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
