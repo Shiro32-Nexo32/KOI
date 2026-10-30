@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T17:15:59.893Z",
-  "syncedAt": "2026-10-30T17:15:59.893Z",
+  "generatedAt": "2026-10-30T17:20:59.782Z",
+  "syncedAt": "2026-10-30T17:20:59.782Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -18,10 +18,10 @@
       "profileIconId": 588,
       "tier": "MASTER",
       "division": "I",
-      "lp": 1132,
-      "wins": 60,
+      "lp": 1200,
+      "wins": 61,
       "losses": 27,
-      "winrate": 69,
+      "winrate": 69.3,
       "streak": 1,
       "avgKda": 2.7,
       "avgKills": 5.8,
@@ -756,8 +756,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "MASTER I (1132 LP)",
-      "analystSummary": "Myrwn: MASTER I 1132 LP · 17 partidas consultadas · 69% WR · KDA medio 2.7.",
+      "statusBadge": "MASTER I (1200 LP)",
+      "analystSummary": "Myrwn: MASTER I 1200 LP · 17 partidas consultadas · 69.3% WR · KDA medio 2.7.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -1476,6 +1476,15 @@
           "division": "I",
           "lp": 1132,
           "wins": 60,
+          "losses": 27,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793380846187,
+          "tier": "MASTER",
+          "division": "I",
+          "lp": 1200,
+          "wins": 61,
           "losses": 27,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -3913,10 +3922,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1653,
-      "wins": 79,
+      "lp": 1685,
+      "wins": 80,
       "losses": 35,
-      "winrate": 69.3,
+      "winrate": 69.6,
       "streak": 1,
       "avgKda": 3.1,
       "avgKills": 6.7,
@@ -4774,8 +4783,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1653 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1653 LP · 20 partidas consultadas · 69.3% WR · KDA medio 3.1.",
+      "statusBadge": "GRANDMASTER I (1685 LP)",
+      "analystSummary": "Supa: GRANDMASTER I 1685 LP · 20 partidas consultadas · 69.6% WR · KDA medio 3.1.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5755,6 +5764,15 @@
           "division": "I",
           "lp": 1653,
           "wins": 79,
+          "losses": 35,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793380855912,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1685,
+          "wins": 80,
           "losses": 35,
           "note": "Sincronización automática desde OP.GG"
         }
