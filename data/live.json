@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T16:10:58.501Z",
-  "syncedAt": "2026-10-30T16:10:58.501Z",
+  "generatedAt": "2026-10-30T16:40:59.637Z",
+  "syncedAt": "2026-10-30T16:40:59.638Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -22,27 +22,14 @@
       "wins": 60,
       "losses": 26,
       "winrate": 69.8,
-      "streak": -1,
-      "avgKda": 2.9,
-      "avgKills": 6.2,
+      "streak": -2,
+      "avgKda": 2.7,
+      "avgKills": 6,
       "avgDeaths": 4.2,
-      "avgAssists": 5.6,
+      "avgAssists": 5.1,
       "avgCsPerMin": 6.6,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Ahri",
-          "championId": "103",
-          "games": 4,
-          "wins": 3,
-          "losses": 1,
-          "winrate": 75,
-          "kills": 31,
-          "deaths": 15,
-          "assists": 38,
-          "kda": 4.6,
-          "csPerMin": 7.8
-        },
         {
           "championName": "Pantheon",
           "championId": "80",
@@ -55,6 +42,19 @@
           "assists": 11,
           "kda": 3.3,
           "csPerMin": 5.3
+        },
+        {
+          "championName": "Ahri",
+          "championId": "103",
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 28,
+          "deaths": 10,
+          "assists": 25,
+          "kda": 5.3,
+          "csPerMin": 7.9
         },
         {
           "championName": "Akali",
@@ -122,6 +122,19 @@
           "csPerMin": 0.7
         },
         {
+          "championName": "Jayce",
+          "championId": "126",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 0,
+          "deaths": 5,
+          "assists": 5,
+          "kda": 1,
+          "csPerMin": 7.6
+        },
+        {
           "championName": "Ambessa",
           "championId": "799",
           "games": 1,
@@ -162,6 +175,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU5vc5-vwNA7aefqXIw62xJAWM6A0cBXKo=",
+          "gameCreation": 1793378135000,
+          "gameDurationSeconds": 1689,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Jayce",
+          "championId": "126",
+          "champLevel": 16,
+          "role": "TOP",
+          "kills": 0,
+          "deaths": 5,
+          "assists": 5,
+          "kda": 1,
+          "cs": 215,
+          "csPerMin": 7.6,
+          "killParticipationPct": 0,
+          "damageDealt": 20473,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerTeleport"
+          ],
+          "items": [
+            2520,
+            3158,
+            3134,
+            6699,
+            1055
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVkacE7LNlATwb3lSOl4erkCquNwtEYV6Y=",
           "gameCreation": 1793376154000,
@@ -707,45 +754,10 @@
             3089
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgU0pmcf-z7rNiTkBCl2WkhclbQUqitncPY=",
-          "gameCreation": 1792530298000,
-          "gameDurationSeconds": 1604,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Ahri",
-          "championId": "103",
-          "champLevel": 15,
-          "role": "MID",
-          "kills": 3,
-          "deaths": 5,
-          "assists": 13,
-          "kda": 3.2,
-          "cs": 205,
-          "csPerMin": 7.7,
-          "killParticipationPct": 0,
-          "damageDealt": 26093,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            2503,
-            1058,
-            1082,
-            4629,
-            3171,
-            1052
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "MASTER I (1158 LP)",
-      "analystSummary": "Myrwn: MASTER I 1158 LP · 17 partidas consultadas · 69.8% WR · KDA medio 2.9.",
+      "analystSummary": "Myrwn: MASTER I 1158 LP · 17 partidas consultadas · 69.8% WR · KDA medio 2.7.",
       "snapshots": [
         {
           "timestamp": 1791395153276,
@@ -3871,27 +3883,14 @@
       "wins": 79,
       "losses": 34,
       "winrate": 69.9,
-      "streak": -2,
-      "avgKda": 3.4,
-      "avgKills": 7.3,
-      "avgDeaths": 5.5,
+      "streak": -3,
+      "avgKda": 3.3,
+      "avgKills": 6.7,
+      "avgDeaths": 5.7,
       "avgAssists": 7,
-      "avgCsPerMin": 7.9,
+      "avgCsPerMin": 7.7,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Tristana",
-          "championId": "18",
-          "games": 3,
-          "wins": 3,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 33,
-          "deaths": 8,
-          "assists": 18,
-          "kda": 6.4,
-          "csPerMin": 9.5
-        },
         {
           "championName": "Kai'Sa",
           "championId": "145",
@@ -3917,6 +3916,32 @@
           "assists": 20,
           "kda": 1.9,
           "csPerMin": 8.6
+        },
+        {
+          "championName": "Tristana",
+          "championId": "18",
+          "games": 2,
+          "wins": 2,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 20,
+          "deaths": 3,
+          "assists": 15,
+          "kda": 11.7,
+          "csPerMin": 9.5
+        },
+        {
+          "championName": "Aphelios",
+          "championId": "523",
+          "games": 2,
+          "wins": 0,
+          "losses": 2,
+          "winrate": 0,
+          "kills": 11,
+          "deaths": 18,
+          "assists": 16,
+          "kda": 1.5,
+          "csPerMin": 7.7
         },
         {
           "championName": "Jhin",
@@ -3997,19 +4022,6 @@
           "csPerMin": 0.2
         },
         {
-          "championName": "Aphelios",
-          "championId": "523",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 10,
-          "deaths": 9,
-          "assists": 13,
-          "kda": 2.6,
-          "csPerMin": 8.6
-        },
-        {
           "championName": "Varus",
           "championId": "110",
           "games": 1,
@@ -4050,6 +4062,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgU5vc5-vwNA7aefqXIw62xJAWM6A0cBXKo=",
+          "gameCreation": 1793378135000,
+          "gameDurationSeconds": 1689,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Aphelios",
+          "championId": "523",
+          "champLevel": 14,
+          "role": "ADC",
+          "kills": 1,
+          "deaths": 9,
+          "assists": 3,
+          "kda": 0.44,
+          "cs": 191,
+          "csPerMin": 6.8,
+          "killParticipationPct": 0,
+          "damageDealt": 8040,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerBoost",
+            "SummonerFlash"
+          ],
+          "items": [
+            1086,
+            3036,
+            6676,
+            1038,
+            1037,
+            1018
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXoDVXQ0lBsRFLoEoDF17b7gbpmE4m99jE=",
           "gameCreation": 1793328002000,
@@ -4704,44 +4751,10 @@
             4645
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXJF8rnNqPQQwq7KjLSedyTJ-8Z3_NwLLY=",
-          "gameCreation": 1792985155000,
-          "gameDurationSeconds": 1449,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Tristana",
-          "championId": "18",
-          "champLevel": 14,
-          "role": "ADC",
-          "kills": 13,
-          "deaths": 5,
-          "assists": 3,
-          "kda": 3.2,
-          "cs": 230,
-          "csPerMin": 9.5,
-          "killParticipationPct": 0,
-          "damageDealt": 29430,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerBoost",
-            "SummonerFlash"
-          ],
-          "items": [
-            3032,
-            2019,
-            3031,
-            6675,
-            1086
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1681 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1681 LP · 20 partidas consultadas · 69.9% WR · KDA medio 3.4.",
+      "analystSummary": "Supa: GRANDMASTER I 1681 LP · 20 partidas consultadas · 69.9% WR · KDA medio 3.3.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
