@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T01:31:03.682Z",
-  "syncedAt": "2026-10-30T01:31:03.682Z",
+  "generatedAt": "2026-10-30T01:40:58.495Z",
+  "syncedAt": "2026-10-30T01:40:58.495Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -5586,24 +5586,24 @@
       "wins": 81,
       "losses": 32,
       "winrate": 71.7,
-      "streak": -1,
-      "avgKda": 6.2,
-      "avgKills": 7.2,
-      "avgDeaths": 5.3,
-      "avgAssists": 14.3,
+      "streak": -2,
+      "avgKda": 6,
+      "avgKills": 6.7,
+      "avgDeaths": 5.2,
+      "avgAssists": 13.8,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Lee Sin",
           "championId": "64",
-          "games": 9,
-          "wins": 7,
+          "games": 8,
+          "wins": 6,
           "losses": 2,
-          "winrate": 77.8,
-          "kills": 99,
-          "deaths": 39,
-          "assists": 94,
+          "winrate": 75,
+          "kills": 87,
+          "deaths": 35,
+          "assists": 83,
           "kda": 4.9,
           "csPerMin": 0.7
         },
@@ -5634,6 +5634,19 @@
           "csPerMin": 1.2
         },
         {
+          "championName": "Bard",
+          "championId": "432",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 3,
+          "deaths": 10,
+          "assists": 30,
+          "kda": 3.3,
+          "csPerMin": 1.4
+        },
+        {
           "championName": "Milio",
           "championId": "902",
           "games": 1,
@@ -5658,19 +5671,6 @@
           "assists": 15,
           "kda": 1.5,
           "csPerMin": 0.9
-        },
-        {
-          "championName": "Bard",
-          "championId": "432",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 2,
-          "deaths": 8,
-          "assists": 28,
-          "kda": 3.8,
-          "csPerMin": 1
         },
         {
           "championName": "Karma",
@@ -5713,6 +5713,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXBAlTI2NVLJh7AJOmaQgB1HvoHgAgx2NU=",
+          "gameCreation": 1793324289000,
+          "gameDurationSeconds": 932,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Bard",
+          "championId": "432",
+          "champLevel": 7,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 2,
+          "assists": 2,
+          "kda": 1.5,
+          "cs": 29,
+          "csPerMin": 1.9,
+          "killParticipationPct": 0,
+          "damageDealt": 3287,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3877,
+            3190,
+            2031,
+            1028,
+            3158
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVAK-00OiJ-1TyFrep9gui3HiIVoonK8FE=",
           "gameCreation": 1793321655000,
@@ -6369,45 +6403,10 @@
             2520
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUiCXzzxDLZVBx-JnRFy-AKZ8BpmKhtBWw=",
-          "gameCreation": 1792980934000,
-          "gameDurationSeconds": 1258,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 14,
-          "role": "JUNGLE",
-          "kills": 12,
-          "deaths": 4,
-          "assists": 11,
-          "kda": 5.75,
-          "cs": 10,
-          "csPerMin": 0.5,
-          "killParticipationPct": 0,
-          "damageDealt": 23067,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            2020,
-            3071,
-            6692,
-            2055,
-            2422,
-            6333
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1748 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1748 LP · 20 partidas consultadas · 71.7% WR · KDA medio 6.2.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1748 LP · 20 partidas consultadas · 71.7% WR · KDA medio 6.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
