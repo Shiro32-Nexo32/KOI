@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T16:45:58.464Z",
-  "syncedAt": "2026-10-30T16:45:58.464Z",
+  "generatedAt": "2026-10-30T16:50:58.755Z",
+  "syncedAt": "2026-10-30T16:50:58.755Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3385,7 +3385,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -5768,10 +5768,10 @@
       "wins": 81,
       "losses": 34,
       "winrate": 70.4,
-      "streak": -3,
-      "avgKda": 5.8,
+      "streak": 1,
+      "avgKda": 6.1,
       "avgKills": 6.2,
-      "avgDeaths": 5.5,
+      "avgDeaths": 5.3,
       "avgAssists": 13.5,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
@@ -5793,14 +5793,14 @@
           "championName": "Alistar",
           "championId": "12",
           "games": 3,
-          "wins": 1,
-          "losses": 2,
-          "winrate": 33.3,
-          "kills": 6,
-          "deaths": 17,
+          "wins": 2,
+          "losses": 1,
+          "winrate": 66.7,
+          "kills": 5,
+          "deaths": 13,
           "assists": 61,
-          "kda": 3.9,
-          "csPerMin": 0.9
+          "kda": 5.1,
+          "csPerMin": 1
         },
         {
           "championName": "Bard",
@@ -5895,6 +5895,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXyjp0C8Iwofk2UwbPtulHXVOZESSfFN1w=",
+          "gameCreation": 1793378818000,
+          "gameDurationSeconds": 1362,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Alistar",
+          "championId": "12",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 2,
+          "assists": 18,
+          "kda": 9.5,
+          "cs": 26,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 5870,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3876,
+            3190,
+            3050,
+            3009,
+            1028
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXsFDIGXV-6al-h2iZ9wm2kkayEEKQyFsk=",
           "gameCreation": 1793326517000,
@@ -6550,45 +6584,10 @@
             1037
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVUfITsNC96cTppmm18vXNOzBfIAlvosqQ=",
-          "gameCreation": 1792985741000,
-          "gameDurationSeconds": 1561,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Alistar",
-          "championId": "12",
-          "champLevel": 11,
-          "role": "SUPPORT",
-          "kills": 2,
-          "deaths": 6,
-          "assists": 18,
-          "kda": 3.33,
-          "cs": 20,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 10433,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3876,
-            3190,
-            3050,
-            3009,
-            1028,
-            2022
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1694 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1694 LP · 20 partidas consultadas · 70.4% WR · KDA medio 5.8.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1694 LP · 20 partidas consultadas · 70.4% WR · KDA medio 6.1.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7626,7 +7625,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
