@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T02:10:57.709Z",
-  "syncedAt": "2026-10-30T02:10:57.709Z",
+  "generatedAt": "2026-10-30T02:15:58.367Z",
+  "syncedAt": "2026-10-30T02:15:58.367Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1459,10 +1459,10 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1579,
-      "wins": 75,
+      "lp": 1546,
+      "wins": 74,
       "losses": 31,
-      "winrate": 70.8,
+      "winrate": 70.5,
       "streak": 2,
       "avgKda": 5.7,
       "avgKills": 10.3,
@@ -2311,8 +2311,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1579 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1579 LP · 20 partidas consultadas · 70.8% WR · KDA medio 5.7.",
+      "statusBadge": "GRANDMASTER I (1546 LP)",
+      "analystSummary": "Elyoya: GRANDMASTER I 1546 LP · 20 partidas consultadas · 70.5% WR · KDA medio 5.7.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3247,6 +3247,15 @@
           "division": "I",
           "lp": 1579,
           "wins": 75,
+          "losses": 31,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793326548560,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1546,
+          "wins": 74,
           "losses": 31,
           "note": "Sincronización automática desde OP.GG"
         }
@@ -5574,7 +5583,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
@@ -5595,25 +5604,25 @@
       "wins": 81,
       "losses": 33,
       "winrate": 71.1,
-      "streak": -2,
-      "avgKda": 6,
-      "avgKills": 6.7,
-      "avgDeaths": 5.2,
-      "avgAssists": 13.8,
+      "streak": -3,
+      "avgKda": 5.8,
+      "avgKills": 6.2,
+      "avgDeaths": 5.5,
+      "avgAssists": 13.5,
       "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Lee Sin",
           "championId": "64",
-          "games": 8,
+          "games": 9,
           "wins": 6,
-          "losses": 2,
-          "winrate": 75,
-          "kills": 87,
-          "deaths": 35,
-          "assists": 83,
-          "kda": 4.9,
+          "losses": 3,
+          "winrate": 66.7,
+          "kills": 94,
+          "deaths": 45,
+          "assists": 93,
+          "kda": 4.2,
           "csPerMin": 0.7
         },
         {
@@ -5628,19 +5637,6 @@
           "assists": 61,
           "kda": 3.9,
           "csPerMin": 0.9
-        },
-        {
-          "championName": "Qiyana",
-          "championId": "246",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 28,
-          "deaths": 7,
-          "assists": 29,
-          "kda": 8.1,
-          "csPerMin": 1.2
         },
         {
           "championName": "Bard",
@@ -5695,6 +5691,19 @@
           "csPerMin": 1
         },
         {
+          "championName": "Qiyana",
+          "championId": "246",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 12,
+          "deaths": 2,
+          "assists": 12,
+          "kda": 12,
+          "csPerMin": 1.3
+        },
+        {
           "championName": "Rakan",
           "championId": "497",
           "games": 1,
@@ -5722,6 +5731,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXsFDIGXV-6al-h2iZ9wm2kkayEEKQyFsk=",
+          "gameCreation": 1793326517000,
+          "gameDurationSeconds": 1853,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 15,
+          "role": "JUNGLE",
+          "kills": 7,
+          "deaths": 10,
+          "assists": 10,
+          "kda": 1.7,
+          "cs": 16,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 26433,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            2055,
+            6692,
+            6333,
+            3071,
+            1029,
+            3047
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgXBAlTI2NVLJh7AJOmaQgB1HvoHgAgx2NU=",
           "gameCreation": 1793324289000,
@@ -6377,45 +6421,10 @@
             2022
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgWm3e987k92tQqfT8G9mtZQLI4S2NCWQis=",
-          "gameCreation": 1792983757000,
-          "gameDurationSeconds": 2295,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Qiyana",
-          "championId": "246",
-          "champLevel": 18,
-          "role": "JUNGLE",
-          "kills": 16,
-          "deaths": 5,
-          "assists": 17,
-          "kda": 6.6,
-          "cs": 42,
-          "csPerMin": 1.1,
-          "killParticipationPct": 0,
-          "damageDealt": 52113,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3142,
-            6694,
-            6699,
-            6333,
-            3814,
-            2520
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1721 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1721 LP · 20 partidas consultadas · 71.1% WR · KDA medio 6.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1721 LP · 20 partidas consultadas · 71.1% WR · KDA medio 5.8.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7444,7 +7453,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
