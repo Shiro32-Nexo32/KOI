@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T16:56:00.198Z",
-  "syncedAt": "2026-10-30T16:56:00.198Z",
+  "generatedAt": "2026-10-30T17:01:08.526Z",
+  "syncedAt": "2026-10-30T17:01:08.526Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1501,15 +1501,15 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1618,
+      "lp": 1591,
       "wins": 77,
-      "losses": 33,
-      "winrate": 70,
-      "streak": -2,
+      "losses": 34,
+      "winrate": 69.4,
+      "streak": -3,
       "avgKda": 5.1,
-      "avgKills": 8.5,
-      "avgDeaths": 4.6,
-      "avgAssists": 8.9,
+      "avgKills": 8.2,
+      "avgDeaths": 4.5,
+      "avgAssists": 8.8,
       "avgCsPerMin": 1.5,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1644,6 +1644,19 @@
           "csPerMin": 7.5
         },
         {
+          "championName": "Bard",
+          "championId": "432",
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "winrate": 0,
+          "kills": 1,
+          "deaths": 3,
+          "assists": 1,
+          "kda": 0.7,
+          "csPerMin": 0.5
+        },
+        {
           "championName": "Blitzcrank",
           "championId": "53",
           "games": 1,
@@ -1694,22 +1707,42 @@
           "assists": 8,
           "kda": 3,
           "csPerMin": 0.4
-        },
-        {
-          "championName": "Cho'Gath",
-          "championId": "31",
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "winrate": 0,
-          "kills": 7,
-          "deaths": 5,
-          "assists": 3,
-          "kda": 2,
-          "csPerMin": 0.8
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgVksPZaXITvGeO_jhX8eFEr7JmS9oe6Lxs=",
+          "gameCreation": 1793379360000,
+          "gameDurationSeconds": 1097,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Bard",
+          "championId": "432",
+          "champLevel": 8,
+          "role": "SUPPORT",
+          "kills": 1,
+          "deaths": 3,
+          "assists": 1,
+          "kda": 0.67,
+          "cs": 10,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 4436,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3742,
+            2422,
+            1033
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgW5Kg5r0ZaUkLdt1VlTpetQVUqx8TrmP74=",
           "gameCreation": 1793336776000,
@@ -2363,45 +2396,10 @@
             6333
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgX9U5xFaNhb5Qxj9Q2x0d_CMyDdfPFgtYg=",
-          "gameCreation": 1793077169000,
-          "gameDurationSeconds": 2030,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": false,
-          "championName": "Cho'Gath",
-          "championId": "31",
-          "champLevel": 17,
-          "role": "JUNGLE",
-          "kills": 7,
-          "deaths": 5,
-          "assists": 3,
-          "kda": 2,
-          "cs": 26,
-          "csPerMin": 0.8,
-          "killParticipationPct": 0,
-          "damageDealt": 19464,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3152,
-            3143,
-            2055,
-            3742,
-            4401,
-            3009
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1618 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1618 LP · 20 partidas consultadas · 70% WR · KDA medio 5.1.",
+      "statusBadge": "GRANDMASTER I (1591 LP)",
+      "analystSummary": "Elyoya: GRANDMASTER I 1591 LP · 20 partidas consultadas · 69.4% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3382,6 +3380,15 @@
           "lp": 1618,
           "wins": 77,
           "losses": 33,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793379655829,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1591,
+          "wins": 77,
+          "losses": 34,
           "note": "Sincronización automática desde OP.GG"
         }
       ],
