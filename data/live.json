@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T03:40:57.017Z",
-  "syncedAt": "2026-10-31T03:40:57.017Z",
+  "generatedAt": "2026-10-31T04:01:00.813Z",
+  "syncedAt": "2026-10-31T04:01:00.813Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1489,7 +1489,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -3957,11 +3957,11 @@
       "wins": 80,
       "losses": 36,
       "winrate": 69,
-      "streak": -1,
-      "avgKda": 3.2,
-      "avgKills": 6.5,
+      "streak": 1,
+      "avgKda": 3.5,
+      "avgKills": 6.4,
       "avgDeaths": 6,
-      "avgAssists": 6.9,
+      "avgAssists": 7,
       "avgCsPerMin": 7.8,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -3992,19 +3992,6 @@
           "csPerMin": 8.4
         },
         {
-          "championName": "Tristana",
-          "championId": "18",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 20,
-          "deaths": 3,
-          "assists": 15,
-          "kda": 11.7,
-          "csPerMin": 9.5
-        },
-        {
           "championName": "Aphelios",
           "championId": "523",
           "games": 2,
@@ -4031,6 +4018,19 @@
           "csPerMin": 8.1
         },
         {
+          "championName": "Xayah",
+          "championId": "498",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 10,
+          "deaths": 1,
+          "assists": 6,
+          "kda": 16,
+          "csPerMin": 10.4
+        },
+        {
           "championName": "Miss Fortune",
           "championId": "21",
           "games": 1,
@@ -4042,6 +4042,19 @@
           "assists": 7,
           "kda": 3.2,
           "csPerMin": 8.8
+        },
+        {
+          "championName": "Tristana",
+          "championId": "18",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 7,
+          "deaths": 1,
+          "assists": 10,
+          "kda": 17,
+          "csPerMin": 9.8
         },
         {
           "championName": "Sivir",
@@ -4123,6 +4136,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgXimvuAF9vM7fKWYXcZvbHSOiELNw-0XQk=",
+          "gameCreation": 1793419163000,
+          "gameDurationSeconds": 1541,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Xayah",
+          "championId": "498",
+          "champLevel": 15,
+          "role": "ADC",
+          "kills": 10,
+          "deaths": 1,
+          "assists": 6,
+          "kda": 16,
+          "cs": 266,
+          "csPerMin": 10.4,
+          "killParticipationPct": 0,
+          "damageDealt": 24924,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerExhaust",
+            "SummonerFlash"
+          ],
+          "items": [
+            3032,
+            6675,
+            3133,
+            3155,
+            3031,
+            1086
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgWZb6s1Q4YgcqWhV8wmfau62CWHQuWb4Lg=",
           "gameCreation": 1793399565000,
@@ -4778,44 +4826,10 @@
             2019
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgUWDq7lPJSOIMeCyzPJWmvWj-QfiS2ArV0=",
-          "gameCreation": 1793057893000,
-          "gameDurationSeconds": 1474,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Tristana",
-          "championId": "18",
-          "champLevel": 15,
-          "role": "ADC",
-          "kills": 13,
-          "deaths": 2,
-          "assists": 5,
-          "kda": 9,
-          "cs": 227,
-          "csPerMin": 9.2,
-          "killParticipationPct": 0,
-          "damageDealt": 36776,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerExhaust",
-            "SummonerFlash"
-          ],
-          "items": [
-            3032,
-            6675,
-            1038,
-            3036,
-            1086
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1637 LP)",
-      "analystSummary": "Supa: GRANDMASTER I 1637 LP · 20 partidas consultadas · 69% WR · KDA medio 3.2.",
+      "analystSummary": "Supa: GRANDMASTER I 1637 LP · 20 partidas consultadas · 69% WR · KDA medio 3.5.",
       "snapshots": [
         {
           "timestamp": 1791395177544,
@@ -5844,7 +5858,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
