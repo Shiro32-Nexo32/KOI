@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T23:40:57.522Z",
-  "syncedAt": "2026-10-30T23:40:57.522Z",
+  "generatedAt": "2026-10-31T03:35:57.843Z",
+  "syncedAt": "2026-10-31T03:35:57.843Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3450,7 +3450,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 2,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -5865,39 +5865,39 @@
       "wins": 83,
       "losses": 35,
       "winrate": 70.3,
-      "streak": -1,
-      "avgKda": 5.8,
-      "avgKills": 5,
+      "streak": 1,
+      "avgKda": 5.3,
+      "avgKills": 4.5,
       "avgDeaths": 5.7,
-      "avgAssists": 14.2,
-      "avgCsPerMin": 0.9,
+      "avgAssists": 14.3,
+      "avgCsPerMin": 0.8,
       "avgKillParticipationPct": 0,
       "champions": [
         {
           "championName": "Lee Sin",
           "championId": "64",
-          "games": 7,
-          "wins": 4,
+          "games": 6,
+          "wins": 3,
           "losses": 3,
-          "winrate": 57.1,
-          "kills": 72,
-          "deaths": 36,
-          "assists": 60,
-          "kda": 3.7,
-          "csPerMin": 0.5
+          "winrate": 50,
+          "kills": 57,
+          "deaths": 35,
+          "assists": 51,
+          "kda": 3.1,
+          "csPerMin": 0.4
         },
         {
           "championName": "Alistar",
           "championId": "12",
-          "games": 3,
-          "wins": 2,
+          "games": 4,
+          "wins": 3,
           "losses": 1,
-          "winrate": 66.7,
-          "kills": 5,
-          "deaths": 13,
-          "assists": 61,
-          "kda": 5.1,
-          "csPerMin": 1
+          "winrate": 75,
+          "kills": 8,
+          "deaths": 14,
+          "assists": 72,
+          "kda": 5.7,
+          "csPerMin": 1.1
         },
         {
           "championName": "Bard",
@@ -6018,6 +6018,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX8zc3kcndo05iq6Z5iyB0t4wie24SCr-M=",
+          "gameCreation": 1793417471000,
+          "gameDurationSeconds": 935,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Alistar",
+          "championId": "12",
+          "champLevel": 9,
+          "role": "SUPPORT",
+          "kills": 3,
+          "deaths": 1,
+          "assists": 11,
+          "kda": 14,
+          "cs": 17,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 6644,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3876,
+            2031,
+            3050,
+            3009,
+            1028,
+            2022
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgVNwAsTA2c3vI7sDAeSs-n2FA1-4rW4XrM=",
           "gameCreation": 1793403239000,
@@ -6673,44 +6708,10 @@
             3067
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXRKZzQfZeJD5wwrbBaRdBt5XalPi06-7U=",
-          "gameCreation": 1793058468000,
-          "gameDurationSeconds": 1676,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 17,
-          "role": "JUNGLE",
-          "kills": 15,
-          "deaths": 1,
-          "assists": 9,
-          "kda": 24,
-          "cs": 34,
-          "csPerMin": 1.2,
-          "killParticipationPct": 0,
-          "damageDealt": 30771,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6333,
-            3071,
-            6692,
-            3047,
-            3026
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1733 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1733 LP · 20 partidas consultadas · 70.3% WR · KDA medio 5.8.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1733 LP · 20 partidas consultadas · 70.3% WR · KDA medio 5.3.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
@@ -7793,7 +7794,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 2,
       "eloRank": 1,
       "remakeLossMatchIds": []
     }
