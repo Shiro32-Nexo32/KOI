@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T04:25:59.684Z",
-  "syncedAt": "2026-10-31T04:25:59.685Z",
+  "generatedAt": "2026-10-31T04:41:03.436Z",
+  "syncedAt": "2026-10-31T04:41:03.437Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1489,7 +1489,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 5,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1514,11 +1514,11 @@
       "wins": 78,
       "losses": 37,
       "winrate": 67.8,
-      "streak": -1,
+      "streak": 1,
       "avgKda": 5.1,
-      "avgKills": 7.7,
-      "avgDeaths": 4.4,
-      "avgAssists": 8.8,
+      "avgKills": 8.1,
+      "avgDeaths": 4.5,
+      "avgAssists": 9.3,
       "avgCsPerMin": 1.2,
       "avgKillParticipationPct": 0,
       "champions": [
@@ -1534,19 +1534,6 @@
           "assists": 19,
           "kda": 9.2,
           "csPerMin": 0.7
-        },
-        {
-          "championName": "Kindred",
-          "championId": "203",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 22,
-          "deaths": 9,
-          "assists": 22,
-          "kda": 4.9,
-          "csPerMin": 1.9
         },
         {
           "championName": "Alistar",
@@ -1601,6 +1588,19 @@
           "csPerMin": 1.3
         },
         {
+          "championName": "Lee Sin",
+          "championId": "64",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 17,
+          "deaths": 4,
+          "assists": 12,
+          "kda": 7.3,
+          "csPerMin": 0.5
+        },
+        {
           "championName": "Kha'Zix",
           "championId": "121",
           "games": 1,
@@ -1612,6 +1612,19 @@
           "assists": 7,
           "kda": 6.3,
           "csPerMin": 1.4
+        },
+        {
+          "championName": "Kindred",
+          "championId": "203",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 12,
+          "deaths": 7,
+          "assists": 18,
+          "kda": 4.3,
+          "csPerMin": 2.4
         },
         {
           "championName": "Jax",
@@ -1693,6 +1706,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX8qSVbM1irdcWczk12zX13NBUdB-RsqIQ=",
+          "gameCreation": 1793421498000,
+          "gameDurationSeconds": 1646,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Lee Sin",
+          "championId": "64",
+          "champLevel": 18,
+          "role": "JUNGLE",
+          "kills": 17,
+          "deaths": 4,
+          "assists": 12,
+          "kda": 7.25,
+          "cs": 14,
+          "csPerMin": 0.5,
+          "killParticipationPct": 0,
+          "damageDealt": 34936,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerSmite"
+          ],
+          "items": [
+            6698,
+            3047,
+            3814,
+            6699,
+            2520
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX_JwJDrdw3dJ1_NuYw83MGs9y5w4e6xR0=",
           "gameCreation": 1793419332000,
@@ -2344,39 +2391,6 @@
             3036,
             6699,
             2520
-          ],
-          "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgVNhLUxEJFLLJbgnBwo38Sam1HqfPIMaPE=",
-          "gameCreation": 1793164410000,
-          "gameDurationSeconds": 1405,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Kindred",
-          "championId": "203",
-          "champLevel": 14,
-          "role": "JUNGLE",
-          "kills": 10,
-          "deaths": 2,
-          "assists": 4,
-          "kda": 7,
-          "cs": 31,
-          "csPerMin": 1.3,
-          "killParticipationPct": 0,
-          "damageDealt": 16629,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            3078,
-            3031,
-            6676,
-            2422
           ],
           "tags": []
         }
@@ -3447,7 +3461,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 3,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -5864,7 +5878,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 4,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
