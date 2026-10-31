@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T04:05:56.807Z",
-  "syncedAt": "2026-10-31T04:05:56.807Z",
+  "generatedAt": "2026-10-31T04:10:59.202Z",
+  "syncedAt": "2026-10-31T04:10:59.202Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -5876,12 +5876,12 @@
       "wins": 84,
       "losses": 35,
       "winrate": 70.6,
-      "streak": 1,
-      "avgKda": 5.3,
-      "avgKills": 4.5,
-      "avgDeaths": 5.7,
-      "avgAssists": 14.3,
-      "avgCsPerMin": 0.8,
+      "streak": 2,
+      "avgKda": 5.2,
+      "avgKills": 4.4,
+      "avgDeaths": 5.8,
+      "avgAssists": 14.4,
+      "avgCsPerMin": 0.9,
       "avgKillParticipationPct": 0,
       "champions": [
         {
@@ -5900,13 +5900,13 @@
         {
           "championName": "Alistar",
           "championId": "12",
-          "games": 4,
-          "wins": 3,
+          "games": 3,
+          "wins": 2,
           "losses": 1,
-          "winrate": 75,
-          "kills": 8,
-          "deaths": 14,
-          "assists": 72,
+          "winrate": 66.7,
+          "kills": 5,
+          "deaths": 10,
+          "assists": 52,
           "kda": 5.7,
           "csPerMin": 1.1
         },
@@ -5922,6 +5922,19 @@
           "assists": 30,
           "kda": 3.3,
           "csPerMin": 1.4
+        },
+        {
+          "championName": "Leona",
+          "championId": "89",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 2,
+          "deaths": 6,
+          "assists": 23,
+          "kda": 4.2,
+          "csPerMin": 1.1
         },
         {
           "championName": "Blitzcrank",
@@ -6029,6 +6042,40 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgUg0_t_Rw5_Ql5wS7LzED6nFaEWnjsnCxw=",
+          "gameCreation": 1793419678000,
+          "gameDurationSeconds": 1463,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": true,
+          "championName": "Leona",
+          "championId": "89",
+          "champLevel": 12,
+          "role": "SUPPORT",
+          "kills": 2,
+          "deaths": 6,
+          "assists": 23,
+          "kda": 4.17,
+          "cs": 27,
+          "csPerMin": 1.1,
+          "killParticipationPct": 0,
+          "damageDealt": 10544,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            3190,
+            2525,
+            3111,
+            3067
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgX8zc3kcndo05iq6Z5iyB0t4wie24SCr-M=",
           "gameCreation": 1793417471000,
@@ -6684,45 +6731,10 @@
             3026
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgXFj2yLLO98Ge3xVCqv1324AOFZsqhIAuc=",
-          "gameCreation": 1793074944000,
-          "gameDurationSeconds": 2014,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Alistar",
-          "championId": "12",
-          "champLevel": 14,
-          "role": "SUPPORT",
-          "kills": 3,
-          "deaths": 4,
-          "assists": 20,
-          "kda": 5.75,
-          "cs": 35,
-          "csPerMin": 1,
-          "killParticipationPct": 0,
-          "damageDealt": 12350,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerHeal"
-          ],
-          "items": [
-            3876,
-            3190,
-            3109,
-            3050,
-            3009,
-            3067
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "GRANDMASTER I (1766 LP)",
-      "analystSummary": "Alvaro: GRANDMASTER I 1766 LP · 20 partidas consultadas · 70.6% WR · KDA medio 5.3.",
+      "analystSummary": "Alvaro: GRANDMASTER I 1766 LP · 20 partidas consultadas · 70.6% WR · KDA medio 5.2.",
       "snapshots": [
         {
           "timestamp": 1791395185391,
