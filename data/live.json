@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T04:01:00.813Z",
-  "syncedAt": "2026-10-31T04:01:00.813Z",
+  "generatedAt": "2026-10-31T04:05:56.807Z",
+  "syncedAt": "2026-10-31T04:05:56.807Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -1489,7 +1489,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 5,
+      "formRank": 4,
       "eloRank": 4,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -1510,14 +1510,14 @@
       "profileIconId": 588,
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1570,
+      "lp": 1543,
       "wins": 78,
-      "losses": 36,
-      "winrate": 68.4,
-      "streak": 1,
-      "avgKda": 5.4,
-      "avgKills": 8,
-      "avgDeaths": 4,
+      "losses": 37,
+      "winrate": 67.8,
+      "streak": -1,
+      "avgKda": 5.1,
+      "avgKills": 7.7,
+      "avgDeaths": 4.4,
       "avgAssists": 8.8,
       "avgCsPerMin": 1.2,
       "avgKillParticipationPct": 0,
@@ -1547,6 +1547,19 @@
           "assists": 22,
           "kda": 4.9,
           "csPerMin": 1.9
+        },
+        {
+          "championName": "Alistar",
+          "championId": "12",
+          "games": 2,
+          "wins": 1,
+          "losses": 1,
+          "winrate": 50,
+          "kills": 0,
+          "deaths": 13,
+          "assists": 24,
+          "kda": 1.8,
+          "csPerMin": 0.7
         },
         {
           "championName": "Senna",
@@ -1601,19 +1614,6 @@
           "csPerMin": 1.4
         },
         {
-          "championName": "Alistar",
-          "championId": "12",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 0,
-          "deaths": 4,
-          "assists": 16,
-          "kda": 4,
-          "csPerMin": 0.6
-        },
-        {
           "championName": "Jax",
           "championId": "24",
           "games": 1,
@@ -1638,19 +1638,6 @@
           "assists": 9,
           "kda": 5.3,
           "csPerMin": 0.9
-        },
-        {
-          "championName": "Lee Sin",
-          "championId": "64",
-          "games": 1,
-          "wins": 1,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 6,
-          "deaths": 2,
-          "assists": 8,
-          "kda": 7,
-          "csPerMin": 0.7
         },
         {
           "championName": "Bard",
@@ -1706,6 +1693,41 @@
         }
       ],
       "recentMatches": [
+        {
+          "matchId": "eq3KyFixtgX_JwJDrdw3dJ1_NuYw83MGs9y5w4e6xR0=",
+          "gameCreation": 1793419332000,
+          "gameDurationSeconds": 1574,
+          "queueType": "SOLORANKED",
+          "isRemake": false,
+          "win": false,
+          "championName": "Alistar",
+          "championId": "12",
+          "champLevel": 11,
+          "role": "SUPPORT",
+          "kills": 0,
+          "deaths": 9,
+          "assists": 8,
+          "kda": 0.89,
+          "cs": 21,
+          "csPerMin": 0.8,
+          "killParticipationPct": 0,
+          "damageDealt": 4341,
+          "damagePct": 0,
+          "visionScore": 0,
+          "spells": [
+            "SummonerFlash",
+            "SummonerHeal"
+          ],
+          "items": [
+            3869,
+            2031,
+            3067,
+            1031,
+            3158,
+            3190
+          ],
+          "tags": []
+        },
         {
           "matchId": "eq3KyFixtgUfUn1TnkvdPhpuBYnEs9jBBb7LBtr7qUE=",
           "gameCreation": 1793401473000,
@@ -2357,44 +2379,10 @@
             2422
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgW4IWR3M011GqUNoN717qjYmvXh5Ia2m8k=",
-          "gameCreation": 1793161405000,
-          "gameDurationSeconds": 1387,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Lee Sin",
-          "championId": "64",
-          "champLevel": 14,
-          "role": "JUNGLE",
-          "kills": 6,
-          "deaths": 2,
-          "assists": 8,
-          "kda": 7,
-          "cs": 16,
-          "csPerMin": 0.7,
-          "killParticipationPct": 0,
-          "damageDealt": 13117,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerSmite"
-          ],
-          "items": [
-            6692,
-            3071,
-            1036,
-            1036,
-            3047
-          ],
-          "tags": []
         }
       ],
-      "statusBadge": "GRANDMASTER I (1570 LP)",
-      "analystSummary": "Elyoya: GRANDMASTER I 1570 LP · 20 partidas consultadas · 68.4% WR · KDA medio 5.4.",
+      "statusBadge": "GRANDMASTER I (1543 LP)",
+      "analystSummary": "Elyoya: GRANDMASTER I 1543 LP · 20 partidas consultadas · 67.8% WR · KDA medio 5.1.",
       "snapshots": [
         {
           "timestamp": 1791395159247,
@@ -3448,9 +3436,18 @@
           "wins": 78,
           "losses": 36,
           "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1793419546227,
+          "tier": "GRANDMASTER",
+          "division": "I",
+          "lp": 1543,
+          "wins": 78,
+          "losses": 37,
+          "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 3,
+      "formRank": 5,
       "eloRank": 3,
       "remakeLossMatchIds": [
         "eq3KyFixtgWrEXSuN97sUGM-ft_qTZKblXJe80ZxikM=",
@@ -5858,7 +5855,7 @@
           "note": "Sincronización automática desde OP.GG"
         }
       ],
-      "formRank": 4,
+      "formRank": 3,
       "eloRank": 2,
       "remakeLossMatchIds": []
     },
