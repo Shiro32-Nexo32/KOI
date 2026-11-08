@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-07T07:50:48.150Z",
-  "syncedAt": "2026-11-07T07:50:48.151Z",
+  "generatedAt": "2026-11-08T07:50:50.815Z",
+  "syncedAt": "2026-11-08T07:50:50.816Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3490,7 +3490,7 @@
       "profileIconId": 588,
       "tier": "DIAMOND",
       "division": "II",
-      "lp": 75,
+      "lp": 25,
       "wins": 13,
       "losses": 2,
       "winrate": 86.7,
@@ -3905,8 +3905,8 @@
           "tags": []
         }
       ],
-      "statusBadge": "DIAMOND II (75 LP)",
-      "analystSummary": "Jojopyun: DIAMOND II 75 LP · 9 partidas consultadas · 86.7% WR · KDA medio 4.2.",
+      "statusBadge": "DIAMOND II (25 LP)",
+      "analystSummary": "Jojopyun: DIAMOND II 25 LP · 9 partidas consultadas · 86.7% WR · KDA medio 4.2.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
@@ -3967,6 +3967,15 @@
           "tier": "DIAMOND",
           "division": "II",
           "lp": 75,
+          "wins": 13,
+          "losses": 2,
+          "note": "Sincronización automática desde OP.GG"
+        },
+        {
+          "timestamp": 1794124243608,
+          "tier": "DIAMOND",
+          "division": "II",
+          "lp": 25,
           "wins": 13,
           "losses": 2,
           "note": "Sincronización automática desde OP.GG"
