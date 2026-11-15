@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-11-15T08:06:13.179Z",
-  "syncedAt": "2026-11-15T19:46:52.660Z",
+  "syncedAt": "2026-11-15T19:51:29.750Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -8034,14 +8034,12 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Elyoya: OP.GG MCP HTTP 503: no available server\n"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 4,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
