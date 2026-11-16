@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-15T08:06:13.179Z",
-  "syncedAt": "2026-11-15T19:51:29.750Z",
+  "generatedAt": "2026-11-16T04:36:25.917Z",
+  "syncedAt": "2026-11-16T04:36:25.917Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
   "status": "ok",
@@ -3549,26 +3549,13 @@
       "losses": 2,
       "winrate": 86.7,
       "streak": -2,
-      "avgKda": 4.2,
-      "avgKills": 9,
-      "avgDeaths": 3.6,
-      "avgAssists": 4.1,
-      "avgCsPerMin": 7.9,
+      "avgKda": 4.4,
+      "avgKills": 8,
+      "avgDeaths": 3,
+      "avgAssists": 3.5,
+      "avgCsPerMin": 8,
       "avgKillParticipationPct": 0,
       "champions": [
-        {
-          "championName": "Aurora",
-          "championId": "893",
-          "games": 2,
-          "wins": 2,
-          "losses": 0,
-          "winrate": 100,
-          "kills": 36,
-          "deaths": 13,
-          "assists": 17,
-          "kda": 4.1,
-          "csPerMin": 7.4
-        },
         {
           "championName": "Locke",
           "championId": "805",
@@ -3607,6 +3594,19 @@
           "assists": 4,
           "kda": 11,
           "csPerMin": 9.3
+        },
+        {
+          "championName": "Aurora",
+          "championId": "893",
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "winrate": 100,
+          "kills": 19,
+          "deaths": 5,
+          "assists": 8,
+          "kda": 5.4,
+          "csPerMin": 7.3
         },
         {
           "championName": "Sylas",
@@ -3922,45 +3922,10 @@
             1082
           ],
           "tags": []
-        },
-        {
-          "matchId": "eq3KyFixtgU605FNnz8si9crdAANhaenxOKKyp8iRZo=",
-          "gameCreation": 1791337722000,
-          "gameDurationSeconds": 1720,
-          "queueType": "SOLORANKED",
-          "isRemake": false,
-          "win": true,
-          "championName": "Aurora",
-          "championId": "893",
-          "champLevel": 17,
-          "role": "MID",
-          "kills": 17,
-          "deaths": 8,
-          "assists": 9,
-          "kda": 3.25,
-          "cs": 214,
-          "csPerMin": 7.5,
-          "killParticipationPct": 0,
-          "damageDealt": 37013,
-          "damagePct": 0,
-          "visionScore": 0,
-          "spells": [
-            "SummonerFlash",
-            "SummonerTeleport"
-          ],
-          "items": [
-            4646,
-            4645,
-            1058,
-            3135,
-            3175,
-            1082
-          ],
-          "tags": []
         }
       ],
       "statusBadge": "EMERALD I (75 LP)",
-      "analystSummary": "Jojopyun: EMERALD I 75 LP · 9 partidas consultadas · 86.7% WR · KDA medio 4.2.",
+      "analystSummary": "Jojopyun: EMERALD I 75 LP · 8 partidas consultadas · 86.7% WR · KDA medio 4.4.",
       "snapshots": [
         {
           "timestamp": 1791395167103,
