@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-11-18T08:01:33.358Z",
-  "syncedAt": "2026-11-18T18:56:20.634Z",
+  "syncedAt": "2026-11-18T19:01:22.351Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -8125,14 +8125,12 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Elyoya: fetch failed"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 4,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
