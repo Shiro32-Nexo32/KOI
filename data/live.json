@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-11-18T08:01:33.358Z",
-  "syncedAt": "2026-11-18T15:01:23.830Z",
+  "syncedAt": "2026-11-18T15:06:33.136Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -8125,14 +8125,12 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Jojopyun: fetch failed"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 4,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
