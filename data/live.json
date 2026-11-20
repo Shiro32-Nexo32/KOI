@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-11-20T07:56:14.616Z",
-  "syncedAt": "2026-11-20T21:21:10.773Z",
+  "syncedAt": "2026-11-20T21:26:12.782Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -8215,14 +8215,12 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Supa: fetch failed"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 4,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
