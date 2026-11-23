@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-11-23T08:05:29.989Z",
-  "syncedAt": "2026-11-23T19:25:28.181Z",
+  "syncedAt": "2026-11-23T19:30:31.193Z",
   "source": "OP.GG",
   "sourceType": "official-opgg-mcp",
-  "status": "partial",
+  "status": "ok",
   "players": [
     {
       "id": "myrwn",
@@ -8341,14 +8341,12 @@
       "remakeLossMatchIds": []
     }
   ],
-  "errors": [
-    "Alvaro: fetch failed"
-  ],
+  "errors": [],
   "meta": {
     "team": "KOI / MKOI",
     "region": "NA",
     "accountCount": 5,
-    "successfulCount": 4,
+    "successfulCount": 5,
     "mcpTools": [
       "lol_get_summoner_profile",
       "lol_list_summoner_matches"
